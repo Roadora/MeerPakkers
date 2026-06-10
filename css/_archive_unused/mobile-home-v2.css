@@ -1,0 +1,232 @@
+
+/* MeerPakkers Mobile Homepage v2
+   Desktop blijft ongewijzigd. Mobiel krijgt de mockup-flow:
+   Hero -> zoekbalk -> categorieën -> filters -> dealfeed -> uitleg.
+*/
+
+.mp-mobile-home-flow{
+  display:none;
+}
+
+@media (max-width: 768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .mp-mobile-home-flow{
+    display:block;
+    padding:0 20px 22px;
+  }
+
+  /* Verberg desktop homepage-grid/sidebars op mobiel, zodat deals direct in de mobiele flow komen */
+  .home-layout,
+  .homepage-grid,
+  .content-grid{
+    display:none!important;
+  }
+
+  /* Hero blijft eerst, maar compacter */
+  .hero,
+  .home-hero{
+    padding:30px 24px 20px!important;
+  }
+
+  .hero h1,
+  .home-hero h1{
+    font-size:clamp(40px, 11vw, 56px)!important;
+    line-height:.98!important;
+    margin-bottom:14px!important;
+  }
+
+  .hero p,
+  .home-hero p{
+    font-size:18px!important;
+    line-height:1.35!important;
+  }
+
+  .mp-mobile-search{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#fffdf8;
+    border:1px solid #ded0b9;
+    border-radius:999px;
+    padding:13px 16px;
+    margin:8px 0 22px;
+    box-shadow:0 10px 26px rgba(12,74,61,.05);
+  }
+
+  .mp-mobile-search input{
+    border:0;
+    outline:0;
+    background:transparent;
+    width:100%;
+    font-size:16px;
+    color:#0b463c;
+  }
+
+  .mp-mobile-categories{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:0 0 14px;
+    margin:0 0 12px;
+  }
+
+  .mp-mobile-categories::-webkit-scrollbar{
+    display:none;
+  }
+
+  .mp-mobile-categories a{
+    flex:0 0 auto;
+    text-decoration:none;
+    color:#063f36;
+    font-weight:800;
+    border:1px solid #ded0b9;
+    background:#fffaf2;
+    border-radius:999px;
+    padding:12px 16px;
+    box-shadow:0 8px 20px rgba(12,74,61,.04);
+  }
+
+  .mp-mobile-filter-button{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid #ded0b9;
+    background:#fffaf2;
+    color:#063f36;
+    font-size:16px;
+    font-weight:800;
+    border-radius:16px;
+    padding:13px 18px;
+    margin:0 0 24px;
+  }
+
+  .mp-mobile-section-head{
+    margin:0 0 14px;
+  }
+
+  .mp-mobile-section-head h2{
+    color:#063f36;
+    font-size:25px;
+    line-height:1.05;
+    margin:0 0 6px;
+  }
+
+  .mp-mobile-section-head p{
+    margin:0;
+    color:#6e675e;
+    font-size:15px;
+  }
+
+  .mp-mobile-deals{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .mp-mobile-deal-card{
+    position:relative;
+    background:#fffdf8;
+    border:1px solid #ded0b9;
+    border-radius:22px;
+    padding:18px;
+    box-shadow:0 16px 36px rgba(12,74,61,.06);
+  }
+
+  .mp-mobile-deal-top{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:center;
+    margin-bottom:10px;
+  }
+
+  .mp-mobile-deal-top strong{
+    color:#063f36;
+    font-size:22px;
+    line-height:1;
+  }
+
+  .mp-mobile-deal-top span{
+    font-size:12px;
+    font-weight:800;
+    color:#0c4a3d;
+    background:#edf5ea;
+    border-radius:999px;
+    padding:7px 10px;
+    white-space:nowrap;
+  }
+
+  .mp-mobile-deal-card h3{
+    margin:0 0 12px;
+    font-size:17px;
+    line-height:1.2;
+    color:#111;
+  }
+
+  .mp-mobile-benefits{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:16px;
+  }
+
+  .mp-mobile-benefits span{
+    display:inline-flex;
+    align-items:center;
+    border-radius:999px;
+    background:#edf5ea;
+    color:#063f36;
+    padding:8px 10px;
+    font-size:13px;
+    font-weight:800;
+  }
+
+  .mp-mobile-deal-bottom{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:14px;
+  }
+
+  .mp-mobile-deal-bottom small{
+    display:block;
+    color:#6e675e;
+    font-weight:800;
+    margin-bottom:2px;
+  }
+
+  .mp-mobile-deal-bottom b{
+    display:block;
+    color:#063f36;
+    font-size:36px;
+    line-height:.95;
+  }
+
+  .mp-mobile-deal-bottom a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    background:#06483d;
+    border-radius:14px;
+    padding:14px 18px;
+    font-weight:900;
+    min-width:132px;
+    box-shadow:0 10px 22px rgba(6,72,61,.18);
+  }
+
+  /* Info-blokken/waarom-sectie onderaan houden als ze buiten de desktop grid staan */
+  .why-section,
+  .home-why,
+  .explain-section{
+    margin-top:26px!important;
+  }
+}
+

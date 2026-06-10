@@ -1,0 +1,65 @@
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--text);font-family:Inter,Arial,sans-serif}a{text-decoration:none;color:inherit}button,input{font:inherit}button{cursor:pointer}
+
+
+/* Livegang demo/beta melding - desktop + mobiel */
+.mp-demo-banner{
+  max-width:1280px;
+  margin:18px auto 22px;
+  padding:14px 18px;
+  border:1px solid rgba(6,72,61,.13);
+  border-radius:18px;
+  background:rgba(255,253,248,.86);
+  box-shadow:0 14px 32px rgba(35,27,17,.055);
+  color:#06483d;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-sizing:border-box;
+}
+
+.mp-demo-banner strong{
+  flex:0 0 auto;
+  font-weight:950;
+  letter-spacing:-.01em;
+}
+
+.mp-demo-banner span{
+  color:#746b61;
+  font-weight:750;
+  line-height:1.35;
+}
+
+@media(max-width:760px){
+  .mp-demo-banner{
+    margin:12px 0 16px;
+    padding:13px 14px;
+    border-radius:18px;
+    display:grid;
+    gap:5px;
+  }
+
+  .mp-demo-banner strong{
+    font-size:14px;
+  }
+
+  .mp-demo-banner span{
+    font-size:12.5px;
+    line-height:1.35;
+  }
+}
+
+
+/* Fix: demo banner zichtbaar op desktop home, zonder mobiele home te raken */
+@media (min-width:761px){
+  body.home-cleanup .mp-demo-banner--desktop-home{
+    display:flex !important;
+    max-width:1280px;
+    margin:18px auto 24px;
+  }
+}
+
+@media (max-width:760px){
+  .mp-demo-banner--desktop-home{
+    display:none !important;
+  }
+}

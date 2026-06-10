@@ -1,0 +1,26 @@
+/* MeerPakkers v40 Cookie Banner */
+.mp-cookie-banner{
+  position:fixed;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  z-index:9999;
+  max-width:760px;
+  margin:0 auto;
+  border:1px solid rgba(192,173,142,.64);
+  border-radius:22px;
+  background:rgba(255,253,248,.96);
+  box-shadow:0 22px 60px rgba(6,72,61,.20);
+  color:#06483d;
+  padding:16px;
+  backdrop-filter:blur(14px);
+}
+.mp-cookie-banner[hidden]{display:none!important;}
+.mp-cookie-title{font-size:18px;font-weight:950;letter-spacing:-.45px;margin:0 0 5px;}
+.mp-cookie-text{margin:0;color:#3c3a34;font-size:13px;line-height:1.45;font-weight:700;}
+.mp-cookie-actions{display:flex;gap:8px;margin-top:13px;align-items:center;}
+.mp-cookie-actions button,.mp-cookie-actions a{min-height:38px;border-radius:999px;border:1px solid rgba(192,173,142,.72);padding:0 13px;font-size:12px;font-weight:900;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;}
+.mp-cookie-accept{background:#06483d;color:white;border-color:#06483d!important;}
+.mp-cookie-necessary,.mp-cookie-policy{background:#fffdf8;color:#06483d;}
+@media(max-width:760px){.mp-cookie-banner{left:12px;right:12px;bottom:12px;border-radius:20px;padding:14px}.mp-cookie-actions{display:grid;grid-template-columns:1fr 1fr;}.mp-cookie-policy{grid-column:1/-1}.mp-cookie-text{font-size:12.5px}.mp-cookie-title{font-size:17px}}
+

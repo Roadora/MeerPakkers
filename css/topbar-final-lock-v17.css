@@ -1,0 +1,167 @@
+/* MeerPakkers Topbar Final Lock v17
+   Final single mobile topbar contract. Loaded last to prevent Providers / Kies je Meepakker / detail pages from shifting.
+   No absolute/viewport positioning. No page-specific provider-card influence. */
+@media(max-width:760px){
+  :root{
+    --mp-topbar-height:92px;
+    --mp-topbar-side:40px;
+    --mp-topbar-gap:8px;
+    --mp-topbar-logo-w:140px;
+    --mp-topbar-logo-h:86px;
+    --mp-topbar-logo-overlap:-25px;
+    --mp-topbar-slogan-size:15px;
+    --mp-topbar-name-size:24px;
+  }
+
+  html body .mp-mobile-top-header,
+  html body .mp-mobile-topbar-unified-v3,
+  html body.mp-provider-discovery-page .provider-discovery-hero.mp-mobile-framework > .mp-mobile-top-header,
+  html body.mp-meepakker-page .meepakker-hero.mp-mobile-framework > .mp-mobile-top-header,
+  html body.mp-provider-detail-page .mp-provider-detail-shell > .mp-mobile-top-header,
+  html body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header{
+    display:grid!important;
+    grid-template-columns:var(--mp-topbar-side) minmax(0,1fr) var(--mp-topbar-side)!important;
+    align-items:center!important;
+    gap:var(--mp-topbar-gap)!important;
+    width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+    transform:none!important;
+  }
+
+  html body .mp-mobile-top-header > .mp-mobile-back,
+  html body .mp-mobile-top-header > .mp-mobile-heart-link,
+  html body .mp-mobile-top-header > .mp-mobile-heart-button,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-back,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    max-width:40px!important;
+    max-height:40px!important;
+    margin:0!important;
+    padding:0!important;
+    align-self:center!important;
+    transform:none!important;
+    translate:none!important;
+    box-sizing:border-box!important;
+  }
+
+  html body .mp-mobile-top-header > .mp-mobile-back,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-back{justify-self:start!important;grid-column:1!important;}
+  html body .mp-mobile-top-header > .mp-mobile-heart-link,
+  html body .mp-mobile-top-header > .mp-mobile-heart-button,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  html body .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{justify-self:end!important;grid-column:3!important;position:relative!important;}
+
+  html body .mp-mobile-top-header .mp-mobile-brand-lockup,
+  html body .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0!important;
+    padding:0!important;
+    gap:0!important;
+    transform:none!important;
+    translate:none!important;
+    text-decoration:none!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    position:static!important;
+    left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+  }
+
+  html body .mp-mobile-top-header .mp-mobile-brand-logo,
+  html body .mp-mobile-topbar-unified-v3 .mp-mobile-brand-logo{
+    display:block!important;
+    width:var(--mp-topbar-logo-w)!important;
+    height:var(--mp-topbar-logo-h)!important;
+    min-width:var(--mp-topbar-logo-w)!important;
+    max-width:var(--mp-topbar-logo-w)!important;
+    flex:0 0 var(--mp-topbar-logo-w)!important;
+    margin:0 var(--mp-topbar-logo-overlap) 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  html body .mp-mobile-top-header .mp-mobile-brand-copy,
+  html body .mp-mobile-topbar-unified-v3 .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    max-width:none!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    translate:none!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+
+  html body .mp-mobile-top-header .mp-mobile-brand-lines,
+  html body .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:var(--mp-topbar-slogan-size)!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    white-space:normal!important;
+  }
+
+  html body .mp-mobile-top-header .mp-mobile-brand-name,
+  html body .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:var(--mp-topbar-name-size)!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.06em!important;
+    white-space:nowrap!important;
+  }
+
+  html body .mp-mobile-top-header a:active,
+  html body .mp-mobile-top-header a:focus,
+  html body .mp-mobile-topbar-unified-v3 a:active,
+  html body .mp-mobile-topbar-unified-v3 a:focus,
+  html body .mp-discovery-card:active,
+  html body .mp-discovery-card:focus,
+  html body .meepakker-card:active,
+  html body .meepakker-card:focus{
+    transform:none!important;
+    translate:none!important;
+  }
+}
+@media(max-width:380px){
+  :root{--mp-topbar-height:92px;--mp-topbar-side:40px;--mp-topbar-logo-w:140px;--mp-topbar-logo-h:86px;--mp-topbar-logo-overlap:-25px;--mp-topbar-slogan-size:15px;--mp-topbar-name-size:24px;}
+}

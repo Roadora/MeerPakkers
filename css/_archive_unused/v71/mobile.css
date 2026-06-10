@@ -1,0 +1,225 @@
+
+/* MeerPakkers Mobile UX v1
+   Desktop blijft leidend. Onder 768px krijgt mobiel een eigen volgorde:
+   Hero -> categorieën/deals -> filters compacter -> uitleg onderaan.
+*/
+
+@media (max-width: 768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .site-header,
+  .topbar,
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+
+  .container,
+  .page-shell,
+  .home-shell,
+  .category-container,
+  main{
+    width:100%;
+    max-width:100%;
+  }
+
+  /* HOMEPAGE: deals vóór info-blokken */
+  .home-layout,
+  .homepage-grid,
+  .content-grid{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:18px!important;
+  }
+
+  .home-main,
+  .deals-column,
+  .main-column,
+  .home-center{
+    order:1!important;
+    width:100%!important;
+  }
+
+  .home-left,
+  .left-column,
+  .info-column,
+  .filter-panel{
+    order:2!important;
+    width:100%!important;
+  }
+
+  .home-right,
+  .right-column,
+  .sidebar,
+  .home-sidebar{
+    order:3!important;
+    width:100%!important;
+  }
+
+  /* Linker infoblokken op homepage compacter onder deals */
+  .side-card,
+  .info-card,
+  .filter-panel > div{
+    border-radius:20px;
+  }
+
+  /* CATEGORIEPAGINA: geen desktopkolommen op mobiel */
+  .category-layout{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:18px!important;
+    grid-template-columns:1fr!important;
+  }
+
+  .category-main,
+  .category-deals,
+  .deal-results{
+    order:1!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+
+  .category-filters,
+  .category-filter,
+  .filters-panel,
+  .filter-sidebar{
+    order:2!important;
+    width:100%!important;
+    max-height:none!important;
+    position:relative!important;
+    top:auto!important;
+  }
+
+  .category-right{
+    display:none!important;
+  }
+
+  /* Categorie hero rustig en compact */
+  .category-hero{
+    margin:16px 14px 18px!important;
+    padding:24px 20px!important;
+    border-radius:24px!important;
+  }
+
+  .category-hero h1{
+    font-size:clamp(34px, 9vw, 46px)!important;
+    line-height:0.98!important;
+  }
+
+  .category-hero p{
+    font-size:16px!important;
+    line-height:1.45!important;
+    max-width:100%!important;
+  }
+
+  .category-benefit-line{
+    display:none!important;
+  }
+
+  /* Filterkolom mobiel minder dominant */
+  .category-filters,
+  .filters-panel,
+  .filter-sidebar{
+    border-radius:22px!important;
+    margin:0 14px 8px!important;
+    padding:18px!important;
+  }
+
+  /* Deals full width en sneller zichtbaar */
+  .category-main,
+  .home-main,
+  .home-center{
+    padding-left:14px!important;
+    padding-right:14px!important;
+  }
+
+  .deal-card,
+  .deal-row,
+  .featured-card{
+    border-radius:20px!important;
+  }
+
+  /* Homepage hero compact houden op mobiel */
+  .hero,
+  .home-hero{
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+
+  .hero h1,
+  .home-hero h1{
+    font-size:clamp(42px, 11vw, 58px)!important;
+    line-height:.98!important;
+  }
+
+  /* Navigatie/categorie-chips mogen horizontaal scrollen */
+  .category-tabs,
+  .category-nav,
+  .quick-categories,
+  .home-categories{
+    display:flex!important;
+    overflow-x:auto!important;
+    gap:10px!important;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .category-tabs::-webkit-scrollbar,
+  .category-nav::-webkit-scrollbar,
+  .quick-categories::-webkit-scrollbar,
+  .home-categories::-webkit-scrollbar{
+    display:none;
+  }
+
+  .category-tabs a,
+  .category-nav a,
+  .quick-categories a,
+  .home-categories a{
+    flex:0 0 auto;
+  }
+}
+
+
+/* Mobile Mockup Direction v1 */
+@media (max-width:768px){
+
+  /* Hide desktop category showcase cards on homepage */
+  .category-showcase,
+  .best-category-deals,
+  .homepage-category-cards{
+    display:none!important;
+  }
+
+  /* Mobile category chips directly under hero */
+  .mobile-category-strip{
+    display:flex!important;
+    gap:10px;
+    overflow-x:auto;
+    padding:0 24px 18px;
+  }
+
+  .mobile-category-chip{
+    flex:0 0 auto;
+    padding:12px 16px;
+    border:1px solid #d9ccb6;
+    border-radius:999px;
+    background:#fffaf2;
+    font-weight:700;
+  }
+
+  .mobile-filter-cta{
+    display:block!important;
+    margin:0 24px 18px;
+    padding:14px 18px;
+    border-radius:18px;
+    border:1px solid #d9ccb6;
+    background:#fffaf2;
+    font-weight:700;
+    width:max-content;
+  }
+}
+

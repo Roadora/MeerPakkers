@@ -1,0 +1,254 @@
+/* MeerPakkers Mobile Topbar - Category Shell Source v13
+   This file is the only active topbar contract for mobile pages.
+   Providers, Kies je Meepakker, provider detail, saved deals, deal detail and
+   category pages all use the same .mp-mobile-top-header component.
+   Removed: old v9/v10/v12 absolute/viewport positioning and page-specific topbar hacks.
+*/
+@media(max-width:760px){
+  :root{
+    --mp-topbar-height:92px;
+    --mp-topbar-side:40px;
+    --mp-topbar-gap:8px;
+    --mp-topbar-logo-w:140px;
+    --mp-topbar-logo-h:86px;
+    --mp-topbar-logo-overlap:-25px;
+    --mp-topbar-slogan-size:15px;
+    --mp-topbar-name-size:24px;
+    --mp-topbar-green:#06483d;
+    --mp-topbar-gold:#c9952d;
+    --mp-topbar-card:#fffdf8;
+    --mp-topbar-border:#ded0b9;
+  }
+
+  .mp-mobile-top-header,
+  .mp-mobile-topbar-unified-v3{
+    display:grid!important;
+    grid-template-columns:var(--mp-topbar-side) minmax(0,1fr) var(--mp-topbar-side)!important;
+    align-items:center!important;
+    gap:var(--mp-topbar-gap)!important;
+    width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+    transform:none!important;
+  }
+
+  .mp-mobile-top-header > .mp-mobile-back,
+  .mp-mobile-top-header > .mp-mobile-heart-link,
+  .mp-mobile-top-header > .mp-mobile-heart-button,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-back,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    align-self:center!important;
+    width:var(--mp-topbar-side)!important;
+    height:var(--mp-topbar-side)!important;
+    min-width:var(--mp-topbar-side)!important;
+    min-height:var(--mp-topbar-side)!important;
+    max-width:var(--mp-topbar-side)!important;
+    max-height:var(--mp-topbar-side)!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    box-sizing:border-box!important;
+    transform:none!important;
+    background:var(--mp-fw-card,var(--mp-topbar-card))!important;
+    border:1px solid var(--mp-fw-border,var(--mp-topbar-border))!important;
+    color:var(--mp-fw-green,var(--mp-topbar-green))!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    position:relative!important;
+    top:auto!important;
+    left:auto!important;
+    right:auto!important;
+    bottom:auto!important;
+    z-index:2!important;
+  }
+
+  .mp-mobile-top-header > .mp-mobile-back,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:22px!important;
+    line-height:1!important;
+    font-weight:700!important;
+  }
+
+  .mp-mobile-top-header > .mp-mobile-heart-link,
+  .mp-mobile-top-header > .mp-mobile-heart-button,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:0!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lockup,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0!important;
+    padding:0!important;
+    gap:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    color:inherit!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    position:static!important;
+    left:auto!important;
+    right:auto!important;
+    top:auto!important;
+    bottom:auto!important;
+    pointer-events:auto!important;
+    z-index:1!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-logo,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-logo{
+    display:block!important;
+    width:var(--mp-topbar-logo-w)!important;
+    height:var(--mp-topbar-logo-h)!important;
+    min-width:var(--mp-topbar-logo-w)!important;
+    max-width:var(--mp-topbar-logo-w)!important;
+    flex:0 0 var(--mp-topbar-logo-w)!important;
+    margin:0 var(--mp-topbar-logo-overlap) 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    background-color:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-copy,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    max-width:none!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lines,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lines{
+    display:block!important;
+    color:var(--mp-topbar-gold)!important;
+    font-size:var(--mp-topbar-slogan-size)!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    white-space:normal!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-name,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:var(--mp-fw-green,var(--mp-topbar-green))!important;
+    font-size:var(--mp-topbar-name-size)!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  .mp-mobile-top-header .mp-heart-icon,
+  .mp-mobile-topbar-unified-v3 .mp-heart-icon{
+    width:18px!important;
+    height:18px!important;
+    display:block!important;
+    fill:none!important;
+    stroke:currentColor!important;
+    stroke-width:2.25!important;
+    stroke-linecap:round!important;
+    stroke-linejoin:round!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-heart-link.has-saved .mp-heart-icon,
+  .mp-mobile-top-header .mp-mobile-heart-button.has-saved .mp-heart-icon,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-heart-link.has-saved .mp-heart-icon,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-heart-button.has-saved .mp-heart-icon{
+    fill:currentColor!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-heart-count,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:var(--mp-topbar-gold)!important;
+    color:#fff!important;
+    font-size:10px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    box-shadow:0 6px 12px rgba(42,31,18,.14)!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-brand-mini{display:none!important;}
+}
+
+@media(max-width:380px){
+  .mp-mobile-top-header,
+  .mp-mobile-topbar-unified-v3{
+    grid-template-columns:40px minmax(0,1fr) 40px!important;
+    gap:8px!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin-bottom:18px!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-logo,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-logo{
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lines,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lines{font-size:15px!important;}
+  .mp-mobile-top-header .mp-mobile-brand-name,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{font-size:24px!important;}
+}

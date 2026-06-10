@@ -1,0 +1,174 @@
+/* MeerPakkers Mobile Topbar Final Lock v11
+   Fixes provider-card -> provider-detail logo jump.
+   The brand is now anchored to the header itself, not to page-specific shell/grid math.
+   Applies to all mobile topbars with one fixed geometry.
+*/
+@media(max-width:760px){
+  .mp-mobile-top-header,
+  .mp-mobile-topbar-unified-v3{
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header > .mp-mobile-back,
+  .mp-mobile-top-header > .mp-mobile-heart-link,
+  .mp-mobile-top-header > .mp-mobile-heart-button,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-back,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{
+    position:absolute!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    z-index:3!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    max-width:40px!important;
+    max-height:40px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header > .mp-mobile-back,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-back{left:0!important;}
+
+  .mp-mobile-top-header > .mp-mobile-heart-link,
+  .mp-mobile-top-header > .mp-mobile-heart-button,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{right:0!important;}
+
+  .mp-mobile-top-header .mp-mobile-brand-lockup,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lockup,
+  body.mp-provider-detail-page .mp-provider-detail-shell > .mp-mobile-top-header .mp-mobile-brand-lockup,
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework .mp-mobile-brand-lockup{
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    z-index:2!important;
+    width:250px!important;
+    min-width:250px!important;
+    max-width:250px!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:0!important;
+    margin:0!important;
+    padding:0!important;
+    transform:translate(-50%,-50%)!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    text-decoration:none!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-logo,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-logo,
+  body.mp-provider-detail-page .mp-provider-detail-shell > .mp-mobile-top-header .mp-mobile-brand-logo,
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework .mp-mobile-brand-logo{
+    display:block!important;
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    background-color:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-copy,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-copy{
+    display:block!important;
+    flex:0 0 auto!important;
+    min-width:92px!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lines,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:15px!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    white-space:normal!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-name,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:24px!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media(max-width:380px){
+  .mp-mobile-top-header,
+  .mp-mobile-topbar-unified-v3{
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin-bottom:18px!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lockup,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lockup{
+    width:250px!important;
+    min-width:250px!important;
+    max-width:250px!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-logo,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-logo{
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+  }
+
+  .mp-mobile-top-header .mp-mobile-brand-lines,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-lines{font-size:15px!important;}
+  .mp-mobile-top-header .mp-mobile-brand-name,
+  .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{font-size:24px!important;}
+}

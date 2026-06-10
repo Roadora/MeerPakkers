@@ -1,0 +1,116 @@
+/* MeerPakkers Saved Deals v43 */
+.mp-saved-home-link{
+  display:none;
+}
+
+.mp-save-deal-btn{
+  border:1px solid rgba(6,72,61,.18);
+  background:#fffdf8;
+  color:#06483d;
+  border-radius:999px;
+  min-height:38px;
+  padding:0 13px;
+  font-weight:900;
+  font-size:13px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.mp-save-deal-btn.is-saved{
+  background:#eaf4ec;
+  border-color:rgba(6,72,61,.28);
+}
+
+.mp-saved-empty{
+  border:1px solid rgba(6,72,61,.14);
+  background:#fffdf8;
+  border-radius:22px;
+  padding:20px;
+  color:#06483d;
+  box-shadow:0 16px 36px rgba(6,72,61,.07);
+}
+
+.mp-saved-empty strong,
+.mp-saved-empty span,
+.mp-saved-empty a{
+  display:block;
+}
+
+.mp-saved-empty strong{font-size:19px;margin-bottom:6px;}
+.mp-saved-empty span{color:#746b61;line-height:1.45;margin-bottom:14px;}
+.mp-saved-empty a{color:#06483d;font-weight:900;text-decoration:none;}
+
+@media(max-width:768px){
+  body:not(.mp-legal-page):not(.mp-saved-page) > *:not(.mp-clean-mobile-home):not(.mp-legal-footer):not(.mp-cookie-banner):not(script):not(style){
+    display:none!important;
+  }
+
+  .mp-saved-home-link{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin:0 0 18px;
+    min-height:46px;
+    padding:0 15px;
+    border:1px solid rgba(6,72,61,.15);
+    border-radius:18px;
+    background:rgba(255,253,248,.72);
+    color:#06483d;
+    text-decoration:none;
+    box-shadow:0 10px 24px rgba(6,72,61,.045);
+  }
+
+  .mp-saved-home-link span{font-size:18px;}
+  .mp-saved-home-link strong{font-size:14px;font-weight:950;flex:1;}
+  .mp-saved-home-link em{
+    min-width:26px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+    background:#eaf4ec;
+    color:#06483d;
+    font-style:normal;
+    font-size:12px;
+    font-weight:950;
+  }
+
+  .mp-clean-card-bottom{
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:8px!important;
+  }
+
+  .mp-clean-card-bottom > div{
+    grid-column:1 / -1;
+  }
+
+  .mp-clean-card-bottom a,
+  .mp-save-deal-btn{
+    width:100%;
+    min-height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+  }
+
+  body.mp-saved-page{
+    background:#f6efe4!important;
+    color:#06483d;
+  }
+
+  body.mp-saved-page .mp-legal-shell{
+    padding:18px 16px 26px;
+  }
+
+  body.mp-saved-page .mp-legal-card{
+    padding:0;
+    border:0;
+    background:transparent;
+    box-shadow:none;
+  }
+}
+

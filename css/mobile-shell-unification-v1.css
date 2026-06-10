@@ -1,0 +1,76 @@
+/* MeerPakkers Mobile Shell Unification v1
+   Providers, provider-detail and Kies je Meepakker now use the same mobile shell rhythm as category pages.
+   Cards/dealdata/JS are untouched.
+*/
+@media(max-width:760px){
+  body.mp-provider-discovery-page .provider-discovery-shell,
+  body.mp-meepakker-page .meepakker-page-shell,
+  body.mp-provider-detail-page .mp-provider-detail-shell{
+    background:radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%)!important;
+    color:var(--mp-fw-green,#06483d)!important;
+    padding:18px 16px 32px!important;
+    margin:0!important;
+    min-height:100vh!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-hero.mp-mobile-framework,
+  body.mp-meepakker-page .meepakker-hero.mp-mobile-framework,
+  body.mp-provider-detail-page .provider-hero{
+    display:block!important;
+    padding:0!important;
+    margin:0 0 14px!important;
+    background:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    min-height:0!important;
+    overflow:visible!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-hero.mp-mobile-framework > .mp-mobile-top-header,
+  body.mp-meepakker-page .meepakker-hero.mp-mobile-framework > .mp-mobile-top-header,
+  body.mp-provider-detail-page .mp-provider-detail-shell > .mp-mobile-top-header{
+    margin:0 0 18px!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-hero .mp-mobile-intro,
+  body.mp-meepakker-page .meepakker-hero .mp-mobile-intro,
+  body.mp-provider-detail-page .provider-hero.mp-mobile-intro{
+    margin:0 0 16px!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    min-height:0!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero h1,
+  body.mp-provider-detail-page .provider-hero .mp-mobile-intro__title{
+    font-family:Georgia,serif!important;
+    font-size:34px!important;
+    line-height:.96!important;
+    letter-spacing:-.055em!important;
+    margin:0 0 10px!important;
+    color:var(--mp-fw-green,#06483d)!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero p,
+  body.mp-provider-detail-page .provider-hero .mp-mobile-intro__subtitle{
+    margin:0!important;
+    color:var(--mp-fw-muted,#756d62)!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:800!important;
+    max-width:none!important;
+  }
+
+  body.mp-provider-detail-page .provider-logo-large{
+    display:none!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-categories,
+  body.mp-meepakker-page .meepakker-grid{
+    margin-top:0!important;
+  }
+}

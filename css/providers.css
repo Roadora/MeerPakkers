@@ -1,0 +1,140 @@
+.provider-section{max-width:var(--mp-width);margin:28px auto 0;padding:0 54px 32px}.provider-trust{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:20px;align-items:center;background:rgba(255,255,255,.55);border-top:1px solid var(--mp-border);border-bottom:1px solid var(--mp-border);padding:28px 0}.provider-trust strong{display:block;color:var(--mp-green)}.provider-trust span{color:var(--mp-muted)}.provider-grid{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}.provider-logo{font-weight:900}.provider-logo span{font-size:20px;margin-right:6px}@media(max-width:850px){.provider-section{padding:0 18px}.provider-trust{grid-template-columns:1fr;text-align:center}}
+
+
+/* Providers mobile topbar cleanup */
+@media (max-width: 760px){
+  .providers-page .provider-discovery-search,
+  .providers-page .provider-search,
+  .provider-discovery-search,
+  .provider-search{
+    display:none !important;
+  }
+
+  .providers-page .provider-back,
+  .providers-page .providers-back,
+  .providers-page .back-link,
+  .providers-page .page-back,
+  body.providers-page .back-link{
+    display:inline-flex !important;
+    align-items:center !important;
+    gap:8px !important;
+    color:#073f37 !important;
+    font-weight:800 !important;
+    text-decoration:none !important;
+    font-size:15px !important;
+    line-height:1 !important;
+    margin:0 0 12px !important;
+  }
+
+  .providers-page .provider-back span:last-child,
+  .providers-page .providers-back span:last-child,
+  .providers-page .back-link span:last-child,
+  .providers-page .page-back span:last-child{
+    font-weight:800 !important;
+  }
+}
+
+
+/* Providers Discovery Flow v5 clean mobile */
+.provider-discovery-search,
+.provider-search,
+#providerSearch{
+  display:none !important;
+}
+
+.provider-native-topbar,
+.provider-back-home{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#083f36;
+  font-size:15px;
+  font-weight:800;
+  line-height:1;
+  text-decoration:none;
+  margin:0 0 12px;
+}
+
+.provider-discovery-hero{
+  padding-bottom:10px;
+}
+
+.provider-discovery-hero .provider-kicker,
+.provider-discovery-hero h1{
+  display:none !important;
+}
+
+.provider-discovery-intro{
+  margin:4px 0 0;
+  color:#6f6252;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.provider-discovery-categories{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0,1fr));
+  gap:8px;
+  margin:10px 0 14px;
+}
+
+.provider-discovery-category{
+  min-height:64px;
+  padding:9px 6px;
+  border-radius:17px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  text-align:center;
+}
+
+.provider-discovery-category .provider-category-icon{
+  font-size:18px;
+  line-height:1;
+}
+
+.provider-discovery-category strong{
+  display:block;
+  font-size:11.5px;
+  line-height:1.05;
+}
+
+.provider-discovery-category small{
+  display:block;
+  font-size:9.5px;
+  line-height:1.05;
+  opacity:.72;
+  margin-top:2px;
+}
+
+.provider-discovery-results[hidden]{
+  display:none !important;
+}
+
+.provider-results-head{
+  margin-top:8px;
+}
+
+/* Provider cards are owned by discovery-card-component-v1.css. */
+
+
+
+/* Providers v6 polish */
+.provider-discovery-intro{display:none!important;}
+
+.provider-discovery-categories{
+  margin-top:18px!important;
+}
+
+.provider-discovery-category{
+  min-height:76px!important;
+  border-radius:18px!important;
+}
+
+.provider-discovery-category strong{
+  font-size:12.5px!important;
+}
+
+/* Providers grid v1 removed: active provider CSS lives in provider-pages.css */

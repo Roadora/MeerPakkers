@@ -1,0 +1,161 @@
+/* MeerPakkers Featured Card Component v1
+   Locked component voor de 4 kaarten onder "Beste deals per categorie".
+   Doel: premium highlight-cards, geen volledige vergelijkingscards.
+*/
+
+@media (min-width:901px){
+  .mp-featured-highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:14px;
+    margin-bottom:16px;
+  }
+
+  .mp-featured-highlight-card{
+    position:relative;
+    min-height:245px;
+    border-radius:22px;
+    padding:20px 20px 18px;
+    background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%);
+    border:1px solid rgba(192,173,142,.72);
+    box-shadow:0 18px 38px rgba(6,72,61,.075);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow:hidden;
+  }
+
+  .mp-featured-highlight-card .category-winner-provider{
+    margin:0 42px 6px 0;
+    color:var(--green,#06483d);
+    font-size:25px;
+    line-height:1.02;
+    font-weight:950;
+    letter-spacing:-.35px;
+  }
+
+  .mp-featured-highlight-card .category-winner-title{
+    margin:0 0 16px;
+    color:#111;
+    font-size:16px;
+    line-height:1.22;
+    font-weight:850;
+  }
+
+  .mp-featured-highlight-card .category-winner-benefits{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:0;
+  }
+
+  .mp-featured-highlight-card .category-winner-benefits span{
+    display:inline-flex;
+    align-items:center;
+    max-width:100%;
+    border-radius:999px;
+    background:#eaf4ec;
+    color:var(--green,#06483d);
+    padding:8px 10px;
+    font-size:12.5px;
+    line-height:1.1;
+    font-weight:900;
+  }
+
+  .mp-featured-highlight-card .category-winner-footer{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:12px;
+    margin-top:18px;
+  }
+
+  .mp-featured-highlight-card .category-winner-value small{
+    display:block;
+    color:var(--muted,#746b61);
+    font-size:12px;
+    line-height:1.05;
+    font-weight:900;
+    margin-bottom:5px;
+  }
+
+  .mp-featured-highlight-card .category-winner-value strong{
+    display:block;
+    color:var(--green,#06483d);
+    font-size:32px;
+    line-height:.92;
+    font-weight:950;
+    letter-spacing:-.8px;
+  }
+
+  .mp-featured-highlight-card a{
+    flex:0 0 auto;
+    height:44px;
+    min-width:122px;
+    padding:0 16px;
+    margin:0;
+    border-radius:14px;
+    background:var(--green,#06483d);
+    color:white;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:950;
+    box-shadow:0 10px 22px rgba(6,72,61,.18);
+    white-space:nowrap;
+  }
+
+  .mp-featured-highlight-card .category-winner-top,
+  .mp-featured-highlight-card .category-winner-label,
+  .mp-featured-highlight-card .category-winner-rank{
+    display:none!important;
+  }
+
+  .mp-featured-heart{
+    position:absolute;
+    top:12px;
+    right:12px;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:1px solid #d9cfbe;
+    background:#fffdf8;
+    color:var(--green,#06483d);
+    cursor:pointer;
+    font-size:18px;
+    line-height:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+  }
+
+  .mp-featured-heart:hover{
+    background:#f8efdf;
+  }
+}
+
+@media (min-width:901px) and (max-width:1280px){
+  .mp-featured-highlight-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+
+/* V20.7 UX Polish: desktop hover/lift for Beste deals per categorie.
+   Alleen desktop; geeft de highlight-cards dezelfde premium interactie als de rest van MeerPakkers. */
+@media (min-width:901px){
+  .mp-featured-highlight-card{
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease !important;
+    will-change:transform;
+  }
+
+  .mp-featured-highlight-card:hover,
+  .mp-featured-highlight-card:focus-within{
+    transform:translateY(-6px) !important;
+    border-color:rgba(201,149,45,.72) !important;
+    box-shadow:0 22px 48px rgba(6,72,61,.12), 0 0 0 1px rgba(201,149,45,.22) !important;
+  }
+}

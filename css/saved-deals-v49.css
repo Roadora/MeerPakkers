@@ -1,0 +1,372 @@
+/* MeerPakkers Saved Deals Page v49 */
+body.mp-saved-page{
+  margin:0;
+  min-height:100vh;
+  background:#f5efe6;
+  color:#143d35;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+.mp-saved-shell{
+  width:min(920px, calc(100% - 32px));
+  margin:0 auto;
+  padding:20px 0 44px;
+}
+
+.mp-saved-header{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding:16px 0 14px;
+}
+
+.mp-saved-back{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  min-height:42px !important;
+  flex:0 0 42px !important;
+  display:block !important;
+  border-radius:16px !important;
+  background-color:rgba(255,253,248,.92) !important;
+  background-image:url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L8 12L15 19' stroke='%2306483d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:20px 20px !important;
+  border:1px solid rgba(222,208,185,.9) !important;
+  box-shadow:0 10px 24px rgba(6,72,61,.08) !important;
+  color:transparent !important;
+  font-size:0 !important;
+  line-height:0 !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+  position:relative !important;
+  transform:none !important;
+  text-decoration:none !important;
+}
+
+.mp-saved-back::before,
+.mp-saved-back::after{
+  content:none !important;
+  display:none !important;
+}
+
+
+.mp-saved-back:active{
+  transform:translateY(1px) !important;
+  box-shadow:0 7px 18px rgba(6,72,61,.07) !important;
+}
+
+.mp-saved-eyebrow{
+  margin:0 0 3px;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:#6f7f76;
+  font-weight:800;
+}
+
+.mp-saved-header h1{
+  margin:0;
+  font-size:clamp(28px, 7vw, 44px);
+  line-height:1.02;
+  letter-spacing:-.04em;
+}
+
+.mp-saved-header p:last-child{
+  margin:8px 0 0;
+  color:#68776f;
+  font-size:15px;
+  line-height:1.45;
+}
+
+.mp-saved-summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 15px;
+  border-radius:22px;
+  background:rgba(255,250,242,.86);
+  box-shadow:0 12px 30px rgba(30,45,38,.08);
+  margin:4px 0 18px;
+}
+
+.mp-saved-summary strong{font-size:15px;}
+.mp-saved-summary span{font-size:13px;color:#6f7f76;text-align:right;}
+
+.mp-saved-list{
+  display:grid;
+  gap:12px;
+}
+
+.mp-saved-card{
+  background:#fffaf2;
+  border:1px solid rgba(20,61,53,.08);
+  border-radius:24px;
+  padding:15px;
+  box-shadow:0 14px 36px rgba(30,45,38,.10);
+}
+
+.mp-saved-card-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.mp-saved-card-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#6f7f76;
+  margin-bottom:5px;
+}
+
+.mp-saved-card h2{
+  margin:0;
+  font-size:18px;
+  line-height:1.16;
+  letter-spacing:-.02em;
+}
+
+.mp-saved-card-provider{
+  color:#123d34;
+  font-weight:900;
+}
+
+.mp-saved-score{
+  min-width:54px;
+  border-radius:16px;
+  padding:8px 9px;
+  text-align:center;
+  background:#123d34;
+  color:#fffaf2;
+  font-weight:900;
+  font-size:14px;
+}
+
+.mp-saved-benefit{
+  margin:0 0 10px;
+  padding:11px 12px;
+  border-radius:17px;
+  background:#f1eadf;
+  color:#263f37;
+  font-size:13px;
+  line-height:1.35;
+}
+
+.mp-saved-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 12px;
+}
+
+.mp-saved-pill{
+  border-radius:999px;
+  padding:7px 9px;
+  background:#edf4ef;
+  color:#26483f;
+  font-size:12px;
+  font-weight:800;
+}
+
+.mp-saved-actions{
+  display:flex;
+  gap:9px;
+  align-items:center;
+}
+
+.mp-saved-actions a,
+.mp-saved-actions button{
+  appearance:none;
+  border:0;
+  border-radius:999px;
+  padding:11px 13px;
+  font:inherit;
+  font-size:13px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.mp-saved-actions a{
+  flex:1;
+  text-align:center;
+  text-decoration:none;
+  background:#123d34;
+  color:#fffaf2;
+}
+
+.mp-saved-actions button{
+  background:#f1e7dc;
+  color:#735348;
+}
+
+.mp-saved-empty{
+  text-align:center;
+  padding:30px 20px;
+  border-radius:28px;
+  background:#fffaf2;
+  box-shadow:0 16px 42px rgba(30,45,38,.08);
+}
+
+.mp-saved-empty strong{
+  display:block;
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.mp-saved-empty p{
+  margin:0 auto 16px;
+  max-width:420px;
+  color:#68776f;
+  line-height:1.45;
+}
+
+.mp-saved-empty a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  border-radius:999px;
+  padding:0 16px;
+  background:#123d34;
+  color:#fffaf2;
+  text-decoration:none;
+  font-weight:900;
+}
+
+@media (max-width:600px){
+  .mp-saved-shell{width:min(430px, calc(100% - 22px));padding-top:12px;}
+  .mp-saved-header{padding-top:10px;}
+  .mp-saved-summary{align-items:flex-start;flex-direction:column;}
+  .mp-saved-summary span{text-align:left;}
+  .mp-saved-card{border-radius:22px;}
+}
+
+/* v57 Saved Deals Card Component Sync
+   Opgeslagen deals gebruiken nu dezelfde MPDealCard component als Home/categorie.
+   Deze CSS beperkt zich tot de pagina-shell en de extra Verwijder-actie.
+*/
+.mp-saved-page .mp-saved-list{
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+}
+
+.mp-saved-page .mp-saved-component-card{
+  width:100%;
+  box-sizing:border-box;
+}
+
+.mp-saved-page .mp-saved-component-card .mp-clean-rank{
+  display:none;
+}
+
+.mp-saved-page .mp-saved-component-card .mp-clean-card-head{
+  padding-right:0;
+}
+
+.mp-saved-page .mp-saved-component-card .mp-clean-card-bottom{
+  gap:12px!important;
+}
+
+.mp-saved-page .mp-saved-remove-btn{
+  appearance:none!important;
+  flex:0 0 106px!important;
+  width:106px!important;
+  min-width:106px!important;
+  min-height:43px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:14px!important;
+  padding:13px 12px!important;
+  box-sizing:border-box!important;
+  border:1px solid rgba(192,173,142,.72)!important;
+  background:#f4ecdd!important;
+  color:#6d5547!important;
+  font:inherit!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:950!important;
+  box-shadow:0 10px 22px rgba(6,72,61,.06)!important;
+  cursor:pointer!important;
+  white-space:nowrap!important;
+}
+
+.mp-saved-page .mp-saved-remove-btn:active{
+  transform:translateY(1px);
+}
+
+.mp-saved-page .mp-saved-component-card .mp-clean-card-bottom a{
+  flex:0 0 106px!important;
+  width:106px!important;
+  min-width:106px!important;
+  min-height:43px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:13px 12px!important;
+  box-sizing:border-box!important;
+}
+
+@media(max-width:390px){
+  .mp-saved-page .mp-saved-remove-btn,
+  .mp-saved-page .mp-saved-component-card .mp-clean-card-bottom a{
+    flex-basis:104px!important;
+    width:104px!important;
+    min-width:104px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+    font-size:13px!important;
+  }
+}
+
+
+
+/* Saved Deals Header Geometry Sync v1 */
+@media (max-width: 768px){
+  body.mp-saved-page .mp-saved-shell{
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 18px 16px 32px !important;
+    box-sizing: border-box !important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header{
+    display: grid !important;
+    grid-template-columns: 40px minmax(0,1fr) 40px !important;
+    align-items: center !important;
+    gap: 8px !important;
+    height: 92px !important;
+    min-height: 92px !important;
+    max-height: 92px !important;
+    margin: 0 0 18px !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.mp-saved-page .mp-saved-header.mp-mobile-intro{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 380px){
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header{
+    grid-template-columns: 38px minmax(0,1fr) 38px !important;
+    gap: 6px !important;
+    height: 86px !important;
+    min-height: 86px !important;
+    max-height: 86px !important;
+    margin-bottom: 16px !important;
+  }
+}

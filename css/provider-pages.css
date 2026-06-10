@@ -1,0 +1,717 @@
+
+.provider-page-shell{max-width:1780px;margin:0 auto;padding:26px 34px 40px}
+.provider-hero{background:linear-gradient(135deg,#fffdf8,#f4ead8);border:1px solid var(--border);border-radius:24px;padding:28px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 280px;gap:22px;align-items:center}
+.provider-hero h1{font-family:Georgia,serif;color:var(--green);font-size:46px;line-height:1.04;margin:0 0 10px}
+.provider-hero p{color:var(--muted);font-size:18px;margin:0;max-width:820px}
+.provider-logo-large{height:150px;border-radius:24px;background:var(--green);color:white;display:grid;place-items:center;font-size:56px;font-weight:900}
+.provider-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.provider-meta span{background:white;border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:800;color:var(--green)}
+.provider-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;margin-top:22px}
+.provider-sidebar{background:white;border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:var(--shadow);height:max-content;position:sticky;top:88px}
+.provider-sidebar h2{color:var(--green);font-size:20px;margin:0 0 12px}
+.provider-sidebar a{display:block;padding:10px 0;border-top:1px solid var(--border);font-weight:800;color:var(--green)}
+.provider-deals h2{margin:0 0 12px;color:var(--green)}
+.provider-seo-block{margin-top:22px;background:white;border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.provider-seo-block h2{color:var(--green);margin-top:0}
+.provider-overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}
+.provider-overview-card{background:white;border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.provider-overview-card h2{margin:0 0 8px;color:var(--green)}
+.provider-overview-card p{color:var(--muted);min-height:44px}
+.provider-overview-card a{display:inline-flex;margin-top:10px;background:var(--green);color:white;border-radius:12px;padding:11px 14px;font-weight:900}
+@media(max-width:1050px){.provider-hero{grid-template-columns:1fr}.provider-logo-large{height:110px}.provider-layout{grid-template-columns:1fr}.provider-sidebar{position:static}.provider-overview-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.provider-page-shell{padding:18px 16px}.provider-hero h1{font-size:34px}.provider-overview-grid{grid-template-columns:1fr}}
+
+
+/* v72 SEO Content Foundation */
+.seo-checklist{margin:14px 0 0;padding-left:20px;color:var(--green2);line-height:1.7}
+.seo-checklist li{margin:4px 0}
+.category-faq-block details,.provider-faq-block details{border-top:1px solid var(--border);padding:14px 0}
+.category-faq-block details:first-of-type,.provider-faq-block details:first-of-type{border-top:0}
+.category-faq-block summary,.provider-faq-block summary{cursor:pointer;font-weight:900;color:var(--green)}
+.category-faq-block p,.provider-faq-block p{line-height:1.65}
+
+
+/* Provider DealCard Sync v1
+   Providerdetailpagina's gebruiken nu dezelfde universele DealCard als Home en categoriepagina's.
+   Scope bewust beperkt tot providerpagina's.
+*/
+.provider-deals .mp-provider-card-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:18px;
+  align-items:stretch;
+}
+
+@media(max-width:768px){
+  .provider-deals .mp-provider-card-list{
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+  }
+}
+
+/* Providers Discovery Flow v1
+   Mobile-first provider entry: eerst categorie kiezen, daarna voordeelgerichte providercards.
+*/
+.provider-discovery-shell{
+  max-width:980px;
+  padding-top:18px;
+}
+.provider-discovery-hero{
+  background:linear-gradient(145deg,#fffaf1,#f1e4cf);
+  border:1px solid rgba(60,45,28,.10);
+  border-radius:26px;
+  padding:22px;
+  box-shadow:0 18px 44px rgba(46,34,19,.08);
+}
+.provider-back-home{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-bottom:14px;
+  color:var(--green);
+  font-weight:900;
+  text-decoration:none;
+}
+.provider-kicker{
+  display:block;
+  color:#8a6f42;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.02em;
+  margin-bottom:5px;
+}
+.provider-discovery-hero h1{
+  margin:0 0 7px;
+  color:var(--green);
+  font-family:Georgia,serif;
+  font-size:40px;
+  line-height:1.04;
+}
+.provider-discovery-hero p{
+  margin:0;
+  color:#716456;
+  font-size:16px;
+  line-height:1.45;
+  max-width:620px;
+}
+.provider-discovery-search{
+  margin-top:16px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#fff;
+  border:1px solid rgba(6,72,61,.12);
+  border-radius:18px;
+  padding:12px 14px;
+  box-shadow:0 10px 24px rgba(31,24,15,.06);
+}
+.provider-discovery-search input{
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--green);
+  font:inherit;
+  font-weight:800;
+}
+.provider-discovery-search input::placeholder{color:#9a8b79;font-weight:700}
+.provider-discovery-categories{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:16px;
+}
+.provider-discovery-category{
+  border:1px solid rgba(6,72,61,.11);
+  border-radius:20px;
+  background:#fff;
+  padding:16px;
+  text-align:left;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  cursor:pointer;
+  color:var(--green);
+  box-shadow:0 14px 32px rgba(42,31,18,.06);
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+.provider-discovery-category:hover,
+.provider-discovery-category.is-active{
+  transform:translateY(-2px);
+  border-color:rgba(6,72,61,.22);
+  background:#fbf6ed;
+  box-shadow:0 18px 38px rgba(42,31,18,.10);
+}
+.provider-category-icon{
+  width:42px;
+  height:42px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  background:#f1e5d1;
+  flex:0 0 auto;
+  font-size:21px;
+}
+.provider-discovery-category strong{
+  display:block;
+  font-size:15px;
+  line-height:1.1;
+}
+.provider-discovery-category small{
+  display:block;
+  color:#7d6f60;
+  font-weight:700;
+  margin-top:4px;
+  line-height:1.25;
+}
+.provider-discovery-results{
+  margin-top:20px;
+}
+.provider-results-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:12px;
+}
+.provider-results-head h2{
+  margin:0 0 4px;
+  color:var(--green);
+  font-size:24px;
+  letter-spacing:-.02em;
+}
+.provider-results-head p{
+  margin:0;
+  color:#766a5d;
+  font-weight:700;
+}
+.provider-results-count{
+  white-space:nowrap;
+  color:#8a6f42;
+  background:#f1e5d1;
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:13px;
+  font-weight:900;
+}
+/* Provider cards/list are owned by discovery-card-component-v1.css. */
+.provider-empty-state{
+  grid-column:1/-1;
+  background:#fff;
+  border:1px dashed rgba(6,72,61,.20);
+  border-radius:18px;
+  padding:18px;
+  color:#766a5d;
+  font-weight:800;
+}
+@media(max-width:760px){
+  body.mp-provider-discovery-page{
+    background:#f5eadb;
+  }
+  body.mp-provider-discovery-page .topbar,
+  body.mp-provider-discovery-page .footer{
+    display:none;
+  }
+  .provider-discovery-shell{
+    padding:14px 14px 28px;
+    max-width:430px;
+  }
+  .provider-discovery-hero{
+    padding:18px;
+    border-radius:24px;
+  }
+  .provider-discovery-hero h1{
+    font-size:32px;
+  }
+  .provider-discovery-hero p{
+    font-size:14px;
+  }
+  .provider-discovery-categories{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:12px;
+  }
+  .provider-discovery-category{
+    min-height:68px;
+    padding:12px 13px;
+    border-radius:18px;
+  }
+  .provider-category-icon{
+    width:38px;
+    height:38px;
+    border-radius:14px;
+    font-size:19px;
+  }
+  .provider-results-head{
+    align-items:flex-start;
+  }
+  .provider-results-head h2{
+    font-size:21px;
+  }
+  .provider-results-head p{
+    font-size:13px;
+    line-height:1.35;
+  }
+  /* Provider discovery grid is owned by discovery-card-component-v1.css. */
+}
+
+/* Providers Discovery Flow v2 - simplified mobile provider path */
+.provider-discovery-results[hidden]{display:none!important;}
+.provider-subcategory-nav{
+  display:flex;
+  gap:10px;
+  margin:0 0 12px;
+}
+.provider-subcategory-chip{
+  flex:1;
+  border:1px solid rgba(6,72,61,.12);
+  border-radius:16px;
+  background:#fff;
+  color:var(--green);
+  font-weight:900;
+  padding:12px 14px;
+  box-shadow:0 10px 24px rgba(42,31,18,.06);
+  cursor:pointer;
+}
+.provider-subcategory-chip.is-active{
+  background:#0d4b3f;
+  border-color:#0d4b3f;
+  color:#fffaf1;
+}
+.provider-discovery-search-inline{
+  margin:0 0 14px;
+}
+@media(max-width:760px){
+  .provider-discovery-hero{
+    background:transparent;
+    border:0;
+    box-shadow:none;
+    padding:6px 2px 4px;
+  }
+  .provider-back-home{margin-bottom:12px;}
+  .provider-kicker{font-size:12px;}
+  .provider-discovery-hero h1{font-size:31px;margin-bottom:5px;}
+  .provider-discovery-hero p{max-width:330px;}
+  .provider-discovery-categories{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:7px;
+    margin-top:14px;
+  }
+  .provider-discovery-category{
+    min-height:74px;
+    padding:8px 4px;
+    border-radius:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:7px;
+    text-align:center;
+  }
+  .provider-category-icon{
+    width:30px;
+    height:30px;
+    border-radius:12px;
+    font-size:16px;
+    margin:0 auto;
+  }
+  .provider-discovery-category strong{font-size:11px;line-height:1.05;}
+  .provider-discovery-category small{font-size:9px;line-height:1.1;margin-top:2px;}
+  .provider-subcategory-nav{margin-top:2px;}
+  .provider-subcategory-chip{padding:11px 10px;border-radius:15px;}
+  .provider-discovery-search-inline{padding:10px 12px;border-radius:16px;}
+  .provider-results-count{font-size:12px;padding:7px 9px;}
+}
+
+
+/* Providers Grid v2 active fix
+   This file is actually loaded by /providers/.
+   Mobile gets the compact 2-column provider grid.
+   Desktop keeps the existing provider page styling.
+*/
+@media (max-width: 760px){
+  .mp-provider-discovery-page .provider-discovery-results{
+    display:block;
+    margin-top:10px;
+  }
+
+  .mp-provider-discovery-page .provider-discovery-results[hidden]{
+    display:none !important;
+  }
+
+  .mp-provider-discovery-page .provider-results-head{
+    align-items:flex-end;
+    margin:10px 0 12px;
+  }
+
+  .mp-provider-discovery-page .provider-results-head h2{
+    font-size:20px;
+    margin:0 0 3px;
+  }
+
+  .mp-provider-discovery-page .provider-results-head p{
+    font-size:12.5px;
+    line-height:1.25;
+  }
+
+  .mp-provider-discovery-page .provider-results-count{
+    font-size:11.5px;
+    padding:7px 9px;
+  }
+
+  /* Provider card grid is owned by discovery-card-component-v1.css. */
+
+}
+
+
+
+/* Providers Grid v3 data fix */
+@media (max-width: 760px){
+  .mp-provider-discovery-page .provider-empty-state{
+    grid-column:1/-1;
+    padding:16px;
+    border-radius:18px;
+    background:#fff;
+    color:#6f6252;
+    font-weight:800;
+    text-align:center;
+  }
+}
+
+/* Providers Stable v1 - mobile only */
+@media (max-width: 760px){
+  .mp-provider-discovery-page .provider-discovery-search,
+  .mp-provider-discovery-page .provider-search,
+  .mp-provider-discovery-page #providerSearch{display:none!important;}
+
+  .mp-provider-discovery-page .provider-discovery-hero{padding-bottom:8px!important;}
+  .mp-provider-discovery-page .provider-back-home,
+  .mp-provider-discovery-page .provider-native-topbar{
+    display:inline-flex!important;align-items:center!important;gap:8px!important;margin:0 0 8px!important;
+    color:var(--green)!important;text-decoration:none!important;font-size:15px!important;font-weight:900!important;line-height:1!important;
+  }
+  .mp-provider-discovery-page .provider-kicker,
+  .mp-provider-discovery-page #providersTitle,
+  .mp-provider-discovery-page .provider-discovery-intro{display:none!important;}
+
+  .mp-provider-discovery-page .provider-discovery-categories{
+    display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px!important;margin:14px 0 14px!important;
+  }
+  .mp-provider-discovery-page .provider-discovery-category{
+    min-height:76px!important;padding:9px 5px!important;border-radius:18px!important;display:flex!important;
+    flex-direction:column!important;justify-content:center!important;align-items:center!important;text-align:center!important;gap:5px!important;
+  }
+  .mp-provider-discovery-page .provider-discovery-category.is-active{
+    border-color:rgba(8,63,54,.32)!important;box-shadow:0 12px 30px rgba(8,63,54,.10)!important;
+  }
+  .mp-provider-discovery-page .provider-category-icon{font-size:18px!important;line-height:1!important;}
+  .mp-provider-discovery-page .provider-discovery-category strong{font-size:11.5px!important;line-height:1.05!important;}
+  .mp-provider-discovery-page .provider-discovery-category small{font-size:9.5px!important;line-height:1.05!important;opacity:.72!important;}
+
+  .mp-provider-discovery-page .provider-discovery-results{display:block!important;margin-top:8px!important;}
+  .mp-provider-discovery-page .provider-discovery-results[hidden]{display:none!important;}
+  .mp-provider-discovery-page .provider-results-head{align-items:flex-end!important;margin:10px 0 12px!important;}
+  .mp-provider-discovery-page .provider-results-head h2{font-size:20px!important;margin:0 0 3px!important;}
+  .mp-provider-discovery-page .provider-results-head p{font-size:12.5px!important;line-height:1.25!important;}
+  .mp-provider-discovery-page .provider-results-count{font-size:11.5px!important;padding:7px 9px!important;}
+
+  .mp-provider-discovery-page .provider-empty-state{
+    grid-column:1/-1;padding:16px;border-radius:18px;background:#fff;color:#6f6252;font-weight:800;text-align:center;
+  }
+}
+
+
+
+
+
+/* Provider Discovery Cards Cleanup v1
+   Mobile provider cards now use css/discovery-card-component-v1.css.
+   Old provider-card layout/typography overrides were removed to keep
+   Providers aligned with Kies je Meepakker. */
+
+/* Provider Divider Cleanup v1
+   Providers page keeps the shared intro spacing, but removes the old underline divider on mobile. */
+@media (max-width: 760px){
+  .provider-discovery-hero .mp-mobile-intro{
+    border-bottom:0!important;
+    padding-bottom:0!important;
+    margin-bottom:8px!important;
+  }
+}
+
+/* Provider Detail Modernization v1
+   Mobile-only: provider detail pages use the same MeerPakkers brand header,
+   background and top-section rhythm as Providers/Kies je Meepakker.
+   Desktop header/layout remains untouched. */
+@media (max-width: 760px){
+  body.mp-provider-detail-page{
+    background:#f5eadb!important;
+  }
+
+  body.mp-provider-detail-page > .topbar{
+    display:none!important;
+  }
+
+  body.mp-provider-detail-page .provider-page-shell{
+    max-width:430px!important;
+    margin:0 auto!important;
+    padding:18px 16px 32px!important;
+    background:radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%)!important;
+    color:var(--green)!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero{
+    display:block!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+    padding:2px 0 16px!important;
+    margin:0!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero h1{
+    margin:0 0 8px!important;
+    color:var(--green)!important;
+    font-family:Georgia,serif!important;
+    font-size:34px!important;
+    line-height:1.02!important;
+    letter-spacing:-.035em!important;
+    font-weight:900!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero p{
+    margin:0!important;
+    max-width:35rem!important;
+    color:#746b61!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:700!important;
+  }
+
+  body.mp-provider-detail-page .provider-logo-large{
+    display:none!important;
+  }
+
+  body.mp-provider-detail-page .provider-meta{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:9px!important;
+    margin-top:18px!important;
+  }
+
+  body.mp-provider-detail-page .provider-meta span{
+    border-radius:999px!important;
+    background:#fffdf8!important;
+    border:1px solid rgba(6,72,61,.12)!important;
+    box-shadow:0 8px 18px rgba(6,72,61,.04)!important;
+    padding:8px 13px!important;
+    color:var(--green)!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+
+  body.mp-provider-detail-page .provider-layout{
+    display:block!important;
+    margin-top:16px!important;
+  }
+
+  body.mp-provider-detail-page .provider-sidebar,
+  body.mp-provider-detail-page .provider-seo-block{
+    background:#fffdf8!important;
+    border:1px solid rgba(8,63,54,.10)!important;
+    border-radius:20px!important;
+    box-shadow:0 14px 32px rgba(35,27,17,.075)!important;
+  }
+
+  body.mp-provider-detail-page .provider-sidebar{
+    position:static!important;
+    margin:0 0 16px!important;
+    padding:18px!important;
+  }
+
+  body.mp-provider-detail-page .provider-sidebar h2,
+  body.mp-provider-detail-page .provider-deals h2,
+  body.mp-provider-detail-page .provider-seo-block h2{
+    color:var(--green)!important;
+  }
+}
+
+/* Provider Detail Cleanup v2
+   Remove the old sidebar/info-card layout after provider detail simplification.
+   Provider detail pages now flow directly from intro/chips to deal overview. */
+body.mp-provider-detail-page .provider-layout{
+  display:block;
+  grid-template-columns:none;
+}
+body.mp-provider-detail-page .provider-sidebar{
+  display:none!important;
+}
+@media (max-width:760px){
+  body.mp-provider-detail-page .provider-layout{
+    margin-top:14px!important;
+  }
+  body.mp-provider-detail-page .provider-deals h2{
+    margin-top:0!important;
+  }
+}
+
+/* V19.3d Desktop Provider Discovery Card Restore
+   Audit fix: provider discovery cards had only mobile styles, so on desktop the
+   rendered <a class="mp-discovery-card"> items fell back to inline text.
+   Desktop-only and scoped to /providers/; mobile stays locked. */
+@media (min-width: 761px){
+  body.mp-provider-discovery-page .provider-discovery-list,
+  body.mp-provider-discovery-page .mp-discovery-card-grid{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:14px!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    align-items:stretch!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card{
+    position:relative!important;
+    display:flex!important;
+    min-height:96px!important;
+    padding:18px 18px!important;
+    border-radius:20px!important;
+    background:rgba(255,253,248,.94)!important;
+    border:1px solid rgba(87,70,45,.14)!important;
+    box-shadow:0 14px 32px rgba(68,51,27,.06)!important;
+    color:var(--green)!important;
+    text-decoration:none!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card::after{
+    content:""!important;
+    position:absolute!important;
+    right:-22px!important;
+    bottom:-24px!important;
+    width:88px!important;
+    height:88px!important;
+    border-radius:50%!important;
+    background:rgba(238,226,207,.72)!important;
+    pointer-events:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card-main{
+    position:relative!important;
+    z-index:1!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:7px!important;
+    min-width:0!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    margin:0!important;
+    color:var(--green)!important;
+    font-size:18px!important;
+    line-height:1.08!important;
+    font-weight:950!important;
+    letter-spacing:-.035em!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    margin:0!important;
+    color:#7a6a58!important;
+    font-size:13px!important;
+    line-height:1.15!important;
+    font-weight:850!important;
+    font-style:normal!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    margin-top:auto!important;
+    color:var(--green)!important;
+    font-style:normal!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card:hover,
+  body.mp-provider-discovery-page .mp-discovery-card:focus-visible{
+    transform:translateY(-1px)!important;
+    border-color:rgba(6,72,61,.20)!important;
+    box-shadow:0 18px 38px rgba(68,51,27,.09)!important;
+    outline:none!important;
+  }
+}
+
+/* V20.1 Discovery Container Sync
+   Desktop-only: Providers discovery page uses the same calm premium content width as Home.
+   Mobile shell stays locked through existing max-width mobile rules. */
+@media (min-width:901px){
+  body.mp-provider-discovery-page .provider-page-shell.provider-discovery-shell{
+    max-width:1280px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:34px;
+    padding-right:34px;
+    box-sizing:border-box;
+  }
+}
+
+
+/* Provider detail desktop fix:
+   FAQ-blok niet meer over de volle breedte; op desktop gelijk aan één dealcard-kolom. */
+@media (min-width:1024px){
+  body.mp-provider-detail-page .provider-faq-block,
+  .mp-provider-detail-shell .provider-faq-block{
+    width:calc((100% - 18px) / 2) !important;
+    max-width:calc((100% - 18px) / 2) !important;
+    margin-right:auto !important;
+  }
+}
+
+@media (max-width:1023px){
+  body.mp-provider-detail-page .provider-faq-block,
+  .mp-provider-detail-shell .provider-faq-block{
+    width:100% !important;
+    max-width:100% !important;
+  }
+}
+
+
+/* Livegang fix: Provider FAQ weer volle contentbreedte.
+   De halve FAQ-kaart voelde als een ontbrekende derde dealcard.
+   Desktop: FAQ vult weer de provider-content/hero breedte.
+   Mobiel blijft 100%. */
+@media (min-width:1024px){
+  body.mp-provider-detail-page .provider-faq-block,
+  .mp-provider-detail-shell .provider-faq-block{
+    width:100% !important;
+    max-width:100% !important;
+    margin-right:0 !important;
+  }
+}
+
+
+/* Livegang fix: provider-detail pagina smaller maken zonder card-componenten te wijzigen.
+   De pagina gebruikt nu dezelfde rustige contentbreedte als de provider-overzichtspagina.
+   Cards zelf blijven onaangeraakt; alleen de page shell wordt begrensd. */
+@media (min-width:1024px){
+  body.mp-provider-detail-page .provider-page-shell,
+  .mp-provider-detail-shell{
+    max-width:1280px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    padding-left:34px !important;
+    padding-right:34px !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-provider-detail-page .provider-faq-block,
+  .mp-provider-detail-shell .provider-faq-block{
+    width:100% !important;
+    max-width:100% !important;
+  }
+}

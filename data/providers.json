@@ -1,0 +1,172 @@
+[
+  {
+    "id": "vodafone",
+    "name": "Vodafone",
+    "type": "provider",
+    "categories": [
+      "mobiel",
+      "sim-only"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "kpn",
+    "name": "KPN",
+    "type": "provider",
+    "categories": [
+      "mobiel",
+      "sim-only",
+      "internet-tv"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "odido",
+    "name": "Odido",
+    "type": "provider",
+    "categories": [
+      "mobiel",
+      "sim-only",
+      "internet-tv"
+    ],
+    "priority": 3
+  },
+  {
+    "id": "youfone",
+    "name": "Youfone",
+    "type": "provider",
+    "categories": [
+      "mobiel",
+      "sim-only",
+      "internet-tv"
+    ],
+    "priority": 4
+  },
+  {
+    "id": "ben",
+    "name": "Ben",
+    "type": "provider",
+    "categories": [
+      "sim-only"
+    ],
+    "priority": 5
+  },
+  {
+    "id": "simyo",
+    "name": "Simyo",
+    "type": "provider",
+    "categories": [
+      "sim-only"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "lebara",
+    "name": "Lebara",
+    "type": "provider",
+    "categories": [
+      "sim-only"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "hollandsnieuwe",
+    "name": "hollandsnieuwe",
+    "type": "provider",
+    "categories": [
+      "mobiel",
+      "sim-only"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "ziggo",
+    "name": "Ziggo",
+    "type": "provider",
+    "categories": [
+      "internet-tv"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "delta",
+    "name": "DELTA",
+    "type": "provider",
+    "categories": [
+      "internet-tv"
+    ],
+    "priority": 10
+  },
+  {
+    "id": "budget-thuis",
+    "name": "Budget Thuis",
+    "type": "provider",
+    "categories": [
+      "internet-tv"
+    ],
+    "priority": 11
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "disney-plus",
+    "name": "Disney+",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "viaplay",
+    "name": "Viaplay",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 3
+  },
+  {
+    "id": "hbo-max",
+    "name": "HBO Max",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 4
+  },
+  {
+    "id": "prime-video",
+    "name": "Prime Video",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 5
+  },
+  {
+    "id": "skyshowtime",
+    "name": "SkyShowtime",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "videoland",
+    "name": "Videoland",
+    "type": "streamingdienst",
+    "categories": [
+      "streaming"
+    ],
+    "priority": 7
+  }
+]

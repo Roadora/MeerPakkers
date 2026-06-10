@@ -1,0 +1,299 @@
+/* MeerPakkers Discovery Card Component v1
+   One shared mobile card contract for Providers + Kies je Meepakker.
+   Provider cards now use only mp-discovery-card; legacy provider-card classes are not rendered.
+   It does not touch dealcards.
+*/
+@media(max-width:760px){
+  .mp-discovery-card-grid,
+  .meepakker-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-discovery-card,
+  .meepakker-card{
+    position:relative!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:space-between!important;
+    min-height:112px!important;
+    height:112px!important;
+    padding:14px!important;
+    border-radius:18px!important;
+    background:rgba(255,253,248,.94)!important;
+    border:1px solid rgba(87,70,45,.14)!important;
+    box-shadow:0 10px 26px rgba(68,51,27,.06)!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+    transform:none!important;
+  }
+
+  .mp-discovery-card::after,
+  .meepakker-card::after{
+    content:""!important;
+    position:absolute!important;
+    right:-18px!important;
+    bottom:-18px!important;
+    width:76px!important;
+    height:76px!important;
+    border-radius:50%!important;
+    background:rgba(238,226,207,.74)!important;
+    pointer-events:none!important;
+  }
+
+  .mp-discovery-card-main,
+  .meepakker-card > div{
+    position:relative!important;
+    z-index:1!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:8px!important;
+    min-width:0!important;
+  }
+
+  .mp-discovery-card-icon,
+  .meepakker-icon{
+    width:42px!important;
+    height:42px!important;
+    min-width:42px!important;
+    border-radius:13px!important;
+    background:#f7edcf!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    font-size:20px!important;
+    line-height:1!important;
+  }
+
+  .mp-discovery-card strong,
+  .meepakker-card h3{
+    position:relative!important;
+    z-index:1!important;
+    margin:0!important;
+    color:#06483d!important;
+    font-family:inherit!important;
+    font-size:15.5px!important;
+    line-height:1.08!important;
+    font-weight:950!important;
+    letter-spacing:-.035em!important;
+  }
+
+  .mp-discovery-card small{
+    position:relative!important;
+    z-index:1!important;
+    margin:0!important;
+    color:#7a6a58!important;
+    font-size:12px!important;
+    line-height:1.15!important;
+    font-weight:850!important;
+    font-style:normal!important;
+  }
+
+  .meepakker-card p{
+    display:none!important;
+  }
+
+  .mp-discovery-card em,
+  .meepakker-card span:last-child{
+    position:relative!important;
+    z-index:1!important;
+    display:block!important;
+    margin-top:auto!important;
+    color:#06483d!important;
+    font-style:normal!important;
+    font-size:12px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+
+  .mp-discovery-card:hover,
+  .mp-discovery-card:focus-visible,
+  .meepakker-card:hover,
+  .meepakker-card:focus-visible{
+    transform:none!important;
+    outline:none!important;
+    border-color:rgba(6,72,61,.18)!important;
+  }
+
+  .mp-discovery-card:active,
+  .meepakker-card:active{
+    transform:none!important;
+    translate:none!important;
+  }
+
+  .mp-discovery-card,
+  .meepakker-card{
+    -webkit-tap-highlight-color:transparent!important;
+    touch-action:manipulation!important;
+  }
+
+}
+
+/* V19.7 Providers Desktop Cards Restore
+   Desktop-only: provider discovery cards need their own card contract.
+   Mobile remains locked by the existing max-width:760px rules above.
+*/
+@media (min-width: 761px){
+  body.mp-provider-discovery-page .mp-discovery-card-grid{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:16px!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card{
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    min-height:104px!important;
+    padding:20px!important;
+    border-radius:22px!important;
+    background:rgba(255,253,248,.96)!important;
+    border:1px solid rgba(87,70,45,.14)!important;
+    box-shadow:0 14px 34px rgba(68,51,27,.07)!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+    transform:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card::after{
+    content:""!important;
+    position:absolute!important;
+    right:-22px!important;
+    bottom:-22px!important;
+    width:92px!important;
+    height:92px!important;
+    border-radius:50%!important;
+    background:rgba(238,226,207,.70)!important;
+    pointer-events:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card-main{
+    position:relative!important;
+    z-index:1!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:7px!important;
+    min-width:0!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    display:block!important;
+    margin:0!important;
+    color:#06483d!important;
+    font-family:inherit!important;
+    font-size:22px!important;
+    line-height:1.05!important;
+    font-weight:950!important;
+    letter-spacing:-.035em!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    display:block!important;
+    margin:0!important;
+    color:#7a6a58!important;
+    font-size:14px!important;
+    line-height:1.15!important;
+    font-weight:850!important;
+    font-style:normal!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    margin-top:8px!important;
+    padding:10px 14px!important;
+    border-radius:999px!important;
+    background:#0d4b3f!important;
+    color:#fffaf1!important;
+    font-style:normal!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.15)!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card:hover,
+  body.mp-provider-discovery-page .mp-discovery-card:focus-visible{
+    transform:translateY(-2px)!important;
+    border-color:rgba(6,72,61,.20)!important;
+    box-shadow:0 18px 42px rgba(68,51,27,.10)!important;
+    outline:none!important;
+  }
+}
+
+/* V20.4 Providers Card Polish
+   Desktop-only: compact provider cards and let the CTA subtly hook into the bottom-right half circle.
+   Mobile remains locked; provider data/JS remains unchanged.
+*/
+@media (min-width: 761px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    min-height:88px!important;
+    padding:16px 16px!important;
+    border-radius:20px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card::after{
+    right:-24px!important;
+    bottom:-26px!important;
+    width:88px!important;
+    height:88px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card-main{
+    gap:6px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    font-size:21px!important;
+    line-height:1.04!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    font-size:13.5px!important;
+    line-height:1.12!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    margin-top:6px!important;
+    padding:10px 15px!important;
+    min-height:34px!important;
+    border-radius:999px!important;
+    background:#0d4b3f!important;
+    color:#fffaf1!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.15)!important;
+    font-size:0!important;
+    line-height:1!important;
+    font-style:normal!important;
+    font-weight:950!important;
+    transform:translateX(14px)!important;
+    position:relative!important;
+    z-index:2!important;
+    white-space:nowrap!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em::before{
+    content:"Bekijk deals"!important;
+    font-size:13px!important;
+    line-height:1!important;
+  }
+}

@@ -1,0 +1,1647 @@
+
+/* Deal Detail Header CSS Cleanup v5
+   Topbar styling is intentionally handled by mobile-framework-v1.css.
+   This file only styles deal-detail content below the shared header.
+*/
+
+:root{
+  --mp-green:#06483d;
+  --mp-gold:#c9952d;
+  --mp-bg:#f6efe4;
+  --mp-card:#fffdf8;
+  --mp-border:#ded0b9;
+  --mp-muted:#746b61;
+}
+
+html,body{
+  margin:0;
+  background:var(--mp-bg);
+  color:var(--mp-green);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+.mp-detail-page{
+  min-height:100vh;
+  padding:18px 16px 32px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(201,149,45,.12), transparent 34%),
+    linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%);
+}
+
+.mp-detail-header{
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  padding-bottom:16px;
+  border-bottom:1px solid rgba(6,72,61,.16);
+}
+
+.mp-detail-header a{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--mp-card);
+  border:1px solid var(--mp-border);
+  color:var(--mp-green);
+  text-decoration:none;
+  font-weight:950;
+  font-size:22px;
+}
+
+.mp-detail-header p{
+  margin:0 0 2px;
+  color:var(--mp-gold);
+  font-weight:900;
+  text-transform:capitalize;
+}
+
+.mp-detail-header h1{
+  margin:0;
+  font-size:34px;
+  line-height:1;
+  letter-spacing:-.9px;
+}
+
+.mp-detail-hero,
+.mp-detail-card,
+.mp-detail-total{
+  background:var(--mp-card);
+  border:1px solid var(--mp-border);
+  border-radius:24px;
+  box-shadow:0 16px 36px rgba(6,72,61,.075);
+}
+
+.mp-detail-hero{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin:18px 0 13px;
+  padding:17px;
+}
+
+.mp-detail-icon{
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  background:#f2eadb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  flex:0 0 auto;
+}
+
+.mp-detail-hero h2{
+  margin:0 0 5px;
+  font-size:23px;
+  color:#111;
+}
+
+.mp-detail-hero p{
+  margin:0;
+  color:var(--mp-muted);
+  font-weight:650;
+  line-height:1.35;
+}
+
+.mp-detail-total{
+  padding:18px;
+  margin-bottom:13px;
+  background:linear-gradient(135deg,#0b5648,#053b32);
+  color:#fff;
+}
+
+.mp-detail-total small{
+  display:block;
+  color:#f1d99d;
+  font-weight:900;
+  margin-bottom:3px;
+}
+
+.mp-detail-total strong{
+  display:block;
+  font-size:48px;
+  line-height:.95;
+}
+
+.mp-detail-card{
+  padding:17px;
+  margin-bottom:13px;
+}
+
+.mp-detail-card h3{
+  margin:0 0 13px;
+  font-size:21px;
+}
+
+.mp-detail-benefits{
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+
+.mp-detail-benefit{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border:1px solid var(--mp-border);
+  background:#fffaf2;
+  border-radius:17px;
+  padding:12px;
+}
+
+.mp-detail-benefit > span{
+  width:38px;
+  height:38px;
+  border-radius:13px;
+  background:#eaf4ec;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.mp-detail-benefit strong,
+.mp-detail-benefit small{
+  display:block;
+}
+
+.mp-detail-benefit small{
+  color:var(--mp-muted);
+  font-weight:750;
+  margin-top:2px;
+}
+
+.mp-detail-specs div{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+  border-bottom:1px solid rgba(222,208,185,.8);
+}
+
+.mp-detail-specs div:last-child{
+  border-bottom:0;
+}
+
+.mp-detail-specs span{
+  color:var(--mp-muted);
+  font-weight:800;
+}
+
+.mp-provider-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  border-radius:18px;
+  background:var(--mp-green);
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:950;
+  box-shadow:0 12px 26px rgba(6,72,61,.2);
+}
+
+
+.mp-convert-card{
+  background:linear-gradient(135deg,#0b5648,#053b32);
+  color:#fff;
+  border-radius:24px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow:0 18px 40px rgba(6,72,61,.22);
+}
+
+.mp-convert-badge{
+  display:inline-block;
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+  padding:7px 12px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.mp-convert-card h3{
+  margin:0 0 8px;
+  font-size:24px;
+}
+
+.mp-convert-value{
+  font-size:58px;
+  line-height:.9;
+  font-weight:950;
+  color:#f1d99d;
+  margin-bottom:10px;
+}
+
+.mp-convert-card p{
+  margin:0;
+  opacity:.95;
+  font-weight:700;
+}
+
+.mp-provider-cta{
+  position:sticky;
+  bottom:12px;
+  min-height:62px !important;
+  font-size:20px !important;
+  font-weight:950 !important;
+  border-radius:20px !important;
+  box-shadow:0 18px 36px rgba(6,72,61,.28) !important;
+}
+
+
+.mp-detail-advantage{
+  background:linear-gradient(135deg,#0b5648,#053b32);
+  color:#fff;
+}
+.mp-detail-advantage h3{
+  color:#fff;
+}
+.mp-advantage-total{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+.mp-advantage-total small{
+  display:block;
+  color:#f1d99d;
+  font-weight:900;
+}
+.mp-advantage-total strong{
+  display:block;
+  font-size:54px;
+  line-height:.95;
+  color:#f1d99d;
+}
+.mp-detail-product h3{
+  margin:0 0 4px;
+  font-size:30px;
+  color:var(--mp-green);
+}
+.mp-detail-product p{
+  margin:0;
+  font-size:20px;
+  font-weight:800;
+  color:#111;
+}
+
+
+/* Dealpage Layout v3 cleanup */
+.mp-detail-advantage .mp-detail-benefit{
+  background:#fffaf2;
+  color:var(--mp-green);
+}
+
+.mp-detail-advantage .mp-detail-benefit strong{
+  color:var(--mp-green)!important;
+}
+
+.mp-detail-advantage .mp-detail-benefit small{
+  color:var(--mp-muted)!important;
+}
+
+.mp-detail-advantage{
+  margin-top:18px;
+}
+
+
+/* v25 Unified Back Buttons
+   Categoriepagina + dealdetail dezelfde premium terugknop.
+*/
+.mp-back,
+.mp-detail-header > a,
+.mp-detail-header a:first-child{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  min-height:42px !important;
+  flex:0 0 42px !important;
+  display:block !important;
+  border-radius:16px !important;
+  background-color:rgba(255,253,248,.92) !important;
+  background-image:url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L8 12L15 19' stroke='%2306483d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:20px 20px !important;
+  border:1px solid rgba(222,208,185,.9) !important;
+  box-shadow:0 10px 24px rgba(6,72,61,.08) !important;
+  color:transparent !important;
+  font-size:0 !important;
+  line-height:0 !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+  position:relative !important;
+  transform:none !important;
+  text-decoration:none !important;
+}
+
+.mp-back::before,
+.mp-back::after,
+.mp-detail-header > a::before,
+.mp-detail-header > a::after,
+.mp-detail-header a:first-child::before,
+.mp-detail-header a:first-child::after{
+  content:none !important;
+  display:none !important;
+}
+
+
+/* Static Deal Detail Topbar v2 */
+@media(max-width:768px){
+  body.mp-deal-detail-page #mpDealDetail{
+    display:block;
+  }
+  body.mp-deal-detail-page .mp-detail-intro{
+    margin:0 0 18px;
+    padding:0;
+  }
+  body.mp-deal-detail-page .mp-detail-intro p{
+    margin:0 0 2px;
+    color:#b9922e;
+    font-weight:800;
+  }
+  body.mp-deal-detail-page .mp-detail-intro h1{
+    margin:0;
+  }
+}
+
+/* V19.6 Deal Detail Desktop Header Cleanup
+   Desktop only: hide the locked mobile deal-detail topbar when the shared desktop header is active.
+   Mobile remains governed by mobile-topbar-unified-v3/topbar-final-lock-v17. */
+@media (min-width: 769px){
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header,
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-topbar-unified-v3{
+    display:none !important;
+  }
+
+  body.mp-deal-detail-page .mp-detail-page{
+    padding-top:32px;
+  }
+}
+
+
+/* V20.8 Desktop Deal Detail Experiment */
+@media (min-width: 1024px){
+.mp-dd-row1{display:grid;grid-template-columns:1.6fr .8fr;gap:24px;margin:24px 0}
+.mp-dd-row3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mp-dd-card{background:#fffdf8;border:1px solid #ded0b9;border-radius:24px;padding:24px;margin-bottom:24px}
+.mp-dd-meepakker{background:#f6efe4}
+.mp-dd-meepakker strong{display:block;font-size:56px;line-height:1;margin:10px 0;color:#06483d}
+.mp-dd-card h2,.mp-dd-card h3{margin-top:0}
+}
+
+
+/* V20.8.1 - Desktop Deal Detail: Wat krijg je echte cards */
+@media (min-width: 1024px){
+  .mp-dd-benefit-cards{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+    align-items:stretch;
+    margin-top:18px;
+  }
+
+  .mp-dd-benefit-cards > *{
+    min-height:150px;
+    border:1px solid rgba(120,90,45,.18) !important;
+    border-radius:22px !important;
+    background:
+      radial-gradient(circle at 20% 18%, rgba(22,145,132,.10), transparent 36%),
+      linear-gradient(145deg,#fffdf8 0%,#f8f1e7 100%) !important;
+    box-shadow:0 14px 34px rgba(33,27,18,.06);
+    padding:24px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    gap:8px !important;
+  }
+
+  .mp-dd-benefit-cards > *:nth-child(2){
+    background:
+      radial-gradient(circle at 20% 18%, rgba(34,178,107,.13), transparent 36%),
+      linear-gradient(145deg,#fffdf8 0%,#eef8ed 100%) !important;
+  }
+
+  .mp-dd-benefit-cards > *:nth-child(3){
+    background:
+      radial-gradient(circle at 20% 18%, rgba(16,128,150,.13), transparent 36%),
+      linear-gradient(145deg,#fffdf8 0%,#eef7f8 100%) !important;
+  }
+
+  .mp-dd-benefit-cards > * > :first-child,
+  .mp-dd-benefit-cards strong:first-child,
+  .mp-dd-benefit-cards b:first-child{
+    font-size:18px !important;
+    line-height:1.15 !important;
+    color:#0b3f34 !important;
+    font-weight:900 !important;
+  }
+
+  .mp-dd-benefit-cards small,
+  .mp-dd-benefit-cards .muted,
+  .mp-dd-benefit-cards span{
+    color:#0b3f34 !important;
+  }
+
+  .mp-dd-benefit-cards > *::before{
+    content:"🎁";
+    width:46px;
+    height:46px;
+    border-radius:16px;
+    display:grid;
+    place-items:center;
+    background:rgba(255,255,255,.76);
+    box-shadow:inset 0 0 0 1px rgba(120,90,45,.10);
+    font-size:23px;
+    margin-bottom:8px;
+  }
+
+  .mp-dd-benefit-cards > *:nth-child(2)::before{content:"🏷️";}
+  .mp-dd-benefit-cards > *:nth-child(3)::before{content:"💰";}
+
+  .mp-dd-benefit-cards > * > :last-child{
+    align-self:flex-start;
+    margin-top:6px;
+    padding:7px 12px;
+    border-radius:999px;
+    background:rgba(13,90,72,.08);
+    color:#0b4b3e !important;
+    font-weight:800 !important;
+    font-size:13px !important;
+  }
+
+  .mp-dd-row1 .mp-dd-card:first-child{
+    padding:28px;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1250px){
+  .mp-dd-benefit-cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+
+/* V20.8.2 Rebuild benefit cards */
+@media (min-width:1024px){
+  .mp-dd-benefit-cards{
+    display:flex !important;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+
+  .mp-dd-benefit-cards > *{
+    flex:1 1 260px;
+    min-height:220px !important;
+    padding:28px !important;
+    border-radius:24px !important;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .mp-dd-benefit-cards > *::before{
+    position:absolute;
+    top:22px;
+    left:22px;
+    margin:0 !important;
+  }
+
+  .mp-dd-benefit-cards > * > *{
+    position:relative;
+    z-index:2;
+  }
+
+  .mp-dd-benefit-cards > * > :first-child{
+    margin-top:70px !important;
+    display:block;
+    font-size:28px !important;
+    font-weight:900 !important;
+  }
+
+  .mp-dd-benefit-cards > * > :last-child{
+    margin-top:auto !important;
+  }
+
+  .mp-dd-row1{
+    align-items:start;
+  }
+
+  .mp-dd-meepakker strong{
+    font-size:72px !important;
+  }
+}
+
+
+/* V20.9 Desktop Deal Detail Mockup Rebuild - isolated desktop component */
+@media (min-width:1024px){
+  #mpDealDetail{
+    max-width:none;
+  }
+
+  .mp-dd-mockup-shell{
+    width:min(1880px, calc(100vw - 32px));
+    margin:56px auto 80px;
+    color:#0b3f34;
+  }
+
+  .mp-dd-mockup-row--top{
+    display:grid;
+    grid-template-columns:minmax(0, 2fr) minmax(360px, .95fr);
+    gap:28px;
+    align-items:stretch;
+  }
+
+  .mp-dd-mockup-panel{
+    background:rgba(255,253,248,.88);
+    border:1px solid rgba(116,88,45,.22);
+    border-radius:26px;
+    box-shadow:0 20px 48px rgba(34,28,18,.055);
+  }
+
+  .mp-dd-benefits-panel{
+    padding:30px;
+  }
+
+  .mp-dd-benefits-panel h1,
+  .mp-dd-details-section h2,
+  .mp-dd-why-panel h2{
+    margin:0;
+    color:#073f34;
+    letter-spacing:-.03em;
+  }
+
+  .mp-dd-benefits-panel h1{
+    font-size:30px;
+    margin-bottom:24px;
+  }
+
+  .mp-dd-real-benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
+  }
+
+  .mp-dd-real-benefit{
+    min-height:230px;
+    border-radius:24px;
+    padding:26px;
+    border:1px solid rgba(116,88,45,.18);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background:
+      radial-gradient(circle at 20% 18%, rgba(15,91,75,.10), transparent 38%),
+      linear-gradient(145deg,#fffdf8 0%,#f5ecdf 100%);
+    overflow:hidden;
+  }
+
+  .mp-dd-real-benefit--cashback{
+    background:
+      radial-gradient(circle at 20% 18%, rgba(54,166,91,.14), transparent 38%),
+      linear-gradient(145deg,#fffdf8 0%,#edf7ec 100%);
+  }
+
+  .mp-dd-real-benefit--discount{
+    background:
+      radial-gradient(circle at 20% 18%, rgba(184,131,45,.12), transparent 38%),
+      linear-gradient(145deg,#fffdf8 0%,#f6efe4 100%);
+  }
+
+  .mp-dd-real-benefit-icon{
+    width:52px;
+    height:52px;
+    border-radius:18px;
+    display:grid;
+    place-items:center;
+    background:rgba(255,255,255,.84);
+    box-shadow:inset 0 0 0 1px rgba(116,88,45,.10);
+    font-size:25px;
+  }
+
+  .mp-dd-real-benefit h3{
+    margin:0 0 12px;
+    font-size:24px;
+    line-height:1.05;
+    letter-spacing:-.03em;
+    color:#083f34;
+  }
+
+  .mp-dd-real-benefit span{
+    display:inline-flex;
+    align-self:flex-start;
+    padding:8px 12px;
+    border-radius:999px;
+    background:rgba(15,91,75,.09);
+    color:#0b4b3e;
+    font-weight:900;
+  }
+
+  .mp-dd-summary-panel{
+    padding:32px;
+    background:linear-gradient(145deg,#f7eedf 0%,#efe3d1 100%);
+  }
+
+  .mp-dd-eyebrow{
+    margin:0 0 18px;
+    font-size:15px;
+    color:#16483f;
+  }
+
+  .mp-dd-summary-list{
+    display:grid;
+    gap:10px;
+    margin-bottom:22px;
+  }
+
+  .mp-dd-summary-line{
+    display:grid;
+    grid-template-columns:36px 1fr auto;
+    align-items:center;
+    gap:12px;
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(116,88,45,.12);
+    border-radius:18px;
+    padding:13px 14px;
+  }
+
+  .mp-dd-summary-line span{
+    width:36px;
+    height:36px;
+    border-radius:13px;
+    display:grid;
+    place-items:center;
+    background:rgba(15,91,75,.07);
+  }
+
+  .mp-dd-summary-line strong{
+    color:#083f34;
+    font-size:15px;
+  }
+
+  .mp-dd-summary-line em{
+    font-style:normal;
+    color:#5f513f;
+    font-weight:800;
+    font-size:13px;
+  }
+
+  .mp-dd-total-label{
+    margin-top:16px;
+    font-size:18px;
+    font-weight:900;
+    color:#083f34;
+  }
+
+  .mp-dd-total-amount{
+    margin:4px 0 22px;
+    font-size:78px;
+    line-height:.95;
+    font-weight:950;
+    letter-spacing:-.06em;
+    color:#0a5a4b;
+  }
+
+  .mp-dd-primary-cta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:62px;
+    border-radius:18px;
+    background:#104f43;
+    color:#fff;
+    font-size:20px;
+    font-weight:950;
+    text-decoration:none;
+    box-shadow:0 20px 34px rgba(16,79,67,.20);
+  }
+
+  .mp-dd-why-panel{
+    margin-top:28px;
+    padding:32px;
+    display:grid;
+    grid-template-columns:90px minmax(0,1fr) minmax(320px,.9fr);
+    gap:30px;
+    align-items:center;
+    background:linear-gradient(145deg,#fffdf8 0%,#f4eadb 100%);
+  }
+
+  .mp-dd-why-icon{
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#fff;
+    font-size:34px;
+    box-shadow:inset 0 0 0 1px rgba(116,88,45,.10);
+  }
+
+  .mp-dd-why-panel h2{
+    font-size:26px;
+    margin-bottom:12px;
+  }
+
+  .mp-dd-why-panel p{
+    margin:0;
+    max-width:760px;
+    color:#143f37;
+    line-height:1.65;
+  }
+
+  .mp-dd-why-panel ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    gap:12px;
+  }
+
+  .mp-dd-why-panel li{
+    position:relative;
+    padding-left:30px;
+    font-weight:800;
+    color:#123f37;
+  }
+
+  .mp-dd-why-panel li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:-2px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:rgba(15,91,75,.10);
+    color:#0a7e6a;
+    font-weight:950;
+  }
+
+  .mp-dd-details-section{
+    margin-top:28px;
+  }
+
+  .mp-dd-details-section h2{
+    font-size:28px;
+    margin-bottom:18px;
+  }
+
+  .mp-dd-detail-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+  }
+
+  .mp-dd-detail-card{
+    padding:28px;
+    min-height:210px;
+  }
+
+  .mp-dd-detail-icon{
+    display:inline-grid;
+    place-items:center;
+    width:42px;
+    height:42px;
+    border-radius:15px;
+    background:rgba(15,91,75,.07);
+    margin-bottom:16px;
+  }
+
+  .mp-dd-detail-card h3{
+    margin:0 0 18px;
+    color:#083f34;
+  }
+
+  .mp-dd-detail-card strong{
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+    color:#083f34;
+  }
+
+  .mp-dd-detail-card p{
+    margin:8px 0;
+    color:#173f37;
+  }
+
+  .mp-dd-detail-card dl{
+    margin:0;
+    display:grid;
+    gap:12px;
+  }
+
+  .mp-dd-detail-card dl div{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(116,88,45,.13);
+  }
+
+  .mp-dd-detail-card dt{
+    font-weight:900;
+  }
+
+  .mp-dd-detail-card dd{
+    margin:0;
+    text-align:right;
+  }
+
+  /* Hide old experimental desktop components if present */
+  .mp-dd-desktop-shell{
+    display:none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1320px){
+  .mp-dd-mockup-row--top{
+    grid-template-columns:1fr;
+  }
+  .mp-dd-real-benefit-grid,
+  .mp-dd-detail-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .mp-dd-why-panel{
+    grid-template-columns:80px 1fr;
+  }
+  .mp-dd-why-panel ul{
+    grid-column:2;
+  }
+}
+
+@media (max-width:1023px){
+  .mp-dd-mockup-shell{
+    display:block;
+  }
+}
+
+
+/* V20.9.1 - Deal Detail eigen desktop container breedte */
+@media (min-width:1024px){
+  #mpDealDetail{
+    width:100%;
+  }
+
+  .mp-dd-mockup-shell{
+    width:min(1680px, calc(100vw - 48px)) !important;
+    max-width:1680px !important;
+    margin:56px auto 88px !important;
+  }
+
+  .mp-dd-mockup-row--top{
+    grid-template-columns:minmax(0, 1.72fr) minmax(390px, .84fr) !important;
+    gap:28px !important;
+  }
+
+  .mp-dd-real-benefit-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+    gap:18px !important;
+  }
+
+  .mp-dd-real-benefit{
+    min-height:214px !important;
+  }
+
+  .mp-dd-summary-panel{
+    min-height:214px;
+  }
+}
+
+@media (min-width:1440px){
+  .mp-dd-mockup-shell{
+    width:min(1620px, calc(100vw - 56px)) !important;
+  }
+}
+
+@media (min-width:1720px){
+  .mp-dd-mockup-shell{
+    width:min(1680px, calc(100vw - 64px)) !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1240px){
+  .mp-dd-mockup-shell{
+    width:min(1120px, calc(100vw - 32px)) !important;
+  }
+
+  .mp-dd-mockup-row--top{
+    grid-template-columns:1fr !important;
+  }
+
+  .mp-dd-real-benefit-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .mp-dd-detail-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+
+/* V20.9.2 - Mobile detail restore guard */
+@media (max-width:1023px){
+  .mp-dd-mockup-shell{
+    display:none !important;
+  }
+}
+
+
+/* V23 EXACT MOCKUP BUILD - desktop only, mobile locked */
+@media (min-width:1024px){
+  body:has(#mpDealDetail){ background:#fbf4e9; }
+
+  .mp-v23-shell{
+    width:min(1160px, calc(100vw - 48px));
+    margin:32px auto 64px;
+    color:#101820;
+  }
+
+  .mp-v23-top{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:28px;
+    align-items:start;
+  }
+
+  .mp-v23-left h1,
+  .mp-v23-summary h2,
+  .mp-v23-why h2,
+  .mp-v23-details h2,
+  .mp-v23-final h2{
+    color:#101820;
+    letter-spacing:-.04em;
+  }
+
+  .mp-v23-left h1{
+    margin:0 0 24px;
+    font-size:29px;
+    line-height:1;
+  }
+
+  .mp-v23-benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+
+  .mp-v23-benefit-card{
+    height:360px;
+    border-radius:14px;
+    border:1px solid rgba(14,45,39,.10);
+    background:#fff;
+    overflow:hidden;
+    display:grid;
+    grid-template-rows:1fr auto;
+  }
+
+  .mp-v23-benefit-card--gift{ background:linear-gradient(180deg,#fff 0%,#fbf8ff 100%); }
+  .mp-v23-benefit-card--cashback{ background:linear-gradient(180deg,#fff 0%,#f4fff6 100%); }
+  .mp-v23-benefit-card--discount{ background:linear-gradient(180deg,#fff 0%,#fff9ef 100%); }
+  .mp-v23-benefit-card--product{ background:linear-gradient(180deg,#fff 0%,#f4fbff 100%); }
+
+  .mp-v23-benefit-visual{
+    min-height:220px;
+    display:grid;
+    place-items:center;
+    padding:22px;
+  }
+
+  .mp-v23-benefit-copy{
+    padding:0 22px 18px;
+  }
+
+  .mp-v23-benefit-copy h3{
+    margin:0 0 10px;
+    font-size:19px;
+    line-height:1.16;
+    letter-spacing:-.025em;
+    color:#101820;
+  }
+
+  .mp-v23-benefit-copy p{
+    display:inline-flex;
+    margin:0;
+    padding:8px 12px;
+    border-radius:9px;
+    background:rgba(0,139,148,.09);
+    color:#087982;
+    font-size:13px;
+    font-weight:900;
+  }
+
+  .mp-v23-summary{
+    min-height:395px;
+    padding:28px;
+    border-radius:18px;
+    background:linear-gradient(145deg,#fbf1e3 0%,#f1dfc8 100%);
+    border:1px solid rgba(96,72,42,.15);
+  }
+
+  .mp-v23-summary h2{
+    margin:0 0 20px;
+    font-size:24px;
+  }
+
+  .mp-v23-summary-list{
+    display:grid;
+    background:rgba(255,255,255,.78);
+    border-radius:14px;
+    overflow:hidden;
+    margin-bottom:18px;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line{
+    display:grid !important;
+    grid-template-columns:40px 1fr auto !important;
+    gap:12px !important;
+    min-height:62px !important;
+    align-items:center !important;
+    padding:12px 15px !important;
+    border:0 !important;
+    border-bottom:1px solid rgba(16,24,32,.08) !important;
+    background:transparent !important;
+    border-radius:0 !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line:last-child{ border-bottom:0 !important; }
+  .mp-v23-summary .mp-dd-summary-line span{
+    width:36px !important;height:36px !important;border-radius:50% !important;
+    display:grid !important;place-items:center !important;background:rgba(0,139,148,.08) !important;
+  }
+  .mp-v23-summary .mp-dd-summary-line strong{ color:#101820 !important;font-size:15px !important;font-weight:950 !important; }
+  .mp-v23-summary .mp-dd-summary-line em{ font-style:normal !important;color:#514739 !important;font-size:12px !important;font-weight:900 !important; }
+
+  .mp-v23-total span{
+    display:block;
+    margin-bottom:2px;
+    color:#101820;
+    font-size:18px;
+    font-weight:950;
+  }
+
+  .mp-v23-total strong{
+    display:block;
+    margin-bottom:22px;
+    color:#008d95;
+    font-size:64px;
+    line-height:.92;
+    letter-spacing:-.07em;
+  }
+
+  .mp-v23-primary,
+  .mp-v23-final-cta{
+    min-height:56px;
+    border-radius:9px;
+    background:linear-gradient(135deg,#009aa4,#00818b);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-weight:950;
+    box-shadow:0 12px 26px rgba(0,129,139,.22);
+  }
+
+  .mp-v23-primary::after,
+  .mp-v23-final-cta::after{ content:"→"; margin-left:14px; font-size:22px; }
+
+  .mp-v23-secondary,
+  .mp-v23-save{
+    width:100%;
+    min-height:52px;
+    margin-top:12px;
+    border-radius:9px;
+    border:1px solid #00818b;
+    background:#fffdf8;
+    color:#00818b;
+    font:inherit;
+    font-weight:900;
+    cursor:pointer;
+  }
+
+  .mp-v23-why{
+    margin-top:28px;
+    min-height:250px;
+    padding:34px 30px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#fffdf8 0%,#f7ebd9 100%);
+    border:1px solid rgba(96,72,42,.14);
+    display:grid;
+    grid-template-columns:92px 1fr 290px 210px;
+    gap:24px;
+    align-items:center;
+  }
+
+  .mp-v23-why-icon{
+    width:82px;height:82px;border-radius:50%;
+    display:grid;place-items:center;background:#fff;font-size:38px;
+  }
+
+  .mp-v23-why h2{
+    margin:0 0 14px;
+    font-size:25px;
+  }
+
+  .mp-v23-why p{
+    margin:0;
+    color:#1e3c36;
+    line-height:1.62;
+    font-size:14px;
+  }
+
+  .mp-v23-checks{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    gap:13px;
+  }
+
+  .mp-v23-checks li{
+    position:relative;
+    padding-left:34px;
+    font-weight:850;
+    font-size:15px;
+  }
+
+  .mp-v23-checks li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:-3px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:rgba(0,139,148,.12);
+    color:#00818b;
+    display:grid;
+    place-items:center;
+    font-weight:950;
+  }
+
+  .mp-v23-why-visual{
+    height:180px;
+    display:grid;
+    place-items:center;
+    position:relative;
+  }
+
+  .mp-v23-why-main{
+    transform:scale(.72);
+  }
+
+  .mp-v23-why-badge{
+    position:absolute;
+    right:6px;
+    top:16px;
+    padding:9px 12px;
+    border-radius:999px;
+    background:#00818b;
+    color:#fff;
+    font-weight:950;
+  }
+
+  .mp-v23-details{
+    margin-top:32px;
+  }
+
+  .mp-v23-details > h2{
+    margin:0 0 18px;
+    font-size:27px;
+  }
+
+  .mp-v23-detail-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+  }
+
+  .mp-v23-detail-card{
+    min-height:260px;
+    padding:28px;
+    border-radius:14px;
+    background:rgba(255,255,255,.82);
+    border:1px solid rgba(14,45,39,.10);
+  }
+
+  .mp-v23-detail-visual{
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    transform:scale(.38);
+    transform-origin:left center;
+    margin-bottom:16px;
+  }
+
+  .mp-v23-detail-provider{
+    width:58px;
+    height:58px;
+    border-radius:16px;
+    background:#00818b;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    font-weight:950;
+    margin-bottom:20px;
+  }
+
+  .mp-v23-detail-icon{
+    width:48px;height:48px;border-radius:15px;
+    display:grid;place-items:center;background:rgba(0,139,148,.08);
+    margin-bottom:20px;font-size:22px;
+  }
+
+  .mp-v23-detail-card h3{
+    margin:0 0 15px;
+    font-size:15px;
+    font-weight:950;
+    color:#101820;
+  }
+
+  .mp-v23-detail-card strong{
+    display:block;
+    margin-bottom:10px;
+    font-size:19px;
+    color:#101820;
+  }
+
+  .mp-v23-detail-card p{
+    margin:8px 0;
+    color:#1e3c36;
+    line-height:1.45;
+    font-size:14px;
+  }
+
+  .mp-v23-detail-card dl{
+    margin:0;
+    display:grid;
+    gap:12px;
+  }
+
+  .mp-v23-detail-card dl div{
+    display:flex;
+    justify-content:space-between;
+    gap:18px;
+    border-bottom:1px solid rgba(16,24,32,.09);
+    padding-bottom:11px;
+  }
+
+  .mp-v23-detail-card dt{font-weight:900;}
+  .mp-v23-detail-card dd{margin:0;text-align:right;color:#1e3c36;}
+
+  .mp-v23-final{
+    margin-top:32px;
+    min-height:130px;
+    padding:26px 30px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#fffdf8 0%,#f7ebd9 100%);
+    border:1px solid rgba(96,72,42,.14);
+    display:grid;
+    grid-template-columns:76px 1fr 250px 190px;
+    gap:22px;
+    align-items:center;
+  }
+
+  .mp-v23-final-icon{
+    height:70px;
+    transform:scale(.35);
+    transform-origin:left center;
+  }
+
+  .mp-v23-final h2{
+    margin:0 0 8px;
+    font-size:22px;
+  }
+
+  .mp-v23-final p{
+    margin:0;
+    color:#1e3c36;
+    line-height:1.45;
+  }
+
+  .mp-v23-save{
+    margin-top:0;
+  }
+
+  .mp-v23-trust{
+    margin-top:28px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+
+  .mp-v23-trust div{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    column-gap:12px;
+    align-items:center;
+  }
+
+  .mp-v23-trust span{
+    grid-row:span 2;
+    font-size:23px;
+    opacity:.78;
+  }
+
+  .mp-v23-trust strong{
+    font-size:14px;
+    color:#101820;
+  }
+
+  .mp-v23-trust small{
+    color:#4c625b;
+  }
+
+  /* CSS drawn visuals replacing emoji prototype look */
+  .mp-v23-product-visual{ position:relative; display:grid; place-items:center; }
+  .mp-v23-airpods{ width:180px; height:180px; }
+  .mp-v23-airpods span{ position:absolute; width:48px; height:120px; border-radius:28px 28px 34px 34px; background:#fff; border:1px solid rgba(16,24,32,.08); box-shadow:0 16px 32px rgba(16,24,32,.08); }
+  .mp-v23-airpods span:first-child{ transform:translateX(-32px) rotate(-7deg); }
+  .mp-v23-airpods span:last-child{ transform:translateX(32px) rotate(7deg); }
+  .mp-v23-phone{ width:118px; height:198px; border-radius:28px; background:linear-gradient(145deg,#222,#555); box-shadow:0 22px 42px rgba(16,24,32,.18); }
+  .mp-v23-phone span{ width:92px; height:160px; border-radius:20px; background:linear-gradient(145deg,#dff7ff,#f8fcff); display:block; }
+  .mp-v23-cash-visual{ width:172px; height:172px; border-radius:50%; background:linear-gradient(145deg,#e8fbec,#bdf1ca); display:grid; place-items:center; box-shadow:0 20px 40px rgba(25,160,73,.14); }
+  .mp-v23-cash-visual span{ color:#14984f; font-size:82px; font-weight:950; }
+  .mp-v23-discount-visual{ width:172px; height:172px; border-radius:42px; background:linear-gradient(145deg,#fff6e4,#f5d89c); display:grid; place-items:center; box-shadow:0 20px 40px rgba(160,102,25,.12); transform:rotate(-7deg); }
+  .mp-v23-discount-visual span{ color:#a76b12; font-size:78px; font-weight:950; }
+  .mp-v23-giftcard{ width:190px; height:120px; border-radius:24px; background:linear-gradient(135deg,#00818b,#00a6a6); color:#fff; box-shadow:0 22px 42px rgba(0,129,139,.18); }
+  .mp-v23-giftcard strong{ text-transform:uppercase; letter-spacing:.08em; }
+  .mp-v23-stream{ width:172px; height:172px; border-radius:46px; background:linear-gradient(145deg,#e7f7ff,#bcecf4); display:grid; place-items:center; box-shadow:0 20px 40px rgba(0,129,139,.13); }
+  .mp-v23-stream span{ color:#00818b; font-size:78px; font-weight:950; }
+  .mp-v23-router{ width:190px; height:118px; border-radius:28px; background:#fff; border:1px solid rgba(16,24,32,.08); box-shadow:0 22px 42px rgba(16,24,32,.08); }
+  .mp-v23-router span{ width:110px; height:10px; border-radius:999px; background:#00818b; display:block; }
+  .mp-v23-console,.mp-v23-generic{ width:172px; height:130px; border-radius:32px; background:#fff; border:1px solid rgba(16,24,32,.08); box-shadow:0 22px 42px rgba(16,24,32,.08); }
+  .mp-v23-generic span{ color:#00818b; font-size:72px; font-weight:950; }
+
+  .mp-dd-mockup-shell,
+  .mp-detail-page-desktop,
+  .mp-conv-shell{ display:none !important; }
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+  .mp-v23-shell{ width:min(1080px, calc(100vw - 36px)); }
+  .mp-v23-top{ grid-template-columns:1fr; }
+  .mp-v23-summary{ min-height:auto; }
+  .mp-v23-why{ grid-template-columns:76px 1fr; }
+  .mp-v23-checks,.mp-v23-why-visual{ display:none; }
+  .mp-v23-final{ grid-template-columns:76px 1fr; }
+  .mp-v23-final-cta,.mp-v23-save{ grid-column:auto; }
+}
+
+@media (max-width:1023px){
+  .mp-v23-shell{ display:none !important; }
+}
+
+/* V20.7 livegang compact detail overrides */
+@media (min-width:1024px){
+  .mp-v23-summary{
+    align-self:start !important;
+    min-height:0 !important;
+    height:auto !important;
+    padding-bottom:28px !important;
+  }
+  .mp-v23-summary .mp-v23-primary{
+    margin-top:22px !important;
+  }
+  .mp-v23-benefit-grid{
+    align-items:stretch !important;
+  }
+  .mp-v23-benefit-card{
+    min-height:0 !important;
+  }
+}
+
+/* Livegang polish v1.1 - flatter benefit cards + aligned summary bottom (desktop only) */
+@media (min-width:1024px){
+  .mp-v23-top{
+    align-items:start !important;
+  }
+
+  .mp-v23-benefit-card{
+    height:360px !important;
+    min-height:360px !important;
+  }
+
+  .mp-v23-benefit-visual{
+    min-height:215px !important;
+    padding:16px 20px 10px !important;
+  }
+
+  .mp-v23-benefit-copy{
+    padding:0 20px 20px !important;
+  }
+
+  .mp-v23-benefit-copy h3{
+    margin-bottom:8px !important;
+  }
+
+  .mp-v23-summary{
+    height:360px !important;
+    min-height:360px !important;
+    padding:24px !important;
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  .mp-v23-summary h2{
+    margin-bottom:14px !important;
+  }
+
+  .mp-v23-summary-list{
+    margin-bottom:18px !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line{
+    min-height:66px !important;
+    padding:10px 14px !important;
+  }
+
+  .mp-v23-total span{
+    margin-bottom:4px !important;
+    font-size:17px !important;
+  }
+
+  .mp-v23-total strong{
+    font-size:54px !important;
+    margin-bottom:16px !important;
+  }
+
+  .mp-v23-primary{
+    min-height:48px !important;
+    margin-top:auto !important;
+  }
+}
+
+/* V23.1 - Detail cards simplified: Why + contract only (desktop) */
+@media (min-width:1024px){
+  .mp-v23-detail-grid--why-first{
+    grid-template-columns:2fr 1fr !important;
+    align-items:stretch !important;
+  }
+
+  .mp-v23-detail-card--why{
+    min-height:230px !important;
+    display:grid !important;
+    grid-template-columns:76px 1fr minmax(250px, .9fr) !important;
+    gap:22px !important;
+    align-items:center !important;
+    background:linear-gradient(135deg,#fffdf8 0%,#f7ebd9 100%) !important;
+  }
+
+  .mp-v23-detail-card--why .mp-v23-detail-icon{
+    width:66px !important;
+    height:66px !important;
+    margin:0 !important;
+    border-radius:50% !important;
+    background:#fff !important;
+    font-size:32px !important;
+  }
+
+  .mp-v23-detail-card--why h3{
+    margin:0 0 12px !important;
+    font-size:24px !important;
+  }
+
+  .mp-v23-detail-card--why p{
+    margin:0 !important;
+    max-width:430px !important;
+    line-height:1.55 !important;
+  }
+
+  .mp-v23-detail-checks{
+    align-self:center !important;
+    gap:11px !important;
+  }
+
+  .mp-v23-detail-checks li{
+    font-size:14px !important;
+  }
+
+  .mp-v23-detail-card--contract{
+    min-height:230px !important;
+  }
+}
+
+/* Jouw Meepakker polish v2 - compact benefits block, no card growth */
+@media (min-width:1024px){
+  .mp-v23-summary{
+    height:360px !important;
+    min-height:360px !important;
+    padding:24px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    overflow:hidden !important;
+  }
+
+  .mp-v23-summary h2{
+    margin:0 0 14px !important;
+    flex:0 0 auto !important;
+  }
+
+  .mp-v23-summary-list{
+    flex:0 0 auto !important;
+    margin:0 0 16px !important;
+    padding:0 !important;
+    background:#fff !important;
+    border-radius:14px !important;
+    overflow:hidden !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line{
+    min-height:54px !important;
+    padding:8px 14px !important;
+    grid-template-columns:36px 1fr auto !important;
+    gap:12px !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line span{
+    width:30px !important;
+    height:30px !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line strong{
+    font-size:14px !important;
+    line-height:1.15 !important;
+  }
+
+  .mp-v23-summary .mp-dd-summary-line em{
+    font-size:11px !important;
+    white-space:nowrap !important;
+  }
+
+  .mp-v23-total{
+    flex:0 0 auto !important;
+    margin-top:0 !important;
+  }
+
+  .mp-v23-total span{
+    font-size:16px !important;
+    margin-bottom:2px !important;
+  }
+
+  .mp-v23-total strong{
+    font-size:52px !important;
+    line-height:.92 !important;
+    margin-bottom:14px !important;
+  }
+
+  .mp-v23-primary{
+    flex:0 0 auto !important;
+    min-height:48px !important;
+    margin-top:0 !important;
+  }
+}
+
+
+/* Livegang fix: Jouw Meepakker mag meegroeien bij 4+ voordelen.
+   Audit: vaste height/min-height knipte CTA af bij Sim Only.
+   Inhoud blijft onaangeraakt; alleen de buitenkaart en spacing zijn flexibel. */
+@media (min-width:1024px){
+  .mp-v23-summary{
+    height:auto !important;
+    min-height:360px !important;
+    margin-top:0 !important;
+    overflow:visible !important;
+    align-self:start !important;
+  }
+
+  .mp-v23-summary-list{
+    flex:0 0 auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+  }
+
+  .mp-v23-total{
+    margin-top:18px !important;
+  }
+
+  .mp-v23-primary{
+    margin-top:18px !important;
+    flex:0 0 auto !important;
+  }
+}
+
+
+/* Livegang polish: footer + Jouw Meepakker zelfde primaire kleur */
+.footer{
+  background:#06483d !important;
+  color:#ffffff !important;
+}
+
+.mp-v23-summary .mp-v23-total-value,
+.mp-v23-summary .mp-v23-total-amount{
+  color:#06483d !important;
+}
+
+.mp-v23-summary .mp-v23-primary,
+.mp-v23-summary .mp-v23-primary-btn,
+.mp-v23-summary .mp-v23-cta{
+  background:#06483d !important;
+  border-color:#06483d !important;
+}

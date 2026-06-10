@@ -1,0 +1,145 @@
+/* MeerPakkers Saved Deals Header Entry v50
+   Navigation only: links to /opgeslagen/ and shows live local count.
+   Does not alter deal cards, home controller or saved store logic.
+*/
+.mp-saved-header-link-v50,
+.mp-saved-desktop-link-v50{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#06483d;
+  background:#fffdf8;
+  border:1px solid rgba(6,72,61,.16);
+  box-shadow:0 10px 24px rgba(6,72,61,.08);
+}
+
+.mp-saved-header-link-v50{
+  width:46px;
+  height:46px;
+  border-radius:16px;
+  margin-left:auto;
+  flex:0 0 auto;
+  font-size:21px;
+  font-weight:950;
+}
+
+.mp-saved-header-link-v50 .mp-saved-icon-v50,
+.mp-saved-desktop-link-v50 .mp-saved-icon-v50{
+  line-height:1;
+}
+
+.mp-saved-count-v50{
+  position:absolute;
+  top:-7px;
+  right:-7px;
+  min-width:19px;
+  height:19px;
+  padding:0 5px;
+  border-radius:999px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:#c9952d;
+  color:#fff;
+  border:2px solid #fffdf8;
+  font-size:11px;
+  line-height:1;
+  font-weight:950;
+  box-shadow:0 8px 16px rgba(201,149,45,.22);
+}
+
+.mp-saved-header-link-v50.has-saved .mp-saved-count-v50,
+.mp-saved-desktop-link-v50.has-saved .mp-saved-count-v50{
+  display:flex;
+}
+
+.mp-saved-desktop-link-v50{
+  gap:8px;
+  min-height:42px;
+  border-radius:999px;
+  padding:0 15px;
+  font-size:14px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.mp-saved-desktop-link-v50 .mp-saved-count-v50{
+  position:static;
+  border:0;
+  min-width:21px;
+  height:21px;
+  margin-left:2px;
+}
+
+@media(max-width:768px){
+  .topbar .mp-saved-desktop-link-v50,
+  .mp-desktop-header .mp-saved-desktop-link-v50{display:none!important;}
+
+  .mp-clean-mobile-header .mp-logo-copy{
+    min-width:0;
+  }
+
+  .mp-cat-header{
+    align-items:flex-start;
+  }
+
+  .mp-cat-header .mp-saved-header-link-v50{
+    margin-left:auto;
+    margin-top:0;
+  }
+
+  .mp-cat-header > div{
+    min-width:0;
+  }
+}
+
+
+
+/* v52 Saved Deals Premium Layout
+   - Mobile heart lives in the hero/header next to the slogan, not in the search bar.
+   - Save CTA has the same dimensions as Bekijk deal, but a softer secondary color.
+   - Clicking save keeps the text stable; only the heart turns red.
+*/
+@media(max-width:768px){
+  .mp-clean-mobile-home .mp-clean-mobile-header{
+    position:relative!important;
+    padding-right:56px!important;
+  }
+
+  .mp-clean-mobile-home .mp-clean-mobile-header .mp-saved-header-link-v50{
+    position:absolute!important;
+    right:0!important;
+    top:24px!important;
+    width:46px!important;
+    height:46px!important;
+    margin:0!important;
+    border-radius:16px!important;
+    background:rgba(255,253,248,.94)!important;
+    border:1px solid rgba(222,208,185,.9)!important;
+    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
+    z-index:4!important;
+  }
+
+  .mp-clean-mobile-home .mp-clean-search{
+    padding-right:17px!important;
+  }
+
+  .mp-clean-mobile-home .mp-clean-search .mp-saved-header-link-v50{
+    position:static!important;
+  }
+
+  .mp-saved-header-link-v50 .mp-saved-count-v50{
+    top:-5px!important;
+    right:-5px!important;
+    min-width:18px!important;
+    height:18px!important;
+    font-size:10px!important;
+    border-width:2px!important;
+  }
+}
+
+/* v50 isolated: this file now only owns the saved-deals heart/count entry.
+   Dealcard action/button polish moved to deal-card-actions-v1.css.
+   Mobile topbar lock moved to mobile-topbar-unified-v3.css. */

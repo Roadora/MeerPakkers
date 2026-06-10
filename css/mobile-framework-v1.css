@@ -1,0 +1,204 @@
+/* mobile-framework-v1.css cleaned in v17: all topbar/logo rules removed. Topbar lives only in mobile-topbar-unified-v3.css + topbar-final-lock-v17.css. */
+/* MeerPakkers Shared Mobile Framework v1 - mobile only */
+@media(max-width:760px){
+  :root{--mp-fw-green:#06483d;--mp-fw-gold:#c9952d;--mp-fw-bg:#f6efe4;--mp-fw-card:#fffdf8;--mp-fw-border:#ded0b9;--mp-fw-muted:#746b61;}
+  .mp-mobile-framework,.mp-category-mobile,.provider-discovery-shell,.meepakker-page-shell,.mp-saved-shell{background:radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%);color:var(--mp-fw-green);padding:18px 16px 32px!important;}
+  
+  
+  
+  
+  
+  
+  
+  .mp-mobile-intro{margin:0 0 16px!important;padding-bottom:16px!important;border-bottom:1px solid rgba(6,72,61,.16)!important;}
+  .mp-mobile-intro__eyebrow{margin:0 0 5px!important;color:#8a6f42!important;font-size:12px!important;line-height:1.1!important;font-weight:950!important;letter-spacing:.01em!important;}
+  .mp-mobile-intro h1,.mp-mobile-intro__title{display:block!important;margin:0 0 6px!important;color:var(--mp-fw-green)!important;font-family:Georgia,serif!important;font-size:34px!important;line-height:1.02!important;letter-spacing:-.035em!important;font-weight:900!important;}
+  .mp-mobile-intro p,.mp-mobile-intro__subtitle{display:block!important;margin:0!important;max-width:35rem!important;color:var(--mp-fw-muted)!important;font-size:15px!important;line-height:1.35!important;font-weight:700!important;}
+  .mp-mobile-search{margin:16px 0 15px!important;display:flex!important;align-items:center!important;gap:10px!important;min-height:54px!important;border-radius:999px!important;border:1px solid var(--mp-fw-border)!important;background:var(--mp-fw-card)!important;padding:0 16px!important;box-shadow:0 12px 28px rgba(6,72,61,.055)!important;box-sizing:border-box!important;}
+  .mp-mobile-search span{flex:0 0 auto;}
+  .mp-mobile-search input{width:100%!important;border:0!important;outline:0!important;background:transparent!important;font-size:16px!important;font-weight:750!important;color:var(--mp-fw-green)!important;min-width:0!important;}
+  .mp-mobile-category-pills,.provider-discovery-categories.mp-mobile-category-pills{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px!important;margin:0 0 16px!important;}
+  .mp-mobile-category-pill,.provider-discovery-category.mp-mobile-category-pill{min-height:58px!important;border-radius:18px!important;border:1px solid rgba(6,72,61,.10)!important;background:#fffaf1!important;padding:8px 5px!important;color:var(--mp-fw-green)!important;box-shadow:0 10px 24px rgba(6,72,61,.045)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;text-align:center!important;text-decoration:none!important;}
+  .mp-mobile-category-pill.is-active,.provider-discovery-category.mp-mobile-category-pill.is-active{background:#eaf4ec!important;border-color:rgba(6,72,61,.20)!important;transform:none!important;}
+  .mp-mobile-category-pill b,.provider-discovery-category.mp-mobile-category-pill strong{display:block!important;font-size:11.5px!important;line-height:1.05!important;font-weight:950!important;}
+  .mp-mobile-category-pill small,.provider-discovery-category.mp-mobile-category-pill small{display:block!important;font-size:9.5px!important;line-height:1.05!important;color:rgba(6,72,61,.68)!important;font-weight:850!important;}
+  .mp-mobile-category-pill span:first-child,.provider-discovery-category.mp-mobile-category-pill .provider-category-icon{font-size:18px!important;line-height:1!important;}
+  .mp-mobile-section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin:10px 0 12px;}
+  .mp-mobile-section-title h2{margin:0 0 3px!important;color:var(--mp-fw-green)!important;font-size:20px!important;line-height:1.1!important;letter-spacing:-.02em!important;}
+  .mp-mobile-section-title p{margin:0!important;color:var(--mp-fw-muted)!important;font-size:12.5px!important;line-height:1.25!important;font-weight:750!important;}
+  .mp-mobile-count-pill{flex:0 0 auto;border-radius:999px;background:#fffaf1;border:1px solid rgba(6,72,61,.10);padding:7px 9px;color:var(--mp-fw-green);font-size:11.5px;font-weight:950;}
+  .mp-mobile-only{display:block!important;}
+}
+@media(min-width:761px){.mp-mobile-only{display:none!important;}}
+@media(max-width:760px){
+  .mp-saved-header.mp-mobile-intro .mp-saved-back{display:none!important;}
+  .meepakker-hero.mp-mobile-framework{display:block!important;border-radius:0!important;border:0!important;box-shadow:none!important;}
+  .meepakker-hero.mp-mobile-framework .meepakker-hero-visual{display:none!important;}
+}
+
+/* MeerPakkers Shared Brand Header v1 - Home branding as mobile source of truth */
+@media(max-width:760px){
+  /* Old desktop/tablet header may not appear above mobile pages */
+  body:not(.home-cleanup) > .topbar{display:none!important;}
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .mp-mobile-intro{margin-top:2px!important;}
+}
+
+
+
+
+/* Shared Back Button v1.1 - subtle official mobile back component */
+@media(max-width:760px){
+  
+  
+  .mp-saved-header.mp-mobile-intro .mp-saved-back{display:none!important;}
+}
+
+
+/* Header Background Blend v1
+   Keep the shared mobile brand/header, but remove the separate card/layer feeling
+   from subpage hero sections. The page shell keeps the warm MeerPakkers background. */
+@media(max-width:760px){
+  .provider-discovery-hero.mp-mobile-framework,
+  .meepakker-hero.mp-mobile-framework{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+  }
+}
+
+/* Shared Top Header Geometry v1
+   One fixed mobile top-header rhythm across all subpages.
+   Prevents visual jumping between category, provider, meepakker, result and saved pages. */
+@media(max-width:760px){
+  .mp-category-mobile,
+  .provider-discovery-shell,
+  .meepakker-page-shell,
+  .mp-saved-shell,
+  body.mp-provider-detail-page .provider-page-shell{
+    padding-top:18px!important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+}
+
+
+
+
+/* Provider Detail Header Geometry Sync v2
+   Provider detail subpages now use exactly the same mobile shell/header geometry
+   as Providers, Kies je Meepakker, category and result subpages. */
+@media(max-width:760px){
+  body.mp-provider-detail-page .mp-provider-detail-shell{
+    max-width:430px!important;
+    margin:0 auto!important;
+    padding:18px 16px 32px!important;
+    background:radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%)!important;
+    color:var(--mp-fw-green)!important;
+    box-sizing:border-box!important;
+  }
+
+  
+
+  
+
+  
+
+  
+}
+
+
+
+/* Shared Topbar Exact Sync v2
+   Final mobile override: every subpage topbar uses the same outer shell padding.
+   Nested hero sections no longer add a second padding layer around the back/logo/heart row. */
+@media(max-width:760px){
+  .provider-discovery-shell,
+  .meepakker-page-shell,
+  .mp-saved-shell,
+  .mp-category-mobile,
+  body.mp-provider-detail-page .mp-provider-detail-shell{
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+  }
+
+  .provider-discovery-hero.mp-mobile-framework,
+  .meepakker-hero.mp-mobile-framework,
+  .meepakker-result-hero.mp-mobile-framework{
+    padding:0!important;
+    margin:0!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+}
+
+
+
+
+/* Mobile Framework Deal Detail Inclusion v6 */
+
+
+
+
+
+/* Shared Mobile Topbar Component v1 - single source of truth */
+
+
+
+
+/* Unified Mobile Topbar v2 - final geometry lock
+   One visual contract for category, provider, meepakker, saved and deal-detail mobile headers. */
+
+
+
+
+
+/* MeerPakkers Single Topbar Component Contract v3 */
+
+
+

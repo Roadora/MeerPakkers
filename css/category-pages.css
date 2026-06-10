@@ -1,0 +1,257 @@
+
+.category-page-shell{max-width:1780px;margin:0 auto;padding:26px 34px 40px}
+.category-hero{background:linear-gradient(135deg,#fffdf8,#f4ead8);border:1px solid var(--border);border-radius:24px;padding:26px 28px;box-shadow:var(--shadow);display:block}
+.category-hero h1{font-family:Georgia,serif;color:var(--green);font-size:44px;line-height:1.06;margin:0 0 10px}
+.category-hero p{color:var(--muted);font-size:18px;margin:0;max-width:860px}
+.category-score-preview{background:#eef3e8;border-radius:20px;padding:20px;color:var(--green)}
+.category-score-preview strong{display:block;font-size:38px;line-height:1}
+.category-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.category-meta span{background:white;border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:800;color:var(--green)}
+.category-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;margin-top:22px;align-items:start}
+.category-filter-panel{background:white;border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:var(--shadow);position:sticky;top:88px;max-height:calc(100vh - 108px);overflow:auto}
+.category-filter-panel h2{color:var(--green);margin:0 0 14px}
+.category-filter-panel details{border-top:1px solid var(--border);padding-top:12px;margin-top:12px}
+.category-filter-panel summary{font-weight:900;cursor:pointer}
+.category-filter-panel label{display:block;margin:8px 0;color:var(--green2)}
+.category-results-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:12px}
+.category-results-head h2{margin:0;color:var(--green)}
+.category-results-head p{margin:4px 0 0;color:var(--muted)}
+.category-provider-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.category-provider-card{background:white;border:1px solid var(--border);border-radius:16px;padding:15px;box-shadow:0 8px 22px rgba(32,23,8,.05)}
+.category-provider-card strong{display:block;color:var(--green);font-size:20px}
+.category-provider-card span{display:block;color:var(--muted);margin-top:4px}
+.category-side-card{background:white;border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:var(--shadow);margin-bottom:16px}
+.category-side-card h3{color:var(--green);margin:0 0 10px}
+.category-side-card p{color:var(--muted);margin:8px 0}
+.category-seo-block{background:white;border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow);margin-top:18px}
+.category-seo-block h2{color:var(--green);margin-top:0}
+.category-empty{background:white;border:1px solid var(--border);border-radius:18px;padding:20px;color:var(--muted)}
+@media(max-width:1280px){.category-layout{grid-template-columns:260px minmax(0,1fr)}.category-right{display:none}.category-provider-strip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.category-page-shell{padding:18px 16px}.category-hero{grid-template-columns:1fr}.category-layout{grid-template-columns:1fr}.category-filter-panel{position:static;max-height:none}.category-provider-strip{grid-template-columns:1fr}.category-hero h1{font-size:34px}}
+
+.category-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.category-stat{background:white;border:1px solid var(--border);border-radius:14px;padding:14px;font-weight:800;color:var(--green)}
+.category-chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.category-chip-row span{background:#fff;border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-weight:700}
+
+/* v1.4 Category Providerstrip Cleanup */
+.category-provider-strip{display:none!important}
+.category-results-head{margin-bottom:16px}
+
+
+.category-filter-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.category-filter-head button{
+  border:0;
+  border-radius:999px;
+  background:var(--green);
+  color:white;
+  padding:10px 14px;
+  font-weight:800;
+  text-decoration:none;
+  white-space:nowrap;
+  cursor:pointer;
+}
+
+.category-filter-head button{
+  background:#ffffff;
+  color:var(--green);
+  border:1px solid var(--border);
+  padding:8px 12px;
+}
+
+
+/* v0.9 Category Header Clean v1
+   Categoriehero bewust rustig gehouden: alleen titel + intro.
+   Filters blijven links; deals blijven midden; rechterkolom blijft apart. */
+.category-hero .category-meta,
+.category-hero .category-chip-row,
+.category-hero .category-stats,
+.category-hero .category-score-preview{
+  display:none!important;
+}
+.category-hero p{
+  max-width:900px;
+}
+
+
+/* v0.9 Category Header Polish v1 */
+.category-hero{
+  position:relative;
+  overflow:hidden;
+  padding:30px 34px!important;
+  border-radius:26px!important;
+}
+
+.category-hero h1{
+  max-width:980px;
+  margin-bottom:8px;
+}
+
+.category-hero p{
+  max-width:840px;
+  margin-bottom:16px;
+  line-height:1.45;
+}
+
+.category-benefit-line{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  max-width:100%;
+  padding:10px 14px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:rgba(255,255,255,.62);
+  color:var(--green);
+  font-weight:800;
+  box-shadow:0 10px 28px rgba(12,74,61,.06);
+}
+
+.category-hero .category-meta,
+.category-hero .category-chip-row,
+.category-hero .category-stats,
+.category-hero .category-stat,
+.category-hero .category-metrics,
+.category-hero .category-score-preview,
+.category-hero .category-best,
+.category-hero .best-benefit{
+  display:none!important;
+}
+
+@media(max-width:720px){
+  .category-hero{
+    padding:24px 20px!important;
+  }
+  .category-benefit-line{
+    border-radius:18px;
+    font-size:14px;
+  }
+}
+
+
+/* v0.9 Step 1: remove category right column content */
+.category-right{
+  display:none!important;
+}
+
+
+/* v0.9 Step 2: category pages echte 2-koloms layout */
+.category-layout{
+  grid-template-columns:280px minmax(0,1fr)!important;
+}
+
+.category-main,
+.category-deals,
+.deal-results{
+  min-width:0;
+}
+
+@media(max-width:900px){
+  .category-layout{
+    grid-template-columns:1fr!important;
+  }
+}
+
+
+/* v72 SEO Content Foundation */
+.seo-checklist{margin:14px 0 0;padding-left:20px;color:var(--green2);line-height:1.7}
+.seo-checklist li{margin:4px 0}
+.category-faq-block details,.provider-faq-block details{border-top:1px solid var(--border);padding:14px 0}
+.category-faq-block details:first-of-type,.provider-faq-block details:first-of-type{border-top:0}
+.category-faq-block summary,.provider-faq-block summary{cursor:pointer;font-weight:900;color:var(--green)}
+.category-faq-block p,.provider-faq-block p{line-height:1.65}
+
+
+/* v73 De MeerPakkers Uitleg */
+.mp-uitleg-footer{
+  background:#fffdf8;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:20px;
+  box-shadow:var(--shadow);
+  margin-top:18px;
+}
+.mp-uitleg-footer-head{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:10px;
+}
+.mp-uitleg-footer-icon{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eef3e8;
+  flex:0 0 auto;
+}
+.mp-uitleg-footer h2{
+  margin:0 0 4px;
+  color:var(--green);
+  font-size:26px;
+  line-height:1.1;
+}
+.mp-uitleg-footer p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+}
+.mp-uitleg-footer-list{
+  border-top:1px solid var(--border);
+  margin-top:12px;
+}
+.mp-uitleg-footer-list details{
+  border-bottom:1px solid var(--border);
+  padding:0;
+}
+.mp-uitleg-footer-list details:last-child{border-bottom:0}
+.mp-uitleg-footer-list summary{
+  cursor:pointer;
+  color:var(--green);
+  font-weight:900;
+  padding:14px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+}
+.mp-uitleg-footer-list summary::after{content:"⌄";color:var(--muted)}
+.mp-uitleg-footer-list details[open] summary::after{transform:rotate(180deg)}
+.mp-uitleg-footer-list details p{padding:0 0 14px}
+
+/* v75 Desktop Category Safe Mode
+   Alleen desktop/tablet-breedte. Mobiel onder 901px blijft exact op de bestaande mobile runtime.
+*/
+@media (min-width:901px){
+  .category-page-shell{
+    max-width:1780px;
+    padding-left:clamp(28px,5vw,92px);
+    padding-right:clamp(28px,5vw,92px);
+  }
+
+  .category-layout{
+    grid-template-columns:minmax(230px,260px) minmax(0,1fr)!important;
+    gap:24px;
+  }
+
+  .category-filter-panel{
+    max-width:260px;
+  }
+
+  .category-results{
+    min-width:0;
+  }
+
+  .category-results-head{
+    align-items:flex-start;
+  }
+}
+

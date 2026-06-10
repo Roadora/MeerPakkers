@@ -1,0 +1,1378 @@
+
+/* MeerPakkers Mobile Category + Filter Drawer v1 */
+
+#mpMobileCategory{
+  display:none;
+}
+
+@media(max-width:768px){
+  :root{
+    --mp-green:#06483d;
+    --mp-gold:#c9952d;
+    --mp-bg:#f6efe4;
+    --mp-card:#fffdf8;
+    --mp-border:#ded0b9;
+    --mp-muted:#746b61;
+  }
+
+  html,body{
+    overflow-x:hidden;
+    background:var(--mp-bg)!important;
+  }
+
+  body > *:not(#mpMobileCategory):not(script):not(style){
+    display:none!important;
+  }
+
+  #mpMobileCategory{
+    display:block;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(201,149,45,.12), transparent 34%),
+      linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%);
+    color:var(--mp-green);
+  }
+
+  .mp-category-mobile{
+    padding:18px 16px 32px;
+  }
+
+  .mp-cat-header{
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    padding-bottom:16px;
+    border-bottom:1px solid rgba(6,72,61,.16);
+  }
+
+  .mp-back{
+    width:42px;
+    height:42px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--mp-card);
+    border:1px solid var(--mp-border);
+    color:var(--mp-green);
+    text-decoration:none;
+    font-weight:950;
+    font-size:22px;
+  }
+
+  .mp-cat-header h1{
+    margin:0 0 4px;
+    font-size:34px;
+    line-height:1;
+    letter-spacing:-.9px;
+    color:var(--mp-green);
+  }
+
+  .mp-cat-header p{
+    margin:0;
+    color:var(--mp-muted);
+    font-size:15px;
+    line-height:1.35;
+    font-weight:650;
+  }
+
+  .mp-cat-search{
+    margin:18px 0 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-height:54px;
+    border-radius:999px;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    padding:0 16px;
+    box-shadow:0 12px 28px rgba(6,72,61,.055);
+  }
+
+  .mp-cat-search input{
+    width:100%;
+    border:0;
+    outline:0;
+    background:transparent;
+    font-size:16px;
+    font-weight:750;
+    color:var(--mp-green);
+  }
+
+  .mp-cat-actions{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin:0 0 16px;
+  }
+
+  .mp-open-filters{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+    border-radius:16px;
+    min-height:48px;
+    padding:0 15px;
+    font-size:16px;
+    font-weight:950;
+    box-shadow:0 10px 22px rgba(6,72,61,.04);
+  }
+
+  .mp-open-filters span{
+    background:#eaf4ec;
+    border-radius:999px;
+    padding:4px 7px;
+    font-size:11px;
+  }
+
+  #mpDealCount{
+    margin:0;
+    color:var(--mp-muted);
+    font-weight:800;
+    font-size:13px;
+  }
+
+  .mp-category-deals{
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+  }
+
+  .mp-category-deal,
+  .mp-empty-card{
+    position:relative;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    border-radius:24px;
+    padding:16px;
+    box-shadow:0 16px 36px rgba(6,72,61,.075);
+  }
+
+  .mp-rank{
+    position:absolute;
+    right:13px;
+    top:13px;
+    border-radius:14px;
+    background:#eaf4ec;
+    color:var(--mp-green);
+    font-weight:950;
+    font-size:16px;
+    padding:7px 10px;
+  }
+
+  .mp-deal-main{
+    display:flex;
+    gap:13px;
+    align-items:flex-start;
+    padding-right:48px;
+  }
+
+  .mp-deal-icon{
+    width:52px;
+    height:52px;
+    border-radius:16px;
+    background:#f2eadb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    flex:0 0 auto;
+  }
+
+  .mp-deal-cat{
+    color:var(--mp-green);
+    font-weight:950;
+    font-size:13px;
+    margin-bottom:2px;
+  }
+
+  .mp-deal-copy h3{
+    margin:0;
+    color:var(--mp-green);
+    font-size:24px;
+    line-height:1;
+  }
+
+  .mp-deal-copy p{
+    margin:4px 0 0;
+    color:#111;
+    font-size:15px;
+    font-weight:800;
+  }
+
+  .mp-benefit-pills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin:14px 0 14px;
+  }
+
+  .mp-benefit-pills span{
+    border-radius:999px;
+    background:#eaf4ec;
+    color:var(--mp-green);
+    padding:8px 10px;
+    font-size:12.5px;
+    font-weight:850;
+  }
+
+  .mp-deal-bottom{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:12px;
+  }
+
+  .mp-deal-bottom small{
+    display:block;
+    color:var(--mp-muted);
+    font-weight:850;
+    font-size:12px;
+    margin-bottom:2px;
+  }
+
+  .mp-deal-bottom strong{
+    display:block;
+    color:var(--mp-green);
+    font-size:34px;
+    line-height:.95;
+    font-weight:950;
+  }
+
+  .mp-deal-bottom a{
+    flex:0 0 auto;
+    text-decoration:none;
+    background:var(--mp-green);
+    color:#fff;
+    border-radius:14px;
+    padding:13px 15px;
+    font-size:14px;
+    font-weight:950;
+    box-shadow:0 10px 22px rgba(6,72,61,.18);
+  }
+
+  .mp-filter-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.36);
+    opacity:0;
+    pointer-events:none;
+    transition:.24s ease;
+    z-index:1000;
+  }
+
+  .mp-filter-overlay.is-open{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .mp-filter-drawer{
+    position:fixed;
+    top:0;
+    right:0;
+    width:min(88vw,390px);
+    height:100vh;
+    background:#fffaf2;
+    border-left:1px solid var(--mp-border);
+    box-shadow:-24px 0 60px rgba(6,72,61,.18);
+    transform:translateX(104%);
+    transition:transform .28s cubic-bezier(.2,.9,.2,1);
+    z-index:1001;
+    padding:20px 18px 92px;
+    overflow-y:auto;
+    color:var(--mp-green);
+  }
+
+  .mp-filter-drawer.is-open{
+    transform:translateX(0);
+  }
+
+  .mp-filter-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:12px;
+    padding-bottom:16px;
+    border-bottom:1px solid var(--mp-border);
+    margin-bottom:16px;
+  }
+
+  .mp-filter-head h2{
+    margin:0 0 3px;
+    font-size:30px;
+    line-height:1;
+  }
+
+  .mp-filter-head p{
+    margin:0;
+    color:var(--mp-muted);
+    font-weight:700;
+  }
+
+  .mp-filter-head button{
+    width:42px;
+    height:42px;
+    border-radius:14px;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+    font-size:28px;
+    line-height:1;
+  }
+
+  .mp-filter-section{
+    margin:0 0 18px;
+  }
+
+  .mp-filter-section h3{
+    margin:0 0 9px;
+    font-size:18px;
+  }
+
+  .mp-filter-option{
+    width:100%;
+    min-height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+    border-radius:16px;
+    padding:0 14px;
+    margin:0 0 8px;
+    font-size:15px;
+    font-weight:850;
+    text-align:left;
+  }
+
+  .mp-filter-option.is-active{
+    background:#eaf4ec;
+    border-color:#bdd7c4;
+  }
+
+  .mp-filter-option b{
+    width:24px;
+    height:24px;
+    border-radius:8px;
+    background:var(--mp-green);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    opacity:0;
+  }
+
+  .mp-filter-option.is-active b{
+    opacity:1;
+  }
+
+  .mp-filter-footer{
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:min(88vw,390px);
+    display:grid;
+    grid-template-columns:1fr 1.4fr;
+    gap:10px;
+    padding:14px 18px;
+    background:rgba(255,250,242,.96);
+    border-top:1px solid var(--mp-border);
+    backdrop-filter:blur(10px);
+  }
+
+  .mp-reset,
+  .mp-show{
+    border-radius:15px;
+    min-height:50px;
+    font-size:15px;
+    font-weight:950;
+  }
+
+  .mp-reset{
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+  }
+
+  .mp-show{
+    border:0;
+    background:var(--mp-green);
+    color:#fff;
+  }
+}
+
+
+/* Mobile Category Polish v1: quick chips + compactere cards */
+@media(max-width:768px){
+  .mp-cat-actions{
+    margin-bottom:10px;
+  }
+
+  .mp-open-filters{
+    min-height:46px;
+    padding:0 17px;
+  }
+
+  .mp-quick-filters{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+    margin:0 0 14px;
+    padding-bottom:2px;
+  }
+
+  .mp-quick-filters::-webkit-scrollbar{
+    display:none;
+  }
+
+  .mp-quick-filters button{
+    flex:0 0 auto;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+    border-radius:999px;
+    min-height:40px;
+    padding:0 13px;
+    font-size:13px;
+    font-weight:950;
+    box-shadow:0 8px 18px rgba(6,72,61,.035);
+  }
+
+  .mp-quick-filters button.is-active{
+    background:#eaf4ec;
+    border-color:#bdd7c4;
+  }
+
+  .mp-category-deals{
+    gap:10px;
+  }
+
+  .mp-category-deal,
+  .mp-empty-card{
+    border-radius:20px;
+    padding:13px;
+  }
+
+  .mp-rank{
+    right:11px;
+    top:11px;
+    font-size:14px;
+    padding:6px 9px;
+    border-radius:12px;
+  }
+
+  .mp-deal-main{
+    gap:10px;
+    padding-right:42px;
+  }
+
+  .mp-deal-icon{
+    width:44px;
+    height:44px;
+    border-radius:14px;
+    font-size:23px;
+  }
+
+  .mp-deal-cat{
+    font-size:12px;
+    margin-bottom:1px;
+  }
+
+  .mp-deal-copy h3{
+    font-size:21px;
+  }
+
+  .mp-deal-copy p{
+    font-size:14px;
+    margin-top:2px;
+  }
+
+  .mp-benefit-pills{
+    gap:6px;
+    margin:11px 0 11px;
+  }
+
+  .mp-benefit-pills span{
+    padding:7px 9px;
+    font-size:12px;
+  }
+
+  .mp-deal-bottom strong{
+    font-size:31px;
+  }
+
+  .mp-deal-bottom a{
+    padding:12px 14px;
+    border-radius:13px;
+    font-size:13px;
+  }
+
+  .mp-filter-drawer{
+    padding-top:18px;
+  }
+
+  .mp-filter-option{
+    min-height:48px;
+  }
+}
+
+
+/* Mobile Filter Accordion v1 */
+@media(max-width:768px){
+  .mp-filter-drawer{
+    padding-bottom:130px!important;
+  }
+
+  .mp-filter-section{
+    margin:0 0 10px!important;
+  }
+
+  .mp-filter-section > h3{
+    display:none!important;
+  }
+
+  .mp-filter-section-toggle{
+    width:100%;
+    min-height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    border:1px solid var(--mp-border);
+    background:var(--mp-card);
+    color:var(--mp-green);
+    border-radius:17px;
+    padding:0 15px;
+    font-size:17px;
+    font-weight:950;
+    text-align:left;
+  }
+
+  .mp-filter-section-toggle b{
+    transition:transform .2s ease;
+    font-size:19px;
+  }
+
+  .mp-filter-section.is-open .mp-filter-section-toggle b{
+    transform:rotate(180deg);
+  }
+
+  .mp-filter-section-body{
+    display:none;
+    padding-top:9px;
+  }
+
+  .mp-filter-section.is-open .mp-filter-section-body{
+    display:block;
+  }
+
+  .mp-filter-footer{
+    z-index:1002;
+  }
+}
+
+
+/* Compact Deal Cards v1
+   Categoriekaart = snelle teaser.
+   Detailinformatie komt later op de deal detailpagina.
+*/
+@media(max-width:768px){
+  .mp-category-deal-compact{
+    padding:12px 13px!important;
+    border-radius:19px!important;
+  }
+
+  .mp-category-deal-compact .mp-rank{
+    top:10px!important;
+    right:10px!important;
+    font-size:13px!important;
+    padding:5px 8px!important;
+    border-radius:11px!important;
+  }
+
+  .mp-compact-benefit{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    padding-right:42px;
+    margin:0 0 10px;
+  }
+
+  .mp-compact-benefit span{
+    display:inline-flex;
+    align-items:center;
+    border-radius:999px;
+    background:#eaf4ec;
+    color:var(--mp-green);
+    padding:7px 9px;
+    font-size:12px;
+    font-weight:900;
+    line-height:1.05;
+  }
+
+  .mp-compact-provider{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:0 0 10px;
+  }
+
+  .mp-compact-provider .mp-deal-icon{
+    width:40px!important;
+    height:40px!important;
+    border-radius:13px!important;
+    font-size:21px!important;
+  }
+
+  .mp-compact-provider .mp-deal-cat{
+    font-size:11.5px!important;
+    margin-bottom:0!important;
+  }
+
+  .mp-compact-provider h3{
+    margin:0!important;
+    color:var(--mp-green);
+    font-size:20px!important;
+    line-height:1!important;
+  }
+
+  .mp-compact-provider p{
+    margin:2px 0 0!important;
+    color:#111;
+    font-size:13.5px!important;
+    line-height:1.18!important;
+    font-weight:800;
+  }
+
+  .mp-compact-bottom{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:10px;
+    border-top:1px solid rgba(222,208,185,.75);
+    padding-top:10px;
+  }
+
+  .mp-compact-bottom small{
+    display:block;
+    color:var(--mp-muted);
+    font-weight:850;
+    font-size:11.5px;
+    margin-bottom:1px;
+  }
+
+  .mp-compact-bottom strong{
+    display:block;
+    color:var(--mp-green);
+    font-size:28px;
+    line-height:.95;
+    font-weight:950;
+    letter-spacing:-.6px;
+  }
+
+  .mp-compact-bottom a{
+    flex:0 0 auto;
+    text-decoration:none;
+    background:var(--mp-green);
+    color:#fff;
+    border-radius:12px;
+    padding:11px 13px;
+    font-size:13px;
+    font-weight:950;
+    box-shadow:0 9px 18px rgba(6,72,61,.16);
+  }
+
+  /* Hide older full-card inner spacing if old markup appears somewhere */
+  .mp-category-deal-compact .mp-deal-main,
+  .mp-category-deal-compact .mp-benefit-pills,
+  .mp-category-deal-compact .mp-deal-bottom{
+    display:none!important;
+  }
+}
+
+
+/* Cards Polish v1
+   Gelijke dealcard-hoogtes + voorbereiding providerlogo's en cadeau/productbeelden.
+   Geen wijziging aan flow, filters, home of dealdetail-structuur.
+*/
+@media(max-width:768px){
+
+  .mp-category-deal,
+  .mp-category-deal-compact{
+    min-height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .mp-compact-benefit{
+    min-height:64px;
+    align-items:flex-start;
+  }
+
+  .mp-compact-provider{
+    min-height:68px;
+  }
+
+  .mp-compact-bottom{
+    min-height:72px;
+    align-items:flex-end;
+  }
+
+  .mp-compact-provider .mp-deal-icon,
+  .mp-deal-icon{
+    overflow:hidden;
+    background:#f4ecdf;
+  }
+
+  /* Future provider logo slot */
+  .mp-provider-logo{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    padding:6px;
+    display:block;
+  }
+
+  /* Future gift/product image slot: PS5, Switch, AirPods, smartwatch, cadeaukaart */
+  .mp-gift-thumb{
+    width:52px;
+    height:52px;
+    border-radius:12px;
+    object-fit:cover;
+    display:block;
+  }
+
+  .mp-category-deal img{
+    max-width:100%;
+  }
+}
+
+/* Cards Home Size Match v4
+   Categorie-dealcards gelijk trekken met Home top-dealcards.
+   Alleen mobiele kaart-hoogte/spacing; filters en data blijven intact.
+*/
+@media(max-width:768px){
+  .mp-category-deal,
+  .mp-category-deal-compact{
+    min-height:168px!important;
+    padding:16px!important;
+    border-radius:24px!important;
+    display:block!important;
+  }
+
+  .mp-category-deals{
+    gap:13px!important;
+  }
+
+  .mp-category-deal-compact .mp-rank{
+    top:13px!important;
+    right:13px!important;
+    font-size:16px!important;
+    padding:7px 10px!important;
+    border-radius:14px!important;
+  }
+
+  .mp-compact-benefit{
+    min-height:0!important;
+    display:flex!important;
+    flex-wrap:wrap;
+    gap:7px!important;
+    margin:14px 0 14px!important;
+    padding-right:48px!important;
+    align-items:flex-start!important;
+  }
+
+  .mp-compact-benefit span{
+    padding:8px 10px!important;
+    font-size:12.5px!important;
+    line-height:1.1!important;
+  }
+
+  .mp-compact-provider{
+    min-height:0!important;
+    display:flex!important;
+    gap:13px!important;
+    align-items:flex-start!important;
+    margin:0 0 14px!important;
+    padding-right:48px!important;
+  }
+
+  .mp-compact-provider .mp-deal-icon{
+    width:52px!important;
+    height:52px!important;
+    border-radius:16px!important;
+    font-size:27px!important;
+  }
+
+  .mp-compact-provider .mp-deal-cat{
+    font-size:13px!important;
+    margin-bottom:2px!important;
+  }
+
+  .mp-compact-provider h3{
+    font-size:24px!important;
+    line-height:1!important;
+  }
+
+  .mp-compact-provider p{
+    font-size:15px!important;
+    line-height:1.22!important;
+    margin-top:4px!important;
+  }
+
+  .mp-compact-bottom{
+    min-height:0!important;
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:space-between!important;
+    gap:12px!important;
+    border-top:0!important;
+    padding-top:0!important;
+  }
+
+  .mp-compact-bottom small{
+    font-size:12px!important;
+    margin-bottom:2px!important;
+  }
+
+  .mp-compact-bottom strong{
+    font-size:34px!important;
+    line-height:.95!important;
+  }
+
+  .mp-compact-bottom a{
+    border-radius:14px!important;
+    padding:13px 15px!important;
+    font-size:14px!important;
+  }
+}
+
+
+/* Category Filters Compact Bar v1 */
+@media(max-width:768px){
+  .mp-cat-actions.mp-cat-actions-compact{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:6px!important;
+    margin:0 0 14px!important;
+  }
+
+  .mp-cat-actions-compact .mp-open-filters{
+    flex:0 0 auto!important;
+    min-height:40px!important;
+    padding:0 10px!important;
+    border-radius:15px!important;
+    font-size:13px!important;
+    white-space:nowrap!important;
+    box-shadow:0 8px 18px rgba(6,72,61,.035)!important;
+  }
+
+  .mp-cat-actions-compact .mp-open-filters span{
+    padding:3px 6px!important;
+    font-size:10px!important;
+  }
+
+  .mp-cat-actions-compact .mp-quick-filters{
+    flex:1 1 auto!important;
+    min-width:0!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:6px!important;
+    overflow:visible!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .mp-cat-actions-compact .mp-quick-filters button{
+    flex:1 1 0!important;
+    min-width:0!important;
+    min-height:40px!important;
+    padding:0 7px!important;
+    border-radius:999px!important;
+    font-size:12px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  #mpDealCount{
+    display:none!important;
+  }
+}
+
+@media(max-width:380px){
+  .mp-cat-actions.mp-cat-actions-compact{
+    gap:5px!important;
+  }
+
+  .mp-cat-actions-compact .mp-open-filters,
+  .mp-cat-actions-compact .mp-quick-filters button{
+    min-height:38px!important;
+    font-size:11.5px!important;
+    padding-left:6px!important;
+    padding-right:6px!important;
+  }
+}
+
+/* Filter System v2 - voordeel eerst, rustiger en volwassen drawer */
+@media(max-width:768px){
+  .mp-filter-overlay{
+    background:rgba(3,34,29,.42)!important;
+    backdrop-filter:blur(3px)!important;
+  }
+
+  .mp-filter-drawer{
+    top:auto!important;
+    left:10px!important;
+    right:10px!important;
+    bottom:10px!important;
+    width:auto!important;
+    height:min(82vh,690px)!important;
+    border:1px solid var(--mp-border)!important;
+    border-radius:28px!important;
+    transform:translateY(112%)!important;
+    box-shadow:0 -22px 70px rgba(6,72,61,.24)!important;
+    padding:18px 14px 92px!important;
+    background:linear-gradient(180deg,#fffdf8 0%,#fbf4e9 100%)!important;
+  }
+
+  .mp-filter-drawer.is-open{
+    transform:translateY(0)!important;
+  }
+
+  .mp-filter-drawer:before{
+    content:"";
+    display:block;
+    width:46px;
+    height:5px;
+    border-radius:999px;
+    background:#d6c6ad;
+    margin:0 auto 13px;
+  }
+
+  .mp-filter-head{
+    align-items:center!important;
+    padding:0 2px 14px!important;
+    margin-bottom:12px!important;
+  }
+
+  .mp-filter-head h2{
+    font-size:28px!important;
+    letter-spacing:-.5px;
+  }
+
+  .mp-filter-head p{
+    max-width:260px;
+    font-size:13px!important;
+    line-height:1.25!important;
+  }
+
+  .mp-filter-section-toggle{
+    min-height:52px!important;
+    border-radius:18px!important;
+    box-shadow:0 8px 20px rgba(6,72,61,.035)!important;
+  }
+
+  .mp-filter-section-toggle span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+
+  .mp-filter-section-toggle em{
+    min-width:22px;
+    height:22px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+    background:#eaf4ec;
+    color:var(--mp-green);
+    font-style:normal;
+    font-size:12px;
+    font-weight:950;
+  }
+
+  .mp-filter-hint{
+    margin:0 2px 9px;
+    color:var(--mp-muted);
+    font-size:13px;
+    font-weight:750;
+    line-height:1.3;
+  }
+
+  .mp-filter-section-body{
+    padding:9px 1px 2px!important;
+  }
+
+  .mp-filter-option{
+    min-height:46px!important;
+    border-radius:16px!important;
+    margin-bottom:7px!important;
+    background:#fffdf8!important;
+  }
+
+  .mp-filter-option.is-active{
+    background:#eaf4ec!important;
+    border-color:#b8d3bf!important;
+    box-shadow:inset 0 0 0 1px rgba(6,72,61,.04)!important;
+  }
+
+  .mp-filter-footer{
+    left:10px!important;
+    right:10px!important;
+    bottom:10px!important;
+    width:auto!important;
+    border-radius:0 0 28px 28px!important;
+    padding:12px 14px 14px!important;
+    background:rgba(255,250,242,.96)!important;
+  }
+
+  .mp-reset,
+  .mp-show{
+    min-height:48px!important;
+    border-radius:15px!important;
+  }
+}
+
+
+/* Filter Hierarchy v3
+   Maakt duidelijk verschil tussen filtergroep (accordion) en filteroptie.
+   Basis v2 blijft intact: voordeel eerst, geen prijsfilter, geen voordeelranges.
+*/
+@media(max-width:768px){
+  .mp-filter-section{
+    margin:0 0 9px!important;
+  }
+
+  .mp-filter-section-toggle{
+    min-height:54px!important;
+    background:#fffdf8!important;
+    border:1px solid var(--mp-border)!important;
+    border-radius:18px!important;
+    padding:0 15px!important;
+    font-size:17px!important;
+    font-weight:950!important;
+    box-shadow:0 8px 20px rgba(6,72,61,.035)!important;
+  }
+
+  .mp-filter-section.is-open .mp-filter-section-toggle{
+    background:#f7efe3!important;
+    border-color:#d3c2a9!important;
+    box-shadow:inset 0 0 0 1px rgba(6,72,61,.025)!important;
+  }
+
+  .mp-filter-section-body{
+    padding:9px 4px 4px 14px!important;
+    margin:0 0 2px!important;
+  }
+
+  .mp-filter-hint{
+    margin:0 0 8px 2px!important;
+    font-size:12.5px!important;
+    line-height:1.3!important;
+    color:var(--mp-muted)!important;
+  }
+
+  .mp-filter-option{
+    position:relative!important;
+    min-height:42px!important;
+    margin:0 0 7px!important;
+    padding:0 12px 0 40px!important;
+    border-radius:14px!important;
+    border:1px solid rgba(222,208,185,.72)!important;
+    background:rgba(255,253,248,.72)!important;
+    color:var(--mp-green)!important;
+    font-size:14px!important;
+    font-weight:850!important;
+    box-shadow:none!important;
+  }
+
+  .mp-filter-option:before{
+    content:"";
+    position:absolute;
+    left:13px;
+    top:50%;
+    width:16px;
+    height:16px;
+    transform:translateY(-50%);
+    border-radius:6px;
+    border:2px solid #d1c0a7;
+    background:#fffaf2;
+    box-sizing:border-box;
+  }
+
+  .mp-filter-option.is-active{
+    background:#eaf4ec!important;
+    border-color:#b8d3bf!important;
+  }
+
+  .mp-filter-option.is-active:before{
+    border-color:var(--mp-green);
+    background:var(--mp-green);
+    box-shadow:inset 0 0 0 3px #eaf4ec;
+  }
+
+  .mp-filter-option span{
+    display:block;
+    line-height:1.15;
+  }
+
+  .mp-filter-option b{
+    display:none!important;
+  }
+
+  .mp-filter-section-toggle em{
+    transform:translateY(-1px);
+  }
+}
+
+
+/* Filter Hierarchy v3.1
+   Footer-overlap opgelost + opties compacter en duidelijker onder hoofdgroepen.
+*/
+@media(max-width:768px){
+  .mp-filter-drawer{
+    padding-bottom:150px!important;
+  }
+
+  .mp-filter-section:last-of-type{
+    margin-bottom:92px!important;
+  }
+
+  .mp-filter-section-body{
+    padding:8px 2px 2px 18px!important;
+  }
+
+  .mp-filter-option{
+    min-height:38px!important;
+    padding:0 11px 0 34px!important;
+    margin:0 0 6px!important;
+    border-radius:12px!important;
+    font-size:13.5px!important;
+    background:rgba(255,253,248,.58)!important;
+    border-color:rgba(222,208,185,.64)!important;
+  }
+
+  .mp-filter-option:before{
+    left:11px!important;
+    width:14px!important;
+    height:14px!important;
+    border-radius:5px!important;
+    border-width:2px!important;
+  }
+
+  .mp-filter-option.is-active:before{
+    box-shadow:inset 0 0 0 3px #eaf4ec!important;
+  }
+
+  .mp-filter-footer{
+    box-shadow:0 -10px 24px rgba(6,72,61,.08)!important;
+  }
+}
+
+
+/* Filter Hierarchy v3.2
+   Definitieve footer-fix: footer hoort bij de filter-sheet en zweeft niet meer over opties.
+*/
+@media(max-width:768px){
+  .mp-filter-drawer{
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+    padding:18px 14px 0!important;
+  }
+
+  .mp-filter-head{
+    flex:0 0 auto!important;
+  }
+
+  .mp-filter-drawer > .mp-filter-section{
+    flex:0 0 auto!important;
+  }
+
+  .mp-filter-drawer{
+    overflow-y:auto!important;
+    padding-bottom:0!important;
+  }
+
+  .mp-filter-section:last-of-type{
+    margin-bottom:12px!important;
+  }
+
+  .mp-filter-footer{
+    position:sticky!important;
+    left:auto!important;
+    right:auto!important;
+    bottom:0!important;
+    width:auto!important;
+    margin:14px -14px 0!important;
+    border-radius:0 0 28px 28px!important;
+    padding:12px 14px 14px!important;
+    background:rgba(255,250,242,.98)!important;
+    border-top:1px solid var(--mp-border)!important;
+    box-shadow:0 -12px 28px rgba(6,72,61,.10)!important;
+    z-index:5!important;
+  }
+}
+
+
+/* Filter Scroll Lock v3.3 */
+@media(max-width:768px){
+  .mp-filter-drawer{
+    scroll-behavior:auto!important;
+    overscroll-behavior:contain!important;
+  }
+}
+
+
+
+
+
+
+
+
+/* v19 Premium Back Button
+   Eén schone knop met SVG-chevron als background.
+   Geen pseudo-elementen, geen rotate, geen dubbele pijl.
+*/
+.mp-back{
+  width:42px !important;
+  height:42px !important;
+  min-width:42px !important;
+  min-height:42px !important;
+  flex:0 0 42px !important;
+  display:block !important;
+  border-radius:16px !important;
+  background-color:rgba(255,253,248,.92) !important;
+  background-image:url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L8 12L15 19' stroke='%2306483d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:20px 20px !important;
+  border:1px solid rgba(222,208,185,.9) !important;
+  box-shadow:0 10px 24px rgba(6,72,61,.08) !important;
+  color:transparent !important;
+  font-size:0 !important;
+  line-height:0 !important;
+  text-indent:-9999px !important;
+  overflow:hidden !important;
+  position:relative !important;
+  transform:none !important;
+}
+
+.mp-back:hover,
+.mp-back:active{
+  background-color:#fffdf8 !important;
+}
+
+.mp-back::before,
+.mp-back::after,
+.mp-detail-header > a::before,
+.mp-detail-header > a::after,
+.mp-detail-header a:first-child::before,
+.mp-detail-header a:first-child::after{
+  content:none !important;
+  display:none !important;
+}
+
+.mp-uitleg-card{
+  margin-top:16px;
+  border:1px solid rgba(222,208,185,.95);
+  background:rgba(255,253,248,.94);
+  border-radius:24px;
+  padding:16px;
+  box-shadow:0 14px 32px rgba(6,72,61,.06);
+}
+
+.mp-uitleg-head{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.mp-uitleg-icon{
+  width:38px;
+  height:38px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eaf4ec;
+  flex:0 0 auto;
+}
+
+.mp-uitleg-card h2{
+  margin:0 0 4px;
+  color:var(--mp-green);
+  font-size:21px;
+  line-height:1.1;
+  letter-spacing:-.25px;
+}
+
+.mp-uitleg-card p{
+  margin:0;
+  color:var(--mp-muted);
+  font-size:14px;
+  line-height:1.4;
+  font-weight:650;
+}
+
+.mp-uitleg-list{
+  border-top:1px solid rgba(6,72,61,.12);
+}
+
+.mp-uitleg-list details{
+  border-bottom:1px solid rgba(6,72,61,.10);
+  padding:0;
+}
+
+.mp-uitleg-list details:last-child{
+  border-bottom:0;
+}
+
+.mp-uitleg-list summary{
+  list-style:none;
+  cursor:pointer;
+  color:var(--mp-green);
+  font-weight:950;
+  font-size:15px;
+  line-height:1.25;
+  padding:13px 2px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.mp-uitleg-list summary::-webkit-details-marker{
+  display:none;
+}
+
+.mp-uitleg-list summary::after{
+  content:"⌄";
+  font-size:17px;
+  color:var(--mp-muted);
+}
+
+.mp-uitleg-list details[open] summary::after{
+  transform:rotate(180deg);
+}
+
+.mp-uitleg-list details p{
+  padding:0 2px 13px;
+  font-size:14px;
+}
+
+}
+

@@ -1,0 +1,375 @@
+.topbar{height:68px;background:rgba(251,246,237,.94);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 34px;position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.brand{display:flex;gap:10px;align-items:center}.brand-icon{font-size:28px}.brand strong{display:block;font-size:22px;color:var(--green);line-height:1}.brand small{font-size:12px;color:var(--muted)}.main-nav{display:flex;gap:30px;font-weight:800;font-size:15px}.main-nav a:hover{color:var(--gold)}.top-actions{display:flex;gap:12px;align-items:center}.top-actions input{width:280px;height:40px;border:1px solid var(--border);border-radius:12px;padding:0 14px;background:white}.top-actions button{border:0;background:transparent;font-size:24px;color:var(--green)}@media(max-width:980px){.main-nav{display:none}.top-actions input{display:none}.topbar{padding:0 16px}}
+@media (min-width:981px){.brand-logo{height:56px;width:auto;display:block}.brand{gap:14px}.brand-copy{display:flex;flex-direction:column;line-height:1}.brand-copy small{font-size:14px;font-weight:800;color:var(--gold);line-height:1.1}.brand-copy strong{font-size:34px;color:var(--green)}.brand-icon{display:none}}
+/* Desktop Header Component v3 - official MP+ brand lockup
+   Mobile blijft onaangeraakt: deze styling geldt alleen vanaf desktopbreedte. */
+@media (min-width:981px){
+  .topbar{
+    height:96px;
+    padding:0 48px;
+    gap:28px;
+  }
+
+  .topbar .brand{
+    flex:0 0 360px;
+    width:360px;
+    height:78px;
+    gap:0;
+    align-items:center;
+    background-image:url('/assets/brand/mpplus-desktop-lockup-v1.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size:contain;
+  }
+
+  .topbar .brand .brand-logo,
+  .topbar .brand .brand-copy,
+  .topbar .brand .brand-icon,
+  .topbar .brand > span{
+    display:none!important;
+  }
+
+  .main-nav{
+    flex:1 1 auto;
+    justify-content:center;
+    gap:28px;
+    white-space:nowrap;
+  }
+
+  .top-actions{
+    flex:0 0 auto;
+  }
+}
+
+@media (min-width:981px) and (max-width:1280px){
+  .topbar{
+    padding:0 28px;
+    gap:18px;
+  }
+  .topbar .brand{
+    flex-basis:300px;
+    width:300px;
+    height:70px;
+  }
+  .main-nav{
+    gap:18px;
+    font-size:14px;
+  }
+  .top-actions input{
+    width:230px;
+  }
+}
+
+
+/* Desktop Header Unification v3A4
+   Syncs legacy .topbar pages (categories/providers/legal) with the Home desktop header.
+   Mobile remains untouched because this only applies from desktop width. */
+@media (min-width:981px){
+  .topbar{
+    height:auto;
+    min-height:96px;
+    padding:0 48px;
+    display:grid;
+    grid-template-columns:360px minmax(500px,1fr) minmax(430px,430px);
+    gap:18px;
+    align-items:center;
+    justify-content:normal;
+    background:rgba(251,246,237,.96);
+    border-bottom:1px solid rgba(222,208,185,.82);
+    box-shadow:0 16px 38px rgba(6,72,61,.055);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+  }
+
+  .topbar .brand{
+    flex:initial;
+    justify-self:start;
+    width:360px;
+    height:78px;
+  }
+
+  .topbar .main-nav{
+    flex:initial;
+    justify-self:start;
+    justify-content:flex-start;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:6px;
+    border:1px solid rgba(222,208,185,.76);
+    border-radius:999px;
+    background:rgba(255,253,248,.76);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.7);
+    font-size:14px;
+    font-weight:900;
+    white-space:nowrap;
+    max-width:100%;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+
+  .topbar .main-nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  .topbar .main-nav a{
+    min-height:38px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 14px;
+    border-radius:999px;
+    color:var(--green);
+    text-decoration:none;
+    transition:background .18s ease, color .18s ease, transform .18s ease;
+  }
+
+  .topbar .main-nav a:hover,
+  .topbar .main-nav a:focus-visible{
+    color:#fffdf8;
+    background:var(--green);
+    transform:translateY(-1px);
+    outline:none;
+  }
+
+  .topbar .top-actions{
+    flex:initial;
+    justify-self:end;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:12px;
+  }
+
+  .topbar .top-actions input{
+    width:min(300px,100%);
+    max-width:300px;
+    height:44px;
+    border:1px solid rgba(222,208,185,.9);
+    border-radius:999px;
+    padding:0 16px;
+    background:#fffdf8;
+    color:var(--green);
+    font-weight:750;
+    box-shadow:0 10px 22px rgba(6,72,61,.045);
+  }
+
+  .topbar .top-actions button,
+  .topbar .top-actions .mp-saved-desktop-link-v50{
+    min-height:44px;
+    border-radius:999px;
+  }
+}
+
+@media (min-width:981px) and (max-width:1280px){
+  .topbar{
+    padding:0 28px;
+    grid-template-columns:300px minmax(420px,1fr) minmax(390px,390px);
+    gap:18px;
+  }
+  .topbar .brand{
+    width:300px;
+    height:70px;
+  }
+  .topbar .main-nav{
+    font-size:14px;
+  }
+  .topbar .top-actions input{
+    width:230px;
+  }
+}
+
+/* V19.2 Desktop Search Sync
+   Desktop-only: align legacy .topbar search styling with the Home desktop search.
+   Mobile remains locked: no max-width/mobile selectors touched. */
+@media (min-width:981px){
+  .topbar .top-actions input{
+    width:min(300px,100%);
+    max-width:300px;
+    height:44px;
+    border:1px solid rgba(222,208,185,.9);
+    border-radius:999px;
+    padding:0 16px;
+    background:#fffdf8;
+    color:var(--green);
+    font-weight:750;
+    box-shadow:0 10px 22px rgba(6,72,61,.045);
+  }
+
+  .topbar .top-actions input::placeholder{
+    color:rgba(116,107,97,.78);
+  }
+
+  .topbar .top-actions input:focus{
+    outline:2px solid rgba(201,149,45,.25);
+    border-color:rgba(201,149,45,.72);
+  }
+
+  .topbar .top-actions button{
+    width:44px;
+    height:44px;
+    min-width:44px;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:999px;
+  }
+
+  .topbar .top-actions .mp-saved-desktop-link-v50{
+    width:auto;
+    height:44px;
+    min-width:max-content;
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:0 15px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+}
+
+
+/* V19.3b Real Desktop Saved/Search Fix
+   Fixes legacy .topbar pages where the saved link text was squeezed into a 44px button.
+   Desktop-only; mobile remains locked. */
+@media (min-width:981px){
+  .topbar .top-actions{
+    min-width:390px;
+    overflow:visible;
+  }
+  .topbar .top-actions .mp-saved-desktop-link-v50{
+    width:auto!important;
+    min-width:max-content!important;
+    height:44px!important;
+    padding:0 15px!important;
+    gap:8px!important;
+    overflow:visible!important;
+  }
+}
+
+/* V19.3c Desktop Header Exact Home Sync
+   Legacy .topbar pages now use the exact desktop grid/actions contract of .mp-desktop-header.
+   Desktop-only; mobile remains locked. */
+@media (min-width:981px){
+  .topbar{
+    min-height:96px!important;
+    height:auto!important;
+    padding:0 48px!important;
+    display:grid!important;
+    grid-template-columns:360px minmax(520px,1fr) minmax(250px,.9fr)!important;
+    gap:18px!important;
+    align-items:center!important;
+    justify-content:normal!important;
+    background:rgba(251,246,237,.96)!important;
+    border-bottom:1px solid rgba(222,208,185,.82)!important;
+    box-shadow:0 16px 38px rgba(6,72,61,.055)!important;
+    backdrop-filter:blur(16px)!important;
+    -webkit-backdrop-filter:blur(16px)!important;
+  }
+
+  .topbar .brand{
+    display:flex!important;
+    align-items:center!important;
+    justify-self:start!important;
+    flex:initial!important;
+    width:360px!important;
+    height:78px!important;
+    min-width:0!important;
+    color:var(--green)!important;
+    text-decoration:none!important;
+    background-image:url('/assets/brand/mpplus-desktop-lockup-v1.png')!important;
+    background-repeat:no-repeat!important;
+    background-position:left center!important;
+    background-size:contain!important;
+  }
+
+  .topbar .main-nav{
+    flex:initial!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-self:start!important;
+    justify-content:flex-start!important;
+    gap:6px!important;
+    padding:6px!important;
+    border:1px solid rgba(222,208,185,.76)!important;
+    border-radius:999px!important;
+    background:rgba(255,253,248,.76)!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.7)!important;
+    font-size:14px!important;
+    font-weight:900!important;
+    white-space:nowrap!important;
+    max-width:100%!important;
+    overflow-x:auto!important;
+    scrollbar-width:none!important;
+  }
+
+  .topbar .main-nav a{
+    min-height:38px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:0 14px!important;
+    border-radius:999px!important;
+    color:var(--green)!important;
+    text-decoration:none!important;
+  }
+
+  .topbar .top-actions{
+    flex:initial!important;
+    justify-self:end!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:12px!important;
+    min-width:0!important;
+    width:auto!important;
+    overflow:visible!important;
+  }
+
+  .topbar .top-actions input{
+    width:min(300px,100%)!important;
+    max-width:300px!important;
+    height:44px!important;
+    border:1px solid rgba(222,208,185,.9)!important;
+    border-radius:999px!important;
+    padding:0 16px!important;
+    background:#fffdf8!important;
+    color:var(--green)!important;
+    font-weight:750!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+  }
+
+  .topbar .top-actions .mp-saved-desktop-link-v50,
+  .topbar .top-actions button{
+    min-height:44px!important;
+    height:44px!important;
+    border-radius:999px!important;
+  }
+
+  .topbar .top-actions .mp-saved-desktop-link-v50{
+    width:auto!important;
+    min-width:max-content!important;
+    padding:0 15px!important;
+    gap:8px!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media (min-width:981px) and (max-width:1280px){
+  .topbar{
+    grid-template-columns:1fr!important;
+    justify-items:stretch!important;
+    gap:12px!important;
+  }
+  .topbar .brand{
+    justify-self:center!important;
+    width:300px!important;
+    height:70px!important;
+  }
+  .topbar .top-actions{
+    justify-content:center!important;
+    justify-self:center!important;
+  }
+}

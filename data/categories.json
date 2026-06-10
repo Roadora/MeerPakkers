@@ -1,0 +1,73 @@
+[
+  {
+    "id": "mobiel",
+    "slug": "mobiel",
+    "name": "Mobiel",
+    "title": "Mobiele abonnementen met cadeau, cashback en korting | MeerPakkers",
+    "description": "Vergelijk mobiele abonnementen en ontdek waar je de beste cadeaus, cashback en kortingen krijgt.",
+    "h1": "Mobiele abonnementen met cadeau en cashback",
+    "intro": "Vind telefoonabonnementen waarbij je meer krijgt: cadeaus, cashback, korting of gratis extra's.",
+    "filters": [
+      "Voordeel",
+      "Cadeautype",
+      "Klanttype",
+      "Provider",
+      "Telefoonmerk",
+      "Contract"
+    ]
+  },
+  {
+    "id": "sim-only",
+    "slug": "sim-only",
+    "name": "Sim Only",
+    "title": "Sim Only deals met cashback, korting en extra voordeel | MeerPakkers",
+    "description": "Vergelijk Sim Only deals en ontdek waar je cashback, korting of gratis extra's krijgt.",
+    "h1": "Sim Only deals met extra voordeel",
+    "intro": "Vergelijk Sim Only acties en zie direct waar je cashback, korting of gratis extra's krijgt.",
+    "filters": [
+      "Voordeel",
+      "Cadeautype",
+      "Klanttype",
+      "Provider",
+      "Databundel",
+      "Contract"
+    ]
+  },
+  {
+    "id": "internet-tv",
+    "slug": "internet-tv",
+    "name": "Internet & TV",
+    "title": "Internet & TV abonnementen met cadeaukaart, cashback en korting | MeerPakkers",
+    "description": "Vergelijk Internet & TV abonnementen en ontdek acties met cadeaukaarten, cashback, gratis sport of korting.",
+    "h1": "Internet & TV deals met cadeau en korting",
+    "intro": "Bekijk waar je het meeste voordeel krijgt bij internet, glasvezel en TV-abonnementen.",
+    "filters": [
+      "Voordeel",
+      "Cadeautype",
+      "Klanttype",
+      "Provider",
+      "Internetsnelheid",
+      "TV-pakket",
+      "Contract"
+    ]
+  },
+  {
+    "id": "streaming",
+    "slug": "streaming",
+    "name": "Streaming",
+    "title": "Streaming deals en acties met korting of gratis maanden | MeerPakkers",
+    "description": "Vergelijk streamingdiensten en ontdek acties met korting, gratis maanden en bundelvoordeel.",
+    "h1": "Streaming deals met korting en gratis maanden",
+    "intro": "Vergelijk streamingacties voor films, series en sport en ontdek waar je de beste korting krijgt.",
+    "filters": [
+      "Voordeel",
+      "Cadeautype",
+      "Klanttype",
+      "Streamingdienst",
+      "Films",
+      "Series",
+      "Sport",
+      "Contract"
+    ]
+  }
+]
