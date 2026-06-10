@@ -1,0 +1,31 @@
+MeerPakkers Deal Detail Desktop Audit - Safe Rollback Basis
+================================================================
+
+Basis: V20.9.2 Mobile Detail Restore
+
+Belangrijkste conclusies:
+- V21 Conversion Focus is verworpen: die build leidde tot 'Deal niet gevonden'.
+- V20.9.2 blijft de veilige basis voor verdere desktop-builds.
+- Deal matching en data-fetch moeten onaangeraakt blijven.
+- Mobiel moet via renderMobileDeal() beschermd blijven.
+- Desktop mag alleen via de desktop render-tak en @media (min-width:1024px) worden aangepast.
+
+Technische checks:
+- deal-detail-v1.js aanwezig: True
+- deal-detail-v1.css aanwezig: True
+- data/deals.json aanwezig: True
+- aantal deals in data/deals.json: 21
+- renderMobileDeal aanwezig: True
+- mobile branch aanwezig: True
+- matchesDeal aanwezig: True
+- fetch deals.json aanwezig: True
+
+Veilige bouwregel vanaf hier:
+1. Niet meer aan matchesDeal(), load(), fetch(), returnUrl() of data/deals.json komen.
+2. Mobiele HTML-output in renderMobileDeal() niet wijzigen.
+3. Desktop-layout apart renderen binnen renderDeal() nadat de mobile guard is gepasseerd.
+4. Alle nieuwe desktop-CSS uitsluitend onder @media (min-width:1024px).
+5. Voor elke zip controleren dat renderMobileDeal() en de mobile branch nog aanwezig zijn.
+
+Aanbevolen volgende stap:
+- Vanaf deze zip opnieuw een desktop-only one-screen versie bouwen, maar zonder data/matching/refactor wijzigingen.

@@ -1,0 +1,17 @@
+MeerPakkers V23 EXACT MOCKUP BUILD
+
+Gebouwd vanaf fallback: Meerpakkers v3.zip.
+
+Doel:
+- Mockup zo letterlijk mogelijk nabouwen in MeerPakkers-kleuren.
+- Geen eigen layout-interpretatie.
+- Desktop-only.
+
+Behouden:
+- renderMobileDeal() onaangeraakt.
+- mobile guard blijft aanwezig.
+- matchesDeal/load/fetch/deals.json onaangeraakt.
+
+Let op:
+- De originele mockup gebruikt echte productfoto's.
+- Omdat de dataset geen echte productafbeeldingen bevat, zijn CSS-getekende visuals gebruikt als fallback i.p.v. emoji's.

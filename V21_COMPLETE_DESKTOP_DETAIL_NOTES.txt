@@ -1,0 +1,6 @@
+MeerPakkers V21 Complete Desktop Deal Detail Page
+
+Gebouwd vanaf V20.9.2 SAFE rollback.
+Mobiel is niet gewijzigd: renderMobileDeal() blijft origineel en de mobile guard blijft actief.
+Deal matching/load/fetch/data zijn niet aangepast.
+Desktop is ingericht als complete conversiepagina in één schermrichting.

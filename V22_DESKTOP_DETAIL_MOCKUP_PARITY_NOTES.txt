@@ -1,0 +1,13 @@
+MeerPakkers V22 Desktop Deal Detail Mockup Parity
+
+Bronmockup gevolgd:
+- Rij 1: Wat krijg je? met 3 visuele kaarten + Jouw Meepakker rechts.
+- Rij 2: Waarom is dit een Meepakker? met tekst, checks en visual.
+- Rij 3: De details met 3 kaarten.
+- Onderste CTA/trust in mockup-stijl toegevoegd.
+
+Veiligheid:
+- Gebouwd vanaf geüploade 'meerpakkers v2.zip'.
+- Mobile renderMobileDeal() is niet aangepast.
+- Deal matching/fetch/load is niet aangepast.
+- Nieuwe CSS is desktop-only onder min-width:1024px.
