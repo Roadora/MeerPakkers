@@ -1,0 +1,1 @@
+window.MPStorage={get(k,f=null){try{return JSON.parse(localStorage.getItem(k))??f}catch(e){return f}},set(k,v){localStorage.setItem(k,JSON.stringify(v))}};

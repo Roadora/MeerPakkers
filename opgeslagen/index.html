@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Opgeslagen deals | MeerPakkers</title>
+  <meta name="description" content="Bekijk de deals die je hebt opgeslagen op MeerPakkers.">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/deal-card-component.css">
+  <link rel="stylesheet" href="../css/saved-deals-v49.css">
+  <link rel="stylesheet" href="../css/mobile-framework-v1.css">
+<link rel="stylesheet" href="../css/mobile-topbar-unified-v3.css">
+<link rel="stylesheet" href="../css/cookie-banner-v40.css">
+<link rel="stylesheet" href="/css/topbar-final-lock-v17.css">
+  <link rel="stylesheet" href="/css/header.css">
+</head>
+<body class="mp-saved-page">
+  <header class="mp-desktop-header" aria-label="MeerPakkers desktop header">
+  <a class="mp-desktop-brand" href="/" aria-label="MeerPakkers home">
+    <img class="mp-desktop-logo" src="/assets/brand/mpplus-logo-transparent-v1.png" alt="MeerPakkers">
+    <span class="mp-desktop-brand-copy">
+      <strong>MeerPakkers</strong>
+      <small>meer cadeau, meer korting.</small>
+    </span>
+  </a>
+  <nav class="mp-desktop-nav" aria-label="Hoofdnavigatie">
+    <a href="/mobiel/">Mobiel</a>
+    <a href="/sim-only/">Sim Only</a>
+    <a href="/internet-tv/">Internet & TV</a>
+    <a href="/streaming/">Streaming</a>
+    <a href="/providers/">Providers</a>
+    <a href="/kies-je-meepakker/">Kies je Meepakker</a>
+  </nav>
+  <div class="mp-desktop-actions">
+    <input id="searchInput" type="search" placeholder="Zoek deals, providers..." aria-label="Zoek deals en providers">
+    <button type="button" aria-label="Favorieten">♡</button>
+  </div>
+</header>
+<main class="mp-saved-shell">
+    <header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="MeerPakkers pagina header">
+      <a href="../" class="mp-mobile-back" aria-label="Terug naar home">&lt;</a>
+      <a href="../" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
+        <span class="mp-mobile-brand-logo">MP+</span>
+        <span class="mp-mobile-brand-copy"><span class="mp-mobile-brand-lines">meer cadeau,<br>meer korting.</span><strong class="mp-mobile-brand-name">MeerPakkers</strong></span>
+      </a>
+      <span class="mp-mobile-heart-button" aria-hidden="true">♡<span class="mp-mobile-heart-count" data-saved-deals-count>0</span></span>
+    </header>
+
+    <header class="mp-saved-header mp-mobile-intro">
+      <div>
+        <p class="mp-saved-eyebrow mp-mobile-intro__eyebrow">MeerPakkers</p>
+        <h1 class="mp-mobile-intro__title">Opgeslagen deals</h1>
+        <p class="mp-mobile-intro__subtitle">Bewaar interessante deals en bekijk ze later opnieuw.</p>
+      </div>
+    </header>
+
+    <section class="mp-saved-summary" aria-live="polite">
+      <strong id="mpSavedCount">0 opgeslagen</strong>
+      <span>Deze deals worden voorlopig alleen op dit apparaat bewaard.</span>
+    </section>
+
+    <section id="mpSavedDealsList" class="mp-saved-list" aria-label="Opgeslagen deals"></section>
+  </main>
+
+  <script src="../js/saved-deals-store-v46.js"></script>
+  <script src="../js/deal-card.js"></script>
+  <script src="../js/saved-deals-page-v49.js"></script>
+  <script src="/js/mobile-topbar-component-v1.js"></script>
+  <script src="../js/saved-deals-header-v50.js"></script>
+  <script src="../js/cookie-banner-v40.js"></script>
+</body>
+</html>

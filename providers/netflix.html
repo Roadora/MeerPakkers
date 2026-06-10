@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Netflix deals vergelijken | Cadeaus, korting en cashback | MeerPakkers</title>
+<meta name="description" content="Bekijk actuele Netflix deals op MeerPakkers. Ontdek welke cadeaus, kortingen en cashback-acties beschikbaar zijn voor streaming.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="/providers/netflix.html">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/navigation.css">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/deals.css">
+<link rel="stylesheet" href="/css/deal-card-component.css">
+<link rel="stylesheet" href="/css/sidebar.css">
+<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/mobile-page-header.css">
+<link rel="stylesheet" href="/css/provider-pages.css">
+<link rel="stylesheet" href="/css/saved-deals-header-v50.css">
+<link rel="stylesheet" href="/css/deal-card-actions-v1.css">
+<link rel="stylesheet" href="/css/mobile-framework-v1.css">
+<link rel="stylesheet" href="/css/mobile-topbar-unified-v3.css">
+<link rel="stylesheet" href="/css/mobile-shell-unification-v1.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Netflix", "url": "/providers/netflix.html"}</script>
+
+<meta name="theme-color" content="#003f35">
+<meta name="msapplication-TileColor" content="#003f35">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <meta name="theme-color" content="#06483d">
+
+  <link rel="stylesheet" href="../css/cookie-banner-v40.css">
+<link rel="stylesheet" href="/css/topbar-final-lock-v17.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Welke Netflix deals vergelijkt MeerPakkers?", "acceptedAnswer": {"@type": "Answer", "text": "MeerPakkers toont de deals die in de huidige dataset aan Netflix zijn gekoppeld. De focus ligt op extra voordeel zoals cadeaus, cashback, korting en gratis extra’s."}}, {"@type": "Question", "name": "Hoe bepaalt MeerPakkers het voordeel?", "acceptedAnswer": {"@type": "Answer", "text": "We kijken naar cadeauwaarde, cashbackwaarde, kortingswaarde, maandprijs, contractduur en totaal voordeel."}}, {"@type": "Question", "name": "Zijn de knoppen al gekoppeld aan echte affiliate-links?", "acceptedAnswer": {"@type": "Answer", "text": "De technische affiliate-structuur is voorbereid. Zolang een link nog een placeholder is, wordt deze veilig afgehandeld totdat echte partnerlinks worden ingevuld."}}]}</script>
+</head>
+<body class="mp-provider-detail-page" data-provider-id="netflix">
+<header class="mp-desktop-header" aria-label="MeerPakkers desktop header">
+  <a class="mp-desktop-brand" href="/" aria-label="MeerPakkers home">
+    <img class="mp-desktop-logo" src="/assets/brand/mpplus-logo-transparent-v1.png" alt="MeerPakkers">
+    <span class="mp-desktop-brand-copy">
+      <strong>MeerPakkers</strong>
+      <small>meer cadeau, meer korting.</small>
+    </span>
+  </a>
+  <nav class="mp-desktop-nav" aria-label="Hoofdnavigatie">
+    <a href="/mobiel/">Mobiel</a>
+    <a href="/sim-only/">Sim Only</a>
+    <a href="/internet-tv/">Internet & TV</a>
+    <a href="/streaming/">Streaming</a>
+    <a href="/providers/">Providers</a>
+    <a href="/kies-je-meepakker/">Kies je Meepakker</a>
+  </nav>
+  <div class="mp-desktop-actions">
+    <input id="searchInput" type="search" placeholder="Zoek deals, providers..." aria-label="Zoek deals en providers">
+    <button type="button" aria-label="Favorieten">♡</button>
+  </div>
+</header>
+
+<main class="provider-page-shell mp-provider-detail-shell mp-mobile-framework">
+  <header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="MeerPakkers pagina header">
+    <a href="/providers/" class="mp-mobile-back" aria-label="Terug naar providers">&lt;</a>
+    <a href="/" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
+      <span class="mp-mobile-brand-logo">MP+</span>
+      <span class="mp-mobile-brand-copy"><span class="mp-mobile-brand-lines">meer cadeau,<br>meer korting.</span><strong class="mp-mobile-brand-name">MeerPakkers</strong></span>
+    </a>
+    <a href="/opgeslagen/" class="mp-mobile-heart-link" aria-label="Opgeslagen deals">♡<span class="mp-mobile-heart-count" data-saved-deals-count>0</span></a>
+  </header>
+  <section class="provider-hero mp-mobile-intro">
+    <div>
+      <h1 class="mp-mobile-intro__title">Netflix Deals</h1>
+      <p class="mp-mobile-intro__subtitle">Bekijk alle Netflix deals met cadeau, cashback of extra voordeel.</p>
+    </div>
+    <div class="provider-logo-large">N</div>
+  </section>
+
+  <section class="mp-demo-banner" aria-label="Demo melding">
+    <strong>MeerPakkers is momenteel in bèta</strong>
+    <span>We koppelen binnenkort echte deals en partners. Sommige aanbiedingen, prijzen en voordelen bevatten nu nog demo-content.</span>
+  </section>
+
+
+  <section class="provider-layout">
+    <section class="provider-deals" id="deals">
+      <p id="providerDealCount"></p>
+      <div id="providerDealList" class="deal-list"></div>
+
+      <article class="provider-seo-block provider-faq-block" id="faq">
+        <h2>Veelgestelde vragen over Netflix deals</h2>
+        <details><summary>Welke Netflix deals vergelijkt MeerPakkers?</summary><p>MeerPakkers toont de deals die in de huidige dataset aan Netflix zijn gekoppeld. De focus ligt op extra voordeel zoals cadeaus, cashback, korting en gratis extra’s.</p></details>
+        <details><summary>Hoe bepaalt MeerPakkers het voordeel?</summary><p>We kijken naar cadeauwaarde, cashbackwaarde, kortingswaarde, maandprijs, contractduur en totaal voordeel.</p></details>
+        <details><summary>Zijn de knoppen al gekoppeld aan echte affiliate-links?</summary><p>De technische affiliate-structuur is voorbereid. Zolang een link nog een placeholder is, wordt deze veilig afgehandeld totdat echte partnerlinks worden ingevuld.</p></details>
+      </article>
+    </section>
+  </section>
+</main>
+
+<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a>Over ons</a><a>Contact</a><a>Privacy</a><a>Voorwaarden</a></nav></footer>
+<script src="/js/deal-card.js"></script>
+<script src="/js/provider-page.js"></script>
+  <script src="/js/saved-deals-store-v46.js"></script>
+<script src="/js/saved-deals-ui-v47.js"></script>
+<script src="/js/mobile-topbar-component-v1.js"></script>
+  <script src="/js/saved-deals-header-v50.js"></script>
+  <script src="../js/cookie-banner-v40.js"></script>
+<script src="/js/provider-detail-return-v1.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "apple": [
+    "iPhone 15",
+    "iPhone 15 Plus",
+    "iPhone 15 Pro",
+    "iPhone 15 Pro Max",
+    "iPhone 16",
+    "iPhone 16 Plus",
+    "iPhone 16 Pro",
+    "iPhone 16 Pro Max",
+    "iPhone 17",
+    "iPhone 17 Air",
+    "iPhone 17 Pro",
+    "iPhone 17 Pro Max"
+  ],
+  "samsung": [
+    "Galaxy S25",
+    "Galaxy S25+",
+    "Galaxy S25 Ultra",
+    "Galaxy S26",
+    "Galaxy S26+",
+    "Galaxy S26 Ultra"
+  ],
+  "google": [
+    "Pixel 9",
+    "Pixel 9 Pro",
+    "Pixel 9 Pro XL",
+    "Pixel 10",
+    "Pixel 10 Pro",
+    "Pixel 10 Pro XL"
+  ],
+  "nothing": [
+    "Nothing Phone (3)",
+    "Nothing Phone (4a)",
+    "Nothing Phone (4a Pro)"
+  ],
+  "xiaomi": [
+    "Xiaomi 17",
+    "Xiaomi 17 Ultra"
+  ],
+  "oppo": [
+    "OPPO Reno",
+    "OPPO Find X"
+  ],
+  "motorola": [
+    "Motorola Edge",
+    "Motorola Razr"
+  ]
+}

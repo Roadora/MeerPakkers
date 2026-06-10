@@ -1,0 +1,1 @@
+window.MPRouter={init(){document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>document.body.dataset.section=a.getAttribute('href').slice(1)))}};

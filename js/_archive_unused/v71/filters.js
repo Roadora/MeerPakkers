@@ -1,0 +1,1 @@
+window.MPFilters={init(){document.querySelectorAll('.filter-row button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-row button').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}))}};

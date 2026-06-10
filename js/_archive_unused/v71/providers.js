@@ -1,0 +1,1 @@
+window.MPProviders={async load(){const r=await fetch('data/providers.json');return r.json()},render(items){const el=document.getElementById('providerGrid');if(!el)return;el.innerHTML=items.map(p=>`<span class="provider-logo"><span>${p.logo}</span>${p.name}</span>`).join('')}};
