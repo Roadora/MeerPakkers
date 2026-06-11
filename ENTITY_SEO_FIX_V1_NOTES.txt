@@ -1,0 +1,9 @@
+MeerPakkers Entity SEO Fix v1
+- Gebouwd vanaf live GA4-basis.
+- GA4 G-KYTNQP3NVH behouden.
+- Organization/Brand/WebSite structured data toegevoegd aan HTML-pagina's.
+- Canonicals absoluut gemaakt richting https://www.meerpakkers.nl/.
+- Open Graph/Twitter metadata toegevoegd waar ontbrak.
+- Over ons-pagina herschreven om MeerPakkers als eigen handelsnaam/merk voor abonnementen met extra voordeel te verduidelijken.
+- Contactpagina licht verduidelijkt.
+- sitemap.xml en robots.txt inhoudelijk onaangeraakt.
