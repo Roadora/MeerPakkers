@@ -1,0 +1,6 @@
+Daisycon Verificatie v1
+- Gebouwd vanaf MeerPakkers Entity SEO Fix v1.
+- Daisycon verificatiebestand toegevoegd in website-root.
+- Bestand: 770c141d96eea88.html
+- Verwachte live URL: https://www.meerpakkers.nl/770c141d96eea88.html
+- GA4, sitemap, robots, SEO/entity data en bestaande sitebestanden behouden.
