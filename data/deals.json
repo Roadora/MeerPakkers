@@ -45,7 +45,16 @@
     "merchantId": "vodafone",
     "deepLink": "#affiliate-vodafone",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "kpn-glasvezel-tv",
@@ -92,7 +101,16 @@
     "merchantId": "kpn",
     "deepLink": "#affiliate-kpn-thuis",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "ziggo-internet-sport",
@@ -139,7 +157,16 @@
     "merchantId": "ziggo",
     "deepLink": "#affiliate-ziggo",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "odido-glasvezel-streaming",
@@ -186,7 +213,16 @@
     "merchantId": "odido",
     "deepLink": "#affiliate-odido-thuis",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "youfone-sim-cashback",
@@ -233,7 +269,16 @@
     "merchantId": "youfone",
     "deepLink": "#affiliate-youfone-sim",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "kpn-mobiel-cadeaukaart",
@@ -280,7 +325,16 @@
     "merchantId": "kpn",
     "deepLink": "#affiliate-kpn-mobiel",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "odido-sim-disney",
@@ -327,7 +381,16 @@
     "merchantId": "odido",
     "deepLink": "#affiliate-odido",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "budget-thuis-internet-tv",
@@ -374,7 +437,16 @@
     "merchantId": "budget-thuis",
     "deepLink": "#affiliate-budget-thuis",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "hollandsnieuwe-cadeau",
@@ -421,7 +493,16 @@
     "merchantId": "hollandsnieuwe",
     "deepLink": "#affiliate-hollandsnieuwe",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "delta-glasvezel",
@@ -468,7 +549,16 @@
     "merchantId": "delta",
     "deepLink": "#affiliate-delta",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "netflix-actie",
@@ -515,7 +605,16 @@
     "merchantId": "netflix",
     "deepLink": "#affiliate-netflix",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "lebara-sim-korting",
@@ -560,7 +659,16 @@
     "merchantId": "lebara",
     "deepLink": "#affiliate-lebara",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "viaplay-sportactie",
@@ -607,7 +715,16 @@
     "merchantId": "viaplay",
     "deepLink": "#affiliate-viaplay",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "videoland-actie",
@@ -654,7 +771,16 @@
     "merchantId": "videoland",
     "deepLink": "#affiliate-videoland",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "prime-video-bundel",
@@ -699,7 +825,16 @@
     "merchantId": "prime-video",
     "deepLink": "#affiliate-prime",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "ben-sim-korting",
@@ -745,7 +880,16 @@
     "merchantId": "ben",
     "deepLink": "#affiliate-ben",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "youfone-internet-tv",
@@ -790,7 +934,16 @@
     "merchantId": "youfone",
     "deepLink": "#affiliate-youfone-thuis",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "simyo-sim-cashback",
@@ -835,7 +988,16 @@
     "merchantId": "simyo",
     "deepLink": "#affiliate-simyo",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "hbo-max-actie",
@@ -880,7 +1042,16 @@
     "merchantId": "hbo-max",
     "deepLink": "#affiliate-hbo",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "skyshowtime-actie",
@@ -925,7 +1096,16 @@
     "merchantId": "skyshowtime",
     "deepLink": "#affiliate-skyshowtime",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   },
   {
     "id": "disney-plus-jaaractie",
@@ -970,6 +1150,15 @@
     "merchantId": "disney-plus",
     "deepLink": "#affiliate-disney",
     "affiliateStatus": "placeholder",
-    "lastCheckedAt": null
+    "lastCheckedAt": null,
+    "dealStatus": "demo",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "manual",
+    "sourceId": null,
+    "adminNotes": "",
+    "termsSummary": "Demo deal. Voorwaarden later controleren bij aanbieder.",
+    "lastDataReviewAt": null
   }
 ]

@@ -143,3 +143,67 @@
 /* v50 isolated: this file now only owns the saved-deals heart/count entry.
    Dealcard action/button polish moved to deal-card-actions-v1.css.
    Mobile topbar lock moved to mobile-topbar-unified-v3.css. */
+
+/* v53 header component owns its own heart icon styling.
+   Fixes pages that do not load deal-card-actions-v1.css, such as /opgeslagen/. */
+.mp-saved-header-link-v50 .mp-saved-icon-v50,
+.mp-saved-desktop-link-v50 .mp-saved-icon-v50{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:16px;
+  height:16px;
+  flex:0 0 16px;
+  color:currentColor;
+}
+
+.mp-saved-header-link-v50 .mp-heart-icon,
+.mp-saved-desktop-link-v50 .mp-heart-icon{
+  display:block;
+  width:16px;
+  height:16px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  overflow:visible;
+}
+
+
+/* v54 desktop saved header size sync
+   Makes the Opgeslagen pill self-contained and equal on /opgeslagen/ and all desktop pages.
+   Does not touch header.css, topbar-final-lock-v17.css, footer, mobile or dealcards. */
+@media (min-width:769px){
+  .mp-desktop-header .mp-desktop-actions .mp-saved-desktop-link-v50{
+    box-sizing:border-box!important;
+    height:44px!important;
+    min-height:44px!important;
+    padding:0 15px!important;
+    gap:8px!important;
+    font-size:14px!important;
+    line-height:1!important;
+    font-weight:900!important;
+    letter-spacing:0!important;
+  }
+
+  .mp-desktop-header .mp-desktop-actions .mp-saved-desktop-link-v50 .mp-saved-icon-v50{
+    width:16px!important;
+    height:16px!important;
+    flex:0 0 16px!important;
+  }
+
+  .mp-desktop-header .mp-desktop-actions .mp-saved-desktop-link-v50 .mp-heart-icon{
+    width:16px!important;
+    height:16px!important;
+  }
+
+  .mp-desktop-header .mp-desktop-actions .mp-saved-desktop-link-v50 .mp-saved-count-v50{
+    min-width:21px!important;
+    height:21px!important;
+    margin-left:2px!important;
+    font-size:11px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+}

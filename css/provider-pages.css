@@ -715,3 +715,146 @@ body.mp-provider-detail-page .provider-sidebar{
     max-width:100% !important;
   }
 }
+
+/* Provider FAQ Collapse Fix v1
+   Provider-detail uitleg/FAQ staat standaard ingeklapt.
+   Alleen provider-detail FAQ geraakt; topbar, footer en dealcards blijven onaangeraakt. */
+body.mp-provider-detail-page .provider-faq-block > .provider-faq-toggle{
+  cursor:pointer;
+  list-style:none;
+  color:var(--green);
+  font-size:24px;
+  line-height:1.15;
+  font-weight:950;
+  letter-spacing:-.035em;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+body.mp-provider-detail-page .provider-faq-block > .provider-faq-toggle::-webkit-details-marker{
+  display:none;
+}
+body.mp-provider-detail-page .provider-faq-block > .provider-faq-toggle::after{
+  content:"+";
+  flex:0 0 auto;
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  background:#f3eadc;
+  color:var(--green);
+  font-size:22px;
+  line-height:1;
+  font-weight:950;
+}
+body.mp-provider-detail-page .provider-faq-block[open] > .provider-faq-toggle::after{
+  content:"−";
+}
+body.mp-provider-detail-page .provider-faq-content{
+  margin-top:14px;
+}
+@media (max-width:760px){
+  body.mp-provider-detail-page .provider-faq-block > .provider-faq-toggle{
+    font-size:20px;
+  }
+}
+
+
+/* Provider Uitleg Component Sync v1
+   Provider-detailpagina’s gebruiken nu dezelfde compacte MeerPakkers Uitleg component
+   als de categoriepagina’s. Topbar, footer en dealcards blijven onaangeraakt. */
+.mp-provider-detail-page .mp-uitleg-footer{
+  background:#fffdf8;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:20px;
+  box-shadow:var(--shadow);
+  margin-top:18px;
+}
+.mp-provider-detail-page .mp-uitleg-footer-head{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:10px;
+}
+.mp-provider-detail-page .mp-uitleg-footer-icon{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eef3e8;
+  flex:0 0 auto;
+}
+.mp-provider-detail-page .mp-uitleg-footer h2{
+  margin:0 0 4px;
+  color:var(--green);
+  font-size:26px;
+  line-height:1.1;
+}
+.mp-provider-detail-page .mp-uitleg-footer p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+}
+@media (min-width:901px){
+  .mp-provider-detail-page .mp-uitleg-footer.mp-uitleg-footer--compact{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:22px;
+    margin-top:18px;
+    padding:16px 18px;
+    border-radius:20px;
+    box-shadow:0 14px 32px rgba(6,72,61,.055);
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact .mp-uitleg-footer-head{
+    margin:0;
+    align-items:center;
+    gap:12px;
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact .mp-uitleg-footer-icon{
+    width:34px;
+    height:34px;
+    border-radius:12px;
+    font-size:15px;
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact h2{
+    margin:0 0 2px;
+    font-size:18px;
+    line-height:1.1;
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact p{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.45;
+    max-width:760px;
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact .mp-uitleg-footer-link{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:38px;
+    padding:0 16px;
+    border-radius:999px;
+    background:var(--green);
+    color:#fffdf8;
+    text-decoration:none;
+    font-weight:950;
+    font-size:13.5px;
+    box-shadow:0 10px 22px rgba(6,72,61,.12);
+  }
+  .mp-provider-detail-page .mp-uitleg-footer--compact .mp-uitleg-footer-link:hover{
+    transform:translateY(-1px);
+  }
+}
+@media (max-width:900px){
+  .mp-provider-detail-page .mp-uitleg-footer.mp-uitleg-footer--compact{
+    display:none;
+  }
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "providerId": "vodafone",
+    "provider": "Vodafone",
+    "categories": [
+      "mobiel"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "kpn",
+    "provider": "KPN",
+    "categories": [
+      "internet-tv",
+      "mobiel"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "categories": [
+      "internet-tv",
+      "sim-only"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "youfone",
+    "provider": "Youfone",
+    "categories": [
+      "internet-tv",
+      "sim-only"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "ben",
+    "provider": "Ben",
+    "categories": [
+      "sim-only"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "simyo",
+    "provider": "Simyo",
+    "categories": [
+      "sim-only"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "lebara",
+    "provider": "Lebara",
+    "categories": [
+      "sim-only"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "hollandsnieuwe",
+    "provider": "hollandsnieuwe",
+    "categories": [
+      "mobiel"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "ziggo",
+    "provider": "Ziggo",
+    "categories": [
+      "internet-tv"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "delta",
+    "provider": "DELTA",
+    "categories": [
+      "internet-tv"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "budget-thuis",
+    "provider": "Budget Thuis",
+    "categories": [
+      "internet-tv"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "netflix",
+    "provider": "Netflix",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "disney-plus",
+    "provider": "Disney+",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "viaplay",
+    "provider": "Viaplay",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "hbo-max",
+    "provider": "HBO Max",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "prime-video",
+    "provider": "Prime Video",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "skyshowtime",
+    "provider": "SkyShowtime",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  },
+  {
+    "providerId": "videoland",
+    "provider": "Videoland",
+    "categories": [
+      "streaming"
+    ],
+    "affiliateNetwork": "placeholder",
+    "applicationStatus": "not_applied",
+    "affiliateStatus": "placeholder",
+    "contactUrl": null,
+    "approvedAt": null,
+    "adminNotes": ""
+  }
+]

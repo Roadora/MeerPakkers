@@ -1,0 +1,2 @@
+dealId,providerId,category,network,merchantId,campaignId,trackingId,deepLink,finalUrl,status,startsAt,expiresAt,approvedAt,lastCheckedAt,sourceType,adminNotes,utmCampaign,subIdTemplate
+voorbeeld-deal-id,vodafone,mobiel,daisycon,vodafone,,,https://voorbeeld.nl/deal,https://voorbeeld.nl/deal?subid=mp_voorbeeld,pending,,,,,csv,,meerpakkers_launch,mp_{dealId}_{providerId}_{category}

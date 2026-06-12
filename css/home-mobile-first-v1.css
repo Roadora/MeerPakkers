@@ -34,7 +34,7 @@
   }
 
   /* Verberg bestaande desktop/home experimenten op mobiel */
-  body:not(.mp-legal-page) > *:not(.mp-clean-mobile-home):not(.mp-legal-footer):not(.mp-cookie-banner):not(script):not(style){
+  body:not(.mp-legal-page) > *:not(.mp-clean-mobile-home):not(.mp-site-footer):not(.mp-legal-footer):not(.mp-cookie-banner):not(script):not(style){
     display:none!important;
   }
 
@@ -799,5 +799,13 @@ hr,
 
   .mp-clean-discovery a span{
     letter-spacing:-.15px;
+  }
+}
+
+
+/* v82 Home footer spacing */
+@media(max-width:768px){
+  body:not(.mp-legal-page) > .mp-site-footer{
+    margin-top:0!important;
   }
 }

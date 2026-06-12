@@ -165,3 +165,36 @@
 @media(max-width:380px){
   :root{--mp-topbar-height:92px;--mp-topbar-side:40px;--mp-topbar-logo-w:140px;--mp-topbar-logo-h:86px;--mp-topbar-logo-overlap:-25px;--mp-topbar-slogan-size:15px;--mp-topbar-name-size:24px;}
 }
+
+
+/* v87 Uitleg topbar audit spacing fix
+   Uitleg gebruikt dezelfde topbarcomponent, maar zonder zichtbaar hart.
+   De rechterkolom blijft als onzichtbare spacer bestaan zodat het logo exact gecentreerd blijft.
+   De topbar krijgt dezelfde mobiele pagina-gutter als de rest.
+*/
+@media (max-width: 760px){
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar{
+    padding-left:16px!important;
+    padding-right:16px!important;
+    margin:0 0 14px!important;
+    background:#f7efe4!important;
+    border-bottom:1px solid rgba(222,208,185,.78)!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-back{
+    justify-self:start!important;
+    grid-column:1!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-heart-spacer{
+    visibility:hidden!important;
+    pointer-events:none!important;
+    justify-self:end!important;
+    grid-column:3!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+  }
+}

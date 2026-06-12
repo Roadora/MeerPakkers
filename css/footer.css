@@ -1,2 +1,190 @@
 .footer{height:64px;background:var(--green);color:white;display:flex;justify-content:space-between;align-items:center;padding:0 34px}.footer nav{display:flex;gap:22px;color:#e7f1ee;font-size:14px}@media(max-width:760px){.footer{height:auto;display:grid;gap:14px;padding:22px 16px}.footer nav{flex-wrap:wrap}}.footer a{color:inherit;text-decoration:none}.footer a:hover{text-decoration:underline}
 
+/* v87 Uitleg topbar audit spacing fix
+   Uitleg gebruikt dezelfde topbarcomponent, maar zonder zichtbaar hart.
+   De rechterkolom blijft als onzichtbare spacer bestaan zodat het logo exact gecentreerd blijft.
+   De topbar krijgt dezelfde mobiele pagina-gutter als de rest.
+*/
+@media (max-width: 760px){
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar{
+    padding-left:16px!important;
+    padding-right:16px!important;
+    margin:0 0 14px!important;
+    background:#f7efe4!important;
+    border-bottom:1px solid rgba(222,208,185,.78)!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-back{
+    justify-self:start!important;
+    grid-column:1!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-heart-spacer{
+    visibility:hidden!important;
+    pointer-events:none!important;
+    justify-self:end!important;
+    grid-column:3!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+  }
+}
+/* v89 Footer CSS Clean Rebuild
+   Eén officiële footerstijl voor MeerPakkers.
+   Topbar blijft onaangeraakt.
+*/
+.mp-site-footer{
+  width:100%;
+  box-sizing:border-box;
+  margin:48px 0 0;
+  padding:22px 34px;
+  background:#06483d;
+  color:#fffdf8;
+  display:grid;
+  grid-template-columns:minmax(180px,auto) 1fr auto;
+  align-items:center;
+  gap:24px;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+
+.mp-site-footer__brand{
+  display:grid;
+  gap:3px;
+  min-width:0;
+  text-align:left;
+}
+
+.mp-site-footer__brand strong{
+  display:block;
+  color:#fffdf8;
+  font-size:20px;
+  line-height:1;
+  font-weight:950;
+  letter-spacing:-.2px;
+}
+
+.mp-site-footer__brand span{
+  display:block;
+  color:#f5ead9;
+  font-size:12.5px;
+  line-height:1.15;
+  font-weight:850;
+}
+
+.mp-site-footer__nav{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:flex-end;
+  gap:14px 22px;
+  margin:0;
+  padding:0;
+}
+
+.mp-site-footer__nav a{
+  color:#fffdf8;
+  text-decoration:none;
+  font-size:14px;
+  line-height:1.1;
+  font-weight:850;
+  white-space:nowrap;
+}
+
+.mp-site-footer__nav a:hover{
+  text-decoration:underline;
+}
+
+.mp-site-footer__copy{
+  display:block;
+  color:#f5ead9;
+  font-size:12px;
+  line-height:1.1;
+  font-weight:650;
+  white-space:nowrap;
+}
+
+/* Mobile footer: altijd dezelfde compacte verticale flow */
+@media (max-width:768px){
+  .mp-site-footer{
+    display:block!important;
+    width:100%!important;
+    margin:0!important;
+    padding:14px 16px 16px!important;
+    background:#06483d!important;
+    color:#fffdf8!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    text-align:left!important;
+  }
+
+  .mp-site-footer__brand{
+    display:grid!important;
+    gap:1px!important;
+    margin:0 0 10px!important;
+    text-align:left!important;
+  }
+
+  .mp-site-footer__brand strong{
+    font-size:18px!important;
+    line-height:1!important;
+    color:#fffdf8!important;
+    text-align:left!important;
+  }
+
+  .mp-site-footer__brand span{
+    font-size:11px!important;
+    line-height:1.1!important;
+    color:#f5ead9!important;
+    text-align:left!important;
+  }
+
+  .mp-site-footer__nav{
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:wrap!important;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    gap:7px!important;
+    width:100%!important;
+    margin:0 0 10px!important;
+    padding:0!important;
+    text-align:left!important;
+  }
+
+  .mp-site-footer__nav a{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    min-height:28px!important;
+    margin:0!important;
+    padding:0 10px!important;
+    border-radius:999px!important;
+    background:#fffdf8!important;
+    color:#06483d!important;
+    border:1px solid rgba(222,208,185,.82)!important;
+    text-decoration:none!important;
+    font-size:11px!important;
+    line-height:1!important;
+    font-weight:900!important;
+    white-space:nowrap!important;
+    box-shadow:none!important;
+  }
+
+  .mp-site-footer__copy{
+    display:block!important;
+    margin:0!important;
+    color:#f5ead9!important;
+    font-size:10px!important;
+    line-height:1.1!important;
+    font-weight:650!important;
+    text-align:left!important;
+    white-space:normal!important;
+  }
+}

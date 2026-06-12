@@ -1,0 +1,81 @@
+{
+  "version": "1.1",
+  "purpose": "Veldmapping voor toekomstig adminpaneel, CSV-imports en affiliate feed imports.",
+  "runtimeImpact": "Geen; dit bestand wordt niet door de frontend geladen.",
+  "dealLifecycle": [
+    "demo",
+    "active",
+    "paused",
+    "expired"
+  ],
+  "publicationLifecycle": [
+    "draft",
+    "published",
+    "hidden"
+  ],
+  "affiliateLifecycle": [
+    "placeholder",
+    "pending",
+    "approved",
+    "live",
+    "paused",
+    "expired"
+  ],
+  "requiredDealFields": [
+    "id",
+    "providerId",
+    "provider",
+    "category",
+    "title",
+    "benefitTypes",
+    "totalBenefitValue",
+    "monthlyPrice",
+    "contractLengthMonths",
+    "seoSlug",
+    "dealStatus",
+    "publicationStatus"
+  ],
+  "benefitFields": [
+    "giftName",
+    "giftValue",
+    "cashbackValue",
+    "discountValue",
+    "benefits",
+    "termsSummary"
+  ],
+  "affiliateFields": [
+    "network",
+    "campaignId",
+    "merchantId",
+    "trackingId",
+    "deepLink",
+    "finalUrl",
+    "status",
+    "startsAt",
+    "expiresAt",
+    "approvedAt",
+    "lastCheckedAt"
+  ],
+  "adminFields": [
+    "sourceType",
+    "sourceId",
+    "adminNotes",
+    "lastDataReviewAt"
+  ],
+  "categoryValues": [
+    "mobiel",
+    "sim-only",
+    "internet-tv",
+    "streaming"
+  ],
+  "networkValues": [
+    "placeholder",
+    "daisycon",
+    "tradetracker",
+    "awin",
+    "partnerize",
+    "direct",
+    "other"
+  ],
+  "notes": "Gebruik dit als contract tussen handmatige data, affiliate imports en toekomstig adminpaneel. Frontend blijft local/static werken tot echte backend komt."
+}

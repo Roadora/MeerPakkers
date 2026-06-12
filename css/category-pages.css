@@ -255,3 +255,77 @@
   }
 }
 
+
+
+/* v74 Category Uitleg Compact
+   Desktop category pages: uitleg blijft voor vertrouwen/SEO, maar niet meer als grote FAQ-accordion.
+   Mobile category rendering in js/mobile-category-v1.js blijft bewust onaangeraakt.
+*/
+@media (min-width: 901px){
+  .mp-uitleg-footer.mp-uitleg-footer--compact{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:22px;
+    margin-top:18px;
+    padding:16px 18px;
+    border-radius:20px;
+    box-shadow:0 14px 32px rgba(6,72,61,.055);
+  }
+
+  .mp-uitleg-footer--compact .mp-uitleg-footer-head{
+    margin:0;
+    align-items:center;
+    gap:12px;
+  }
+
+  .mp-uitleg-footer--compact .mp-uitleg-footer-icon{
+    width:34px;
+    height:34px;
+    border-radius:12px;
+    font-size:15px;
+  }
+
+  .mp-uitleg-footer--compact h2{
+    margin:0 0 2px;
+    font-size:18px;
+    line-height:1.1;
+  }
+
+  .mp-uitleg-footer--compact p{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.45;
+    max-width:760px;
+  }
+
+  .mp-uitleg-footer--compact .mp-uitleg-footer-link{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:38px;
+    padding:0 16px;
+    border-radius:999px;
+    background:var(--green);
+    color:#fffdf8;
+    text-decoration:none;
+    font-weight:950;
+    font-size:13.5px;
+    box-shadow:0 10px 22px rgba(6,72,61,.12);
+  }
+
+  .mp-uitleg-footer--compact .mp-uitleg-footer-link:hover{
+    transform:translateY(-1px);
+  }
+
+  .mp-uitleg-footer--compact .mp-uitleg-footer-list{
+    display:none!important;
+  }
+}
+
+@media (max-width: 900px){
+  .mp-uitleg-footer.mp-uitleg-footer--compact{
+    display:none;
+  }
+}

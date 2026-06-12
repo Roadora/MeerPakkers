@@ -4,7 +4,7 @@ body.mp-saved-page{
   min-height:100vh;
   background:#f5efe6;
   color:#143d35;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-family:Inter,Arial,sans-serif;
 }
 
 .mp-saved-shell{
@@ -369,4 +369,12 @@ body.mp-saved-page{
     max-height: 86px !important;
     margin-bottom: 16px !important;
   }
+}
+
+
+/* v50 saved page font sync
+   Opgeslagen deals now uses the same body font stack as the rest of the desktop site.
+   Fixes the slightly smaller/different Opgeslagen header pill text on /opgeslagen/. */
+body.mp-saved-page{
+  font-family:Inter,Arial,sans-serif;
 }

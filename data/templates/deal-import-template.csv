@@ -1,0 +1,2 @@
+id,providerId,provider,category,title,dealType,giftName,giftValue,cashbackValue,discountValue,totalBenefitValue,monthlyPrice,originalMonthlyPrice,contractLengthMonths,benefitTypes,benefits,termsSummary,seoSlug,dealStatus,publicationStatus,startsAt,expiresAt,sourceType,sourceId,adminNotes
+voorbeeld-deal-id,vodafone,Vodafone,mobiel,Voorbeeld deal,nieuw,AirPods 4,199,50,0,249,45.00,45.00,24,cadeau|cashback,AirPods 4 cadeau|€50 cashback,Voorwaarden later controleren,voorbeeld-deal-id,demo,draft,,,csv,,

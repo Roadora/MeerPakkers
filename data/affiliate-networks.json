@@ -1,0 +1,37 @@
+[
+  {
+    "id": "placeholder",
+    "name": "Placeholder",
+    "status": "development",
+    "trackingParameter": null,
+    "notes": "Voor demo/development deals."
+  },
+  {
+    "id": "daisycon",
+    "name": "Daisycon",
+    "status": "planned",
+    "trackingParameter": "subid",
+    "notes": "Later invullen na goedkeuring."
+  },
+  {
+    "id": "tradetracker",
+    "name": "TradeTracker",
+    "status": "planned",
+    "trackingParameter": "reference",
+    "notes": "Later invullen na goedkeuring."
+  },
+  {
+    "id": "awin",
+    "name": "Awin",
+    "status": "planned",
+    "trackingParameter": "clickref",
+    "notes": "Later invullen na goedkeuring."
+  },
+  {
+    "id": "direct",
+    "name": "Directe partner",
+    "status": "planned",
+    "trackingParameter": "utm_content",
+    "notes": "Voor directe afspraken met providers."
+  }
+]

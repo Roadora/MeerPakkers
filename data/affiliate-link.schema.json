@@ -1,0 +1,34 @@
+{
+  "version": "1.1",
+  "purpose": "Affiliate-link contract. Frontend gebruikt dit bestand via js/affiliate.js.",
+  "requiredFields": {
+    "dealId": "string, moet bestaan in data/deals.json",
+    "providerId": "string",
+    "category": "mobiel | sim-only | internet-tv | streaming",
+    "network": "placeholder | daisycon | tradetracker | awin | partnerize | direct | other",
+    "merchantId": "string | null",
+    "deepLink": "string",
+    "finalUrl": "string",
+    "status": "placeholder | pending | approved | live | paused | expired"
+  },
+  "statusRules": {
+    "placeholder": "demo/geen echte link; CTA toont melding",
+    "pending": "aangevraagd maar nog niet goedgekeurd; CTA toont melding",
+    "approved": "goedgekeurd met echte URL; CTA mag openen",
+    "live": "live met echte URL; CTA mag openen",
+    "paused": "tijdelijk uit; CTA toont melding",
+    "expired": "verlopen; CTA toont melding"
+  },
+  "optionalFields": {
+    "campaignId": "string | null",
+    "trackingId": "string | null",
+    "startsAt": "YYYY-MM-DD | null",
+    "expiresAt": "YYYY-MM-DD | null",
+    "approvedAt": "YYYY-MM-DD | null",
+    "lastCheckedAt": "YYYY-MM-DD | null",
+    "sourceType": "manual | csv | feed | admin",
+    "adminNotes": "string",
+    "utmCampaign": "string",
+    "subIdTemplate": "string"
+  }
+}
