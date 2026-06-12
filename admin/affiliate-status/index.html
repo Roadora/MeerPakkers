@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>MeerPakkers Affiliate Status Dashboard</title>
+  <link rel="stylesheet" href="../../css/admin-affiliate-status.css">
+</head>
+<body>
+  <main class="mp-admin-shell">
+    <header class="mp-admin-hero">
+      <div>
+        <p class="mp-admin-kicker">Intern overzicht</p>
+        <h1>Affiliate status dashboard</h1>
+        <p>Gebruik dit overzicht om te zien welke providers en deals nog placeholder zijn, welke aangevraagd zijn en welke klaar zijn voor live affiliate-links.</p>
+      </div>
+      <a class="mp-admin-home-link" href="../../">Terug naar site</a>
+    </header>
+
+    <section class="mp-admin-summary" aria-label="Samenvatting">
+      <article class="mp-admin-stat">
+        <span id="providerCount">–</span>
+        <small>Providers</small>
+      </article>
+      <article class="mp-admin-stat">
+        <span id="dealCount">–</span>
+        <small>Deals</small>
+      </article>
+      <article class="mp-admin-stat">
+        <span id="liveCount">–</span>
+        <small>Live/approved</small>
+      </article>
+      <article class="mp-admin-stat">
+        <span id="placeholderCount">–</span>
+        <small>Nog placeholder</small>
+      </article>
+    </section>
+
+    <section class="mp-admin-panel">
+      <div class="mp-admin-panel-head">
+        <div>
+          <h2>Providers</h2>
+          <p>Status per provider/netwerk. Dit is je opvolglijst voor affiliate-aanvragen.</p>
+        </div>
+        <div class="mp-admin-actions">
+          <button type="button" data-filter="all" class="is-active">Alles</button>
+          <button type="button" data-filter="not_applied">Nog aanvragen</button>
+          <button type="button" data-filter="applied">Aangevraagd</button>
+          <button type="button" data-filter="approved">Goedgekeurd</button>
+          <button type="button" data-filter="live">Live</button>
+        </div>
+      </div>
+      <div class="mp-admin-table-wrap">
+        <table class="mp-admin-table">
+          <thead>
+            <tr>
+              <th>Provider</th>
+              <th>Categorieën</th>
+              <th>Netwerk</th>
+              <th>Aanvraag</th>
+              <th>Affiliate</th>
+              <th>Deals</th>
+              <th>Notitie</th>
+            </tr>
+          </thead>
+          <tbody id="providerRows">
+            <tr><td colspan="7">Dashboard laden…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mp-admin-panel">
+      <div class="mp-admin-panel-head">
+        <div>
+          <h2>Deal affiliate-links</h2>
+          <p>Controleer hier welke deal-CTA’s nog placeholder zijn en waar straks de echte deeplink in moet.</p>
+        </div>
+      </div>
+      <div class="mp-admin-table-wrap">
+        <table class="mp-admin-table">
+          <thead>
+            <tr>
+              <th>Deal</th>
+              <th>Provider</th>
+              <th>Categorie</th>
+              <th>Status</th>
+              <th>Netwerk</th>
+              <th>Final URL</th>
+            </tr>
+          </thead>
+          <tbody id="dealRows">
+            <tr><td colspan="6">Deals laden…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mp-admin-note">
+      <h2>Werkwijze zodra je wordt goedgekeurd</h2>
+      <ol>
+        <li>Zet de provider in <code>data/provider-affiliate-status.json</code> op <code>approved</code> of <code>live</code>.</li>
+        <li>Plak de echte affiliate/deeplink in <code>data/affiliate-links.json</code> bij <code>finalUrl</code>.</li>
+        <li>Zet de dealstatus op <code>approved</code>, <code>active</code> of <code>live</code>.</li>
+        <li>Test de “Bekijk deal”-knop live.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="../../js/admin-affiliate-status.js" defer></script>
+</body>
+</html>
