@@ -1,7 +1,7 @@
 
 (function(){
   function isMobileCategoryRuntime(){
-    return !!document.getElementById("mpMobileCategory") && window.matchMedia("(max-width: 768px)").matches;
+    return !!document.getElementById("mpMobileCategory") && window.matchMedia("(max-width: 900px)").matches;
   }
 
   const CATEGORY_CONFIG = {

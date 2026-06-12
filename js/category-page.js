@@ -4,7 +4,7 @@ import { renderCategoryPage } from "./category-render.js";
 import { bindCategoryEvents, updateCategoryResults } from "./category-events.js";
 
 async function initCategoryPage(){
-  if (document.getElementById("mpMobileCategory") && window.matchMedia("(max-width: 768px)").matches) return;
+  if (document.getElementById("mpMobileCategory") && window.matchMedia("(max-width: 900px)").matches) return;
   try {
     categoryState.categoryId = document.body.dataset.categoryId;
     const { deals, providers, categories } = await loadCategoryData();
