@@ -389,3 +389,22 @@
     box-sizing:border-box;
   }
 }
+
+/* Desktop Meepakker Result Width Polish v8
+   Desktop-only: Meepakker-resultpagina's zoals Cashback/AirPods tonen deals niet meer als
+   extreem brede enkelkoloms cards. Mobiel/foldables onder 901px blijven onaangeraakt. */
+@media (min-width:901px){
+  body[data-meepakker-result="true"] .meepakker-results-list{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+    align-items:stretch;
+  }
+
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component,
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-clean-deal-card{
+    width:100%;
+    min-width:0;
+    height:100%;
+  }
+}

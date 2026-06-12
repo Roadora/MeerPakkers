@@ -1,0 +1,1814 @@
+/* MeerPakkers Foldables Responsive v1
+   Veiligheidslaag voor foldables/small tablets (Galaxy Fold/Z Fold, 540-900px).
+   Doel: geen horizontale overflow, compacte desktopheader rond 761-900px,
+   en voorspelbare 1/2-koloms layouts zonder bestaande mobile/desktop styling te herschrijven.
+*/
+
+@media (min-width: 521px) and (max-width: 900px){
+  html, body{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  img, svg, video, canvas{
+    max-width:100%;
+    height:auto;
+  }
+
+  .page-shell,
+  .category-page-shell,
+  .provider-page-shell,
+  .deal-page-shell,
+  .meepakker-page-shell,
+  .mp-saved-shell,
+  .mp-uitleg-shell{
+    width:100%;
+    max-width:760px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:16px!important;
+    padding-right:16px!important;
+    box-sizing:border-box;
+  }
+
+  .platform-grid,
+  .category-layout,
+  .provider-detail-layout,
+  .deal-layout,
+  .mp-uitleg-article-layout,
+  .mp-v23-detail-layout,
+  .mp-v23-top,
+  .mp-v23-why,
+  .mp-v23-final{
+    grid-template-columns:1fr!important;
+  }
+
+  .category-hero,
+  .provider-hero,
+  .deal-hero,
+  .mp-uitleg-hero{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
+
+  .category-stats,
+  .deal-summary-grid,
+  .benefit-breakdown,
+  .deal-related-grid,
+  .mp-provider-strip,
+  .category-provider-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+
+  .provider-overview-grid,
+  .mp-uitleg-grid,
+  .mp-home-featured-grid,
+  .featured-grid,
+  .deal-grid,
+  .mp-deal-grid,
+  .mp-clean-deal-list,
+  .mp-discovery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+
+  .mp-clean-deal-list,
+  .mp-home-featured-grid,
+  .featured-grid,
+  .deal-grid,
+  .mp-deal-grid,
+  .provider-overview-grid,
+  .mp-uitleg-grid{
+    gap:14px!important;
+  }
+
+  .mp-deal-card-component,
+  .mp-home-featured-card,
+  .deal-card,
+  .provider-card,
+  .mp-uitleg-article-card,
+  .category-card,
+  .deal-card-main,
+  .deal-side-card{
+    min-width:0!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  .results-topline,
+  .mp-section-head,
+  .mp-clean-section-title,
+  .category-results-head{
+    flex-wrap:wrap!important;
+    gap:10px!important;
+  }
+
+  h1{
+    overflow-wrap:anywhere;
+  }
+}
+
+/* 761-900px is the tricky foldable/tablet band:
+   mobile topbars mostly stop at 760px while desktop header normally starts at 769px.
+   This prevents a blank/overwide header around 761-768px and keeps 769-900px usable. */
+@media (min-width: 761px) and (max-width: 900px){
+  .mp-desktop-header{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    align-items:center!important;
+    justify-items:stretch!important;
+    gap:10px!important;
+    min-height:auto!important;
+    height:auto!important;
+    padding:12px 16px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  .mp-desktop-brand{
+    justify-self:center!important;
+    width:min(300px, 86vw)!important;
+    max-width:100%!important;
+    height:64px!important;
+    min-width:0!important;
+    background-size:contain!important;
+    background-position:center!important;
+  }
+
+  .mp-desktop-nav{
+    width:100%!important;
+    max-width:100%!important;
+    justify-self:stretch!important;
+    justify-content:flex-start!important;
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+  }
+
+  .mp-desktop-nav a{
+    flex:0 0 auto!important;
+    min-height:36px!important;
+    padding:0 12px!important;
+    font-size:13px!important;
+  }
+
+  .mp-desktop-actions{
+    width:100%!important;
+    justify-content:center!important;
+    gap:10px!important;
+    flex-wrap:nowrap!important;
+    min-width:0!important;
+  }
+
+  .mp-desktop-actions input{
+    width:min(360px, 55vw)!important;
+    min-width:0!important;
+  }
+
+  .mp-desktop-actions .mp-saved-desktop-link-v50{
+    flex:0 0 auto!important;
+    min-width:0!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 760px){
+  .mp-clean-mobile-home,
+  .mp-category-mobile,
+  .mp-mobile-framework,
+  .provider-discovery-shell,
+  .meepakker-page-shell,
+  .mp-saved-shell,
+  body.mp-uitleg-page .mp-uitleg-shell{
+    max-width:680px;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+
+  .mp-clean-categories,
+  .mp-clean-discovery{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+
+  .mp-clean-deal-list,
+  .mp-provider-mobile-grid,
+  .meepakker-grid,
+  .mp-uitleg-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media (max-width: 620px){
+  .category-stats,
+  .deal-summary-grid,
+  .benefit-breakdown,
+  .deal-related-grid,
+  .mp-provider-strip,
+  .category-provider-strip,
+  .provider-overview-grid,
+  .mp-uitleg-grid,
+  .mp-home-featured-grid,
+  .featured-grid,
+  .deal-grid,
+  .mp-deal-grid,
+  .mp-clean-deal-list,
+  .mp-discovery-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 900px){
+  .mp-site-footer{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:14px!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+
+  .mp-site-footer__links{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:center!important;
+    gap:10px 14px!important;
+  }
+}
+
+/* iPad Mini Category Header Fix v1
+   Align the 761-768px band with the mobile category runtime.
+   mobile-category-v1.js renders mobile category pages up to 768px,
+   while shared mobile topbar/framework CSS originally stopped at 760px.
+   This restores styled header, search and category pills for iPad Mini/foldable edge widths.
+*/
+@media (min-width:761px) and (max-width:768px){
+  :root{
+    --mp-fw-green:#06483d;
+    --mp-fw-gold:#c9952d;
+    --mp-fw-bg:#f6efe4;
+    --mp-fw-card:#fffdf8;
+    --mp-fw-border:#ded0b9;
+    --mp-fw-muted:#746b61;
+    --mp-topbar-height:92px;
+    --mp-topbar-side:40px;
+    --mp-topbar-logo-w:140px;
+    --mp-topbar-logo-h:86px;
+    --mp-topbar-logo-overlap:-25px;
+    --mp-topbar-slogan-size:15px;
+    --mp-topbar-name-size:24px;
+  }
+
+  html,
+  body{
+    overflow-x:hidden!important;
+    background:var(--mp-fw-bg)!important;
+  }
+
+  #mpMobileCategory{
+    display:block!important;
+    min-height:100vh!important;
+    background:
+      radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),
+      linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%)!important;
+    color:var(--mp-fw-green)!important;
+  }
+
+  #mpMobileCategory .mp-category-mobile,
+  #mpMobileCategory .mp-mobile-framework{
+    width:100%!important;
+    max-width:680px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+    background:transparent!important;
+    color:var(--mp-fw-green)!important;
+  }
+
+  #mpMobileCategory .mp-mobile-top-header{
+    display:grid!important;
+    grid-template-columns:var(--mp-topbar-side) minmax(0,1fr) var(--mp-topbar-side)!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  #mpMobileCategory .mp-mobile-top-header > .mp-mobile-back,
+  #mpMobileCategory .mp-mobile-top-header > .mp-mobile-heart-link{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:var(--mp-topbar-side)!important;
+    height:var(--mp-topbar-side)!important;
+    min-width:var(--mp-topbar-side)!important;
+    min-height:var(--mp-topbar-side)!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    background:var(--mp-fw-card)!important;
+    border:1px solid var(--mp-fw-border)!important;
+    color:var(--mp-fw-green)!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    line-height:1!important;
+    z-index:2!important;
+  }
+
+  #mpMobileCategory .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-size:22px!important;
+    font-weight:700!important;
+  }
+
+  #mpMobileCategory .mp-mobile-top-header > .mp-mobile-heart-link{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:18px!important;
+    font-weight:850!important;
+  }
+
+  #mpMobileCategory .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:var(--mp-fw-gold)!important;
+    color:#fff!important;
+    font-size:10px!important;
+    font-weight:950!important;
+    box-shadow:0 6px 12px rgba(42,31,18,.14)!important;
+  }
+
+  #mpMobileCategory .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    max-width:100%!important;
+    min-width:0!important;
+    gap:0!important;
+    margin:0!important;
+    padding:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    color:inherit!important;
+    overflow:visible!important;
+  }
+
+  #mpMobileCategory .mp-mobile-brand-logo{
+    display:block!important;
+    width:var(--mp-topbar-logo-w)!important;
+    height:var(--mp-topbar-logo-h)!important;
+    min-width:var(--mp-topbar-logo-w)!important;
+    max-width:var(--mp-topbar-logo-w)!important;
+    flex:0 0 var(--mp-topbar-logo-w)!important;
+    margin:0 var(--mp-topbar-logo-overlap) 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  #mpMobileCategory .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  #mpMobileCategory .mp-mobile-brand-lines{
+    display:block!important;
+    color:var(--mp-fw-gold)!important;
+    font-size:var(--mp-topbar-slogan-size)!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  #mpMobileCategory .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:var(--mp-fw-green)!important;
+    font-size:var(--mp-topbar-name-size)!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  #mpMobileCategory .mp-mobile-intro{
+    margin:0 0 16px!important;
+    padding-bottom:16px!important;
+    border-bottom:1px solid rgba(6,72,61,.16)!important;
+  }
+
+  #mpMobileCategory .mp-mobile-intro__eyebrow{
+    margin:0 0 5px!important;
+    color:#8a6f42!important;
+    font-size:12px!important;
+    line-height:1.1!important;
+    font-weight:950!important;
+  }
+
+  #mpMobileCategory .mp-mobile-intro__title{
+    display:block!important;
+    margin:0 0 6px!important;
+    color:var(--mp-fw-green)!important;
+    font-family:Georgia,serif!important;
+    font-size:34px!important;
+    line-height:1.02!important;
+    letter-spacing:-.035em!important;
+    font-weight:900!important;
+  }
+
+  #mpMobileCategory .mp-mobile-intro__subtitle{
+    display:block!important;
+    margin:0!important;
+    max-width:35rem!important;
+    color:var(--mp-fw-muted)!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:700!important;
+  }
+
+  #mpMobileCategory .mp-mobile-search{
+    margin:16px 0 15px!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    min-height:54px!important;
+    border-radius:999px!important;
+    border:1px solid var(--mp-fw-border)!important;
+    background:var(--mp-fw-card)!important;
+    padding:0 16px!important;
+    box-shadow:0 12px 28px rgba(6,72,61,.055)!important;
+    box-sizing:border-box!important;
+  }
+
+  #mpMobileCategory .mp-mobile-search input{
+    width:100%!important;
+    min-width:0!important;
+    border:0!important;
+    outline:0!important;
+    background:transparent!important;
+    color:var(--mp-fw-green)!important;
+    font-size:16px!important;
+    font-weight:750!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pills{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:8px!important;
+    margin:0 0 16px!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pill{
+    min-height:58px!important;
+    border-radius:18px!important;
+    border:1px solid rgba(6,72,61,.10)!important;
+    background:#fffaf1!important;
+    padding:8px 5px!important;
+    color:var(--mp-fw-green)!important;
+    box-shadow:0 10px 24px rgba(6,72,61,.045)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:3px!important;
+    text-align:center!important;
+    text-decoration:none!important;
+    box-sizing:border-box!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pill.is-active{
+    background:#eaf4ec!important;
+    border-color:rgba(6,72,61,.20)!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pill b{
+    display:block!important;
+    font-size:11.5px!important;
+    line-height:1.05!important;
+    font-weight:950!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pill small{
+    display:block!important;
+    font-size:9.5px!important;
+    line-height:1.05!important;
+    color:rgba(6,72,61,.68)!important;
+    font-weight:850!important;
+  }
+
+  #mpMobileCategory .mp-mobile-category-pill span:first-child{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+}
+
+
+/* iPad Mini / Foldable Shell Fix v2
+   Fixes 769-900px where desktop header could become half-rendered while mobile/tablet content was still preferred.
+   Scope: category pages, Providers overview and Kies je Meepakker only.
+*/
+@media (min-width:761px) and (max-width:900px){
+  body[data-category-id] .mp-desktop-header,
+  body.mp-provider-discovery-page > .mp-desktop-header,
+  body.mp-meepakker-page > .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-only,
+  body.mp-meepakker-page .mp-mobile-only,
+  body.mp-provider-discovery-page .mp-mobile-top-header,
+  body.mp-meepakker-page .mp-mobile-top-header{
+    display:grid!important;
+  }
+
+  body.mp-provider-discovery-page,
+  body.mp-meepakker-page,
+  body[data-category-id]{
+    background:#f6efe4!important;
+    overflow-x:hidden!important;
+  }
+
+  body.mp-provider-discovery-page .provider-page-shell,
+  body.mp-meepakker-page .meepakker-page-shell{
+    max-width:760px!important;
+    width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-hero,
+  body.mp-meepakker-page .meepakker-hero{
+    padding:0!important;
+    margin:0 0 16px!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-top-header,
+  body.mp-meepakker-page .mp-mobile-top-header,
+  body[data-category-id] #mpMobileCategory .mp-mobile-top-header{
+    display:grid!important;
+    grid-template-columns:40px minmax(0,1fr) 40px!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-provider-discovery-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-meepakker-page .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-meepakker-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body[data-category-id] #mpMobileCategory .mp-mobile-top-header > .mp-mobile-back,
+  body[data-category-id] #mpMobileCategory .mp-mobile-top-header > .mp-mobile-heart-link{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    max-width:40px!important;
+    max-height:40px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    background:#fffdf8!important;
+    border:1px solid #ded0b9!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    z-index:2!important;
+    line-height:1!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-meepakker-page .mp-mobile-top-header > .mp-mobile-back,
+  body[data-category-id] #mpMobileCategory .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-size:22px!important;
+    font-weight:700!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-meepakker-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body[data-category-id] #mpMobileCategory .mp-mobile-top-header > .mp-mobile-heart-link{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:18px!important;
+    font-weight:850!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-brand-lockup,
+  body.mp-meepakker-page .mp-mobile-brand-lockup,
+  body[data-category-id] #mpMobileCategory .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin:0!important;
+    padding:0!important;
+    gap:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    position:static!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-brand-logo,
+  body.mp-meepakker-page .mp-mobile-brand-logo,
+  body[data-category-id] #mpMobileCategory .mp-mobile-brand-logo{
+    display:block!important;
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-brand-copy,
+  body.mp-meepakker-page .mp-mobile-brand-copy,
+  body[data-category-id] #mpMobileCategory .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-brand-lines,
+  body.mp-meepakker-page .mp-mobile-brand-lines,
+  body[data-category-id] #mpMobileCategory .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:15px!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-brand-name,
+  body.mp-meepakker-page .mp-mobile-brand-name,
+  body[data-category-id] #mpMobileCategory .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:24px!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-heart-count,
+  body.mp-meepakker-page .mp-mobile-heart-count,
+  body[data-category-id] #mpMobileCategory .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#c9952d!important;
+    color:#fff!important;
+    font-size:10px!important;
+    font-weight:950!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-intro,
+  body.mp-meepakker-page .mp-mobile-intro,
+  body[data-category-id] #mpMobileCategory .mp-mobile-intro{
+    margin:0 0 16px!important;
+    padding:24px 22px!important;
+    border:1px solid #ded0b9!important;
+    border-radius:22px!important;
+    background:rgba(255,253,248,.74)!important;
+    box-shadow:0 18px 42px rgba(6,72,61,.045)!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-intro__title,
+  body.mp-meepakker-page .mp-mobile-intro__title,
+  body[data-category-id] #mpMobileCategory .mp-mobile-intro__title{
+    margin:0 0 8px!important;
+    color:#06483d!important;
+    font-family:Georgia,serif!important;
+    font-size:34px!important;
+    line-height:1.04!important;
+    letter-spacing:-.035em!important;
+    font-weight:900!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-intro__eyebrow,
+  body[data-category-id] #mpMobileCategory .mp-mobile-intro__eyebrow{
+    margin:0 0 6px!important;
+    color:#8a6f42!important;
+    font-size:12px!important;
+    line-height:1.1!important;
+    font-weight:950!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-intro__subtitle,
+  body.mp-meepakker-page .mp-mobile-intro__subtitle,
+  body[data-category-id] #mpMobileCategory .mp-mobile-intro__subtitle{
+    margin:0!important;
+    color:#746b61!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:700!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-mobile-search{
+    margin:16px 0 14px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-category-pills,
+  body[data-category-id] #mpMobileCategory .mp-mobile-category-pills{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:10px!important;
+    margin:0 0 16px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-mobile-category-pill,
+  body[data-category-id] #mpMobileCategory .mp-mobile-category-pill{
+    min-height:58px!important;
+    border-radius:18px!important;
+    border:1px solid rgba(6,72,61,.10)!important;
+    background:#fffaf1!important;
+    padding:8px 6px!important;
+    color:#06483d!important;
+    box-shadow:0 10px 24px rgba(6,72,61,.045)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:3px!important;
+    text-align:center!important;
+    text-decoration:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-discovery-page .provider-discovery-list,
+  body.mp-meepakker-page .meepakker-grid,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid,
+  body[data-category-id] #mpMobileCategory .mp-category-deals{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+}
+
+@media (min-width:761px) and (max-width:900px) and (max-aspect-ratio: 4/5){
+  body.mp-provider-discovery-page .provider-discovery-list,
+  body.mp-meepakker-page .meepakker-grid,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid,
+  body[data-category-id] #mpMobileCategory .mp-category-deals{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* iPad Mini Providers Two Column Polish v3
+   Scope: Providers overview only, foldable/tablet widths.
+   Keeps phone (<761px) and desktop (>900px) untouched.
+*/
+@media (min-width:761px) and (max-width:900px){
+  body.mp-provider-discovery-page .provider-discovery-list,
+  body.mp-provider-discovery-page .mp-discovery-card-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+    align-items:stretch!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card{
+    min-height:112px!important;
+    height:auto!important;
+    padding:18px 18px!important;
+    border-radius:20px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    font-size:19px!important;
+    line-height:1.05!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small,
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    font-size:12px!important;
+  }
+}
+
+/* Override the portrait foldable fallback only for Providers.
+   Provider cards have enough horizontal room on iPad mini and look better in 2 columns.
+*/
+@media (min-width:761px) and (max-width:900px) and (max-aspect-ratio: 4/5){
+  body.mp-provider-discovery-page .provider-discovery-list,
+  body.mp-provider-discovery-page .mp-discovery-card-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+/* iPad Mini Kies je Meepakker Two Column Polish v4
+   Scope: Kies je Meepakker overview only, foldable/tablet widths.
+   Keeps phone (<761px) and desktop (>900px) untouched.
+*/
+@media (min-width:761px) and (max-width:900px){
+  body.mp-meepakker-page .meepakker-grid,
+  body.mp-meepakker-page .meepakker-grid--direct,
+  body.mp-meepakker-page .mp-discovery-card-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+    align-items:stretch!important;
+  }
+
+  body.mp-meepakker-page .meepakker-card,
+  body.mp-meepakker-page .mp-discovery-card{
+    min-height:150px!important;
+    height:auto!important;
+    padding:18px 18px!important;
+    border-radius:20px!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-meepakker-page .meepakker-card h3,
+  body.mp-meepakker-page .mp-discovery-card h3{
+    font-size:18px!important;
+    line-height:1.08!important;
+    margin:10px 0 6px!important;
+  }
+
+  body.mp-meepakker-page .meepakker-card p,
+  body.mp-meepakker-page .mp-discovery-card p{
+    font-size:13.5px!important;
+    line-height:1.32!important;
+    margin:0!important;
+  }
+
+  body.mp-meepakker-page .meepakker-card > span,
+  body.mp-meepakker-page .mp-discovery-card > span{
+    margin-top:12px!important;
+    font-size:13px!important;
+    font-weight:900!important;
+  }
+
+  body.mp-meepakker-page .meepakker-icon{
+    width:44px!important;
+    height:44px!important;
+    border-radius:14px!important;
+    font-size:22px!important;
+  }
+}
+
+/* Override the portrait foldable fallback for Kies je Meepakker too.
+   These cards have enough horizontal room on iPad mini and look better in 2 columns.
+*/
+@media (min-width:761px) and (max-width:900px) and (max-aspect-ratio: 4/5){
+  body.mp-meepakker-page .meepakker-grid,
+  body.mp-meepakker-page .meepakker-grid--direct,
+  body.mp-meepakker-page .mp-discovery-card-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+/* iPad Mini / Foldable Provider Header + CTA Fix v5
+   Fixes two remaining 761-900px issues:
+   1) Provider overview CTA duplicated text from pseudo content + visible inline text.
+   2) Provider detail pages still showed half desktop/half mobile header.
+   Scope: foldable/tablet widths only. Phone and desktop remain untouched.
+*/
+@media (min-width:761px) and (max-width:900px){
+  /* Provider overview: keep the compact green CTA but hide the original inline text
+     so the pseudo label does not duplicate it. */
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    font-size:0!important;
+    line-height:1!important;
+    min-width:104px!important;
+    padding:10px 14px!important;
+    transform:none!important;
+    white-space:nowrap!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em::before{
+    content:"Bekijk deals"!important;
+    font-size:12px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+
+  /* Provider detail pages should use the same clean mobile/tablet header in this band. */
+  body.mp-provider-detail-page > .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-provider-detail-page{
+    background:#f6efe4!important;
+    overflow-x:hidden!important;
+  }
+
+  body.mp-provider-detail-page .provider-page-shell{
+    max-width:760px!important;
+    width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+    background:transparent!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-only,
+  body.mp-provider-detail-page .mp-mobile-top-header{
+    display:grid!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-top-header{
+    grid-template-columns:40px minmax(0,1fr) 40px!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-provider-detail-page .mp-mobile-top-header > .mp-mobile-heart-link{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    max-width:40px!important;
+    max-height:40px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    background:#fffdf8!important;
+    border:1px solid #ded0b9!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    line-height:1!important;
+    z-index:2!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-size:22px!important;
+    font-weight:700!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-top-header > .mp-mobile-heart-link{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:18px!important;
+    font-weight:850!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    max-width:100%!important;
+    min-width:0!important;
+    gap:0!important;
+    margin:0!important;
+    padding:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    color:inherit!important;
+    overflow:visible!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-brand-logo{
+    display:block!important;
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:15px!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:24px!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-provider-detail-page .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#c9952d!important;
+    color:#fff!important;
+    font-size:10px!important;
+    font-weight:950!important;
+  }
+
+  body.mp-provider-detail-page .provider-hero{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+    margin:0 0 16px!important;
+    padding:24px 22px!important;
+    border:1px solid #ded0b9!important;
+    border-radius:22px!important;
+    background:rgba(255,253,248,.74)!important;
+    box-shadow:0 18px 42px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-provider-detail-page .provider-logo-large{
+    width:100%!important;
+    min-height:78px!important;
+    border-radius:18px!important;
+  }
+
+  body.mp-provider-detail-page .provider-layout,
+  body.mp-provider-detail-page .provider-deals,
+  body.mp-provider-detail-page #providerDealList{
+    width:100%!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* iPad Mini / Foldable Detail Header Fix v6
+   Fixes remaining detail-result pages around 761-900px:
+   - static deal pages (/deals/*.html) keep a compact stacked desktop header because they do not include a mobile header.
+   - dynamic deal detail and meepakker result pages use their existing mobile/tablet header.
+   Scope: 761-900px only. Phone and desktop remain untouched.
+*/
+@media (min-width:761px) and (max-width:900px){
+  /* Static deal pages: prevent nav/search/logo overlap by forcing a stacked safe header. */
+  body[data-deal-id] > .mp-desktop-header{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+    width:100%!important;
+    min-height:194px!important;
+    height:auto!important;
+    padding:14px 16px 16px!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+    background:rgba(251,246,237,.96)!important;
+    border-bottom:1px solid rgba(222,208,185,.82)!important;
+    box-shadow:0 16px 38px rgba(6,72,61,.055)!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-brand{
+    order:1!important;
+    width:min(300px, 82vw)!important;
+    height:70px!important;
+    min-height:70px!important;
+    max-width:100%!important;
+    min-width:0!important;
+    flex:0 0 auto!important;
+    align-self:center!important;
+    justify-self:center!important;
+    margin:0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-desktop-lockup-v1.png')!important;
+    background-size:contain!important;
+    background-position:center!important;
+    background-repeat:no-repeat!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-nav{
+    order:2!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    align-self:stretch!important;
+    justify-content:flex-start!important;
+    overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+    gap:6px!important;
+    padding:6px!important;
+    box-sizing:border-box!important;
+    border-radius:999px!important;
+    background:rgba(255,253,248,.76)!important;
+    border:1px solid rgba(222,208,185,.76)!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-nav::-webkit-scrollbar{
+    display:none!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-nav a{
+    flex:0 0 auto!important;
+    min-height:34px!important;
+    padding:0 12px!important;
+    border-radius:999px!important;
+    font-size:12px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-actions{
+    order:3!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:10px!important;
+    flex-wrap:nowrap!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-desktop-actions input{
+    width:min(420px, calc(100% - 132px))!important;
+    min-width:0!important;
+    height:42px!important;
+    font-size:14px!important;
+  }
+
+  body[data-deal-id] > .mp-desktop-header .mp-saved-desktop-link-v50{
+    min-height:42px!important;
+    height:42px!important;
+    flex:0 0 auto!important;
+    white-space:nowrap!important;
+  }
+
+  /* Dynamic detail pages that already contain a mobile header: use it in tablet band. */
+  body.mp-deal-detail-page > .mp-desktop-header,
+  body[data-meepakker-result="true"] > .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-deal-detail-page,
+  body[data-meepakker-result="true"]{
+    background:#f6efe4!important;
+    overflow-x:hidden!important;
+  }
+
+  body.mp-deal-detail-page .mp-detail-page,
+  body[data-meepakker-result="true"] .meepakker-page-shell{
+    max-width:760px!important;
+    width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+    background:transparent!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-only,
+  body[data-meepakker-result="true"] .mp-mobile-only,
+  body.mp-deal-detail-page .mp-mobile-top-header,
+  body[data-meepakker-result="true"] .mp-mobile-top-header{
+    display:grid!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-top-header,
+  body[data-meepakker-result="true"] .mp-mobile-top-header{
+    grid-template-columns:40px minmax(0,1fr) 40px!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-deal-detail-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body[data-meepakker-result="true"] .mp-mobile-top-header > .mp-mobile-back,
+  body[data-meepakker-result="true"] .mp-mobile-top-header > .mp-mobile-heart-link{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    max-width:40px!important;
+    max-height:40px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    background:#fffdf8!important;
+    border:1px solid #ded0b9!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    line-height:1!important;
+    z-index:2!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-top-header > .mp-mobile-back,
+  body[data-meepakker-result="true"] .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-size:22px!important;
+    font-weight:700!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-top-header > .mp-mobile-heart-link,
+  body[data-meepakker-result="true"] .mp-mobile-top-header > .mp-mobile-heart-link{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:18px!important;
+    font-weight:850!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-brand-lockup,
+  body[data-meepakker-result="true"] .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:92px!important;
+    min-height:92px!important;
+    max-height:92px!important;
+    max-width:100%!important;
+    min-width:0!important;
+    gap:0!important;
+    margin:0!important;
+    padding:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    color:inherit!important;
+    overflow:visible!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-brand-logo,
+  body[data-meepakker-result="true"] .mp-mobile-brand-logo{
+    display:block!important;
+    width:140px!important;
+    height:86px!important;
+    min-width:140px!important;
+    max-width:140px!important;
+    flex:0 0 140px!important;
+    margin:0 -25px 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-brand-copy,
+  body[data-meepakker-result="true"] .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-brand-lines,
+  body[data-meepakker-result="true"] .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:15px!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-brand-name,
+  body[data-meepakker-result="true"] .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:24px!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-deal-detail-page .mp-mobile-heart-count,
+  body[data-meepakker-result="true"] .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#c9952d!important;
+    color:#fff!important;
+    font-size:10px!important;
+    font-weight:950!important;
+  }
+}
+
+/* Foldables Category Width Polish v7
+   Scope: category pages only, iPad mini/foldable widths 761-900px.
+   Aligns category content width with Providers/Kies je Meepakker so the page no longer feels like a narrow phone layout.
+*/
+@media (min-width:761px) and (max-width:900px){
+  body[data-category-id] #mpMobileCategory,
+  body[data-category-id] #mpMobileCategory .mp-category-mobile,
+  body[data-category-id] #mpMobileCategory .mp-mobile-framework{
+    width:100%!important;
+    max-width:760px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding-left:16px!important;
+    padding-right:16px!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-mobile-intro,
+  body[data-category-id] #mpMobileCategory .mp-mobile-search,
+  body[data-category-id] #mpMobileCategory .mp-mobile-category-pills,
+  body[data-category-id] #mpMobileCategory .mp-mobile-filter-row,
+  body[data-category-id] #mpMobileCategory .mp-category-filter-row,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid,
+  body[data-category-id] #mpMobileCategory .mp-category-deals,
+  body[data-category-id] #mpMobileCategory .mp-clean-deal-list{
+    width:100%!important;
+    max-width:none!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component,
+  body[data-category-id] #mpMobileCategory .mp-official-deal-card,
+  body[data-category-id] #mpMobileCategory .mp-card,
+  body[data-category-id] #mpMobileCategory article{
+    width:100%!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* Keep category pages full-width in portrait foldables/iPad mini too.
+   Earlier portrait fallback still keeps deals one-column; this only prevents the narrow centered phone canvas.
+*/
+@media (min-width:761px) and (max-width:900px) and (max-aspect-ratio:4/5){
+  body[data-category-id] #mpMobileCategory,
+  body[data-category-id] #mpMobileCategory .mp-category-mobile,
+  body[data-category-id] #mpMobileCategory .mp-mobile-framework{
+    max-width:760px!important;
+    width:100%!important;
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+}
+
+/* Foldables Saved Deals Header Fix v9
+   /opgeslagen/ also needs the tablet/mobile header contract in the 761-900px band.
+   Prevents the desktop header and mobile header from rendering on top of each other on iPad mini/foldables. */
+@media (min-width:761px) and (max-width:900px){
+  body.mp-saved-page{
+    background:#f6efe4!important;
+    overflow-x:hidden!important;
+  }
+
+  body.mp-saved-page > .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell{
+    display:block!important;
+    width:100%!important;
+    max-width:760px!important;
+    margin:0 auto!important;
+    padding:18px 16px 32px!important;
+    box-sizing:border-box!important;
+    background:
+      radial-gradient(circle at 15% 0%,rgba(201,149,45,.12),transparent 34%),
+      linear-gradient(180deg,#fbf6ed 0%,#f2e7d7 100%)!important;
+    color:#06483d!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header{
+    --mp-topbar-height:92px;
+    --mp-topbar-side:40px;
+    --mp-topbar-logo-w:140px;
+    --mp-topbar-logo-h:86px;
+    --mp-topbar-logo-overlap:-25px;
+    --mp-topbar-slogan-size:15px;
+    --mp-topbar-name-size:24px;
+    display:grid!important;
+    grid-template-columns:var(--mp-topbar-side) minmax(0,1fr) var(--mp-topbar-side)!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-button{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:var(--mp-topbar-side)!important;
+    height:var(--mp-topbar-side)!important;
+    min-width:var(--mp-topbar-side)!important;
+    min-height:var(--mp-topbar-side)!important;
+    max-width:var(--mp-topbar-side)!important;
+    max-height:var(--mp-topbar-side)!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:14px!important;
+    background:#fffdf8!important;
+    border:1px solid #ded0b9!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.045)!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    line-height:1!important;
+    z-index:2!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    font-size:22px!important;
+    font-weight:700!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-button{
+    grid-column:3!important;
+    justify-self:end!important;
+    font-size:0!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    align-self:center!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    margin:0!important;
+    padding:0!important;
+    gap:0!important;
+    transform:translateX(-4px)!important;
+    text-decoration:none!important;
+    color:inherit!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    position:static!important;
+    z-index:1!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-brand-logo{
+    display:block!important;
+    width:var(--mp-topbar-logo-w)!important;
+    height:var(--mp-topbar-logo-h)!important;
+    min-width:var(--mp-topbar-logo-w)!important;
+    max-width:var(--mp-topbar-logo-w)!important;
+    flex:0 0 var(--mp-topbar-logo-w)!important;
+    margin:0 var(--mp-topbar-logo-overlap) 0 0!important;
+    padding:0!important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png')!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+    background-position:center right!important;
+    background-color:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    text-indent:-9999px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-brand-copy{
+    display:block!important;
+    min-width:92px!important;
+    width:auto!important;
+    max-width:none!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-brand-lines{
+    display:block!important;
+    color:#c9952d!important;
+    font-size:var(--mp-topbar-slogan-size)!important;
+    line-height:.96!important;
+    font-weight:950!important;
+    letter-spacing:-.045em!important;
+    white-space:normal!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-brand-name{
+    display:block!important;
+    margin:2px 0 0!important;
+    color:#06483d!important;
+    font-size:var(--mp-topbar-name-size)!important;
+    line-height:.94!important;
+    font-weight:950!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header .mp-mobile-heart-count{
+    position:absolute!important;
+    top:-7px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#c9952d!important;
+    color:#fff!important;
+    font-size:10px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    box-shadow:0 6px 12px rgba(42,31,18,.14)!important;
+  }
+
+  body.mp-saved-page .mp-saved-header.mp-mobile-intro{
+    margin:0 0 16px!important;
+    padding:0 0 16px!important;
+    border-bottom:1px solid rgba(6,72,61,.16)!important;
+  }
+
+  body.mp-saved-page .mp-saved-summary,
+  body.mp-saved-page .mp-saved-list,
+  body.mp-saved-page .mp-saved-list .mp-deal-card-component{
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* Foldables Saved Deals Header/Footer Polish v10
+   Small visual cleanup after the v9 header repair: make the saved heart icon visible and
+   keep the footer compact in the iPad mini/foldable band without touching phone or desktop. */
+@media (min-width:761px) and (max-width:900px){
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-button{
+    font-size:0!important;
+    overflow:visible!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-link .mp-saved-icon-v50,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-button .mp-saved-icon-v50{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:19px!important;
+    height:19px!important;
+    color:#06483d!important;
+    line-height:1!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-link .mp-heart-icon,
+  body.mp-saved-page .mp-saved-shell > .mp-mobile-top-header > .mp-mobile-heart-button .mp-heart-icon{
+    display:block!important;
+    width:19px!important;
+    height:19px!important;
+    fill:currentColor!important;
+    stroke:currentColor!important;
+  }
+
+  body.mp-saved-page .mp-site-footer{
+    padding:12px 16px 12px!important;
+    min-height:0!important;
+    height:auto!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__brand{
+    margin:0 0 8px!important;
+    gap:0!important;
+    text-align:center!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__brand strong{
+    font-size:17px!important;
+    line-height:.95!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__brand span{
+    font-size:10px!important;
+    line-height:1!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__nav{
+    justify-content:center!important;
+    gap:6px!important;
+    margin:0 0 8px!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__nav a{
+    min-height:24px!important;
+    padding:0 9px!important;
+    font-size:10px!important;
+  }
+
+  body.mp-saved-page .mp-site-footer__copy{
+    text-align:center!important;
+    font-size:9px!important;
+    line-height:1!important;
+  }
+}
+
+/* Foldables Saved Deals Sticky Footer v11
+   On iPad mini/foldables the saved-deals page can have less content than the viewport.
+   Keep the compact footer at the bottom instead of leaving a beige block underneath it. */
+@media (min-width:761px) and (max-width:900px){
+  html:has(body.mp-saved-page),
+  body.mp-saved-page{
+    min-height:100vh!important;
+  }
+
+  body.mp-saved-page{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body.mp-saved-page .mp-saved-shell{
+    flex:1 0 auto!important;
+    padding-bottom:24px!important;
+  }
+
+  body.mp-saved-page .mp-site-footer{
+    flex:0 0 auto!important;
+    margin-top:auto!important;
+  }
+}

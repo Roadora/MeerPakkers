@@ -5,7 +5,7 @@
   display:none;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
   :root{
     --mp-green:#06483d;
     --mp-gold:#c9952d;
@@ -410,7 +410,7 @@
 
 
 /* Mobile Category Polish v1: quick chips + compactere cards */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-cat-actions{
     margin-bottom:10px;
   }
@@ -527,7 +527,7 @@
 
 
 /* Mobile Filter Accordion v1 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-drawer{
     padding-bottom:130px!important;
   }
@@ -585,7 +585,7 @@
    Categoriekaart = snelle teaser.
    Detailinformatie komt later op de deal detailpagina.
 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-category-deal-compact{
     padding:12px 13px!important;
     border-radius:19px!important;
@@ -704,7 +704,7 @@
    Gelijke dealcard-hoogtes + voorbereiding providerlogo's en cadeau/productbeelden.
    Geen wijziging aan flow, filters, home of dealdetail-structuur.
 */
-@media(max-width:768px){
+@media(max-width:900px){
 
   .mp-category-deal,
   .mp-category-deal-compact{
@@ -761,7 +761,7 @@
    Categorie-dealcards gelijk trekken met Home top-dealcards.
    Alleen mobiele kaart-hoogte/spacing; filters en data blijven intact.
 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-category-deal,
   .mp-category-deal-compact{
     min-height:168px!important;
@@ -859,7 +859,7 @@
 
 
 /* Category Filters Compact Bar v1 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-cat-actions.mp-cat-actions-compact{
     display:flex!important;
     align-items:center!important;
@@ -925,7 +925,7 @@
 }
 
 /* Filter System v2 - voordeel eerst, rustiger en volwassen drawer */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-overlay{
     background:rgba(3,34,29,.42)!important;
     backdrop-filter:blur(3px)!important;
@@ -1050,7 +1050,7 @@
    Maakt duidelijk verschil tussen filtergroep (accordion) en filteroptie.
    Basis v2 blijft intact: voordeel eerst, geen prijsfilter, geen voordeelranges.
 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-section{
     margin:0 0 9px!important;
   }
@@ -1141,7 +1141,7 @@
 /* Filter Hierarchy v3.1
    Footer-overlap opgelost + opties compacter en duidelijker onder hoofdgroepen.
 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-drawer{
     padding-bottom:150px!important;
   }
@@ -1185,7 +1185,7 @@
 /* Filter Hierarchy v3.2
    Definitieve footer-fix: footer hoort bij de filter-sheet en zweeft niet meer over opties.
 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-drawer{
     display:flex!important;
     flex-direction:column!important;
@@ -1228,7 +1228,7 @@
 
 
 /* Filter Scroll Lock v3.3 */
-@media(max-width:768px){
+@media(max-width:900px){
   .mp-filter-drawer{
     scroll-behavior:auto!important;
     overscroll-behavior:contain!important;
