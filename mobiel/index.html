@@ -82,7 +82,7 @@
   </nav>
   <div class="mp-desktop-actions">
     <input id="searchInput" type="search" placeholder="Zoek deals, providers..." aria-label="Zoek deals en providers">
-    <button type="button" aria-label="Favorieten">♡</button>
+    <a class="mp-saved-desktop-link-v50" href="/opgeslagen/" aria-label="Opgeslagen deals"><span class="mp-saved-icon-v50" aria-hidden="true"><svg class="mp-heart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-6.8-4.2-9.3-8.1C.7 9 .9 5.5 3.4 3.7c2.1-1.5 5-.9 6.6 1.1L12 7.2l2-2.4c1.6-2 4.5-2.6 6.6-1.1 2.5 1.8 2.7 5.3.7 8.4-2.5 3.9-9.3 8.1-9.3 8.1z"/></svg></span><span>Opgeslagen</span><span class="mp-saved-count-v50" aria-hidden="true">0</span></a>
   </div>
 </header>
 
@@ -109,14 +109,35 @@
         <a href="/providers/?groep=mobiel">Bekijk providers →</a>
       </div>
       <div id="categoryDealList" class="deal-list"></div>
-      <section class="mp-uitleg-footer" id="uitleg">
-        <div class="mp-uitleg-footer-head"><span class="mp-uitleg-footer-icon">💡</span><div><h2>De MeerPakkers Uitleg</h2><p>MeerPakkers vergelijkt mobiele deals niet alleen op maandprijs, maar vooral op extra voordeel zoals cadeaus, cashback en korting.</p></div></div>
-        <div class="mp-uitleg-footer-list"><details><summary>Waarom staat deze mobiele deal bovenaan?</summary><p>Omdat deze deal veel totaal voordeel biedt via cadeauwaarde, cashback, korting en extra’s.</p></details><details><summary>Wat is cashback bij een mobiel abonnement?</summary><p>Cashback is een bedrag dat je terugkrijgt na het afsluiten van de actie, volgens de voorwaarden van de aanbieder.</p></details><details><summary>Overstappen of verlengen?</summary><p>Overstappen levert vaak meer welkomstvoordeel op. Verlengen kan makkelijker zijn, maar heeft niet altijd dezelfde cadeaus.</p></details><details><summary>Hoe berekent MeerPakkers het voordeel?</summary><p>We tellen cadeauwaarde, cashback, korting en gratis extra’s mee zodat je sneller ziet waar je het meeste krijgt.</p></details></div>
+      <section class="mp-uitleg-footer mp-uitleg-footer--compact" id="uitleg" aria-label="MeerPakkers Uitleg">
+        <div class="mp-uitleg-footer-head">
+          <span class="mp-uitleg-footer-icon">💡</span>
+          <div>
+            <h2>MeerPakkers Uitleg</h2>
+            <p>Waarom staat een mobiele deal bovenaan? We kijken naar cadeauwaarde, cashback, korting en totaal voordeel.</p>
+          </div>
+        </div>
+        <a class="mp-uitleg-footer-link" href="/uitleg/abonnement-met-cadeau/">Lees de uitleg →</a>
       </section>
-    </section>
+</section>
   </section>
 </main>
-<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a href="/over-ons/">Over ons</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/voorwaarden/">Voorwaarden</a></nav></footer>
+<footer class="mp-site-footer" aria-label="MeerPakkers footer">
+  <div class="mp-site-footer__brand">
+    <strong>MeerPakkers</strong>
+    <span>Meer cadeau, meer korting.</span>
+  </div>
+  <nav class="mp-site-footer__nav" aria-label="Footer navigatie">
+    <a href="/over-ons/">Over ons</a>
+    <a href="/uitleg/">MeerPakkers Uitleg</a>
+    <a href="/contact/">Contact</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/disclaimer/">Disclaimer</a>
+    <a href="/voorwaarden/">Voorwaarden</a>
+  </nav>
+  <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
+</footer>
 <script type="module" src="/js/category-page.js"></script>
   <script src="../js/deal-card.js"></script>
   <script src="../js/mobile-category-v1.js"></script>

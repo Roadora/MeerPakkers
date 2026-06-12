@@ -289,6 +289,10 @@
           data-affiliate-deal-id="${d.id || ""}"
           data-affiliate-provider-id="${d.providerId || ""}"
           data-affiliate-category="${d.category || ""}"
+          data-affiliate-network="${d.network || "placeholder"}"
+          data-affiliate-campaign-id="${d.campaignId || ""}"
+          data-affiliate-tracking-id="${d.trackingId || ""}"
+          data-affiliate-merchant-id="${d.merchantId || d.providerId || ""}"
           rel="sponsored noopener noreferrer">Pak deze Meepakker</a>
         <button class="mp-v23-save" type="button">♡ Bewaar deal</button>
       </section>
@@ -485,6 +489,10 @@
               data-affiliate-deal-id="${d.id || ""}"
               data-affiliate-provider-id="${d.providerId || ""}"
               data-affiliate-category="${d.category || ""}"
+              data-affiliate-network="${d.network || "placeholder"}"
+              data-affiliate-campaign-id="${d.campaignId || ""}"
+              data-affiliate-tracking-id="${d.trackingId || ""}"
+              data-affiliate-merchant-id="${d.merchantId || d.providerId || ""}"
               rel="sponsored noopener noreferrer">Pak deze Meepakker</a>
           </aside>
         </div><section class="mp-v23-details">

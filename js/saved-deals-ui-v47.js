@@ -183,6 +183,7 @@
   function observeDealRoots() {
     if (!window.MutationObserver) return;
     var roots = [
+      document.getElementById('featuredDeal'),
       document.getElementById('mpCleanTopDeals'),
       document.getElementById('mpCategoryDeals'),
       document.getElementById('mpMobileCategory')

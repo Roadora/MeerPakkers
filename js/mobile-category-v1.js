@@ -468,17 +468,15 @@
     ];
 
     return `
-      <section class="mp-uitleg-card" aria-label="De MeerPakkers Uitleg">
+      <section class="mp-uitleg-card mp-uitleg-card--compact" aria-label="MeerPakkers Uitleg">
         <div class="mp-uitleg-head">
           <span class="mp-uitleg-icon">💡</span>
           <div>
-            <h2>De MeerPakkers Uitleg</h2>
-            <p>${escapeHtml(intro)}</p>
+            <h2>MeerPakkers Uitleg</h2>
+            <p>We vergelijken deals op cadeau, cashback, korting en totaal voordeel.</p>
           </div>
         </div>
-        <div class="mp-uitleg-list">
-          ${items.map(item => `<details><summary>${escapeHtml(item[0])}</summary><p>${escapeHtml(item[1])}</p></details>`).join("")}
-        </div>
+        <a class="mp-uitleg-mobile-link" href="../uitleg/">Lees de uitleg →</a>
       </section>`;
   }
 
@@ -539,6 +537,22 @@
 
         <section id="mpCategoryDeals" class="mp-category-deals mp-shared-deal-grid" aria-label="Deals"></section>
         ${renderSeoContent()}
+        <footer class="mp-site-footer mp-site-footer--mobile-category" aria-label="MeerPakkers footer">
+          <div class="mp-site-footer__brand">
+            <strong>MeerPakkers</strong>
+            <span>Meer cadeau, meer korting.</span>
+          </div>
+          <nav class="mp-site-footer__nav" aria-label="Footer navigatie">
+            <a href="../over-ons/">Over ons</a>
+            <a href="../uitleg/">MeerPakkers Uitleg</a>
+            <a href="../contact/">Contact</a>
+            <a href="../privacy/">Privacy</a>
+            <a href="../cookies/">Cookies</a>
+            <a href="../disclaimer/">Disclaimer</a>
+            <a href="../voorwaarden/">Voorwaarden</a>
+          </nav>
+          <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
+        </footer>
       </section>
 
       <div id="mpFilterOverlay" class="mp-filter-overlay ${state.filtersOpen ? "is-open" : ""}"></div>

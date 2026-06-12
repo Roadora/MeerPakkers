@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="/css/navigation.css">
 <link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/saved-deals-header-v50.css">
 <link rel="stylesheet" href="/css/deal-pages.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Ziggo Internet 500 + TV", "brand": "Ziggo", "description": "Bekijk de Ziggo Internet 500 + TV deal met €75 cadeauwaarde, €75 cashback en €0 korting..", "offers": {"@type": "Offer", "price": 49.0, "priceCurrency": "EUR", "url": "/deals/ziggo-internet-sport.html"}}</script>
 
@@ -70,7 +71,7 @@
   </nav>
   <div class="mp-desktop-actions">
     <input id="searchInput" type="search" placeholder="Zoek deals, providers..." aria-label="Zoek deals en providers">
-    <button type="button" aria-label="Favorieten">♡</button>
+    <a class="mp-saved-desktop-link-v50" href="/opgeslagen/" aria-label="Opgeslagen deals"><span class="mp-saved-icon-v50" aria-hidden="true"><svg class="mp-heart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-6.8-4.2-9.3-8.1C.7 9 .9 5.5 3.4 3.7c2.1-1.5 5-.9 6.6 1.1L12 7.2l2-2.4c1.6-2 4.5-2.6 6.6-1.1 2.5 1.8 2.7 5.3.7 8.4-2.5 3.9-9.3 8.1-9.3 8.1z"/></svg></span><span>Opgeslagen</span><span class="mp-saved-count-v50" aria-hidden="true">0</span></a>
   </div>
 </header>
 
@@ -110,7 +111,7 @@
         </div>
 
         <div class="deal-cta">
-          <a href="#affiliate-ziggo" rel="nofollow sponsored">Bekijk deal →</a>
+          <a href="#affiliate-ziggo" class="js-affiliate-link" data-affiliate-link="true" data-affiliate-deal-id="ziggo-internet-sport" data-affiliate-provider-id="ziggo" data-affiliate-category="internet-tv" data-affiliate-network="placeholder" data-affiliate-campaign-id="" data-affiliate-tracking-id="" data-affiliate-merchant-id="ziggo" rel="sponsored noopener noreferrer">Bekijk deal →</a>
           <button type="button">♡ Bewaar deal</button>
         </div>
       </article>
@@ -154,8 +155,23 @@
     </aside>
   </section>
 </main>
-
-<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a>Over ons</a><a>Contact</a><a>Privacy</a><a>Voorwaarden</a></nav></footer>
+<footer class="mp-site-footer" aria-label="MeerPakkers footer">
+  <div class="mp-site-footer__brand">
+    <strong>MeerPakkers</strong>
+    <span>Meer cadeau, meer korting.</span>
+  </div>
+  <nav class="mp-site-footer__nav" aria-label="Footer navigatie">
+    <a href="/over-ons/">Over ons</a>
+    <a href="/uitleg/">MeerPakkers Uitleg</a>
+    <a href="/contact/">Contact</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/disclaimer/">Disclaimer</a>
+    <a href="/voorwaarden/">Voorwaarden</a>
+  </nav>
+  <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
+</footer>
+<script src="/js/affiliate.js"></script>
 <script src="/js/saved-deals-store-v46.js"></script>
 <script src="/js/saved-deals-header-v50.js"></script>
 <script src="/js/deal-page.js"></script>

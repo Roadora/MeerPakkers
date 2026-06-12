@@ -93,7 +93,7 @@ window.MPHomeRender = {
       const value = d.totalBenefitValue || d.benefitValue || 0;
       const benefits = (d.benefits || []).slice(0,2).map(b => `<span>${mpEscapeHomeHtml(mpNormalizeBenefitLabel(b))}</span>`).join("");
       return `<article class="category-winner-card mp-featured-highlight-card" data-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">
-        <button class="mp-featured-heart" aria-label="Opslaan">♡</button><div class="mp-featured-highlight-main">
+        <button class="mp-featured-heart meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">♡</button><div class="mp-featured-highlight-main">
           <h3 class="category-winner-provider">${mpEscapeHomeHtml(d.provider)}</h3>
           <p class="category-winner-title">${mpEscapeHomeHtml(d.title || d.name)}</p>
           <div class="category-winner-benefits">${benefits}</div>
@@ -104,6 +104,7 @@ window.MPHomeRender = {
         </div>
       </article>`;
     }).join("");
+    mpEnhanceSavedButtons();
   },
 
   renderFeatured(){
