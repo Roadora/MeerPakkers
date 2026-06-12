@@ -1,0 +1,300 @@
+MeerPakkers CSS Brace Fix
+- Alleen css/mobile-category-v1.css aangepast.
+- Exact één losse extra sluit-accolade verwijderd.
+- Topbar, footer, HTML en JS zijn niet aangepast.
+
+{
+  "source": "/mnt/data/Meerpakkers_Uitleg_Remove_Why_Block_v1.zip",
+  "changed_file": "css/mobile-category-v1.css",
+  "removed_line": 1377,
+  "before_context": "1371: \n1372: .mp-uitleg-list details p{\n1373:   padding:0 2px 13px;\n1374:   font-size:14px;\n1375: }\n1376: \n1377: }\n1378: \n1379: \n1380: \n1381: /* v75 Mobile Uitleg Compact\n1382:    Mobiel: uitleg onderaan categoriepagina compact, zonder accordion.\n1383: */",
+  "after_context": "1371: \n1372: .mp-uitleg-list details p{\n1373:   padding:0 2px 13px;\n1374:   font-size:14px;\n1375: }\n1376: \n1377: \n1378: \n1379: \n1380: /* v75 Mobile Uitleg Compact\n1381:    Mobiel: uitleg onderaan categoriepagina compact, zonder accordion.\n1382: */",
+  "target_after_negative_events": [],
+  "target_final_balance": 0,
+  "css_checks": {
+    "css/affiliate.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/base.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/cards-compact-v2.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/cards.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/categories.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/category-pages.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/cookie-banner-v40.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deal-card-actions-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deal-card-component.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deal-detail-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deal-list.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deal-pages.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/deals.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/desktop-header.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/desktop-home-v3.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/discovery-card-component-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/discovery-shared.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/featured-cards.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/featured.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/filters.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/footer.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/header.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/hero.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/home-mobile-first-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/layout.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/meepakker.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-app-home-v3.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-category-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-framework-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-home-v2.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-page-header.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-shell-unification-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-topbar-final-lock-v11.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile-topbar-unified-v3.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/mobile.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/navigation.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/newsletter.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/provider-pages.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/providers.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/saved-deals-header-v50.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/saved-deals-v43.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/saved-deals-v44.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/saved-deals-v49.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/sidebar.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/style.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/tokens.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/topbar-final-lock-v17.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    },
+    "css/uitleg-desktop-v1.css": {
+      "final_balance": 0,
+      "min_balance": 0,
+      "first_negative_line": null
+    }
+  },
+  "html_checks": {
+    "index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": null,
+      "why_block_removed": null
+    },
+    "uitleg/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": true,
+      "why_block_removed": false
+    },
+    "uitleg/abonnement-met-cadeau/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": true,
+      "why_block_removed": null
+    },
+    "mobiel/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": null,
+      "why_block_removed": null
+    },
+    "sim-only/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": null,
+      "why_block_removed": null
+    },
+    "internet-tv/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": null,
+      "why_block_removed": null
+    },
+    "streaming/index.html": {
+      "footer_count": 1,
+      "has_mp_site_footer": true,
+      "topbar_uitleg_shared": null,
+      "why_block_removed": null
+    }
+  }
+}

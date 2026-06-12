@@ -1,0 +1,50 @@
+MeerPakkers Footer/Nav/Uitleg Audit Fix v1
+- Home mobile footer: Uitleg-link toegevoegd waar mogelijk en footer donker/groen geforceerd in mobiele styling.
+- Mobiele categoriepagina's: footer toegevoegd onder de compacte MeerPakkers Uitleg kaart.
+- /uitleg/ mobiele terugknop/topbar visueel dichter bij MeerPakkers familie gezet.
+- Grote uitlegblokken blijven weg; compact blijft behouden.
+
+AUDIT VOORAF:
+
+--- index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="mp-legal-footer" aria-label="MeerPakkers informatie">   <div class="mp-legal-footer-brand">     <strong>MeerPakkers</strong>     <span>Meer cadeau, meer korting.</span>   </div>   <nav class="mp-legal-footer-links" aria-label="Juridische links">     <a href="contact/">Contact</a>     <a href="privacy/">Privacy</a>     <a href="cookies/">Cookies</a>     <a href="disclaimer/">Disclaimer</a>     <a href="voorwaarden/">Voorwaarden</a>   </nav>   <small>© 2026 MeerPakkers</small> </footer>
+<footer class="footer" aria-label="MeerPakkers footer">   <span>© 2026 MeerPakkers</span>   <nav>     <a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a>     <a href="/contact/">Contact</a>     <a href="/privacy/">Privacy</a>     <a href="/cookies/">Cookieverklaring</a>     <a href="/disclaimer/">Disclaimer</a>     <a href="/voorwaarden/">Voorwaarden</a>   </nav> </footer>
+
+--- mobiel/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/voorwaarden/">Voorwaarden</a></nav> </footer>
+
+--- sim-only/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/voorwaarden/">Voorwaarden</a></nav> </footer>
+
+--- internet-tv/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/voorwaarden/">Voorwaarden</a></nav> </footer>
+
+--- streaming/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer"><span>© 2026 MeerPakkers</span><nav><a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/voorwaarden/">Voorwaarden</a></nav> </footer>
+
+--- uitleg/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer" aria-label="MeerPakkers footer">   <span>© 2026 MeerPakkers</span>   <nav> <a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a>     <a href="/contact/">Contact</a>     <a href="/privacy/">Privacy</a>     <a href="/cookies/">Cookieverklaring</a>     <a href="/disclaimer/">Disclaimer</a>     <a href="/voorwaarden/">Voorwaarden</a>   </nav> </footer>
+
+--- uitleg/abonnement-met-cadeau/index.html ---
+has .footer: True
+has mobile footer brand: False
+has uitleg link: True
+<footer class="footer" aria-label="MeerPakkers footer">   <span>© 2026 MeerPakkers</span>   <nav> <a href="/over-ons/">Over ons</a>     <a href="/uitleg/">MeerPakkers Uitleg</a>     <a href="/contact/">Contact</a>     <a href="/privacy/">Privacy</a>     <a href="/cookies/">Cookieverklaring</a>     <a href="/disclaimer/">Disclaimer</a>     <a href="/voorwaarden/">Voorwaarden</a>   </nav> </footer>

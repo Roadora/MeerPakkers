@@ -1,0 +1,5 @@
+MeerPakkers Mobile Uitleg Back Spacing Fix v1
+- Mobiele terugknop/topbar toegevoegd aan /uitleg/ en /uitleg/abonnement-met-cadeau/.
+- /uitleg/ terugknop gaat naar home; artikelpagina terugknop gaat naar /uitleg/.
+- Spacing op mobiele uitlegpagina's verfijnd: cards, gaps, typography en footer-afstand.
+- Desktop en mobiele categoriekaart blijven behouden.

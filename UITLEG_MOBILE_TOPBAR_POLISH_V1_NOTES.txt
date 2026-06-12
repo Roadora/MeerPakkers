@@ -1,0 +1,7 @@
+MeerPakkers Uitleg Mobile Topbar Polish v1
+- Alleen de mobiele topbar op /uitleg/ en artikelpagina gepolijst.
+- Topbar compacter gemaakt.
+- Terugknop beter als MeerPakkers pill gezet.
+- MP+ lockup rechts rustiger uitgelijnd met slogan + MeerPakkers.
+- Spacing onder topbar licht verbeterd.
+- Footer, categorieën en desktop onaangeraakt.

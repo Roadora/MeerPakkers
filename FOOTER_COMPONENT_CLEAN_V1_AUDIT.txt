@@ -1,0 +1,154 @@
+MeerPakkers Footer Component Clean v1
+
+Doel:
+- Één officiële footercomponent: <footer class="mp-site-footer">.
+- Geen losse home/categorie/uitleg footerfamilies meer.
+- Uitleg-topbar gebruikt dezelfde mobiele topbarfamilie als categoriepagina's.
+- Desktop blijft functioneel; mobiel krijgt dezelfde donkergroene footerstijl.
+
+Audit vooraf - HTML met footers:
+deal/index.html: 1 footer(s), classes=['footer']
+deals/ben-sim-korting.html: 1 footer(s), classes=['footer']
+deals/budget-thuis-internet-tv.html: 1 footer(s), classes=['footer']
+deals/delta-glasvezel.html: 1 footer(s), classes=['footer']
+deals/disney-plus-jaaractie.html: 1 footer(s), classes=['footer']
+deals/hbo-max-actie.html: 1 footer(s), classes=['footer']
+deals/hollandsnieuwe-cadeau.html: 1 footer(s), classes=['footer']
+deals/kpn-glasvezel-tv.html: 1 footer(s), classes=['footer']
+deals/kpn-mobiel-cadeaukaart.html: 1 footer(s), classes=['footer']
+deals/lebara-sim-korting.html: 1 footer(s), classes=['footer']
+deals/netflix-actie.html: 1 footer(s), classes=['footer']
+deals/odido-glasvezel-streaming.html: 1 footer(s), classes=['footer']
+deals/odido-sim-disney.html: 1 footer(s), classes=['footer']
+deals/prime-video-bundel.html: 1 footer(s), classes=['footer']
+deals/simyo-sim-cashback.html: 1 footer(s), classes=['footer']
+deals/skyshowtime-actie.html: 1 footer(s), classes=['footer']
+deals/viaplay-sportactie.html: 1 footer(s), classes=['footer']
+deals/videoland-actie.html: 1 footer(s), classes=['footer']
+deals/vodafone-iphone-airpods.html: 1 footer(s), classes=['footer']
+deals/youfone-internet-tv.html: 1 footer(s), classes=['footer']
+deals/youfone-sim-cashback.html: 1 footer(s), classes=['footer']
+deals/ziggo-internet-sport.html: 1 footer(s), classes=['footer']
+index.html: 1 footer(s), classes=['mp-unified-mobile-footer footer']
+internet-tv/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/airpods/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/cadeaukaart/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/cashback/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/gratis-streaming/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/nintendo-switch/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/ps5/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/smartwatch/index.html: 1 footer(s), classes=['footer']
+kies-je-meepakker/tickets/index.html: 1 footer(s), classes=['footer']
+mobiel/index.html: 1 footer(s), classes=['footer']
+providers/ben.html: 1 footer(s), classes=['footer']
+providers/budget-thuis.html: 1 footer(s), classes=['footer']
+providers/delta.html: 1 footer(s), classes=['footer']
+providers/disney-plus.html: 1 footer(s), classes=['footer']
+providers/hbo-max.html: 1 footer(s), classes=['footer']
+providers/hollandsnieuwe.html: 1 footer(s), classes=['footer']
+providers/index.html: 1 footer(s), classes=['footer']
+providers/kpn.html: 1 footer(s), classes=['footer']
+providers/lebara.html: 1 footer(s), classes=['footer']
+providers/netflix.html: 1 footer(s), classes=['footer']
+providers/odido.html: 1 footer(s), classes=['footer']
+providers/prime-video.html: 1 footer(s), classes=['footer']
+providers/simyo.html: 1 footer(s), classes=['footer']
+providers/skyshowtime.html: 1 footer(s), classes=['footer']
+providers/viaplay.html: 1 footer(s), classes=['footer']
+providers/videoland.html: 1 footer(s), classes=['footer']
+providers/vodafone.html: 1 footer(s), classes=['footer']
+providers/youfone.html: 1 footer(s), classes=['footer']
+providers/ziggo.html: 1 footer(s), classes=['footer']
+sim-only/index.html: 1 footer(s), classes=['footer']
+streaming/index.html: 1 footer(s), classes=['footer']
+uitleg/abonnement-met-cadeau/index.html: 1 footer(s), classes=['mp-unified-mobile-footer footer']
+uitleg/index.html: 1 footer(s), classes=['mp-unified-mobile-footer footer']
+
+Pagina's zonder footer vooraf:
+contact/index.html
+cookies/index.html
+deals/index.html
+disclaimer/index.html
+opgeslagen/index.html
+over-ons/index.html
+privacy/index.html
+providers/disney.html
+voorwaarden/index.html
+
+Wijzigingen:
+- HTML-bestanden aangepast: 66
+- CSS-bestanden met oude patchlagen opgeschoond: ['css/footer.css', 'css/mobile-category-v1.css', 'css/uitleg-desktop-v1.css']
+- footer.css links toegevoegd waar nodig: 9
+- JS categoriefooter injectie vernieuwd: 1
+
+Audit na:
+contact/index.html: footer=1, mp-site-footer refs=4
+cookies/index.html: footer=1, mp-site-footer refs=4
+deal/index.html: footer=1, mp-site-footer refs=4
+deals/ben-sim-korting.html: footer=1, mp-site-footer refs=4
+deals/budget-thuis-internet-tv.html: footer=1, mp-site-footer refs=4
+deals/delta-glasvezel.html: footer=1, mp-site-footer refs=4
+deals/disney-plus-jaaractie.html: footer=1, mp-site-footer refs=4
+deals/hbo-max-actie.html: footer=1, mp-site-footer refs=4
+deals/hollandsnieuwe-cadeau.html: footer=1, mp-site-footer refs=4
+deals/index.html: footer=1, mp-site-footer refs=4
+deals/kpn-glasvezel-tv.html: footer=1, mp-site-footer refs=4
+deals/kpn-mobiel-cadeaukaart.html: footer=1, mp-site-footer refs=4
+deals/lebara-sim-korting.html: footer=1, mp-site-footer refs=4
+deals/netflix-actie.html: footer=1, mp-site-footer refs=4
+deals/odido-glasvezel-streaming.html: footer=1, mp-site-footer refs=4
+deals/odido-sim-disney.html: footer=1, mp-site-footer refs=4
+deals/prime-video-bundel.html: footer=1, mp-site-footer refs=4
+deals/simyo-sim-cashback.html: footer=1, mp-site-footer refs=4
+deals/skyshowtime-actie.html: footer=1, mp-site-footer refs=4
+deals/viaplay-sportactie.html: footer=1, mp-site-footer refs=4
+deals/videoland-actie.html: footer=1, mp-site-footer refs=4
+deals/vodafone-iphone-airpods.html: footer=1, mp-site-footer refs=4
+deals/youfone-internet-tv.html: footer=1, mp-site-footer refs=4
+deals/youfone-sim-cashback.html: footer=1, mp-site-footer refs=4
+deals/ziggo-internet-sport.html: footer=1, mp-site-footer refs=4
+disclaimer/index.html: footer=1, mp-site-footer refs=4
+index.html: footer=1, mp-site-footer refs=4
+internet-tv/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/airpods/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/cadeaukaart/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/cashback/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/gratis-streaming/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/nintendo-switch/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/ps5/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/smartwatch/index.html: footer=1, mp-site-footer refs=4
+kies-je-meepakker/tickets/index.html: footer=1, mp-site-footer refs=4
+mobiel/index.html: footer=1, mp-site-footer refs=4
+opgeslagen/index.html: footer=1, mp-site-footer refs=4
+over-ons/index.html: footer=1, mp-site-footer refs=4
+privacy/index.html: footer=1, mp-site-footer refs=4
+providers/ben.html: footer=1, mp-site-footer refs=4
+providers/budget-thuis.html: footer=1, mp-site-footer refs=4
+providers/delta.html: footer=1, mp-site-footer refs=4
+providers/disney-plus.html: footer=1, mp-site-footer refs=4
+providers/disney.html: footer=1, mp-site-footer refs=4
+providers/hbo-max.html: footer=1, mp-site-footer refs=4
+providers/hollandsnieuwe.html: footer=1, mp-site-footer refs=4
+providers/index.html: footer=1, mp-site-footer refs=4
+providers/kpn.html: footer=1, mp-site-footer refs=4
+providers/lebara.html: footer=1, mp-site-footer refs=4
+providers/netflix.html: footer=1, mp-site-footer refs=4
+providers/odido.html: footer=1, mp-site-footer refs=4
+providers/prime-video.html: footer=1, mp-site-footer refs=4
+providers/simyo.html: footer=1, mp-site-footer refs=4
+providers/skyshowtime.html: footer=1, mp-site-footer refs=4
+providers/viaplay.html: footer=1, mp-site-footer refs=4
+providers/videoland.html: footer=1, mp-site-footer refs=4
+providers/vodafone.html: footer=1, mp-site-footer refs=4
+providers/youfone.html: footer=1, mp-site-footer refs=4
+providers/ziggo.html: footer=1, mp-site-footer refs=4
+sim-only/index.html: footer=1, mp-site-footer refs=4
+streaming/index.html: footer=1, mp-site-footer refs=4
+uitleg/abonnement-met-cadeau/index.html: footer=1, mp-site-footer refs=4
+uitleg/index.html: footer=1, mp-site-footer refs=4
+voorwaarden/index.html: footer=1, mp-site-footer refs=4
+
+Problemen na audit:
+Geen gevonden in structurele footer-audit.

@@ -1,0 +1,5 @@
+MeerPakkers Uitleg Footer Visible v1
+- Footer-link naar MeerPakkers Uitleg expliciet zichtbaar gemaakt.
+- Footer krijgt desktop-only uitlegblok met link naar eerste artikel.
+- Geen middenblok op de homepage.
+- Mobiele flow blijft onaangeraakt.

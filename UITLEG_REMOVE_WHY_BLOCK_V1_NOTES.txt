@@ -1,0 +1,12 @@
+MeerPakkers Uitleg Remove Why Block v1
+- Het blok 'Waarom deze pagina?' is verwijderd van de mobiele/desktop uitleg-hub.
+- Reden: dit blok voelde intern/SEO gericht en minder bezoekersgericht.
+- De pagina gaat nu sneller van hero naar de echte uitlegkaarten.
+- Topbar en footer zijn niet aangepast.
+- Footer CSS clean rebuild blijft behouden.
+
+Gewijzigd: []
+Removed counts: {"uitleg/index.html": 0}
+Remaining occurrences: {
+  "uitleg/index.html": 1
+}

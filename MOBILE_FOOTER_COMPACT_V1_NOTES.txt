@@ -1,0 +1,5 @@
+MeerPakkers Mobile Footer Compact v1
+- Mobiele mp-site-footer compacter gemaakt.
+- Zelfde officiële footercomponent behouden.
+- Minder padding, kleinere merkregel, compactere pill-links en minder verticale hoogte.
+- Desktop onaangeraakt.

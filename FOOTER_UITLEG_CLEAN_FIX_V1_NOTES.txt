@@ -1,0 +1,6 @@
+MeerPakkers Footer Uitleg Clean Fix v1
+- Uitlegblok uit verkeerde/legacy footer verwijderd.
+- Zichtbare desktopfooter (.footer) krijgt één subtiele link: MeerPakkers Uitleg.
+- Link staat naast Over ons/Contact/Privacy enz.
+- Geen blok midden op de homepage.
+- Mobiele flow blijft onaangeraakt.

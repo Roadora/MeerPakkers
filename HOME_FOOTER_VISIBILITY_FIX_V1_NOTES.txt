@@ -1,0 +1,5 @@
+MeerPakkers Home Footer Visibility Fix v1
+- Oorzaak: css/home-mobile-first-v1.css verborg op mobiel alle directe body-children behalve .mp-clean-mobile-home, .mp-legal-footer, cookie banner, script en style.
+- De officiële nieuwe footer .mp-site-footer stond als directe body-child onderaan index.html en werd daardoor op mobiel verborgen.
+- Fix: .mp-site-footer toegevoegd aan de toegestane uitzonderingen in de mobiele hide-regel.
+- Footercomponent zelf blijft schoon en centraal in css/footer.css.

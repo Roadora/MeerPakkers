@@ -1,0 +1,9 @@
+MeerPakkers Uitleg Desktop v1
+- Gebouwd vanaf Entity SEO Fix v1.
+- Mobiele home/flow bewust niet aangepast.
+- Desktop-only uitlegstrip toegevoegd op homepage.
+- Nieuwe /uitleg/ hub toegevoegd.
+- Eerste artikel toegevoegd: /uitleg/abonnement-met-cadeau/.
+- Desktop header krijgt link Uitleg.
+- sitemap.xml uitgebreid met de twee nieuwe uitleg-URL's.
+- GA4 en bestaande entity structured data behouden.

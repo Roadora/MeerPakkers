@@ -1,0 +1,5 @@
+MeerPakkers Category Uitleg Compact v1
+- Grote MeerPakkers Uitleg FAQ-accordion onder desktop categoriepagina's vervangen door compacte strip.
+- Categoriepagina's blijven vertrouwen/SEO-signaal houden zonder dealflow te verstoren.
+- Mobiele category rendering/js bewust niet aangepast.
+- Footer Uitleg-link blijft behouden.

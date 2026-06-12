@@ -1,0 +1,6 @@
+MeerPakkers Uitleg Mobile Equal Spacing v1
+- Spacing tussen mobiele uitlegblokken gelijkgetrokken.
+- Consistente 14px gap tussen hero, waarom-blok en artikelkaarten.
+- Kaartmarges geneutraliseerd zodat alleen grid-gap de ruimte bepaalt.
+- Padding per kaart gelijker gezet.
+- Footer en categoriepagina's onaangeraakt.

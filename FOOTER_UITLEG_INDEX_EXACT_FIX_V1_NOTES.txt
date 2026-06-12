@@ -1,0 +1,9 @@
+MeerPakkers Footer Uitleg Index Exact Fix v1
+- Audit: de zichtbare index.html footer is exact aangepast.
+- Alle bestaande uitleg-links in footers eerst opgeschoond om duplicaten te voorkomen.
+- In de zichtbare .footer nav is één link toegevoegd: MeerPakkers Uitleg, direct na Over ons.
+- Geen homepage middenblok.
+- Mobiele flow blijft onaangeraakt.
+
+Index footerblokken vóór: [(1, False), (2, False)]
+Index footerblokken na: [(1, False, False), (2, True, True)]

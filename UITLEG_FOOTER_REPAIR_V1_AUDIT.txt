@@ -1,0 +1,291 @@
+MeerPakkers Uitleg Footer Repair v1
+- Topbar was goed, maar footer op /uitleg/ brak visueel.
+- Oorzaak: algemene/footer-fixlagen lieten op de uitlegpagina de footerlinks/brand niet meer als normale mobiele footerflow uitlijnen.
+- Fix: mobile-only expliciete layout voor body.mp-uitleg-page .mp-site-footer toegevoegd.
+- Footercomponent blijft mp-site-footer; topbar onaangeraakt.
+
+AUDIT:
+
+--- uitleg/index.html ---
+<footer class="mp-site-footer" aria-label="MeerPakkers footer">
+  <div class="mp-site-footer__brand">
+    <strong>MeerPakkers</strong>
+    <span>Meer cadeau, meer korting.</span>
+  </div>
+  <nav class="mp-site-footer__nav" aria-label="Footer navigatie">
+    <a href="/over-ons/">Over ons</a>
+    <a href="/uitleg/">MeerPakkers Uitleg</a>
+    <a href="/contact/">Contact</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/disclaimer/">Disclaimer</a>
+    <a href="/voorwaarden/">Voorwaarden</a>
+  </nav>
+  <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
+</footer>
+CSS order:
+../css/tokens.css
+../css/base.css
+../css/header.css
+../css/footer.css
+../css/cookie-banner-v40.css
+../css/uitleg-desktop-v1.css
+../css/topbar-final-lock-v17.css
+../css/mobile-shell-unification-v1.css
+../css/mobile-topbar-unified-v3.css
+../css/mobile-framework-v1.css
+
+--- uitleg/abonnement-met-cadeau/index.html ---
+<footer class="mp-site-footer" aria-label="MeerPakkers footer">
+  <div class="mp-site-footer__brand">
+    <strong>MeerPakkers</strong>
+    <span>Meer cadeau, meer korting.</span>
+  </div>
+  <nav class="mp-site-footer__nav" aria-label="Footer navigatie">
+    <a href="/over-ons/">Over ons</a>
+    <a href="/uitleg/">MeerPakkers Uitleg</a>
+    <a href="/contact/">Contact</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/cookies/">Cookies</a>
+    <a href="/disclaimer/">Disclaimer</a>
+    <a href="/voorwaarden/">Voorwaarden</a>
+  </nav>
+  <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
+</footer>
+CSS order:
+../../css/tokens.css
+../../css/base.css
+../../css/header.css
+../../css/footer.css
+../../css/cookie-banner-v40.css
+../../css/uitleg-desktop-v1.css
+../../css/topbar-final-lock-v17.css
+../../css/mobile-shell-unification-v1.css
+../../css/mobile-topbar-unified-v3.css
+../../css/mobile-framework-v1.css
+
+--- footer.css relevant ---
+mp-site-footer: 544
+lay:grid;gap:14px;padding:22px 16px}.footer nav{flex-wrap:wrap}}.footer a{color:inherit;text-decoration:none}.footer a:hover{text-decoration:underline}
+
+
+
+
+
+
+
+
+
+/* v81 Official MeerPakkers footer component
+   Eén footerfamilie voor desktop, mobiel, categorieën, uitleg, providers en legal pages.
+*/
+.mp-site-footer{
+  width:100%;
+  box-sizing:border-box;
+  margin-top:48px;
+  padding:22px 34px;
+  background:#06483d;
+  color:#fffdf8;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+}
+
+.mp-site-footer__brand{
+  display:grid;
+  gap:3px;
+  min-width:max-content;
+}
+
+.mp-site-footer__brand strong{
+  color:#fffdf8;
+  font-size:20px;
+  line-height:1;
+  font-weight:950;
+  letter-spacing:-.2px;
+}
+
+.mp-site-footer__brand span{
+  color:#f5ead9;
+  font-size:12.5px;
+  line-height:1.15;
+  font-weight:850;
+}
+
+.mp-site-footer__nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:18px 24px;
+}
+
+.mp-site-footer__nav a{
+  color:#fffdf8;
+  text-decoration:none;
+  font-size:14px;
+  line-height:1;
+  font-weight:850;
+}
+
+.mp-site-footer__nav a:hover{
+  text-decoration:underline;
+}
+
+.mp-site-footer__copy{
+  color:#f5ead9;
+  font-size:12px;
+  font-weight:650;
+  white-space:nowrap;
+}
+
+/* v83 Mobile Footer Compact
+   De officiële mobiele footer blijft één component, maar wordt lager/compacter.
+*/
+@media (max-width: 768px){
+  .mp-site-footer{
+    padding:14px 16px 16px!important;
+  }
+
+  .mp-site-footer__brand{
+    margin:0 0 10px!impo
+v83 Mobile Footer Compact: 1495
+x 24px;
+}
+
+.mp-site-footer__nav a{
+  color:#fffdf8;
+  text-decoration:none;
+  font-size:14px;
+  line-height:1;
+  font-weight:850;
+}
+
+.mp-site-footer__nav a:hover{
+  text-decoration:underline;
+}
+
+.mp-site-footer__copy{
+  color:#f5ead9;
+  font-size:12px;
+  font-weight:650;
+  white-space:nowrap;
+}
+
+/* v83 Mobile Footer Compact
+   De officiële mobiele footer blijft één component, maar wordt lager/compacter.
+*/
+@media (max-width: 768px){
+  .mp-site-footer{
+    padding:14px 16px 16px!important;
+  }
+
+  .mp-site-footer__brand{
+    margin:0 0 10px!important;
+    gap:1px!important;
+  }
+
+  .mp-site-footer__brand strong{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+
+  .mp-site-footer__brand span{
+    font-size:11px!important;
+    line-height:1.1!important;
+  }
+
+  .mp-site-footer__nav{
+    gap:7px!important;
+    margin:0 0 10px!important;
+  }
+
+  .mp-site-footer__nav a{
+    min-height:28px!important;
+    padding:0 10px!important;
+    font-size:11px!important;
+    border-radius:999px!important;
+  }
+
+  .mp-site-footer__copy{
+    font-size:10px!important;
+    line-height:1!important;
+  }
+}
+
+
+/* v86 Uitleg Topbar Same Component
+   /uitleg/ gebruikt nu exact dezelfde mp-mobile-top-header/mp-mobile-topbar-unified-v3 als de rest.
+   Geen eigen topbarfamilie meer; alleen pagina-spacing onder de officiële topbar.
+*/
+@media (max-width: 760px){
+  body.mp-uitleg-page .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-uitleg-page > .mp-mobile-top-header.mp-mobile-topbar-un
+v87 Uitleg topbar audit spacing fix: 2821
+ar.
+*/
+@media (max-width: 760px){
+  body.mp-uitleg-page .mp-desktop-header{
+    display:none!important;
+  }
+
+  body.mp-uitleg-page > .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    margin:0 0 14px!important;
+  }
+
+  body.mp-uitleg-page .mp-uitleg-shell{
+    padding-top:0!important;
+  }
+}
+
+
+/* v87 Uitleg topbar audit spacing fix
+   Uitleg gebruikt dezelfde topbarcomponent, maar zonder zichtbaar hart.
+   De rechterkolom blijft als onzichtbare spacer bestaan zodat het logo exact gecentreerd blijft.
+   De topbar krijgt dezelfde mobiele pagina-gutter als de rest.
+*/
+@media (max-width: 760px){
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar{
+    padding-left:16px!important;
+    padding-right:16px!important;
+    margin:0 0 14px!important;
+    background:#f7efe4!important;
+    border-bottom:1px solid rgba(222,208,185,.78)!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-back{
+    justify-self:start!important;
+    grid-column:1!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar > .mp-mobile-heart-spacer{
+    visibility:hidden!important;
+    pointer-events:none!important;
+    justify-self:end!important;
+    grid-column:3!important;
+  }
+
+  html body.mp-uitleg-page > .mp-mobile-top-header.mp-uitleg-shared-topbar .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+  }
+}
+
+
+CHECKS:
+{
+  "uitleg/index.html": {
+    "footer_count": 1,
+    "has_mp_site_footer": true,
+    "has_topbar": true
+  },
+  "uitleg/abonnement-met-cadeau/index.html": {
+    "footer_count": 1,
+    "has_mp_site_footer": true,
+    "has_topbar": true
+  }
+}

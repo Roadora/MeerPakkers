@@ -1,0 +1,71 @@
+MeerPakkers Uitleg Topbar Audit Spacing Fix v1
+- Audit gedaan op de topbarstructuur en CSS-stack van /uitleg/ en artikelpagina.
+- De uitlegpagina gebruikt dezelfde mobiele topbarcomponent als de rest: mp-mobile-top-header + mp-mobile-topbar-unified-v3.
+- Het zichtbare hart/opgeslagen-deals is verwijderd omdat dat hier niet nodig is.
+- Een onzichtbare rechter spacer blijft staan zodat het logo exact gecentreerd blijft binnen dezelfde 3-koloms topbar.
+- De topbar krijgt dezelfde 16px mobiele pagina-gutter zodat de terugknop niet meer tegen de rand staat.
+- Override bewust in topbar-final-lock-v17.css gezet zodat hij na de officiële topbar-lock wint.
+
+AUDIT VOORAF:
+
+--- uitleg/index.html before ---
+<header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="MeerPakkers pagina header">
+  <a href="/" class="mp-mobile-back" aria-label="Terug">&lt;</a>
+  <a href="/" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
+    <span class="mp-mobile-brand-logo">MP+</span>
+    <span class="mp-mobile-brand-copy"><span class="mp-mobile-brand-lines">meer cadeau,<br>meer korting.</span><strong class="mp-mobile-brand-name">MeerPakkers</strong></span>
+  </a>
+  <a href="/opgeslagen/" class="mp-mobile-heart-link" aria-label="Opgeslagen deals">♡<span class="mp-mobile-heart-count" data-saved-deals-count>0</span></a>
+</header>
+CSS order:
+../css/tokens.css
+../css/base.css
+../css/header.css
+../css/footer.css
+../css/cookie-banner-v40.css
+../css/uitleg-desktop-v1.css
+../css/topbar-final-lock-v17.css
+../css/mobile-shell-unification-v1.css
+../css/mobile-topbar-unified-v3.css
+../css/mobile-framework-v1.css
+
+--- uitleg/abonnement-met-cadeau/index.html before ---
+<header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="MeerPakkers pagina header">
+  <a href="/uitleg/" class="mp-mobile-back" aria-label="Terug">&lt;</a>
+  <a href="/" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
+    <span class="mp-mobile-brand-logo">MP+</span>
+    <span class="mp-mobile-brand-copy"><span class="mp-mobile-brand-lines">meer cadeau,<br>meer korting.</span><strong class="mp-mobile-brand-name">MeerPakkers</strong></span>
+  </a>
+  <a href="/opgeslagen/" class="mp-mobile-heart-link" aria-label="Opgeslagen deals">♡<span class="mp-mobile-heart-count" data-saved-deals-count>0</span></a>
+</header>
+CSS order:
+../../css/tokens.css
+../../css/base.css
+../../css/header.css
+../../css/footer.css
+../../css/cookie-banner-v40.css
+../../css/uitleg-desktop-v1.css
+../../css/topbar-final-lock-v17.css
+../../css/mobile-shell-unification-v1.css
+../../css/mobile-topbar-unified-v3.css
+../../css/mobile-framework-v1.css
+
+CHECKS: {
+  "uitleg/index.html": {
+    "has_shared_topbar_class": true,
+    "visible_heart_removed": true,
+    "has_invisible_spacer": true,
+    "topbar_snippet": "<header class=\"mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only mp-uitleg-shared-topbar\" aria-label=\"MeerPakkers pagina header\">\n  <a href=\"/\" class=\"mp-mobile-back\" aria-label=\"Terug\">&lt;</a>\n  <a href=\"/\" class=\"mp-mobile-brand-lockup\" aria-label=\"MeerPakkers home\">\n    <span class=\"mp-mobile-brand-logo\">MP+</span>\n    <span class=\"mp-mobile-brand-copy\"><span class=\"mp-mobile-brand-lines\">meer cadeau,<br>meer korting.</span><strong class=\"mp-mobile-brand-name\">MeerPakkers</strong></span>\n  </a>\n  <span class=\"mp-mobile-heart-link mp-mobile-heart-spacer\" aria-hidden=\"true\"></span>\n</header>"
+  },
+  "uitleg/abonnement-met-cadeau/index.html": {
+    "has_shared_topbar_class": true,
+    "visible_heart_removed": true,
+    "has_invisible_spacer": true,
+    "topbar_snippet": "<header class=\"mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only mp-uitleg-shared-topbar\" aria-label=\"MeerPakkers pagina header\">\n  <a href=\"/uitleg/\" class=\"mp-mobile-back\" aria-label=\"Terug\">&lt;</a>\n  <a href=\"/\" class=\"mp-mobile-brand-lockup\" aria-label=\"MeerPakkers home\">\n    <span class=\"mp-mobile-brand-logo\">MP+</span>\n    <span class=\"mp-mobile-brand-copy\"><span class=\"mp-mobile-brand-lines\">meer cadeau,<br>meer korting.</span><strong class=\"mp-mobile-brand-name\">MeerPakkers</strong></span>\n  </a>\n  <span class=\"mp-mobile-heart-link mp-mobile-heart-spacer\" aria-hidden=\"true\"></span>\n</header>"
+  }
+}
+CSS: {
+  "footer_v87": true,
+  "topbar_lock_v87": true,
+  "old_uitleg_topbar_refs_footer": false
+}

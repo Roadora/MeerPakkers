@@ -1,0 +1,47 @@
+MeerPakkers Unified Mobile Footer Topbar v1
+- Audit: er waren meerdere mobiele footerfamilies ontstaan (home, categorie, uitleg).
+- Oplossing: één unified mobiele footercomponent: mp-unified-mobile-footer.
+- Home krijgt één footer; oude/extra footers verwijderd.
+- Categorieën krijgen dezelfde footer via mobile-category-v1.js onder de compacte uitlegkaart.
+- Uitlegpagina’s krijgen dezelfde footer en een topbar in dezelfde familie met terugknop + MP+ lockup.
+- Desktop blijft onaangeraakt via mobile-only CSS.
+
+AUDIT VOORAF:
+
+--- index.html ---
+footer blocks: 0
+has mobile uitleg bar: False
+
+--- mobiel/index.html ---
+footer blocks: 0
+has mobile uitleg bar: False
+
+--- sim-only/index.html ---
+footer blocks: 0
+has mobile uitleg bar: False
+
+--- internet-tv/index.html ---
+footer blocks: 0
+has mobile uitleg bar: False
+
+--- streaming/index.html ---
+footer blocks: 0
+has mobile uitleg bar: False
+
+--- uitleg/index.html ---
+footer blocks: 0
+has mobile uitleg bar: True
+
+--- uitleg/abonnement-met-cadeau/index.html ---
+footer blocks: 0
+has mobile uitleg bar: True
+
+--- js/mobile-category-v1.js ---
+mp-mobile-category-footer count: 2
+renderSeoContent count: 2
+
+AUDIT NA:
+index.html: unified footer=2, unified topbar=0, footer blocks=0
+uitleg/index.html: unified footer=2, unified topbar=1, footer blocks=0
+uitleg/abonnement-met-cadeau/index.html: unified footer=2, unified topbar=1, footer blocks=0
+mobile-category-v1.js unified category footer=1

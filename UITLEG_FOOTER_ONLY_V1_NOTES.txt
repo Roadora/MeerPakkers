@@ -1,0 +1,5 @@
+MeerPakkers Uitleg Footer Only v1
+- De MeerPakkers Uitleg-strip is verwijderd uit het midden van de homepage.
+- /uitleg/ en /uitleg/abonnement-met-cadeau/ blijven bestaan.
+- Uitleg blijft beschikbaar via footer-link en desktop navigatie.
+- Mobiele flow blijft onaangeraakt.

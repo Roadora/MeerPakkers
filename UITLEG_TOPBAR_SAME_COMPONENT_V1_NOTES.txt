@@ -1,0 +1,11 @@
+MeerPakkers Uitleg Topbar Same Component v1
+- De losse uitleg-topbarfamilie is verwijderd.
+- /uitleg/ en /uitleg/abonnement-met-cadeau/ gebruiken nu exact dezelfde mobiele topbarstructuur als providers/meepakker pagina's:
+  mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only.
+- Rechts staat weer de echte opgeslagen/hart-link, niet een ghost placeholder.
+- De benodigde bestaande topbar CSS-stack is toegevoegd aan de uitlegpagina's.
+- De oude v85 Uitleg Mobile Topbar Polish CSS is verwijderd omdat die juist een afwijkende familie maakte.
+- Alleen minimale pagina-spacing onder de officiële topbar is toegevoegd.
+
+Checks: {'uitleg/index.html': {'uses_exact_component': True, 'custom_uitleg_topbar_removed': True, 'has_real_heart_link': True, 'has_topbar_final_css': True, 'has_mobile_topbar_css': True}, 'uitleg/abonnement-met-cadeau/index.html': {'uses_exact_component': True, 'custom_uitleg_topbar_removed': True, 'has_real_heart_link': True, 'has_topbar_final_css': True, 'has_mobile_topbar_css': True}}
+CSS: {'v85_removed': True, 'v86_added': True}

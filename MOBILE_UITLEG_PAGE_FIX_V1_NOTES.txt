@@ -1,0 +1,5 @@
+MeerPakkers Mobile Uitleg Page Fix v1
+- De mobiele /uitleg/ hub en artikelpagina hadden nog geen mobiele layout.
+- Mobile CSS toegevoegd in css/uitleg-desktop-v1.css onder v76 Mobile Uitleg Page Fix.
+- De compacte mobiele uitlegkaart onder categorieën blijft behouden.
+- Desktop blijft behouden.

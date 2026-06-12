@@ -1,0 +1,6 @@
+MeerPakkers Mobile Uitleg Compact v1
+- Mobiele De MeerPakkers Uitleg-card compact gemaakt.
+- Accordion/uitklapvragen verwijderd uit mobiele categorie-rendering.
+- Compacte kaart blijft onderaan na dealcards, vóór footer/nav.
+- CTA linkt naar /uitleg/.
+- Desktop compact category uitleg en footer uitleg blijven behouden.

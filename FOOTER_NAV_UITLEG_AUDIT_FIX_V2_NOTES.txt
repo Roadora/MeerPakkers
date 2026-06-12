@@ -1,0 +1,6 @@
+MeerPakkers Footer/Nav/Uitleg Audit Fix v2
+- V1 audit ontdekte dat de category footer niet in mobile-category-v1.js was geïnjecteerd.
+- V2 voegt de mobiele categoriefooter direct na renderSeoContent() toe.
+- Home footer krijgt Uitleg-link in elk footerblok waar die nog ontbrak.
+- Mobiele footer wordt groen gehouden via mobile-only CSS.
+- Uitleg terugknop/topbar polish uit v1 blijft behouden.

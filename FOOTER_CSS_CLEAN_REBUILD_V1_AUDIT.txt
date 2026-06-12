@@ -1,0 +1,63 @@
+MeerPakkers Footer CSS Clean Rebuild v1
+- Alleen css/footer.css opgeschoond.
+- Topbar HTML en topbar component blijven onaangeraakt.
+- Oude footer-repairlagen verwijderd: v81/v83/v88 en losse v78-v80 footer patches.
+- Eén schone footerstijl toegevoegd: v89 Footer CSS Clean Rebuild.
+- Mobiel forceert nu altijd display:block + normale verticale flow voor .mp-site-footer.
+
+Before markers: {
+  "v81": true,
+  "v83": true,
+  "v86": true,
+  "v87": true,
+  "v88": true,
+  "mp_site_footer_refs": 22,
+  "mp_uitleg_topbar_refs": 19
+}
+
+After markers: {
+  "v89": true,
+  "v81": false,
+  "v83": false,
+  "v88": false,
+  "v87_topbar_kept": true,
+  "mp_site_footer_refs": 15
+}
+
+HTML checks: {
+  "index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": null
+  },
+  "uitleg/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": true
+  },
+  "uitleg/abonnement-met-cadeau/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": true
+  },
+  "mobiel/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": null
+  },
+  "sim-only/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": null
+  },
+  "internet-tv/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": null
+  },
+  "streaming/index.html": {
+    "footer_count": 1,
+    "mp_site_footer": true,
+    "topbar_shared": null
+  }
+}
