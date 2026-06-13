@@ -1645,3 +1645,33 @@ html,body{
   background:#06483d !important;
   border-color:#06483d !important;
 }
+
+/* v48 Detail Mobile Topbar
+   Deal detail pages must use the same visible mobile topbar as the rest of the site.
+   Keeps desktop header hidden in mobile/foldable detail runtime and places the topbar
+   before the beta/content block. */
+body.mp-deal-detail-page > .mp-desktop-header{
+  display:none!important;
+}
+
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header,
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-topbar-unified-v3{
+  display:grid!important;
+  grid-template-columns:40px minmax(0,1fr) 40px!important;
+  align-items:center!important;
+  gap:8px!important;
+  width:100%!important;
+  height:92px!important;
+  min-height:92px!important;
+  max-height:92px!important;
+  margin:0 0 18px!important;
+  padding:0!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+  overflow:visible!important;
+  transform:none!important;
+}
+
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-demo-banner{
+  margin-top:0!important;
+}

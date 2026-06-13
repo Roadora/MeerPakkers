@@ -2329,3 +2329,162 @@ body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
     transform:none!important;
   }
 }
+
+/* v48 Detail Mobile Topbar
+   Deal detail pages must use the same visible mobile topbar as the rest of the site.
+   Keeps desktop header hidden in mobile/foldable detail runtime and places the topbar
+   before the beta/content block. */
+body.mp-deal-detail-page > .mp-desktop-header{
+  display:none!important;
+}
+
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header,
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-topbar-unified-v3{
+  display:grid!important;
+  grid-template-columns:40px minmax(0,1fr) 40px!important;
+  align-items:center!important;
+  gap:8px!important;
+  width:100%!important;
+  height:92px!important;
+  min-height:92px!important;
+  max-height:92px!important;
+  margin:0 0 18px!important;
+  padding:0!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+  overflow:visible!important;
+  transform:none!important;
+}
+
+body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-demo-banner{
+  margin-top:0!important;
+}
+
+/* v49 Tablet Deal Grid 2Col
+   Tablet/foldable polish:
+   - Home "Alle deals met voordeel" becomes 2 columns.
+   - Category deal lists become 2 columns.
+   - Phone portrait stays 1 column.
+   Scoped to deal grids only; does not touch topbar/footer/detail/saved pages. */
+@media (min-width:700px) and (max-width:900px){
+  body.home-cleanup #dealList,
+  body.home-cleanup .mp-home-meepakker-grid,
+  body[data-category-id] #mpMobileCategory .mp-category-deals,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  body.home-cleanup #dealList > .mp-deal-card-component,
+  body.home-cleanup .mp-home-meepakker-grid > .mp-deal-card-component,
+  body[data-category-id] #mpMobileCategory .mp-category-deals > .mp-deal-card-component,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid > .mp-deal-card-component{
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+    height:100%!important;
+  }
+
+  body.home-cleanup #dealList .mp-deal-card-component .mp-clean-card-bottom,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-clean-card-bottom,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-clean-card-bottom,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-clean-card-bottom{
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:flex-end!important;
+    justify-content:space-between!important;
+    gap:8px!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+
+  body.home-cleanup #dealList .mp-deal-card-component .mp-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-card-cta,
+  body.home-cleanup #dealList .mp-deal-card-component .mp-clean-card-bottom > a,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-clean-card-bottom > a,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-clean-card-bottom > a,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-clean-card-bottom > a{
+    flex:0 0 auto!important;
+    min-width:104px!important;
+    max-width:none!important;
+    height:43px!important;
+    min-height:43px!important;
+    max-height:43px!important;
+    padding-left:12px!important;
+    padding-right:12px!important;
+    white-space:nowrap!important;
+    font-size:13px!important;
+  }
+
+  body.home-cleanup #dealList .mp-deal-card-component .mp-card-total,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-card-total,
+  body.home-cleanup #dealList .mp-deal-card-component .mp-clean-card-bottom > div,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-clean-card-bottom > div,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-card-total,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-clean-card-bottom > div,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-card-total,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-clean-card-bottom > div{
+    min-width:0!important;
+    flex:1 1 auto!important;
+  }
+
+  body.home-cleanup #dealList .mp-deal-card-component .mp-clean-benefits,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component .mp-clean-benefits,
+  body[data-category-id] #mpMobileCategory .mp-category-deals .mp-deal-card-component .mp-clean-benefits,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid .mp-deal-card-component .mp-clean-benefits{
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* Keep narrow portrait phones single-column. */
+@media (max-width:699px){
+  body.home-cleanup #dealList,
+  body.home-cleanup .mp-home-meepakker-grid,
+  body[data-category-id] #mpMobileCategory .mp-category-deals,
+  body[data-category-id] #mpMobileCategory .mp-shared-deal-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* v50 Tablet Home 10 + Load More
+   On tablet/foldable Home the 2-column deal grid starts with 10 deals
+   and uses a dedicated CTA to load 10 more. Desktop and phone keep existing flows. */
+@media (min-width:700px) and (max-width:900px){
+  body.home-cleanup #mpTabletHomeLoadMoreDeals{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:min(100%, 360px);
+    min-height:48px;
+    margin:16px auto 0;
+    border:0;
+    border-radius:999px;
+    background:var(--mp-green,#06483d);
+    color:#fffaf3;
+    font-weight:950;
+    font-size:14px;
+    box-shadow:0 14px 30px rgba(6,72,61,.16);
+    cursor:pointer;
+  }
+
+  body.home-cleanup #mpTabletHomeLoadMoreDeals.is-disabled,
+  body.home-cleanup #mpTabletHomeLoadMoreDeals:disabled{
+    opacity:.65;
+    cursor:default;
+  }
+}
+
+@media (max-width:699px), (min-width:901px){
+  body.home-cleanup #mpTabletHomeLoadMoreDeals{
+    display:none!important;
+  }
+}
