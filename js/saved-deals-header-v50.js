@@ -53,28 +53,56 @@
   }
 
   function ensureHomeMobileEntry(){
+    /* v35:
+       Portrait home: show the small header heart again.
+       Landscape home: hide/remove the duplicate header heart, because the Opgeslagen pill
+       next to the search bar is already visible there. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var selectors = [
-      '.mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50)',
-      '.mp-mobile-heart-link',
-      '.mp-mobile-heart-button',
-      '.mp-legacy-header-heart',
-      '[data-mp-legacy-header-heart="true"]',
-      '.mp-clean-mobile-header a[href*="opgeslagen"]',
-      '.mp-clean-mobile-home > a[href*="opgeslagen"]'
-    ];
+    var isLandscape = false;
+    try{
+      isLandscape = window.matchMedia && window.matchMedia('(orientation: landscape)').matches;
+    }catch(e){ isLandscape = false; }
 
-    selectors.forEach(function(selector){
-      var nodes = document.querySelectorAll(selector);
-      Array.prototype.forEach.call(nodes, function(node){
-        if(!node || !node.parentNode) return;
-        if(node.closest && node.closest('.mp-desktop-actions')) return;
-        if(node.closest && node.closest('.mp-clean-search-row')) return;
-        if(node.closest && node.closest('.mp-clean-search-actions')) return;
-        if(node.closest && node.closest('.mp-clean-search')) return;
-        node.parentNode.removeChild(node);
-      });
+    var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
+
+    if(!isLandscape && header){
+      var existing = header.querySelector('.mp-saved-header-link-v50, .mp-mobile-heart-link, .mp-mobile-heart-button');
+      if(!existing){
+        header.appendChild(createMobileLink());
+      }
+    }
+
+    var nodes = document.querySelectorAll(
+      '.mp-saved-header-link-v50,' +
+      '.mp-mobile-heart-link,' +
+      '.mp-mobile-heart-button,' +
+      '.mp-legacy-header-heart,' +
+      '[data-mp-legacy-header-heart="true"],' +
+      'a[href="/opgeslagen/"],' +
+      'a[href="../opgeslagen/"],' +
+      'a[href*="/opgeslagen/"]'
+    );
+
+    Array.prototype.forEach.call(nodes, function(node){
+      if(!node || !node.parentNode) return;
+
+      /* Keep the official desktop/header saved pill. */
+      if(node.classList && node.classList.contains(DESKTOP_CLASS)) return;
+      if(node.closest && node.closest('.mp-desktop-actions')) return;
+
+      /* Keep the official saved pill next to the search bar. */
+      if(node.closest && node.closest('.mp-clean-search')) return;
+      if(node.closest && node.closest('.mp-clean-search-row')) return;
+      if(node.closest && node.closest('.mp-clean-search-actions')) return;
+      if(node.classList && node.classList.contains('mp-clean-saved-link')) return;
+      if(node.classList && node.classList.contains('mp-saved-search-link')) return;
+      if(node.classList && node.classList.contains('mp-saved-pill')) return;
+
+      /* Keep the small portrait-only home header heart. */
+      if(!isLandscape && header && node.parentNode === header) return;
+
+      node.parentNode.removeChild(node);
     });
   }
 
@@ -85,7 +113,7 @@
   }
 
   function ensureDesktopEntry(){
-    var containers = document.querySelectorAll('.mp-desktop-actions, .top-actions');
+    var containers = document.querySelectorAll('.mp-desktop-actions, .top-actions:not(.mp-clean-search-actions):not(.mp-clean-search-row)');
     Array.prototype.forEach.call(containers, function(container){
       if(container.querySelector('.' + DESKTOP_CLASS)) return;
       var oldButton = container.querySelector('button');
