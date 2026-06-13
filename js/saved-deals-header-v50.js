@@ -53,18 +53,19 @@
   }
 
   function ensureHomeMobileEntry(){
-    /* v36 decoupled home heart:
-       Home portrait heart no longer uses the legacy saved-header class.
-       It uses .mp-home-portrait-heart only.
-       Landscape removes it entirely, so it cannot reappear through old component styling. */
+    /* v39 breakpoint contract:
+       Below 769px: home portrait/mobile may show .mp-home-portrait-heart.
+       From 769px up: desktop/tablet header is active, so standalone home heart is removed.
+       The search-row Opgeslagen pill and desktop saved link stay untouched. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var isPortrait = true;
+    var isMobilePortraitShell = true;
     try{
-      /* v37: use actual viewport geometry instead of matchMedia orientation.
-         Android Chrome landscape with URL bars can report orientation inconsistently. */
-      isPortrait = (window.innerHeight || 0) >= (window.innerWidth || 0);
-    }catch(e){ isPortrait = true; }
+      /* v39: use the actual layout breakpoint.
+         Home switches to the desktop/tablet header at 769px+.
+         The small portrait heart may only exist below 769px. */
+      isMobilePortraitShell = (window.innerWidth || 0) < 769;
+    }catch(e){ isMobilePortraitShell = true; }
 
     var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
 
@@ -88,8 +89,8 @@
       node.parentNode.removeChild(node);
     });
 
-    /* Landscape: remove the home-only portrait heart. */
-    if(!isPortrait){
+    /* Tablet/landscape/desktop shell: remove the home-only portrait heart. */
+    if(!isMobilePortraitShell){
       var oldPortraitHearts = document.querySelectorAll('.mp-home-portrait-heart');
       Array.prototype.forEach.call(oldPortraitHearts, function(node){
         if(node && node.parentNode) node.parentNode.removeChild(node);
