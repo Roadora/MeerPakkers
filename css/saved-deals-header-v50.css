@@ -266,3 +266,15 @@ body.home-cleanup [data-mp-legacy-header-heart="true"]{
   right:auto!important;
   top:auto!important;
 }
+
+
+/* v36 legacy home heart disabled
+   Home portrait heart now uses .mp-home-portrait-heart, not .mp-saved-header-link-v50. */
+body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}

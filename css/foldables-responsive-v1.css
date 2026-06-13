@@ -2277,3 +2277,128 @@ body.home-cleanup [data-mp-legacy-header-heart="true"]{
     pointer-events:none!important;
   }
 }
+
+
+/* v36 Decoupled Home Portrait Heart
+   Portrait heart uses its own class and no longer depends on legacy mp-saved-header-link-v50.
+   Landscape removes/hides the home-only portrait heart. */
+body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+  position:relative!important;
+}
+
+body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
+body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  width:0!important;
+  height:0!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:0!important;
+  max-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+}
+
+@media (orientation: portrait) and (max-width:900px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:56px!important;
+  }
+
+  body.home-cleanup .mp-home-portrait-heart{
+    position:absolute!important;
+    right:0!important;
+    top:24px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    visibility:visible!important;
+    opacity:1!important;
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    min-height:46px!important;
+    max-width:46px!important;
+    max-height:46px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:16px!important;
+    background:rgba(255,253,248,.94)!important;
+    border:1px solid rgba(222,208,185,.9)!important;
+    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    overflow:visible!important;
+    pointer-events:auto!important;
+    z-index:4!important;
+  }
+
+  body.home-cleanup .mp-home-portrait-heart .mp-saved-icon-v50{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:16px!important;
+    height:16px!important;
+    color:currentColor!important;
+  }
+
+  body.home-cleanup .mp-home-portrait-heart .mp-heart-icon{
+    width:16px!important;
+    height:16px!important;
+    fill:none!important;
+    stroke:currentColor!important;
+    stroke-width:2!important;
+    stroke-linecap:round!important;
+    stroke-linejoin:round!important;
+  }
+
+  body.home-cleanup .mp-home-portrait-heart .mp-saved-count-v50{
+    position:absolute!important;
+    top:-5px!important;
+    right:-5px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 5px!important;
+    border-radius:999px!important;
+    display:none!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#c9952d!important;
+    color:#fff!important;
+    border:2px solid #fffdf8!important;
+    font-size:10px!important;
+    line-height:1!important;
+    font-weight:950!important;
+  }
+
+  body.home-cleanup .mp-home-portrait-heart.has-saved .mp-saved-count-v50{
+    display:flex!important;
+  }
+}
+
+@media (orientation: landscape){
+  body.home-cleanup .mp-home-portrait-heart{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:0!important;
+    max-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+}
