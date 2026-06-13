@@ -49,6 +49,43 @@ function mpNormalizeHomeDeal(deal){
   return d;
 }
 
+
+const MP_TABLET_HOME_INITIAL_COUNT = 10;
+const MP_TABLET_HOME_STEP_COUNT = 10;
+let mpTabletHomeVisibleCount = MP_TABLET_HOME_INITIAL_COUNT;
+
+function mpIsTabletHomeDealGrid(){
+  try{
+    return !!(document.body && document.body.classList && document.body.classList.contains("home-cleanup"))
+      && (window.innerWidth || 0) >= 700
+      && (window.innerWidth || 0) <= 900;
+  }catch(e){
+    return false;
+  }
+}
+
+function mpEnsureTabletHomeLoadMoreButton(list){
+  let btn = document.getElementById("mpTabletHomeLoadMoreDeals");
+  if(!btn){
+    btn = document.createElement("button");
+    btn.id = "mpTabletHomeLoadMoreDeals";
+    btn.type = "button";
+    btn.className = "mp-clean-more mp-tablet-home-load-more";
+    btn.addEventListener("click", function(){
+      mpTabletHomeVisibleCount += MP_TABLET_HOME_STEP_COUNT;
+      if(window.MPHomeRender && typeof window.MPHomeRender.renderDeals === "function" && window.MPHomeDeals && typeof window.MPHomeDeals.getHomepageDeals === "function"){
+        window.MPHomeRender.renderDeals(window.MPHomeDeals.getHomepageDeals());
+      }
+    });
+    list.insertAdjacentElement("afterend", btn);
+  }
+  return btn;
+}
+
+function mpResetTabletHomeVisibleCount(){
+  mpTabletHomeVisibleCount = MP_TABLET_HOME_INITIAL_COUNT;
+}
+
 function mpEnhanceSavedButtons(){
   if (window.MeerPakkersSavedDealsUI && typeof window.MeerPakkersSavedDealsUI.enhanceCards === "function") {
     window.MeerPakkersSavedDealsUI.enhanceCards();
@@ -125,11 +162,14 @@ window.MPHomeRender = {
     if (count) count.textContent = `${deals.length} deals gevonden`;
     if (!list) return;
 
+    const isTabletHomeGrid = mpIsTabletHomeDealGrid();
+    const visibleDeals = isTabletHomeGrid ? deals.slice(0, mpTabletHomeVisibleCount) : deals;
+
     // Home gebruikt nu exact de kaarttaal van /kies-je-meepakker/.
     // Geen legacy mp-home-list-card CSS meer op deze sectie.
     list.className = "meepakker-grid mp-home-meepakker-grid";
 
-    list.innerHTML = deals.map((raw) => {
+    list.innerHTML = visibleDeals.map((raw) => {
       const d = mpNormalizeHomeDeal(raw);
       if (window.MPDealCard && typeof window.MPDealCard.render === "function") {
         return window.MPDealCard.render(d, {
@@ -165,6 +205,26 @@ window.MPHomeRender = {
         </div>
       </a>`;
     }).join("");
+
+    const tabletBtn = mpEnsureTabletHomeLoadMoreButton(list);
+    if(isTabletHomeGrid && deals.length > MP_TABLET_HOME_INITIAL_COUNT){
+      const remaining = Math.max(0, deals.length - mpTabletHomeVisibleCount);
+      tabletBtn.style.display = "";
+      if(remaining <= 0){
+        tabletBtn.textContent = "Alle deals geladen";
+        tabletBtn.disabled = true;
+        tabletBtn.classList.add("is-disabled");
+      }else{
+        tabletBtn.textContent = "Toon " + Math.min(MP_TABLET_HOME_STEP_COUNT, remaining) + " meer deals";
+        tabletBtn.disabled = false;
+        tabletBtn.classList.remove("is-disabled");
+      }
+    }else{
+      tabletBtn.style.display = "none";
+      tabletBtn.disabled = true;
+    }
+
+    mpEnhanceSavedButtons();
   }
 
 };
@@ -181,6 +241,13 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     });
   });
+
+  /* v50 tablet home load more resize sync */
+  window.addEventListener('resize', function(){
+    if(window.MPHomeRender && typeof window.MPHomeRender.renderDeals === "function" && window.MPHomeDeals && typeof window.MPHomeDeals.getHomepageDeals === "function"){
+      window.MPHomeRender.renderDeals(window.MPHomeDeals.getHomepageDeals());
+    }
+  }, {passive:true});
 
   document.querySelectorAll('a,button').forEach(function(el){
     const t = (el.textContent || '').toLowerCase();

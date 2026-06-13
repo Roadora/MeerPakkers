@@ -1,17 +1,24 @@
 window.MPHomeEvents = {
   bind(renderAll){
     document.addEventListener("change", e => {
-      if (e.target.matches("[data-filter]")) renderAll();
+      if (e.target.matches("[data-filter]")) {
+        if(window.MPHomeRender && typeof window.MPHomeRender.resetTabletHomeVisibleCount === "function") window.MPHomeRender.resetTabletHomeVisibleCount();
+        renderAll();
+      }
     });
 
     const searchInput = document.getElementById("searchInput");
-    if (searchInput) searchInput.addEventListener("input", renderAll);
+    if (searchInput) searchInput.addEventListener("input", function(){
+      if(window.MPHomeRender && typeof window.MPHomeRender.resetTabletHomeVisibleCount === "function") window.MPHomeRender.resetTabletHomeVisibleCount();
+      renderAll();
+    });
 
     document.querySelectorAll(".quick-filter").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".quick-filter").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         window.MPHomeState.state.quick = btn.dataset.quick;
+        if(window.MPHomeRender && typeof window.MPHomeRender.resetTabletHomeVisibleCount === "function") window.MPHomeRender.resetTabletHomeVisibleCount();
         renderAll();
       });
     });
@@ -20,6 +27,7 @@ window.MPHomeEvents = {
     if (resetButton) {
       resetButton.addEventListener("click", () => {
         window.MPHomeFilters.resetFilters();
+        if(window.MPHomeRender && typeof window.MPHomeRender.resetTabletHomeVisibleCount === "function") window.MPHomeRender.resetTabletHomeVisibleCount();
         renderAll();
       });
     }
