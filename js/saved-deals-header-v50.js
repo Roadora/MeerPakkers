@@ -35,9 +35,10 @@
 
   function createMobileLink(){
     var link = document.createElement('a');
-    link.className = HEADER_CLASS;
+    link.className = HEADER_CLASS + ' mp-legacy-header-heart';
     link.href = TARGET_URL;
     link.setAttribute('aria-label', 'Opgeslagen deals');
+    link.setAttribute('data-mp-legacy-header-heart', 'true');
     link.innerHTML = '<span class="mp-saved-icon-v50" aria-hidden="true"><svg class="mp-heart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-6.8-4.2-9.3-8.1C.7 9 .9 5.5 3.4 3.7c2.1-1.5 5-.9 6.6 1.1L12 7.2l2-2.4c1.6-2 4.5-2.6 6.6-1.1 2.5 1.8 2.7 5.3.7 8.4-2.5 3.9-9.3 8.1-9.3 8.1z"/></svg></span><span class="' + COUNT_CLASS + '" aria-hidden="true">0</span>';
     return link;
   }
@@ -52,24 +53,28 @@
   }
 
   function ensureHomeMobileEntry(){
-    /* v32 final audit fix:
-       Home already has the visible Opgeslagen pill next to the search bar.
-       Remove every other saved/heart entry on the home page, including phone-landscape
-       variants that are injected outside the normal header selectors. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var nodes = document.querySelectorAll('.' + HEADER_CLASS + ', .mp-mobile-heart-link, .mp-mobile-heart-button, a[href*="opgeslagen"]');
-    Array.prototype.forEach.call(nodes, function(node){
-      if(!node || !node.parentNode) return;
+    var selectors = [
+      '.mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50)',
+      '.mp-mobile-heart-link',
+      '.mp-mobile-heart-button',
+      '.mp-legacy-header-heart',
+      '[data-mp-legacy-header-heart="true"]',
+      '.mp-clean-mobile-header a[href*="opgeslagen"]',
+      '.mp-clean-mobile-home > a[href*="opgeslagen"]'
+    ];
 
-      /* Keep the official desktop/header saved pill and the search-row saved pill. */
-      if(node.classList && node.classList.contains(DESKTOP_CLASS)) return;
-      if(node.closest && node.closest('.mp-desktop-actions')) return;
-      if(node.closest && node.closest('.mp-clean-search-row')) return;
-      if(node.closest && node.closest('.mp-clean-search-actions')) return;
-      if(node.closest && node.closest('.mp-clean-search')) return;
-
-      node.parentNode.removeChild(node);
+    selectors.forEach(function(selector){
+      var nodes = document.querySelectorAll(selector);
+      Array.prototype.forEach.call(nodes, function(node){
+        if(!node || !node.parentNode) return;
+        if(node.closest && node.closest('.mp-desktop-actions')) return;
+        if(node.closest && node.closest('.mp-clean-search-row')) return;
+        if(node.closest && node.closest('.mp-clean-search-actions')) return;
+        if(node.closest && node.closest('.mp-clean-search')) return;
+        node.parentNode.removeChild(node);
+      });
     });
   }
 
