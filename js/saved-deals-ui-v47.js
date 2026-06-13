@@ -17,6 +17,18 @@
     }
   }
 
+
+  function isHomeLandscapeDealSaveSuppressed() {
+    if (!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return false;
+    try {
+      var w = window.innerWidth || 0;
+      var h = window.innerHeight || 0;
+      return (w > h && h <= 520) || (w >= 769 && w <= 900);
+    } catch (e) {
+      return false;
+    }
+  }
+
   function slugify(value) {
     return String(value || '')
       .toLowerCase()
@@ -111,6 +123,12 @@
 
     var bottom = card.querySelector('.mp-clean-card-bottom');
     if (!bottom) return;
+
+    /* v40 home landscape save heart guard:
+       Prevent dealcard save hearts from floating into the home header zone. */
+    if (isHomeLandscapeDealSaveSuppressed() && card.closest && (card.closest('.mp-clean-mobile-home') || card.closest('#mpCleanTopDeals') || card.closest('#dealList'))) {
+      return;
+    }
 
     var button = createButton(card);
     if (!button) return;
