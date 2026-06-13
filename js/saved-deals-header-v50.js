@@ -52,9 +52,29 @@
   }
 
   function ensureHomeMobileEntry(){
-    var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
-    if(!header || header.querySelector('.' + HEADER_CLASS)) return;
-    header.appendChild(createMobileLink());
+    /* v27: home already has the Opgeslagen pill next to the search bar.
+       Remove every legacy standalone saved-heart variant from the brand/header area,
+       including tablet/foldable/iPad layouts where older classes can be reused. */
+    var home = document.querySelector('.mp-clean-mobile-home');
+    if(!home) return;
+
+    var selectors = [
+      '.mp-clean-mobile-header .' + HEADER_CLASS,
+      '.mp-clean-mobile-header .mp-mobile-heart-link',
+      '.mp-clean-mobile-header .mp-mobile-heart-button',
+      '> .' + HEADER_CLASS,
+      '> .mp-mobile-heart-link',
+      '> .mp-mobile-heart-button'
+    ];
+
+    selectors.forEach(function(selector){
+      try{
+        var nodes = home.querySelectorAll(selector);
+        Array.prototype.forEach.call(nodes, function(node){
+          if(node && node.parentNode) node.parentNode.removeChild(node);
+        });
+      }catch(e){}
+    });
   }
 
   function ensureCategoryMobileEntry(){

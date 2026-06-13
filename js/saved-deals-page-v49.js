@@ -95,6 +95,9 @@
       card.setAttribute('data-saved-deal-id', id);
       card.classList.add('mp-saved-component-card');
 
+      var saveHeart = card.querySelector('.meepakker-save-heart, [data-save-deal-id]');
+      if (saveHeart) saveHeart.remove();
+
       var bottom = card.querySelector('.mp-clean-card-bottom');
       var primary = bottom && bottom.querySelector('a[href]');
       if (!bottom || !primary || bottom.querySelector('[data-remove-saved-deal]')) return;
