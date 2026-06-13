@@ -586,3 +586,30 @@
     z-index:3 !important;
   }
 }
+
+/* v40 Home Landscape Netflix Save Heart Fix
+   Root cause: the visible landscape heart is the dealcard save button
+   (.mp-save-deal-btn-v47), not a header saved-link.
+   In phone-landscape / wide mobile home, hide home dealcard save hearts so they
+   cannot float into the header/topbar area. Portrait home remains untouched. */
+@media (orientation: landscape) and (max-height:520px), (min-width:769px) and (max-width:900px){
+  body.home-cleanup .mp-clean-mobile-home .mp-save-deal-btn-v47,
+  body.home-cleanup #mpCleanTopDeals .mp-save-deal-btn-v47,
+  body.home-cleanup #dealList .mp-save-deal-btn-v47{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:0!important;
+    max-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+}
