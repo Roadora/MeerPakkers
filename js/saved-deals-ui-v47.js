@@ -17,25 +17,6 @@
     }
   }
 
-
-  function isHomeLandscapeDealSaveSuppressed() {
-    if (!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return false;
-    try {
-      var w = window.innerWidth || 0;
-      var h = window.innerHeight || 0;
-      return (w > h && h <= 520) || (w >= 769 && w <= 900);
-    } catch (e) {
-      return false;
-    }
-  }
-
-
-  function isCategoryLandscapeDealSaveSuppressed() {
-    /* v43: category cards may save from the card again.
-       Wide/landscape category runtime styles the save action as a footer button instead of hiding it. */
-    return false;
-  }
-
   function slugify(value) {
     return String(value || '')
       .toLowerCase()
@@ -131,18 +112,6 @@
     var bottom = card.querySelector('.mp-clean-card-bottom');
     if (!bottom) return;
 
-    /* v40 home landscape save heart guard:
-       Prevent dealcard save hearts from floating into the home header zone. */
-    if (isHomeLandscapeDealSaveSuppressed() && card.closest && (card.closest('.mp-clean-mobile-home') || card.closest('#mpCleanTopDeals') || card.closest('#dealList'))) {
-      return;
-    }
-
-    /* v43: category runtime save buttons are allowed again.
-       Styling moves them into the footer on wide/landscape layouts. */
-    if (isCategoryLandscapeDealSaveSuppressed() && card.closest && card.closest('#mpMobileCategory')) {
-      return;
-    }
-
     var button = createButton(card);
     if (!button) return;
 
@@ -199,7 +168,6 @@
     var cards = document.querySelectorAll(CARD_SELECTOR);
     Array.prototype.forEach.call(cards, enhanceCard);
     updateAllButtons();
-    cleanupCategoryWideSaveHearts();
   }
 
   function updateAllButtons() {
@@ -237,27 +205,12 @@
     });
   }
 
-
-  function cleanupCategoryWideSaveHearts() {
-    /* v43: no cleanup needed; category save button is intentionally visible in the footer. */
-    return;
-  }
-
   function init() {
     if (!STORE) return;
     bindMeepakkerHearts();
     enhanceCards();
     updateMeepakkerHearts();
     observeDealRoots();
-    cleanupCategoryWideSaveHearts();
-
-    /* v42 resize category cleanup: #mpMobileCategory can render after initial load/rotation. */
-    window.setTimeout(cleanupCategoryWideSaveHearts, 120);
-    window.setTimeout(cleanupCategoryWideSaveHearts, 400);
-    window.addEventListener('resize', cleanupCategoryWideSaveHearts, { passive: true });
-    window.addEventListener('orientationchange', function () {
-      window.setTimeout(cleanupCategoryWideSaveHearts, 80);
-    }, { passive: true });
   }
 
   ready(init);

@@ -52,6 +52,59 @@
     return link;
   }
 
+  function isHomeLandscapeLikeV45() {
+    try {
+      var w = window.innerWidth || document.documentElement.clientWidth || 0;
+      var h = window.innerHeight || document.documentElement.clientHeight || 0;
+      var landscapeMq = window.matchMedia && window.matchMedia('(orientation: landscape)').matches;
+      return !!landscapeMq || (w > h && w >= 520);
+    } catch (e) {
+      return false;
+    }
+  }
+
+
+  function isDesktopHeaderVisibleV46() {
+    /* v46: actual source of the bug.
+       Some foldable/tablet/landscape states show the desktop-like header even when
+       window width is below 769px. In that state the portrait/topbar heart must go. */
+    try {
+      var header = document.querySelector('.mp-desktop-header');
+      if (!header || !window.getComputedStyle) return false;
+      var style = window.getComputedStyle(header);
+      return style && style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function shouldRemoveHomeTopbarHeartV46() {
+    return isHomeLandscapeLikeV45() || isDesktopHeaderVisibleV46();
+  }
+
+  function removeHomeTopbarLandscapeHeartV45() {
+    if (!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
+    if (!shouldRemoveHomeTopbarHeartV46()) return;
+
+    var nodes = document.querySelectorAll(
+      'body.home-cleanup .mp-saved-header-link-v50,' +
+      'body.home-cleanup .mp-home-portrait-heart,' +
+      'body.home-cleanup .mp-mobile-heart-link,' +
+      'body.home-cleanup .mp-mobile-heart-button,' +
+      'body.home-cleanup [data-mp-legacy-header-heart="true"]'
+    );
+
+    Array.prototype.forEach.call(nodes, function(node) {
+      if (!node) return;
+
+      /* Keep the real Opgeslagen pill/search entry and never touch card save hearts. */
+      if (node.classList && node.classList.contains('mp-saved-desktop-link-v50')) return;
+      if (node.closest && node.closest('.mp-desktop-actions, .mp-clean-search-row, .mp-clean-search-actions, .mp-featured-highlight-card, .mp-deal-card-component, .mp-clean-deal-card, .mp-saved-list')) return;
+
+      if (node.parentNode) node.parentNode.removeChild(node);
+    });
+  }
+
   function ensureHomeMobileEntry(){
     /* v39 breakpoint contract:
        Below 769px: home portrait/mobile may show .mp-home-portrait-heart.
@@ -69,7 +122,12 @@
 
     var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
 
-    /* Remove every legacy saved/header heart on home. */
+    /* v45: in landscape, the topbar heart right of the logo must not exist. */
+    if (shouldRemoveHomeTopbarHeartV46()) {
+      removeHomeTopbarLandscapeHeartV45();
+      return;
+    }
+/* Remove every legacy saved/header heart on home. */
     var legacyNodes = document.querySelectorAll(
       '.mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50),' +
       '.mp-mobile-heart-link,' +
@@ -131,6 +189,7 @@
     ensureCategoryMobileEntry();
     ensureDesktopEntry();
     updateCounts();
+    removeHomeTopbarLandscapeHeartV45();
   }
 
   function patchStoreForLiveUpdates(){
@@ -176,3 +235,5 @@
     updateCounts:updateCounts
   };
 })(window, document);
+
+/* v44 topbar landscape cleanup timers */
