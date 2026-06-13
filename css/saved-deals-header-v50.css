@@ -97,49 +97,6 @@
 
 
 
-/* v52 Saved Deals Premium Layout
-   - Mobile heart lives in the hero/header next to the slogan, not in the search bar.
-   - Save CTA has the same dimensions as Bekijk deal, but a softer secondary color.
-   - Clicking save keeps the text stable; only the heart turns red.
-*/
-@media(max-width:768px){
-  .mp-clean-mobile-home .mp-clean-mobile-header{
-    position:relative!important;
-    padding-right:56px!important;
-  }
-
-  .mp-clean-mobile-home .mp-clean-mobile-header .mp-saved-header-link-v50{
-    position:absolute!important;
-    right:0!important;
-    top:24px!important;
-    width:46px!important;
-    height:46px!important;
-    margin:0!important;
-    border-radius:16px!important;
-    background:rgba(255,253,248,.94)!important;
-    border:1px solid rgba(222,208,185,.9)!important;
-    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
-    z-index:4!important;
-  }
-
-  .mp-clean-mobile-home .mp-clean-search{
-    padding-right:17px!important;
-  }
-
-  .mp-clean-mobile-home .mp-clean-search .mp-saved-header-link-v50{
-    position:static!important;
-  }
-
-  .mp-saved-header-link-v50 .mp-saved-count-v50{
-    top:-5px!important;
-    right:-5px!important;
-    min-width:18px!important;
-    height:18px!important;
-    font-size:10px!important;
-    border-width:2px!important;
-  }
-}
-
 /* v50 isolated: this file now only owns the saved-deals heart/count entry.
    Dealcard action/button polish moved to deal-card-actions-v1.css.
    Mobile topbar lock moved to mobile-topbar-unified-v3.css. */
@@ -208,68 +165,9 @@
   }
 }
 
-
-/* v33 Home landscape source-remove safety
-   Hide legacy standalone mobile saved hearts on the home shell.
-   Does not target the official desktop/search Opgeslagen pill. */
-body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
-body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
-body.home-cleanup .mp-legacy-header-heart,
-body.home-cleanup [data-mp-legacy-header-heart="true"]{
-  display:none!important;
-  visibility:hidden!important;
-  opacity:0!important;
-  width:0!important;
-  height:0!important;
-  min-width:0!important;
-  min-height:0!important;
-  max-width:0!important;
-  max-height:0!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  overflow:hidden!important;
-  pointer-events:none!important;
-}
-
-
-/* v34 Home heart source cleanup
-   The old standalone home-header heart is deprecated. Home uses the Opgeslagen pill next to search. */
-body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
-body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
-body.home-cleanup .mp-legacy-header-heart,
-body.home-cleanup [data-mp-legacy-header-heart="true"]{
-  display:none!important;
-  visibility:hidden!important;
-  opacity:0!important;
-  width:0!important;
-  height:0!important;
-  min-width:0!important;
-  min-height:0!important;
-  max-width:0!important;
-  max-height:0!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  box-shadow:none!important;
-  overflow:hidden!important;
-  pointer-events:none!important;
-  position:absolute!important;
-  right:auto!important;
-  top:auto!important;
-}
-
-
-/* v36 legacy home heart disabled
-   Home portrait heart now uses .mp-home-portrait-heart, not .mp-saved-header-link-v50. */
+/* v39 Home legacy saved-header guard
+   Home portrait heart is owned by .mp-home-portrait-heart below 769px only.
+   Legacy saved-header heart classes must not style the home header. */
 body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
 body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
 body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{

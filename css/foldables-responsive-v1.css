@@ -1998,22 +1998,6 @@ body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom
   }
 }
 
-/* v25 Home tablet/foldable header heart remove
-   The saved-entry pill already lives next to the search bar on home.
-   Hide only the duplicate icon in the mobile/tablet brand header. */
-@media (max-width:900px){
-  body.home-cleanup .mp-clean-mobile-header > .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-button{
-    display:none!important;
-    visibility:hidden!important;
-    pointer-events:none!important;
-  }
-
-  body.home-cleanup .mp-clean-mobile-header{
-    padding-right:0!important;
-  }
-}
 
 /* v26 iPad/Foldable Home Header Heart Remove
    Hide the duplicate top-right saved heart on wider tablet/foldable home layouts.
@@ -2034,43 +2018,6 @@ body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom
 }
 
 
-/* v27 iPad Air Home Header Heart Hard Remove
-   Audit: the remaining icon can be the legacy saved-header link, mobile-heart link,
-   or mobile-heart button inside the home brand header. Keep only the Opgeslagen pill
-   next to the search bar. */
-@media (max-width:1400px){
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-mobile-heart-button,
-  body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
-    display:none!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    width:0!important;
-    height:0!important;
-    overflow:hidden!important;
-    pointer-events:none!important;
-  }
-
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
-    padding-right:0!important;
-  }
-}
-
-
-/* v30 Landscape Home Header Heart Hard Remove
-   On phone landscape / wide mobile shells the legacy standalone header-heart can still render.
-   Keep the Opgeslagen pill next to search; hide only standalone header-heart entry points on home. */
-body.home-cleanup .mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50),
-body.home-cleanup .mp-mobile-heart-link,
-body.home-cleanup .mp-mobile-heart-button{
-  display:none!important;
-  visibility:hidden!important;
-  opacity:0!important;
-  pointer-events:none!important;
-}
 
 
 /* v31 Category Landscape Search Fix
@@ -2137,15 +2084,16 @@ body.home-cleanup .mp-mobile-heart-button{
   }
 }
 
+/* v39 Home Heart Breakpoint Contract
+   Cause: in phone landscape the home switches to the desktop/tablet header at 769px+.
+   Contract:
+   - below 769px: one small portrait/mobile home heart may exist;
+   - from 769px up: no standalone home heart, because Opgeslagen already sits next to search. */
+body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+  position:relative!important;
+}
 
-/* v32 Final Home Landscape Heart Remove
-   Belt-and-suspenders CSS: hides the legacy standalone saved heart in home landscape.
-   The official Opgeslagen pill next to search is intentionally left untouched. */
-body.home-cleanup .mp-clean-mobile-home > a[href*="opgeslagen"],
-body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
-body.home-cleanup .mp-clean-mobile-header a[href*="opgeslagen"],
+/* Legacy home-header heart classes are never allowed to style the home header. */
 body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
 body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
 body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
@@ -2158,29 +2106,6 @@ body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
   min-height:0!important;
   max-width:0!important;
   max-height:0!important;
-  overflow:hidden!important;
-  pointer-events:none!important;
-}
-
-
-/* v33 Final cascade guard for home standalone heart */
-body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
-body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
-body.home-cleanup .mp-legacy-header-heart,
-body.home-cleanup [data-mp-legacy-header-heart="true"]{
-  display:none!important;
-  visibility:hidden!important;
-  opacity:0!important;
-  width:0!important;
-  height:0!important;
-  min-width:0!important;
-  min-height:0!important;
-  max-width:0!important;
-  max-height:0!important;
   margin:0!important;
   padding:0!important;
   border:0!important;
@@ -2188,47 +2113,13 @@ body.home-cleanup [data-mp-legacy-header-heart="true"]{
   pointer-events:none!important;
 }
 
-
-/* v34 Landscape-only duplicate heart cleanup
-   Landscape home sometimes uses the wide mobile shell. Hide only the loose header heart there. */
-@media (orientation: landscape){
-  body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
-  body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
-  body.home-cleanup .mp-legacy-header-heart,
-  body.home-cleanup [data-mp-legacy-header-heart="true"]{
-    display:none!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    width:0!important;
-    height:0!important;
-    min-width:0!important;
-    min-height:0!important;
-    max-width:0!important;
-    max-height:0!important;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-    box-shadow:none!important;
-    overflow:hidden!important;
-    pointer-events:none!important;
-  }
-}
-
-
-/* v35 Home portrait heart back, landscape duplicate hidden
-   Portrait: restore the small top-right heart on home.
-   Landscape: keep only the Opgeslagen pill next to the search bar. */
-@media (orientation: portrait) and (max-width:900px){
+/* Mobile/portrait shell only. */
+@media (max-width:768px){
   body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
-    position:relative!important;
     padding-right:56px!important;
   }
 
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-saved-header-link-v50{
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart{
     position:absolute!important;
     right:0!important;
     top:24px!important;
@@ -2237,91 +2128,6 @@ body.home-cleanup [data-mp-legacy-header-heart="true"]{
     opacity:1!important;
     align-items:center!important;
     justify-content:center!important;
-    width:46px!important;
-    height:46px!important;
-    min-width:46px!important;
-    min-height:46px!important;
-    max-width:46px!important;
-    max-height:46px!important;
-    margin:0!important;
-    padding:0!important;
-    border-radius:16px!important;
-    background:rgba(255,253,248,.94)!important;
-    border:1px solid rgba(222,208,185,.9)!important;
-    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
-    color:#06483d!important;
-    overflow:visible!important;
-    pointer-events:auto!important;
-    z-index:4!important;
-  }
-}
-
-@media (orientation: landscape){
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-link,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-button{
-    display:none!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    width:0!important;
-    height:0!important;
-    min-width:0!important;
-    min-height:0!important;
-    max-width:0!important;
-    max-height:0!important;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-    box-shadow:none!important;
-    overflow:hidden!important;
-    pointer-events:none!important;
-  }
-}
-
-
-/* v36 Decoupled Home Portrait Heart
-   Portrait heart uses its own class and no longer depends on legacy mp-saved-header-link-v50.
-   Landscape removes/hides the home-only portrait heart. */
-body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
-  position:relative!important;
-}
-
-body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
-body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
-body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
-  display:none!important;
-  visibility:hidden!important;
-  opacity:0!important;
-  width:0!important;
-  height:0!important;
-  min-width:0!important;
-  min-height:0!important;
-  max-width:0!important;
-  max-height:0!important;
-  margin:0!important;
-  padding:0!important;
-  border:0!important;
-  overflow:hidden!important;
-  pointer-events:none!important;
-}
-
-@media (orientation: portrait) and (max-width:900px){
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
-    padding-right:56px!important;
-  }
-
-  body.home-cleanup .mp-home-portrait-heart{
-    position:absolute!important;
-    right:0!important;
-    top:24px!important;
-    display:inline-flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    visibility:visible!important;
-    opacity:1!important;
     width:46px!important;
     height:46px!important;
     min-width:46px!important;
@@ -2338,7 +2144,7 @@ body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
     text-decoration:none!important;
     overflow:visible!important;
     pointer-events:auto!important;
-    z-index:4!important;
+    z-index:999!important;
   }
 
   body.home-cleanup .mp-home-portrait-heart .mp-saved-icon-v50{
@@ -2384,72 +2190,14 @@ body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
   }
 }
 
-@media (orientation: landscape){
-  body.home-cleanup .mp-home-portrait-heart{
-    display:none!important;
-    visibility:hidden!important;
-    opacity:0!important;
-    width:0!important;
-    height:0!important;
-    min-width:0!important;
-    min-height:0!important;
-    max-width:0!important;
-    max-height:0!important;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-    overflow:hidden!important;
-    pointer-events:none!important;
+/* Tablet, phone landscape shell and desktop: no standalone home heart. */
+@media (min-width:769px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:0!important;
   }
-}
 
-
-/* v37 Home Heart Orientation Contract FINAL
-   Root cause fixed:
-   - old broad selectors hide every a[href*="opgeslagen"] in the mobile header;
-   - Android landscape can report matchMedia orientation inconsistently.
-   This final contract uses a separate portrait class and high-specificity selectors.
-*/
-
-/* Portrait: show only the decoupled home portrait heart. */
-@media (orientation: portrait) and (max-width:900px){
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-home-portrait-heart[href*="opgeslagen"],
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart{
-    position:absolute!important;
-    right:0!important;
-    top:24px!important;
-    display:inline-flex!important;
-    visibility:visible!important;
-    opacity:1!important;
-    align-items:center!important;
-    justify-content:center!important;
-    width:46px!important;
-    height:46px!important;
-    min-width:46px!important;
-    min-height:46px!important;
-    max-width:46px!important;
-    max-height:46px!important;
-    margin:0!important;
-    padding:0!important;
-    border-radius:16px!important;
-    background:rgba(255,253,248,.94)!important;
-    border:1px solid rgba(222,208,185,.9)!important;
-    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
-    color:#06483d!important;
-    text-decoration:none!important;
-    overflow:visible!important;
-    pointer-events:auto!important;
-    z-index:999!important;
-  }
-}
-
-/* Landscape / short viewport: hide the home header heart, regardless of which old class created it. */
-@media (orientation: landscape), (max-height:520px) and (min-width:560px){
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-home-portrait-heart[href*="opgeslagen"],
   body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-saved-header-link-v50[href*="opgeslagen"],
   body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-saved-header-link-v50,
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-mobile-heart-link[href*="opgeslagen"],
   body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-link,
   body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-button{
     display:none!important;
@@ -2467,9 +2215,5 @@ body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
     box-shadow:none!important;
     overflow:hidden!important;
     pointer-events:none!important;
-  }
-
-  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
-    padding-right:0!important;
   }
 }
