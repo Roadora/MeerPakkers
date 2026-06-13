@@ -176,3 +176,66 @@ body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
   opacity:0!important;
   pointer-events:none!important;
 }
+
+
+/* v45 Topbar Landscape Heart Hard Remove
+   Only hides/removes the standalone saved heart in the home topbar/header in landscape.
+   Does not affect:
+   - .mp-saved-desktop-link-v50 Opgeslagen pill
+   - .mp-featured-heart / .meepakker-save-heart card hearts
+   - .mp-save-deal-btn-v47 card save buttons */
+@media (orientation: landscape), (max-height:560px) and (min-width:520px){
+  body.home-cleanup .mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50):not(.meepakker-save-heart):not(.mp-featured-heart):not(.mp-save-deal-btn-v47),
+  body.home-cleanup .mp-home-portrait-heart,
+  body.home-cleanup .mp-mobile-heart-link:not(.meepakker-save-heart):not(.mp-featured-heart):not(.mp-save-deal-btn-v47),
+  body.home-cleanup .mp-mobile-heart-button:not(.meepakker-save-heart):not(.mp-featured-heart):not(.mp-save-deal-btn-v47),
+  body.home-cleanup [data-mp-legacy-header-heart="true"]{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:0!important;
+    max-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:0!important;
+  }
+}
+
+/* v46 Topbar Desktop-Visible Heart Remove
+   The bug appears when the desktop-like header is visible while the mobile clean header
+   can still create .mp-home-portrait-heart. CSS fallback: hide only that home portrait
+   topbar heart in the foldable/tablet band where desktop header can be active. */
+@media (min-width:520px) and (max-width:900px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:0!important;
+    max-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:0!important;
+  }
+}
