@@ -52,15 +52,23 @@
   }
 
   function ensureHomeMobileEntry(){
-    /* v30: home already has the Opgeslagen pill next to the search bar.
-       Remove every legacy standalone saved-heart/header-heart variant from home,
-       including landscape phone, iPad and foldable layouts. */
+    /* v32 final audit fix:
+       Home already has the visible Opgeslagen pill next to the search bar.
+       Remove every other saved/heart entry on the home page, including phone-landscape
+       variants that are injected outside the normal header selectors. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var nodes = document.querySelectorAll('.' + HEADER_CLASS + ', .mp-mobile-heart-link, .mp-mobile-heart-button');
+    var nodes = document.querySelectorAll('.' + HEADER_CLASS + ', .mp-mobile-heart-link, .mp-mobile-heart-button, a[href*="opgeslagen"]');
     Array.prototype.forEach.call(nodes, function(node){
       if(!node || !node.parentNode) return;
+
+      /* Keep the official desktop/header saved pill and the search-row saved pill. */
       if(node.classList && node.classList.contains(DESKTOP_CLASS)) return;
+      if(node.closest && node.closest('.mp-desktop-actions')) return;
+      if(node.closest && node.closest('.mp-clean-search-row')) return;
+      if(node.closest && node.closest('.mp-clean-search-actions')) return;
+      if(node.closest && node.closest('.mp-clean-search')) return;
+
       node.parentNode.removeChild(node);
     });
   }
