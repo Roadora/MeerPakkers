@@ -1,0 +1,17 @@
+MeerPakkers Providers CTA Circle Position Hard Fix v14
+
+Basis: Meerpakkers_Providers_CTA_Circle_Align_v13.zip
+
+Wijziging:
+- Alleen css/discovery-card-component-v1.css aangepast.
+- Regressie uit v13 opgelost: de CTA stond absoluut gepositioneerd binnen .mp-discovery-card-main i.p.v. binnen de kaart.
+- .mp-discovery-card-main op providerkaarten naar position: static gezet, zodat 'Bekijk deals' rechtsonder op/tegen de halve cirkel komt.
+- Titel en aantal deals blijven links staan.
+- Desktop en mobiel gescoped op body.mp-provider-discovery-page.
+
+Niet aangepast:
+- Geen JS.
+- Geen data/affiliate/admin.
+- Geen topbar/footer.
+- Geen gewone dealcards.
+- Geen provider data of HTML-structuur.

@@ -1,0 +1,13 @@
+MeerPakkers Providers Mobile CTA Circle Polish v12
+
+Basis: Meerpakkers_Foldables_Saved_Deals_Sticky_Footer_v11.zip
+
+Wijziging:
+- Alleen css/discovery-card-component-v1.css aangepast.
+- Op mobiele provider-kaarten staat "Bekijk" nu rechts onderin tegen/in de beige halve cirkel, inclusief subtiele pijl.
+
+Niet aangepast:
+- Geen JS/data wijzigingen.
+- Geen topbar/footer wijzigingen.
+- Geen desktop layout wijzigingen.
+- Geen dealcards, opgeslagen deals, affiliate/admin of uitlegpagina wijzigingen.
