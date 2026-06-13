@@ -2136,3 +2136,28 @@ body.home-cleanup .mp-mobile-heart-button{
     opacity:1!important;
   }
 }
+
+
+/* v32 Final Home Landscape Heart Remove
+   Belt-and-suspenders CSS: hides the legacy standalone saved heart in home landscape.
+   The official Opgeslagen pill next to search is intentionally left untouched. */
+body.home-cleanup .mp-clean-mobile-home > a[href*="opgeslagen"],
+body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
+body.home-cleanup .mp-clean-mobile-header a[href*="opgeslagen"],
+body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  width:0!important;
+  height:0!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:0!important;
+  max-height:0!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+}
