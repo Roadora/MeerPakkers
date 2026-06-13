@@ -2058,3 +2058,81 @@ body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom
     padding-right:0!important;
   }
 }
+
+
+/* v30 Landscape Home Header Heart Hard Remove
+   On phone landscape / wide mobile shells the legacy standalone header-heart can still render.
+   Keep the Opgeslagen pill next to search; hide only standalone header-heart entry points on home. */
+body.home-cleanup .mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50),
+body.home-cleanup .mp-mobile-heart-link,
+body.home-cleanup .mp-mobile-heart-button{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+
+
+/* v31 Category Landscape Search Fix
+   Phone landscape / foldable category pages can render the mobile category runtime
+   while the search label falls back to raw input styling. Force the same premium pill.
+   Scoped to category pages only. */
+@media (max-width:900px){
+  body[data-category-id] #mpMobileCategory .mp-category-mobile .mp-mobile-search,
+  body[data-category-id] #mpMobileCategory label.mp-mobile-search{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:54px!important;
+    height:54px!important;
+    margin:16px 0 15px!important;
+    padding:0 16px!important;
+    border:1px solid rgba(87,70,45,.16)!important;
+    border-radius:999px!important;
+    background:rgba(255,255,255,.92)!important;
+    box-shadow:0 12px 28px rgba(6,72,61,.055)!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-mobile-search > span{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    flex:0 0 auto!important;
+    width:20px!important;
+    height:20px!important;
+    margin:0!important;
+    padding:0!important;
+    line-height:1!important;
+    font-size:19px!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-mobile-search input{
+    display:block!important;
+    flex:1 1 auto!important;
+    width:100%!important;
+    min-width:0!important;
+    height:100%!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    background:transparent!important;
+    appearance:none!important;
+    -webkit-appearance:none!important;
+    color:#06483d!important;
+    font-size:16px!important;
+    line-height:1!important;
+    font-weight:750!important;
+  }
+
+  body[data-category-id] #mpMobileCategory .mp-mobile-search input::placeholder{
+    color:#8a8177!important;
+    opacity:1!important;
+  }
+}
