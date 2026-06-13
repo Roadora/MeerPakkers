@@ -59,10 +59,12 @@
        Landscape removes it entirely, so it cannot reappear through old component styling. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var isPortrait = false;
+    var isPortrait = true;
     try{
-      isPortrait = window.matchMedia && window.matchMedia('(orientation: portrait)').matches;
-    }catch(e){ isPortrait = false; }
+      /* v37: use actual viewport geometry instead of matchMedia orientation.
+         Android Chrome landscape with URL bars can report orientation inconsistently. */
+      isPortrait = (window.innerHeight || 0) >= (window.innerWidth || 0);
+    }catch(e){ isPortrait = true; }
 
     var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
 
