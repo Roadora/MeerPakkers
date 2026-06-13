@@ -2402,3 +2402,74 @@ body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
     pointer-events:none!important;
   }
 }
+
+
+/* v37 Home Heart Orientation Contract FINAL
+   Root cause fixed:
+   - old broad selectors hide every a[href*="opgeslagen"] in the mobile header;
+   - Android landscape can report matchMedia orientation inconsistently.
+   This final contract uses a separate portrait class and high-specificity selectors.
+*/
+
+/* Portrait: show only the decoupled home portrait heart. */
+@media (orientation: portrait) and (max-width:900px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-home-portrait-heart[href*="opgeslagen"],
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart{
+    position:absolute!important;
+    right:0!important;
+    top:24px!important;
+    display:inline-flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    min-height:46px!important;
+    max-width:46px!important;
+    max-height:46px!important;
+    margin:0!important;
+    padding:0!important;
+    border-radius:16px!important;
+    background:rgba(255,253,248,.94)!important;
+    border:1px solid rgba(222,208,185,.9)!important;
+    box-shadow:0 12px 24px rgba(6,72,61,.09)!important;
+    color:#06483d!important;
+    text-decoration:none!important;
+    overflow:visible!important;
+    pointer-events:auto!important;
+    z-index:999!important;
+  }
+}
+
+/* Landscape / short viewport: hide the home header heart, regardless of which old class created it. */
+@media (orientation: landscape), (max-height:520px) and (min-width:560px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-home-portrait-heart[href*="opgeslagen"],
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-home-portrait-heart,
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-saved-header-link-v50[href*="opgeslagen"],
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-saved-header-link-v50,
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > a.mp-mobile-heart-link[href*="opgeslagen"],
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-link,
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header > .mp-mobile-heart-button{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    max-width:0!important;
+    max-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:0!important;
+  }
+}
