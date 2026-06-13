@@ -24,7 +24,7 @@
   function updateCounts(){
     var count = getCount();
     var label = count ? 'Opgeslagen deals: ' + count : 'Opgeslagen deals';
-    var links = document.querySelectorAll('.' + HEADER_CLASS + ', .' + DESKTOP_CLASS + ', .mp-mobile-heart-link, .mp-mobile-heart-button');
+    var links = document.querySelectorAll('.' + HEADER_CLASS + ', .' + DESKTOP_CLASS + ', .mp-mobile-heart-link, .mp-mobile-heart-button, .mp-home-portrait-heart');
     Array.prototype.forEach.call(links, function(link){
       link.classList.toggle('has-saved', count > 0);
       if(link.tagName && link.tagName.toLowerCase() === 'a') link.setAttribute('aria-label', label);
@@ -53,57 +53,57 @@
   }
 
   function ensureHomeMobileEntry(){
-    /* v35:
-       Portrait home: show the small header heart again.
-       Landscape home: hide/remove the duplicate header heart, because the Opgeslagen pill
-       next to the search bar is already visible there. */
+    /* v36 decoupled home heart:
+       Home portrait heart no longer uses the legacy saved-header class.
+       It uses .mp-home-portrait-heart only.
+       Landscape removes it entirely, so it cannot reappear through old component styling. */
     if(!document.body || !document.body.classList || !document.body.classList.contains('home-cleanup')) return;
 
-    var isLandscape = false;
+    var isPortrait = false;
     try{
-      isLandscape = window.matchMedia && window.matchMedia('(orientation: landscape)').matches;
-    }catch(e){ isLandscape = false; }
+      isPortrait = window.matchMedia && window.matchMedia('(orientation: portrait)').matches;
+    }catch(e){ isPortrait = false; }
 
     var header = document.querySelector('.mp-clean-mobile-home .mp-clean-mobile-header');
 
-    if(!isLandscape && header){
-      var existing = header.querySelector('.mp-saved-header-link-v50, .mp-mobile-heart-link, .mp-mobile-heart-button');
-      if(!existing){
-        header.appendChild(createMobileLink());
-      }
-    }
-
-    var nodes = document.querySelectorAll(
-      '.mp-saved-header-link-v50,' +
+    /* Remove every legacy saved/header heart on home. */
+    var legacyNodes = document.querySelectorAll(
+      '.mp-saved-header-link-v50:not(.mp-saved-desktop-link-v50),' +
       '.mp-mobile-heart-link,' +
       '.mp-mobile-heart-button,' +
       '.mp-legacy-header-heart,' +
-      '[data-mp-legacy-header-heart="true"],' +
-      'a[href="/opgeslagen/"],' +
-      'a[href="../opgeslagen/"],' +
-      'a[href*="/opgeslagen/"]'
+      '[data-mp-legacy-header-heart="true"]'
     );
 
-    Array.prototype.forEach.call(nodes, function(node){
+    Array.prototype.forEach.call(legacyNodes, function(node){
       if(!node || !node.parentNode) return;
 
-      /* Keep the official desktop/header saved pill. */
-      if(node.classList && node.classList.contains(DESKTOP_CLASS)) return;
       if(node.closest && node.closest('.mp-desktop-actions')) return;
-
-      /* Keep the official saved pill next to the search bar. */
       if(node.closest && node.closest('.mp-clean-search')) return;
       if(node.closest && node.closest('.mp-clean-search-row')) return;
       if(node.closest && node.closest('.mp-clean-search-actions')) return;
-      if(node.classList && node.classList.contains('mp-clean-saved-link')) return;
-      if(node.classList && node.classList.contains('mp-saved-search-link')) return;
-      if(node.classList && node.classList.contains('mp-saved-pill')) return;
-
-      /* Keep the small portrait-only home header heart. */
-      if(!isLandscape && header && node.parentNode === header) return;
 
       node.parentNode.removeChild(node);
     });
+
+    /* Landscape: remove the home-only portrait heart. */
+    if(!isPortrait){
+      var oldPortraitHearts = document.querySelectorAll('.mp-home-portrait-heart');
+      Array.prototype.forEach.call(oldPortraitHearts, function(node){
+        if(node && node.parentNode) node.parentNode.removeChild(node);
+      });
+      return;
+    }
+
+    /* Portrait: create/keep a separate, home-only heart. */
+    if(header && !header.querySelector('.mp-home-portrait-heart')){
+      var link = document.createElement('a');
+      link.className = 'mp-home-portrait-heart';
+      link.href = TARGET_URL;
+      link.setAttribute('aria-label', 'Opgeslagen deals');
+      link.innerHTML = '<span class="mp-saved-icon-v50" aria-hidden="true"><svg class="mp-heart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-6.8-4.2-9.3-8.1C.7 9 .9 5.5 3.4 3.7c2.1-1.5 5-.9 6.6 1.1L12 7.2l2-2.4c1.6-2 4.5-2.6 6.6-1.1 2.5 1.8 2.7 5.3.7 8.4-2.5 3.9-9.3 8.1-9.3 8.1z"/></svg></span><span class="' + COUNT_CLASS + '" aria-hidden="true">0</span>';
+      header.appendChild(link);
+    }
   }
 
   function ensureCategoryMobileEntry(){
