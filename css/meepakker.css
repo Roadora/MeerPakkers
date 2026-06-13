@@ -408,3 +408,97 @@
     height:100%;
   }
 }
+
+
+/* v28 Kies je Meepakker Overview CTA Circle Align
+   Places the overview-card "Bekijk" CTA into/against the beige half circle.
+   Scoped to Kies je Meepakker overview only. No JS/data/topbar/footer changes. */
+body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card{
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card span:last-child{
+  position:absolute!important;
+  z-index:4!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  right:18px!important;
+  bottom:18px!important;
+  min-width:76px!important;
+  height:34px!important;
+  margin:0!important;
+  padding:0 15px!important;
+  border-radius:999px!important;
+  background:#06483d!important;
+  color:#fff!important;
+  font-size:13px!important;
+  line-height:1!important;
+  font-weight:950!important;
+  box-shadow:0 10px 22px rgba(6,72,61,.15)!important;
+  white-space:nowrap!important;
+}
+
+body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card > div{
+  padding-bottom:44px!important;
+}
+
+@media(max-width:760px){
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card span:last-child{
+    right:10px!important;
+    bottom:11px!important;
+    min-width:70px!important;
+    height:31px!important;
+    padding:0 13px!important;
+    font-size:12px!important;
+  }
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card > div{
+    padding-bottom:34px!important;
+  }
+}
+
+
+/* v29 Kies je Meepakker Mobile CTA Clearance Fix
+   Fixes mobile overlap after v28: CTA remains in/against the circle,
+   but titles no longer sit underneath the button. Desktop/tablet v28 stays intact. */
+@media(max-width:760px){
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card{
+    min-height:132px!important;
+    height:132px!important;
+    padding:14px!important;
+    justify-content:flex-start!important;
+  }
+
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card > div{
+    padding-bottom:40px!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card h3{
+    max-width:100%!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+    white-space:normal!important;
+    line-height:1.08!important;
+    padding-right:0!important;
+  }
+
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card span:last-child{
+    right:10px!important;
+    bottom:11px!important;
+  }
+}
+
+@media(max-width:420px){
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card{
+    min-height:126px!important;
+    height:126px!important;
+  }
+
+  body.mp-meepakker-page:not([data-meepakker-result="true"]) .meepakker-card h3{
+    font-size:14.5px!important;
+    letter-spacing:-.04em!important;
+  }
+}

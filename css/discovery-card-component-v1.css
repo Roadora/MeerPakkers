@@ -297,3 +297,290 @@
     line-height:1!important;
   }
 }
+
+/* V12 Providers Mobile CTA Circle Polish
+   Safe mobile-only polish: places the provider-card "Bekijk" CTA into the beige half circle.
+   No data, JS, topbar, footer or desktop layout changes.
+*/
+@media(max-width:760px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    position:relative!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card .mp-discovery-card-main{
+    position:relative!important;
+    z-index:1!important;
+    height:100%!important;
+    padding-right:44px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    position:absolute!important;
+    right:14px!important;
+    bottom:14px!important;
+    z-index:3!important;
+    margin:0!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:24px!important;
+    color:#06483d!important;
+    font-size:12px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    white-space:nowrap!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em::after{
+    content:"›"!important;
+    display:inline-block!important;
+    margin-left:6px!important;
+    font-size:18px!important;
+    line-height:.8!important;
+    font-weight:950!important;
+    transform:translateY(-.5px)!important;
+  }
+}
+
+/* v13 Provider CTA Circle Align
+   Mini-fix only: places the provider-card CTA over/against the beige half-circle,
+   matching the visual contract of the regular deal cards. No HTML/JS/data changes.
+*/
+@media(max-width:760px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    padding-right:14px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card-main{
+    padding-right:58px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    position:absolute!important;
+    right:10px!important;
+    bottom:11px!important;
+    z-index:3!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:72px!important;
+    height:30px!important;
+    margin:0!important;
+    padding:0 10px!important;
+    border-radius:999px!important;
+    background:#0d4b3f!important;
+    color:#fffaf1!important;
+    font-style:normal!important;
+    font-size:11.5px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    box-shadow:0 10px 22px rgba(6,72,61,.15)!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media(min-width:761px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    padding-right:154px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card-main{
+    padding-right:0!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    position:absolute!important;
+    right:22px!important;
+    bottom:18px!important;
+    z-index:3!important;
+    min-width:112px!important;
+    height:36px!important;
+    margin:0!important;
+    padding:0 16px!important;
+  }
+}
+
+/* v14 Provider CTA Circle Position Hard Fix
+   Regression fix after v13: the CTA lives inside .mp-discovery-card-main, so absolute positioning
+   must be relative to the card, not to the text column. This keeps title/count left and CTA on the
+   bottom-right circle. No JS/data/topbar/footer changes.
+*/
+body.mp-provider-discovery-page .mp-discovery-card{
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+body.mp-provider-discovery-page .mp-discovery-card .mp-discovery-card-main{
+  position:static!important;
+  z-index:auto!important;
+  min-width:0!important;
+}
+
+body.mp-provider-discovery-page .mp-discovery-card strong,
+body.mp-provider-discovery-page .mp-discovery-card small{
+  position:relative!important;
+  z-index:2!important;
+  max-width:calc(100% - 132px)!important;
+}
+
+body.mp-provider-discovery-page .mp-discovery-card em{
+  position:absolute!important;
+  z-index:4!important;
+  margin:0!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:999px!important;
+  background:#0d4b3f!important;
+  color:#fffaf1!important;
+  font-style:normal!important;
+  font-weight:950!important;
+  line-height:1!important;
+  box-shadow:0 10px 22px rgba(6,72,61,.15)!important;
+  white-space:nowrap!important;
+  transform:none!important;
+}
+
+@media(min-width:761px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    padding:16px 150px 16px 16px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    right:18px!important;
+    bottom:16px!important;
+    min-width:112px!important;
+    height:34px!important;
+    padding:0 16px!important;
+    font-size:0!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em::before{
+    content:"Bekijk deals"!important;
+    font-size:13px!important;
+    line-height:1!important;
+  }
+}
+
+@media(max-width:760px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    padding:14px 82px 14px 14px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong,
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    max-width:100%!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    right:10px!important;
+    bottom:11px!important;
+    min-width:72px!important;
+    height:30px!important;
+    padding:0 10px!important;
+    font-size:11.5px!important;
+  }
+}
+
+/* v15 Provider CTA Arrow Remove
+   Removes the decorative arrow from provider-card CTA only. No layout, JS, data, topbar or footer changes.
+*/
+body.mp-provider-discovery-page .mp-discovery-card em::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* v16 Provider Name No-Wrap Fix
+   Keeps provider names such as Budget Thuis and Prime Video on one line so all provider cards stay visually equal.
+   Scoped to Providers overview only. No JS/data/topbar/footer changes.
+*/
+body.mp-provider-discovery-page .mp-discovery-card .mp-discovery-card-main{
+  width:100%!important;
+  max-width:100%!important;
+}
+
+body.mp-provider-discovery-page .mp-discovery-card strong{
+  display:block!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+
+@media(min-width:761px){
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    max-width:calc(100% - 132px)!important;
+  }
+}
+
+@media(max-width:760px){
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    max-width:100%!important;
+  }
+}
+
+/* v17 Provider Mobile Full Name Fix
+   Mobile-only: do not reserve the CTA width across the whole card. The CTA stays bottom-right,
+   while provider names can use the full top row so names like Budget Thuis, Prime Video and
+   hollandsnieuwe remain readable. No JS/data/topbar/footer changes.
+*/
+@media(max-width:760px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    padding:14px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card .mp-discovery-card-main{
+    width:100%!important;
+    max-width:100%!important;
+    padding-right:0!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    max-width:calc(100% - 4px)!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+    font-size:15px!important;
+    letter-spacing:-.04em!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    max-width:calc(100% - 84px)!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    right:10px!important;
+    bottom:11px!important;
+  }
+}
+
+/* v18 Provider Desktop Card Height + Full Name Fix
+   Desktop/tablet only: make provider cards slightly taller and stop double-reserving CTA space,
+   so full provider names stay visible while mobile v17 remains untouched.
+*/
+@media(min-width:761px){
+  body.mp-provider-discovery-page .mp-discovery-card{
+    min-height:102px!important;
+    padding:18px 150px 18px 18px!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card .mp-discovery-card-main{
+    width:auto!important;
+    max-width:100%!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card strong{
+    max-width:100%!important;
+    white-space:nowrap!important;
+    overflow:visible!important;
+    text-overflow:clip!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card small{
+    max-width:100%!important;
+  }
+
+  body.mp-provider-discovery-page .mp-discovery-card em{
+    right:18px!important;
+    bottom:18px!important;
+  }
+}

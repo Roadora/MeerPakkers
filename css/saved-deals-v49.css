@@ -378,3 +378,14 @@ body.mp-saved-page{
 body.mp-saved-page{
   font-family:Inter,Arial,sans-serif;
 }
+
+/* v22 Saved Deals Heart Remove
+   Op de opgeslagen-deals pagina is het hartje in de kaart niet nodig.
+   De header bewaarteller blijft via het topbar-hartje werken.
+*/
+body.mp-saved-page .mp-saved-component-card .meepakker-save-heart,
+body.mp-saved-page .mp-saved-component-card [data-save-deal-id]{
+  display:none!important;
+  visibility:hidden!important;
+  pointer-events:none!important;
+}

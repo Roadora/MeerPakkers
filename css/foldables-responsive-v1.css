@@ -1812,3 +1812,249 @@
     margin-top:auto!important;
   }
 }
+
+/* Saved Deals CTA Circle Align v19
+   Scope: only /opgeslagen/ dealcards. Aligns the primary Bekijk deal CTA with
+   the same right-side half-circle contract used by the rest of the dealcards.
+   No topbar/footer/JS/data changes. */
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-footer,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom{
+  width:100%!important;
+  max-width:100%!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:flex-end!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  margin-top:14px!important;
+  padding:0!important;
+  position:relative!important;
+  z-index:3!important;
+}
+
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-total,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > div{
+  flex:0 0 auto!important;
+  min-width:76px!important;
+}
+
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-saved-remove-btn{
+  flex:0 0 106px!important;
+  width:106px!important;
+  min-width:106px!important;
+  max-width:106px!important;
+  height:43px!important;
+  min-height:43px!important;
+  max-height:43px!important;
+  margin:0!important;
+}
+
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+  flex:0 0 auto!important;
+  width:auto!important;
+  min-width:106px!important;
+  max-width:none!important;
+  height:43px!important;
+  min-height:43px!important;
+  max-height:43px!important;
+  margin-left:auto!important;
+  margin-right:0!important;
+  padding:0 14px!important;
+  position:relative!important;
+  z-index:5!important;
+  border-radius:14px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  white-space:nowrap!important;
+}
+
+@media (min-width:761px) and (max-width:900px){
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-footer,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom{
+    gap:10px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+    margin-right:0!important;
+  }
+}
+
+@media (max-width:390px){
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-footer,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom{
+    gap:8px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-saved-remove-btn{
+    flex-basis:104px!important;
+    width:104px!important;
+    min-width:104px!important;
+    max-width:104px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+    min-width:104px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+    font-size:13px!important;
+  }
+}
+
+/* Saved Deals Actions Group Align v20
+   Scope: only /opgeslagen/ dealcards.
+   Keeps the primary CTA in the right-side half-circle and places Verwijder
+   directly next to it on mobile, foldable/tablet and desktop. */
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-saved-remove-btn{
+  margin-left:auto!important;
+  margin-right:0!important;
+}
+
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+@media (max-width:760px){
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-footer,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom{
+    gap:8px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-saved-remove-btn{
+    flex:0 0 96px!important;
+    width:96px!important;
+    min-width:96px!important;
+    max-width:96px!important;
+    font-size:13px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+    min-width:96px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+    font-size:13px!important;
+  }
+}
+
+@media (max-width:360px){
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-saved-remove-btn{
+    flex-basis:88px!important;
+    width:88px!important;
+    min-width:88px!important;
+    max-width:88px!important;
+    font-size:12.5px!important;
+  }
+
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom a.mp-card-cta,
+  body.mp-saved-page .mp-saved-list .mp-saved-component-card .mp-clean-card-bottom > a{
+    min-width:88px!important;
+    font-size:12.5px!important;
+  }
+}
+
+/* Meepakker Result CTA Circle Align v23
+   Scope: only Kies je Meepakker result pages on tablet/desktop.
+   Mobile remains untouched. Moves Bekijk deal to the same right-side
+   half-circle position as the other dealcards. */
+@media (min-width:761px){
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+    width:100%!important;
+    max-width:100%!important;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:flex-end!important;
+    justify-content:flex-start!important;
+    gap:16px!important;
+    position:relative!important;
+    z-index:3!important;
+  }
+
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom > div{
+    flex:0 0 auto!important;
+    min-width:96px!important;
+  }
+
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-meepakker-result="true"] .meepakker-results-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom > a{
+    margin-left:auto!important;
+    margin-right:0!important;
+    position:relative!important;
+    z-index:5!important;
+  }
+}
+
+/* v25 Home tablet/foldable header heart remove
+   The saved-entry pill already lives next to the search bar on home.
+   Hide only the duplicate icon in the mobile/tablet brand header. */
+@media (max-width:900px){
+  body.home-cleanup .mp-clean-mobile-header > .mp-saved-header-link-v50,
+  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-link,
+  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-button{
+    display:none!important;
+    visibility:hidden!important;
+    pointer-events:none!important;
+  }
+
+  body.home-cleanup .mp-clean-mobile-header{
+    padding-right:0!important;
+  }
+}
+
+/* v26 iPad/Foldable Home Header Heart Remove
+   Hide the duplicate top-right saved heart on wider tablet/foldable home layouts.
+   The saved pill next to search remains the only saved entry point. */
+@media (max-width:1200px){
+  body.home-cleanup .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.home-cleanup .mp-mobile-top-header > .mp-mobile-heart-button,
+  body.home-cleanup .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  body.home-cleanup .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button,
+  body.home-cleanup .mp-clean-mobile-header > .mp-saved-header-link-v50,
+  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-link,
+  body.home-cleanup .mp-clean-mobile-header > .mp-mobile-heart-button{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    pointer-events:none!important;
+  }
+}
+
+
+/* v27 iPad Air Home Header Heart Hard Remove
+   Audit: the remaining icon can be the legacy saved-header link, mobile-heart link,
+   or mobile-heart button inside the home brand header. Keep only the Opgeslagen pill
+   next to the search bar. */
+@media (max-width:1400px){
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-saved-header-link-v50,
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-mobile-heart-link,
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header .mp-mobile-heart-button,
+  body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
+  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
+  body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button{
+    display:none!important;
+    visibility:hidden!important;
+    opacity:0!important;
+    width:0!important;
+    height:0!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+
+  body.home-cleanup .mp-clean-mobile-home .mp-clean-mobile-header{
+    padding-right:0!important;
+  }
+}
