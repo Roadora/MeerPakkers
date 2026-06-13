@@ -2161,3 +2161,29 @@ body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button{
   overflow:hidden!important;
   pointer-events:none!important;
 }
+
+
+/* v33 Final cascade guard for home standalone heart */
+body.home-cleanup .mp-clean-mobile-header .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-header .mp-mobile-heart-button,
+body.home-cleanup .mp-clean-mobile-home > .mp-saved-header-link-v50,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-link,
+body.home-cleanup .mp-clean-mobile-home > .mp-mobile-heart-button,
+body.home-cleanup .mp-legacy-header-heart,
+body.home-cleanup [data-mp-legacy-header-heart="true"]{
+  display:none!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  width:0!important;
+  height:0!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:0!important;
+  max-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  overflow:hidden!important;
+  pointer-events:none!important;
+}
