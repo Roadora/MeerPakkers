@@ -1,0 +1,19 @@
+/* Deal Detail Logo Fix v1
+   Scope: deal detail page only.
+   Restores the normal MeerPakkers desktop header/logo on desktop detail pages
+   and keeps the existing mobile detail topbar untouched on mobile. */
+
+@media (min-width: 769px){
+  body.mp-deal-detail-page > .mp-desktop-header{
+    display:flex !important;
+  }
+
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header,
+  body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-topbar-unified-v3{
+    display:none !important;
+  }
+
+  body.mp-deal-detail-page .mp-detail-page{
+    padding-top:32px !important;
+  }
+}
