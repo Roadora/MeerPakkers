@@ -136,7 +136,7 @@
         </div>
 
         <div class="deal-cta">
-          <a href="https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis" class="js-affiliate-link" data-affiliate-link="true" data-affiliate-deal-id="budget-thuis-internet-tv" data-affiliate-provider-id="budget-thuis" data-affiliate-category="internet-tv" data-affiliate-network="daisycon" data-affiliate-campaign-id="14524" data-affiliate-tracking-id="1923068" data-affiliate-merchant-id="budget-thuis" rel="sponsored noopener noreferrer">Bekijk je aanbod →</a>
+          <a target="_blank" href="https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis" class="js-affiliate-link mp-primary-affiliate-cta" data-affiliate-link="true" data-affiliate-deal-id="budget-thuis-internet-tv" data-affiliate-provider-id="budget-thuis" data-affiliate-category="internet-tv" data-affiliate-network="daisycon" data-affiliate-campaign-id="14524" data-affiliate-tracking-id="1923068" data-affiliate-merchant-id="budget-thuis" rel="sponsored noopener noreferrer">Bekijk je aanbod →</a>
           <button type="button">♡ Bewaar deal</button>
         </div>
       </article>
@@ -218,5 +218,44 @@
 <script src="/js/deal-page.js"></script>
   <script src="../js/cookie-banner-v40.js"></script>
 <script src="/js/deal-card-system-v1.js"></script>
+
+<script>
+(function(){
+  var AFFILIATE_URL = "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis";
+  function looksLikePakButton(el){
+    var txt = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+    return txt === "pak deze meepakker" || txt === "pak je meepakker" || txt === "pak jouw meepakker";
+  }
+  function bindPakMeepakker(){
+    var nodes = Array.prototype.slice.call(document.querySelectorAll("a, button, .mp-btn, .mp-cta, [role='button']"));
+    nodes.forEach(function(el){
+      if(!looksLikePakButton(el)) return;
+      if(el.tagName && el.tagName.toLowerCase() === "a"){
+        el.href = AFFILIATE_URL;
+        el.target = "_blank";
+        el.rel = "sponsored noopener noreferrer";
+      }
+      el.classList.add("js-affiliate-link");
+      el.setAttribute("data-affiliate-link","true");
+      el.setAttribute("data-affiliate-url", AFFILIATE_URL);
+      if(!el.__mpAffiliateBound){
+        el.__mpAffiliateBound = true;
+        el.addEventListener("click", function(e){
+          if(el.tagName && el.tagName.toLowerCase() === "a") return;
+          e.preventDefault();
+          window.open(AFFILIATE_URL, "_blank", "noopener,noreferrer");
+        });
+      }
+    });
+  }
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", bindPakMeepakker);
+  } else {
+    bindPakMeepakker();
+  }
+  window.addEventListener("load", bindPakMeepakker);
+})();
+</script>
+
 </body>
 </html>
