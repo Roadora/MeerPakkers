@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 
-Disallow: /admin/
+Disallow: /deal/
+Disallow: /opgeslagen/
+
 Sitemap: https://www.meerpakkers.nl/sitemap.xml

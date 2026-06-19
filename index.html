@@ -13,8 +13,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MeerPakkers | Vergelijk cadeaus, kortingen en cashback</title>
-<meta name="description" content="Ontdek waar je de beste cadeaus, kortingen en cashback krijgt. Vergelijk deals op voordeel, cadeauwaarde, provider en categorie.">
+<title>MeerPakkers | Abonnementen met cadeau &amp; korting</title>
+<meta name="description" content="Vergelijk abonnementen en acties met cadeaus, cashback, korting en gratis extra’s. Ontdek snel welke provider de beste Meepakker heeft.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.meerpakkers.nl/">
 <link rel="stylesheet" href="css/tokens.css">
@@ -54,8 +54,8 @@
 
 <meta property="og:site_name" content="MeerPakkers">
 <meta property="og:type" content="website">
-<meta property="og:title" content="MeerPakkers | Vergelijk cadeaus, kortingen en cashback">
-<meta property="og:description" content="Ontdek waar je de beste cadeaus, kortingen en cashback krijgt. Vergelijk deals op voordeel, cadeauwaarde, provider en categorie.">
+<meta property="og:title" content="MeerPakkers | Abonnementen met cadeau &amp; korting">
+<meta property="og:description" content="Vergelijk abonnementen en acties met cadeaus, cashback, korting en gratis extra’s. Ontdek snel welke provider de beste Meepakker heeft.">
 <meta property="og:url" content="https://www.meerpakkers.nl/">
 <meta property="og:image" content="https://www.meerpakkers.nl/assets/brand/mpplus-logo-transparent-v1.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -64,6 +64,35 @@
 <meta name="twitter:image" content="https://www.meerpakkers.nl/assets/brand/mpplus-logo-transparent-v1.png">
 
 <link rel="stylesheet" href="/css/foldables-responsive-v1.css">
+<link rel="stylesheet" href="css/deal-card-system-v1.css">
+<script type="application/ld+json" data-mp-seo-core="v1">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.meerpakkers.nl/#organization",
+      "name": "MeerPakkers",
+      "url": "https://www.meerpakkers.nl/",
+      "logo": "https://www.meerpakkers.nl/assets/brand/mpplus-logo-transparent-v1.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.meerpakkers.nl/#website",
+      "url": "https://www.meerpakkers.nl/",
+      "name": "MeerPakkers",
+      "publisher": {
+        "@id": "https://www.meerpakkers.nl/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.meerpakkers.nl/deals/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="home-cleanup">
 
@@ -76,8 +105,8 @@
     </div>
   </header>
 <section class="mp-demo-banner" aria-label="Demo melding">
-    <strong>MeerPakkers is momenteel in bèta</strong>
-    <span>We koppelen binnenkort echte deals en partners. Sommige aanbiedingen, prijzen en voordelen bevatten nu nog demo-content.</span>
+    <strong>MeerPakkers toont gecontroleerde acties</strong>
+    <span>Prijzen, voordelen en voorwaarden kunnen wijzigen. Controleer altijd het actuele aanbod bij de aanbieder.</span>
   </section>
 
 
@@ -100,8 +129,8 @@
 
   <section class="mp-clean-topdeals">
     <div class="mp-clean-section-title">
-      <h2>Beste deals van dit moment</h2>
-      <p>Top 3 acties met cadeau, cashback of korting.</p>
+      <h2>Eerste gecontroleerde MeerPakkers</h2>
+      <p>Alleen acties met bevestigd voordeel.</p>
     </div>
     <div id="mpCleanTopDeals" class="mp-clean-deal-list"></div>
     <button class="mp-clean-more" id="mpLoadMoreDeals" type="button">Toon 10 meer deals</button>
@@ -140,8 +169,8 @@
       </section>
 
       <section class="mp-demo-banner mp-demo-banner--desktop-home" aria-label="Demo melding">
-        <strong>MeerPakkers is momenteel in bèta</strong>
-        <span>We koppelen binnenkort echte deals en partners. Sommige aanbiedingen, prijzen en voordelen bevatten nu nog demo-content.</span>
+        <strong>MeerPakkers toont gecontroleerde acties</strong>
+        <span>Prijzen, voordelen en voorwaarden kunnen wijzigen. Controleer altijd het actuele aanbod bij de aanbieder.</span>
       </section>
 
 
@@ -175,8 +204,8 @@
       </section>
 <div class="results-topline">
         <div>
-          <h2>Beste deals per categorie</h2>
-          <p>De beste deal per categorie, geselecteerd op totaal voordeel.</p>
+          <h2>Gecontroleerde deals</h2>
+          <p>De eerste echte acties met bevestigd voordeel.</p>
         </div>
         <a href="/deals/">Bekijk alle categorieën →</a>
       </div>
@@ -191,7 +220,7 @@
           <button class="quick-filter active" data-quick="all">Aanbevolen</button>
           <button class="quick-filter" data-quick="cadeau">Cadeaus</button>
           <button class="quick-filter" data-quick="cashback">Cashback</button>
-          <button class="quick-filter" data-quick="korting">Korting</button>
+          <button class="quick-filter" data-quick="korting">Korting of cadeau bij overstappen</button>
         </div>
       </div>
 
@@ -206,6 +235,7 @@
 <script src="js/home-filters.js"></script>
 <script src="js/home-deals.js"></script>
 <script src="js/deal-card.js"></script>
+<script src="js/deal-card-system-v1.js"></script>
 <script src="js/home-render.js"></script>
 <script src="js/home-events.js"></script>
 <script src="js/app.js"></script>
