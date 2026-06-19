@@ -75,7 +75,7 @@
   function renderEmpty(root, label){
     root.innerHTML = '<article class="meepakker-empty-result">'
       + '<h2>' + label + ' deals</h2>'
-      + '<p>Voor deze meepakker staan er nu nog geen actieve demo-deals klaar. Kies een andere meepakker of bekijk alle categorieën.</p>'
+      + '<p>Voor deze Meepakker staan er nu nog geen gecontroleerde acties klaar. We tonen alleen deals waarvan voordeel en voorwaarden zijn bevestigd.</p>'
       + '<a href="/kies-je-meepakker/">Terug naar alle meepakkers</a>'
       + '</article>';
   }

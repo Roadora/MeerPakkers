@@ -418,6 +418,18 @@
     `).join("");
   }
 
+  function compactBenefitFooterLabel(d){
+    const label = String((d && d.totalBenefitLabel) || "").trim();
+    const value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+    return label && value <= 0 ? "Meepakker" : "Totaal voordeel";
+  }
+
+  function compactBenefitValue(d){
+    const label = String((d && d.totalBenefitLabel) || "").trim();
+    const value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+    return label && value <= 0 ? label : euro(value);
+  }
+
   function renderDeals(){
     const root = document.getElementById("mpCategoryDeals");
     const deals = filteredDeals();
@@ -443,7 +455,7 @@
         <div class="mp-rank">#${i+1}</div>
         <div class="mp-compact-benefit">${benefitPills(d) || "<span>🎁 Extra voordeel</span>"}</div>
         <div class="mp-compact-provider"><div class="mp-deal-icon">${d.icon || config.icon}</div><div><div class="mp-deal-cat">${config.label}</div><h3>${d.provider || "Aanbieder"}</h3><p>${d.title || "Actie met voordeel"}</p></div></div>
-        <div class="mp-compact-bottom"><div><small>Totaal voordeel</small><strong>${euro(d.totalBenefitValue || 0)}</strong></div><a href="${dealUrl(d)}">Bekijk deal</a></div>
+        <div class="mp-compact-bottom"><div><small>${compactBenefitFooterLabel(d)}</small><strong>${escapeHtml(compactBenefitValue(d))}</strong></div><a href="${dealUrl(d)}">${escapeHtml(d.ctaLabel || "Bekijk deal")}</a></div>
       </article>`;
     }).join("");
   }
@@ -458,26 +470,7 @@
   }
 
   function renderSeoContent(){
-    const faq = Array.isArray(config.faq) ? config.faq : [];
-    const intro = config.seoIntro || "MeerPakkers vergelijkt deals op extra voordeel, zoals cadeaus, cashback, korting en gratis extra’s.";
-    const items = faq.length ? faq : [
-      ["Waarom staat deze deal bovenaan?", "Deals worden gerangschikt op totaal voordeel, provider en actuele actiegegevens."],
-      ["Wat is cashback?", "Cashback is geld dat je terugkrijgt na het afsluiten van een actie, meestal via de aanbieder of het affiliate netwerk."],
-      ["Overstappen of verlengen?", "Overstappen levert vaak meer welkomstvoordeel op, terwijl verlengen soms makkelijker is. MeerPakkers toont beide soorten deals waar mogelijk."],
-      ["Hoe berekent MeerPakkers het voordeel?", "We tellen cadeauwaarde, cashback, korting en gratis extra’s mee om het totale voordeel duidelijker te maken."]
-    ];
-
-    return `
-      <section class="mp-uitleg-card mp-uitleg-card--compact" aria-label="MeerPakkers Uitleg">
-        <div class="mp-uitleg-head">
-          <span class="mp-uitleg-icon">💡</span>
-          <div>
-            <h2>MeerPakkers Uitleg</h2>
-            <p>We vergelijken deals op cadeau, cashback, korting en totaal voordeel.</p>
-          </div>
-        </div>
-        <a class="mp-uitleg-mobile-link" href="../uitleg/">Lees de uitleg →</a>
-      </section>`;
+    return "";
   }
 
   function categoryPills(){

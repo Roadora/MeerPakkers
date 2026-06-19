@@ -58,7 +58,7 @@ export function renderCategoryDeals(deals){
   const count = document.getElementById("categoryDealCount");
   if (count){
     const suffix = hasActiveCategoryFilters() ? " na filters" : " gevonden";
-    count.textContent = `${deals.length} deals${suffix}`;
+    count.textContent = `${deals.length} gecontroleerde deal${deals.length === 1 ? "" : "s"}${suffix}`;
   }
 
   const list = document.getElementById("categoryDealList");
@@ -66,22 +66,17 @@ export function renderCategoryDeals(deals){
   list.classList.add("mp-shared-deal-grid");
 
   if (!deals.length){
-    list.innerHTML = `<div class="category-empty">Geen deals gevonden met deze filters. Reset de filters of kies minder voorwaarden.</div>`;
+    list.innerHTML = `<div class="category-empty"><strong>Nog geen gecontroleerde deals in deze categorie.</strong><br>We voegen alleen acties toe waarvan voordeel, link en voorwaarden zijn bevestigd.</div>`;
     return;
   }
 
-  if (window.MPDealCard && typeof window.MPDealCard.render === "function") {
-    list.innerHTML = deals.map((deal, index) => {
-      const id = dealId(deal);
+  if (window.MPCardComponents && typeof window.MPCardComponents.renderNormalDealCard === "function") {
+    list.innerHTML = deals.map((deal) => {
       const componentDeal = Object.assign({}, deal, {
         totalBenefitValue: deal.totalBenefitValue || getTotalValue(deal),
         meerPakScore: deal.meerPakScore || deal.score
       });
-      const html = window.MPDealCard.render(componentDeal, {
-        category: deal.category,
-        url: sharedDealUrl(deal)
-      });
-      return html.replace('<article class="mp-clean-deal-card mp-deal-card-component"', '<article class="mp-clean-deal-card mp-deal-card-component" data-deal-id="' + id + '"');
+      return window.MPCardComponents.renderNormalDealCard(componentDeal);
     }).join("");
     if (window.MeerPakkersSavedDealsUI && typeof window.MeerPakkersSavedDealsUI.enhanceCards === "function") {
       window.MeerPakkersSavedDealsUI.enhanceCards();
@@ -99,7 +94,7 @@ export function renderCategorySideCards(category, deals, providers){
   if (bestEl && best){
     bestEl.innerHTML = `<h3>Beste ${category.name} deal</h3><p><strong>${best.provider}</strong> - ${best.title}</p><p>${euro(getTotalValue(best))} totaal voordeel</p>`;
   } else if (bestEl){
-    bestEl.innerHTML = `<h3>Beste ${category.name} deal</h3><p>Nog geen deal geselecteerd.</p>`;
+    bestEl.innerHTML = `<h3>Beste ${category.name} deal</h3><p>Nog geen gecontroleerde deal beschikbaar.</p>`;
   }
 
   const providersEl = document.getElementById("categoryProvidersSide");

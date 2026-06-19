@@ -78,15 +78,30 @@
   }
 
   function benefitRows(d){
+    if(isChoiceBenefitDetail(d)){
+      return [
+        ["", "Korting of cadeau", "bij je overstap"],
+        ["", "Tot 14 maanden korting", "8 maanden bij 1 jaar · 14 maanden bij 2 jaar"],
+        ["", "Cadeau tot €349", "bijvoorbeeld tablet of wifi-versterkers"]
+      ].map(function(r){
+        return `
+          <div class="mp-detail-benefit">
+            <span>${r[0]}</span>
+            <div><strong>${escapeHtml(r[1])}</strong><small>${escapeHtml(r[2])}</small></div>
+          </div>
+        `;
+      }).join("");
+    }
+
     const rows = [];
     if(d.giftName || d.giftType || d.giftValue){
-      rows.push(["🎁", d.giftName || d.giftType || "Cadeau", d.giftValue ? "t.w.v. " + euro(d.giftValue) : ""]);
+      rows.push(["", d.giftName || d.giftType || "Cadeau", d.giftValue ? "t.w.v. " + euro(d.giftValue) : ""]);
     }
     if(d.cashbackValue){
       rows.push(["💸", "Cashback", euro(d.cashbackValue)]);
     }
     if(d.discountValue){
-      rows.push(["🏷️", "Korting", euro(d.discountValue)]);
+      rows.push(["🏷️", "Korting of cadeau bij overstappen", euro(d.discountValue)]);
     }
     if(!rows.length && Array.isArray(d.benefits)){
       d.benefits.slice(0,3).forEach(function(b){
@@ -176,6 +191,20 @@
   }
 
   function mpVisualBenefitCards(d){
+    if(isChoiceBenefitDetail(d)){
+      return choiceDetailBenefits(d).map(function(card){
+        return `
+          <article class="mp-v23-benefit-card mp-v23-benefit-card--${card.type} mp-v23-benefit-card--choice">
+            <div class="mp-v23-benefit-visual">${choiceVisual(card.type)}</div>
+            <div class="mp-v23-benefit-copy">
+              <h3>${escapeHtml(card.title)}</h3>
+              <p>${escapeHtml(card.sub)}</p>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
     var cards = [];
     var seen = [];
 
@@ -213,7 +242,7 @@
       addCard({
         type:"discount",
         visual:mpAssetVisual(d, "discount"),
-        title:"Korting",
+        title:"Korting of cadeau bij overstappen",
         sub:euro(d.discountValue) + " voordeel"
       });
     }
@@ -275,6 +304,11 @@
     `;
   }
 
+
+  function detailCtaLabel(d){
+    return d.detailCtaLabel || d.ctaLabel || "Pak deze Meepakker";
+  }
+
   function mpFinalCta(d){
     return `
       <section class="mp-v23-final">
@@ -293,7 +327,7 @@
           data-affiliate-campaign-id="${d.campaignId || ""}"
           data-affiliate-tracking-id="${d.trackingId || ""}"
           data-affiliate-merchant-id="${d.merchantId || d.providerId || ""}"
-          rel="sponsored noopener noreferrer">Pak deze Meepakker</a>
+          rel="sponsored noopener noreferrer">${escapeHtml(detailCtaLabel(d))}</a>
         <button class="mp-v23-save" type="button">♡ Bewaar deal</button>
       </section>
 
@@ -330,7 +364,7 @@
     if(d.discountValue){
       cards.push({
         icon:"🏷️",
-        label:"Korting",
+        label:"Korting of cadeau bij overstappen",
         value:euro(d.discountValue) + " voordeel",
         type:"discount"
       });
@@ -365,18 +399,36 @@
   }
 
   function renderMeepakkerSummary(d){
+    if(isChoiceBenefitDetail(d)){
+      return `
+        <div class="mp-dd-summary-line"><strong>Budget Thuis Internet & TV</strong><em>actie bij overstap</em></div>
+      `;
+    }
+
     var rows = [];
     if(d.giftName || d.giftType || d.giftValue){
-      rows.push(["🎁", d.giftName || d.giftType || "Cadeau", d.giftValue ? "t.w.v. " + euro(d.giftValue) : ""]);
+      rows.push(["", d.giftName || d.giftType || "Cadeau", d.giftValue ? "t.w.v. " + euro(d.giftValue) : ""]);
     }
-    if(d.cashbackValue) rows.push(["💰", "Cashback", euro(d.cashbackValue)]);
-    if(d.discountValue) rows.push(["🏷️", "Korting", euro(d.discountValue)]);
+    if(d.cashbackValue) rows.push(["", "Cashback", euro(d.cashbackValue)]);
+    if(d.discountValue) rows.push(["", "Korting of cadeau bij overstappen", euro(d.discountValue)]);
     return rows.slice(0,3).map(function(r){
       return `<div class="mp-dd-summary-line"><span>${r[0]}</span><strong>${escapeHtml(r[1])}</strong><em>${escapeHtml(r[2])}</em></div>`;
     }).join("");
   }
 
+
+  function renderWhyTitle(d){
+    if(isChoiceBenefitDetail(d)){
+      return d.detailWhyTitle || "Actie in het kort";
+    }
+    return "Waarom is dit een Meepakker?";
+  }
+
   function renderWhyText(d){
+    if(isChoiceBenefitDetail(d)){
+      return d.detailWhyText || "Profiteer tijdelijk van een actie bij Internet van Budget Thuis. Je krijgt korting of een aantrekkelijk welkomstcadeau. Via Budget Thuis kies je de deal die bij jouw pakket past.";
+    }
+
     var provider = d.provider || "deze aanbieder";
     var total = euro(d.totalBenefitValue || d.benefitValue || 0);
     var parts = [];
@@ -387,14 +439,138 @@
     return "Met deze " + provider + " deal krijg je meer dan alleen een standaard abonnement." + extras + " Daardoor loopt jouw totale voordeel op tot " + total + ".";
   }
 
+  function isPeriodBenefitDetail(d){
+    var label = String((d && d.totalBenefitLabel) || "").trim();
+    var value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+    return !!label && value <= 0;
+  }
+
+
+  function isChoiceBenefitDetail(d){
+    var explicit = String((d && d.benefitDisplayType) || "").toLowerCase();
+    var types = Array.isArray(d && d.benefitTypes) ? d.benefitTypes.map(function(t){ return String(t).toLowerCase(); }) : [];
+    return explicit === "choice" || (types.indexOf("korting") !== -1 && types.indexOf("cadeau") !== -1);
+  }
+
+  function choiceDetailBenefits(d){
+    var direct = Array.isArray(d && d.detailBenefits) ? d.detailBenefits : [];
+    if(direct.length) return direct.slice(0,3);
+    return [
+      {type:"discount", title:"Tot 14 maanden korting", sub:"8 maanden bij 1 jaar · 14 maanden bij 2 jaar"},
+      {type:"gift", title:"Cadeau tot €349", sub:"Bijvoorbeeld tablet of wifi-versterkers"},
+      {type:"product", title:d && d.title ? d.title : "Internet & TV", sub:d && d.provider ? "via " + d.provider : "Bekijk aanbieder"}
+    ];
+  }
+
+  function choiceVisual(type){
+    if(type === "discount") return '<div class="mp-v23-product-visual mp-v23-discount-visual"><span>%</span></div>';
+    if(type === "gift") return '<div class="mp-v23-product-visual mp-v23-giftcard"><strong>cadeau</strong></div>';
+    return '<div class="mp-v23-product-visual mp-v23-router"><span></span></div>';
+  }
+
+  function benefitSummaryLabelDetail(d){
+    return (isPeriodBenefitDetail(d) || isChoiceBenefitDetail(d)) ? "Meepakker" : "Totaal voordeel";
+  }
+
+  function detailSummaryValue(d){
+    if(isChoiceBenefitDetail(d)){
+      return d.detailSummaryValue || "Tot 14 maanden voordeel";
+    }
+    return d.totalBenefitLabel || euro(d.totalBenefitValue || d.benefitValue || 0);
+  }
+
+  function detailPriceLines(d){
+    if(!isChoiceBenefitDetail(d)) return "";
+    var line1 = d.priceDuringDiscount || "Vanaf €23,50 p/m tijdens de korting";
+    return `
+      <div class="mp-v23-summary-price-lines">
+        <span>${escapeHtml(line1)}</span>
+      </div>
+    `;
+  }
+
+  function detailSummarySubLine(d){
+    if(!isChoiceBenefitDetail(d)) return "";
+    return `<p class="mp-v23-summary-subline">${escapeHtml(d.summaryLine || "Kies korting of cadeau tot €349")}</p>`;
+  }
+
+
   function renderWhyChecks(d){
+    if(isChoiceBenefitDetail(d)){
+      var items = Array.isArray(d.detailConditionItems) ? d.detailConditionItems : [
+        "Internetabonnement",
+        "TV-abonnement",
+        "Internet en TV",
+        "Overstappen naar Internet en TV",
+        "Alles-in-1"
+      ];
+      return items.slice(0,5).map(function(c){ return `<li>${escapeHtml(c)}</li>`; }).join("");
+    }
+
     var checks = [];
     if(d.giftName || d.giftType || d.giftValue) checks.push((d.giftName || d.giftType || "Cadeau") + (d.giftValue ? " t.w.v. " + euro(d.giftValue) : ""));
     if(d.cashbackValue) checks.push(euro(d.cashbackValue) + " cashback");
     if(d.discountValue) checks.push(euro(d.discountValue) + " korting");
     if(d.data || d.dataBundle) checks.push(detailValue(d, ["data","dataBundle"], "") + " data");
-    checks.push("Totaal voordeel " + euro(d.totalBenefitValue || d.benefitValue || 0));
+    if(isPeriodBenefitDetail(d)) checks.push("Meepakker: " + (d.totalBenefitLabel || "extra voordeel"));
+    else checks.push("Totaal voordeel " + euro(d.totalBenefitValue || d.benefitValue || 0));
     return checks.slice(0,5).map(function(c){ return `<li>${escapeHtml(c)}</li>`; }).join("");
+  }
+
+
+
+  function renderDetailLeftColumn(d){
+    if(isChoiceBenefitDetail(d)){
+      var cards = Array.isArray(d.detailIntroCards) ? d.detailIntroCards : [
+        {title:"Tot 14 maanden korting", text:"8 maanden bij 1 jaar · 14 maanden bij 2 jaar"},
+        {title:"Cadeau tot €349", text:"Bijvoorbeeld tablet of wifi-versterkers"},
+        {title:"Vanaf €23,50 p/m", text:"Tijdens de kortingsperiode"}
+      ];
+
+      return `
+          <section class="mp-v23-left mp-v23-left--master-intro">
+            <article class="mp-v23-master-intro-card">
+              <div class="mp-v23-master-intro-kicker">Aanbiedingsoverzicht</div>
+              <h1>${escapeHtml(d.detailIntroTitle || d.title || "Budget Thuis Internet & TV")}</h1>
+              <p class="mp-v23-master-intro-subtitle">${escapeHtml(d.detailIntroSubtitle || "Welkomstactie bij overstap")}</p>
+
+              <div class="mp-v23-master-mini-grid">
+                ${cards.slice(0,3).map(function(card){
+                  return `
+                    <div class="mp-v23-master-mini">
+                      <strong>${escapeHtml(card.title)}</strong>
+                      <span>${escapeHtml(card.text).replace(/\n/g, "<br>")}</span>
+                    </div>
+                  `;
+                }).join("")}
+              </div>
+
+              <p class="mp-v23-master-disclaimer">Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis.</p>
+
+              <a class="mp-v23-master-secondary js-affiliate-link"
+                href="${escapeHtml(d.affiliateUrl || "#")}"
+                data-affiliate-link="true"
+                data-affiliate-deal-id="${escapeHtml(d.id || "")}"
+                data-affiliate-provider-id="${escapeHtml(d.providerId || "")}"
+                data-affiliate-category="${escapeHtml(d.category || "")}"
+                data-affiliate-network="${escapeHtml(d.network || "daisycon")}"
+                data-affiliate-campaign-id="${escapeHtml(d.campaignId || "")}"
+                data-affiliate-tracking-id="${escapeHtml(d.trackingId || "")}"
+                data-affiliate-merchant-id="${escapeHtml(d.merchantId || d.providerId || "")}"
+                rel="sponsored noopener noreferrer">${escapeHtml(detailCtaLabel(d))}</a>
+            </article>
+          </section>
+      `;
+    }
+
+    return `
+          <section class="mp-v23-left">
+            <h1>Wat krijg je?</h1>
+            <div class="mp-v23-benefit-grid">
+              ${mpVisualBenefitCards(d)}
+            </div>
+          </section>
+    `;
   }
 
 
@@ -412,8 +588,9 @@
           </div>
 
           <div class="mp-advantage-total">
-            <small>Totaal voordeel</small>
-            <strong>${euro(d.totalBenefitValue || d.benefitValue || 0)}</strong>
+            <small>${escapeHtml(benefitSummaryLabelDetail(d))}</small>
+            <strong>${escapeHtml(detailSummaryValue(d))}</strong>
+            ${detailPriceLines(d)}
           </div>
         </section>
 
@@ -441,8 +618,15 @@
            data-affiliate-tracking-id="${d.trackingId || ""}"
            data-affiliate-merchant-id="${d.merchantId || d.providerId || ""}"
            rel="sponsored noopener noreferrer"
-           aria-label="Pak deze MeerPakker">Pak deze MeerPakker →</a>
+           aria-label="Pak deze MeerPakker">${escapeHtml(detailCtaLabel(d))}</a>
     `;
+  }
+
+
+
+  function renderSummaryAside(d){
+    if(isChoiceBenefitDetail(d)) return "";
+    return "";
   }
 
 
@@ -464,68 +648,78 @@
     
     root.innerHTML = `
       <section class="mp-v23-shell">
-        <div class="mp-v23-top">
-          <section class="mp-v23-left">
-            <h1>Wat krijg je?</h1>
-            <div class="mp-v23-benefit-grid">
-              ${mpVisualBenefitCards(d)}
-            </div>
-          </section>
+        <div class="mp-v23-top ${isChoiceBenefitDetail(d) ? "mp-v23-top--single-master" : ""}">
+          ${renderDetailLeftColumn(d)}
 
-          <aside class="mp-v23-summary">
-            <h2>Jouw Meepakker</h2>
-            <div class="mp-v23-summary-list">
-              ${renderMeepakkerSummary(d)}
-            </div>
-
-            <div class="mp-v23-total">
-              <span>Totaal voordeel</span>
-              <strong>${euro(d.totalBenefitValue || d.benefitValue || 0)}</strong>
-            </div>
-
-            <a class="mp-v23-primary js-affiliate-link"
-              href="${d.affiliateUrl || "#"}"
-              data-affiliate-link="true"
-              data-affiliate-deal-id="${d.id || ""}"
-              data-affiliate-provider-id="${d.providerId || ""}"
-              data-affiliate-category="${d.category || ""}"
-              data-affiliate-network="${d.network || "placeholder"}"
-              data-affiliate-campaign-id="${d.campaignId || ""}"
-              data-affiliate-tracking-id="${d.trackingId || ""}"
-              data-affiliate-merchant-id="${d.merchantId || d.providerId || ""}"
-              rel="sponsored noopener noreferrer">Pak deze Meepakker</a>
-          </aside>
+          ${renderSummaryAside(d)}
         </div><section class="mp-v23-details">
           <h2>De details</h2>
           <div class="mp-v23-detail-grid mp-v23-detail-grid--why-first">
             <article class="mp-v23-detail-card mp-v23-detail-card--why">
-              <div class="mp-v23-detail-icon">🎁</div>
+              
               <div class="mp-v23-detail-why-copy">
-                <h3>Waarom is dit een Meepakker?</h3>
+                <h3>${escapeHtml(renderWhyTitle(d))}</h3>
                 <p>${renderWhyText(d)}</p>
               </div>
               <ul class="mp-v23-checks mp-v23-detail-checks">${renderWhyChecks(d)}</ul>
             </article>
 
             <article class="mp-v23-detail-card mp-v23-detail-card--contract">
-              <div class="mp-v23-detail-icon">🗓️</div>
+              
               <h3>Contractinformatie</h3>
               <dl>
                 <div><dt>Looptijd</dt><dd>${escapeHtml(d.contract || (d.contractLengthMonths ? d.contractLengthMonths + " maanden" : "Bekijk aanbieder"))}</dd></div>
                 <div><dt>Type</dt><dd>${escapeHtml(d.dealType || d.klanttype || "Beschikbaar")}</dd></div>
                 <div><dt>Provider</dt><dd>${escapeHtml(d.provider || "Aanbieder")}</dd></div>
-                <div><dt>Maandprijs</dt><dd>${escapeHtml(d.monthlyPrice ? "€" + d.monthlyPrice + " p/m" : "Bekijk aanbieder")}</dd></div>
+                <div><dt>Maandprijs</dt><dd>${escapeHtml(isChoiceBenefitDetail(d) ? (d.contractPriceLabel || "Bekijk aanbieder") : (d.monthlyPrice ? "€" + d.monthlyPrice + " p/m" : "Bekijk aanbieder"))}</dd></div>
               </dl>
             </article>
           </div>
+
+          ${renderProviderDescriptionBlock(d)}
         </section>
 
+        ${renderSeoSupportBlock(d)}
       </section>
     `;
 
 
     window.setTimeout(refreshSavedHeader, 0);
     window.setTimeout(refreshSavedHeader, 120);
+  }
+
+
+  function renderSeoSupportBlock(d){
+    if(!isChoiceBenefitDetail(d)) return "";
+    return `
+      <section class="mp-v23-seo-support">
+        <div>
+          <span>Meer weten voordat je kiest?</span>
+          <h2>Uitleg bij deze Internet & TV actie</h2>
+          <p>Lees hoe korting, cadeaus, vanafprijzen en welkomstacties werken voordat je doorklikt naar de aanbieder.</p>
+        </div>
+        <div class="mp-v23-seo-support-links">
+          <a href="/uitleg/internet-tv-met-korting/">Internet & TV met korting</a>
+          <a href="/uitleg/internet-tv-met-cadeau/">Internet & TV met cadeau</a>
+          <a href="/uitleg/korting-of-cadeau-kiezen/">Korting of cadeau kiezen</a>
+          <a href="/uitleg/vanafprijs-abonnementen/">Wat betekent vanafprijs?</a>
+        </div>
+      </section>
+    `;
+  }
+
+
+  function renderProviderDescriptionBlock(d){
+    if(!d || !d.providerDescription) return "";
+    return `
+      <article class="mp-v23-detail-card mp-v23-detail-card--provider-description">
+        
+        <div class="mp-v23-detail-why-copy">
+          <h3>${escapeHtml(d.providerDescriptionTitle || "Over de aanbieder")}</h3>
+          <p>${escapeHtml(d.providerDescription)}</p>
+        </div>
+      </article>
+    `;
   }
 
   function renderNotFound(){

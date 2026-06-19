@@ -12,7 +12,7 @@ window.MPHomeState = {
     providersData: []
   },
   labels: {
-    cadeau:"Cadeau", cashback:"Cashback", korting:"Korting", cadeaukaart:"Cadeaukaart",
+    cadeau:"Cadeau", cashback:"Cashback", korting:"Korting of cadeau bij overstappen", cadeaukaart:"Cadeaukaart",
     "gratis-maanden":"Gratis maanden","gratis-extra":"Gratis extra's",
     mobiel:"Mobiel","sim-only":"Sim Only","internet-tv":"Internet & TV",streaming:"Streaming",
     oordopjes:"Oordopjes", sport:"Sportpakket", overig:"Overig",

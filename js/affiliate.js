@@ -119,7 +119,7 @@
   function showPlaceholderMessage(link, entry){
     var provider = (entry && entry.providerId) || link.getAttribute('data-affiliate-provider-id') || 'de aanbieder';
     var toast = ensureToast();
-    toast.textContent = 'Deze deal is nog demo. De veilige aanbieder-link voor ' + provider + ' wordt binnenkort gekoppeld.';
+    toast.textContent = 'Voor deze actie is nog geen actieve aanbieder-link beschikbaar voor ' + provider + '.';
     window.clearTimeout(toastTimer);
     requestAnimationFrame(function(){
       toast.style.opacity = '1';

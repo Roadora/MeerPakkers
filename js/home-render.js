@@ -35,11 +35,36 @@ function mpEscapeHomeHtml(value){
 }
 
 function mpNormalizeBenefitLabel(label){
-  const text = String(label || "");
-  const lower = text.toLowerCase();
-  if(lower.includes("cashback")) return "💸 " + text;
-  if(lower.includes("korting") || lower.includes("gratis") || lower.includes("maanden")) return "🏷️ " + text;
-  return "🎁 " + text;
+  return String(label || "")
+    .replace(/^\s*[🎁🏷️💸✨✅☑️✔️➕]\s*/u, "")
+    .trim();
+}
+
+
+function mpBenefitFooterLabelHome(d){
+  const label = String((d && d.totalBenefitLabel) || "").trim();
+  const value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+  return label && value <= 0 ? "Meepakker" : "Totaal voordeel";
+}
+
+function mpBenefitValueClassHome(d){
+  const label = String((d && d.totalBenefitLabel) || "").trim();
+  const value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+  return label && value <= 0 ? " mp-card-total--period" : "";
+}
+
+function mpIsChoiceDealHome(d){
+  const explicit = String((d && d.benefitDisplayType) || "").trim().toLowerCase();
+  if(explicit === "choice") return true;
+  const types = Array.isArray(d && d.benefitTypes) ? d.benefitTypes.map(t => String(t).toLowerCase()) : [];
+  return types.includes("korting") && types.includes("cadeau");
+}
+
+
+function mpCategoryWinnerValueClassHome(d){
+  const label = String((d && d.totalBenefitLabel) || "").trim();
+  const value = Number((d && (d.totalBenefitValue || d.benefitValue)) || 0);
+  return label && value <= 0 ? " category-winner-value--period" : "";
 }
 
 function mpNormalizeHomeDeal(deal){
@@ -92,6 +117,22 @@ function mpEnhanceSavedButtons(){
   }
 }
 
+
+
+function mpRenderNormalDealCard(d){
+  if(window.MPCardComponents && typeof window.MPCardComponents.renderNormalDealCard === "function"){
+    return window.MPCardComponents.renderNormalDealCard(d);
+  }
+  return "";
+}
+
+function mpRenderCheckedDealCard(d, item){
+  if(window.MPCardComponents && typeof window.MPCardComponents.renderCheckedDealCard === "function"){
+    return window.MPCardComponents.renderCheckedDealCard(d, item);
+  }
+  return "";
+}
+
 window.MPHomeRender = {
   bestDealByCategory(categoryId){
     return window.MPHomeDeals.getCategoryWinner(categoryId);
@@ -113,33 +154,20 @@ window.MPHomeRender = {
     el.innerHTML = config.map(item => {
       const raw = this.bestDealByCategory(item.id);
       if (!raw) {
-        return `<article class="category-winner-card mp-featured-highlight-card">
+        return `<article class="category-winner-card mp-featured-highlight-card category-winner-card--placeholder">
           <div>
             <h3 class="category-winner-provider">Binnenkort</h3>
-            <p class="category-winner-title">Nieuwe ${mpEscapeHomeHtml(item.label)} deals volgen snel.</p>
-            <div class="category-winner-benefits"><span>🎁 Extra voordeel</span></div>
+            <p class="category-winner-title">Nieuwe ${mpEscapeHomeHtml(item.label)} deals worden gecontroleerd.</p>
+            <div class="category-winner-benefits"><span>Alleen bevestigd voordeel</span></div>
           </div>
-          <div class="category-winner-footer">
-            <div class="category-winner-value"><small>Totaal voordeel</small><strong>€0</strong></div>
+          <div class="category-winner-footer category-winner-footer--placeholder">
             <a href="/${mpEscapeHomeHtml(item.id)}/">Bekijk ${mpEscapeHomeHtml(item.label)} →</a>
           </div>
         </article>`;
       }
 
       const d = mpNormalizeHomeDeal(raw);
-      const value = d.totalBenefitValue || d.benefitValue || 0;
-      const benefits = (d.benefits || []).slice(0,2).map(b => `<span>${mpEscapeHomeHtml(mpNormalizeBenefitLabel(b))}</span>`).join("");
-      return `<article class="category-winner-card mp-featured-highlight-card" data-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">
-        <button class="mp-featured-heart meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">♡</button><div class="mp-featured-highlight-main">
-          <h3 class="category-winner-provider">${mpEscapeHomeHtml(d.provider)}</h3>
-          <p class="category-winner-title">${mpEscapeHomeHtml(d.title || d.name)}</p>
-          <div class="category-winner-benefits">${benefits}</div>
-        </div>
-        <div class="category-winner-footer">
-          <div class="category-winner-value"><small>Totaal voordeel</small><strong>€${mpEscapeHomeHtml(value)}</strong></div>
-          <a href="${mpEscapeHomeHtml(mpDealUrl(d, item.id))}">Bekijk deal →</a>
-        </div>
-      </article>`;
+      return mpRenderCheckedDealCard(d, item);
     }).join("");
     mpEnhanceSavedButtons();
   },
@@ -152,7 +180,7 @@ window.MPHomeRender = {
     const el = document.getElementById("compareStrip");
     if (!el) return;
     el.innerHTML = deals.slice(0,4).map((d,i) => `
-      <article><strong>${d.provider}</strong><span>€${d.totalBenefitValue} voordeel</span>${i === 0 ? "<em>Beste keuze</em>" : ""}</article>
+      <article><strong>${d.provider}</strong><span>${d.totalBenefitLabel || ("€" + d.totalBenefitValue)} voordeel</span>${i === 0 ? "<em>Beste keuze</em>" : ""}</article>
     `).join("");
   },
 
@@ -171,39 +199,7 @@ window.MPHomeRender = {
 
     list.innerHTML = visibleDeals.map((raw) => {
       const d = mpNormalizeHomeDeal(raw);
-      if (window.MPDealCard && typeof window.MPDealCard.render === "function") {
-        return window.MPDealCard.render(d, {
-          category: d.category,
-          url: mpDealUrl(d, d.category)
-        });
-      }
-      const value = d.totalBenefitValue || d.benefitValue || 0;
-      const benefitRows = (d.benefits && d.benefits.length)
-        ? d.benefits.slice(0, 3).map(b => mpNormalizeBenefitLabel(b)).filter(Boolean)
-        : [
-            d.giftValue ? `🎁 ${d.giftType || "Cadeau"} t.w.v. €${d.giftValue}` : "",
-            d.cashbackValue ? `💸 €${d.cashbackValue} cashback` : "",
-            d.discountValue ? `🏷️ €${d.discountValue} korting` : ""
-          ].filter(Boolean).slice(0, 3);
-      const benefits = benefitRows.length ? benefitRows : ["Extra voordeel"];
-      const benefitsHtml = benefits.map(b => `<span>${mpEscapeHomeHtml(b)}</span>`).join("");
-      const icon = d.giftValue ? "🎁" : (d.cashbackValue ? "💰" : (d.discountValue ? "🏷️" : "🎁"));
-      return `<a class="meepakker-card mp-home-meepakker-deal-card" href="${mpEscapeHomeHtml(mpDealUrl(d, d.category))}" data-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">
-        <div class="meepakker-save-heart" role="button" tabindex="0" aria-label="Deal opslaan" data-save-deal-id="${mpEscapeHomeHtml(mpDealId(d))}">♡</div>
-        <div>
-          <div class="meepakker-icon">${icon}</div>
-          <h3>${mpEscapeHomeHtml(d.provider || "Aanbieder")}</h3>
-          <div class="mp-card-title"><strong>${mpEscapeHomeHtml(d.title || d.name || "Actie met extra voordeel")}</strong></div>
-          <div class="mp-card-benefits-pill" aria-label="Extra voordelen">${benefitsHtml}</div>
-        </div>
-        <div class="mp-card-footer" aria-label="Totaal voordeel en bekijken">
-          <div class="mp-card-total">
-            <small>Totaal voordeel</small>
-            <strong>€${mpEscapeHomeHtml(value)}</strong>
-          </div>
-          <span class="mp-card-cta">Bekijk deal</span>
-        </div>
-      </a>`;
+      return mpRenderNormalDealCard(d);
     }).join("");
 
     const tabletBtn = mpEnsureTabletHomeLoadMoreButton(list);

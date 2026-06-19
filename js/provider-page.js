@@ -20,7 +20,7 @@ async function loadProviderPage(){
       list.innerHTML = providerDeals.map((deal) => window.MPDealCard.render(deal, {
         category: deal.category,
         categoryLabel: window.MPDealCard.categoryLabel ? window.MPDealCard.categoryLabel(deal.category) : deal.category
-      })).join("") || `<p>Voor deze aanbieder zijn nog geen demo-deals toegevoegd.</p>`;
+      })).join("") || `<p>Voor deze aanbieder staan er nog geen gecontroleerde acties klaar.</p>`;
       list.classList.add("mp-provider-card-list", "mp-shared-deal-grid");
       return;
     }

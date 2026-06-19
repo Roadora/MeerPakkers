@@ -101,7 +101,7 @@
     const visible = filteredDeals.slice(0, visibleCount);
 
     if(!visible.length){
-      root.innerHTML = '<div class="mp-clean-empty-state"><strong>Geen deals gevonden</strong><span>Probeer een provider, cadeau, toestel of categorie.</span></div>';
+      root.innerHTML = '<div class="mp-clean-empty-state"><strong>Nog geen gecontroleerde deal gevonden</strong><span>We tonen alleen acties met bevestigd voordeel.</span></div>';
     }else{
       root.innerHTML = visible.map(function(deal, index){
         const html = window.MPDealCard.render(deal, {

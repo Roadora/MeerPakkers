@@ -6,7 +6,7 @@ export const filterOptions = {
     { label: "Cadeau", type: "benefit", value: "cadeau" },
     { label: "Cadeaukaart", type: "benefit", value: "cadeaukaart" },
     { label: "Cashback", type: "benefit", value: "cashback" },
-    { label: "Korting", type: "benefit", value: "korting" },
+    { label: "Korting of cadeau bij overstappen", type: "benefit", value: "korting" },
     { label: "Gratis extra's", type: "benefit", value: "gratis-extra" },
     { label: "Gratis maanden", type: "benefit", value: "gratis-maanden" }
   ],
