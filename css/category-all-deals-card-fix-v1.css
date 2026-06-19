@@ -1,0 +1,91 @@
+
+/* MeerPakkers Category + All Deals Card Fix v1
+   Home/list renderer gebruikt eigen cards. Voor choice-deals tonen we daar geen
+   'Meepakker / Welkomstactie' meer, zodat 'Bekijk deal' netjes op zijn plek staat. */
+
+/* Gecontroleerde deals */
+.category-winner-footer--cta-only{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  gap:0 !important;
+}
+
+.category-winner-footer--cta-only .category-winner-value{
+  display:none !important;
+}
+
+.category-winner-footer--cta-only a{
+  margin-left:auto !important;
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  white-space:nowrap !important;
+}
+
+/* Alle deals met voordeel */
+.mp-home-meepakker-deal-card .mp-card-footer--cta-only,
+.meepakker-card .mp-card-footer--cta-only{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  min-height:64px !important;
+  padding-right:0 !important;
+  gap:0 !important;
+}
+
+.mp-home-meepakker-deal-card .mp-card-footer--cta-only .mp-card-total,
+.meepakker-card .mp-card-footer--cta-only .mp-card-total{
+  display:none !important;
+}
+
+.mp-home-meepakker-deal-card .mp-card-footer--cta-only .mp-card-cta,
+.meepakker-card .mp-card-footer--cta-only .mp-card-cta{
+  margin-left:auto !important;
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  min-height:44px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+
+/* De kaart hoeft onderin niet kunstmatig groot leeg te lijken. */
+.mp-home-meepakker-deal-card .mp-card-footer--cta-only{
+  margin-top:18px !important;
+}
+
+/* Hover mag niet worden afgesneden */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+.mp-clean-deal-list,
+#dealsList,
+.deal-list{
+  overflow:visible !important;
+  padding-top:8px !important;
+  padding-bottom:18px !important;
+}
+
+@media (max-width:520px){
+  .category-winner-footer--cta-only a,
+  .mp-home-meepakker-deal-card .mp-card-footer--cta-only .mp-card-cta,
+  .meepakker-card .mp-card-footer--cta-only .mp-card-cta{
+    min-width:112px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

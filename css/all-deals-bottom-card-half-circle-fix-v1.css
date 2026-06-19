@@ -1,0 +1,131 @@
+
+/* MeerPakkers All Deals Bottom Card Half Circle Fix v1
+   Scope: alleen de kaart onder 'Alle deals met voordeel'.
+   Doel: CTA 'Bekijk deal' terug in de halve cirkel rechts onderin.
+   Niet bedoeld voor de bovenste 'Gecontroleerde deals' kaarten. */
+
+/* Alleen de echte dealcards in de onderste lijst */
+#dealsList .mp-unified-deal-card,
+#dealsList .mp-home-meepakker-deal-card,
+.mp-clean-deal-list .mp-unified-deal-card,
+.mp-clean-deal-list .mp-home-meepakker-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:250px !important;
+  padding-bottom:0 !important;
+}
+
+/* Onderste lijstkaart: footer hoeft niet te centreren */
+#dealsList .mp-unified-deal-card .mp-card-footer,
+#dealsList .mp-home-meepakker-deal-card .mp-card-footer,
+.mp-clean-deal-list .mp-unified-deal-card .mp-card-footer,
+.mp-clean-deal-list .mp-home-meepakker-deal-card .mp-card-footer{
+  position:absolute !important;
+  right:0 !important;
+  bottom:0 !important;
+  width:170px !important;
+  height:118px !important;
+  min-height:118px !important;
+  margin:0 !important;
+  padding:0 !important;
+  display:block !important;
+  z-index:3 !important;
+  pointer-events:none !important;
+}
+
+/* Halve cirkel rechts onderin voor de onderste lijstkaart */
+#dealsList .mp-unified-deal-card::after,
+#dealsList .mp-home-meepakker-deal-card::after,
+.mp-clean-deal-list .mp-unified-deal-card::after,
+.mp-clean-deal-list .mp-home-meepakker-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-38px !important;
+  bottom:-42px !important;
+  width:164px !important;
+  height:116px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.58) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* CTA exact in de halve cirkel */
+#dealsList .mp-unified-deal-card .mp-card-cta,
+#dealsList .mp-home-meepakker-deal-card .mp-card-cta,
+.mp-clean-deal-list .mp-unified-deal-card .mp-card-cta,
+.mp-clean-deal-list .mp-home-meepakker-deal-card .mp-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:5 !important;
+  pointer-events:auto !important;
+}
+
+/* In de onderste lijstkaart is geen Meepakker/Welkomstactie footer nodig */
+#dealsList .mp-unified-deal-card .mp-card-total,
+#dealsList .mp-home-meepakker-deal-card .mp-card-total,
+.mp-clean-deal-list .mp-unified-deal-card .mp-card-total,
+.mp-clean-deal-list .mp-home-meepakker-deal-card .mp-card-total{
+  display:none !important;
+}
+
+/* Voordelenblok mag niet te dicht tegen de halve cirkel komen */
+#dealsList .mp-unified-deal-card .mp-card-benefits-pill,
+#dealsList .mp-home-meepakker-deal-card .mp-card-benefits-pill,
+.mp-clean-deal-list .mp-unified-deal-card .mp-card-benefits-pill,
+.mp-clean-deal-list .mp-home-meepakker-deal-card .mp-card-benefits-pill{
+  max-width:calc(100% - 24px) !important;
+  margin-bottom:84px !important;
+}
+
+/* Bovenste Gecontroleerde deals NIET raken: reset binnen featured grid */
+#featuredDeal .mp-unified-deal-card .mp-card-footer,
+.category-winners-grid .mp-unified-deal-card .mp-card-footer,
+.mp-featured-highlight-grid .mp-unified-deal-card .mp-card-footer{
+  width:auto !important;
+}
+
+/* Mobiel */
+@media (max-width:620px){
+  #dealsList .mp-unified-deal-card,
+  #dealsList .mp-home-meepakker-deal-card,
+  .mp-clean-deal-list .mp-unified-deal-card,
+  .mp-clean-deal-list .mp-home-meepakker-deal-card{
+    min-height:250px !important;
+  }
+
+  #dealsList .mp-unified-deal-card .mp-card-cta,
+  #dealsList .mp-home-meepakker-deal-card .mp-card-cta,
+  .mp-clean-deal-list .mp-unified-deal-card .mp-card-cta,
+  .mp-clean-deal-list .mp-home-meepakker-deal-card .mp-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

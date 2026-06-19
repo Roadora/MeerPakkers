@@ -1,0 +1,39 @@
+
+/* MeerPakkers Demo Banner Exact Align Fix v1
+   Exacte fix voor de tekstregel:
+   'MeerPakkers toont gecontroleerde acties...'
+   Dit blok is .mp-demo-banner, geen p/disclaimer. */
+
+body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner,
+body.mp-deal-detail-page .mp-demo-banner{
+  width:min(1120px, calc(100% - 36px)) !important;
+  max-width:1120px !important;
+  margin:26px auto 22px !important;
+  padding:0 !important;
+  box-sizing:border-box !important;
+  display:block !important;
+  text-align:left !important;
+  color:#06483d !important;
+  font-size:15px !important;
+  line-height:1.45 !important;
+}
+
+/* Houd de tekst netjes op één regel waar mogelijk, maar laat hem natuurlijk wrappen op kleinere schermen. */
+body.mp-deal-detail-page .mp-demo-banner strong{
+  font-weight:900 !important;
+}
+
+body.mp-deal-detail-page .mp-demo-banner span{
+  color:#123c35 !important;
+}
+
+/* Mobiel: nette zijruimte, niet tegen de rand. */
+@media (max-width:700px){
+  body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner,
+  body.mp-deal-detail-page .mp-demo-banner{
+    width:calc(100% - 24px) !important;
+    margin:18px auto 16px !important;
+    font-size:13.5px !important;
+    line-height:1.45 !important;
+  }
+}

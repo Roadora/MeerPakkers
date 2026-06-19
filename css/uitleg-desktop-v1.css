@@ -525,3 +525,317 @@
   }
 
 }
+
+/* Mobile Uitleg Header/Layout Fix v1
+   Fix voor Budget Thuis uitlegpagina's op mobiel:
+   - desktopheader verbergen
+   - mobiele topbar netjes tonen
+   - breadcrumb/notice/content niet door elkaar laten lopen
+   - voorkomt horizontale/resize overflow */
+@media (max-width:760px){
+  body.mp-uitleg-page > .mp-desktop-header,
+  body:has(.mp-uitleg-article) > .mp-desktop-header{
+    display:none !important;
+  }
+
+  .mp-uitleg-page.mp-mobile-framework,
+  main.mp-uitleg-page{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    overflow-x:hidden !important;
+    box-sizing:border-box !important;
+    padding:0 0 24px !important;
+  }
+
+  .mp-uitleg-page .mp-mobile-top-header,
+  main.mp-uitleg-page .mp-mobile-top-header{
+    display:flex !important;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    width:calc(100% - 24px) !important;
+    max-width:420px !important;
+    margin:10px auto 12px !important;
+    z-index:10 !important;
+    box-sizing:border-box !important;
+  }
+
+  .mp-uitleg-page > .mp-demo-banner,
+  main.mp-uitleg-page > .mp-demo-banner{
+    width:calc(100% - 24px) !important;
+    max-width:420px !important;
+    margin:10px auto 14px !important;
+    padding:12px 14px !important;
+    border-radius:18px !important;
+    display:block !important;
+    box-sizing:border-box !important;
+    line-height:1.35 !important;
+  }
+
+  .mp-uitleg-page > .mp-demo-banner strong,
+  .mp-uitleg-page > .mp-demo-banner span,
+  main.mp-uitleg-page > .mp-demo-banner strong,
+  main.mp-uitleg-page > .mp-demo-banner span{
+    display:inline !important;
+    font-size:13.5px !important;
+    line-height:1.35 !important;
+  }
+
+  .mp-uitleg-article{
+    width:calc(100% - 24px) !important;
+    max-width:420px !important;
+    margin:0 auto 24px !important;
+    padding:18px 8px 28px !important;
+    box-sizing:border-box !important;
+    overflow-x:hidden !important;
+  }
+
+  .mp-uitleg-breadcrumb{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:5px !important;
+    align-items:center !important;
+    margin:0 0 16px !important;
+    padding:0 !important;
+    font-size:12px !important;
+    line-height:1.35 !important;
+    word-break:normal !important;
+  }
+
+  .mp-uitleg-breadcrumb a,
+  .mp-uitleg-breadcrumb span{
+    display:inline !important;
+    max-width:100% !important;
+  }
+
+  .mp-uitleg-hero{
+    margin:0 0 22px !important;
+    padding:0 !important;
+  }
+
+  .mp-uitleg-hero .mp-uitleg-kicker,
+  .mp-uitleg-kicker{
+    margin:0 0 10px !important;
+    font-size:13px !important;
+    line-height:1.35 !important;
+  }
+
+  .mp-uitleg-hero h1{
+    margin:0 0 16px !important;
+    font-size:28px !important;
+    line-height:1.12 !important;
+    letter-spacing:-.6px !important;
+    overflow-wrap:break-word !important;
+    word-break:normal !important;
+  }
+
+  .mp-uitleg-hero p,
+  .mp-uitleg-content p{
+    font-size:15.5px !important;
+    line-height:1.48 !important;
+    max-width:100% !important;
+  }
+
+  .mp-uitleg-content section{
+    margin:0 0 24px !important;
+  }
+
+  .mp-uitleg-content h2{
+    margin:0 0 12px !important;
+    font-size:22px !important;
+    line-height:1.18 !important;
+    letter-spacing:-.25px !important;
+  }
+
+  .mp-uitleg-link-card,
+  .mp-uitleg-faq,
+  .mp-uitleg-extra-cluster{
+    width:100% !important;
+    max-width:100% !important;
+    margin:22px 0 !important;
+    padding:16px !important;
+    box-sizing:border-box !important;
+  }
+
+  .mp-uitleg-extra-links,
+  .mp-v23-seo-support-links{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+  }
+
+  .mp-uitleg-extra-links a,
+  .mp-v23-seo-support-links a{
+    width:100% !important;
+    justify-content:flex-start !important;
+    box-sizing:border-box !important;
+    white-space:normal !important;
+    line-height:1.25 !important;
+    min-height:42px !important;
+  }
+}
+
+@media (max-width:760px){
+  body.mp-uitleg-page-body > .mp-desktop-header{
+    display:none !important;
+  }
+}
+
+/* Uitleg Desktop Topbar Edge Flush v1
+   Alleen desktop/uitleg. Laat het beige topbarvlak netjes aansluiten boven, links en rechts. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    margin:0 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:48px !important;
+    padding-right:48px !important;
+    border-radius:0 !important;
+    box-sizing:border-box !important;
+    background:#f7efe4 !important;
+    border-top:0 !important;
+    border-left:0 !important;
+    border-right:0 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header::before,
+  body.mp-uitleg-page-body .mp-desktop-header::after,
+  body.mp-uitleg-hub-body .mp-desktop-header::before,
+  body.mp-uitleg-hub-body .mp-desktop-header::after,
+  body.mp-seo-page .mp-desktop-header::before,
+  body.mp-seo-page .mp-desktop-header::after{
+    display:none !important;
+  }
+}
+
+/* Uitleg Sidebar CTA No Cut v2
+   Desktop uitleg: groene CTA in rechterkaart mag niet worden afgesneden. */
+@media (min-width: 761px){
+  .mp-uitleg-sidebar .mp-uitleg-cta,
+  .mp-uitleg-sidebar a[class*="cta"],
+  .mp-uitleg-sidebar a[href*="/internet-tv/"],
+  .mp-uitleg-sidebar a[href*="/deals/"]{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-height:48px !important;
+    height:auto !important;
+    padding:12px 18px !important;
+    border-radius:999px !important;
+    white-space:normal !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+    line-height:1.15 !important;
+    text-align:center !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* Uitleg Desktop Hide Mobile Topbar v1
+   Desktop/uitleg: mobiele topbar-tekst mag nooit boven de desktop-topbar zichtbaar zijn.
+   Ook horizontale overflow door full-width header voorkomen. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    overflow-x:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-top-header,
+  body.mp-uitleg-page-body .mp-mobile-topbar,
+  body.mp-uitleg-page-body .mp-mobile-header,
+  body.mp-uitleg-page-body [class*="mobile-topbar"],
+  body.mp-uitleg-page-body [data-mp-mobile-topbar-root],
+  body.mp-uitleg-hub-body .mp-mobile-top-header,
+  body.mp-uitleg-hub-body .mp-mobile-topbar,
+  body.mp-uitleg-hub-body .mp-mobile-header,
+  body.mp-uitleg-hub-body [class*="mobile-topbar"],
+  body.mp-uitleg-hub-body [data-mp-mobile-topbar-root],
+  body.mp-seo-page .mp-mobile-top-header,
+  body.mp-seo-page .mp-mobile-topbar,
+  body.mp-seo-page .mp-mobile-header,
+  body.mp-seo-page [class*="mobile-topbar"],
+  body.mp-seo-page [data-mp-mobile-topbar-root]{
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    min-height:0 !important;
+    max-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    max-width:100% !important;
+  }
+}
+
+/* Uitleg Sidebar CTA Short All v3
+   Alle groene sidebar-CTA's op uitlegpagina's passen netjes in de rechterkaart. */
+@media (min-width: 761px){
+  .mp-uitleg-sidebar .mp-uitleg-cta,
+  .mp-uitleg-sidebar a[class*="cta"],
+  .mp-uitleg-sidebar a[href],
+  aside[class*="uitleg"] a[href],
+  aside[class*="sidebar"] a[href]{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    max-width:100% !important;
+    width:auto !important;
+    min-width:150px !important;
+    min-height:44px !important;
+    height:auto !important;
+    padding:11px 20px !important;
+    border-radius:999px !important;
+    white-space:nowrap !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+    line-height:1.1 !important;
+    text-align:center !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* Uitleg Desktop Topbar Right Clip Fix v1
+   Desktop/uitleg: voorkom dat de topbar rechts buiten de viewport valt. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    overflow-x:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    left:auto !important;
+    right:auto !important;
+    transform:none !important;
+    box-sizing:border-box !important;
+    padding-left:48px !important;
+    padding-right:48px !important;
+  }
+}

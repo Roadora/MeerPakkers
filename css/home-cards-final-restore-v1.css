@@ -1,0 +1,161 @@
+
+/* MeerPakkers Home Cards Final Restore v1
+   1) Bovenste 'Gecontroleerde deals' kaart terug naar oude rustige kaartstructuur,
+      zonder Meepakker/Welkomstactie.
+   2) Onderste 'Alle deals met voordeel' kaart: Bekijk deal in halve cirkel. */
+
+/* TOP: Gecontroleerde deals real card */
+.category-winner-card--choice-clean{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:245px !important;
+  border-radius:22px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+
+.category-winner-card--choice-clean .category-winner-footer--cta-only{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  gap:0 !important;
+  margin-top:18px !important;
+}
+
+.category-winner-card--choice-clean .category-winner-footer--cta-only .category-winner-value{
+  display:none !important;
+}
+
+.category-winner-card--choice-clean .category-winner-footer--cta-only a{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  margin-left:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  border-radius:14px !important;
+  padding:0 16px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  z-index:4 !important;
+}
+
+/* TOP: zorg dat oude unified halve-cirkel niet op de bovenste kaart forceert */
+.category-winner-card--choice-clean::after{
+  content:none !important;
+  display:none !important;
+}
+
+/* BOTTOM: Alle deals met voordeel */
+.mp-home-meepakker-deal-card--choice-clean{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:250px !important;
+  border-radius:24px !important;
+  padding-bottom:0 !important;
+}
+
+.mp-home-meepakker-deal-card--choice-clean::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-38px !important;
+  bottom:-42px !important;
+  width:164px !important;
+  height:116px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.58) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+.mp-home-meepakker-deal-card--choice-clean .mp-card-footer--half-circle{
+  position:absolute !important;
+  right:0 !important;
+  bottom:0 !important;
+  width:170px !important;
+  height:118px !important;
+  min-height:118px !important;
+  margin:0 !important;
+  padding:0 !important;
+  display:block !important;
+  z-index:3 !important;
+  pointer-events:none !important;
+}
+
+.mp-home-meepakker-deal-card--choice-clean .mp-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:5 !important;
+  pointer-events:auto !important;
+}
+
+.mp-home-meepakker-deal-card--choice-clean .mp-card-benefits-pill{
+  max-width:calc(100% - 24px) !important;
+  margin-bottom:84px !important;
+}
+
+.mp-home-meepakker-deal-card--choice-clean .mp-card-total{
+  display:none !important;
+}
+
+/* Hover-safe space */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+.mp-clean-deal-list,
+#dealsList,
+.deal-list{
+  overflow:visible !important;
+  padding-top:10px !important;
+  padding-bottom:20px !important;
+}
+
+/* Do not let previous unified component CSS override these two restored card types */
+.category-winner-card--choice-clean .mp-card-footer,
+.category-winner-card--choice-clean .mp-card-cta,
+.mp-home-meepakker-deal-card--choice-clean .mp-card-footer,
+.mp-home-meepakker-deal-card--choice-clean .mp-card-cta{
+  transform:none !important;
+}
+
+@media (max-width:620px){
+  .mp-home-meepakker-deal-card--choice-clean{
+    min-height:250px !important;
+  }
+
+  .mp-home-meepakker-deal-card--choice-clean .mp-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

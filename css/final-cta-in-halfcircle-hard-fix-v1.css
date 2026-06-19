@@ -1,0 +1,141 @@
+
+/* MeerPakkers Final CTA in Half Circle Hard Fix v1
+   Exacte fix voor de onderste kaart onder 'Alle deals met voordeel'.
+   De knop 'Bekijk deal' wordt absoluut in de halve cirkel gezet.
+   Belangrijk: echte container is #dealList, niet #dealsList. */
+
+/* Alleen onderste deal list kaart */
+body.home-cleanup #dealList .mp-normal-deal-card,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card,
+body.home-cleanup #dealList .meepakker-card,
+body.home-cleanup .deal-list .mp-normal-deal-card,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:250px !important;
+  padding-bottom:0 !important;
+}
+
+/* Maak halve cirkel zichtbaar rechtsonder */
+body.home-cleanup #dealList .mp-normal-deal-card::after,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card::after,
+body.home-cleanup #dealList .meepakker-card::after,
+body.home-cleanup .deal-list .mp-normal-deal-card::after,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-36px !important;
+  bottom:-40px !important;
+  width:168px !important;
+  height:122px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.62) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* Footer/shell wordt exact de zone van de halve cirkel */
+body.home-cleanup #dealList .mp-normal-deal-card .mp-normal-deal-card-cta-shell,
+body.home-cleanup #dealList .mp-normal-deal-card .mp-card-footer,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card .mp-card-footer,
+body.home-cleanup #dealList .meepakker-card .mp-card-footer,
+body.home-cleanup .deal-list .mp-normal-deal-card .mp-normal-deal-card-cta-shell,
+body.home-cleanup .deal-list .mp-normal-deal-card .mp-card-footer,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card .mp-card-footer{
+  position:absolute !important;
+  right:0 !important;
+  bottom:0 !important;
+  left:auto !important;
+  top:auto !important;
+  width:170px !important;
+  height:118px !important;
+  min-height:118px !important;
+  max-height:118px !important;
+  margin:0 !important;
+  padding:0 !important;
+  display:block !important;
+  transform:none !important;
+  z-index:3 !important;
+  pointer-events:none !important;
+}
+
+/* De CTA zelf staat IN de halve cirkel, niet in het midden van de kaart */
+body.home-cleanup #dealList .mp-normal-deal-card .mp-card-cta,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card .mp-card-cta,
+body.home-cleanup #dealList .meepakker-card .mp-card-cta,
+body.home-cleanup .deal-list .mp-normal-deal-card .mp-card-cta,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card .mp-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  left:auto !important;
+  top:auto !important;
+  transform:none !important;
+  margin:0 !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  max-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:6 !important;
+  pointer-events:auto !important;
+}
+
+/* Oude footerwaarden mogen nooit terugkomen in deze onderste kaart */
+body.home-cleanup #dealList .mp-normal-deal-card .mp-card-total,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card .mp-card-total,
+body.home-cleanup #dealList .meepakker-card .mp-card-total,
+body.home-cleanup .deal-list .mp-normal-deal-card .mp-card-total,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card .mp-card-total{
+  display:none !important;
+}
+
+/* Zorg dat de voordelenbox niet over de cirkel loopt */
+body.home-cleanup #dealList .mp-normal-deal-card .mp-card-benefits-pill,
+body.home-cleanup #dealList .mp-home-meepakker-deal-card .mp-card-benefits-pill,
+body.home-cleanup #dealList .meepakker-card .mp-card-benefits-pill,
+body.home-cleanup .deal-list .mp-normal-deal-card .mp-card-benefits-pill,
+body.home-cleanup .deal-list .mp-home-meepakker-deal-card .mp-card-benefits-pill{
+  margin-bottom:84px !important;
+}
+
+/* Bovenste gecontroleerde-deals cards bewust niet targetten */
+body.home-cleanup #featuredDeal .mp-card-cta,
+body.home-cleanup .category-winners-grid .mp-card-cta,
+body.home-cleanup .mp-featured-highlight-grid .mp-card-cta{
+  /* geen reset hier; dit blok is alleen ter documentatie van scope */
+}
+
+@media (max-width:620px){
+  body.home-cleanup #dealList .mp-normal-deal-card .mp-card-cta,
+  body.home-cleanup #dealList .mp-home-meepakker-deal-card .mp-card-cta,
+  body.home-cleanup #dealList .meepakker-card .mp-card-cta,
+  body.home-cleanup .deal-list .mp-normal-deal-card .mp-card-cta,
+  body.home-cleanup .deal-list .mp-home-meepakker-deal-card .mp-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

@@ -1,0 +1,74 @@
+
+/* MeerPakkers Live Featured Card Final Fix v1
+   Auditfix:
+   1) Gecontroleerde-deals Budget Thuis card toont geen Meepakker/Welkomstactie meer.
+   2) Featured cards krijgen veilige hover-ruimte zodat de kaart/schaduw niet wordt afgesneden. */
+
+/* Safe hover room around the featured row */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid{
+  overflow:visible !important;
+  padding-top:10px !important;
+  padding-bottom:18px !important;
+}
+
+.mp-featured-highlight-card,
+.category-winner-card{
+  overflow:hidden !important;
+}
+
+/* CTA-only footer for choice cards in Gecontroleerde deals */
+.mp-featured-highlight-card .category-winner-footer--cta-only{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  gap:0 !important;
+  margin-top:18px !important;
+}
+
+.mp-featured-highlight-card .category-winner-footer--cta-only .category-winner-value{
+  display:none !important;
+}
+
+.mp-featured-highlight-card .category-winner-footer--cta-only a{
+  margin-left:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  border-radius:14px !important;
+  padding:0 16px !important;
+  white-space:nowrap !important;
+}
+
+/* Stop old late CTA positioning from pushing over text in the featured-card renderer */
+.category-winner-card.category-winner-card--real .category-winner-footer--cta-only a{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  z-index:3 !important;
+}
+
+/* Extra: prevent the hover lift from being visually clipped by nearby sections */
+.home-section,
+.mp-clean-home-section,
+.mp-clean-mobile-home,
+body.home-cleanup main{
+  overflow:visible !important;
+}
+
+@media (min-width:901px){
+  .mp-featured-highlight-grid{
+    margin-top:-4px !important;
+    margin-bottom:10px !important;
+  }
+}
+
+@media (max-width:900px){
+  #featuredDeal,
+  .mp-featured-highlight-grid,
+  .category-winners-grid{
+    padding-top:8px !important;
+    padding-bottom:16px !important;
+  }
+}

@@ -252,3 +252,66 @@
   .mp-mobile-top-header .mp-mobile-brand-name,
   .mp-mobile-topbar-unified-v3 .mp-mobile-brand-name{font-size:24px!important;}
 }
+
+/* Live Mobile Topbar Logo Polish v1
+   Kleine veilige polish op bestaande werkende topbar.
+   Geen component-refactor. Doel: logo/tekst niet in elkaar en hartje rechts vrij. */
+@media (max-width:760px){
+  .mp-mobile-top-header{
+    grid-template-columns:40px minmax(0,1fr) 40px !important;
+    gap:8px !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    overflow:visible !important;
+  }
+
+  .mp-mobile-brand-lockup{
+    justify-self:center !important;
+    max-width:calc(100vw - 104px) !important;
+    transform:none !important;
+    overflow:visible !important;
+  }
+
+  .mp-mobile-brand-logo{
+    width:126px !important;
+    min-width:126px !important;
+    max-width:126px !important;
+    flex-basis:126px !important;
+    height:78px !important;
+    margin-right:-18px !important;
+    background-size:contain !important;
+    background-position:center right !important;
+  }
+
+  .mp-mobile-brand-copy{
+    max-width:116px !important;
+    min-width:0 !important;
+    line-height:1 !important;
+    transform:none !important;
+  }
+
+  .mp-mobile-brand-lines{
+    font-size:13px !important;
+    line-height:.98 !important;
+  }
+
+  .mp-mobile-brand-name{
+    font-size:21px !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+  }
+
+  .mp-mobile-heart-link,
+  .mp-mobile-heart-button{
+    justify-self:end !important;
+    margin-right:0 !important;
+    overflow:visible !important;
+  }
+
+  .mp-saved-count-v50,
+  .mp-mobile-heart-link .mp-saved-count-v50,
+  .mp-mobile-heart-button .mp-saved-count-v50{
+    right:-5px !important;
+  }
+}
+

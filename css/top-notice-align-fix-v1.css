@@ -1,0 +1,39 @@
+
+/* MeerPakkers Top Notice Align Fix v1
+   De tekst 'MeerPakkers toont gecontroleerde acties...' hoort niet tegen de linker browserrand.
+   Deze regel wordt uitgelijnd op dezelfde contentbreedte als de detail/master content. */
+
+.mp-detail-page > p:first-of-type,
+.mp-detail-page .mp-detail-disclaimer,
+.mp-detail-page .mp-checked-actions-note,
+body.mp-deal-detail-page .mp-detail-page > p:first-of-type{
+  width:min(1120px, calc(100% - 36px)) !important;
+  margin:26px auto 22px !important;
+  padding:0 !important;
+  color:#06483d !important;
+  font-size:15px !important;
+  line-height:1.45 !important;
+}
+
+/* Extra vangnet voor losse tekstregels direct onder de topbar op dealpagina's. */
+body.mp-deal-detail-page main > p:first-child,
+body.mp-deal-detail-page .mp-detail-beta-note{
+  width:min(1120px, calc(100% - 36px)) !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Mobiel: iets compacter maar nog steeds niet tegen de rand. */
+@media (max-width:700px){
+  .mp-detail-page > p:first-of-type,
+  .mp-detail-page .mp-detail-disclaimer,
+  .mp-detail-page .mp-checked-actions-note,
+  body.mp-deal-detail-page .mp-detail-page > p:first-of-type,
+  body.mp-deal-detail-page main > p:first-child,
+  body.mp-deal-detail-page .mp-detail-beta-note{
+    width:calc(100% - 24px) !important;
+    margin-top:18px !important;
+    margin-bottom:16px !important;
+    font-size:13.5px !important;
+  }
+}

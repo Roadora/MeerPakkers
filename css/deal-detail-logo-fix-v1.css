@@ -5,7 +5,7 @@
 
 @media (min-width: 769px){
   body.mp-deal-detail-page > .mp-desktop-header{
-    display:flex !important;
+    display:grid !important;
   }
 
   body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-top-header,
@@ -17,3 +17,52 @@
     padding-top:32px !important;
   }
 }
+
+/* Deal Detail Topbar Restore v2
+   Detailpagina gebruikt weer exact het desktop-header grid-contract van de rest.
+   Voorkomt dat de logo/brand-kolom uitrekt door een oude flex-override. */
+@media (min-width: 769px){
+  body.mp-deal-detail-page > .mp-desktop-header{
+    display:grid !important;
+    grid-template-columns:360px minmax(520px,1fr) minmax(250px,.9fr) !important;
+    gap:18px !important;
+    align-items:center !important;
+    min-height:96px !important;
+    padding:0 48px !important;
+  }
+
+  body.mp-deal-detail-page > .mp-desktop-header .mp-desktop-brand{
+    display:flex !important;
+    align-items:center !important;
+    width:360px !important;
+    height:78px !important;
+    background-image:url('/assets/brand/mpplus-desktop-lockup-v1.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:left center !important;
+    background-size:contain !important;
+  }
+
+  body.mp-deal-detail-page > .mp-desktop-header .mp-desktop-logo,
+  body.mp-deal-detail-page > .mp-desktop-header .mp-desktop-brand-copy{
+    display:none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px){
+  body.mp-deal-detail-page > .mp-desktop-header{
+    grid-template-columns:1fr !important;
+    justify-items:stretch !important;
+    gap:12px !important;
+  }
+
+  body.mp-deal-detail-page > .mp-desktop-header .mp-desktop-brand{
+    justify-self:center !important;
+    width:300px !important;
+    height:70px !important;
+  }
+
+  body.mp-deal-detail-page > .mp-desktop-header .mp-desktop-actions{
+    justify-content:center !important;
+  }
+}
+

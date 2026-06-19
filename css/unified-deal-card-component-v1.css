@@ -1,0 +1,136 @@
+
+/* MeerPakkers Unified Deal Card Component v1
+   Eén echte dealcardcomponent voor home, categorieën en alle-deals lijsten.
+   CTA 'Bekijk deal' blijft in de halve cirkel. */
+
+.mp-unified-deal-card{
+  position:relative !important;
+  min-height:300px !important;
+  overflow:hidden !important;
+  border-radius:24px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+
+/* Choice deals: geen Meepakker/Welkomstactie footerwaarde in compacte cards. */
+.mp-unified-deal-card.mp-deal-card--choice .mp-card-total,
+.mp-unified-deal-card.mp-deal-card--choice .mp-card-total--choice{
+  display:none !important;
+}
+
+/* Voordelenblok blijft boven CTA, niet te dominant. */
+.mp-unified-deal-card .mp-card-benefits-pill,
+.mp-unified-deal-card .mp-clean-benefits{
+  margin-top:14px !important;
+  margin-bottom:18px !important;
+}
+
+/* Footer is de CTA-zone. */
+.mp-unified-deal-card .mp-card-footer,
+.mp-unified-deal-card.mp-deal-card--choice .mp-card-footer{
+  min-height:76px !important;
+  padding:0 !important;
+  margin-top:auto !important;
+  display:flex !important;
+  align-items:flex-end !important;
+  justify-content:flex-end !important;
+  position:relative !important;
+  z-index:3 !important;
+}
+
+/* Halve cirkel rechts onderin: één vaste componentvorm. */
+.mp-unified-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-36px !important;
+  bottom:-42px !important;
+  width:156px !important;
+  height:112px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.55) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* CTA in de halve cirkel. */
+.mp-unified-deal-card .mp-card-cta{
+  position:absolute !important;
+  right:20px !important;
+  bottom:20px !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-weight:950 !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:4 !important;
+}
+
+/* Oude list/home renderers mogen geen eigen footerstijl forceren op de unified component. */
+.mp-unified-deal-card .mp-card-footer--cta-only,
+.mp-unified-deal-card .category-winner-footer--cta-only{
+  padding-right:0 !important;
+}
+
+/* Real cards in the featured/grid row should no longer be clipped on hover. */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+.mp-clean-deal-list,
+#dealsList,
+.deal-list{
+  overflow:visible !important;
+  padding-top:10px !important;
+  padding-bottom:20px !important;
+}
+
+.mp-unified-deal-card:hover{
+  transform:translateY(-6px) !important;
+}
+
+/* Omdat echte cards nu via MPDealCard komen, laat grid ze netjes passen. */
+.mp-featured-highlight-grid .mp-unified-deal-card,
+.category-winners-grid .mp-unified-deal-card{
+  width:100% !important;
+  height:100% !important;
+}
+
+/* Mobile/tablet */
+@media (max-width:700px){
+  .mp-unified-deal-card{
+    min-height:286px !important;
+  }
+
+  .mp-unified-deal-card::after{
+    right:-42px !important;
+    bottom:-46px !important;
+    width:148px !important;
+    height:104px !important;
+  }
+
+  .mp-unified-deal-card .mp-card-cta{
+    right:16px !important;
+    bottom:16px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

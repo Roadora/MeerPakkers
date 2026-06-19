@@ -1,0 +1,246 @@
+
+/* MeerPakkers Cards Component Split v1
+   Twee gescheiden componenten:
+   1. .mp-normal-deal-card = normale dealcards / Alle deals / categorieën
+   2. .mp-checked-deal-card = bovenste Gecontroleerde deals
+*/
+
+/* ================================
+   1. Normale dealcard
+   ================================ */
+.mp-normal-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:250px !important;
+  border-radius:24px !important;
+  background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%) !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  box-shadow:0 18px 38px rgba(6,72,61,.075) !important;
+  padding:18px !important;
+  display:block !important;
+  text-decoration:none !important;
+  color:inherit !important;
+}
+
+.mp-normal-deal-card .meepakker-save-heart{
+  position:absolute !important;
+  top:16px !important;
+  right:16px !important;
+  z-index:5 !important;
+}
+
+.mp-normal-deal-card-content{
+  position:relative !important;
+  z-index:2 !important;
+  padding-right:44px !important;
+}
+
+.mp-normal-deal-card h3{
+  margin:0 0 6px !important;
+  color:#06483d !important;
+  font-size:24px !important;
+  line-height:1.04 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+}
+
+.mp-normal-deal-card .mp-card-title{
+  margin:0 0 14px !important;
+  color:#111 !important;
+  font-size:16px !important;
+  line-height:1.22 !important;
+  font-weight:850 !important;
+}
+
+.mp-normal-deal-card .mp-card-benefits-pill{
+  width:100% !important;
+  max-width:calc(100% - 18px) !important;
+  min-height:70px !important;
+  margin:0 0 86px !important;
+  padding:14px 18px !important;
+  border-radius:18px !important;
+  background:#f1e4d5 !important;
+  border:1px solid rgba(214,196,166,.75) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:6px !important;
+}
+
+.mp-normal-deal-card .mp-card-benefits-pill span{
+  display:block !important;
+  background:transparent !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  color:#6b5d4f !important;
+  font-size:13.5px !important;
+  line-height:1.18 !important;
+  font-weight:800 !important;
+}
+
+/* Halve cirkel hoort bij normale dealcards */
+.mp-normal-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-38px !important;
+  bottom:-42px !important;
+  width:164px !important;
+  height:116px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.58) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+.mp-normal-deal-card-cta-shell{
+  position:absolute !important;
+  right:0 !important;
+  bottom:0 !important;
+  width:170px !important;
+  height:118px !important;
+  z-index:3 !important;
+  pointer-events:none !important;
+}
+
+.mp-normal-deal-card .mp-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:5 !important;
+  pointer-events:auto !important;
+}
+
+/* ================================
+   2. Gecontroleerde dealcard
+   ================================ */
+.mp-checked-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:245px !important;
+  border-radius:22px !important;
+  background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%) !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  box-shadow:0 18px 38px rgba(6,72,61,.075) !important;
+  padding:20px 20px 18px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+
+.mp-checked-deal-card .category-winner-provider{
+  margin:0 42px 6px 0 !important;
+  color:#06483d !important;
+  font-size:25px !important;
+  line-height:1.02 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+}
+
+.mp-checked-deal-card .category-winner-title{
+  margin:0 0 16px !important;
+  color:#111 !important;
+  font-size:16px !important;
+  line-height:1.22 !important;
+  font-weight:850 !important;
+}
+
+.mp-checked-deal-card .category-winner-benefits{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  margin:0 !important;
+}
+
+.mp-checked-deal-card .category-winner-benefits span{
+  display:inline-flex !important;
+  align-items:center !important;
+  max-width:100% !important;
+  border-radius:999px !important;
+  background:#eaf4ec !important;
+  color:#06483d !important;
+  padding:8px 10px !important;
+  font-size:12.5px !important;
+  line-height:1.1 !important;
+  font-weight:900 !important;
+}
+
+.mp-checked-deal-card .category-winner-footer{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  gap:0 !important;
+  margin-top:18px !important;
+}
+
+.mp-checked-deal-card .category-winner-value{
+  display:none !important;
+}
+
+.mp-checked-deal-card .category-winner-footer a{
+  margin-left:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  border-radius:14px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  padding:0 16px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  font-weight:950 !important;
+  white-space:nowrap !important;
+  box-shadow:0 10px 22px rgba(6,72,61,.18) !important;
+}
+
+/* Gecontroleerde dealcard krijgt géén halve cirkel */
+.mp-checked-deal-card::after{
+  content:none !important;
+}
+
+/* Safe hover room */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+#dealList,
+.deal-list,
+.mp-clean-deal-list{
+  overflow:visible !important;
+  padding-top:10px !important;
+  padding-bottom:20px !important;
+}
+
+/* Mobile */
+@media (max-width:620px){
+  .mp-normal-deal-card{
+    min-height:250px !important;
+  }
+
+  .mp-normal-deal-card .mp-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    font-size:13px !important;
+  }
+}

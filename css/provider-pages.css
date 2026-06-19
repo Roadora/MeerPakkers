@@ -858,3 +858,86 @@ body.mp-provider-detail-page .provider-faq-content{
     display:none;
   }
 }
+
+/* Provider CTA Position Only Fix v1
+   Houdt de bestaande provider-card en halve cirkel intact.
+   Verplaatst alleen de CTA naar dezelfde rechtsonder-zone binnen de bestaande halve cirkel. */
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card{
+  position:relative !important;
+}
+
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+  position:absolute !important;
+  right:22px !important;
+  bottom:20px !important;
+  left:auto !important;
+  top:auto !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  display:block !important;
+  z-index:4 !important;
+  overflow:visible !important;
+  pointer-events:none !important;
+}
+
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-card-total{
+  display:none !important;
+}
+
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  left:auto !important;
+  top:auto !important;
+  transform:none !important;
+  margin:0 !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  max-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  text-decoration:none !important;
+  z-index:5 !important;
+  pointer-events:auto !important;
+}
+
+@media(max-width:620px){
+  body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+    right:18px !important;
+    bottom:18px !important;
+  }
+
+  body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.mp-provider-detail-page .provider-deals .mp-provider-card-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta{
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    max-height:42px !important;
+    font-size:13px !important;
+  }
+}
+
+/* Safe remove uitleg lamp card v2
+   Alleen het losse uitleg/lampje-kaartje verbergen, niet de deal-list of dealcards. */
+.mp-uitleg-footer.mp-uitleg-footer--compact,
+.provider-uitleg-card,
+.mp-uitleg-card.mp-uitleg-card--compact{
+  display:none !important;
+}
+

@@ -1,0 +1,118 @@
+
+/* MeerPakkers Detail Master Card Polish v1
+   Alleen detail-masterkaart: CTA rechts, tekst links uitgelijnd met blokken, gekleurde voordeelblokken. */
+
+.mp-v23-top--single-master .mp-v23-master-intro-card{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:22px !important;
+}
+
+/* Voordeelblokken blijven het visuele anker; alles eronder start exact op dezelfde x-lijn. */
+.mp-v23-top--single-master .mp-v23-master-mini-grid{
+  width:100% !important;
+  max-width:940px !important;
+  margin-left:0 !important;
+  margin-right:auto !important;
+}
+
+/* Drie blokken meer onderscheid en premium kleur, zonder schreeuwerig te worden. */
+.mp-v23-top--single-master .mp-v23-master-mini{
+  position:relative !important;
+  overflow:hidden !important;
+  border:1px solid rgba(214,196,166,.86) !important;
+  box-shadow:0 16px 34px rgba(6,72,61,.055) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  pointer-events:none !important;
+  opacity:.95 !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini > *{
+  position:relative !important;
+  z-index:1 !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(1){
+  background:#fff8e8 !important;
+  border-color:rgba(204,154,54,.28) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(1)::before{
+  background:linear-gradient(145deg,rgba(255,247,220,.98) 0%,rgba(255,255,255,.72) 100%) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(2){
+  background:#eef8f5 !important;
+  border-color:rgba(45,146,153,.24) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(2)::before{
+  background:linear-gradient(145deg,rgba(232,248,244,.98) 0%,rgba(255,255,255,.72) 100%) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(3){
+  background:#f1f4ea !important;
+  border-color:rgba(6,72,61,.18) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini:nth-child(3)::before{
+  background:linear-gradient(145deg,rgba(242,247,235,.98) 0%,rgba(255,255,255,.72) 100%) !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini strong{
+  color:#103d36 !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini span{
+  color:#665d52 !important;
+}
+
+/* Voorwaardenregel links netjes gelijk met de blokken. */
+.mp-v23-top--single-master .mp-v23-master-disclaimer{
+  width:100% !important;
+  max-width:940px !important;
+  margin-left:0 !important;
+  margin-right:auto !important;
+  padding-left:0 !important;
+  text-align:left !important;
+}
+
+/* CTA naar rechts, uitgelijnd met de rechterkant van de drie blokken. */
+.mp-v23-top--single-master .mp-v23-master-secondary{
+  justify-self:end !important;
+  margin-left:auto !important;
+  margin-right:calc(100% - min(100%, 940px)) !important;
+}
+
+/* Als CSS min() in margin-right niet goed wordt geïnterpreteerd, blijft dit alsnog netjes rechts binnen de kaart. */
+@supports not (margin-right:calc(100% - min(100%, 940px))){
+  .mp-v23-top--single-master .mp-v23-master-secondary{
+    margin-right:0 !important;
+  }
+}
+
+/* Brede desktop: CTA exact onder de rechterkant van de voordeelblokken. */
+@media (min-width:1181px){
+  .mp-v23-top--single-master .mp-v23-master-secondary{
+    width:max-content !important;
+    transform:translateX(0) !important;
+  }
+}
+
+/* Tablet/mobiel: CTA mag volledig breed blijven of netjes onderaan staan. */
+@media (max-width:900px){
+  .mp-v23-top--single-master .mp-v23-master-secondary{
+    justify-self:stretch !important;
+    width:100% !important;
+    margin-right:0 !important;
+  }
+
+  .mp-v23-top--single-master .mp-v23-master-disclaimer{
+    max-width:100% !important;
+  }
+}

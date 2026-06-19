@@ -329,3 +329,12 @@
     display:none;
   }
 }
+
+/* Safe remove uitleg lamp card v2
+   Alleen het losse uitleg/lampje-kaartje verbergen, niet de deal-list of dealcards. */
+.mp-uitleg-footer.mp-uitleg-footer--compact,
+.provider-uitleg-card,
+.mp-uitleg-card.mp-uitleg-card--compact{
+  display:none !important;
+}
+

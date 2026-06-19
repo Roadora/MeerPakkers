@@ -1,0 +1,158 @@
+/* MeerPakkers DealCard Final v11
+   Eén nette componentlaag voor compacte echte deals:
+   - kaart blijft compact
+   - Meepakker-tekst blijft normaal
+   - CTA staat rechts als halve-cirkelknop en overlapt nooit
+   - geen losse fix-op-fix overrides meer
+*/
+
+.mp-deal-card-component.mp-official-deal-card{
+  min-height:268px !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+.mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+  display:grid !important;
+  grid-template-columns:minmax(0, 1fr) auto !important;
+  align-items:end !important;
+  gap:12px !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin-top:14px !important;
+  padding:0 !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card .mp-card-total{
+  min-width:0 !important;
+  max-width:100% !important;
+  padding-right:6px !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card .mp-card-total small{
+  display:block !important;
+  margin:0 0 4px 0 !important;
+  color:var(--muted,#746b61) !important;
+  font-size:11.5px !important;
+  line-height:1.05 !important;
+  font-weight:900 !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card .mp-card-total strong{
+  display:block !important;
+  color:var(--green,#06483d) !important;
+  font-size:23px !important;
+  line-height:1.02 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+.mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+.mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom > a.mp-card-cta{
+  justify-self:end !important;
+  align-self:end !important;
+  position:relative !important;
+  z-index:4 !important;
+  flex:0 0 auto !important;
+  width:auto !important;
+  min-width:128px !important;
+  max-width:none !important;
+  height:42px !important;
+  margin:0 -4px 0 0 !important;
+  padding:0 17px !important;
+  border-radius:999px 16px 16px 999px !important;
+  background:var(--green,#06483d) !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-decoration:none !important;
+  font-size:13px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  box-shadow:0 10px 22px rgba(6,72,61,.16) !important;
+}
+
+/* Budget Thuis: echte periode-deal, compact zonder grotere kaart. */
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"]{
+  min-height:268px !important;
+  max-height:none !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-benefits-pill,
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-clean-benefits{
+  height:86px !important;
+  min-height:86px !important;
+  max-height:86px !important;
+  padding:11px 12px !important;
+  gap:5px !important;
+  overflow:hidden !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-benefits-pill span,
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-clean-benefits span{
+  display:block !important;
+  font-size:12.5px !important;
+  line-height:1.25 !important;
+  font-weight:750 !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  -webkit-line-clamp:unset !important;
+  line-clamp:unset !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-total small{
+  font-size:11.5px !important;
+}
+
+.mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-total--period strong{
+  font-size:22px !important;
+  line-height:1.02 !important;
+  max-width:170px !important;
+}
+
+@media (max-width:620px){
+  .mp-deal-card-component.mp-official-deal-card,
+  .mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"]{
+    min-height:264px !important;
+    padding:16px !important;
+  }
+
+  .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+    grid-template-columns:minmax(0, 1fr) auto !important;
+    gap:10px !important;
+  }
+
+  .mp-deal-card-component.mp-official-deal-card .mp-card-total strong,
+  .mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-total--period strong{
+    font-size:20px !important;
+    max-width:150px !important;
+  }
+
+  .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom > a.mp-card-cta{
+    min-width:120px !important;
+    height:40px !important;
+    padding:0 15px !important;
+    font-size:12.5px !important;
+    margin-right:-2px !important;
+  }
+
+  .mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-card-benefits-pill,
+  .mp-deal-card-component.mp-official-deal-card[data-deal-id="budget-thuis-internet-tv"] .mp-clean-benefits{
+    height:84px !important;
+    min-height:84px !important;
+    max-height:84px !important;
+    width:calc(100% - 88px) !important;
+    max-width:calc(100% - 88px) !important;
+  }
+}

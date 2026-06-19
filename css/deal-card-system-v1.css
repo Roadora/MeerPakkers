@@ -1,0 +1,653 @@
+
+/* MeerPakkers Deal Card System v1
+   Eén normale dealcard + één gecontroleerde dealcard.
+   Dit bestand vervangt de losse card-fix lagen.
+*/
+
+/* ========== Normal deal card: home, categorieën, lijsten ========== */
+
+.mp-normal-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:236px !important;
+  border-radius:24px !important;
+  background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%) !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  box-shadow:0 18px 38px rgba(6,72,61,.075) !important;
+  padding:18px !important;
+  display:block !important;
+  text-decoration:none !important;
+  color:inherit !important;
+}
+
+.mp-normal-deal-card:hover{
+  transform:translateY(-4px) !important;
+}
+
+.mp-normal-deal-card-content{
+  position:relative !important;
+  z-index:2 !important;
+  padding-right:44px !important;
+}
+
+.mp-normal-deal-card h3{
+  margin:0 0 6px !important;
+  color:#06483d !important;
+  font-size:24px !important;
+  line-height:1.04 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+}
+
+.mp-normal-deal-card .mp-card-title{
+  margin:0 0 14px !important;
+  color:#111 !important;
+  font-size:16px !important;
+  line-height:1.22 !important;
+  font-weight:850 !important;
+}
+
+.mp-normal-deal-card .mp-card-benefits-pill{
+  width:100% !important;
+  max-width:calc(100% - 18px) !important;
+  min-height:70px !important;
+  margin:0 0 74px !important;
+  padding:14px 18px !important;
+  border-radius:18px !important;
+  background:#f1e4d5 !important;
+  border:1px solid rgba(214,196,166,.75) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:6px !important;
+}
+
+.mp-normal-deal-card .mp-card-benefits-pill span{
+  display:block !important;
+  background:transparent !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  color:#6b5d4f !important;
+  font-size:13.5px !important;
+  line-height:1.18 !important;
+  font-weight:800 !important;
+}
+
+/* Halve cirkel overal exact gelijk */
+.mp-normal-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-34px !important;
+  bottom:-38px !important;
+  width:182px !important;
+  height:128px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.62) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* CTA direct in de halve cirkel */
+.mp-normal-deal-card > .mp-normal-deal-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  left:auto !important;
+  top:auto !important;
+  transform:none !important;
+  margin:0 !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  max-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:6 !important;
+  pointer-events:auto !important;
+}
+
+/* Oude footer/classes binnen normal card nooit meer tonen */
+.mp-normal-deal-card .mp-card-footer,
+.mp-normal-deal-card .mp-card-total,
+.mp-normal-deal-card .mp-clean-card-bottom,
+.mp-normal-deal-card .mp-normal-deal-card-cta-shell,
+.mp-normal-deal-card .mp-card-cta:not(.mp-normal-deal-card-cta){
+  display:none !important;
+}
+
+.mp-normal-deal-card .meepakker-save-heart{
+  position:absolute !important;
+  top:16px !important;
+  right:16px !important;
+  z-index:7 !important;
+}
+
+/* ========== Checked deal card: bovenste rij ========== */
+
+.mp-checked-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:245px !important;
+  border-radius:22px !important;
+  background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%) !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  box-shadow:0 18px 38px rgba(6,72,61,.075) !important;
+  padding:20px 20px 18px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+
+.mp-checked-deal-card::after{
+  content:none !important;
+  display:none !important;
+}
+
+.mp-checked-deal-card .category-winner-provider{
+  margin:0 42px 6px 0 !important;
+  color:#06483d !important;
+  font-size:25px !important;
+  line-height:1.02 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+}
+
+.mp-checked-deal-card .category-winner-title{
+  margin:0 0 16px !important;
+  color:#111 !important;
+  font-size:16px !important;
+  line-height:1.22 !important;
+  font-weight:850 !important;
+}
+
+.mp-checked-deal-card .category-winner-benefits{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  margin:0 !important;
+}
+
+.mp-checked-deal-card .category-winner-benefits span{
+  display:inline-flex !important;
+  align-items:center !important;
+  max-width:100% !important;
+  border-radius:999px !important;
+  background:#eaf4ec !important;
+  color:#06483d !important;
+  padding:8px 10px !important;
+  font-size:12.5px !important;
+  line-height:1.1 !important;
+  font-weight:900 !important;
+}
+
+.mp-checked-deal-card .category-winner-footer{
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:flex-end !important;
+  margin-top:18px !important;
+}
+
+.mp-checked-deal-card .category-winner-value{
+  display:none !important;
+}
+
+.mp-checked-deal-card .category-winner-footer a{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  margin-left:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  border-radius:14px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  padding:0 16px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  font-weight:950 !important;
+  white-space:nowrap !important;
+  box-shadow:0 10px 22px rgba(6,72,61,.18) !important;
+}
+
+/* Safe hover area */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+#dealList,
+.deal-list,
+.mp-clean-deal-list,
+#categoryDealList,
+.category-main,
+.category-content{
+  overflow:visible !important;
+}
+
+/* Layout consistency */
+#dealList .mp-normal-deal-card,
+.deal-list .mp-normal-deal-card,
+#categoryDealList .mp-normal-deal-card,
+.category-main .mp-normal-deal-card,
+.category-content .mp-normal-deal-card{
+  width:100% !important;
+}
+
+@media (max-width:620px){
+  .mp-normal-deal-card{
+    min-height:236px !important;
+  }
+
+  .mp-normal-deal-card > .mp-normal-deal-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}
+
+/* Home + Category Circle Sync With Provider v1
+   Maakt alleen de cirkel van Home- en categorie-dealkaarten gelijk aan de bestaande providerkaart.
+   Providerpagina zelf blijft ongemoeid. */
+body.home-cleanup #dealList .mp-normal-deal-card::after,
+body.home-cleanup .deal-list .mp-normal-deal-card::after,
+body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card::after,
+body[data-category-id] #mpMobileCategory .mp-normal-deal-card::after,
+body[data-category-id] .mp-category-deals .mp-normal-deal-card::after,
+body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card::after,
+body[data-category-id] .category-main .mp-normal-deal-card::after,
+body[data-category-id] .category-content .mp-normal-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-38px !important;
+  bottom:-38px !important;
+  width:126px !important;
+  height:126px !important;
+  border-radius:999px !important;
+  background:rgba(244,234,220,.75) !important;
+  border:0 !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* CTA blijft in dezelfde rechtsonder-zone, zonder de kaartstructuur te wijzigen. */
+body.home-cleanup #dealList .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body.home-cleanup .deal-list .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body[data-category-id] #mpMobileCategory .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body[data-category-id] .mp-category-deals .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body[data-category-id] .category-main .mp-normal-deal-card > .mp-normal-deal-card-cta,
+body[data-category-id] .category-content .mp-normal-deal-card > .mp-normal-deal-card-cta{
+  right:22px !important;
+  bottom:20px !important;
+}
+
+/* Als Home/categorie nog de officiële component gebruikt, krijgt die ook exact dezelfde provider-cirkel. */
+body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card::after,
+body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card::after,
+body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card::after,
+body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card::after,
+body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card::after,
+body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card::after,
+body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card::after,
+body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-38px !important;
+  bottom:-38px !important;
+  width:126px !important;
+  height:126px !important;
+  border-radius:999px !important;
+  background:rgba(244,234,220,.75) !important;
+  border:0 !important;
+  z-index:0 !important;
+  pointer-events:none !important;
+}
+
+@media(max-width:620px){
+  body.home-cleanup #dealList .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .deal-list .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-main .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-content .mp-normal-deal-card > .mp-normal-deal-card-cta{
+    right:18px !important;
+    bottom:18px !important;
+  }
+}
+
+/* DealCard Heart Round Sync v1
+   Maakt het opslaan-hartje op Home/categorie/provider-dealkaarten overal rond.
+   Alleen button-styling; kaart, cirkel en CTA blijven onaangeraakt. */
+.mp-normal-deal-card .meepakker-save-heart,
+.mp-deal-card-component.mp-official-deal-card .meepakker-save-heart,
+.mp-home-meepakker-deal-card .meepakker-save-heart,
+.category-winner-card--real .meepakker-save-heart,
+.mp-checked-deal-card .meepakker-save-heart{
+  appearance:none !important;
+  -webkit-appearance:none !important;
+  position:absolute !important;
+  top:16px !important;
+  right:16px !important;
+  width:34px !important;
+  height:34px !important;
+  min-width:34px !important;
+  min-height:34px !important;
+  max-width:34px !important;
+  max-height:34px !important;
+  padding:0 !important;
+  margin:0 !important;
+  border-radius:999px !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  background:rgba(255,253,248,.92) !important;
+  color:#06483d !important;
+  box-shadow:0 8px 18px rgba(6,72,61,.08) !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  line-height:1 !important;
+  font-size:18px !important;
+  font-weight:800 !important;
+  text-align:center !important;
+  cursor:pointer !important;
+  z-index:8 !important;
+}
+
+.mp-normal-deal-card .meepakker-save-heart.is-saved,
+.mp-deal-card-component.mp-official-deal-card .meepakker-save-heart.is-saved,
+.mp-home-meepakker-deal-card .meepakker-save-heart.is-saved,
+.category-winner-card--real .meepakker-save-heart.is-saved,
+.mp-checked-deal-card .meepakker-save-heart.is-saved,
+.mp-normal-deal-card .meepakker-save-heart[aria-pressed="true"],
+.mp-deal-card-component.mp-official-deal-card .meepakker-save-heart[aria-pressed="true"],
+.mp-home-meepakker-deal-card .meepakker-save-heart[aria-pressed="true"],
+.category-winner-card--real .meepakker-save-heart[aria-pressed="true"],
+.mp-checked-deal-card .meepakker-save-heart[aria-pressed="true"]{
+  color:#c84b38 !important;
+}
+
+/* Mobile DealCard CTA Circle Position v1
+   Alleen mobiel: zet de CTA terug in de bestaande halve cirkel.
+   Geen desktop, topbar, footer, SEO of kaartcontent wijzigingen. */
+@media (max-width:620px){
+  body.home-cleanup #dealList .mp-normal-deal-card,
+  body.home-cleanup .deal-list .mp-normal-deal-card,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card,
+  body[data-category-id] .category-main .mp-normal-deal-card,
+  body[data-category-id] .category-content .mp-normal-deal-card{
+    position:relative !important;
+    overflow:hidden !important;
+  }
+
+  body.home-cleanup #dealList .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .deal-list .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-main .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-content .mp-normal-deal-card > .mp-normal-deal-card-cta{
+    position:absolute !important;
+    right:18px !important;
+    bottom:18px !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    margin:0 !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    max-height:42px !important;
+    z-index:6 !important;
+  }
+}
+
+/* Mobile DealCard CTA Final Override v2
+   Audit-fix: oude mobiele footer/CTA regels wonnen nog op sommige kaarten.
+   Deze laag geldt alleen mobiel en zet de CTA voor alle normale/official dealcards
+   in de bestaande cirkel rechtsonder. Desktop/topbar/footer/SEO blijven onaangeraakt. */
+@media (max-width:620px){
+  /* Zorg dat de kaart de absolute CTA kan dragen */
+  body.home-cleanup #dealList .mp-normal-deal-card,
+  body.home-cleanup .deal-list .mp-normal-deal-card,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card,
+  body[data-category-id] .category-main .mp-normal-deal-card,
+  body[data-category-id] .category-content .mp-normal-deal-card,
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card{
+    position:relative !important;
+    overflow:hidden !important;
+    padding-bottom:18px !important;
+  }
+
+  /* Official/home component: footer mag niet meer links onderin bepalen */
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+    position:absolute !important;
+    right:18px !important;
+    bottom:18px !important;
+    left:auto !important;
+    top:auto !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    display:block !important;
+    transform:none !important;
+    z-index:6 !important;
+    pointer-events:none !important;
+    background:transparent !important;
+  }
+
+  /* Verberg oude totaal/period-info in deze mobiele CTA-zone, zodat alleen de knop overblijft */
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card .mp-card-total{
+    display:none !important;
+  }
+
+  /* Normal cards: CTA direct kind van kaart */
+  body.home-cleanup #dealList .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .deal-list .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-main .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-content .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  /* Official cards: CTA in oude footer */
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup #dealList .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup .deal-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-category-id] .mp-category-deals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-category-id] .category-main .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body[data-category-id] .category-content .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta{
+    position:relative !important;
+    right:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    margin:0 !important;
+    width:auto !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    max-height:42px !important;
+    padding:0 16px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:nowrap !important;
+    font-size:13px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    z-index:7 !important;
+    pointer-events:auto !important;
+  }
+
+  /* Normal direct CTA moet zelf absoluut blijven, niet relative */
+  body.home-cleanup #dealList .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .deal-list .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body.home-cleanup .mp-home-meepakker-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] #mpMobileCategory .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-category-deals .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .mp-shared-deal-grid .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-main .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  body[data-category-id] .category-content .mp-normal-deal-card > .mp-normal-deal-card-cta{
+    position:absolute !important;
+    right:18px !important;
+    bottom:18px !important;
+  }
+}
+
+/* Home mpCleanTopDeals CTA Circle Fix v3
+   Audit resultaat: Home gebruikt niet #dealList maar #mpCleanTopDeals met de oude MPDealCard official component.
+   Daarom pakte de vorige fix Home niet. Alleen mobiel + alleen Home dealroot. */
+@media (max-width:620px){
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card{
+    position:relative !important;
+    overflow:hidden !important;
+  }
+
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-footer,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom{
+    position:absolute !important;
+    right:18px !important;
+    bottom:18px !important;
+    left:auto !important;
+    top:auto !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    display:block !important;
+    transform:none !important;
+    z-index:8 !important;
+    pointer-events:none !important;
+    background:transparent !important;
+    border:0 !important;
+  }
+
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-total,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-total{
+    display:none !important;
+  }
+
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup .mp-clean-deal-list .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-card-cta,
+  body.home-cleanup .mp-clean-mobile-home #mpCleanTopDeals .mp-deal-card-component.mp-official-deal-card .mp-clean-card-bottom a.mp-card-cta{
+    position:relative !important;
+    right:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    margin:0 !important;
+    width:auto !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    max-height:42px !important;
+    padding:0 16px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:nowrap !important;
+    font-size:13px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    z-index:9 !important;
+    pointer-events:auto !important;
+  }
+}
+

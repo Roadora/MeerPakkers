@@ -1,0 +1,58 @@
+
+/* MeerPakkers Compact Choice Footer Clean v1
+   Compacte keuze-deals tonen geen 'Meepakker / Welkomstactie' in de cardfooter. */
+.mp-deal-card--choice .mp-card-total,
+.mp-deal-card--choice .mp-card-total--choice{
+  display:none !important;
+}
+
+.mp-deal-card--choice .mp-card-footer{
+  min-height:64px !important;
+  padding-right:0 !important;
+  display:flex !important;
+  align-items:flex-end !important;
+  justify-content:flex-end !important;
+  position:relative !important;
+  gap:0 !important;
+}
+
+.mp-deal-card--choice .mp-card-cta{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+  width:auto !important;
+  min-width:122px !important;
+  max-width:148px !important;
+  height:44px !important;
+  min-height:44px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  z-index:4 !important;
+}
+
+.mp-home-meepakker-deal-card.mp-deal-card--choice .mp-card-footer{
+  justify-content:flex-end !important;
+  padding-right:0 !important;
+}
+
+.mp-home-meepakker-deal-card.mp-deal-card--choice .mp-card-cta{
+  position:relative !important;
+  right:auto !important;
+  bottom:auto !important;
+}
+
+@media (max-width:520px){
+  .mp-deal-card--choice .mp-card-cta{
+    min-width:112px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

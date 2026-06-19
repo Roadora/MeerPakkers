@@ -1,0 +1,185 @@
+
+/* MeerPakkers Normal Deal Card Unified v3
+   Eén normale dealcard voor home én categorieën.
+   Scope op .mp-normal-deal-card zelf, niet op #dealList of pagina-specifieke containers.
+   Daardoor is de halve cirkel en CTA overal hetzelfde. */
+
+.mp-normal-deal-card{
+  position:relative !important;
+  overflow:hidden !important;
+  min-height:236px !important;
+  border-radius:24px !important;
+  background:linear-gradient(145deg,#fffdf8 0%,#fbf4e8 100%) !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  box-shadow:0 18px 38px rgba(6,72,61,.075) !important;
+  padding:18px !important;
+  display:block !important;
+  text-decoration:none !important;
+  color:inherit !important;
+  transform:none;
+}
+
+/* contentruimte */
+.mp-normal-deal-card .mp-normal-deal-card-content{
+  position:relative !important;
+  z-index:2 !important;
+  padding-right:44px !important;
+}
+
+.mp-normal-deal-card h3{
+  margin:0 0 6px !important;
+  color:#06483d !important;
+  font-size:24px !important;
+  line-height:1.04 !important;
+  font-weight:950 !important;
+  letter-spacing:-.35px !important;
+}
+
+.mp-normal-deal-card .mp-card-title{
+  margin:0 0 14px !important;
+  color:#111 !important;
+  font-size:16px !important;
+  line-height:1.22 !important;
+  font-weight:850 !important;
+}
+
+/* voordelenbox */
+.mp-normal-deal-card .mp-card-benefits-pill{
+  width:100% !important;
+  max-width:calc(100% - 18px) !important;
+  min-height:70px !important;
+  margin:0 0 74px !important;
+  padding:14px 18px !important;
+  border-radius:18px !important;
+  background:#f1e4d5 !important;
+  border:1px solid rgba(214,196,166,.75) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  gap:6px !important;
+}
+
+.mp-normal-deal-card .mp-card-benefits-pill span{
+  display:block !important;
+  background:transparent !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  color:#6b5d4f !important;
+  font-size:13.5px !important;
+  line-height:1.18 !important;
+  font-weight:800 !important;
+}
+
+/* halve cirkel overal exact hetzelfde */
+.mp-normal-deal-card::after{
+  content:"" !important;
+  position:absolute !important;
+  right:-34px !important;
+  bottom:-38px !important;
+  width:182px !important;
+  height:128px !important;
+  border-radius:999px 0 0 0 !important;
+  background:#f2e6d3 !important;
+  border:1px solid rgba(214,196,166,.62) !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+}
+
+/* CTA direct in de halve cirkel */
+.mp-normal-deal-card > .mp-normal-deal-card-cta,
+.mp-normal-deal-card > .mp-card-cta{
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
+  left:auto !important;
+  top:auto !important;
+  transform:none !important;
+  margin:0 !important;
+  width:auto !important;
+  min-width:126px !important;
+  max-width:146px !important;
+  height:46px !important;
+  min-height:46px !important;
+  max-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+  z-index:6 !important;
+  pointer-events:auto !important;
+}
+
+/* oude footer/shells binnen normal card nooit meer tonen */
+.mp-normal-deal-card .mp-card-footer,
+.mp-normal-deal-card .mp-card-total,
+.mp-normal-deal-card .mp-clean-card-bottom,
+.mp-normal-deal-card .mp-normal-deal-card-cta-shell{
+  display:none !important;
+}
+
+/* heart */
+.mp-normal-deal-card .meepakker-save-heart{
+  position:absolute !important;
+  top:16px !important;
+  right:16px !important;
+  z-index:7 !important;
+}
+
+/* kaarthoogte in category-layout gelijk houden */
+.category-main .mp-normal-deal-card,
+.category-content .mp-normal-deal-card,
+#categoryDeals .mp-normal-deal-card,
+.category-deals .mp-normal-deal-card,
+.deal-list .mp-normal-deal-card,
+#dealList .mp-normal-deal-card{
+  width:100% !important;
+}
+
+/* oude MPDealCard cards fallback: als category toch nog .mp-home-meepakker-deal-card zonder .mp-normal gebruikt */
+.category-main .mp-home-meepakker-deal-card:not(.mp-normal-deal-card),
+.category-content .mp-home-meepakker-deal-card:not(.mp-normal-deal-card){
+  position:relative !important;
+  overflow:hidden !important;
+}
+
+/* hover-safe */
+#featuredDeal,
+.mp-featured-highlight-grid,
+.category-winners-grid,
+#dealList,
+.deal-list,
+.mp-clean-deal-list,
+.category-main,
+.category-content{
+  overflow:visible !important;
+}
+
+/* mobiel */
+@media (max-width:620px){
+  .mp-normal-deal-card{
+    min-height:236px !important;
+  }
+
+  .mp-normal-deal-card > .mp-normal-deal-card-cta,
+  .mp-normal-deal-card > .mp-card-cta{
+    right:18px !important;
+    bottom:20px !important;
+    min-width:116px !important;
+    max-width:136px !important;
+    height:42px !important;
+    min-height:42px !important;
+    font-size:13px !important;
+  }
+}

@@ -1675,3 +1675,783 @@ body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-mobile-topbar
 body.mp-deal-detail-page .mp-detail-page.mp-mobile-framework > .mp-demo-banner{
   margin-top:0!important;
 }
+
+
+/* Professional Detail Page v6
+   Budget Thuis choice-deal: geen placeholder plus-kaarten, rustiger detailtekst en geen €0-copy. */
+.mp-v23-benefit-card--choice .mp-v23-benefit-visual{
+  background:linear-gradient(180deg,#ffffff 0%,#f8fbf9 100%) !important;
+}
+
+.mp-v23-benefit-card--choice .mp-v23-benefit-copy h3{
+  font-size:20px !important;
+  line-height:1.08 !important;
+}
+
+.mp-v23-benefit-card--choice .mp-v23-benefit-copy p{
+  font-size:13.5px !important;
+  line-height:1.35 !important;
+}
+
+.mp-v23-summary .mp-dd-summary-line{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  padding:12px 14px !important;
+  border-radius:16px !important;
+  background:#fff !important;
+}
+
+.mp-v23-summary .mp-dd-summary-line span{
+  flex:0 0 32px !important;
+  width:32px !important;
+  height:32px !important;
+  border-radius:999px !important;
+  background:#eef7f3 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.mp-v23-summary .mp-dd-summary-line strong{
+  display:block !important;
+  color:#0b3f37 !important;
+  font-size:13.5px !important;
+  line-height:1.2 !important;
+}
+
+.mp-v23-summary .mp-dd-summary-line em{
+  display:block !important;
+  color:#746b61 !important;
+  font-size:12px !important;
+  font-style:normal !important;
+  line-height:1.2 !important;
+}
+
+.mp-v23-total strong{
+  line-height:1.03 !important;
+  letter-spacing:-.04em !important;
+}
+
+.mp-v23-detail-card--why p{
+  max-width:520px !important;
+}
+
+.mp-v23-detail-card--contract dd{
+  text-align:right !important;
+}
+
+
+/* Professional Detail Page v7
+   Rechter Jouw Meepakker kaart: commerciële samenvatting met prijsregels.
+   Alleen detailpagina; geen wijzigingen aan compacte dealcards. */
+.mp-v23-summary .mp-v23-total strong{
+  display:block !important;
+  max-width:100% !important;
+  color:#2d9299 !important;
+  font-size:42px !important;
+  line-height:1.04 !important;
+  letter-spacing:-.045em !important;
+  word-break:normal !important;
+}
+
+.mp-v23-summary-price-lines{
+  display:grid !important;
+  gap:7px !important;
+  margin-top:16px !important;
+  color:#3f3a33 !important;
+}
+
+.mp-v23-summary-price-lines span{
+  display:block !important;
+  font-size:14.5px !important;
+  line-height:1.35 !important;
+  font-weight:650 !important;
+}
+
+.mp-v23-summary-price-lines span:first-child{
+  color:#0b3f37 !important;
+  font-weight:850 !important;
+}
+
+.mp-advantage-total .mp-v23-summary-price-lines{
+  margin-top:10px !important;
+}
+
+@media (max-width:1180px){
+  .mp-v23-summary .mp-v23-total strong{
+    font-size:36px !important;
+  }
+}
+
+@media (max-width:1023px){
+  .mp-v23-summary .mp-v23-total strong,
+  .mp-advantage-total strong{
+    font-size:28px !important;
+    line-height:1.08 !important;
+  }
+
+  .mp-v23-summary-price-lines span{
+    font-size:13.5px !important;
+  }
+}
+
+
+/* Professional Detail Page v8 - minder herhaling
+   Dezelfde boodschap staat niet meer op elke plek. Rechter kaart focust op conversie. */
+.mp-v23-summary .mp-v23-summary-list{
+  gap:10px !important;
+}
+
+.mp-v23-summary .mp-dd-summary-line{
+  min-height:52px !important;
+}
+
+.mp-v23-summary .mp-v23-total{
+  margin-top:22px !important;
+}
+
+.mp-v23-summary .mp-v23-total strong{
+  font-size:44px !important;
+  line-height:1.02 !important;
+  letter-spacing:-.045em !important;
+}
+
+.mp-v23-summary-price-lines{
+  margin-top:14px !important;
+}
+
+.mp-v23-summary-price-lines span{
+  font-size:14.5px !important;
+  line-height:1.35 !important;
+}
+
+.mp-v23-detail-checks li{
+  line-height:1.25 !important;
+}
+
+@media (max-width:1180px){
+  .mp-v23-summary .mp-v23-total strong{
+    font-size:38px !important;
+  }
+}
+
+
+/* Professional Detail Page v9 - officiële aanbiederbanner
+   De drie eigen voordeelblokken zijn op desktop vervangen door één officiële Daisycon/Budget Thuis banner. */
+.mp-v23-left--official-banner{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:18px !important;
+  justify-content:flex-start !important;
+}
+
+.mp-v23-official-banner-head h1{
+  margin:0 0 8px !important;
+}
+
+.mp-v23-official-banner-head p{
+  max-width:620px !important;
+  margin:0 !important;
+  color:#746b61 !important;
+  font-size:14.5px !important;
+  line-height:1.45 !important;
+  font-weight:600 !important;
+}
+
+.mp-v23-official-banner-link{
+  display:flex !important;
+  width:100% !important;
+  min-height:160px !important;
+  border-radius:28px !important;
+  overflow:hidden !important;
+  background:#f4eadc !important;
+  border:1px solid rgba(222,208,185,.9) !important;
+  box-shadow:0 18px 40px rgba(6,72,61,.075) !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-decoration:none !important;
+}
+
+.mp-v23-official-banner-link img{
+  display:block !important;
+  max-width:100% !important;
+  width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+}
+
+@media (min-width:1024px){
+  .mp-v23-left--official-banner{
+    min-height:100% !important;
+  }
+
+  .mp-v23-official-banner-link{
+    min-height:220px !important;
+    padding:18px !important;
+  }
+}
+
+@media (max-width:1023px){
+  .mp-v23-official-banner-link{
+    min-height:auto !important;
+    border-radius:22px !important;
+  }
+}
+
+
+/* Professional Detail Page v10 - Exact 300x250 Banner Card
+   Niet rekken, niet gokken: officiële banner exact 300x250 in vaste premium card. */
+.mp-v23-left--official-banner{
+  align-items:flex-start !important;
+  gap:18px !important;
+}
+
+.mp-v23-left--official-banner .mp-v23-official-banner-head{
+  width:100% !important;
+  max-width:420px !important;
+}
+
+.mp-v23-left--official-banner .mp-v23-official-banner-head h1{
+  max-width:420px !important;
+}
+
+.mp-v23-left--official-banner .mp-v23-official-banner-head p{
+  max-width:420px !important;
+}
+
+.mp-v23-official-banner-link{
+  width:360px !important;
+  height:310px !important;
+  min-height:310px !important;
+  max-width:360px !important;
+  padding:30px !important;
+  border-radius:28px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:linear-gradient(180deg,#f6ead9 0%,#efe1cf 100%) !important;
+  border:1px solid rgba(214,196,166,.95) !important;
+  box-shadow:0 18px 42px rgba(6,72,61,.08) !important;
+  overflow:hidden !important;
+}
+
+.mp-v23-official-banner-link img{
+  width:300px !important;
+  height:250px !important;
+  min-width:300px !important;
+  min-height:250px !important;
+  max-width:300px !important;
+  max-height:250px !important;
+  object-fit:contain !important;
+  display:block !important;
+  border-radius:16px !important;
+}
+
+@media (min-width:1024px){
+  .mp-v23-official-banner-link{
+    width:360px !important;
+    height:310px !important;
+    min-height:310px !important;
+    padding:30px !important;
+  }
+}
+
+@media (max-width:1023px){
+  .mp-v23-official-banner-link{
+    width:100% !important;
+    max-width:360px !important;
+    height:auto !important;
+    min-height:auto !important;
+    padding:24px !important;
+    margin:0 auto !important;
+  }
+
+  .mp-v23-official-banner-link img{
+    width:300px !important;
+    height:250px !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .mp-v23-left--official-banner .mp-v23-official-banner-head{
+    max-width:100% !important;
+  }
+}
+
+
+/* Professional Detail Page v11 - Master Deal Component
+   Banner uit de top verwijderd. Links = eigen MeerPakkers intro; rechts = conversiegerichte Meepakker-kaart. */
+.mp-v23-left--master-intro{
+  display:flex !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+}
+
+.mp-v23-master-intro-card{
+  width:100% !important;
+  min-height:100% !important;
+  border-radius:34px !important;
+  background:linear-gradient(180deg,#fff8ef 0%,#f5eadc 100%) !important;
+  border:1px solid rgba(222,208,185,.92) !important;
+  box-shadow:0 22px 54px rgba(6,72,61,.075) !important;
+  padding:34px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+  gap:22px !important;
+}
+
+.mp-v23-master-intro-kicker{
+  display:inline-flex !important;
+  width:max-content !important;
+  padding:8px 12px !important;
+  border-radius:999px !important;
+  background:#e8f4ef !important;
+  color:#06483d !important;
+  font-size:12px !important;
+  font-weight:850 !important;
+  letter-spacing:.02em !important;
+}
+
+.mp-v23-master-intro-card h1{
+  margin:0 !important;
+  max-width:650px !important;
+  color:#123c35 !important;
+  font-size:clamp(34px,4.3vw,58px) !important;
+  line-height:.98 !important;
+  letter-spacing:-.055em !important;
+}
+
+.mp-v23-master-intro-subtitle{
+  margin:-8px 0 0 !important;
+  color:#75695c !important;
+  font-size:18px !important;
+  line-height:1.35 !important;
+  font-weight:700 !important;
+}
+
+.mp-v23-master-mini-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:12px !important;
+  margin-top:4px !important;
+}
+
+.mp-v23-master-mini{
+  min-height:118px !important;
+  border-radius:24px !important;
+  background:#fff !important;
+  border:1px solid rgba(222,208,185,.75) !important;
+  padding:18px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+  gap:12px !important;
+}
+
+.mp-v23-master-mini strong{
+  color:#103d36 !important;
+  font-size:17px !important;
+  line-height:1.12 !important;
+  letter-spacing:-.02em !important;
+}
+
+.mp-v23-master-mini span{
+  color:#746b61 !important;
+  font-size:13px !important;
+  line-height:1.32 !important;
+  font-weight:650 !important;
+}
+
+.mp-v23-master-disclaimer{
+  margin:0 !important;
+  color:#7a7065 !important;
+  font-size:13px !important;
+  line-height:1.35 !important;
+  font-weight:650 !important;
+}
+
+.mp-v23-master-secondary{
+  width:max-content !important;
+  min-height:48px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:0 22px !important;
+  border-radius:999px !important;
+  background:#06483d !important;
+  color:#fff !important;
+  text-decoration:none !important;
+  font-weight:900 !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
+}
+
+.mp-v23-summary .mp-v23-total strong{
+  color:#2d9299 !important;
+  font-size:clamp(34px,3.6vw,48px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-.055em !important;
+  max-width:100% !important;
+}
+
+.mp-v23-summary-subline{
+  margin:12px 0 0 !important;
+  color:#123c35 !important;
+  font-size:16px !important;
+  line-height:1.35 !important;
+  font-weight:850 !important;
+}
+
+.mp-v23-summary-price-lines{
+  margin-top:12px !important;
+}
+
+.mp-v23-summary-price-lines span{
+  color:#746b61 !important;
+  font-size:14.5px !important;
+  line-height:1.35 !important;
+  font-weight:750 !important;
+}
+
+.mp-v23-summary .mp-v23-primary{
+  font-weight:950 !important;
+}
+
+@media (max-width:1180px){
+  .mp-v23-master-mini-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .mp-v23-master-mini{
+    min-height:auto !important;
+  }
+}
+
+@media (max-width:1023px){
+  .mp-v23-master-intro-card{
+    padding:24px !important;
+    border-radius:28px !important;
+  }
+
+  .mp-v23-master-intro-card h1{
+    font-size:34px !important;
+  }
+
+  .mp-v23-master-mini-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .mp-v23-master-secondary{
+    width:100% !important;
+  }
+}
+
+
+/* Professional Detail Page v12 - Single Master Card
+   Rechter 'Jouw Meepakker' kaart verwijderd voor de master detail-layout.
+   De MeerPakkers introkaart is nu het enige topblok en pakt de volledige breedte. */
+.mp-v23-top--single-master{
+  display:block !important;
+}
+
+.mp-v23-top--single-master .mp-v23-left--master-intro{
+  width:100% !important;
+  max-width:100% !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-intro-card{
+  width:100% !important;
+  min-height:420px !important;
+  padding:42px !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-intro-card h1{
+  max-width:860px !important;
+  font-size:clamp(42px,5.2vw,74px) !important;
+  line-height:.96 !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-intro-subtitle{
+  font-size:20px !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  max-width:940px !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-mini{
+  min-height:128px !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-secondary{
+  min-height:54px !important;
+  padding:0 26px !important;
+}
+
+@media (max-width:1180px){
+  .mp-v23-top--single-master .mp-v23-master-mini-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  }
+
+  .mp-v23-top--single-master .mp-v23-master-intro-card h1{
+    font-size:52px !important;
+  }
+}
+
+@media (max-width:900px){
+  .mp-v23-top--single-master .mp-v23-master-mini-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .mp-v23-top--single-master .mp-v23-master-intro-card{
+    min-height:auto !important;
+    padding:26px !important;
+  }
+
+  .mp-v23-top--single-master .mp-v23-master-intro-card h1{
+    font-size:34px !important;
+  }
+}
+
+
+/* Professional Detail Page v13 - hard duplicate summary removal
+   Safety: the old Jouw Meepakker summary must never appear in the single-master detail layout. */
+.mp-v23-top--single-master .mp-v23-summary{
+  display:none !important;
+}
+
+.mp-v23-top--single-master{
+  grid-template-columns:1fr !important;
+}
+
+.mp-v23-top--single-master .mp-v23-master-intro-card{
+  max-width:100% !important;
+}
+
+/* Professional Detail Page v14 - real single master guard */
+.mp-v23-shell .mp-v23-top--single-master > .mp-v23-summary{
+  display:none !important;
+}
+
+
+/* Professional Detail Page v15 - Clean Details
+   Details ondersteunen de topkaart en herhalen de verkoopregels niet opnieuw. */
+.mp-v23-detail-card--why .mp-v23-detail-why-copy h3{
+  max-width:420px !important;
+}
+
+.mp-v23-detail-card--why .mp-v23-detail-why-copy p{
+  max-width:500px !important;
+  line-height:1.55 !important;
+}
+
+.mp-v23-detail-checks li{
+  font-size:14px !important;
+  line-height:1.28 !important;
+}
+
+.mp-v23-detail-card--contract dd{
+  max-width:160px !important;
+}
+
+
+/* SEO Cluster v1 - interne uitleglinks op detailpagina */
+.mp-v23-seo-support{margin-top:24px!important;border-radius:30px!important;background:#fffaf3!important;border:1px solid rgba(222,208,185,.85)!important;padding:28px!important;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(260px,420px)!important;gap:22px!important;align-items:center!important}.mp-v23-seo-support span{display:inline-flex!important;width:max-content!important;padding:7px 11px!important;border-radius:999px!important;background:#e8f4ef!important;color:#06483d!important;font-size:12px!important;font-weight:900!important;margin-bottom:12px!important}.mp-v23-seo-support h2{margin:0 0 8px!important;color:#123c35!important;font-size:28px!important;line-height:1.08!important;letter-spacing:-.035em!important}.mp-v23-seo-support p{margin:0!important;color:#75695c!important;font-size:15px!important;line-height:1.5!important;font-weight:650!important}.mp-v23-seo-support-links{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important}.mp-v23-seo-support-links a{display:block!important;padding:13px 14px!important;border-radius:16px!important;background:#f6ead9!important;color:#123c35!important;text-decoration:none!important;font-size:13.5px!important;line-height:1.25!important;font-weight:850!important}@media(max-width:900px){.mp-v23-seo-support{grid-template-columns:1fr!important;padding:22px!important}.mp-v23-seo-support-links{grid-template-columns:1fr!important}}
+
+
+/* Budget Thuis provider description v1 */
+.mp-v23-detail-card--provider-description{
+  margin-top:22px !important;
+  display:grid !important;
+  grid-template-columns:auto minmax(0,1fr) !important;
+  gap:22px !important;
+  align-items:center !important;
+  padding:34px !important;
+  border-radius:28px !important;
+  background:#fffaf3 !important;
+  border:1px solid rgba(222,208,185,.85) !important;
+}
+
+.mp-v23-detail-card--provider-description .mp-v23-detail-why-copy h3{
+  margin:0 0 10px !important;
+  color:#123c35 !important;
+  font-size:28px !important;
+  line-height:1.08 !important;
+  letter-spacing:-.035em !important;
+}
+
+.mp-v23-detail-card--provider-description .mp-v23-detail-why-copy p{
+  margin:0 !important;
+  max-width:820px !important;
+  color:#4f473e !important;
+  font-size:15.5px !important;
+  line-height:1.62 !important;
+  font-weight:560 !important;
+}
+
+@media (max-width:700px){
+  .mp-v23-detail-card--provider-description{
+    grid-template-columns:1fr !important;
+    padding:24px !important;
+  }
+}
+
+
+/* conditions-no-symbols-v1
+   Professionelere detailpagina: geen emoji/symbooltjes in Actie in het kort/details. */
+.mp-v23-detail-icon,
+.mp-v23-why-visual,
+.mp-v23-why-main,
+.mp-v23-why-badge{
+  display:none !important;
+}
+
+.mp-v23-detail-card--why,
+.mp-v23-detail-card--provider-description{
+  grid-template-columns:minmax(0,1fr) minmax(260px,420px) !important;
+}
+
+.mp-v23-detail-card--provider-description{
+  grid-template-columns:minmax(0,1fr) !important;
+}
+
+.mp-v23-checks,
+.mp-v23-detail-checks{
+  list-style:none !important;
+  padding-left:0 !important;
+}
+
+.mp-v23-checks li,
+.mp-v23-detail-checks li{
+  position:relative !important;
+  padding-left:0 !important;
+}
+
+.mp-v23-checks li::before,
+.mp-v23-detail-checks li::before{
+  content:none !important;
+  display:none !important;
+}
+
+.mp-detail-benefit > span,
+.mp-dd-summary-line > span{
+  display:none !important;
+}
+
+.mp-detail-benefit{
+  grid-template-columns:1fr !important;
+}
+
+.mp-dd-summary-line{
+  grid-template-columns:1fr !important;
+}
+
+/* Detail Notice + Benefit Color Restore v1
+   Herstelt alleen de detailpagina:
+   1) controle-melding uitlijnen met de grote masterkaart
+   2) Wat-krijg-je/mini voordeelkaarten weer zachte MeerPakkers kleur geven */
+body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner{
+  width:min(1160px, calc(100vw - 48px)) !important;
+  max-width:min(1160px, calc(100vw - 48px)) !important;
+  margin:26px auto 22px !important;
+  padding:0 !important;
+  box-sizing:border-box !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:4px !important;
+  color:#06483d !important;
+}
+
+body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner strong{
+  color:#06483d !important;
+  font-weight:950 !important;
+}
+
+body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner span{
+  color:#173f37 !important;
+}
+
+body.mp-deal-detail-page .mp-v23-master-mini{
+  background:
+    radial-gradient(circle at 18% 8%, rgba(6,72,61,.08), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#f6eadb 100%) !important;
+  border:1px solid rgba(214,196,166,.85) !important;
+  box-shadow:0 12px 26px rgba(6,72,61,.045) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-master-mini:nth-child(2){
+  background:
+    radial-gradient(circle at 18% 8%, rgba(34,130,89,.10), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#eef7ed 100%) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-master-mini:nth-child(3){
+  background:
+    radial-gradient(circle at 18% 8%, rgba(16,128,150,.10), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#eef6f8 100%) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-benefit-card{
+  background:
+    radial-gradient(circle at 18% 8%, rgba(6,72,61,.08), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#f6eadb 100%) !important;
+  border:1px solid rgba(214,196,166,.85) !important;
+  box-shadow:0 14px 34px rgba(6,72,61,.055) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-benefit-card--gift,
+body.mp-deal-detail-page .mp-v23-benefit-card--choice:nth-child(2){
+  background:
+    radial-gradient(circle at 18% 8%, rgba(34,130,89,.10), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#eef7ed 100%) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-benefit-card--cashback,
+body.mp-deal-detail-page .mp-v23-benefit-card--product,
+body.mp-deal-detail-page .mp-v23-benefit-card--choice:nth-child(3){
+  background:
+    radial-gradient(circle at 18% 8%, rgba(16,128,150,.10), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#eef6f8 100%) !important;
+}
+
+body.mp-deal-detail-page .mp-v23-benefit-card--discount,
+body.mp-deal-detail-page .mp-v23-benefit-card--choice:nth-child(1){
+  background:
+    radial-gradient(circle at 18% 8%, rgba(191,129,45,.11), transparent 38%),
+    linear-gradient(145deg,#fffdf8 0%,#f6eadb 100%) !important;
+}
+
+@media(max-width:1023px){
+  body.mp-deal-detail-page .mp-detail-page > .mp-demo-banner{
+    width:min(100% - 32px, 720px) !important;
+    max-width:min(100% - 32px, 720px) !important;
+    margin:14px auto 16px !important;
+    flex-wrap:wrap !important;
+  }
+}
+
+/* Budget Detail Copy + CTA Alignment v1
+   1) voordeelkaarttekst mag op twee regels
+   2) primaire CTA rechts in de masterkaart
+   3) prijsveld gebruikt data: vanaf €18,50 p/m */
+body.mp-deal-detail-page .mp-v23-master-mini span br{
+  display:block !important;
+}
+
+body.mp-deal-detail-page .mp-v23-master-secondary{
+  align-self:flex-end !important;
+  margin-left:auto !important;
+  margin-right:0 !important;
+}
+
+@media(max-width:720px){
+  body.mp-deal-detail-page .mp-v23-master-secondary{
+    align-self:stretch !important;
+    margin-left:0 !important;
+    width:100% !important;
+    justify-content:center !important;
+  }
+}
+

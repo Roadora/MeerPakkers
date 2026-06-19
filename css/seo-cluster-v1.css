@@ -1,0 +1,1197 @@
+
+.mp-seo-page{min-height:100vh;background:#f6ead9;color:#123c35;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mp-seo-main{width:min(1120px,calc(100% - 36px));margin:0 auto;padding:42px 0 72px}.mp-seo-breadcrumb{width:min(1120px,calc(100% - 36px));margin:0 auto;padding-top:24px;color:#75695c;font-size:13px;font-weight:700}.mp-seo-breadcrumb a{color:#06483d;text-decoration:none}.mp-seo-hero{border-radius:34px;background:linear-gradient(180deg,#fff8ef 0%,#f3e4d1 100%);border:1px solid rgba(214,196,166,.9);box-shadow:0 22px 54px rgba(6,72,61,.075);padding:42px;margin-bottom:26px}.mp-seo-kicker{display:inline-flex;width:max-content;padding:8px 13px;border-radius:999px;background:#e8f4ef;color:#06483d;font-size:12px;font-weight:900;letter-spacing:.02em;margin-bottom:18px}.mp-seo-hero h1{margin:0;max-width:850px;color:#123c35;font-size:clamp(36px,5vw,68px);line-height:.98;letter-spacing:-.055em}.mp-seo-hero p{max-width:760px;margin:18px 0 0;color:#75695c;font-size:18px;line-height:1.55;font-weight:650}.mp-seo-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:24px;align-items:start}.mp-seo-content,.mp-seo-side,.mp-seo-bottom{border-radius:28px;background:#fffaf3;border:1px solid rgba(222,208,185,.85);box-shadow:0 16px 40px rgba(6,72,61,.055)}.mp-seo-content{padding:34px}.mp-seo-content h2{margin:34px 0 12px;color:#123c35;font-size:28px;line-height:1.08;letter-spacing:-.035em}.mp-seo-content h2:first-child{margin-top:0}.mp-seo-content p,.mp-seo-content li{color:#4f473e;font-size:16px;line-height:1.7;font-weight:560}.mp-seo-side{padding:24px;position:sticky;top:96px}.mp-seo-side h2{margin:0 0 10px;color:#123c35;font-size:24px;line-height:1.1;letter-spacing:-.035em}.mp-seo-side p{margin:0 0 18px;color:#75695c;font-size:14px;line-height:1.5;font-weight:650}.mp-seo-cta{display:flex;align-items:center;justify-content:center;min-height:50px;width:100%;border-radius:999px;background:#06483d;color:#fff;text-decoration:none;font-weight:900;box-shadow:0 14px 28px rgba(6,72,61,.18)}.mp-seo-note{margin-top:22px;padding:16px;border-radius:18px;background:#f1f8f5;color:#31554e;font-size:13px;line-height:1.5;font-weight:650}.mp-seo-bottom{margin-top:24px;padding:28px}.mp-seo-bottom h2{margin:0 0 14px;font-size:26px;letter-spacing:-.035em}.mp-seo-bottom-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mp-seo-bottom-grid a{display:block;min-height:74px;padding:16px;border-radius:18px;background:#f6ead9;color:#123c35;text-decoration:none;font-weight:850;line-height:1.28}@media(max-width:900px){.mp-seo-main{width:min(100% - 24px,720px);padding:24px 0 54px}.mp-seo-hero,.mp-seo-content{padding:24px;border-radius:26px}.mp-seo-grid{grid-template-columns:1fr}.mp-seo-side{position:static}.mp-seo-bottom-grid{grid-template-columns:1fr}}
+
+/* Budget Thuis SEO Cluster v1 */
+.mp-uitleg-extra-cluster,
+.mp-budget-seo-cluster{
+  width:min(1120px, calc(100% - 36px));
+  margin:28px auto;
+  padding:22px;
+  border:1px solid rgba(222,208,185,.85);
+  border-radius:24px;
+  background:linear-gradient(145deg,#fffdf8 0%,#f6eadb 100%);
+  box-shadow:0 14px 34px rgba(6,72,61,.055);
+}
+
+.mp-uitleg-extra-cluster h2,
+.mp-budget-seo-cluster h2{
+  margin:0 0 8px;
+  color:#06483d;
+}
+
+.mp-uitleg-extra-cluster p,
+.mp-budget-seo-cluster p{
+  margin:0 0 16px;
+  color:#5f554b;
+  font-weight:700;
+}
+
+.mp-uitleg-extra-links,
+.mp-v23-seo-support-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.mp-uitleg-extra-links a,
+.mp-v23-seo-support-links a{
+  display:inline-flex;
+  align-items:center;
+  min-height:38px;
+  padding:0 14px;
+  border-radius:999px;
+  background:#fffdf8;
+  border:1px solid rgba(222,208,185,.9);
+  color:#06483d;
+  text-decoration:none;
+  font-weight:900;
+}
+
+/* Uitleg Logo + Normal Link Restore v1
+   Nieuwe SEO/uitlegpagina's moeten op mobiel dezelfde MeerPakkers topbar krijgen
+   en geen kale paarse browserlinks tonen. */
+@media (max-width:760px){
+  body.mp-uitleg-page-body{
+    background:#f7efe4 !important;
+    color:#073f36 !important;
+    overflow-x:hidden !important;
+  }
+
+  body.mp-uitleg-page-body > .mp-seo-breadcrumb{
+    display:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-uitleg-page .mp-mobile-top-header,
+  body.mp-uitleg-page-body main.mp-uitleg-page .mp-mobile-top-header{
+    display:grid !important;
+    grid-template-columns:40px minmax(0,1fr) 40px !important;
+    align-items:center !important;
+    gap:8px !important;
+    width:calc(100% - 24px) !important;
+    max-width:420px !important;
+    min-height:86px !important;
+    margin:10px auto 12px !important;
+    padding:0 12px !important;
+    border-radius:22px !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.88) !important;
+    box-shadow:0 14px 32px rgba(6,72,61,.07) !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-back,
+  body.mp-uitleg-page-body .mp-mobile-heart-link{
+    width:38px !important;
+    height:38px !important;
+    border-radius:13px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.9) !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+    font-weight:950 !important;
+    box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-lockup{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    min-width:0 !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-logo{
+    width:74px !important;
+    height:50px !important;
+    flex:0 0 74px !important;
+    display:block !important;
+    overflow:hidden !important;
+    text-indent:-9999px !important;
+    background-image:url('/assets/brand/mpplus-logo-transparent-v1.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:center !important;
+    background-size:contain !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-copy{
+    display:block !important;
+    min-width:0 !important;
+    line-height:1 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-lines{
+    display:block !important;
+    color:#c9952d !important;
+    font-size:12px !important;
+    line-height:1.02 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-name{
+    display:block !important;
+    color:#06483d !important;
+    font-size:20px !important;
+    line-height:1.02 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-uitleg-breadcrumb a,
+  body.mp-uitleg-page-body .mp-uitleg-content a,
+  body.mp-uitleg-page-body .mp-uitleg-link-card a,
+  body.mp-uitleg-page-body .mp-uitleg-faq a{
+    color:#06483d !important;
+    text-decoration:none !important;
+    font-weight:900 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-uitleg-breadcrumb a{
+    background:rgba(255,253,248,.86) !important;
+    border:1px solid rgba(222,208,185,.75) !important;
+    border-radius:999px !important;
+    padding:5px 9px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+  }
+
+  body.mp-uitleg-page-body .mp-uitleg-breadcrumb span{
+    color:#8b7d6f !important;
+  }
+
+  body.mp-uitleg-page-body .mp-demo-banner a{
+    color:#06483d !important;
+    text-decoration:none !important;
+  }
+}
+
+/* Uitleg Hub Mobile Topbar Fix v1
+   De /uitleg/ hub krijgt dezelfde mobiele MeerPakkers topbar als uitleg-artikelen. */
+@media (max-width:760px){
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar{
+    display:grid !important;
+    grid-template-columns:40px minmax(0,1fr) 40px !important;
+    align-items:center !important;
+    gap:8px !important;
+    width:calc(100% - 24px) !important;
+    max-width:420px !important;
+    min-height:86px !important;
+    margin:10px auto 12px !important;
+    padding:0 12px !important;
+    border-radius:22px !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.88) !important;
+    box-shadow:0 14px 32px rgba(6,72,61,.07) !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-back,
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-heart-link{
+    width:38px !important;
+    height:38px !important;
+    border-radius:13px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.9) !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+    font-weight:950 !important;
+    box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-brand-lockup{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    min-width:0 !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-brand-logo{
+    width:74px !important;
+    height:50px !important;
+    flex:0 0 74px !important;
+    display:block !important;
+    overflow:hidden !important;
+    text-indent:-9999px !important;
+    background-image:url('/assets/brand/mpplus-logo-transparent-v1.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:center !important;
+    background-size:contain !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-brand-lines{
+    display:block !important;
+    color:#c9952d !important;
+    font-size:12px !important;
+    line-height:1.02 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar .mp-mobile-brand-name{
+    display:block !important;
+    color:#06483d !important;
+    font-size:20px !important;
+    line-height:1.02 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+}
+
+@media (min-width:761px){
+  body.mp-uitleg-hub-body > .mp-mobile-top-header.mp-uitleg-hub-topbar{
+    display:none !important;
+  }
+}
+
+/* Uitleg Hub Exact Mobile Topbar v2
+   Laat /uitleg/ exact hetzelfde mobiele topbar-contract gebruiken als de rest.
+   Overschrijft de eerdere hub-only logo/heart afwijking. */
+@media (max-width:760px){
+  body.mp-uitleg-hub-body > .mp-mobile-top-header,
+  body.mp-uitleg-hub-body > .mp-mobile-topbar-unified-v3{
+    display:grid !important;
+    grid-template-columns:var(--mp-topbar-side,40px) minmax(0,1fr) var(--mp-topbar-side,40px) !important;
+    align-items:center !important;
+    gap:var(--mp-topbar-gap,8px) !important;
+    width:100% !important;
+    max-width:none !important;
+    min-height:var(--mp-topbar-height,92px) !important;
+    height:var(--mp-topbar-height,92px) !important;
+    margin:0 0 14px !important;
+    padding-left:16px !important;
+    padding-right:16px !important;
+    border-radius:0 !important;
+    background:#f7efe4 !important;
+    border:0 !important;
+    border-bottom:1px solid rgba(222,208,185,.78) !important;
+    box-shadow:none !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-back{
+    grid-column:1 !important;
+    justify-self:start !important;
+    align-self:center !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-brand-lockup{
+    grid-column:2 !important;
+    justify-self:center !important;
+    align-self:center !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:var(--mp-topbar-gap,8px) !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    color:var(--mp-topbar-green,#06483d) !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-heart-link{
+    grid-column:3 !important;
+    justify-self:end !important;
+    align-self:center !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-back,
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-heart-link{
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+    min-height:38px !important;
+    max-width:38px !important;
+    max-height:38px !important;
+    border-radius:13px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.9) !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+    font-weight:950 !important;
+    box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+    font-size:20px !important;
+    line-height:1 !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-brand-logo{
+    width:var(--mp-topbar-logo-w,140px) !important;
+    height:var(--mp-topbar-logo-h,86px) !important;
+    flex:0 0 var(--mp-topbar-logo-w,140px) !important;
+    display:block !important;
+    overflow:hidden !important;
+    text-indent:-9999px !important;
+    background-image:url('/assets/brand/mpplus-logo-transparent-v1.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:center !important;
+    background-size:contain !important;
+    margin-left:var(--mp-topbar-logo-overlap,-25px) !important;
+    margin-right:0 !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-brand-copy{
+    display:block !important;
+    min-width:0 !important;
+    margin-left:-26px !important;
+    line-height:1 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-brand-lines{
+    display:block !important;
+    color:var(--mp-topbar-gold,#c9952d) !important;
+    font-size:var(--mp-topbar-slogan-size,15px) !important;
+    line-height:.98 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-brand-name{
+    display:block !important;
+    color:var(--mp-topbar-green,#06483d) !important;
+    font-size:var(--mp-topbar-name-size,24px) !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-saved-count-v50{
+    position:absolute !important;
+    top:-7px !important;
+    right:-7px !important;
+    min-width:18px !important;
+    height:18px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#c9952d !important;
+    color:#fffdf8 !important;
+    font-size:11px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+  }
+
+  body.mp-uitleg-hub-body > .mp-mobile-top-header .mp-mobile-heart-link{
+    position:relative !important;
+  }
+}
+
+/* Budget Related Explanation Block Polish v1
+   Maakt het blok 'Budget Thuis Internet & TV beter begrijpen' professioneel:
+   kaartstijl, subtiele hiërarchie en duidelijke link-pills. */
+.mp-budget-seo-cluster,
+.mp-v23-seo-support.mp-budget-seo-cluster{
+  width:min(1120px, calc(100% - 36px)) !important;
+  margin:28px auto 34px !important;
+  padding:24px !important;
+  border-radius:26px !important;
+  border:1px solid rgba(222,208,185,.9) !important;
+  background:
+    radial-gradient(circle at 92% 14%, rgba(6,72,61,.08), transparent 30%),
+    linear-gradient(145deg,#fffdf8 0%,#f6eadb 100%) !important;
+  box-shadow:0 18px 42px rgba(6,72,61,.075) !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(280px,420px) !important;
+  gap:22px !important;
+  align-items:center !important;
+  box-sizing:border-box !important;
+}
+
+.mp-budget-seo-cluster > div:first-child span,
+.mp-v23-seo-support.mp-budget-seo-cluster > div:first-child span{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:max-content !important;
+  max-width:100% !important;
+  min-height:30px !important;
+  padding:0 12px !important;
+  border-radius:999px !important;
+  background:#eaf4ec !important;
+  color:#06483d !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+  margin:0 0 12px !important;
+}
+
+.mp-budget-seo-cluster h2,
+.mp-v23-seo-support.mp-budget-seo-cluster h2{
+  margin:0 0 10px !important;
+  max-width:620px !important;
+  color:#06483d !important;
+  font-size:28px !important;
+  line-height:1.08 !important;
+  letter-spacing:-.55px !important;
+  font-weight:950 !important;
+}
+
+.mp-budget-seo-cluster p,
+.mp-v23-seo-support.mp-budget-seo-cluster p{
+  margin:0 !important;
+  max-width:640px !important;
+  color:#5f554b !important;
+  font-size:15.5px !important;
+  line-height:1.45 !important;
+  font-weight:750 !important;
+}
+
+.mp-budget-seo-cluster .mp-v23-seo-support-links,
+.mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:10px !important;
+  align-items:stretch !important;
+  margin:0 !important;
+}
+
+.mp-budget-seo-cluster .mp-v23-seo-support-links a,
+.mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links a{
+  position:relative !important;
+  min-height:44px !important;
+  padding:0 42px 0 16px !important;
+  border-radius:999px !important;
+  background:#fffdf8 !important;
+  border:1px solid rgba(222,208,185,.95) !important;
+  color:#06483d !important;
+  box-shadow:0 10px 22px rgba(6,72,61,.045) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  text-decoration:none !important;
+  font-size:14.5px !important;
+  line-height:1.16 !important;
+  font-weight:950 !important;
+  box-sizing:border-box !important;
+}
+
+.mp-budget-seo-cluster .mp-v23-seo-support-links a::after,
+.mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links a::after{
+  content:"›" !important;
+  position:absolute !important;
+  right:16px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  color:#c9952d !important;
+  font-size:22px !important;
+  line-height:1 !important;
+  font-weight:950 !important;
+}
+
+.mp-budget-seo-cluster .mp-v23-seo-support-links a:hover,
+.mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links a:hover{
+  transform:translateY(-1px) !important;
+  border-color:rgba(201,149,45,.55) !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.075) !important;
+}
+
+@media(max-width:760px){
+  .mp-budget-seo-cluster,
+  .mp-v23-seo-support.mp-budget-seo-cluster{
+    width:calc(100% - 28px) !important;
+    margin:22px auto 28px !important;
+    padding:20px !important;
+    border-radius:24px !important;
+    display:block !important;
+  }
+
+  .mp-budget-seo-cluster > div:first-child span,
+  .mp-v23-seo-support.mp-budget-seo-cluster > div:first-child span{
+    min-height:28px !important;
+    margin-bottom:12px !important;
+    font-size:11.5px !important;
+  }
+
+  .mp-budget-seo-cluster h2,
+  .mp-v23-seo-support.mp-budget-seo-cluster h2{
+    font-size:24px !important;
+    line-height:1.08 !important;
+    margin-bottom:10px !important;
+  }
+
+  .mp-budget-seo-cluster p,
+  .mp-v23-seo-support.mp-budget-seo-cluster p{
+    font-size:14.5px !important;
+    line-height:1.42 !important;
+    margin-bottom:16px !important;
+  }
+
+  .mp-budget-seo-cluster .mp-v23-seo-support-links,
+  .mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links{
+    gap:9px !important;
+  }
+
+  .mp-budget-seo-cluster .mp-v23-seo-support-links a,
+  .mp-v23-seo-support.mp-budget-seo-cluster .mp-v23-seo-support-links a{
+    width:100% !important;
+    min-height:42px !important;
+    padding:0 38px 0 14px !important;
+    font-size:13.5px !important;
+  }
+}
+
+/* Uitleg Article Exact Mobile Topbar v1
+   Uitleg-artikelpagina's gebruiken dezelfde mobiele topbar als de rest.
+   Overschrijft de oude ronde uitleg-card-topbar zonder content te wijzigen. */
+@media (max-width:760px){
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header,
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-topbar-unified-v3,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-topbar-unified-v3{
+    display:grid !important;
+    grid-template-columns:var(--mp-topbar-side,40px) minmax(0,1fr) var(--mp-topbar-side,40px) !important;
+    align-items:center !important;
+    gap:var(--mp-topbar-gap,8px) !important;
+    width:100% !important;
+    max-width:none !important;
+    min-height:var(--mp-topbar-height,92px) !important;
+    height:var(--mp-topbar-height,92px) !important;
+    max-height:var(--mp-topbar-height,92px) !important;
+    margin:0 0 18px !important;
+    padding:0 !important;
+    border-radius:0 !important;
+    background:#f7efe4 !important;
+    border:0 !important;
+    border-bottom:1px solid rgba(222,208,185,.78) !important;
+    box-shadow:none !important;
+    box-sizing:border-box !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-back,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-back{
+    grid-column:1 !important;
+    justify-self:start !important;
+    align-self:center !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lockup,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lockup{
+    grid-column:2 !important;
+    justify-self:center !important;
+    align-self:center !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    height:var(--mp-topbar-height,92px) !important;
+    min-height:var(--mp-topbar-height,92px) !important;
+    max-height:var(--mp-topbar-height,92px) !important;
+    margin:0 !important;
+    padding:0 !important;
+    gap:0 !important;
+    transform:none !important;
+    text-decoration:none !important;
+    color:inherit !important;
+    overflow:visible !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-heart-link,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-heart-link{
+    grid-column:3 !important;
+    justify-self:end !important;
+    align-self:center !important;
+    position:relative !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header > .mp-mobile-heart-link,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header > .mp-mobile-back,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header > .mp-mobile-heart-link{
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+    min-height:40px !important;
+    max-width:40px !important;
+    max-height:40px !important;
+    margin:0 !important;
+    padding:0 !important;
+    border-radius:14px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.9) !important;
+    color:#06483d !important;
+    text-decoration:none !important;
+    font-size:20px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-logo,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-logo{
+    display:block !important;
+    width:var(--mp-topbar-logo-w,140px) !important;
+    height:var(--mp-topbar-logo-h,86px) !important;
+    min-width:var(--mp-topbar-logo-w,140px) !important;
+    max-width:var(--mp-topbar-logo-w,140px) !important;
+    flex:0 0 var(--mp-topbar-logo-w,140px) !important;
+    margin:0 var(--mp-topbar-logo-overlap,-25px) 0 0 !important;
+    padding:0 !important;
+    background-image:url('/assets/brand/mpplus-logo-balanced-v12.png') !important;
+    background-size:100% auto !important;
+    background-repeat:no-repeat !important;
+    background-position:center right !important;
+    background-color:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+    text-indent:-9999px !important;
+    overflow:hidden !important;
+    box-sizing:border-box !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-copy,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-copy{
+    display:block !important;
+    flex:0 1 auto !important;
+    min-width:0 !important;
+    max-width:128px !important;
+    margin:0 !important;
+    padding:0 !important;
+    transform:none !important;
+    line-height:1 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lines,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lines{
+    display:block !important;
+    color:var(--mp-topbar-gold,#c9952d) !important;
+    font-size:var(--mp-topbar-slogan-size,15px) !important;
+    line-height:.98 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-name,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-name{
+    display:block !important;
+    color:var(--mp-topbar-green,#06483d) !important;
+    font-size:var(--mp-topbar-name-size,24px) !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    text-decoration:none !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-saved-count-v50,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-saved-count-v50{
+    position:absolute !important;
+    top:-7px !important;
+    right:-7px !important;
+    min-width:18px !important;
+    height:18px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#c9952d !important;
+    color:#fffdf8 !important;
+    font-size:11px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+  }
+}
+
+/* Uitleg Mobile Topbar Right Clearance Fix v1
+   De uitleg-topbar gebruikte net te veel logo/copy-breedte.
+   Kleine veilige correctie zodat hartje + teller rechts niet meer afsnijden. */
+@media (max-width:760px){
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header,
+  body.mp-uitleg-page-body > .mp-mobile-top-header{
+    grid-template-columns:40px minmax(0,1fr) 44px !important;
+    padding-left:8px !important;
+    padding-right:8px !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lockup,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-lockup,
+  body.mp-uitleg-page-body > .mp-mobile-top-header .mp-mobile-brand-lockup{
+    transform:translateX(-5px) !important;
+    max-width:calc(100vw - 104px) !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-logo,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-logo,
+  body.mp-uitleg-page-body > .mp-mobile-top-header .mp-mobile-brand-logo{
+    width:126px !important;
+    min-width:126px !important;
+    max-width:126px !important;
+    flex-basis:126px !important;
+    margin-right:-23px !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-copy,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-brand-copy,
+  body.mp-uitleg-page-body > .mp-mobile-top-header .mp-mobile-brand-copy{
+    max-width:118px !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-mobile-heart-link,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-mobile-heart-link,
+  body.mp-uitleg-page-body > .mp-mobile-top-header .mp-mobile-heart-link{
+    justify-self:end !important;
+    margin-right:0 !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body main.mp-uitleg-page > .mp-mobile-top-header .mp-saved-count-v50,
+  body.mp-uitleg-page-body .mp-uitleg-page > .mp-mobile-top-header .mp-saved-count-v50,
+  body.mp-uitleg-page-body > .mp-mobile-top-header .mp-saved-count-v50{
+    right:-5px !important;
+  }
+}
+
+/* Live Mobile Topbar Logo Polish v1
+   Kleine veilige polish op bestaande werkende topbar.
+   Geen component-refactor. Doel: logo/tekst niet in elkaar en hartje rechts vrij. */
+@media (max-width:760px){
+  .mp-mobile-top-header{
+    grid-template-columns:40px minmax(0,1fr) 40px !important;
+    gap:8px !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    overflow:visible !important;
+  }
+
+  .mp-mobile-brand-lockup{
+    justify-self:center !important;
+    max-width:calc(100vw - 104px) !important;
+    transform:none !important;
+    overflow:visible !important;
+  }
+
+  .mp-mobile-brand-logo{
+    width:126px !important;
+    min-width:126px !important;
+    max-width:126px !important;
+    flex-basis:126px !important;
+    height:78px !important;
+    margin-right:-18px !important;
+    background-size:contain !important;
+    background-position:center right !important;
+  }
+
+  .mp-mobile-brand-copy{
+    max-width:116px !important;
+    min-width:0 !important;
+    line-height:1 !important;
+    transform:none !important;
+  }
+
+  .mp-mobile-brand-lines{
+    font-size:13px !important;
+    line-height:.98 !important;
+  }
+
+  .mp-mobile-brand-name{
+    font-size:21px !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+  }
+
+  .mp-mobile-heart-link,
+  .mp-mobile-heart-button{
+    justify-self:end !important;
+    margin-right:0 !important;
+    overflow:visible !important;
+  }
+
+  .mp-saved-count-v50,
+  .mp-mobile-heart-link .mp-saved-count-v50,
+  .mp-mobile-heart-button .mp-saved-count-v50{
+    right:-5px !important;
+  }
+}
+
+/* Uitleg Mobile Topbar Category Match v1
+   Doel: uitleg-topbar exact gelijk trekken met categorie-topbar.
+   Geen refactor, alleen bestaande mobiele topbar visueel gelijkzetten. */
+@media (max-width:760px){
+  body.mp-uitleg-page-body .mp-mobile-top-header,
+  body.mp-uitleg-hub-body .mp-mobile-top-header,
+  body.mp-seo-page .mp-mobile-top-header{
+    display:grid !important;
+    grid-template-columns:40px minmax(0,1fr) 40px !important;
+    align-items:center !important;
+    gap:8px !important;
+    width:100% !important;
+    height:92px !important;
+    min-height:92px !important;
+    max-height:92px !important;
+    margin:0 0 18px !important;
+    padding:0 !important;
+    overflow:visible !important;
+    background:#f7efe4 !important;
+    border-bottom:1px solid rgba(222,208,185,.78) !important;
+    box-shadow:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-back,
+  body.mp-uitleg-page-body .mp-mobile-heart-link,
+  body.mp-uitleg-page-body .mp-mobile-heart-button,
+  body.mp-uitleg-hub-body .mp-mobile-back,
+  body.mp-uitleg-hub-body .mp-mobile-heart-link,
+  body.mp-uitleg-hub-body .mp-mobile-heart-button,
+  body.mp-seo-page .mp-mobile-back,
+  body.mp-seo-page .mp-mobile-heart-link,
+  body.mp-seo-page .mp-mobile-heart-button{
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+    min-height:40px !important;
+    max-width:40px !important;
+    max-height:40px !important;
+    margin:0 !important;
+    padding:0 !important;
+    border-radius:14px !important;
+    background:#fffdf8 !important;
+    border:1px solid rgba(222,208,185,.9) !important;
+    color:#06483d !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+    position:relative !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-lockup,
+  body.mp-uitleg-hub-body .mp-mobile-brand-lockup,
+  body.mp-seo-page .mp-mobile-brand-lockup{
+    grid-column:2 !important;
+    justify-self:center !important;
+    align-self:center !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:100% !important;
+    height:92px !important;
+    min-height:92px !important;
+    max-height:92px !important;
+    margin:0 !important;
+    padding:0 !important;
+    gap:0 !important;
+    transform:none !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-logo,
+  body.mp-uitleg-hub-body .mp-mobile-brand-logo,
+  body.mp-seo-page .mp-mobile-brand-logo{
+    display:block !important;
+    width:126px !important;
+    min-width:126px !important;
+    max-width:126px !important;
+    flex:0 0 126px !important;
+    height:78px !important;
+    min-height:78px !important;
+    max-height:78px !important;
+    margin:0 -18px 0 0 !important;
+    padding:0 !important;
+    background-size:contain !important;
+    background-repeat:no-repeat !important;
+    background-position:center right !important;
+    border:0 !important;
+    box-shadow:none !important;
+    transform:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-copy,
+  body.mp-uitleg-hub-body .mp-mobile-brand-copy,
+  body.mp-seo-page .mp-mobile-brand-copy{
+    display:block !important;
+    flex:0 1 auto !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:116px !important;
+    margin:0 !important;
+    padding:0 !important;
+    line-height:1 !important;
+    transform:none !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-lines,
+  body.mp-uitleg-hub-body .mp-mobile-brand-lines,
+  body.mp-seo-page .mp-mobile-brand-lines{
+    display:block !important;
+    color:#c9952d !important;
+    font-size:13px !important;
+    line-height:.98 !important;
+    font-weight:950 !important;
+    white-space:normal !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-name,
+  body.mp-uitleg-hub-body .mp-mobile-brand-name,
+  body.mp-seo-page .mp-mobile-brand-name{
+    display:block !important;
+    color:#06483d !important;
+    font-size:21px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    white-space:nowrap !important;
+  }
+
+  body.mp-uitleg-page-body .mp-saved-count-v50,
+  body.mp-uitleg-hub-body .mp-saved-count-v50,
+  body.mp-seo-page .mp-saved-count-v50{
+    right:-5px !important;
+    top:-7px !important;
+  }
+}
+
+/* Uitleg Mobile Topbar Overlap Fix v2
+   Alleen mobiel. Lost overlap MP-logo + tekst op uitlegpagina's op.
+   Geen desktop, JS, footer, content of dealcard wijzigingen. */
+@media (max-width:760px){
+  body.mp-uitleg-page-body .mp-mobile-brand-lockup,
+  body.mp-uitleg-hub-body .mp-mobile-brand-lockup,
+  body.mp-seo-page .mp-mobile-brand-lockup{
+    max-width:calc(100vw - 104px) !important;
+    justify-self:center !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:0 !important;
+    overflow:visible !important;
+    transform:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-logo,
+  body.mp-uitleg-hub-body .mp-mobile-brand-logo,
+  body.mp-seo-page .mp-mobile-brand-logo{
+    width:112px !important;
+    min-width:112px !important;
+    max-width:112px !important;
+    flex:0 0 112px !important;
+    height:72px !important;
+    min-height:72px !important;
+    max-height:72px !important;
+    margin:0 2px 0 0 !important;
+    background-size:contain !important;
+    background-position:center right !important;
+    transform:none !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-copy,
+  body.mp-uitleg-hub-body .mp-mobile-brand-copy,
+  body.mp-seo-page .mp-mobile-brand-copy{
+    max-width:126px !important;
+    min-width:0 !important;
+    flex:0 1 126px !important;
+    margin:0 !important;
+    padding:0 !important;
+    line-height:1 !important;
+    transform:none !important;
+    overflow:visible !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-lines,
+  body.mp-uitleg-hub-body .mp-mobile-brand-lines,
+  body.mp-seo-page .mp-mobile-brand-lines{
+    font-size:13px !important;
+    line-height:.98 !important;
+    font-weight:950 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-brand-name,
+  body.mp-uitleg-hub-body .mp-mobile-brand-name,
+  body.mp-seo-page .mp-mobile-brand-name{
+    font-size:21px !important;
+    line-height:1 !important;
+    font-weight:950 !important;
+    white-space:nowrap !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-heart-link,
+  body.mp-uitleg-page-body .mp-mobile-heart-button,
+  body.mp-uitleg-hub-body .mp-mobile-heart-link,
+  body.mp-uitleg-hub-body .mp-mobile-heart-button,
+  body.mp-seo-page .mp-mobile-heart-link,
+  body.mp-seo-page .mp-mobile-heart-button{
+    justify-self:end !important;
+    margin-right:0 !important;
+    z-index:5 !important;
+  }
+}
+
+/* Uitleg Desktop Topbar Edge Flush v1
+   Alleen desktop/uitleg. Laat het beige topbarvlak netjes aansluiten boven, links en rechts. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    margin:0 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:48px !important;
+    padding-right:48px !important;
+    border-radius:0 !important;
+    box-sizing:border-box !important;
+    background:#f7efe4 !important;
+    border-top:0 !important;
+    border-left:0 !important;
+    border-right:0 !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header::before,
+  body.mp-uitleg-page-body .mp-desktop-header::after,
+  body.mp-uitleg-hub-body .mp-desktop-header::before,
+  body.mp-uitleg-hub-body .mp-desktop-header::after,
+  body.mp-seo-page .mp-desktop-header::before,
+  body.mp-seo-page .mp-desktop-header::after{
+    display:none !important;
+  }
+}
+
+/* Uitleg Sidebar CTA No Cut v2
+   Desktop uitleg: groene CTA in rechterkaart mag niet worden afgesneden. */
+@media (min-width: 761px){
+  .mp-uitleg-sidebar .mp-uitleg-cta,
+  .mp-uitleg-sidebar a[class*="cta"],
+  .mp-uitleg-sidebar a[href*="/internet-tv/"],
+  .mp-uitleg-sidebar a[href*="/deals/"]{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-height:48px !important;
+    height:auto !important;
+    padding:12px 18px !important;
+    border-radius:999px !important;
+    white-space:normal !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+    line-height:1.15 !important;
+    text-align:center !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* Uitleg Desktop Hide Mobile Topbar v1
+   Desktop/uitleg: mobiele topbar-tekst mag nooit boven de desktop-topbar zichtbaar zijn.
+   Ook horizontale overflow door full-width header voorkomen. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    overflow-x:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-mobile-top-header,
+  body.mp-uitleg-page-body .mp-mobile-topbar,
+  body.mp-uitleg-page-body .mp-mobile-header,
+  body.mp-uitleg-page-body [class*="mobile-topbar"],
+  body.mp-uitleg-page-body [data-mp-mobile-topbar-root],
+  body.mp-uitleg-hub-body .mp-mobile-top-header,
+  body.mp-uitleg-hub-body .mp-mobile-topbar,
+  body.mp-uitleg-hub-body .mp-mobile-header,
+  body.mp-uitleg-hub-body [class*="mobile-topbar"],
+  body.mp-uitleg-hub-body [data-mp-mobile-topbar-root],
+  body.mp-seo-page .mp-mobile-top-header,
+  body.mp-seo-page .mp-mobile-topbar,
+  body.mp-seo-page .mp-mobile-header,
+  body.mp-seo-page [class*="mobile-topbar"],
+  body.mp-seo-page [data-mp-mobile-topbar-root]{
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    min-height:0 !important;
+    max-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    max-width:100% !important;
+  }
+}
+
+/* Uitleg Sidebar CTA Short All v3
+   Alle groene sidebar-CTA's op uitlegpagina's passen netjes in de rechterkaart. */
+@media (min-width: 761px){
+  .mp-uitleg-sidebar .mp-uitleg-cta,
+  .mp-uitleg-sidebar a[class*="cta"],
+  .mp-uitleg-sidebar a[href],
+  aside[class*="uitleg"] a[href],
+  aside[class*="sidebar"] a[href]{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    max-width:100% !important;
+    width:auto !important;
+    min-width:150px !important;
+    min-height:44px !important;
+    height:auto !important;
+    padding:11px 20px !important;
+    border-radius:999px !important;
+    white-space:nowrap !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+    line-height:1.1 !important;
+    text-align:center !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* Uitleg Desktop Topbar Right Clip Fix v1
+   Desktop/uitleg: voorkom dat de topbar rechts buiten de viewport valt. */
+@media (min-width: 761px){
+  body.mp-uitleg-page-body,
+  body.mp-uitleg-hub-body,
+  body.mp-seo-page{
+    overflow-x:hidden !important;
+  }
+
+  body.mp-uitleg-page-body .mp-desktop-header,
+  body.mp-uitleg-hub-body .mp-desktop-header,
+  body.mp-seo-page .mp-desktop-header{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    left:auto !important;
+    right:auto !important;
+    transform:none !important;
+    box-sizing:border-box !important;
+    padding-left:48px !important;
+    padding-right:48px !important;
+  }
+}
