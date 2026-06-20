@@ -9,8 +9,13 @@
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="../css/navigation.css">
 <link rel="stylesheet" href="../css/desktop-home-v3.css">
+<link rel="stylesheet" href="/css/uitleg-hub-mobile-header-leak-fix-v1.css">
+
+
 </head><body class="mp-seo-page mp-uitleg-page-body mp-uitleg-hub-body">
 
+<div id="mp-uitleg-mobile-topbar-root" data-mobile-topbar-source="category-standard" aria-live="off">
+  <div class="mp-uitleg-mobile-topbar-fallback" data-mobile-topbar-fallback>
 <header class="mp-mobile-top-header mp-mobile-topbar-unified-v3" aria-label="MeerPakkers pagina header">
   <a class="mp-mobile-back" href="/" aria-label="Terug">&lt;</a>
   <a href="/" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
@@ -19,6 +24,8 @@
   </a>
   <a class="mp-mobile-heart-link" href="/opgeslagen/" aria-label="Opgeslagen deals">♡<span class="mp-saved-count-v50" data-saved-deals-count>0</span></a>
 </header>
+  </div>
+</div>
 <header class="mp-desktop-header" aria-label="MeerPakkers desktop header">
   <a class="mp-desktop-brand" href="/" aria-label="MeerPakkers home">
     <img class="mp-desktop-logo" src="/assets/brand/mpplus-logo-transparent-v1.png" alt="MeerPakkers">
@@ -48,7 +55,9 @@
 <a href="/uitleg/wat-is-een-welkomstactie/">Wat is een welkomstactie bij een abonnement?</a>
 <a href="/uitleg/vanafprijs-abonnementen/">Wat betekent vanafprijs bij abonnementen?</a>
 <a href="/uitleg/hoe-controleert-meerpakkers-acties/">Hoe controleert MeerPakkers acties?</a></div></section>
-</main><script src="/js/deal-card-system-v1.js"></script>
+</main>
+<script src="../js/mobile-topbar-component-v1.js" defer></script>
+<script src="/js/deal-card-system-v1.js"></script>
 
 <footer class="mp-site-footer" aria-label="MeerPakkers footer">
   <div class="mp-site-footer__brand">
@@ -66,4 +75,45 @@
   </nav>
   <small class="mp-site-footer__copy">© 2026 MeerPakkers</small>
 </footer>
+
+<script data-uitleg-topbar-shared-renderer-v1>
+(function(){
+  function mountSharedUitlegTopbar(){
+    var root = document.getElementById("mp-uitleg-mobile-topbar-root");
+    if(!root){ return; }
+
+    var fallback = root.querySelector("[data-mobile-topbar-fallback]");
+    var api = window.MeerPakkersMobileTopbar;
+    if(!api || typeof api.renderMarkup !== "function"){ return; }
+
+    try{
+      root.innerHTML = api.renderMarkup({
+        backHref: "../",
+        homeHref: "../",
+        savedHref: "../opgeslagen/",
+        backLabel: "Terug naar home",
+        headerLabel: "MeerPakkers Uitleg pagina header"
+      });
+      root.setAttribute("data-mobile-topbar-mounted", "shared-renderer-v1");
+
+      if(typeof api.normalizeAll === "function"){ api.normalizeAll(root); }
+      if(typeof api.updateCounts === "function"){ api.updateCounts(); }
+    }catch(error){
+      if(fallback){
+        root.innerHTML = "";
+        root.appendChild(fallback);
+      }
+      root.setAttribute("data-mobile-topbar-mounted", "fallback");
+    }
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", mountSharedUitlegTopbar, { once: true });
+  }else{
+    mountSharedUitlegTopbar();
+  }
+})();
+</script>
+
+
 </body></html>
