@@ -84,6 +84,29 @@
     }
   }
 
+  /*
+   * Official non-Home mobile topbar markup renderer.
+   * Home intentionally does not use this contract.
+   * Output matches the existing category header structure exactly.
+   */
+  function renderMarkup(options){
+    var opts = options || {};
+    var backHref = safeHref(opts.backHref, "../");
+    var homeHref = safeHref(opts.homeHref, "../");
+    var savedHref = safeHref(opts.savedHref, "../opgeslagen/");
+    var backLabel = String(opts.backLabel || "Terug naar home");
+    var headerLabel = String(opts.headerLabel || "MeerPakkers pagina header");
+
+    return '<header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="' + headerLabel + '">' +
+      '<a href="' + backHref + '" class="mp-mobile-back" aria-label="' + backLabel + '">&lt;</a>' +
+      '<a href="' + homeHref + '" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">' +
+        '<span class="mp-mobile-brand-logo">MP+</span>' +
+        '<span class="mp-mobile-brand-copy"><span class="mp-mobile-brand-lines">meer cadeau,<br>meer korting.</span><strong class="mp-mobile-brand-name">MeerPakkers</strong></span>' +
+      '</a>' +
+      '<a href="' + savedHref + '" class="mp-mobile-heart-link" aria-label="Opgeslagen deals">♡<span class="mp-mobile-heart-count" data-saved-deals-count>0</span></a>' +
+    '</header>';
+  }
+
   function normalize(header, options){
     if(!header) return;
     var opts = options || {};
@@ -121,7 +144,8 @@
   }
 
   window.MeerPakkersMobileTopbar = {
-    version: "v5-single-component",
+    version: "v6-shared-renderer-category-first",
+    renderMarkup: renderMarkup,
     normalize: normalize,
     normalizeAll: normalizeAll,
     updateCounts: updateCounts

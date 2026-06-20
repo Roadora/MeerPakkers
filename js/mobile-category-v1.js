@@ -485,8 +485,23 @@
     </nav>`;
   }
 
+  /*
+   * Category pages now use the official shared non-Home topbar renderer.
+   * The fallback is intentionally the previous exact category markup so
+   * a missing script can never blank the category header.
+   */
   function mobileTopHeader(){
-    return `<header class="mp-mobile-top-header" aria-label="MeerPakkers pagina header">
+    if(window.MeerPakkersMobileTopbar && typeof window.MeerPakkersMobileTopbar.renderMarkup === "function"){
+      return window.MeerPakkersMobileTopbar.renderMarkup({
+        backHref: "../",
+        homeHref: "../",
+        savedHref: "../opgeslagen/",
+        backLabel: "Terug naar home",
+        headerLabel: "MeerPakkers pagina header"
+      });
+    }
+
+    return `<header class="mp-mobile-top-header mp-mobile-topbar-unified-v3 mp-mobile-only" aria-label="MeerPakkers pagina header">
       <a href="../" class="mp-mobile-back" aria-label="Terug naar home">&lt;</a>
       <a href="../" class="mp-mobile-brand-lockup" aria-label="MeerPakkers home">
         <span class="mp-mobile-brand-logo">MP+</span>
