@@ -1,0 +1,71 @@
+/*
+ * MeerPakkers Uitleg Article Template v1 — Phase 1 foundation
+ *
+ * Not linked from live pages in Phase 1. This layer only scopes the new template.
+ * It intentionally does not override global provider/category topbar contracts.
+ */
+.mp-uitleg-template-v1 [data-mp-uitleg-mobile-header] {
+  display: contents;
+}
+
+@media (min-width: 761px) {
+  .mp-uitleg-template-v1 [data-mp-uitleg-mobile-header] {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .mp-uitleg-template-v1 .mp-desktop-header {
+    display: none !important;
+  }
+}
+
+
+/* Phase 2 proof article geometry.
+ * This shell copies only the provider-detail outer mobile header spacing:
+ * 18px above + 16px on both sides. The header markup itself continues to
+ * come from the shared provider/category renderer. It is deliberately scoped
+ * to an opted-in migrated article; no legacy explanation page is affected.
+ */
+@media (max-width: 760px) {
+  .mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 18px 16px 0;
+    background: transparent;
+  }
+
+  .mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell [data-mp-uitleg-mobile-header] {
+    display: block;
+  }
+
+  .mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell .mp-mobile-top-header {
+    width: 100% !important;
+    margin: 0 0 18px !important;
+  }
+}
+
+
+/* Phase 2 correction v3 — provider geometry isolation for the migrated proof article.
+   The shared renderer was already outputting the correct provider markup.
+   The remaining mismatch came from old explanation-page rules in topbar-final-lock-v17:
+   they added a separate beige bar and divider to every body.mp-uitleg-page-body header.
+   Provider pages do not have that layer. Remove only that inherited visual shell here.
+*/
+@media (max-width:760px){
+  html body.mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  html body.mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell .mp-mobile-top-header,
+  html body.mp-uitleg-template-v1 > .mp-uitleg-mobile-header-shell .mp-mobile-topbar-unified-v3{
+    background:transparent!important;
+    border:0!important;
+    border-bottom:0!important;
+    box-shadow:none!important;
+  }
+}

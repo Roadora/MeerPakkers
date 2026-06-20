@@ -1,0 +1,26 @@
+
+/* Tijdelijke diagnose: alleen op de testpagina */
+#mp-mobile-topbar-runtime-debug{
+  display:none;
+}
+@media (max-width:767px){
+  #mp-mobile-topbar-runtime-debug{
+    display:block!important;
+    margin:8px 12px 10px!important;
+    padding:10px 12px!important;
+    border:1px solid rgba(19,63,61,.24)!important;
+    border-radius:12px!important;
+    background:#fff8ee!important;
+    color:#143f3d!important;
+    font:600 12px/1.45 Arial,sans-serif!important;
+    white-space:pre-wrap!important;
+    position:relative!important;
+    z-index:9999!important;
+  }
+  #mp-mobile-topbar-debug-root{
+    display:block!important;
+    width:100%!important;
+    position:relative!important;
+    z-index:998!important;
+  }
+}

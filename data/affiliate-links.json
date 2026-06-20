@@ -18,5 +18,25 @@
     "adminNotes": "Budget Thuis Internet affiliate link met SubID mp-internet-budget-thuis.",
     "utmCampaign": "meerpakkers_budget_thuis_internet_v1",
     "subIdTemplate": "mp-internet-budget-thuis"
+  },
+  {
+    "dealId": "budget-mobiel-sim-only",
+    "providerId": "budget-thuis",
+    "category": "sim-only",
+    "network": "daisycon",
+    "merchantId": "budget-thuis",
+    "campaignId": "14759",
+    "trackingId": "1923067",
+    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "finalUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "status": "approved",
+    "lastCheckedAt": "2026-06-20",
+    "startsAt": "2026-06-20",
+    "expiresAt": "2026-07-01",
+    "approvedAt": "2026-06-20",
+    "sourceType": "daisycon",
+    "adminNotes": "Canonieke Budget Thuis Sim Only-deal: 8 maanden €10 p/m in plaats van €20 p/m (50% korting), onbeperkt data/bellen/sms, 2 jaar looptijd, gratis aansluiten en nummerbehoud. SubID mp_budget_simonly.",
+    "utmCampaign": "meerpakkers_budget_simonly_10euro_v2",
+    "subIdTemplate": "mp_budget_simonly"
   }
 ]

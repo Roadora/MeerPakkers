@@ -1,0 +1,20 @@
+/* Categories use the exact approved Provider mobile header.
+   Only mobile; desktop remains untouched. */
+@media (max-width: 767px){
+  body[data-category-id] .mp-mobile-top-header:not([data-mp-provider-reference-header="v1"]){
+    display:none!important;
+  }
+
+  body[data-category-id] .mp-mobile-top-header[data-mp-provider-reference-header="v1"]{
+    display:grid!important;
+    width:100%!important;
+    margin:0!important;
+    overflow:visible!important;
+  }
+}
+
+@media (min-width: 768px){
+  body[data-category-id] .mp-mobile-top-header[data-mp-provider-reference-header="v1"]{
+    display:none!important;
+  }
+}

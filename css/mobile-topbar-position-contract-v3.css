@@ -1,0 +1,123 @@
+/* MeerPakkers Mobile Topbar Position Contract v3
+   Single geometry contract for the shared non-Home mobile topbar.
+   This stylesheet only activates below 768px and only targets the canonical
+   shared class used by categories, the Uitleg hub and connected articles.
+*/
+
+@media (max-width: 767px){
+  :root{
+    --mp-shared-topbar-height: 92px;
+    --mp-shared-topbar-control-size: 40px;
+    --mp-shared-topbar-control-inset: 16px;
+    --mp-shared-topbar-logo-safe-width: calc(100% - 128px);
+    --mp-shared-topbar-badge-size: 18px;
+  }
+
+  /* Header shell: no legacy grid, margin or padding can decide x-position. */
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: var(--mp-shared-topbar-height) !important;
+    min-height: var(--mp-shared-topbar-height) !important;
+    max-height: var(--mp-shared-topbar-height) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Fixed inner safe positions for both outer controls. */
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-back{
+    position: absolute !important;
+    left: var(--mp-shared-topbar-control-inset) !important;
+    right: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    width: var(--mp-shared-topbar-control-size) !important;
+    height: var(--mp-shared-topbar-control-size) !important;
+    min-width: var(--mp-shared-topbar-control-size) !important;
+    min-height: var(--mp-shared-topbar-control-size) !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    translate: none !important;
+    grid-column: auto !important;
+    justify-self: auto !important;
+    overflow: visible !important;
+    z-index: 3 !important;
+    box-sizing: border-box !important;
+  }
+
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button{
+    position: absolute !important;
+    left: auto !important;
+    right: var(--mp-shared-topbar-control-inset) !important;
+    top: 50% !important;
+    bottom: auto !important;
+    width: var(--mp-shared-topbar-control-size) !important;
+    height: var(--mp-shared-topbar-control-size) !important;
+    min-width: var(--mp-shared-topbar-control-size) !important;
+    min-height: var(--mp-shared-topbar-control-size) !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    translate: none !important;
+    grid-column: auto !important;
+    justify-self: auto !important;
+    overflow: visible !important;
+    z-index: 4 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Brand remains mathematically centered independent of the two controls. */
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-brand-lockup{
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: var(--mp-shared-topbar-logo-safe-width) !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    translate: none !important;
+    grid-column: auto !important;
+    justify-self: auto !important;
+    overflow: visible !important;
+    z-index: 2 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Badge always remains inside the 40px heart control. */
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 .mp-mobile-heart-count,
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 [data-saved-deals-count],
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3 .mp-saved-count-v50{
+    position: absolute !important;
+    top: 1px !important;
+    right: 1px !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    min-width: var(--mp-shared-topbar-badge-size) !important;
+    height: var(--mp-shared-topbar-badge-size) !important;
+    padding: 0 4px !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    transform: none !important;
+    translate: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    z-index: 6 !important;
+  }
+
+  /* Explicitly protect all shared topbar containers from legacy clipping. */
+  html body [data-mobile-topbar-page],
+  html body #mp-uitleg-mobile-topbar-root,
+  html body .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    overflow: visible !important;
+  }
+}

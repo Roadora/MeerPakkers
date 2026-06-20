@@ -1,0 +1,14 @@
+/* Uitleg Hub Mobile Header Leak Fix v1
+   Scope: /uitleg/ only.
+   The legacy Uitleg Mobile Topbar Category Match layer added a beige surface
+   and border-bottom to the shared mobile header. This file removes only that
+   leftover visual divider; component geometry remains unchanged. */
+@media (max-width: 760px){
+  html body.mp-uitleg-hub-body #mp-uitleg-mobile-topbar-root .mp-mobile-top-header,
+  html body.mp-uitleg-hub-body #mp-uitleg-mobile-topbar-root .mp-mobile-topbar-unified-v3{
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+}

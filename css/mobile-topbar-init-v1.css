@@ -1,0 +1,25 @@
+/* MeerPakkers Mobile Topbar Initializer v1
+   Explicit non-Home article roots only. Desktop remains untouched. */
+[data-mobile-topbar-page]{
+  display:none;
+}
+
+@media (max-width: 767px){
+  [data-mobile-topbar-page]{
+    display:block;
+    width:100%;
+    position:relative;
+    z-index:250;
+  }
+
+  [data-mobile-topbar-page] .mp-mobile-top-header,
+  [data-mobile-topbar-page] .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    width:100%;
+  }
+}
+
+@media (min-width: 768px){
+  [data-mobile-topbar-page]{
+    display:none!important;
+  }
+}

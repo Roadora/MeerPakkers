@@ -1,0 +1,32 @@
+/* MeerPakkers Mobile Topbar Shell v1
+   One canonical wrapper for the shared non-Home mobile header.
+*/
+.mp-mobile-topbar-shell{
+  display:contents;
+}
+
+@media (max-width: 767px){
+  .mp-mobile-topbar-shell[data-mp-mobile-topbar-shell]{
+    display:block;
+    width:100%;
+    min-width:0;
+    margin:0;
+    padding:0;
+    position:relative;
+    overflow:visible;
+    z-index:250;
+    box-sizing:border-box;
+  }
+
+  .mp-mobile-topbar-shell[data-mp-mobile-topbar-shell] > .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    width:100%;
+    margin:0;
+    overflow:visible;
+  }
+}
+
+@media (min-width: 768px){
+  .mp-mobile-topbar-shell[data-mp-mobile-topbar-shell]{
+    display:contents!important;
+  }
+}

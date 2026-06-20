@@ -136,14 +136,15 @@
     "providerId": "budget-thuis",
     "provider": "Budget Thuis",
     "categories": [
-      "internet-tv"
+      "internet-tv",
+      "sim-only"
     ],
-    "affiliateNetwork": "placeholder",
-    "applicationStatus": "not_applied",
-    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "daisycon",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
     "contactUrl": null,
-    "approvedAt": null,
-    "adminNotes": ""
+    "approvedAt": "2026-06-18",
+    "adminNotes": "Actieve Daisycon-links voor Budget Thuis Internet & TV en de canonieke Budget Thuis Onbeperkt Sim Only-actie. Laatste campagnecontrole: 20 juni 2026."
   },
   {
     "providerId": "netflix",

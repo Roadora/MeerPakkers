@@ -243,3 +243,19 @@ body.mp-budget-seo-sync .mp-budget-seo-card [class*="topbar"]{
   display:none !important;
 }
 
+
+/* Uitleg mobile breadcrumb cleanup v2
+   De mobiele header heeft al een terugknop naar Uitleg.
+   Daarom blijft het volledige breadcrumb alleen op desktop zichtbaar. */
+@media (max-width: 760px) {
+  body.mp-budget-seo-sync .mp-budget-seo-breadcrumb {
+    display: none !important;
+  }
+}
+
+
+/* Uitleg articles: current-deal sidebar removed.
+   The explanatory article now intentionally owns the full available width. */
+body.mp-budget-seo-sync .mp-budget-seo-grid.mp-budget-seo-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+}

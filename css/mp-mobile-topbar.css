@@ -1,0 +1,165 @@
+/* MeerPakkers Global Mobile Topbar v1
+   Single mobile header for every non-Home page. Desktop is untouched.
+*/
+#mp-global-mobile-topbar-root{
+  display:none;
+}
+
+@media (max-width: 767px){
+  #mp-global-mobile-topbar-root{
+    display:block!important;
+    width:100%!important;
+    position:relative!important;
+    z-index:2147483000!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-global-mobile-topbar{
+    position:relative!important;
+    width:100%!important;
+    height:92px!important;
+    min-height:92px!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    background:#f5eedf!important;
+    border-bottom:1px solid rgba(104,85,54,.16)!important;
+  }
+
+  .mp-global-mobile-topbar__back,
+  .mp-global-mobile-topbar__saved{
+    position:absolute!important;
+    top:50%!important;
+    width:40px!important;
+    height:40px!important;
+    min-width:40px!important;
+    min-height:40px!important;
+    transform:translateY(-50%)!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border:1px solid rgba(110,91,57,.24)!important;
+    border-radius:14px!important;
+    background:#fffdf8!important;
+    color:#174442!important;
+    text-decoration:none!important;
+    box-sizing:border-box!important;
+    box-shadow:0 2px 8px rgba(70,53,27,.06)!important;
+    overflow:visible!important;
+  }
+
+  .mp-global-mobile-topbar__back{
+    left:18px!important;
+    font:700 33px/1 Arial,sans-serif!important;
+    padding:0 0 4px!important;
+  }
+
+  .mp-global-mobile-topbar__saved{
+    right:18px!important;
+    font:400 29px/1 Arial,sans-serif!important;
+    padding:0 0 2px!important;
+  }
+
+  .mp-global-mobile-topbar__heart{
+    display:block!important;
+    transform:translateY(-1px)!important;
+  }
+
+  .mp-global-mobile-topbar__count{
+    position:absolute!important;
+    top:-6px!important;
+    right:-6px!important;
+    min-width:18px!important;
+    height:18px!important;
+    padding:0 4px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    border-radius:999px!important;
+    background:#c99827!important;
+    color:#fff!important;
+    font:800 10px/1 Arial,sans-serif!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  .mp-global-mobile-topbar__count[hidden]{
+    display:none!important;
+  }
+
+  .mp-global-mobile-topbar__brand{
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:auto!important;
+    max-width:calc(100% - 138px)!important;
+    text-decoration:none!important;
+    color:#174442!important;
+    overflow:visible!important;
+  }
+
+  .mp-global-mobile-topbar__mark{
+    display:block!important;
+    width:62px!important;
+    height:46px!important;
+    object-fit:contain!important;
+    flex:0 0 auto!important;
+  }
+
+  .mp-global-mobile-topbar__wordmark{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    min-width:0!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  .mp-global-mobile-topbar__tagline{
+    color:#b98722!important;
+    font:800 13px/1.02 Arial,sans-serif!important;
+    letter-spacing:-.35px!important;
+  }
+
+  .mp-global-mobile-topbar__wordmark strong{
+    color:#174442!important;
+    font:900 23px/.93 Arial,sans-serif!important;
+    letter-spacing:-1.2px!important;
+  }
+
+  /*
+    Retire legacy MOBILE headers only on non-Home pages.
+    Desktop headers remain untouched because this rule is mobile-only.
+  */
+  .mp-mobile-top-header,
+  #mp-uitleg-mobile-topbar-root,
+  [data-mobile-topbar-page],
+  .mp-mobile-topbar-shell,
+  .mp-uitleg-hub-topbar{
+    display:none!important;
+  }
+
+  /*
+    Some legacy pages create their mobile header as a direct child of main.
+    The new global header is the sole mobile navigation owner.
+  */
+  main .mp-mobile-top-header,
+  .mp-uitleg-page .mp-mobile-top-header,
+  .mp-uitleg-hub .mp-mobile-top-header{
+    display:none!important;
+  }
+}
+
+@media (min-width: 768px){
+  #mp-global-mobile-topbar-root{
+    display:none!important;
+  }
+}

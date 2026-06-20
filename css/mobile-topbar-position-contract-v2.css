@@ -1,0 +1,93 @@
+/* MeerPakkers Mobile Topbar Position Contract v2
+   Purpose: single mobile geometry for all non-Home shared topbars.
+   Desktop is intentionally untouched.
+*/
+@media (max-width: 767px){
+  :root{
+    --mp-topbar-height:92px;
+    --mp-topbar-side:40px;
+    --mp-topbar-heart-badge-size:18px;
+  }
+
+  /* Scope: only actual shared topbar output. */
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3,
+  [data-mobile-topbar-page] .mp-mobile-top-header,
+  #mp-uitleg-mobile-topbar-root .mp-mobile-top-header{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:var(--mp-topbar-side) minmax(0,1fr) var(--mp-topbar-side)!important;
+    align-items:center!important;
+    justify-items:center!important;
+    width:100%!important;
+    height:var(--mp-topbar-height)!important;
+    min-height:var(--mp-topbar-height)!important;
+    max-height:var(--mp-topbar-height)!important;
+    padding:0!important;
+    margin:0!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+  }
+
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-back,
+  [data-mobile-topbar-page] .mp-mobile-top-header > .mp-mobile-back,
+  #mp-uitleg-mobile-topbar-root .mp-mobile-top-header > .mp-mobile-back{
+    grid-column:1!important;
+    justify-self:start!important;
+    position:relative!important;
+    z-index:2!important;
+    overflow:visible!important;
+  }
+
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-brand-lockup,
+  [data-mobile-topbar-page] .mp-mobile-top-header > .mp-mobile-brand-lockup,
+  #mp-uitleg-mobile-topbar-root .mp-mobile-top-header > .mp-mobile-brand-lockup{
+    grid-column:2!important;
+    justify-self:center!important;
+    min-width:0!important;
+    max-width:100%!important;
+    overflow:visible!important;
+  }
+
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-heart-link,
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button,
+  [data-mobile-topbar-page] .mp-mobile-top-header > .mp-mobile-heart-link,
+  [data-mobile-topbar-page] .mp-mobile-topbar-unified-v3 > .mp-mobile-heart-button,
+  #mp-uitleg-mobile-topbar-root .mp-mobile-top-header > .mp-mobile-heart-link{
+    grid-column:3!important;
+    justify-self:end!important;
+    position:relative!important;
+    z-index:3!important;
+    overflow:visible!important;
+    margin:0!important;
+    flex:none!important;
+  }
+
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 .mp-mobile-heart-count,
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3 [data-saved-deals-count],
+  [data-mobile-topbar-page] .mp-mobile-heart-count,
+  [data-mobile-topbar-page] [data-saved-deals-count],
+  #mp-uitleg-mobile-topbar-root .mp-mobile-heart-count,
+  #mp-uitleg-mobile-topbar-root [data-saved-deals-count]{
+    position:absolute!important;
+    top:-3px!important;
+    right:-3px!important;
+    min-width:var(--mp-topbar-heart-badge-size)!important;
+    height:var(--mp-topbar-heart-badge-size)!important;
+    padding:0 4px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    line-height:1!important;
+    border-radius:999px!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    z-index:5!important;
+  }
+
+  /* Do not let legacy wrappers crop the badge. */
+  [data-mobile-topbar-page],
+  #mp-uitleg-mobile-topbar-root,
+  .mp-mobile-top-header.mp-mobile-topbar-unified-v3{
+    overflow:visible!important;
+  }
+}

@@ -119,5 +119,144 @@
     "providerDescriptionTitle": "Over Budget Thuis Internet",
     "providerDescription": "Budget Thuis is het huismerk voor energie, internet en mobiel. Met Internet van Budget Thuis kiezen klanten voor snel en stabiel internet voor een scherpe prijs. Budget Thuis maakt gebruik van het betrouwbare KPN-netwerk via glasvezel of telefoonlijn. Klanten kiezen zelf het pakket dat bij hen past, met alleen internet of ook TV en Vast Bellen. Overstappen is eenvoudig en zonder gedoe.",
     "detailConditionNote": "Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis."
+  },
+  {
+    "id": "budget-mobiel-sim-only",
+    "providerId": "budget-thuis",
+    "provider": "Budget Thuis",
+    "category": "sim-only",
+    "title": "Onbeperkt Sim Only",
+    "benefitTypes": [
+      "korting"
+    ],
+    "benefitValue": 10,
+    "totalBenefitValue": 80,
+    "totalBenefitLabel": "8 maanden €10 p/m",
+    "giftType": "",
+    "contract": "2 jaar",
+    "score": 9.3,
+    "icon": "📶",
+    "benefits": [
+      "8 maanden €10 p/m",
+      "Onbeperkt data, bellen en sms",
+      "Gratis aansluiten en nummerbehoud"
+    ],
+    "price": "€10 p/m",
+    "featured": true,
+    "dealType": "Tijdelijke actie",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 80,
+    "extraValue": 0,
+    "monthlyPrice": 10,
+    "originalMonthlyPrice": 20,
+    "contractLengthMonths": 24,
+    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 80,
+      "extra": 20
+    },
+    "seoSlug": "budget-thuis-onbeperkt-sim-only",
+    "updatedAt": "2026-06-20",
+    "meerPakScore": 93,
+    "url": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "network": "daisycon",
+    "campaignId": "14759",
+    "trackingId": "1923067",
+    "merchantId": "budget-thuis",
+    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-06-20",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-20",
+    "expiresAt": null,
+    "sourceType": "daisycon",
+    "sourceId": "422185",
+    "adminNotes": "Canonieke Budget Thuis Sim Only-deal. Eerste 8 maanden €10 p/m in plaats van €20 p/m (50% korting), met onbeperkt data/bellen/sms, 2 jaar looptijd, gratis aansluiten en gratis nummerbehoud. Deeplink 1923067; SubID mp_budget_simonly.",
+    "termsSummary": "Eerste 8 maanden €10 p/m voor onbeperkt data, bellen en sms. Daarna €20 p/m. Alleen bij een 2-jarig abonnement. Aansluitkosten zijn tijdelijk €0 en nummerbehoud is gratis. Controleer altijd het actuele aanbod en de voorwaarden bij Budget Thuis.",
+    "lastDataReviewAt": "2026-06-20",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Pak deze Meepakker",
+    "benefitDisplayType": "period",
+    "detailTitle": "8 maanden €10 p/m",
+    "detailIntro": "Kies voor Onbeperkt Sim Only van Budget Thuis: de eerste 8 maanden betaal je €10 p/m in plaats van €20 p/m. Je krijgt onbeperkt data, bellen en sms op het betrouwbare 5G-netwerk van KPN. De actie geldt bij een 2-jarig abonnement.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "8 maanden €10 p/m",
+        "sub": "Normaal €20 p/m — 50% korting"
+      },
+      {
+        "type": "product",
+        "title": "Onbeperkt data, bellen en sms",
+        "sub": "Op het betrouwbare 5G-netwerk van KPN"
+      },
+      {
+        "type": "extra",
+        "title": "Gratis aansluiten en nummerbehoud",
+        "sub": "Aansluitkosten t.w.v. €20 nu €0"
+      }
+    ],
+    "detailSummaryValue": "8 maanden €10 p/m",
+    "summaryLine": "Onbeperkt data, bellen en sms",
+    "dataBundle": "Onbeperkt",
+    "detailWhyTitle": "Waarom is dit een Meepakker?",
+    "detailWhyText": "Je krijgt een concreet tijdelijk maandbedrag voor een onbeperkte Sim Only-bundel: 8 maanden €10 p/m in plaats van €20 p/m. Daarbij zijn aansluiten en nummerbehoud gratis en maak je gebruik van het 5G-netwerk van KPN.",
+    "detailConditionItems": [
+      "Sim Only: je gebruikt je eigen telefoon",
+      "Onbeperkt data, bellen en sms",
+      "8 maanden €10 p/m, daarna €20 p/m",
+      "50% korting gedurende de eerste 8 maanden",
+      "2 jaar looptijd",
+      "Gratis aansluiten t.w.v. €20",
+      "Gratis nummerbehoud",
+      "5G-netwerk van KPN",
+      "Controleer actuele voorwaarden bij Budget Thuis"
+    ],
+    "providerDescriptionTitle": "Over Budget Thuis Sim Only",
+    "providerDescription": "Budget Thuis biedt Sim Only-abonnementen op het betrouwbare 5G-netwerk van KPN. Je ontvangt een simkaart en gebruikt je eigen telefoon. Controleer altijd het actuele aanbod, de looptijd en de voorwaarden bij de aanbieder voordat je afsluit.",
+    "detailIntroTitle": "Budget Thuis Onbeperkt Sim Only",
+    "detailIntroSubtitle": "8 maanden €10 p/m bij een 2-jarig abonnement",
+    "detailIntroCards": [
+      {
+        "title": "8 maanden €10 p/m",
+        "text": "Normaal €20 p/m — 50% korting"
+      },
+      {
+        "title": "Onbeperkt data, bellen en sms",
+        "text": "Op het betrouwbare 5G-netwerk van KPN"
+      },
+      {
+        "title": "Gratis aansluiten en nummerbehoud",
+        "text": "Aansluitkosten t.w.v. €20 nu €0"
+      }
+    ],
+    "seoSupport": {
+      "eyebrow": "Meer weten voordat je kiest?",
+      "title": "Uitleg bij deze Sim Only actie",
+      "description": "Lees hoe tijdelijke korting, onbeperkt data, de looptijd en gratis aansluiten werken voordat je doorklikt naar de aanbieder.",
+      "links": [
+        {
+          "label": "8 maanden korting",
+          "href": "/uitleg/budget-thuis-sim-only-korting/"
+        },
+        {
+          "label": "Onbeperkt data & bellen",
+          "href": "/uitleg/budget-thuis-onbeperkt-sim-only/"
+        },
+        {
+          "label": "Waarom 2 jaar?",
+          "href": "/uitleg/budget-thuis-sim-only-2-jaar/"
+        },
+        {
+          "label": "Gratis aansluiten",
+          "href": "/uitleg/budget-thuis-sim-only-aansluiten-nummerbehoud/"
+        }
+      ]
+    }
   }
 ]

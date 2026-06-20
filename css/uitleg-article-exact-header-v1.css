@@ -1,0 +1,27 @@
+/* Exact Uitleg-hub header on article v1 — mobile only */
+@media (max-width: 767px){
+  body:has(#mp-uitleg-article-topbar-root[data-uitleg-shared-topbar-mounted="v1"]) .mp-uitleg-page .mp-mobile-top-header,
+  body:has(#mp-uitleg-article-topbar-root[data-uitleg-shared-topbar-mounted="v1"]) main.mp-uitleg-page > .mp-mobile-top-header{
+    display:none!important;
+  }
+
+  #mp-uitleg-article-topbar-root{
+    display:block!important;
+    width:100%!important;
+    position:relative!important;
+    z-index:250!important;
+    overflow:visible!important;
+  }
+
+  #mp-uitleg-article-topbar-root > .mp-mobile-top-header{
+    width:100%!important;
+    margin:0!important;
+    overflow:visible!important;
+  }
+}
+
+@media (min-width: 768px){
+  #mp-uitleg-article-topbar-root{
+    display:none!important;
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MeerPakkers Uitleg Article Content Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "canonicalUrl",
+    "title",
+    "description",
+    "breadcrumbTitle",
+    "lead",
+    "publishedAt",
+    "modifiedAt",
+    "articleHtml"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "canonicalUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 10
+    },
+    "description": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 180
+    },
+    "breadcrumbTitle": {
+      "type": "string",
+      "minLength": 2
+    },
+    "lead": {
+      "type": "string",
+      "minLength": 40
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "articleHtml": {
+      "type": "string",
+      "minLength": 100
+    },
+    "relatedDealId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cta": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

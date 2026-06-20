@@ -1,0 +1,20 @@
+/* Shared non-Home mobile topbar mount root */
+[data-mp-mobile-topbar-root]{
+  display:none;
+}
+@media (max-width:767px){
+  [data-mp-mobile-topbar-root]{
+    display:block;
+    width:100%;
+    position:relative;
+    z-index:200;
+  }
+  [data-mp-mobile-topbar-root] .mp-mobile-top-header{
+    width:100%;
+  }
+}
+@media (min-width:768px){
+  [data-mp-mobile-topbar-root]{
+    display:none!important;
+  }
+}
