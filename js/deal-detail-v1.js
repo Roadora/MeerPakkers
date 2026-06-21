@@ -548,26 +548,45 @@
     `;
   }
 
+  /*
+   * Shared offer-overview component.
+   * Both the desktop master card and the mobile detail card use this one
+   * content/markup source. Layout differences are CSS-only via the surface
+   * modifier and the optional CTA slot.
+   */
+  function renderOfferOverviewComponent(d, cards, subtitle, disclaimer, options){
+    options = options || {};
+    var surface = options.surface === "mobile" ? "mobile" : "desktop";
+    var includeCta = options.includeCta !== false;
+    var titleTag = options.titleTag || "h1";
+    var title = escapeHtml(d.detailIntroTitle || d.title || "Aanbieding");
+    var safeSubtitle = escapeHtml(subtitle || d.detailIntroSubtitle || "Tijdelijke actie");
+    var safeDisclaimer = escapeHtml(disclaimer || d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.");
+    var cardMarkup = cards.slice(0,3).map(function(card){
+      return `
+        <div class="mp-offer-overview__benefit">
+          <strong>${escapeHtml(card.title)}</strong>
+          <span>${escapeHtml(card.text).replace(/\n/g, "<br>")}</span>
+        </div>
+      `;
+    }).join("");
+
+    return `
+      <article class="mp-offer-overview mp-offer-overview--${surface}">
+        <div class="mp-offer-overview__kicker">Aanbiedingsoverzicht</div>
+        <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>
+        <p class="mp-offer-overview__subtitle">${safeSubtitle}</p>
+        <div class="mp-offer-overview__benefits">${cardMarkup}</div>
+        <p class="mp-offer-overview__disclaimer">${safeDisclaimer}</p>
+        ${includeCta ? `<div class="mp-offer-overview__cta">${renderOverviewCta(d)}</div>` : ""}
+      </article>
+    `;
+  }
+
   function renderOverviewCard(d, cards, subtitle, disclaimer){
     return `
       <section class="mp-v23-left mp-v23-left--master-intro">
-        <article class="mp-v23-master-intro-card">
-          <div class="mp-v23-master-intro-kicker">Aanbiedingsoverzicht</div>
-          <h1>${escapeHtml(d.detailIntroTitle || d.title || "Aanbieding")}</h1>
-          <p class="mp-v23-master-intro-subtitle">${escapeHtml(subtitle || d.detailIntroSubtitle || "Tijdelijke actie")}</p>
-          <div class="mp-v23-master-mini-grid">
-            ${cards.slice(0,3).map(function(card){
-              return `
-                <div class="mp-v23-master-mini">
-                  <strong>${escapeHtml(card.title)}</strong>
-                  <span>${escapeHtml(card.text).replace(/\n/g, "<br>")}</span>
-                </div>
-              `;
-            }).join("")}
-          </div>
-          <p class="mp-v23-master-disclaimer">${escapeHtml(disclaimer || d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.")}</p>
-          ${renderOverviewCta(d)}
-        </article>
+        ${renderOfferOverviewComponent(d, cards, subtitle, disclaimer, {surface:"desktop", includeCta:true, titleTag:"h1"})}
       </section>
     `;
   }
@@ -620,17 +639,22 @@
 
 
   function renderMobileDeal(d, root){
-    var isPeriod = isPeriodBenefitDetail(d);
-    var mobileOverview = isPeriod ? `
-      <section class="mp-detail-card mp-detail-advantage mp-detail-advantage--overview">
-        <p class="mp-mobile-overview-kicker">Aanbiedingsoverzicht</p>
-        <h3>${escapeHtml(d.detailIntroTitle || d.title || "Aanbieding")}</h3>
-        <p>${escapeHtml(d.detailIntroSubtitle || "Tijdelijke actie bij " + (d.provider || "de aanbieder"))}</p>
-        <div class="mp-detail-benefits">
-          ${periodOverviewCards(d).map(function(card){ return `<div class="mp-detail-benefit"><div><strong>${escapeHtml(card.title)}</strong><small>${escapeHtml(card.text)}</small></div></div>`; }).join("")}
-        </div>
-        <p class="mp-mobile-overview-disclaimer">${escapeHtml(d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.")}</p>
-      </section>
+    var isOfferOverview = isPeriodBenefitDetail(d) || isChoiceBenefitDetail(d);
+    var mobileCards = isChoiceBenefitDetail(d) ? choiceDetailBenefits(d) : periodOverviewCards(d);
+    var mobileSubtitle = d.detailIntroSubtitle || (isChoiceBenefitDetail(d)
+      ? "Welkomstactie bij overstap"
+      : "Tijdelijke actie bij " + (d.provider || "de aanbieder"));
+    var mobileDisclaimer = isChoiceBenefitDetail(d)
+      ? "Deze actie is bedoeld voor nieuwe klanten of overstappers. Controleer altijd de actuele voorwaarden bij Budget Thuis."
+      : (d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.");
+    var mobileOverview = isOfferOverview ? `
+      ${renderOfferOverviewComponent(
+        d,
+        mobileCards,
+        mobileSubtitle,
+        mobileDisclaimer,
+        {surface:"mobile", includeCta:false, titleTag:"h3"}
+      )}
     ` : `
       <section class="mp-detail-card mp-detail-advantage">
         <h3>Wat krijg je extra?</h3>

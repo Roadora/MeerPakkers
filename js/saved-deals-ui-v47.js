@@ -7,7 +7,7 @@
 
   var STORE = window.MeerPakkersSavedDealsStore;
   var BUTTON_CLASS = 'mp-save-deal-btn-v47';
-  var CARD_SELECTOR = '.mp-clean-deal-card, .mp-deal-card-component';
+  var CARD_SELECTOR = '.mp-normal-deal-card';
 
   function ready(fn) {
     if (document.readyState === 'loading') {

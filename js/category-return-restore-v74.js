@@ -24,7 +24,7 @@
   function saveReturnPosition(link){
     if(!isCategoryPage()) return;
 
-    var card = link && link.closest ? link.closest("[data-deal-id], .mp-deal-card-component, .mp-clean-deal-card, .mp-category-deal") : null;
+    var card = link && link.closest ? link.closest("[data-deal-id].mp-normal-deal-card") : null;
     var dealId = card && card.getAttribute ? card.getAttribute("data-deal-id") : "";
     if(!dealId) dealId = inferDealIdFromLink(link);
 
@@ -87,7 +87,7 @@
         return;
       }
 
-      var listReady = document.querySelector("[data-deal-id], .mp-deal-card-component, .mp-clean-deal-card, .mp-category-deal");
+      var listReady = document.querySelector("[data-deal-id].mp-normal-deal-card");
       if(listReady || tries >= maxTries){
         window.scrollTo(0, Number(data.scrollY || 0));
         try { sessionStorage.removeItem(keyForCurrentPage()); } catch(e) {}

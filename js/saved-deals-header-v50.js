@@ -99,7 +99,7 @@
 
       /* Keep the real Opgeslagen pill/search entry and never touch card save hearts. */
       if (node.classList && node.classList.contains('mp-saved-desktop-link-v50')) return;
-      if (node.closest && node.closest('.mp-desktop-actions, .mp-clean-search-row, .mp-clean-search-actions, .mp-featured-highlight-card, .mp-deal-card-component, .mp-clean-deal-card, .mp-saved-list')) return;
+      if (node.closest && node.closest('.mp-desktop-actions, .mp-clean-search-row, .mp-clean-search-actions, .mp-featured-highlight-card, .mp-normal-deal-card, .mp-saved-list')) return;
 
       if (node.parentNode) node.parentNode.removeChild(node);
     });

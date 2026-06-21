@@ -16,11 +16,8 @@ async function loadProviderPage(){
 
   const list = document.getElementById("providerDealList");
   if (list) {
-    if (window.MPDealCard && typeof window.MPDealCard.render === "function") {
-      list.innerHTML = providerDeals.map((deal) => window.MPDealCard.render(deal, {
-        category: deal.category,
-        categoryLabel: window.MPDealCard.categoryLabel ? window.MPDealCard.categoryLabel(deal.category) : deal.category
-      })).join("") || `<p>Voor deze aanbieder staan er nog geen gecontroleerde acties klaar.</p>`;
+    if (window.MPCardComponents && typeof window.MPCardComponents.renderNormalDealCard === "function") {
+      list.innerHTML = providerDeals.map((deal) => window.MPCardComponents.renderNormalDealCard(deal)).join("") || `<p>Voor deze aanbieder staan er nog geen gecontroleerde acties klaar.</p>`;
       list.classList.add("mp-provider-card-list", "mp-shared-deal-grid");
       return;
     }

@@ -59,7 +59,7 @@
   }
 
   function dealUrl(deal){
-    if(window.MPDealCard && typeof window.MPDealCard.dealUrl === "function") return window.MPDealCard.dealUrl(deal, deal.category);
+    if(window.MPCardComponents && typeof window.MPCardComponents.dealUrl === "function") return window.MPCardComponents.dealUrl(deal, deal.category);
     const params = new URLSearchParams();
     params.set("deal", dealId(deal));
     if(deal.category) params.set("category", deal.category);
@@ -96,20 +96,15 @@
   function render(){
     const root = document.getElementById("mpCleanTopDeals");
     const btn = document.getElementById("mpLoadMoreDeals");
-    if(!root || !window.MPDealCard) return;
+    if(!root || !window.MPCardComponents || typeof window.MPCardComponents.renderNormalDealCard !== "function") return;
 
     const visible = filteredDeals.slice(0, visibleCount);
 
     if(!visible.length){
       root.innerHTML = '<div class="mp-clean-empty-state"><strong>Nog geen gecontroleerde deal gevonden</strong><span>We tonen alleen acties met bevestigd voordeel.</span></div>';
     }else{
-      root.innerHTML = visible.map(function(deal, index){
-        const html = window.MPDealCard.render(deal, {
-          rank:index + 1,
-          category:deal.category,
-          url:dealUrl(deal)
-        });
-        return html.replace('<article class="mp-clean-deal-card mp-deal-card-component"', '<article class="mp-clean-deal-card mp-deal-card-component" data-deal-id="' + dealId(deal) + '"');
+      root.innerHTML = visible.map(function(deal){
+        return window.MPCardComponents.renderNormalDealCard(deal, deal.category);
       }).join("");
     }
 

@@ -290,7 +290,7 @@
     root.addEventListener("click", function(event){
       if(event.target && event.target.closest && event.target.closest("button, .meepakker-save-heart, .mp-save-deal-btn-v47")) return;
       var link = event.target && event.target.closest ? event.target.closest('a[href*="/deal/"], a[href*="/deals/"]') : null;
-      var card = event.target && event.target.closest ? event.target.closest("[data-deal-id].mp-clean-deal-card, [data-deal-id].mp-deal-card-component, [data-deal-id].mp-category-deal") : null;
+      var card = event.target && event.target.closest ? event.target.closest("[data-deal-id].mp-normal-deal-card") : null;
       if(!link && !card) return;
       if(!card && link && link.closest) card = link.closest("[data-deal-id]");
       var id = card && card.getAttribute ? card.getAttribute("data-deal-id") : "";
@@ -441,22 +441,16 @@
       return;
     }
 
-    root.innerHTML = deals.map((d,i)=>{
-      if(window.MPDealCard){
-        var html = window.MPDealCard.render(d, {
-          category:categoryKey,
-          categoryLabel:config.label,
-          url:dealUrl(d)
-        });
-        var id = dealId(d);
-        return html.replace('<article class="mp-clean-deal-card mp-deal-card-component"', '<article class="mp-clean-deal-card mp-deal-card-component" data-deal-id="' + id + '"');
-      }
-      return `<article class="mp-category-deal mp-category-deal-compact">
-        <div class="mp-rank">#${i+1}</div>
-        <div class="mp-compact-benefit">${benefitPills(d) || "<span>🎁 Extra voordeel</span>"}</div>
-        <div class="mp-compact-provider"><div class="mp-deal-icon">${d.icon || config.icon}</div><div><div class="mp-deal-cat">${config.label}</div><h3>${d.provider || "Aanbieder"}</h3><p>${d.title || "Actie met voordeel"}</p></div></div>
-        <div class="mp-compact-bottom"><div><small>${compactBenefitFooterLabel(d)}</small><strong>${escapeHtml(compactBenefitValue(d))}</strong></div><a href="${dealUrl(d)}">${escapeHtml(d.ctaLabel || "Bekijk deal")}</a></div>
-      </article>`;
+    if(!window.MPCardComponents || typeof window.MPCardComponents.renderNormalDealCard !== "function"){
+      root.innerHTML = `<article class="mp-empty-card"><h3>Deals konden niet worden geladen</h3><p>Vernieuw de pagina en probeer het opnieuw.</p></article>`;
+      return;
+    }
+
+    root.innerHTML = deals.map((d)=>{
+      return window.MPCardComponents.renderNormalDealCard(Object.assign({}, d, {
+        category: categoryKey,
+        ctaLabel: d.ctaLabel || "Bekijk deal"
+      }));
     }).join("");
   }
 

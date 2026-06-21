@@ -99,8 +99,8 @@
     root.innerHTML = head
       + '<div class="meepakker-results-list">'
       + deals.map(function(deal){
-          if(window.MPDealCard && typeof window.MPDealCard.render === 'function'){
-            return window.MPDealCard.render(deal, { category: deal.category || 'mobiel', returnUrl: window.location.pathname });
+          if(window.MPCardComponents && typeof window.MPCardComponents.renderNormalDealCard === 'function'){
+            return window.MPCardComponents.renderNormalDealCard(deal);
           }
           return '<article class="meepakker-simple-result"><h3>' + (deal.provider || '') + '</h3><p>' + (deal.title || '') + '</p></article>';
         }).join('')

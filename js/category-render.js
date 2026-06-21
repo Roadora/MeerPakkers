@@ -20,7 +20,7 @@ function dealId(deal){
 }
 
 function sharedDealUrl(deal){
-  if(window.MPDealCard && typeof window.MPDealCard.dealUrl === "function") return window.MPDealCard.dealUrl(deal, deal.category);
+  if(window.MPCardComponents && typeof window.MPCardComponents.dealUrl === "function") return window.MPCardComponents.dealUrl(deal, deal.category);
   const params = new URLSearchParams();
   params.set("deal", dealId(deal));
   if(deal.category) params.set("category", deal.category);

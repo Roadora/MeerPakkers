@@ -25,13 +25,20 @@
   }
 
   function dealUrl(deal, category){
-    if(window.MPDealCard && typeof window.MPDealCard.dealUrl === "function"){
-      return window.MPDealCard.dealUrl(deal, category || deal.category);
+    var activeCategory = category || (deal && deal.category) || "";
+    var currentPath = window.location.pathname || "/";
+    var currentSearch = window.location.search || "";
+    var returnTo = currentPath + currentSearch;
+
+    // Keep a visitor in the same category context after returning from a detail page.
+    if(activeCategory && currentPath.indexOf("/" + activeCategory + "/") === 0){
+      returnTo = "/" + activeCategory + "/" + currentSearch;
     }
+
     var params = new URLSearchParams();
     params.set("deal", dealId(deal));
-    if(category || (deal && deal.category)) params.set("category", category || deal.category);
-    params.set("return", window.location.pathname + window.location.search);
+    if(activeCategory) params.set("category", activeCategory);
+    params.set("return", returnTo);
     return "/deal/?" + params.toString();
   }
 
@@ -53,47 +60,120 @@
     }).join("");
   }
 
-  function renderNormalDealCard(deal){
+  /*
+   * Normal DealCard is the single card component across MeerPakkers.
+   * The saved-deals page uses the same content/benefits/card shell, with a
+   * deliberate action-slot variant: Bekijk deal + Verwijder sit side by side.
+   * Other pages keep the existing save-heart behaviour and markup unchanged.
+   */
+  function renderNormalDealCard(deal, categoryOverride, options){
     var d = normalizeDeal(deal);
     var id = dealId(d);
-    var url = dealUrl(d, d.category);
+    var url = dealUrl(d, categoryOverride || d.category);
     var benefits = benefitHtml(d);
+    var opts = Object.assign({ mode: 'default' }, options || {});
+    var isSavedMode = opts.mode === 'saved';
+    var provider = escapeHtml(d.provider || "Aanbieder");
+    var title = escapeHtml(d.title || d.name || "Actie met extra voordeel");
+    var cta = escapeHtml(d.ctaLabel || 'Bekijk deal');
+
+    if (isSavedMode) {
+      return '' +
+        '<article class="mp-normal-deal-card mp-normal-deal-card--saved mp-saved-component-card" data-card-component="normal-v2" data-card-mode="saved" data-deal-id="' + escapeHtml(id) + '">' +
+          '<a class="mp-normal-deal-card-link" href="' + escapeHtml(url) + '" aria-label="Bekijk ' + provider + ' ' + title + '">' +
+            '<div class="mp-normal-deal-card-content">' +
+              '<h3>' + provider + '</h3>' +
+              '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
+              '<div class="mp-card-benefits-pill" aria-label="Extra voordelen">' + benefits + '</div>' +
+            '</div>' +
+          '</a>' +
+          '<div class="mp-normal-deal-card-actions" aria-label="Dealacties">' +
+            '<button class="mp-normal-deal-card-remove" type="button" data-remove-saved-deal="' + escapeHtml(id) + '" aria-label="Verwijder ' + provider + ' ' + title + ' uit opgeslagen deals">Verwijder</button>' +
+            '<a class="mp-normal-deal-card-cta" href="' + escapeHtml(url) + '">' + cta + '</a>' +
+          '</div>' +
+        '</article>';
+    }
 
     return '' +
-      '<a class="mp-normal-deal-card" href="' + escapeHtml(url) + '" data-deal-id="' + escapeHtml(id) + '">' +
+      '<a class="mp-normal-deal-card" href="' + escapeHtml(url) + '" data-card-component="normal-v2" data-deal-id="' + escapeHtml(id) + '">' +
         '<button class="meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="' + escapeHtml(id) + '">♡</button>' +
         '<div class="mp-normal-deal-card-content">' +
-          '<h3>' + escapeHtml(d.provider || "Aanbieder") + '</h3>' +
-          '<div class="mp-card-title"><strong>' + escapeHtml(d.title || d.name || "Actie met extra voordeel") + '</strong></div>' +
+          '<h3>' + provider + '</h3>' +
+          '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
           '<div class="mp-card-benefits-pill" aria-label="Extra voordelen">' + benefits + '</div>' +
         '</div>' +
-        '<span class="mp-normal-deal-card-cta">Bekijk deal</span>' +
+        '<span class="mp-normal-deal-card-cta">' + cta + '</span>' +
       '</a>';
   }
 
+  /*
+   * Home "Gecontroleerde deals" is now only a section/container variant.
+   * Every real deal uses the same normal DealCard DOM renderer as category,
+   * provider and saved-deal views. Placeholders remain a separate state.
+   */
   function renderCheckedDealCard(deal, item){
-    var d = normalizeDeal(deal);
+    return renderNormalDealCard(deal, item && item.id ? item.id : (deal && deal.category));
+  }
+
+  /*
+   * Home "Beste deals per categorie" component.
+   * One renderer owns both real deals and "Binnenkort" placeholders so the shared
+   * DOM contract never drifts between the two states. This component deliberately
+   * has no normal-dealcard half-circle decoration.
+   */
+  function renderBestCategoryCard(options){
+    var o = Object.assign({ isPlaceholder: false }, options || {});
+    var d = normalizeDeal(o.deal || {});
+    var category = o.category || d.category || "";
     var id = dealId(d);
-    var url = dealUrl(d, item && item.id ? item.id : d.category);
-    var benefits = benefitHtml(d);
+    var isPlaceholder = Boolean(o.isPlaceholder);
+    var provider = isPlaceholder ? "Binnenkort" : (d.provider || "Aanbieder");
+    var title = isPlaceholder
+      ? (o.placeholderTitle || "Nieuwe deals worden binnenkort toegevoegd.")
+      : (d.title || d.name || "Actie met extra voordeel");
+    var benefits = isPlaceholder
+      ? '<span>' + escapeHtml(o.placeholderBenefit || "Alleen bevestigd voordeel") + '</span>'
+      : benefitHtml(d);
+    var url = isPlaceholder
+      ? (o.placeholderUrl || (category ? "/" + category + "/" : "/deals/"))
+      : dealUrl(d, category);
+    var cta = isPlaceholder
+      ? (o.placeholderCta || "Bekijk categorie →")
+      : (d.ctaLabel || "Bekijk deal");
+    // Best-per-category cards are editorial/featured cards, not saveable deal cards.
+    // Keep this component intentionally free of the normal dealcard heart action.
+    var saveButton = "";
+    var modifier = isPlaceholder ? " mp-best-category-card--placeholder" : "";
 
     return '' +
-      '<article class="mp-checked-deal-card category-winner-card--real" data-deal-id="' + escapeHtml(id) + '">' +
-        '<button class="mp-featured-heart meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="' + escapeHtml(id) + '">♡</button>' +
-        '<div class="mp-checked-deal-card-main">' +
-          '<h3 class="category-winner-provider">' + escapeHtml(d.provider || "Aanbieder") + '</h3>' +
-          '<p class="category-winner-title">' + escapeHtml(d.title || d.name || "Actie met extra voordeel") + '</p>' +
-          '<div class="category-winner-benefits">' + benefits + '</div>' +
+      '<article class="mp-best-category-card' + modifier + '" data-card-component="best-category-v2"' + (isPlaceholder ? '' : ' data-deal-id="' + escapeHtml(id) + '"') + '>' +
+        saveButton +
+        '<div class="mp-best-category-card-content">' +
+          '<h3 class="mp-best-category-provider">' + escapeHtml(provider) + '</h3>' +
+          '<p class="mp-best-category-title">' + escapeHtml(title) + '</p>' +
+          '<div class="mp-best-category-benefits" aria-label="Voordelen">' + benefits + '</div>' +
         '</div>' +
-        '<div class="category-winner-footer category-winner-footer--cta-only">' +
-          '<a href="' + escapeHtml(url) + '">' + escapeHtml(d.ctaLabel || "Bekijk deal") + ' →</a>' +
+        '<div class="mp-best-category-footer">' +
+          '<a class="mp-best-category-cta" href="' + escapeHtml(url) + '">' + escapeHtml(cta) + '</a>' +
         '</div>' +
       '</article>';
   }
 
+  function renderBestCategoryDealCard(deal, categoryOverride){
+    return renderBestCategoryCard({ deal: deal, category: categoryOverride || (deal && deal.category) });
+  }
+
+  function renderBestCategoryPlaceholderCard(options){
+    return renderBestCategoryCard(Object.assign({}, options || {}, { isPlaceholder: true }));
+  }
+
   window.MPCardComponents = {
+    version: "normal-dealcard-v2-plus-best-category-v2",
     renderNormalDealCard: renderNormalDealCard,
     renderCheckedDealCard: renderCheckedDealCard,
+    renderBestCategoryCard: renderBestCategoryCard,
+    renderBestCategoryDealCard: renderBestCategoryDealCard,
+    renderBestCategoryPlaceholderCard: renderBestCategoryPlaceholderCard,
     dealUrl: dealUrl,
     dealId: dealId,
     cleanBenefit: cleanBenefit

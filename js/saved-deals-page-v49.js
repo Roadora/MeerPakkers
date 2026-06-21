@@ -6,7 +6,6 @@
   'use strict';
 
   var STORE = window.MeerPakkersSavedDealsStore;
-  var CARD = window.MPDealCard;
   var list = document.getElementById('mpSavedDealsList');
   if (list) list.classList.add('mp-shared-deal-grid');
   var count = document.getElementById('mpSavedCount');
@@ -86,31 +85,6 @@
     }).filter(function(deal){ return deal && dealId(deal); });
   }
 
-  function addSavedActions(savedDeals){
-    var cards = list.querySelectorAll('.mp-deal-card-component');
-    Array.prototype.forEach.call(cards, function(card, index){
-      var deal = savedDeals[index];
-      if (!deal) return;
-      var id = dealId(deal);
-      card.setAttribute('data-saved-deal-id', id);
-      card.classList.add('mp-saved-component-card');
-
-      var saveHeart = card.querySelector('.meepakker-save-heart, [data-save-deal-id]');
-      if (saveHeart) saveHeart.remove();
-
-      var bottom = card.querySelector('.mp-clean-card-bottom');
-      var primary = bottom && bottom.querySelector('a[href]');
-      if (!bottom || !primary || bottom.querySelector('[data-remove-saved-deal]')) return;
-
-      var remove = document.createElement('button');
-      remove.type = 'button';
-      remove.className = 'mp-saved-remove-btn';
-      remove.setAttribute('data-remove-saved-deal', id);
-      remove.textContent = 'Verwijder';
-      bottom.insertBefore(remove, primary);
-    });
-  }
-
   function render(){
     if (!STORE || !list || !count) return;
     var savedItems = STORE.getSavedDeals();
@@ -121,7 +95,7 @@
       return;
     }
 
-    if (!CARD || typeof CARD.render !== 'function') {
+    if (!window.MPCardComponents || typeof window.MPCardComponents.renderNormalDealCard !== 'function') {
       list.innerHTML = '<div class="mp-saved-empty"><strong>Opgeslagen deals konden niet worden geladen</strong><p>Probeer de pagina opnieuw te openen.</p><a href="../">Bekijk deals</a></div>';
       return;
     }
@@ -131,12 +105,8 @@
     loadDealsJson().then(function(sourceDeals){
       var hydratedDeals = hydrateSavedDeals(savedItems, sourceDeals);
       list.innerHTML = hydratedDeals.map(function(deal){
-        return CARD.render(deal, {
-          category: deal.category,
-          url: CARD.dealUrl ? CARD.dealUrl(deal, deal.category) : undefined
-        });
+        return window.MPCardComponents.renderNormalDealCard(deal, deal.category, { mode: 'saved' });
       }).join('');
-      addSavedActions(hydratedDeals);
     });
   }
 

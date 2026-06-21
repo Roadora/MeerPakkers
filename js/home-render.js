@@ -9,12 +9,12 @@ function mpSlugify(value){
 }
 
 function mpDealId(deal){
-  if(window.MPDealCard && typeof window.MPDealCard.dealId === "function") return window.MPDealCard.dealId(deal);
+  if(window.MPCardComponents && typeof window.MPCardComponents.dealId === "function") return window.MPCardComponents.dealId(deal);
   return String(deal.id || deal.seoSlug || mpSlugify((deal.provider || "aanbieder") + " " + (deal.title || deal.name || "deal")));
 }
 
 function mpDealUrl(deal, category){
-  if(window.MPDealCard && typeof window.MPDealCard.dealUrl === "function") return window.MPDealCard.dealUrl(deal, category || deal.category);
+  if(window.MPCardComponents && typeof window.MPCardComponents.dealUrl === "function") return window.MPCardComponents.dealUrl(deal, category || deal.category);
   const provider = deal.provider || deal.providerName || "aanbieder";
   const title = deal.title || deal.name || "deal";
   const slug = mpSlugify(provider + " " + title);
@@ -126,9 +126,9 @@ function mpRenderNormalDealCard(d){
   return "";
 }
 
-function mpRenderCheckedDealCard(d, item){
-  if(window.MPCardComponents && typeof window.MPCardComponents.renderCheckedDealCard === "function"){
-    return window.MPCardComponents.renderCheckedDealCard(d, item);
+function mpRenderBestCategoryDealCard(d, item){
+  if(window.MPCardComponents && typeof window.MPCardComponents.renderBestCategoryDealCard === "function"){
+    return window.MPCardComponents.renderBestCategoryDealCard(d, item && item.id ? item.id : (d && d.category));
   }
   return "";
 }
@@ -149,25 +149,26 @@ window.MPHomeRender = {
       {id:"streaming", label:"Streaming", icon:"🎬"}
     ];
 
-    el.className = "category-winners-grid mp-featured-highlight-grid";
+    el.className = "mp-best-category-grid";
 
     el.innerHTML = config.map(item => {
       const raw = this.bestDealByCategory(item.id);
       if (!raw) {
-        return `<article class="category-winner-card mp-featured-highlight-card category-winner-card--placeholder">
-          <div>
-            <h3 class="category-winner-provider">Binnenkort</h3>
-            <p class="category-winner-title">Nieuwe ${mpEscapeHomeHtml(item.label)} deals worden gecontroleerd.</p>
-            <div class="category-winner-benefits"><span>Alleen bevestigd voordeel</span></div>
-          </div>
-          <div class="category-winner-footer category-winner-footer--placeholder">
-            <a href="/${mpEscapeHomeHtml(item.id)}/">Bekijk ${mpEscapeHomeHtml(item.label)} →</a>
-          </div>
-        </article>`;
+        if (window.MPCardComponents && typeof window.MPCardComponents.renderBestCategoryPlaceholderCard === "function") {
+          return window.MPCardComponents.renderBestCategoryPlaceholderCard({
+            category: item.id,
+            placeholderTitle: `Nieuwe ${item.label} deals worden binnenkort toegevoegd.`,
+            placeholderBenefit: "Alleen bevestigd voordeel",
+            placeholderUrl: `/${item.id}/`,
+            placeholderCta: `Bekijk ${item.label} →`
+          });
+        }
+        return "";
       }
 
       const d = mpNormalizeHomeDeal(raw);
-      return mpRenderCheckedDealCard(d, item);
+      // Best per category is its own Home component. Normal browsing cards stay separate.
+      return mpRenderBestCategoryDealCard(Object.assign({}, d, { category: item.id }), item);
     }).join("");
     mpEnhanceSavedButtons();
   },
