@@ -2469,3 +2469,202 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
 .mp-detail-advantage--overview > p:not(.mp-mobile-overview-kicker):not(.mp-mobile-overview-disclaimer){margin-top:0;}
 .mp-detail-advantage--overview .mp-detail-benefit{padding:12px 0;}
 .mp-mobile-overview-disclaimer{margin:14px 0 0;font-size:.82rem;line-height:1.45;opacity:.72;}
+
+
+/* Offer overview component v1
+   One data-to-markup component for every period/choice offer. The desktop
+   wrapper and mobile wrapper only change geometry; hierarchy and benefits
+   stay identical. */
+.mp-offer-overview{
+  box-sizing:border-box;
+}
+
+.mp-offer-overview__kicker{
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:0 12px;
+  border-radius:999px;
+  background:#e7f2ec;
+  color:#0a5145;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+}
+
+.mp-offer-overview__title,
+.mp-offer-overview__subtitle,
+.mp-offer-overview__disclaimer{
+  margin:0;
+}
+
+.mp-offer-overview__benefits{
+  display:grid;
+  gap:10px;
+}
+
+.mp-offer-overview__benefit{
+  box-sizing:border-box;
+  border:1px solid rgba(226,211,187,.98);
+  background:linear-gradient(135deg,#fffdf9 0%,#f7efe2 100%);
+  border-radius:18px;
+}
+
+.mp-offer-overview__benefit strong,
+.mp-offer-overview__benefit span{
+  display:block;
+}
+
+.mp-offer-overview__benefit strong{
+  color:#0a4d42;
+  font-weight:900;
+}
+
+.mp-offer-overview__benefit span{
+  color:#6e675e;
+  font-weight:750;
+}
+
+.mp-offer-overview--desktop.mp-v23-master-intro-card,
+.mp-v23-master-intro-card.mp-offer-overview--desktop{
+  /* compatibility guard if a legacy modifier is present */
+}
+
+.mp-v23-left--master-intro > .mp-offer-overview--desktop{
+  width:100%;
+  min-height:420px;
+  padding:42px;
+  border:1px solid rgba(222,208,185,.95);
+  border-radius:34px;
+  background:linear-gradient(135deg,#fffdf8 0%,#f7ead9 100%);
+  box-shadow:0 18px 42px rgba(6,72,61,.08);
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__title{
+  max-width:860px;
+  margin-top:22px;
+  color:#16483f;
+  font-size:clamp(42px,5.2vw,74px);
+  line-height:.96;
+  letter-spacing:-.045em;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__subtitle{
+  margin-top:14px;
+  color:#746b61;
+  font-size:20px;
+  font-weight:800;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__benefits{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  max-width:940px;
+  margin-top:28px;
+  gap:12px;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__benefit{
+  min-height:128px;
+  padding:18px;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__benefit strong{
+  font-size:17px;
+  line-height:1.2;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__benefit span{
+  margin-top:14px;
+  font-size:14px;
+  line-height:1.3;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__disclaimer{
+  max-width:930px;
+  margin-top:22px;
+  color:#746b61;
+  font-size:14px;
+  font-weight:750;
+  line-height:1.45;
+}
+
+.mp-offer-overview--desktop .mp-offer-overview__cta{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:20px;
+}
+
+@media (max-width:1023px){
+  body.mp-deal-detail-page .mp-offer-overview--mobile{
+    margin:0 0 14px;
+    padding:20px;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:26px;
+    background:linear-gradient(145deg,#0b5a4d 0%,#053f35 100%);
+    box-shadow:0 18px 38px rgba(6,72,61,.20);
+    color:#fff;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__kicker{
+    min-height:26px;
+    padding:0;
+    background:transparent;
+    color:rgba(255,255,255,.72);
+    font-size:11px;
+    letter-spacing:.1em;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__title{
+    margin-top:10px;
+    color:#fff;
+    font-size:24px;
+    line-height:1.08;
+    letter-spacing:-.025em;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__subtitle{
+    margin-top:8px;
+    color:rgba(255,255,255,.9);
+    font-size:16px;
+    line-height:1.38;
+    font-weight:700;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__benefits{
+    margin-top:18px;
+    gap:10px;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__benefit{
+    min-height:0;
+    padding:14px 15px;
+    border-color:rgba(235,222,201,.9);
+    border-radius:18px;
+    background:linear-gradient(135deg,#fffefa 0%,#f7efe3 100%);
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__benefit strong{
+    font-size:16px;
+    line-height:1.2;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__benefit span{
+    margin-top:4px;
+    font-size:13px;
+    line-height:1.35;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__disclaimer{
+    margin-top:16px;
+    color:rgba(255,255,255,.78);
+    font-size:13px;
+    line-height:1.48;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1180px){
+  .mp-offer-overview--desktop .mp-offer-overview__benefits{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .mp-offer-overview--desktop .mp-offer-overview__title{ font-size:52px; }
+}

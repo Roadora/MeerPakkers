@@ -1449,3 +1449,12 @@
 
 
 
+
+/* Mobile category layout contract: the shared footer always starts after a calm
+   content gap. This is owned by the category shell, never by an individual
+   dealcard, so newly added cards cannot change the footer transition. */
+@media (max-width: 760px){
+  .mp-category-mobile > .mp-site-footer.mp-site-footer--mobile-category{
+    margin:32px 0 0 !important;
+  }
+}

@@ -379,13 +379,112 @@ body.mp-saved-page{
   font-family:Inter,Arial,sans-serif;
 }
 
-/* v22 Saved Deals Heart Remove
-   Op de opgeslagen-deals pagina is het hartje in de kaart niet nodig.
-   De header bewaarteller blijft via het topbar-hartje werken.
+/*
+   Saved DealCard action slot
+   Same normal DealCard component, with an explicit two-action row.
+   The row belongs to the card component state, never to page-specific DOM edits.
 */
-body.mp-saved-page .mp-saved-component-card .meepakker-save-heart,
-body.mp-saved-page .mp-saved-component-card [data-save-deal-id]{
-  display:none!important;
-  visibility:hidden!important;
-  pointer-events:none!important;
+body.mp-saved-page .mp-normal-deal-card--saved > .mp-normal-deal-card-link{
+  display:block!important;
+  color:inherit!important;
+  text-decoration:none!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved > .mp-normal-deal-card-actions{
+  position:absolute!important;
+  right:22px!important;
+  bottom:24px!important;
+  z-index:7!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:10px!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-cta,
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove{
+  appearance:none!important;
+  -webkit-appearance:none!important;
+  min-height:46px!important;
+  height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0 16px!important;
+  box-sizing:border-box!important;
+  border-radius:999px!important;
+  font:inherit!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+  cursor:pointer!important;
+  text-decoration:none!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-cta{
+  min-width:126px!important;
+  border:0!important;
+  background:#06483d!important;
+  color:#fff!important;
+  box-shadow:0 14px 28px rgba(6,72,61,.18)!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove{
+  min-width:106px!important;
+  border:1px solid rgba(192,173,142,.82)!important;
+  background:#f6ecdd!important;
+  color:#6b5548!important;
+  box-shadow:0 12px 24px rgba(6,72,61,.08)!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove:hover{
+  background:#efe0cc!important;
+}
+
+body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove:active{
+  transform:translateY(1px)!important;
+}
+
+@media (max-width:620px){
+  body.mp-saved-page .mp-normal-deal-card--saved > .mp-normal-deal-card-actions{
+    right:16px!important;
+    bottom:18px!important;
+    gap:8px!important;
+  }
+
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-cta,
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove{
+    min-height:42px!important;
+    height:42px!important;
+    font-size:13px!important;
+  }
+
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-cta{
+    min-width:116px!important;
+    padding:0 14px!important;
+  }
+
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove{
+    min-width:96px!important;
+    padding:0 12px!important;
+  }
+}
+
+@media (max-width:390px){
+  body.mp-saved-page .mp-normal-deal-card--saved > .mp-normal-deal-card-actions{
+    right:14px!important;
+    gap:6px!important;
+  }
+
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-cta{
+    min-width:108px!important;
+    padding:0 12px!important;
+  }
+
+  body.mp-saved-page .mp-normal-deal-card--saved .mp-normal-deal-card-remove{
+    min-width:88px!important;
+    padding:0 10px!important;
+    font-size:12px!important;
+  }
 }

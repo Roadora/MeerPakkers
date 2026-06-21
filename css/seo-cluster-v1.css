@@ -1195,3 +1195,20 @@
     padding-right:48px !important;
   }
 }
+
+/* Budget provider explanation-width contract v2.
+   Desktop provider detail: the related-explanation block spans the same
+   visual width as three standard dealcards. Mobile and deal-detail pages
+   remain untouched. */
+/* Budget provider explanation-width contract v3.
+   Desktop: exactly match the provider hero/content width above.
+   The block is a direct child of the same provider shell, so it fills
+   the shell content box instead of applying a second narrower width rule.
+   Mobile remains governed by the existing max-width:760px block above. */
+@media (min-width:761px){
+  body.mp-provider-detail-page .mp-v23-seo-support.mp-budget-seo-cluster{
+    width:100% !important;
+    max-width:100% !important;
+    margin:28px 0 34px !important;
+  }
+}
