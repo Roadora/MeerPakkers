@@ -30,7 +30,9 @@
       const response = await fetch("/data/deals.json", { cache:"no-store" });
       if(!response.ok) throw new Error("Kan /data/deals.json niet laden");
       const data = await response.json();
-      cachedDeals = Array.isArray(data) ? data : [];
+      cachedDeals = Array.isArray(data)
+        ? (window.MPDealLifecycle ? window.MPDealLifecycle.filterCurrent(data) : data)
+        : [];
       window.MEERPAKKERS_DEALS = cachedDeals;
       return cachedDeals;
     }catch(error){

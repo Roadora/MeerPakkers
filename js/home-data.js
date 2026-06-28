@@ -5,7 +5,10 @@ window.MPHomeData = {
       fetch("data/deals.json"),
       fetch("data/providers.json")
     ]);
-    state.deals = await dealsRes.json();
+    const loadedDeals = await dealsRes.json();
+    state.deals = window.MPDealLifecycle
+      ? window.MPDealLifecycle.filterCurrent(loadedDeals)
+      : loadedDeals;
     state.providersData = await providersRes.json();
   }
 };

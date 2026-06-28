@@ -306,7 +306,10 @@
 
   function getDeals(){
     const realDeals = Array.isArray(state.realDeals) ? state.realDeals : [];
-    let allDeals = realDeals.filter(d => d.category === categoryKey);
+    const publicDeals = window.MPDealLifecycle
+      ? window.MPDealLifecycle.filterCurrent(realDeals)
+      : realDeals;
+    let allDeals = publicDeals.filter(d => d.category === categoryKey);
 
     // Fallback is only a visual emergency state. Real mobile category cards must
     // normally come from data/deals.json so internal detail links use stable deal.id values.

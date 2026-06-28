@@ -7,7 +7,10 @@ async function loadProviderPage(){
   const providers = await providerRes.json();
   const deals = await dealsRes.json();
   const provider = providers.find(p => p.id === slug);
-  const providerDeals = deals
+  const publicDeals = window.MPDealLifecycle
+    ? window.MPDealLifecycle.filterCurrent(deals)
+    : deals;
+  const providerDeals = publicDeals
     .filter(d => d.providerId === slug)
     .sort((a,b) => ((b.meerPakScore || 0) - (a.meerPakScore || 0)) || ((b.totalBenefitValue || 0) - (a.totalBenefitValue || 0)));
 

@@ -554,6 +554,19 @@
    * content/markup source. Layout differences are CSS-only via the surface
    * modifier and the optional CTA slot.
    */
+  function offerOverviewProductImage(d){
+    var src = String((d && d.cardImage) || '').trim();
+    if(!src) return '';
+    var alt = String((d && d.cardImageAlt) || (d.provider ? d.provider + ' productafbeelding' : 'Productafbeelding')).trim();
+    var isLandscape = String((d && d.cardImageVariant) || '').toLowerCase() === 'landscape';
+    var cacheSafeSrc = src + (src.indexOf('?') === -1 ? '?v=budget-tv-v1' : '&v=budget-tv-v1');
+    return `
+      <span class="mp-offer-overview__product-image${isLandscape ? ' mp-offer-overview__product-image--landscape' : ''}" aria-label="${escapeHtml(alt)}">
+        <img src="${escapeHtml(cacheSafeSrc)}" alt="${escapeHtml(alt)}" width="${isLandscape ? '300' : '260'}" height="${isLandscape ? '250' : '421'}" decoding="async" fetchpriority="high">
+      </span>
+    `;
+  }
+
   function renderOfferOverviewComponent(d, cards, subtitle, disclaimer, options){
     options = options || {};
     var surface = options.surface === "mobile" ? "mobile" : "desktop";
@@ -562,6 +575,8 @@
     var title = escapeHtml(d.detailIntroTitle || d.title || "Aanbieding");
     var safeSubtitle = escapeHtml(subtitle || d.detailIntroSubtitle || "Tijdelijke actie");
     var safeDisclaimer = escapeHtml(disclaimer || d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.");
+    var productImage = offerOverviewProductImage(d);
+    var productImageIsLandscape = String((d && d.cardImageVariant) || '').toLowerCase() === 'landscape';
     var cardMarkup = cards.slice(0,3).map(function(card){
       return `
         <div class="mp-offer-overview__benefit">
@@ -574,7 +589,10 @@
     return `
       <article class="mp-offer-overview mp-offer-overview--${surface}">
         <div class="mp-offer-overview__kicker">Aanbiedingsoverzicht</div>
-        <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>
+        <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}">
+          <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>
+          ${productImage}
+        </div>
         <p class="mp-offer-overview__subtitle">${safeSubtitle}</p>
         <div class="mp-offer-overview__benefits">${cardMarkup}</div>
         <p class="mp-offer-overview__disclaimer">${safeDisclaimer}</p>
@@ -821,11 +839,22 @@
     `;
   }
 
-  function renderNotFound(){
+  function renderNotFound(reason){
     const root = document.getElementById("mpDealDetail");
     if(!root) return;
 
-    root.innerHTML = `
+    const expired = reason === "expired";
+    root.innerHTML = expired ? `
+        <header class="mp-detail-intro">
+          <p>Actie verlopen</p>
+          <h1>Deze actie is niet meer actueel</h1>
+        </header>
+        <section class="mp-detail-card">
+          <h3>We tonen alleen actuele acties</h3>
+          <p>Deze aanbieding is niet meer beschikbaar. Bekijk de actuele deals van MeerPakkers.</p>
+          <p><a href="${returnUrl()}">Terug naar de actuele deals</a></p>
+        </section>
+    ` : `
         <header class="mp-detail-intro">
           <p>Deal</p>
           <h1>Deal niet gevonden</h1>
@@ -850,12 +879,19 @@
       })
       .then(function(res){ return res.json(); })
       .then(function(deals){
-        const deal = (Array.isArray(deals) ? deals : []).find(function(d){
+        const allDeals = Array.isArray(deals) ? deals : [];
+        const sourceDeal = allDeals.find(function(d){
+          return matchesDeal(d, requested);
+        });
+        const deal = (window.MPDealLifecycle
+          ? window.MPDealLifecycle.filterCurrent(allDeals)
+          : allDeals
+        ).find(function(d){
           return matchesDeal(d, requested);
         });
 
         if(deal) renderDeal(deal);
-        else renderNotFound();
+        else renderNotFound(sourceDeal ? "expired" : "");
       })
       .catch(renderNotFound);
   }

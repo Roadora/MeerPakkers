@@ -60,6 +60,17 @@
     }).join("");
   }
 
+  function cardProductImageHtml(deal){
+    var src = String((deal && deal.cardImage) || '').trim();
+    if(!src) return '';
+    var alt = String((deal && deal.cardImageAlt) || '').trim();
+    var isLandscape = String((deal && deal.cardImageVariant) || '').toLowerCase() === 'landscape';
+    return '' +
+      '<span class="mp-card-product-image' + (isLandscape ? ' mp-card-product-image--landscape' : '') + '" aria-hidden="' + (alt ? 'false' : 'true') + '">' +
+        '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" loading="lazy" decoding="async">' +
+      '</span>';
+  }
+
   /*
    * Normal DealCard is the single card component across MeerPakkers.
    * The saved-deals page uses the same content/benefits/card shell, with a
@@ -76,14 +87,20 @@
     var provider = escapeHtml(d.provider || "Aanbieder");
     var title = escapeHtml(d.title || d.name || "Actie met extra voordeel");
     var cta = escapeHtml(d.ctaLabel || 'Bekijk deal');
+    var productImage = cardProductImageHtml(d);
 
     if (isSavedMode) {
       return '' +
-        '<article class="mp-normal-deal-card mp-normal-deal-card--saved mp-saved-component-card" data-card-component="normal-v2" data-card-mode="saved" data-deal-id="' + escapeHtml(id) + '">' +
+        '<article class="mp-normal-deal-card mp-normal-deal-card--saved mp-saved-component-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + '" data-card-component="normal-v2" data-card-mode="saved" data-deal-id="' + escapeHtml(id) + '">' +
           '<a class="mp-normal-deal-card-link" href="' + escapeHtml(url) + '" aria-label="Bekijk ' + provider + ' ' + title + '">' +
             '<div class="mp-normal-deal-card-content">' +
-              '<h3>' + provider + '</h3>' +
-              '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
+              '<div class="mp-card-top-row">' +
+                '<div class="mp-card-copy">' +
+                  '<h3>' + provider + '</h3>' +
+                  '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
+                '</div>' +
+                productImage +
+              '</div>' +
               '<div class="mp-card-benefits-pill" aria-label="Extra voordelen">' + benefits + '</div>' +
             '</div>' +
           '</a>' +
@@ -95,11 +112,16 @@
     }
 
     return '' +
-      '<a class="mp-normal-deal-card" href="' + escapeHtml(url) + '" data-card-component="normal-v2" data-deal-id="' + escapeHtml(id) + '">' +
+      '<a class="mp-normal-deal-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + '" href="' + escapeHtml(url) + '" data-card-component="normal-v2" data-deal-id="' + escapeHtml(id) + '">' +
         '<button class="meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="' + escapeHtml(id) + '">♡</button>' +
         '<div class="mp-normal-deal-card-content">' +
-          '<h3>' + provider + '</h3>' +
-          '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
+          '<div class="mp-card-top-row">' +
+            '<div class="mp-card-copy">' +
+              '<h3>' + provider + '</h3>' +
+              '<div class="mp-card-title"><strong>' + title + '</strong></div>' +
+            '</div>' +
+            productImage +
+          '</div>' +
           '<div class="mp-card-benefits-pill" aria-label="Extra voordelen">' + benefits + '</div>' +
         '</div>' +
         '<span class="mp-normal-deal-card-cta">' + cta + '</span>' +

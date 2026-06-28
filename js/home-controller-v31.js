@@ -230,7 +230,10 @@
     fetch("data/deals.json")
       .then(function(res){ return res.json(); })
       .then(function(deals){
-        allDeals = rankedDeals(deals);
+        var publicDeals = window.MPDealLifecycle
+          ? window.MPDealLifecycle.filterCurrent(deals)
+          : deals;
+        allDeals = rankedDeals(publicDeals);
         filteredDeals = allDeals.slice();
         setVisibleForReturnDeal();
         render();

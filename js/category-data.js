@@ -15,7 +15,11 @@ export async function loadCategoryData(){
     categoriesRes.json()
   ]);
 
-  return { deals, providers, categories };
+  const publicDeals = window.MPDealLifecycle
+    ? window.MPDealLifecycle.filterCurrent(deals)
+    : deals;
+
+  return { deals: publicDeals, providers, categories };
 }
 
 export function sortDealsByScoreAndValue(deals){

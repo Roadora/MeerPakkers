@@ -128,7 +128,10 @@
     fetch('/data/deals.json')
       .then(function(res){ return res.json(); })
       .then(function(data){
-        var deals = Array.isArray(data) ? data.filter(function(deal){ return matches(deal, selected); }) : [];
+        var publicDeals = Array.isArray(data)
+          ? (window.MPDealLifecycle ? window.MPDealLifecycle.filterCurrent(data) : data)
+          : [];
+        var deals = publicDeals.filter(function(deal){ return matches(deal, selected); });
         deals.sort(function(a,b){ return (Number(b.meerPakScore || 0) - Number(a.meerPakScore || 0)) || (totalValue(b) - totalValue(a)); });
         renderResults(root, selected, deals);
       })
