@@ -28,6 +28,53 @@
   padding-right:44px !important;
 }
 
+.mp-normal-deal-card .mp-card-top-row{
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:12px !important;
+}
+
+.mp-normal-deal-card .mp-card-copy{
+  min-width:0 !important;
+  flex:1 1 auto !important;
+}
+
+/* Official provider product image from the affiliate product feed.
+   This is deliberately an image slot, not a simulated provider badge. */
+.mp-normal-deal-card .mp-card-product-image{
+  flex:0 0 auto !important;
+  display:block !important;
+  width:60px !important;
+  height:96px !important;
+  overflow:hidden !important;
+  border:1px solid rgba(192,173,142,.72) !important;
+  border-radius:14px !important;
+  background:#fffdf8 !important;
+  padding:4px !important;
+  box-shadow:0 8px 18px rgba(6,72,61,.06) !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  image-rendering:auto !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--landscape{
+  width:112px !important;
+  height:92px !important;
+  padding:0 !important;
+  border-radius:16px !important;
+  background:#fff !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--landscape img{
+  object-fit:cover !important;
+}
+
 .mp-normal-deal-card h3{
   margin:0 0 6px !important;
   color:#06483d !important;
@@ -162,6 +209,28 @@
   }
 
   .mp-normal-deal-card-content{ padding-right:42px !important; }
+
+  .mp-normal-deal-card .mp-card-product-image{
+    width:54px !important;
+    height:86px !important;
+    border-radius:14px !important;
+    padding:4px !important;
+  }
+
+  .mp-normal-deal-card .mp-card-product-image--landscape{
+    width:98px !important;
+    height:78px !important;
+    padding:0 !important;
+    border-radius:14px !important;
+  }
+
+  .mp-normal-deal-card .mp-card-top-row{
+    gap:10px !important;
+  }
+
+  .mp-normal-deal-card.mp-normal-deal-card--with-product-image{
+    min-height:264px !important;
+  }
 
   .mp-normal-deal-card h3{
     margin:0 0 5px !important;

@@ -4,6 +4,11 @@
 .provider-hero h1{font-family:Georgia,serif;color:var(--green);font-size:46px;line-height:1.04;margin:0 0 10px}
 .provider-hero p{color:var(--muted);font-size:18px;margin:0;max-width:820px}
 .provider-logo-large{height:150px;border-radius:24px;background:var(--green);color:white;display:grid;place-items:center;font-size:56px;font-weight:900}
+.provider-logo-large--image{background:#ffffff;border:1px solid var(--border);box-shadow:0 12px 30px rgba(16,68,56,.10);overflow:hidden}
+.provider-logo-large--image img{display:block;max-width:78%;max-height:70%;width:auto;height:auto;object-fit:contain}
+.provider-logo-large--plain{background:transparent;border:none;box-shadow:none;overflow:visible;padding:0;height:auto;min-height:0;display:flex;align-items:center;justify-content:flex-end}
+.provider-logo-large--plain img{max-width:220px;max-height:none;width:min(100%,220px);height:auto;object-fit:contain;filter:none}
+
 .provider-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 .provider-meta span{background:white;border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:800;color:var(--green)}
 .provider-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;margin-top:22px}
@@ -18,7 +23,7 @@
 .provider-overview-card h2{margin:0 0 8px;color:var(--green)}
 .provider-overview-card p{color:var(--muted);min-height:44px}
 .provider-overview-card a{display:inline-flex;margin-top:10px;background:var(--green);color:white;border-radius:12px;padding:11px 14px;font-weight:900}
-@media(max-width:1050px){.provider-hero{grid-template-columns:1fr}.provider-logo-large{height:110px}.provider-layout{grid-template-columns:1fr}.provider-sidebar{position:static}.provider-overview-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1050px){.provider-hero{grid-template-columns:1fr}.provider-logo-large{height:110px}.provider-logo-large--plain{height:auto;justify-content:flex-start}.provider-logo-large--plain img{width:min(100%,190px)}.provider-layout{grid-template-columns:1fr}.provider-sidebar{position:static}.provider-overview-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.provider-page-shell{padding:18px 16px}.provider-hero h1{font-size:34px}.provider-overview-grid{grid-template-columns:1fr}}
 
 

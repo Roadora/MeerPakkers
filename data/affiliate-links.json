@@ -35,7 +35,7 @@
     "expiresAt": "2026-07-01",
     "approvedAt": "2026-06-20",
     "sourceType": "daisycon",
-    "adminNotes": "Canonieke Budget Thuis Sim Only-deal: 8 maanden €10 p/m in plaats van €20 p/m (50% korting), onbeperkt data/bellen/sms, 2 jaar looptijd, gratis aansluiten en nummerbehoud. SubID mp_budget_simonly.",
+    "adminNotes": "Canonieke Budget Thuis Sim Only-deal: 8 maanden €10 p/m in plaats van €20 p/m (50% korting), onbeperkt data/bellen/sms, 2 jaar looptijd en gratis nummerbehoud. Aansluitkosten alleen opnemen wanneer het actuele campagne-aanbod dit expliciet bevestigt. SubID mp_budget_simonly.",
     "utmCampaign": "meerpakkers_budget_simonly_10euro_v2",
     "subIdTemplate": "mp_budget_simonly"
   }

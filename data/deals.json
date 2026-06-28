@@ -49,7 +49,7 @@
     "merchantId": "budget-thuis",
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis",
     "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-06-18",
+    "lastCheckedAt": "2026-06-28",
     "dealStatus": "active",
     "publicationStatus": "published",
     "startsAt": "2026-06-18",
@@ -58,7 +58,7 @@
     "sourceId": "422185",
     "adminNotes": "Deal Card System v1 Clean: oude card-fix CSS-links verwijderd; één js/deal-card-system-v1.js en css/deal-card-system-v1.css toegevoegd; home en categorie gebruiken MPCardComponents.",
     "termsSummary": "Actie t/m 1 juli 2026. Budget Thuis toont korting of cadeau als welkomstactie. Controleer altijd je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
-    "lastDataReviewAt": "2026-06-18",
+    "lastDataReviewAt": "2026-06-28",
     "ctaLabel": "Bekijk deal",
     "benefitDisplayType": "choice",
     "detailTitle": "Korting óf cadeau bij je overstap",
@@ -118,7 +118,12 @@
     "detailCtaLabel": "Pak deze Meepakker",
     "providerDescriptionTitle": "Over Budget Thuis Internet",
     "providerDescription": "Budget Thuis is het huismerk voor energie, internet en mobiel. Met Internet van Budget Thuis kiezen klanten voor snel en stabiel internet voor een scherpe prijs. Budget Thuis maakt gebruik van het betrouwbare KPN-netwerk via glasvezel of telefoonlijn. Klanten kiezen zelf het pakket dat bij hen past, met alleen internet of ook TV en Vast Bellen. Overstappen is eenvoudig en zonder gedoe.",
-    "detailConditionNote": "Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis."
+    "detailConditionNote": "Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis.",
+    "sourceVerifiedAt": "2026-06-28",
+    "cardImage": "/assets/provider-products/budget-thuis-internet-tv.png",
+    "cardImageAlt": "Budget Thuis Glasvezel Internet & TV actie",
+    "cardImageSource": "Daisycon campagnemateriaal — Internet van Budget Thuis, formaat 300×250",
+    "cardImageVariant": "landscape"
   },
   {
     "id": "budget-mobiel-sim-only",
@@ -139,7 +144,7 @@
     "benefits": [
       "8 maanden €10 p/m",
       "Onbeperkt data, bellen en sms",
-      "Gratis aansluiten en nummerbehoud"
+      "Gratis nummerbehoud"
     ],
     "price": "€10 p/m",
     "featured": true,
@@ -157,7 +162,7 @@
       "gift": 0,
       "cashback": 0,
       "discount": 80,
-      "extra": 20
+      "extra": 0
     },
     "seoSlug": "budget-thuis-onbeperkt-sim-only",
     "updatedAt": "2026-06-20",
@@ -169,16 +174,16 @@
     "merchantId": "budget-thuis",
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
     "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-06-20",
+    "lastCheckedAt": "2026-06-28",
     "dealStatus": "active",
     "publicationStatus": "published",
     "startsAt": "2026-06-20",
-    "expiresAt": null,
+    "expiresAt": "2026-07-01",
     "sourceType": "daisycon",
     "sourceId": "422185",
-    "adminNotes": "Canonieke Budget Thuis Sim Only-deal. Eerste 8 maanden €10 p/m in plaats van €20 p/m (50% korting), met onbeperkt data/bellen/sms, 2 jaar looptijd, gratis aansluiten en gratis nummerbehoud. Deeplink 1923067; SubID mp_budget_simonly.",
-    "termsSummary": "Eerste 8 maanden €10 p/m voor onbeperkt data, bellen en sms. Daarna €20 p/m. Alleen bij een 2-jarig abonnement. Aansluitkosten zijn tijdelijk €0 en nummerbehoud is gratis. Controleer altijd het actuele aanbod en de voorwaarden bij Budget Thuis.",
-    "lastDataReviewAt": "2026-06-20",
+    "adminNotes": "Canonieke Budget Thuis Sim Only-deal. Eerste 8 maanden €10 p/m in plaats van €20 p/m (50% korting), met onbeperkt data/bellen/sms en 2 jaar looptijd. Gratis nummerbehoud. Aansluitkosten alleen tonen wanneer die expliciet in het actuele campagne-aanbod zijn bevestigd. Deeplink 1923067; SubID mp_budget_simonly.",
+    "termsSummary": "Eerste 8 maanden €10 p/m voor onbeperkt data, bellen en sms. Daarna €20 p/m. Alleen bij een 2-jarig abonnement. Nummerbehoud is gratis. Controleer de eventuele aansluitkosten, het actuele aanbod en de voorwaarden bij Budget Thuis.",
+    "lastDataReviewAt": "2026-06-28",
     "ctaLabel": "Bekijk deal",
     "detailCtaLabel": "Pak deze Meepakker",
     "benefitDisplayType": "period",
@@ -197,23 +202,23 @@
       },
       {
         "type": "extra",
-        "title": "Gratis aansluiten en nummerbehoud",
-        "sub": "Aansluitkosten t.w.v. €20 nu €0"
+        "title": "Gratis nummerbehoud",
+        "sub": "Neem je huidige mobiele nummer mee"
       }
     ],
     "detailSummaryValue": "8 maanden €10 p/m",
     "summaryLine": "Onbeperkt data, bellen en sms",
     "dataBundle": "Onbeperkt",
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je krijgt een concreet tijdelijk maandbedrag voor een onbeperkte Sim Only-bundel: 8 maanden €10 p/m in plaats van €20 p/m. Daarbij zijn aansluiten en nummerbehoud gratis en maak je gebruik van het 5G-netwerk van KPN.",
+    "detailWhyText": "Je krijgt een concreet tijdelijk maandbedrag voor een onbeperkte Sim Only-bundel: 8 maanden €10 p/m in plaats van €20 p/m. Daarbij neem je gratis je nummer mee en maak je gebruik van het 5G-netwerk van KPN.",
     "detailConditionItems": [
       "Sim Only: je gebruikt je eigen telefoon",
       "Onbeperkt data, bellen en sms",
       "8 maanden €10 p/m, daarna €20 p/m",
       "50% korting gedurende de eerste 8 maanden",
       "2 jaar looptijd",
-      "Gratis aansluiten t.w.v. €20",
       "Gratis nummerbehoud",
+      "Aansluitkosten worden getoond bij je bestelling",
       "5G-netwerk van KPN",
       "Controleer actuele voorwaarden bij Budget Thuis"
     ],
@@ -231,14 +236,14 @@
         "text": "Op het betrouwbare 5G-netwerk van KPN"
       },
       {
-        "title": "Gratis aansluiten en nummerbehoud",
-        "text": "Aansluitkosten t.w.v. €20 nu €0"
+        "title": "Gratis nummerbehoud",
+        "text": "Neem je huidige mobiele nummer mee"
       }
     ],
     "seoSupport": {
       "eyebrow": "Meer weten voordat je kiest?",
       "title": "Uitleg bij deze Sim Only actie",
-      "description": "Lees hoe tijdelijke korting, onbeperkt data, de looptijd en gratis aansluiten werken voordat je doorklikt naar de aanbieder.",
+      "description": "Lees hoe tijdelijke korting, onbeperkt data, de looptijd, nummerbehoud en eventuele aansluitkosten werken voordat je doorklikt naar de aanbieder.",
       "links": [
         {
           "label": "8 maanden korting",
@@ -253,10 +258,16 @@
           "href": "/uitleg/budget-thuis-sim-only-2-jaar/"
         },
         {
-          "label": "Gratis aansluiten",
+          "label": "Nummerbehoud & aansluitkosten",
           "href": "/uitleg/budget-thuis-sim-only-aansluiten-nummerbehoud/"
         }
       ]
-    }
+    },
+    "officialSourceUrl": "https://www.budgetthuis.nl/mobiel/onbeperkt-data",
+    "sourceVerifiedAt": "2026-06-28",
+    "sourceVerifiedNotes": "Publieke aanbodpagina bevestigt: eerste 8 maanden €10 p/m bij een 2-jarig abonnement, onbeperkt data/bellen/sms en gratis nummerbehoud. Aansluitkosten zijn niet als vast voordeel opgenomen, omdat Budget Thuis die bij bestelling specificeert. Einddatum komt uit de actieve Daisycon-promotie.",
+    "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
+    "cardImageAlt": "Budget Thuis Sim Only simkaart",
+    "cardImageSource": "Daisycon productfeed — Mobiel van Budget Thuis"
   }
 ]

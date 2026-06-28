@@ -488,6 +488,35 @@
     font-weight:650;
   }
 
+  /* Providers visual: a local router photo.
+     It lives only in the desktop discovery card so mobile stays unchanged. */
+  body.home-cleanup .mp-desktop-discovery-card--providers .mp-discovery-text{
+    max-width:58%;
+  }
+
+  body.home-cleanup .mp-provider-visual{
+    position:absolute;
+    top:28px;
+    right:30px;
+    z-index:2;
+    display:block;
+    width:142px;
+    height:98px;
+    overflow:hidden;
+    border:1px solid rgba(222,208,185,.9);
+    border-radius:22px;
+    background:#fffdf8;
+    box-shadow:0 12px 26px rgba(6,72,61,.10);
+  }
+
+  body.home-cleanup .mp-provider-visual img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 68%;
+  }
+
   body.home-cleanup .mp-discovery-tags{
     display:flex;
     flex-wrap:wrap;
@@ -539,6 +568,18 @@
 
   body.home-cleanup .mp-desktop-discovery-card strong{
     font-size:27px;
+  }
+
+  body.home-cleanup .mp-provider-visual{
+    top:24px;
+    right:24px;
+    width:118px;
+    height:82px;
+    border-radius:18px;
+  }
+
+  body.home-cleanup .mp-desktop-discovery-card--providers .mp-discovery-text{
+    max-width:60%;
   }
 }
 
