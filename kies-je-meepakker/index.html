@@ -52,6 +52,7 @@
 
 <link rel="stylesheet" href="/css/foldables-responsive-v1.css">
 <link rel="stylesheet" href="/css/deal-card-system-v1.css">
+<script src="/js/deal-lifecycle-v1.js"></script>
 </head>
 <body class="mp-meepakker-page">
 <header class="mp-desktop-header" aria-label="MeerPakkers desktop header">
@@ -101,14 +102,14 @@
 
   <!-- Cleanup v2: de hoofdtitel is genoeg; kaarten starten direct na een kleine ademruimte. -->
   <section class="meepakker-grid meepakker-grid--direct mp-discovery-card-grid">
-    <a class="meepakker-card mp-discovery-card" id="ps5" href="/kies-je-meepakker/ps5/" data-meepakker="ps5"><div><div class="meepakker-icon">🎮</div><h3>PlayStation 5</h3><p>Deals met PS5 als cadeau of actievoordeel.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="airpods" href="/kies-je-meepakker/airpods/" data-meepakker="airpods"><div><div class="meepakker-icon">🎧</div><h3>AirPods</h3><p>Abonnementen met oordopjes of audio-cadeau.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="switch" href="/kies-je-meepakker/nintendo-switch/" data-meepakker="switch"><div><div class="meepakker-icon">🕹️</div><h3>Nintendo Switch</h3><p>Internet, mobiel of bundels met Switch-actie.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="smartwatch" href="/kies-je-meepakker/smartwatch/" data-meepakker="smartwatch"><div><div class="meepakker-icon">⌚</div><h3>Smartwatch</h3><p>Deals met horloge, wearable of accessoire.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="cadeaukaart" href="/kies-je-meepakker/cadeaukaart/" data-meepakker="cadeaukaart"><div><div class="meepakker-icon">🎁</div><h3>Cadeaukaart</h3><p>Bol.com, Coolblue of andere tegoedacties.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="cashback" href="/kies-je-meepakker/cashback/" data-meepakker="cashback"><div><div class="meepakker-icon">💰</div><h3>Cashback</h3><p>Acties waarbij je geld terugkrijgt na afsluiten.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="streaming" href="/kies-je-meepakker/gratis-streaming/" data-meepakker="streaming"><div><div class="meepakker-icon">📺</div><h3>Gratis streaming</h3><p>Streaming, sportzenders of entertainment extra's.</p></div><span>Bekijk</span></a>
-    <a class="meepakker-card mp-discovery-card" id="tickets" href="/kies-je-meepakker/tickets/" data-meepakker="tickets"><div><div class="meepakker-icon">🎟️</div><h3>Tickets</h3><p>Acties met events, sport, bioscoop of vouchers.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="ps5" href="/kies-je-meepakker/ps5/" data-meepakker="ps5"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/ps5.png" alt="PlayStation 5 met controller" loading="lazy"></div><h3>PlayStation 5</h3><p>Deals met PS5 als cadeau of actievoordeel.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="airpods" href="/kies-je-meepakker/airpods/" data-meepakker="airpods"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/airpods.png" alt="Draadloze oordopjes" loading="lazy"></div><h3>AirPods</h3><p>Abonnementen met oordopjes of audio-cadeau.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="switch" href="/kies-je-meepakker/nintendo-switch/" data-meepakker="switch"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/nintendo-switch.png" alt="Nintendo Switch" loading="lazy"></div><h3>Nintendo Switch</h3><p>Internet, mobiel of bundels met Switch-actie.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="smartwatch" href="/kies-je-meepakker/smartwatch/" data-meepakker="smartwatch"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/smartwatch.png" alt="Smartwatch" loading="lazy"></div><h3>Smartwatch</h3><p>Deals met horloge, wearable of accessoire.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="cadeaukaart" href="/kies-je-meepakker/cadeaukaart/" data-meepakker="cadeaukaart"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/cadeaukaart.jpg" alt="Cadeaukaart met cadeauverpakking" loading="lazy"></div><h3>Cadeaukaart</h3><p>Bol.com, Coolblue of andere tegoedacties.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="cashback" href="/kies-je-meepakker/cashback/" data-meepakker="cashback"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/cashback.png" alt="Euromunten als cashback" loading="lazy"></div><h3>Cashback</h3><p>Acties waarbij je geld terugkrijgt na afsluiten.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="streaming" href="/kies-je-meepakker/gratis-streaming/" data-meepakker="streaming"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/streaming.jpg" alt="Afstandsbediening voor televisie" loading="lazy"></div><h3>Gratis streaming</h3><p>Streaming, sportzenders of entertainment extra's.</p></div><span>Bekijk</span></a>
+    <a class="meepakker-card mp-discovery-card" id="tickets" href="/kies-je-meepakker/tickets/" data-meepakker="tickets"><div><div class="meepakker-icon meepakker-icon--photo"><img src="/assets/meepakkers/tickets.jpg" alt="Tickets voor evenementen" loading="lazy"></div><h3>Tickets</h3><p>Acties met events, sport, bioscoop of vouchers.</p></div><span>Bekijk</span></a>
   </section>
 
 
