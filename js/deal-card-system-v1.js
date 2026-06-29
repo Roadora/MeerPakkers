@@ -64,9 +64,15 @@
     var src = String((deal && deal.cardImage) || '').trim();
     if(!src) return '';
     var alt = String((deal && deal.cardImageAlt) || '').trim();
-    var isLandscape = String((deal && deal.cardImageVariant) || '').toLowerCase() === 'landscape';
+    var variant = String((deal && deal.cardImageVariant) || '').toLowerCase();
+    var isLandscape = variant === 'landscape';
+    var isSquare = variant === 'square';
+    var isSquareLarge = variant === 'square-large';
+    var variantClass = isLandscape
+      ? ' mp-card-product-image--landscape'
+      : (isSquareLarge ? ' mp-card-product-image--square-large' : (isSquare ? ' mp-card-product-image--square' : ''));
     return '' +
-      '<span class="mp-card-product-image' + (isLandscape ? ' mp-card-product-image--landscape' : '') + '" aria-hidden="' + (alt ? 'false' : 'true') + '">' +
+      '<span class="mp-card-product-image' + variantClass + '" aria-hidden="' + (alt ? 'false' : 'true') + '">' +
         '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" loading="lazy" decoding="async">' +
       '</span>';
   }

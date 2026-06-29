@@ -9,6 +9,7 @@
     smartwatch: 'Smartwatch',
     cadeaukaart: 'Cadeaukaart',
     cashback: 'Cashback',
+    tablet: 'Tablet',
     streaming: 'Gratis streaming',
     tickets: 'Tickets'
   };
@@ -20,6 +21,7 @@
     smartwatch: 'smartwatch',
     cadeaukaart: 'cadeaukaart',
     cashback: 'cashback',
+    tablet: 'tablet',
     streaming: 'gratis-streaming',
     tickets: 'tickets'
   };
@@ -62,6 +64,7 @@
     if(key === 'smartwatch') return /smartwatch|wearable|horloge/.test(text);
     if(key === 'cadeaukaart') return /cadeaukaart/.test(text);
     if(key === 'cashback') return /cashback/.test(text);
+    if(key === 'tablet') return /\btablet\b|tab a11|galaxy tab|ipad/.test(text);
     if(key === 'streaming') return /streaming|netflix|disney|videoland|hbo|max|prime|skyshowtime|viaplay|espn|sport/.test(text);
     if(key === 'tickets') return /ticket|tickets|event|bioscoop|voucher/.test(text);
     return false;
