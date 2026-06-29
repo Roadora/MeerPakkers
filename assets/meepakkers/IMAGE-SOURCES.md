@@ -16,3 +16,5 @@ Alle beelden in `assets/meepakkers/` zijn lokaal opgeslagen. Er worden op de web
 
 `streaming.jpg` en `provider-router.jpg` zijn lokaal bijgesneden en verkleind naar 960 × 650 px. Er zijn geen externe afbeeldingshotlinks op de website. Beide beelden bevatten geen personen en worden alleen als ondersteunend redactioneel beeld gebruikt, niet als merk- of providerlogo.
 
+
+| `tablet.jpg` | Tablet | Public Domain Pictures — “Tablet On White Background” by Marina Shemesh, CC0 Public Domain. Bron: https://www.publicdomainpictures.net/en/view-image.php?image=36563&picture=tablet-on-white-background |
