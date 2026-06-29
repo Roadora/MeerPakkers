@@ -38,5 +38,26 @@
     "adminNotes": "Canonieke Budget Thuis Sim Only-deal: 8 maanden €10 p/m in plaats van €20 p/m (50% korting), onbeperkt data/bellen/sms, 2 jaar looptijd en gratis nummerbehoud. Aansluitkosten alleen opnemen wanneer het actuele campagne-aanbod dit expliciet bevestigt. SubID mp_budget_simonly.",
     "utmCampaign": "meerpakkers_budget_simonly_10euro_v2",
     "subIdTemplate": "mp_budget_simonly"
+  },
+  {
+    "dealId": "odido-thuis-glasvezel-tv-25",
+    "providerId": "odido",
+    "category": "internet-tv",
+    "network": "awin",
+    "merchantId": "odido-thuis",
+    "campaignId": "8400",
+    "trackingId": "4818317",
+    "creativeId": "4818317",
+    "deepLink": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "finalUrl": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "status": "approved",
+    "lastCheckedAt": "2026-06-29",
+    "startsAt": "2026-06-29",
+    "expiresAt": null,
+    "approvedAt": "2026-06-29",
+    "sourceType": "awin-creative",
+    "adminNotes": "Officiële Awin creative 4818317 voor Odido Thuis NL: Glasvezel + TV, eerste 12 maanden €25 p/m. Exacte Awin click-URL uit de creatieve code gebruikt.",
+    "utmCampaign": "meerpakkers_odido_thuis_glasvezel_tv_25",
+    "subIdTemplate": null
   }
 ]

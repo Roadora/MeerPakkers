@@ -269,5 +269,148 @@
     "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
     "cardImageAlt": "Budget Thuis Sim Only simkaart",
     "cardImageSource": "Daisycon productfeed — Mobiel van Budget Thuis"
+  },
+  {
+    "id": "odido-thuis-glasvezel-tv-25",
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "internet-tv",
+    "title": "Glasvezel + TV",
+    "benefitTypes": [
+      "korting"
+    ],
+    "benefitValue": 318,
+    "totalBenefitValue": 318,
+    "totalBenefitLabel": "€318 voordeel in het eerste jaar",
+    "giftType": "",
+    "contract": "2 jaar",
+    "score": 8.9,
+    "icon": "📺",
+    "benefits": [
+      "€318 voordeel in het eerste jaar",
+      "Eerste 12 maanden €25 p/m · 2 jaar",
+      "Gratis aansluiten"
+    ],
+    "price": "€25 p/m",
+    "featured": true,
+    "dealType": "Tijdelijke actie",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 318,
+    "extraValue": 0,
+    "monthlyPrice": 25,
+    "originalMonthlyPrice": 51.5,
+    "contractLengthMonths": 24,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 318,
+      "extra": 0
+    },
+    "seoSlug": "odido-thuis-glasvezel-tv-25",
+    "updatedAt": "2026-06-29",
+    "meerPakScore": 89,
+    "url": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "network": "awin",
+    "campaignId": "8400",
+    "trackingId": "4818317",
+    "merchantId": "odido-thuis",
+    "deepLink": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-06-29",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": null,
+    "sourceType": "awin-creative",
+    "sourceId": "awin-creative-4818317",
+    "adminNotes": "Odido Internet + TV-actie. Awin-creative 4818317 vermeldt €25 p/m gedurende de eerste 12 maanden, een looptijd van 2 jaar en gratis aansluiten. Odido vermeldt dat de beschikbare snelheid en het netwerk per adres verschillen; de campagne is beschikbaar tot maximaal 2 Gbit/s. Controleer altijd de actuele aanbieding via de postcodecheck.",
+    "termsSummary": "Bij een Internet + TV-abonnement voor thuis van 2 jaar. De eerste 12 maanden €25 p/m en gratis aansluiten. Daarna €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres. Controleer je postcode bij Odido.",
+    "lastDataReviewAt": "2026-06-29",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Pak deze MeerPakker",
+    "benefitDisplayType": "period",
+    "detailTitle": "€318 voordeel in het eerste jaar",
+    "detailIntro": "Bij een Internet + TV-abonnement voor thuis met een looptijd van 2 jaar. De eerste 12 maanden betaal je €25 p/m en aansluiten is gratis. Daarna betaal je €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "€318 voordeel in het eerste jaar",
+        "sub": "12 × €26,50 korting"
+      },
+      {
+        "type": "product",
+        "title": "Internet + TV",
+        "sub": "Looptijd van 2 jaar"
+      },
+      {
+        "type": "extra",
+        "title": "Daarna €51,50 p/m",
+        "sub": "Voor 100 Mbit/s; afhankelijk van je adres"
+      }
+    ],
+    "detailSummaryValue": "€318 voordeel in het eerste jaar",
+    "summaryLine": "Internet + TV van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "Bij een Internet + TV-abonnement voor thuis betaal je de eerste 12 maanden €25 p/m in plaats van €51,50 p/m voor 100 Mbit/s. Dat is €26,50 korting per maand en samen €318 voordeel in het eerste jaar. Aansluiten is gratis en de looptijd is 2 jaar. Daarna betaal je €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; de beschikbare snelheid en het netwerk verschillen per adres.",
+    "detailConditionItems": [
+      "Internet + TV-abonnement voor thuis",
+      "Looptijd van 2 jaar",
+      "Eerste 12 maanden €25 p/m",
+      "Gratis aansluiten",
+      "Daarna €51,50 p/m voor 100 Mbit/s",
+      "Tot maximaal 2 Gbit/s",
+      "Controleer je postcode bij Odido"
+    ],
+    "contractPriceLabel": "Eerste 12 maanden €25 p/m",
+    "priceDuringDiscount": "Eerste 12 maanden €25 p/m",
+    "priceAfterDiscount": "Daarna €51,50 p/m voor 100 Mbit/s",
+    "detailIntroTitle": "Odido Glasvezel + TV",
+    "detailIntroSubtitle": "Eerste 12 maanden €25 p/m · 2 jaar",
+    "detailIntroCards": [
+      {
+        "title": "€318 voordeel in het eerste jaar",
+        "text": "12 × €26,50 korting"
+      },
+      {
+        "title": "Eerste 12 maanden €25 p/m",
+        "text": "Bij een contract van 2 jaar",
+        "extra": "Gratis aansluiten"
+      },
+      {
+        "title": "Daarna €51,50 p/m",
+        "text": "100 Mbit/s · tot max. 2 Gbit/s"
+      }
+    ],
+    "providerDescriptionTitle": "Over Odido Thuis",
+    "providerDescription": "Odido Thuis biedt internet, tv en vaste telefonie. Controleer vóór je afsluit altijd de actuele beschikbaarheid, pakketinhoud en voorwaarden op jouw adres bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4818317&v=8400&q=318011&r=2947269",
+    "cardImageAlt": "Odido Thuis Glasvezel + TV campagne",
+    "cardImageVariant": "square-large",
+    "cardImageSource": "Officiële Odido Internet + TV-campagneafbeelding",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4818317&v=8400&q=318011&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
+    "officialBannerLabel": "Odido Internet + TV-campagne",
+    "officialBannerSize": "1080x1080",
+    "providerFeatureTitle": "Wat biedt Odido bij Internet + TV?",
+    "providerFeatureItems": [
+      {
+        "title": "Supersnel internet",
+        "text": "Odido Glasvezel kan op geselecteerde adressen tot wel 8 Gbit/s bieden. Deze actie is beschikbaar tot maximaal 2 Gbit/s."
+      },
+      {
+        "title": "TV kijken zoals je wil",
+        "text": "Kijk televisie met de Mediabox of via de Odido TV-app en stem je kijkervaring af op jouw wensen."
+      },
+      {
+        "title": "Extra voordeel bij combineren",
+        "text": "Combineer je twee of meer Odido-abonnementen op hetzelfde adres? Dan kun je mogelijk extra voordeel ontvangen, zoals korting of dubbele data. Controleer de actuele voorwaarden bij Odido."
+      }
+    ],
+    "detailSummaryText": "Bij een Internet + TV-abonnement voor thuis van 2 jaar betaal je de eerste 12 maanden €25 p/m en is aansluiten gratis. Daarna betaal je €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres.",
+    "connectionFee": 0,
+    "connectionFeeLabel": "Gratis aansluiten"
   }
 ]

@@ -64,15 +64,46 @@
 }
 
 .mp-normal-deal-card .mp-card-product-image--landscape{
-  width:112px !important;
-  height:92px !important;
+  width:132px !important;
+  height:108px !important;
   padding:0 !important;
-  border-radius:16px !important;
+  border-radius:18px !important;
   background:#fff !important;
 }
 
 .mp-normal-deal-card .mp-card-product-image--landscape img{
   object-fit:cover !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--square{
+  width:120px !important;
+  height:120px !important;
+  padding:0 !important;
+  border-radius:18px !important;
+  background:#fff !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--square img{
+  object-fit:cover !important;
+}
+
+
+.mp-normal-deal-card .mp-card-product-image--square-large{
+  width:92px !important;
+  height:92px !important;
+  padding:0 !important;
+  border:none !important;
+  border-radius:16px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--square-large img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  border-radius:16px !important;
+  display:block !important;
 }
 
 .mp-normal-deal-card h3{
@@ -221,6 +252,29 @@
     width:98px !important;
     height:78px !important;
     padding:0 !important;
+    border-radius:14px !important;
+  }
+
+
+  .mp-normal-deal-card .mp-card-product-image--square{
+    width:84px !important;
+    height:84px !important;
+    padding:0 !important;
+    border-radius:14px !important;
+  }
+
+
+  .mp-normal-deal-card .mp-card-product-image--square-large{
+    width:72px !important;
+    height:72px !important;
+    padding:0 !important;
+    border:none !important;
+    border-radius:14px !important;
+    background:transparent !important;
+    box-shadow:none !important;
+  }
+
+  .mp-normal-deal-card .mp-card-product-image--square-large img{
     border-radius:14px !important;
   }
 
@@ -403,5 +457,54 @@
   .category-main #categoryDealList > .mp-normal-deal-card,
   .category-content #categoryDealList > .mp-normal-deal-card{
     max-width:none !important;
+  }
+}
+
+/* Odido campaign creative — clean square treatment inside the normal dealcard.
+   Keep the existing official Awin image, remove the generic white image shell. */
+.mp-normal-deal-card .mp-card-product-image--square-large{
+  width:92px !important;
+  height:92px !important;
+  aspect-ratio:1 / 1 !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  border:0 !important;
+  border-radius:16px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--square-large img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  border:0 !important;
+  border-radius:16px !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+@media (max-width:620px){
+  .mp-normal-deal-card .mp-card-product-image--square-large{
+    width:78px !important;
+    height:78px !important;
+    border-radius:14px !important;
+  }
+
+  .mp-normal-deal-card .mp-card-product-image--square-large img{
+    border-radius:14px !important;
+  }
+}
+
+/* Dealcard campaign-image spacing polish: keep official images visually clear of the beige benefit panel. */
+.mp-normal-deal-card .mp-card-product-image{
+  transform:translateY(-8px) !important;
+}
+
+@media (max-width:620px){
+  .mp-normal-deal-card .mp-card-product-image{
+    transform:translateY(-6px) !important;
   }
 }
