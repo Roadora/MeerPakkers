@@ -330,7 +330,7 @@
     "termsSummary": "Bij een Internet + TV-abonnement voor thuis van 2 jaar. De eerste 12 maanden €25 p/m en gratis aansluiten. Daarna €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres. Controleer je postcode bij Odido.",
     "lastDataReviewAt": "2026-06-29",
     "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Pak deze MeerPakker",
+    "detailCtaLabel": "Bekijk actie bij Odido",
     "benefitDisplayType": "period",
     "detailTitle": "€318 voordeel in het eerste jaar",
     "detailIntro": "Bij een Internet + TV-abonnement voor thuis met een looptijd van 2 jaar. De eerste 12 maanden betaal je €25 p/m en aansluiten is gratis. Daarna betaal je €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres.",
@@ -412,5 +412,635 @@
     "detailSummaryText": "Bij een Internet + TV-abonnement voor thuis van 2 jaar betaal je de eerste 12 maanden €25 p/m en is aansluiten gratis. Daarna betaal je €51,50 p/m voor 100 Mbit/s. Deze actie is beschikbaar tot maximaal 2 Gbit/s; beschikbaarheid, netwerk en snelheid verschillen per adres.",
     "connectionFee": 0,
     "connectionFeeLabel": "Gratis aansluiten"
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "mobiel",
+    "benefitTypes": [
+      "cadeau",
+      "korting"
+    ],
+    "giftType": "smartwatch",
+    "giftName": "Galaxy Watch8 40mm LTE Graphite",
+    "giftValue": 429,
+    "cashbackValue": 0,
+    "extraValue": 0,
+    "contract": "Bekijk voorwaarden",
+    "icon": "📱",
+    "dealType": "Tijdelijke actie",
+    "contractLengthMonths": 0,
+    "network": "awin",
+    "campaignId": "8389",
+    "merchantId": "odido-mobiel",
+    "affiliateStatus": "approved",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": "2026-07-12",
+    "sourceType": "awin-creative",
+    "lastCheckedAt": "2026-06-30",
+    "lastDataReviewAt": "2026-06-30",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "gift-and-discount",
+    "officialBannerSize": "1080x1080",
+    "cardImageVariant": "square-large",
+    "providerDescriptionTitle": "Over Odido Mobiel",
+    "providerDescription": "Odido biedt mobiele abonnementen met toestel en Sim Only. Controleer vóór je afsluit altijd de actuele toestelprijs, bundel, looptijd en voorwaarden bij Odido.",
+    "detailConditionItems": [
+      "Tijdelijke Samsung-promotie",
+      "Actieperiode: 29 juni t/m 12 juli 2026",
+      "Registratie voor de claim mogelijk t/m 14 september 2026",
+      "Alleen geldig op deelnemende modellen met een Nederlandse EAN-code",
+      "Bekijk de volledige actievoorwaarden en claiminformatie bij Odido"
+    ],
+    "detailConditionNote": "De actievoorwaarden, beschikbaarheid van toestellen en eventuele abonnementsvoorwaarden kunnen wijzigen. Controleer altijd de actuele informatie bij Odido voordat je afsluit.",
+    "sourceVerifiedAt": "2026-06-30",
+    "id": "odido-samsung-galaxy-s26-watch8",
+    "title": "Samsung Galaxy S26 + Galaxy Watch8",
+    "benefitValue": 780,
+    "totalBenefitValue": 780,
+    "totalBenefitLabel": "Galaxy Watch8 cadeau + max. €351 voordeel",
+    "score": 9.7,
+    "benefits": [
+      "Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429",
+      "Max. €351 voordeel op je toestel",
+      "Actie t/m 12 juli 2026"
+    ],
+    "price": "Bekijk voorwaarden",
+    "featured": true,
+    "discountValue": 351,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
+    "benefitBreakdown": {
+      "gift": 429,
+      "cashback": 0,
+      "discount": 351,
+      "extra": 0
+    },
+    "seoSlug": "odido-samsung-galaxy-s26-watch8",
+    "updatedAt": "2026-06-30",
+    "meerPakScore": 97,
+    "url": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
+    "trackingId": "4820787",
+    "deepLink": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
+    "sourceId": "awin-creative-4820787",
+    "adminNotes": "Officiële Awin creative 4820787 voor Odido Mobiel NL. Samsung Galaxy S26: Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429 + maximaal €351 voordeel. Actieperiode 29-06-2026 t/m 12-07-2026; claimregistratie t/m 14-09-2026. Alleen deelnemende modellen met Nederlandse EAN-code.",
+    "termsSummary": "Ontvang tijdelijk een Galaxy Watch8 40mm LTE Graphite bij aankoop van een Samsung Galaxy S26. De officiële banner vermeldt daarnaast maximaal €351 voordeel. Promotie geldig van 29 juni t/m 12 juli 2026. Registratie voor de claim mogelijk t/m 14 september 2026. Alleen geldig op deelnemende modellen met een Nederlandse EAN-code.",
+    "detailTitle": "Galaxy Watch8 cadeau + max. €351 voordeel",
+    "detailIntro": "Bij geselecteerde Samsung Galaxy S26-modellen ontvang je tijdelijk een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429. De officiële campagne vermeldt daarnaast maximaal €351 voordeel. Controleer de actuele toestel- en abonnementsvoorwaarden bij Odido.",
+    "detailBenefits": [
+      {
+        "type": "gift",
+        "title": "Galaxy Watch8 40mm LTE Graphite",
+        "sub": "Cadeau t.w.v. €429"
+      },
+      {
+        "type": "discount",
+        "title": "Max. €351 voordeel",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "calendar",
+        "title": "Actie t/m 12 juli 2026",
+        "sub": "Claimregistratie mogelijk t/m 14 september 2026"
+      }
+    ],
+    "detailSummaryValue": "Galaxy Watch8 cadeau + max. €351 voordeel",
+    "summaryLine": "Samsung Galaxy S26 van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "De officiële Odido-campagne voor Samsung Galaxy S26 vermeldt een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429 en maximaal €351 voordeel. De promotie loopt van 29 juni tot en met 12 juli 2026. Registratie voor de claim is mogelijk tot en met 14 september 2026. De actie geldt uitsluitend voor deelnemende modellen met een Nederlandse EAN-code.",
+    "contractPriceLabel": "Bekijk toestel- en abonnementsvoorwaarden",
+    "priceDuringDiscount": "Tijdelijke Samsung-actie",
+    "priceAfterDiscount": "Bekijk actuele voorwaarden bij Odido",
+    "detailIntroTitle": "Samsung Galaxy S26 + Galaxy Watch8",
+    "detailIntroSubtitle": "Galaxy Watch8 cadeau · max. €351 voordeel",
+    "detailIntroCards": [
+      {
+        "title": "Galaxy Watch8 cadeau",
+        "text": "40mm LTE Graphite · t.w.v. €429"
+      },
+      {
+        "title": "Max. €351 voordeel",
+        "text": "Volgens de officiële campagne"
+      },
+      {
+        "title": "Actie t/m 12 juli 2026",
+        "text": "Claimregistratie t/m 14 september"
+      }
+    ],
+    "detailSummaryText": "Tijdelijk ontvang je bij geselecteerde Samsung Galaxy S26-modellen een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429. De officiële campagne vermeldt daarnaast maximaal €351 voordeel. Controleer de actuele voorwaarden en de claiminformatie bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4820787&v=8389&q=608473&r=2947269",
+    "cardImageAlt": "Odido Samsung Galaxy S26 campagne met Galaxy Watch8 cadeau",
+    "cardImageSource": "Officiële Odido Mobiel-campagneafbeelding via Awin",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4820787&v=8389&q=608473&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
+    "officialBannerLabel": "Odido Samsung Galaxy S26-campagne"
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "mobiel",
+    "benefitTypes": [
+      "cadeau",
+      "korting"
+    ],
+    "giftType": "smartwatch",
+    "giftName": "Galaxy Watch8 40mm LTE Graphite",
+    "giftValue": 429,
+    "cashbackValue": 0,
+    "extraValue": 0,
+    "contract": "Bekijk voorwaarden",
+    "icon": "📱",
+    "dealType": "Tijdelijke actie",
+    "contractLengthMonths": 0,
+    "network": "awin",
+    "campaignId": "8389",
+    "merchantId": "odido-mobiel",
+    "affiliateStatus": "approved",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": "2026-07-12",
+    "sourceType": "awin-creative",
+    "lastCheckedAt": "2026-06-30",
+    "lastDataReviewAt": "2026-06-30",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "gift-and-discount",
+    "officialBannerSize": "1080x1080",
+    "cardImageVariant": "square-large",
+    "providerDescriptionTitle": "Over Odido Mobiel",
+    "providerDescription": "Odido biedt mobiele abonnementen met toestel en Sim Only. Controleer vóór je afsluit altijd de actuele toestelprijs, bundel, looptijd en voorwaarden bij Odido.",
+    "detailConditionItems": [
+      "Tijdelijke Samsung-promotie",
+      "Actieperiode: 29 juni t/m 12 juli 2026",
+      "Registratie voor de claim mogelijk t/m 14 september 2026",
+      "Alleen geldig op deelnemende modellen met een Nederlandse EAN-code",
+      "Bekijk de volledige actievoorwaarden en claiminformatie bij Odido"
+    ],
+    "detailConditionNote": "De actievoorwaarden, beschikbaarheid van toestellen en eventuele abonnementsvoorwaarden kunnen wijzigen. Controleer altijd de actuele informatie bij Odido voordat je afsluit.",
+    "sourceVerifiedAt": "2026-06-30",
+    "id": "odido-samsung-galaxy-s26-ultra-watch8",
+    "title": "Samsung Galaxy S26 Ultra + Galaxy Watch8",
+    "benefitValue": 773,
+    "totalBenefitValue": 773,
+    "totalBenefitLabel": "Galaxy Watch8 cadeau + max. €344 voordeel",
+    "score": 9.6,
+    "benefits": [
+      "Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429",
+      "Max. €344 voordeel op je toestel",
+      "Actie t/m 12 juli 2026"
+    ],
+    "price": "Bekijk voorwaarden",
+    "featured": false,
+    "discountValue": 344,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
+    "benefitBreakdown": {
+      "gift": 429,
+      "cashback": 0,
+      "discount": 344,
+      "extra": 0
+    },
+    "seoSlug": "odido-samsung-galaxy-s26-ultra-watch8",
+    "updatedAt": "2026-06-30",
+    "meerPakScore": 96,
+    "url": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
+    "trackingId": "4820783",
+    "deepLink": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
+    "sourceId": "awin-creative-4820783",
+    "adminNotes": "Officiële Awin creative 4820783 voor Odido Mobiel NL. Samsung Galaxy S26 Ultra: Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429 + maximaal €344 voordeel. Actieperiode 29-06-2026 t/m 12-07-2026; claimregistratie t/m 14-09-2026. Alleen deelnemende modellen met Nederlandse EAN-code.",
+    "termsSummary": "Ontvang tijdelijk een Galaxy Watch8 40mm LTE Graphite bij aankoop van een Samsung Galaxy S26 Ultra. De officiële banner vermeldt daarnaast maximaal €344 voordeel. Promotie geldig van 29 juni t/m 12 juli 2026. Registratie voor de claim mogelijk t/m 14 september 2026. Alleen geldig op deelnemende modellen met een Nederlandse EAN-code.",
+    "detailTitle": "Galaxy Watch8 cadeau + max. €344 voordeel",
+    "detailIntro": "Bij geselecteerde Samsung Galaxy S26 Ultra-modellen ontvang je tijdelijk een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429. De officiële campagne vermeldt daarnaast maximaal €344 voordeel. Controleer de actuele toestel- en abonnementsvoorwaarden bij Odido.",
+    "detailBenefits": [
+      {
+        "type": "gift",
+        "title": "Galaxy Watch8 40mm LTE Graphite",
+        "sub": "Cadeau t.w.v. €429"
+      },
+      {
+        "type": "discount",
+        "title": "Max. €344 voordeel",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "calendar",
+        "title": "Actie t/m 12 juli 2026",
+        "sub": "Claimregistratie mogelijk t/m 14 september 2026"
+      }
+    ],
+    "detailSummaryValue": "Galaxy Watch8 cadeau + max. €344 voordeel",
+    "summaryLine": "Samsung Galaxy S26 Ultra van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "De officiële Odido-campagne voor Samsung Galaxy S26 Ultra vermeldt een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429 en maximaal €344 voordeel. De promotie loopt van 29 juni tot en met 12 juli 2026. Registratie voor de claim is mogelijk tot en met 14 september 2026. De actie geldt uitsluitend voor deelnemende modellen met een Nederlandse EAN-code.",
+    "contractPriceLabel": "Bekijk toestel- en abonnementsvoorwaarden",
+    "priceDuringDiscount": "Tijdelijke Samsung-actie",
+    "priceAfterDiscount": "Bekijk actuele voorwaarden bij Odido",
+    "detailIntroTitle": "Samsung Galaxy S26 Ultra + Galaxy Watch8",
+    "detailIntroSubtitle": "Galaxy Watch8 cadeau · max. €344 voordeel",
+    "detailIntroCards": [
+      {
+        "title": "Galaxy Watch8 cadeau",
+        "text": "40mm LTE Graphite · t.w.v. €429"
+      },
+      {
+        "title": "Max. €344 voordeel",
+        "text": "Volgens de officiële campagne"
+      },
+      {
+        "title": "Actie t/m 12 juli 2026",
+        "text": "Claimregistratie t/m 14 september"
+      }
+    ],
+    "detailSummaryText": "Tijdelijk ontvang je bij geselecteerde Samsung Galaxy S26 Ultra-modellen een Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429. De officiële campagne vermeldt daarnaast maximaal €344 voordeel. Controleer de actuele voorwaarden en de claiminformatie bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4820783&v=8389&q=608473&r=2947269",
+    "cardImageAlt": "Odido Samsung Galaxy S26 Ultra campagne met Galaxy Watch8 cadeau",
+    "cardImageSource": "Officiële Odido Mobiel-campagneafbeelding via Awin",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4820783&v=8389&q=608473&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
+    "officialBannerLabel": "Odido Samsung Galaxy S26 Ultra-campagne"
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "mobiel",
+    "benefitTypes": [
+      "cadeau",
+      "korting",
+      "streaming"
+    ],
+    "giftType": "streaming",
+    "giftName": "3 maanden Apple TV",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "extraValue": 0,
+    "contract": "Bekijk voorwaarden",
+    "icon": "📱",
+    "dealType": "Tijdelijke actie",
+    "contractLengthMonths": 0,
+    "network": "awin",
+    "campaignId": "8389",
+    "merchantId": "odido-mobiel",
+    "affiliateStatus": "approved",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": "2026-07-19",
+    "sourceType": "awin-creative",
+    "lastCheckedAt": "2026-06-30",
+    "lastDataReviewAt": "2026-06-30",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "discount-and-streaming",
+    "officialBannerSize": "1080x1080",
+    "cardImageVariant": "square-large",
+    "providerDescriptionTitle": "Over Odido Mobiel",
+    "providerDescription": "Odido biedt mobiele abonnementen met toestel en Sim Only. Controleer vóór je afsluit altijd de actuele toestelprijs, bundel, looptijd en voorwaarden bij Odido.",
+    "detailConditionItems": [
+      "Tijdelijke Odido Mobiel-promotie",
+      "Actie loopt t/m 19 juli 2026",
+      "3 maanden Apple TV cadeau volgens de officiële campagne",
+      "Bekijk de volledige actie- en abonnementsvoorwaarden bij Odido"
+    ],
+    "detailConditionNote": "De actievoorwaarden, beschikbaarheid van toestellen en eventuele abonnementsvoorwaarden kunnen wijzigen. Controleer altijd de actuele informatie bij Odido voordat je afsluit.",
+    "sourceVerifiedAt": "2026-06-30",
+    "id": "odido-apple-iphone-16-apple-tv",
+    "title": "Apple iPhone 16 + Apple TV",
+    "benefitValue": 173,
+    "totalBenefitValue": 173,
+    "totalBenefitLabel": "€173 voordeel + 3 maanden Apple TV",
+    "score": 90,
+    "benefits": [
+      "€173 voordeel",
+      "3 maanden Apple TV cadeau",
+      "Actie t/m 19 juli 2026"
+    ],
+    "price": "Bekijk voorwaarden",
+    "featured": false,
+    "discountValue": 173,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 173,
+      "extra": 0
+    },
+    "seoSlug": "odido-apple-iphone-16-apple-tv",
+    "updatedAt": "2026-06-30",
+    "meerPakScore": 90,
+    "url": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
+    "trackingId": "4820816",
+    "deepLink": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
+    "sourceId": "awin-creative-4820816",
+    "adminNotes": "Officiële Awin creative 4820816 voor Odido Mobiel NL. iPhone 16: €173 voordeel + 3 maanden Apple TV cadeau. Campagnemail van Odido vermeldt een actieperiode t/m 19-07-2026. Toestel- en abonnementsvoorwaarden altijd bij Odido controleren.",
+    "termsSummary": "De officiële Odido-campagne vermeldt €173 voordeel op de iPhone 16 en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "detailTitle": "€173 voordeel + 3 maanden Apple TV",
+    "detailIntro": "Bij de geselecteerde Odido-campagne voor de iPhone 16 ontvang je €173 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele toestel- en abonnementsvoorwaarden bij Odido.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "€173 voordeel",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "streaming",
+        "title": "3 maanden Apple TV cadeau",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "calendar",
+        "title": "Actie t/m 19 juli 2026",
+        "sub": "Controleer actuele voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryValue": "€173 voordeel + Apple TV",
+    "summaryLine": "iPhone 16 van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "De officiële Odido-campagne voor de iPhone 16 vermeldt €173 voordeel en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "contractPriceLabel": "Bekijk toestel- en abonnementsvoorwaarden",
+    "priceDuringDiscount": "Tijdelijke Odido-actie",
+    "priceAfterDiscount": "Bekijk actuele voorwaarden bij Odido",
+    "detailIntroTitle": "Apple iPhone 16 + Apple TV",
+    "detailIntroSubtitle": "€173 voordeel · 3 maanden Apple TV cadeau",
+    "detailIntroCards": [
+      {
+        "title": "€173 voordeel",
+        "text": "Volgens de officiële campagne"
+      },
+      {
+        "title": "3 maanden Apple TV cadeau",
+        "text": "Tijdelijk extra voordeel"
+      },
+      {
+        "title": "Actie t/m 19 juli 2026",
+        "text": "Controleer voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryText": "Tijdelijk ontvang je bij de iPhone 16 €173 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele voorwaarden bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4820816&v=8389&q=608473&r=2947269",
+    "cardImageAlt": "Odido iPhone 16 campagne met 3 maanden Apple TV cadeau",
+    "cardImageSource": "Officiële Odido Mobiel-campagneafbeelding via Awin",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4820816&v=8389&q=608473&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
+    "officialBannerLabel": "Odido iPhone 16-campagne"
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "mobiel",
+    "benefitTypes": [
+      "cadeau",
+      "korting",
+      "streaming"
+    ],
+    "giftType": "streaming",
+    "giftName": "3 maanden Apple TV",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "extraValue": 0,
+    "contract": "Bekijk voorwaarden",
+    "icon": "📱",
+    "dealType": "Tijdelijke actie",
+    "contractLengthMonths": 0,
+    "network": "awin",
+    "campaignId": "8389",
+    "merchantId": "odido-mobiel",
+    "affiliateStatus": "approved",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": "2026-07-19",
+    "sourceType": "awin-creative",
+    "lastCheckedAt": "2026-06-30",
+    "lastDataReviewAt": "2026-06-30",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "discount-and-streaming",
+    "officialBannerSize": "1080x1080",
+    "cardImageVariant": "square-large",
+    "providerDescriptionTitle": "Over Odido Mobiel",
+    "providerDescription": "Odido biedt mobiele abonnementen met toestel en Sim Only. Controleer vóór je afsluit altijd de actuele toestelprijs, bundel, looptijd en voorwaarden bij Odido.",
+    "detailConditionItems": [
+      "Tijdelijke Odido Mobiel-promotie",
+      "Actie loopt t/m 19 juli 2026",
+      "3 maanden Apple TV cadeau volgens de officiële campagne",
+      "Bekijk de volledige actie- en abonnementsvoorwaarden bij Odido"
+    ],
+    "detailConditionNote": "De actievoorwaarden, beschikbaarheid van toestellen en eventuele abonnementsvoorwaarden kunnen wijzigen. Controleer altijd de actuele informatie bij Odido voordat je afsluit.",
+    "sourceVerifiedAt": "2026-06-30",
+    "id": "odido-apple-iphone-17-apple-tv",
+    "title": "Apple iPhone 17 + Apple TV",
+    "benefitValue": 177,
+    "totalBenefitValue": 177,
+    "totalBenefitLabel": "€177 voordeel + 3 maanden Apple TV",
+    "score": 92,
+    "benefits": [
+      "€177 voordeel",
+      "3 maanden Apple TV cadeau",
+      "Actie t/m 19 juli 2026"
+    ],
+    "price": "Bekijk voorwaarden",
+    "featured": true,
+    "discountValue": 177,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 177,
+      "extra": 0
+    },
+    "seoSlug": "odido-apple-iphone-17-apple-tv",
+    "updatedAt": "2026-06-30",
+    "meerPakScore": 92,
+    "url": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
+    "trackingId": "4820813",
+    "deepLink": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
+    "sourceId": "awin-creative-4820813",
+    "adminNotes": "Officiële Awin creative 4820813 voor Odido Mobiel NL. iPhone 17: €177 voordeel + 3 maanden Apple TV cadeau. Campagnemail van Odido vermeldt een actieperiode t/m 19-07-2026. Toestel- en abonnementsvoorwaarden altijd bij Odido controleren.",
+    "termsSummary": "De officiële Odido-campagne vermeldt €177 voordeel op de iPhone 17 en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "detailTitle": "€177 voordeel + 3 maanden Apple TV",
+    "detailIntro": "Bij de geselecteerde Odido-campagne voor de iPhone 17 ontvang je €177 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele toestel- en abonnementsvoorwaarden bij Odido.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "€177 voordeel",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "streaming",
+        "title": "3 maanden Apple TV cadeau",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "calendar",
+        "title": "Actie t/m 19 juli 2026",
+        "sub": "Controleer actuele voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryValue": "€177 voordeel + Apple TV",
+    "summaryLine": "iPhone 17 van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "De officiële Odido-campagne voor de iPhone 17 vermeldt €177 voordeel en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "contractPriceLabel": "Bekijk toestel- en abonnementsvoorwaarden",
+    "priceDuringDiscount": "Tijdelijke Odido-actie",
+    "priceAfterDiscount": "Bekijk actuele voorwaarden bij Odido",
+    "detailIntroTitle": "Apple iPhone 17 + Apple TV",
+    "detailIntroSubtitle": "€177 voordeel · 3 maanden Apple TV cadeau",
+    "detailIntroCards": [
+      {
+        "title": "€177 voordeel",
+        "text": "Volgens de officiële campagne"
+      },
+      {
+        "title": "3 maanden Apple TV cadeau",
+        "text": "Tijdelijk extra voordeel"
+      },
+      {
+        "title": "Actie t/m 19 juli 2026",
+        "text": "Controleer voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryText": "Tijdelijk ontvang je bij de iPhone 17 €177 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele voorwaarden bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4820813&v=8389&q=608473&r=2947269",
+    "cardImageAlt": "Odido iPhone 17 campagne met 3 maanden Apple TV cadeau",
+    "cardImageSource": "Officiële Odido Mobiel-campagneafbeelding via Awin",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4820813&v=8389&q=608473&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
+    "officialBannerLabel": "Odido iPhone 17-campagne"
+  },
+  {
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "mobiel",
+    "benefitTypes": [
+      "cadeau",
+      "korting",
+      "streaming"
+    ],
+    "giftType": "streaming",
+    "giftName": "3 maanden Apple TV",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "extraValue": 0,
+    "contract": "Bekijk voorwaarden",
+    "icon": "📱",
+    "dealType": "Tijdelijke actie",
+    "contractLengthMonths": 0,
+    "network": "awin",
+    "campaignId": "8389",
+    "merchantId": "odido-mobiel",
+    "affiliateStatus": "approved",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-29",
+    "expiresAt": "2026-07-19",
+    "sourceType": "awin-creative",
+    "lastCheckedAt": "2026-06-30",
+    "lastDataReviewAt": "2026-06-30",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "discount-and-streaming",
+    "officialBannerSize": "1080x1080",
+    "cardImageVariant": "square-large",
+    "providerDescriptionTitle": "Over Odido Mobiel",
+    "providerDescription": "Odido biedt mobiele abonnementen met toestel en Sim Only. Controleer vóór je afsluit altijd de actuele toestelprijs, bundel, looptijd en voorwaarden bij Odido.",
+    "detailConditionItems": [
+      "Tijdelijke Odido Mobiel-promotie",
+      "Actie loopt t/m 19 juli 2026",
+      "3 maanden Apple TV cadeau volgens de officiële campagne",
+      "Bekijk de volledige actie- en abonnementsvoorwaarden bij Odido"
+    ],
+    "detailConditionNote": "De actievoorwaarden, beschikbaarheid van toestellen en eventuele abonnementsvoorwaarden kunnen wijzigen. Controleer altijd de actuele informatie bij Odido voordat je afsluit.",
+    "sourceVerifiedAt": "2026-06-30",
+    "id": "odido-apple-iphone-17-pro-apple-tv",
+    "title": "Apple iPhone 17 Pro + Apple TV",
+    "benefitValue": 174,
+    "totalBenefitValue": 174,
+    "totalBenefitLabel": "€174 voordeel + 3 maanden Apple TV",
+    "score": 91,
+    "benefits": [
+      "€174 voordeel",
+      "3 maanden Apple TV cadeau",
+      "Actie t/m 19 juli 2026"
+    ],
+    "price": "Bekijk voorwaarden",
+    "featured": false,
+    "discountValue": 174,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 174,
+      "extra": 0
+    },
+    "seoSlug": "odido-apple-iphone-17-pro-apple-tv",
+    "updatedAt": "2026-06-30",
+    "meerPakScore": 91,
+    "url": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
+    "trackingId": "4820808",
+    "deepLink": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
+    "sourceId": "awin-creative-4820808",
+    "adminNotes": "Officiële Awin creative 4820808 voor Odido Mobiel NL. iPhone 17 Pro: €174 voordeel + 3 maanden Apple TV cadeau. Campagnemail van Odido vermeldt een actieperiode t/m 19-07-2026. Toestel- en abonnementsvoorwaarden altijd bij Odido controleren.",
+    "termsSummary": "De officiële Odido-campagne vermeldt €174 voordeel op de iPhone 17 Pro en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "detailTitle": "€174 voordeel + 3 maanden Apple TV",
+    "detailIntro": "Bij de geselecteerde Odido-campagne voor de iPhone 17 Pro ontvang je €174 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele toestel- en abonnementsvoorwaarden bij Odido.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "€174 voordeel",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "streaming",
+        "title": "3 maanden Apple TV cadeau",
+        "sub": "Volgens de officiële Odido-campagne"
+      },
+      {
+        "type": "calendar",
+        "title": "Actie t/m 19 juli 2026",
+        "sub": "Controleer actuele voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryValue": "€174 voordeel + Apple TV",
+    "summaryLine": "iPhone 17 Pro van Odido",
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "De officiële Odido-campagne voor de iPhone 17 Pro vermeldt €174 voordeel en 3 maanden Apple TV cadeau. De campagne loopt t/m 19 juli 2026. Controleer vóór je afsluit de actuele toestel-, bundel- en actievoorwaarden bij Odido.",
+    "contractPriceLabel": "Bekijk toestel- en abonnementsvoorwaarden",
+    "priceDuringDiscount": "Tijdelijke Odido-actie",
+    "priceAfterDiscount": "Bekijk actuele voorwaarden bij Odido",
+    "detailIntroTitle": "Apple iPhone 17 Pro + Apple TV",
+    "detailIntroSubtitle": "€174 voordeel · 3 maanden Apple TV cadeau",
+    "detailIntroCards": [
+      {
+        "title": "€174 voordeel",
+        "text": "Volgens de officiële campagne"
+      },
+      {
+        "title": "3 maanden Apple TV cadeau",
+        "text": "Tijdelijk extra voordeel"
+      },
+      {
+        "title": "Actie t/m 19 juli 2026",
+        "text": "Controleer voorwaarden bij Odido"
+      }
+    ],
+    "detailSummaryText": "Tijdelijk ontvang je bij de iPhone 17 Pro €174 voordeel en 3 maanden Apple TV cadeau. Controleer de actuele voorwaarden bij Odido.",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4820808&v=8389&q=608473&r=2947269",
+    "cardImageAlt": "Odido iPhone 17 Pro campagne met 3 maanden Apple TV cadeau",
+    "cardImageSource": "Officiële Odido Mobiel-campagneafbeelding via Awin",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4820808&v=8389&q=608473&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
+    "officialBannerLabel": "Odido iPhone 17 Pro-campagne"
   }
 ]
