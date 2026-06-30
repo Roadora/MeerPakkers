@@ -7,25 +7,6 @@
     return "€" + Number(value || 0).toLocaleString("nl-NL");
   }
 
-  function isNonEuroBenefit(deal){
-    var d = deal || {};
-    var label = String(d.totalBenefitLabel || "").trim();
-    return !!label && !(Number(d.totalBenefitValue || d.benefitValue || 0) > 0);
-  }
-
-  function benefitFooterLabel(deal){
-    return isNonEuroBenefit(deal) ? "Meepakker" : "Totaal voordeel";
-  }
-
-  function benefitDisplayType(deal){
-    var d = deal || {};
-    var explicit = String(d.benefitDisplayType || "").trim().toLowerCase();
-    if(explicit) return explicit;
-    var types = Array.isArray(d.benefitTypes) ? d.benefitTypes.map(function(t){ return String(t).toLowerCase(); }) : [];
-    if(types.indexOf("korting") !== -1 && types.indexOf("cadeau") !== -1) return "choice";
-    return isNonEuroBenefit(d) ? "period" : "money";
-  }
-
   function categoryLabel(category){
     return {
       "mobiel":"Mobiel",
@@ -105,10 +86,8 @@
   }
 
   function normalizeBenefitLabel(value){
-    return String(value || "")
-      .replace(/\s+/g, " ")
-      .replace(/^\s*[🎁🏷️💸✨✅☑️✔️➕]\s*/u, "")
-      .trim();
+    var text = String(value || "").replace(/\s+/g, " ").trim();
+    return text.replace(/🎁\s*cadeaukaart/i, "🎁 €100 cadeaukaart");
   }
 
   function benefitRows(deal){
@@ -118,13 +97,18 @@
       rows = d.benefits.slice(0,3).map(normalizeBenefitLabel).filter(Boolean);
     } else {
       if(d.giftType || d.giftValue){
-        rows.push((d.giftType || "Cadeau") + (d.giftValue && !String(d.giftType || "").includes("€") ? " t.w.v. " + euro(d.giftValue) : ""));
+        rows.push("🎁 " + (d.giftType || "Cadeau") + (d.giftValue && !String(d.giftType || "").includes("€") ? " t.w.v. " + euro(d.giftValue) : ""));
       }
-      if(d.cashbackValue) rows.push(euro(d.cashbackValue) + " cashback");
-      if(d.discountValue) rows.push(euro(d.discountValue) + " korting");
+      if(d.cashbackValue) rows.push("💸 " + euro(d.cashbackValue) + " cashback");
+      if(d.discountValue) rows.push("🏷️ " + euro(d.discountValue) + " korting");
     }
-    if(!rows.length) rows = ["Extra voordeel"];
+    if(!rows.length) rows = ["🎁 Extra voordeel"];
     return rows.slice(0,3);
+  }
+
+  function totalBenefitLabel(deal){
+    var d = normalize(deal);
+    return d.totalBenefitLabel || euro(d.totalBenefitValue || d.benefitValue || 0);
   }
 
   function benefitPills(deal){
@@ -145,14 +129,9 @@
     })() : dealUrl(d, category));
     var id = dealId(d);
     var value = d.totalBenefitValue || d.benefitValue || 0;
-    var valueLabel = d.totalBenefitLabel || euro(value);
-    var ctaLabel = d.ctaLabel || "Bekijk deal";
-    var displayType = benefitDisplayType(d);
-    var choiceClass = displayType === "choice" ? " mp-deal-card--choice" : "";
-    var unifiedClass = " mp-unified-deal-card";
     var rank = opts.rank ? '<div class="mp-clean-rank mp-official-rank">#' + escapeHtml(opts.rank) + '</div>' : '';
 
-    return '<article class="mp-clean-deal-card mp-deal-card-component mp-official-deal-card mp-home-meepakker-deal-card' + choiceClass + unifiedClass + '" data-benefit-display="' + escapeHtml(displayType) + '" data-deal-id="' + escapeHtml(id) + '">'
+    return '<article class="mp-clean-deal-card mp-deal-card-component mp-official-deal-card mp-home-meepakker-deal-card" data-deal-id="' + escapeHtml(id) + '">'
       + rank
       + '<button class="meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="' + escapeHtml(id) + '">♡</button>'
       + '<div class="mp-clean-card-head mp-official-card-content">'
@@ -164,11 +143,9 @@
           + '<div class="mp-clean-benefits mp-card-benefits-pill" aria-label="Extra voordelen">' + benefitPills(d) + '</div>'
         + '</div>'
       + '</div>'
-      + '<div class="mp-clean-card-bottom mp-card-footer" aria-label="Deal bekijken">'
-        + (displayType === "choice"
-          ? ''
-          : '<div class="mp-card-total mp-card-total--period"><small>' + escapeHtml(benefitFooterLabel(d)) + '</small><strong>' + escapeHtml(valueLabel) + '</strong></div>')
-        + '<a class="mp-card-cta" href="' + escapeHtml(url) + '">' + escapeHtml(ctaLabel) + '</a>'
+      + '<div class="mp-clean-card-bottom mp-card-footer" aria-label="Totaal voordeel en bekijken">'
+        + '<div class="mp-card-total"><small>Totaal voordeel</small><strong>' + escapeHtml(d.totalBenefitLabel || euro(value)) + '</strong></div>'
+        + '<a class="mp-card-cta" href="' + escapeHtml(url) + '">Bekijk deal</a>'
       + '</div>'
     + '</article>';
   }
@@ -182,6 +159,7 @@
     normalize: normalize,
     calculateMeerPakScore: calculateMeerPakScore,
     dealUrl: dealUrl,
-    dealId: dealId
+    dealId: dealId,
+    totalBenefitLabel: totalBenefitLabel
   };
 })();

@@ -65,7 +65,9 @@
     if(key === 'cadeaukaart') return /cadeaukaart/.test(text);
     if(key === 'cashback') return /cashback/.test(text);
     if(key === 'tablet') return /\btablet\b|tab a11|galaxy tab|ipad/.test(text);
-    if(key === 'streaming') return /streaming|netflix|disney|videoland|hbo|max|prime|skyshowtime|viaplay|espn|sport/.test(text);
+    // Match actual streaming services/benefits only. Do not treat a generic
+    // 'max. € voordeel' claim as the streaming service Max.
+    if(key === 'streaming') return /\b(streaming|apple tv|apple tv plus|netflix|disney|disney plus|videoland|hbo(?: max)?|prime video|skyshowtime|viaplay|espn|sportpakket|sport pakket)\b/.test(text);
     if(key === 'tickets') return /ticket|tickets|event|bioscoop|voucher/.test(text);
     return false;
   }
