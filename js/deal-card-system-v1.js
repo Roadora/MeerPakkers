@@ -67,10 +67,15 @@
     var variant = String((deal && deal.cardImageVariant) || '').toLowerCase();
     var isLandscape = variant === 'landscape';
     var isSquare = variant === 'square';
+    var isBudgetSquare = variant === 'budget-square';
     var isSquareLarge = variant === 'square-large';
     var variantClass = isLandscape
       ? ' mp-card-product-image--landscape'
-      : (isSquareLarge ? ' mp-card-product-image--square-large' : (isSquare ? ' mp-card-product-image--square' : ''));
+      : (isSquareLarge
+        ? ' mp-card-product-image--square-large'
+        : (isBudgetSquare
+          ? ' mp-card-product-image--budget-square'
+          : (isSquare ? ' mp-card-product-image--square' : '')));
     return '' +
       '<span class="mp-card-product-image' + variantClass + '" aria-hidden="' + (alt ? 'false' : 'true') + '">' +
         '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" loading="lazy" decoding="async">' +

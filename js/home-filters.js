@@ -6,7 +6,6 @@ window.MPHomeFilters = {
     document.querySelectorAll("[data-filter]").forEach(input => {
       const key = input.dataset.filter;
       if (input.type === "checkbox" && input.checked && state[key] instanceof Set) state[key].add(input.value);
-      if (input.type === "radio" && input.checked && key === "minScore") state[key] = Number(input.value);
     });
 
     const searchInput = document.getElementById("searchInput");
@@ -24,9 +23,14 @@ window.MPHomeFilters = {
       if (state.providers.size && !state.providers.has(d.provider)) return false;
       if (state.giftTypes.size && !state.giftTypes.has(d.giftType)) return false;
       if (state.contracts.size && !state.contracts.has(d.contract)) return false;
-      if (d.score < state.minScore) return false;
       return true;
-    }).sort((a,b) => (b.score - a.score) || (b.totalBenefitValue - a.totalBenefitValue));
+    }).sort((a,b) => {
+      const featured = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+      if (featured) return featured;
+      const value = Number(b.totalBenefitValue || b.benefitValue || 0) - Number(a.totalBenefitValue || a.benefitValue || 0);
+      if (value) return value;
+      return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
+    });
   },
 
   renderChips(){
@@ -37,7 +41,6 @@ window.MPHomeFilters = {
     for (const key of ["benefitTypes","categories","providers","giftTypes","contracts"]) {
       state[key].forEach(v => chips.push(labels[v] || v));
     }
-    if (state.minScore > 0) chips.push(`Score ${String(state.minScore).replace(".", ",")}+`);
     if (state.quick !== "all") chips.push(labels[state.quick] || state.quick);
 
     const activeChipsEl = document.getElementById("activeChips");
@@ -48,7 +51,6 @@ window.MPHomeFilters = {
     const state = window.MPHomeState.state;
     document.querySelectorAll("[data-filter]").forEach(input => {
       if (input.type === "checkbox") input.checked = false;
-      if (input.type === "radio") input.checked = input.value === "0";
     });
     state.quick = "all";
     document.querySelectorAll(".quick-filter").forEach(b => b.classList.toggle("active", b.dataset.quick === "all"));

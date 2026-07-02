@@ -1,5 +1,5 @@
 import { categoryState } from "./category-state.js";
-import { getTotalValue } from "./category-data.js";
+import { getTotalValue, sortDealsByBenefitAndPrice } from "./category-data.js";
 import { getOptionsForFilter, hasActiveCategoryFilters } from "./category-filters.js";
 
 export function euro(value){
@@ -73,8 +73,7 @@ export function renderCategoryDeals(deals){
   if (window.MPCardComponents && typeof window.MPCardComponents.renderNormalDealCard === "function") {
     list.innerHTML = deals.map((deal) => {
       const componentDeal = Object.assign({}, deal, {
-        totalBenefitValue: deal.totalBenefitValue || getTotalValue(deal),
-        meerPakScore: deal.meerPakScore || deal.score
+        totalBenefitValue: deal.totalBenefitValue || getTotalValue(deal)
       });
       return window.MPCardComponents.renderNormalDealCard(componentDeal);
     }).join("");
@@ -121,6 +120,7 @@ export function renderCategoryPage(){
 
   renderCategoryFilterPanel(categoryState.category, categoryProviders);
   renderCategoryProviderStrip(categoryProviders, categoryDeals);
-  renderCategoryDeals(categoryDeals.sort((a,b) => (b.score || 0) - (a.score || 0)));
-  renderCategorySideCards(categoryState.category, categoryDeals.sort((a,b) => (b.score || 0) - (a.score || 0)), categoryProviders);
+  const rankedDeals = sortDealsByBenefitAndPrice(categoryDeals);
+  renderCategoryDeals(rankedDeals);
+  renderCategorySideCards(categoryState.category, rankedDeals, categoryProviders);
 }

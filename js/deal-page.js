@@ -22,9 +22,6 @@
     return path.replace(/\.html$/i, '');
   }
 
-  function score(deal){
-    return Number(deal.meerPakScore || deal.score || 0);
-  }
 
   function value(deal){
     return Number(deal.totalBenefitValue || deal.benefitValue || 0);
@@ -41,7 +38,11 @@
 
     var related = allDeals
       .filter(function(item){ return item.id !== deal.id && item.seoSlug !== deal.seoSlug && (item.category === deal.category || item.providerId === deal.providerId); })
-      .sort(function(a,b){ return (score(b)-score(a)) || (value(b)-value(a)); })
+      .sort(function(a,b){
+        var valueDiff = value(b) - value(a);
+        if (valueDiff) return valueDiff;
+        return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
+      })
       .slice(0,3);
 
     relatedEl.innerHTML = related.map(function(item){

@@ -12,7 +12,13 @@ async function loadProviderPage(){
     : deals;
   const providerDeals = publicDeals
     .filter(d => d.providerId === slug)
-    .sort((a,b) => ((b.meerPakScore || 0) - (a.meerPakScore || 0)) || ((b.totalBenefitValue || 0) - (a.totalBenefitValue || 0)));
+    .sort((a,b) => {
+      const featured = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+      if (featured) return featured;
+      const value = Number(b.totalBenefitValue || b.benefitValue || 0) - Number(a.totalBenefitValue || a.benefitValue || 0);
+      if (value) return value;
+      return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
+    });
 
   const countEl = document.getElementById("providerDealCount");
   if (countEl) countEl.textContent = `${providerDeals.length} deals gevonden`;

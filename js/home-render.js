@@ -70,7 +70,6 @@ function mpCategoryWinnerValueClassHome(d){
 function mpNormalizeHomeDeal(deal){
   const d = Object.assign({}, deal || {});
   d.totalBenefitValue = Number(d.totalBenefitValue || d.benefitValue || 0);
-  d.meerPakScore = Number(d.meerPakScore || d.score || 0);
   return d;
 }
 

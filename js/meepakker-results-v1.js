@@ -137,7 +137,11 @@
           ? (window.MPDealLifecycle ? window.MPDealLifecycle.filterCurrent(data) : data)
           : [];
         var deals = publicDeals.filter(function(deal){ return matches(deal, selected); });
-        deals.sort(function(a,b){ return (Number(b.meerPakScore || 0) - Number(a.meerPakScore || 0)) || (totalValue(b) - totalValue(a)); });
+        deals.sort(function(a,b){
+          var valueDiff = totalValue(b) - totalValue(a);
+          if (valueDiff) return valueDiff;
+          return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
+        });
         renderResults(root, selected, deals);
       })
       .catch(function(){ renderEmpty(root, labels[selected] || 'Meepakker'); });

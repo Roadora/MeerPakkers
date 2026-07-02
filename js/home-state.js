@@ -7,7 +7,6 @@ window.MPHomeState = {
     providers: new Set(["Vodafone"]),
     giftTypes: new Set(),
     contracts: new Set(),
-    minScore: 0,
     deals: [],
     providersData: []
   },

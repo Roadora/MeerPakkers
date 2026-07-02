@@ -566,12 +566,13 @@
     var alt = String((d && d.cardImageAlt) || (d.provider ? d.provider + ' productafbeelding' : 'Productafbeelding')).trim();
     var variant = String((d && d.cardImageVariant) || '').toLowerCase();
     var isLandscape = variant === 'landscape';
-    var isSquare = variant === 'square' || variant === 'square-large';
+    var isBudgetSquare = variant === 'budget-square';
+    var isSquare = variant === 'square' || variant === 'square-large' || isBudgetSquare;
     var isLargeSquare = variant === 'square-large';
     var cacheSafeSrc = String((d && d.network) || '').toLowerCase() === 'awin'
       ? src
       : src + (src.indexOf('?') === -1 ? '?v=budget-tv-v1' : '&v=budget-tv-v1');
-    var variantClass = isLandscape ? ' mp-offer-overview__product-image--landscape' : (isLargeSquare ? ' mp-offer-overview__product-image--square-large' : (isSquare ? ' mp-offer-overview__product-image--square' : ''));
+    var variantClass = isLandscape ? ' mp-offer-overview__product-image--landscape' : (isLargeSquare ? ' mp-offer-overview__product-image--square-large' : (isBudgetSquare ? ' mp-offer-overview__product-image--budget-square' : (isSquare ? ' mp-offer-overview__product-image--square' : '')));
     var imageWidth = isLandscape ? '300' : (isLargeSquare ? '380' : (isSquare ? '300' : '260'));
     var imageHeight = isLandscape ? '250' : (isLargeSquare ? '380' : (isSquare ? '300' : '421'));
     return `
@@ -592,7 +593,8 @@
     var productImage = offerOverviewProductImage(d);
     var productImageVariant = String((d && d.cardImageVariant) || '').toLowerCase();
     var productImageIsLandscape = productImageVariant === 'landscape';
-    var productImageIsSquare = productImageVariant === 'square';
+    var productImageIsBudgetSquare = productImageVariant === 'budget-square';
+    var productImageIsSquare = productImageVariant === 'square' || productImageIsBudgetSquare;
     var productImageIsLargeSquare = productImageVariant === 'square-large';
     var cardMarkup = cards.slice(0,3).map(function(card){
       var cardExtra = card && card.extra ? `<em class="mp-offer-overview__benefit-extra">${escapeHtml(card.extra)}</em>` : "";
@@ -608,7 +610,7 @@
     return `
       <article class="mp-offer-overview mp-offer-overview--${surface}">
         <div class="mp-offer-overview__kicker">Aanbiedingsoverzicht</div>
-        <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}${productImageIsSquare ? ' mp-offer-overview__title-row--with-product-image--square' : ''}${productImageIsLargeSquare ? ' mp-offer-overview__title-row--with-product-image--square-large' : ''}">
+        <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}${productImageIsSquare ? ' mp-offer-overview__title-row--with-product-image--square' : ''}${productImageIsBudgetSquare ? ' mp-offer-overview__title-row--with-product-image--budget-square' : ''}${productImageIsLargeSquare ? ' mp-offer-overview__title-row--with-product-image--square-large' : ''}">
           <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>
           ${productImage}
         </div>
@@ -651,7 +653,7 @@
         d,
         choiceCards,
         d.detailIntroSubtitle || "Welkomstactie bij overstap",
-        "Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis."
+        d.termsSummary || ("Controleer altijd het actuele aanbod en de voorwaarden bij " + (d.provider || "de aanbieder") + ".")
       );
     }
 
@@ -681,9 +683,9 @@
     var mobileSubtitle = d.detailIntroSubtitle || (isChoiceBenefitDetail(d)
       ? "Welkomstactie bij overstap"
       : "Tijdelijke actie bij " + (d.provider || "de aanbieder"));
-    var mobileDisclaimer = isChoiceBenefitDetail(d)
-      ? "Deze actie is bedoeld voor nieuwe klanten of overstappers. Controleer altijd de actuele voorwaarden bij Budget Thuis."
-      : (d.termsSummary || "Controleer altijd het actuele aanbod en de voorwaarden bij de aanbieder.");
+    var mobileDisclaimer = d.termsSummary || (
+      "Controleer altijd het actuele aanbod en de voorwaarden bij " + (d.provider || "de aanbieder") + "."
+    );
     var mobileOverview = isOfferOverview ? `
       ${renderOfferOverviewComponent(
         d,
@@ -726,6 +728,8 @@
           <div><span>Klanttype</span><strong>${d.dealType || d.klanttype || "Beschikbaar"}</strong></div>
           <div><span>Provider</span><strong>${d.provider || "Aanbieder"}</strong></div>
         </section>
+
+        ${d.providerDescription ? `<section class="mp-detail-card mp-detail-provider-about"><h3>${escapeHtml(d.providerDescriptionTitle || "Over de aanbieder")}</h3><p>${escapeHtml(d.providerDescription)}</p></section>` : ""}
 
         <a class="mp-provider-cta js-affiliate-link"
            href="${d.affiliateUrl || "#"}"

@@ -323,7 +323,13 @@
         );
         return copy;
       })
-      .sort((a,b)=>(Number(b.meerPakScore||0)-Number(a.meerPakScore||0)) || (Number(b.totalBenefitValue||0)-Number(a.totalBenefitValue||0)));
+      .sort((a,b)=>{
+        const featured = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+        if (featured) return featured;
+        const value = Number(b.totalBenefitValue||0) - Number(a.totalBenefitValue||0);
+        if (value) return value;
+        return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
+      });
   }
 
   function activeFilterCount(){
