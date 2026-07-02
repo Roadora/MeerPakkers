@@ -3,8 +3,6 @@
 .category-hero{background:linear-gradient(135deg,#fffdf8,#f4ead8);border:1px solid var(--border);border-radius:24px;padding:26px 28px;box-shadow:var(--shadow);display:block}
 .category-hero h1{font-family:Georgia,serif;color:var(--green);font-size:44px;line-height:1.06;margin:0 0 10px}
 .category-hero p{color:var(--muted);font-size:18px;margin:0;max-width:860px}
-.category-score-preview{background:#eef3e8;border-radius:20px;padding:20px;color:var(--green)}
-.category-score-preview strong{display:block;font-size:38px;line-height:1}
 .category-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
 .category-meta span{background:white;border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:800;color:var(--green)}
 .category-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;margin-top:22px;align-items:start}
@@ -72,10 +70,7 @@
 .category-hero .category-meta,
 .category-hero .category-chip-row,
 .category-hero .category-stats,
-.category-hero .category-score-preview{
-  display:none!important;
-}
-.category-hero p{
+.category-hero .category-hero p{
   max-width:900px;
 }
 
@@ -119,7 +114,6 @@
 .category-hero .category-stats,
 .category-hero .category-stat,
 .category-hero .category-metrics,
-.category-hero .category-score-preview,
 .category-hero .category-best,
 .category-hero .best-benefit{
   display:none!important;

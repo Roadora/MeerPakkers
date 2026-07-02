@@ -163,11 +163,7 @@
   #dealList .mp-home-list-card .mp-clean-rank,
   #dealList .mp-home-list-card .mp-clean-card-icon,
   #dealList .mp-home-list-card .mp-clean-card-category,
-  #dealList .mp-home-list-card .mp-score-strip{
-    display:none !important;
-  }
-
-  #dealList .mp-home-list-card .mp-clean-card-head{
+#dealList .mp-home-list-card .mp-clean-card-head{
     grid-area:head;
     display:block !important;
     padding-right:0 !important;

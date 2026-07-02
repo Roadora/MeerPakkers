@@ -235,20 +235,6 @@
 }
 
 
-/* v5 Real Deal Budget Thuis featured copy polish */
-.mp-featured-highlight-card[data-deal-id="budget-thuis-internet-tv"] .category-winner-value--period strong{
-  max-width:130px !important;
-  font-size:23px !important;
-  line-height:1.02 !important;
-}
-.mp-featured-highlight-card[data-deal-id="budget-thuis-internet-tv"] .category-winner-benefits span{
-  line-height:1.15 !important;
-}
-.mp-featured-highlight-card[data-deal-id="budget-thuis-internet-tv"] a{
-  min-width:132px !important;
-  white-space:nowrap !important;
-}
-
 /* v7 Home real-deal row polish
    Keeps the first real Budget Thuis card readable on Home and makes empty categories
    informational instead of looking like €0/demo deals. */
@@ -281,61 +267,4 @@
     padding:0 15px;
   }
 
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"]{
-    min-height:260px;
-    padding:20px 18px 18px;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-provider{
-    font-size:24px;
-    line-height:1.03;
-    margin-bottom:5px;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-title{
-    font-size:15.5px;
-    line-height:1.18;
-    margin-bottom:12px;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-benefits{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:7px;
-    max-width:100%;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-benefits span{
-    width:auto;
-    max-width:100%;
-    padding:7px 10px;
-    font-size:12px;
-    line-height:1.18 !important;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-footer{
-    gap:10px;
-    align-items:flex-end;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-value--period strong{
-    max-width:122px !important;
-    font-size:22px !important;
-    line-height:1.03 !important;
-    letter-spacing:-.35px !important;
-  }
-
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] a{
-    min-width:142px !important;
-    height:42px !important;
-    padding:0 14px !important;
-    font-size:13.25px !important;
-  }
-}
-
-@media (min-width:901px) and (max-width:1280px){
-  body.home-cleanup .mp-featured-highlight-card.category-winner-card--real[data-deal-id="budget-thuis-internet-tv"] .category-winner-value--period strong{
-    max-width:170px !important;
-  }
 }

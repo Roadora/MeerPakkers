@@ -95,32 +95,7 @@
 
 
 
-  .mp-score-strip{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:10px;
-    margin:-4px 0 12px;
-    padding:8px 10px;
-    border-radius:14px;
-    background:#f7f1e6;
-    border:1px solid rgba(6,72,61,.08);
-  }
-
-  .mp-score-strip span{
-    color:var(--mp-muted, #746b61);
-    font-size:12px;
-    font-weight:900;
-  }
-
-  .mp-score-strip b{
-    color:var(--mp-green, #06483d);
-    font-size:18px;
-    line-height:1;
-    font-weight:950;
-  }
-
-  .mp-clean-card-bottom{
+.mp-clean-card-bottom{
     display:flex;
     align-items:flex-end;
     justify-content:space-between;
@@ -322,32 +297,7 @@
     line-height:1.1;
   }
 
-  .category-results .mp-score-strip{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:10px;
-    margin:0 0 14px;
-    padding:9px 11px;
-    border-radius:14px;
-    background:#f7f1e6;
-    border:1px solid rgba(6,72,61,.08);
-  }
-
-  .category-results .mp-score-strip span{
-    color:var(--muted,#746b61);
-    font-size:12px;
-    font-weight:900;
-  }
-
-  .category-results .mp-score-strip b{
-    color:var(--green,#06483d);
-    font-size:18px;
-    line-height:1;
-    font-weight:950;
-  }
-
-  .category-results .mp-clean-card-bottom{
+.category-results .mp-clean-card-bottom{
     display:flex;
     align-items:flex-end;
     justify-content:space-between;
@@ -506,32 +456,7 @@
     line-height:1.1;
   }
 
-  .mp-deal-card-component .mp-score-strip{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:10px;
-    margin:0 0 14px;
-    padding:9px 11px;
-    border-radius:14px;
-    background:#f7f1e6;
-    border:1px solid rgba(6,72,61,.08);
-  }
-
-  .mp-deal-card-component .mp-score-strip span{
-    color:var(--muted,var(--mp-muted,#746b61));
-    font-size:12px;
-    font-weight:900;
-  }
-
-  .mp-deal-card-component .mp-score-strip b{
-    color:var(--green,var(--mp-green,#06483d));
-    font-size:18px;
-    line-height:1;
-    font-weight:950;
-  }
-
-  .mp-deal-card-component .mp-clean-card-bottom{
+.mp-deal-card-component .mp-clean-card-bottom{
     display:flex;
     align-items:flex-end;
     justify-content:space-between;
@@ -613,11 +538,7 @@
     text-align:center;
   }
 
-  .mp-home-featured-grid .mp-home-featured-card .mp-score-strip{
-    display:none !important;
-  }
-
-  .mp-home-featured-grid .mp-home-featured-card .mp-clean-benefits{
+.mp-home-featured-grid .mp-home-featured-card .mp-clean-benefits{
     margin:15px 0 18px;
   }
 
@@ -902,7 +823,6 @@
   white-space:nowrap !important;
 }
 
-.mp-deal-card-component.mp-official-deal-card .mp-score-strip,
 .mp-deal-card-component.mp-official-deal-card .mp-card-provider-logo,
 .mp-deal-card-component.mp-official-deal-card .mp-card-benefit-media{
   display:none !important;

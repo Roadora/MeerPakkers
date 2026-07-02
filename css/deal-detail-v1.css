@@ -2571,6 +2571,23 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
   object-fit:cover !important;
 }
 
+/* Budget Thuis campaign visual: show the complete official square creative without crop. */
+.mp-offer-overview__product-image--budget-square{
+  width:300px !important;
+  height:300px !important;
+  margin:8px 4px 0 0 !important;
+  padding:0 !important;
+  border-radius:24px !important;
+  background:#08d882 !important;
+}
+
+.mp-offer-overview__product-image--budget-square img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
 .mp-offer-overview__benefits{
   display:grid;
   gap:10px;
@@ -2976,6 +2993,14 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
     width:140px !important;
     height:140px !important;
   }
+
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--budget-square{
+    width:140px !important;
+    height:140px !important;
+    margin:8px 0 0 !important;
+    border-radius:16px !important;
+  }
 }
 
 
@@ -3014,3 +3039,69 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
     border-radius:16px !important;
   }
 }
+
+
+/* Odido mobile deal detail cleanup v1
+   - Prevent the sticky action button from covering Dealgegevens on phones.
+   - Keep the desktop sticky behaviour unchanged. */
+@media (max-width:1023px){
+  body.mp-deal-detail-page .mp-provider-cta{
+    position:static !important;
+    bottom:auto !important;
+    margin:14px 0 28px !important;
+  }
+}
+
+/* Budget Thuis native campaign creative v18
+   The verified Daisycon asset is 300×250. Keep this exact 6:5 ratio in the
+   detail overview so no campaign copy is cropped and no artificial green bars
+   are added above or below the original creative. */
+@media (min-width:1024px){
+  .mp-offer-overview__title-row--with-product-image--budget-square{
+    grid-template-columns:minmax(0,1fr) 300px !important;
+    gap:30px !important;
+  }
+
+  .mp-offer-overview__product-image--budget-square{
+    width:300px !important;
+    height:250px !important;
+    aspect-ratio:6 / 5 !important;
+    margin:10px 4px 0 0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+    border-radius:24px !important;
+    background:#44d384 !important;
+  }
+
+  .mp-offer-overview__product-image--budget-square img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center !important;
+  }
+}
+
+@media (max-width:1023px){
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__title-row--with-product-image--budget-square{
+    grid-template-columns:minmax(0,1fr) 132px !important;
+    gap:12px !important;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--budget-square{
+    width:132px !important;
+    height:110px !important;
+    aspect-ratio:6 / 5 !important;
+    margin:8px 0 0 !important;
+    padding:0 !important;
+    border-radius:16px !important;
+    background:#44d384 !important;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--budget-square img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center !important;
+  }
+}
+
