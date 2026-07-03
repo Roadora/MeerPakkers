@@ -46,6 +46,7 @@
       category: normalizeCategory(deal.category),
       icon: clean(deal.icon),
       benefits: benefits.length ? benefits : ['🎁 Extra voordeel'],
+      meerPakScore: toNumber(deal.meerPakScore) || deal.meerPakScore || '',
       totalBenefitValue: toNumber(deal.totalBenefit),
       url: deal.url
     };

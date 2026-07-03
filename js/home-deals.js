@@ -3,16 +3,7 @@ window.MPHomeDeals = {
     return [...deals].sort((a,b) => {
       const featured = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
       if (featured) return featured;
-
-      const value = (b.totalBenefitValue || b.benefitValue || 0) - (a.totalBenefitValue || a.benefitValue || 0);
-      if (value) return value;
-
-      const priceA = Number(a.monthlyPrice || Number.POSITIVE_INFINITY);
-      const priceB = Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
-      if (priceA !== priceB) return priceA - priceB;
-
-      return String(a.provider || '').localeCompare(String(b.provider || '')) ||
-        String(a.title || '').localeCompare(String(b.title || ''));
+      return ((b.meerPakScore || 0) - (a.meerPakScore || 0)) || ((b.totalBenefitValue || b.benefitValue || 0) - (a.totalBenefitValue || a.benefitValue || 0));
     });
   },
 

@@ -6,11 +6,6 @@
   'use strict';
 
   var STORAGE_KEY = 'meerpakkers:savedDeals:v1';
-  // Retired generic overview cards must not remain visible in saved deals.
-  // The three exact Budget Thuis Internet & TV feed deals remain available.
-  var RETIRED_DEAL_IDS = {
-    'budget-thuis-internet-tv': true
-  };
 
   function safeParse(value) {
     if (!value) return [];
@@ -35,10 +30,7 @@
 
   function readSavedDeals() {
     if (!canUseLocalStorage()) return [];
-    return safeParse(window.localStorage.getItem(STORAGE_KEY)).filter(function(item) {
-      var id = normalizeDealId(item && item.id);
-      return id && !RETIRED_DEAL_IDS[id];
-    });
+    return safeParse(window.localStorage.getItem(STORAGE_KEY));
   }
 
   function writeSavedDeals(deals) {
@@ -127,7 +119,7 @@
   }
 
   window.MeerPakkersSavedDealsStore = {
-    version: 'v69-retired-deal-cleanup',
+    version: 'v68-single-source',
     storageKey: STORAGE_KEY,
     getSavedDeals: getSavedDeals,
     getSavedDealIds: getSavedDealIds,

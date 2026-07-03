@@ -66,11 +66,22 @@
     return "/deal/?" + params.toString();
   }
 
+  function calculateMeerPakScore(deal){
+    var total = Number(deal.totalBenefitValue || deal.benefitValue || 0);
+    var monthly = Number(deal.monthlyPrice || 0);
+    var types = Array.isArray(deal.benefitTypes) ? deal.benefitTypes.length : 0;
+    var valueScore = Math.min(35, total / 7);
+    var mixScore = Math.min(10, types * 4);
+    var priceScore = monthly ? Math.min(10, 60 / monthly) : 5;
+    var score = Math.round(45 + valueScore + mixScore + priceScore);
+    return Math.max(1, Math.min(100, score));
+  }
 
   function normalize(deal){
     var d = Object.assign({}, deal || {});
     var calculated = Number(d.giftValue || 0) + Number(d.cashbackValue || 0) + Number(d.discountValue || 0) + Number(d.extraValue || 0);
     d.totalBenefitValue = Number(d.totalBenefitValue || calculated || d.benefitValue || 0);
+    d.meerPakScore = Number(d.meerPakScore || calculateMeerPakScore(d));
     return d;
   }
 
@@ -146,6 +157,7 @@
     benefitPills: benefitPills,
     categoryLabel: categoryLabel,
     normalize: normalize,
+    calculateMeerPakScore: calculateMeerPakScore,
     dealUrl: dealUrl,
     dealId: dealId,
     totalBenefitLabel: totalBenefitLabel

@@ -9,6 +9,7 @@ export const categoryState = {
     provider: new Set(),
     contract: new Set(),
     giftType: new Set(),
+    score: new Set(),
     price: new Set(),
     extra: new Set(),
     dealType: new Set()

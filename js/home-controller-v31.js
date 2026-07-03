@@ -31,18 +31,9 @@
     return (Array.isArray(deals) ? deals : [])
       .slice()
       .sort(function(a,b){
-        const featuredDiff = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
-        if (featuredDiff) return featuredDiff;
-
-        const valueDiff = Number(b.totalBenefitValue || b.benefitValue || 0) - Number(a.totalBenefitValue || a.benefitValue || 0);
-        if (valueDiff) return valueDiff;
-
-        const priceA = Number(a.monthlyPrice || Number.POSITIVE_INFINITY);
-        const priceB = Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
-        if (priceA !== priceB) return priceA - priceB;
-
-        return String(a.provider || '').localeCompare(String(b.provider || '')) ||
-          String(a.title || '').localeCompare(String(b.title || ''));
+        return (Number(b.featured || 0) - Number(a.featured || 0)) ||
+          (Number(b.meerPakScore || b.score || 0) - Number(a.meerPakScore || a.score || 0)) ||
+          (Number(b.totalBenefitValue || b.benefitValue || 0) - Number(a.totalBenefitValue || a.benefitValue || 0));
       });
   }
 

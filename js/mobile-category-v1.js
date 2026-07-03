@@ -323,13 +323,7 @@
         );
         return copy;
       })
-      .sort((a,b)=>{
-        const featured = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
-        if (featured) return featured;
-        const value = Number(b.totalBenefitValue||0) - Number(a.totalBenefitValue||0);
-        if (value) return value;
-        return Number(a.monthlyPrice || Number.POSITIVE_INFINITY) - Number(b.monthlyPrice || Number.POSITIVE_INFINITY);
-      });
+      .sort((a,b)=>(Number(b.meerPakScore||0)-Number(a.meerPakScore||0)) || (Number(b.totalBenefitValue||0)-Number(a.totalBenefitValue||0)));
   }
 
   function activeFilterCount(){
@@ -473,7 +467,21 @@
   }
 
   function renderSeoContent(){
-    return "";
+    if(categoryKey !== "mobiel") return "";
+    return `<section class="mp-mobile-seo-card" aria-labelledby="mpMobileSeoTitle">
+      <h2 id="mpMobileSeoTitle">Mobiel abonnement vergelijken op meer dan alleen prijs</h2>
+      <p>Vergelijk een mobiel abonnement niet alleen op de maandprijs. Kijk ook naar cadeauacties, cashback, korting, gratis streaming en smartwatch-deals. Het voordeel, de looptijd en voorwaarden verschillen per toestel en aanbieder.</p>
+      <ul>
+        <li>Controleer of een actie voor nieuwe klanten, overstappen of verlengen geldt.</li>
+        <li>Vergelijk cadeau, toestelkorting en maandprijs altijd apart.</li>
+        <li>Bekijk de actieperiode en eventuele claimvoorwaarden.</li>
+      </ul>
+      <div class="mp-mobile-seo-links">
+        <a href="/uitleg/abonnement-met-cadeau/">Abonnement met cadeau</a>
+        <a href="/uitleg/iphone-met-apple-tv-cadeau/">iPhone met Apple TV</a>
+        <a href="/uitleg/odido-samsung-smartwatch-cadeau/">Samsung met smartwatch</a>
+      </div>
+    </section>`;
   }
 
   function categoryPills(){

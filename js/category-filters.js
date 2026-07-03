@@ -1,5 +1,5 @@
 import { categoryState, resetCategoryFilters } from "./category-state.js";
-import { sortDealsByBenefitAndPrice } from "./category-data.js";
+import { sortDealsByScoreAndValue } from "./category-data.js";
 
 export const filterOptions = {
   "Voordeel": [
@@ -135,7 +135,7 @@ export function getFilteredCategoryDeals(){
   const categoryDeals = categoryState.deals.filter(deal => deal.category === categoryState.categoryId);
   const active = categoryState.filters;
 
-  return sortDealsByBenefitAndPrice(categoryDeals.filter(deal => {
+  return sortDealsByScoreAndValue(categoryDeals.filter(deal => {
     if (active.benefit.size && ![...active.benefit].some(value => (deal.benefitTypes || []).includes(value))){
       return false;
     }
@@ -160,6 +160,10 @@ export function getFilteredCategoryDeals(){
       return false;
     }
 
+    if (active.score.size){
+      const minimumScore = Math.max(...[...active.score].map(Number));
+      if ((deal.score || 0) < minimumScore) return false;
+    }
 
     if (active.price.size){
       const maxPrice = Math.min(...[...active.price].map(Number));
