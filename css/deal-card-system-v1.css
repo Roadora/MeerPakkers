@@ -28,17 +28,6 @@
   padding-right:44px !important;
 }
 
-/* Browsing cards use a normal document-flow footer for the CTA.
-   Saved cards deliberately keep their separate two-button action row. */
-a.mp-normal-deal-card{
-  display:flex !important;
-  flex-direction:column !important;
-}
-
-article.mp-normal-deal-card--saved{
-  display:block !important;
-}
-
 .mp-normal-deal-card .mp-card-top-row{
   display:flex !important;
   align-items:flex-start !important;
@@ -138,7 +127,7 @@ article.mp-normal-deal-card--saved{
   width:100% !important;
   max-width:calc(100% - 18px) !important;
   min-height:70px !important;
-  margin:0 0 18px !important;
+  margin:0 0 74px !important;
   padding:14px 18px !important;
   border:1px solid rgba(214,196,166,.75) !important;
   border-radius:18px !important;
@@ -178,20 +167,18 @@ article.mp-normal-deal-card--saved{
 }
 
 .mp-normal-deal-card > .mp-normal-deal-card-cta{
-  position:relative !important;
-  right:auto !important;
-  bottom:auto !important;
+  position:absolute !important;
+  right:22px !important;
+  bottom:24px !important;
   z-index:6 !important;
-  align-self:flex-end !important;
-  margin-top:auto !important;
   display:inline-flex !important;
   align-items:center !important;
   justify-content:center !important;
   min-width:126px !important;
-  max-width:100% !important;
+  max-width:146px !important;
   height:46px !important;
   padding:0 18px !important;
-  overflow:visible !important;
+  overflow:hidden !important;
   border-radius:999px !important;
   background:#06483d !important;
   box-shadow:0 14px 28px rgba(6,72,61,.18) !important;
@@ -202,7 +189,7 @@ article.mp-normal-deal-card--saved{
   text-align:center !important;
   text-decoration:none !important;
   white-space:nowrap !important;
-  text-overflow:clip !important;
+  text-overflow:ellipsis !important;
 }
 
 .mp-normal-deal-card .meepakker-save-heart{
@@ -315,7 +302,7 @@ article.mp-normal-deal-card--saved{
     width:100% !important;
     max-width:100% !important;
     min-height:88px !important;
-    margin:0 0 14px !important;
+    margin:0 !important;
     padding:14px 16px !important;
     gap:6px !important;
     overflow:hidden !important;
@@ -339,8 +326,10 @@ article.mp-normal-deal-card--saved{
   }
 
   .mp-normal-deal-card > .mp-normal-deal-card-cta{
+    right:18px !important;
+    bottom:18px !important;
     min-width:116px !important;
-    max-width:100% !important;
+    max-width:136px !important;
     height:42px !important;
     padding:0 16px !important;
     font-size:13px !important;
@@ -448,7 +437,7 @@ article.mp-normal-deal-card--saved{
     width:100% !important;
     max-width:calc(100% - 18px) !important;
     min-height:90px !important;
-    margin-bottom:18px !important;
+    margin-bottom:78px !important;
   }
 }
 
@@ -517,86 +506,5 @@ article.mp-normal-deal-card--saved{
 @media (max-width:620px){
   .mp-normal-deal-card .mp-card-product-image{
     transform:translateY(-6px) !important;
-  }
-}
-
-/* Budget Thuis Internet & TV uses the official campaign creative as a clean square.
-   The feed asset itself is 300×250; the green campaign background continues into the
-   square shell so the whole creative remains visible and no white product frame appears. */
-.mp-normal-deal-card .mp-card-product-image--budget-square{
-  width:78px !important;
-  height:78px !important;
-  aspect-ratio:1 / 1 !important;
-  padding:5px !important;
-  box-sizing:border-box !important;
-  overflow:hidden !important;
-  border:0 !important;
-  border-radius:16px !important;
-  background:#00d780 !important;
-  box-shadow:none !important;
-}
-
-.mp-normal-deal-card .mp-card-product-image--budget-square img{
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:contain !important;
-  object-position:center !important;
-  border:0 !important;
-  border-radius:12px !important;
-  background:transparent !important;
-  box-shadow:none !important;
-}
-
-@media (max-width:620px){
-  .mp-normal-deal-card .mp-card-product-image--budget-square{
-    width:72px !important;
-    height:72px !important;
-    padding:4px !important;
-    border-radius:14px !important;
-  }
-
-  .mp-normal-deal-card .mp-card-product-image--budget-square img{
-    border-radius:10px !important;
-  }
-}
-
-
-/* Budget Thuis Internet & TV campaign creative — v16.
-   Render the existing 300×250 feed image at its native 6:5 ratio instead of
-   squeezing it into a square. This keeps every line of campaign copy inside
-   the visible image area without altering the shared card structure. */
-.mp-normal-deal-card .mp-card-product-image--budget-square{
-  width:108px !important;
-  height:90px !important;
-  aspect-ratio:6 / 5 !important;
-  padding:0 !important;
-  overflow:visible !important;
-  border:0 !important;
-  border-radius:14px !important;
-  background:transparent !important;
-}
-
-.mp-normal-deal-card .mp-card-product-image--budget-square img{
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:contain !important;
-  object-position:center !important;
-  border:0 !important;
-  border-radius:14px !important;
-  background:transparent !important;
-}
-
-@media (max-width:620px){
-  .mp-normal-deal-card .mp-card-product-image--budget-square{
-    width:96px !important;
-    height:80px !important;
-    aspect-ratio:6 / 5 !important;
-    border-radius:12px !important;
-  }
-
-  .mp-normal-deal-card .mp-card-product-image--budget-square img{
-    border-radius:12px !important;
   }
 }

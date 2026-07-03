@@ -1458,3 +1458,36 @@
     margin:32px 0 0 !important;
   }
 }
+
+
+/* SEO content foundation for mobile category pages v1 */
+@media(max-width:900px){
+  .mp-mobile-seo-card{
+    margin-top:18px;
+    padding:20px;
+    border:1px solid var(--mp-border);
+    border-radius:24px;
+    background:var(--mp-card);
+    box-shadow:0 16px 36px rgba(6,72,61,.055);
+  }
+  .mp-mobile-seo-card h2{
+    margin:0 0 10px;
+    color:var(--mp-green);
+    font-size:23px;
+    line-height:1.08;
+    letter-spacing:-.4px;
+  }
+  .mp-mobile-seo-card p,.mp-mobile-seo-card li{
+    color:var(--mp-muted);
+    font-size:14px;
+    line-height:1.55;
+    font-weight:650;
+  }
+  .mp-mobile-seo-card ul{margin:12px 0;padding-left:20px;}
+  .mp-mobile-seo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .mp-mobile-seo-links a{
+    display:inline-flex;align-items:center;min-height:34px;padding:0 10px;border-radius:999px;
+    color:var(--mp-green);background:#f4ead8;border:1px solid var(--mp-border);
+    text-decoration:none;font-size:12px;font-weight:900;
+  }
+}
