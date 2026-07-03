@@ -1,5 +1,276 @@
 [
   {
+    "id": "budget-thuis-internet-tv",
+    "providerId": "budget-thuis",
+    "provider": "Budget Thuis",
+    "category": "internet-tv",
+    "title": "Internet & TV: korting of welkomstcadeau",
+    "benefitTypes": [
+      "korting",
+      "cadeau"
+    ],
+    "benefitValue": 0,
+    "totalBenefitValue": 0,
+    "totalBenefitLabel": "Kies je voordeel",
+    "giftType": "welkomstcadeau",
+    "contract": "1 of 2 jaar",
+    "score": 9.1,
+    "icon": "🌐",
+    "benefits": [
+      "8 maanden korting bij 1 jaar",
+      "Tot 14 maanden korting bij 2 jaar",
+      "Of kies een welkomstcadeau"
+    ],
+    "price": "Pakketprijs afhankelijk van postcode",
+    "featured": true,
+    "dealType": "nieuw / overstappen",
+    "giftName": "Welkomstcadeau",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 0,
+    "extraValue": 0,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": null,
+    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 0,
+      "extra": 0
+    },
+    "seoSlug": "budget-thuis-internet-tv",
+    "updatedAt": "2026-07-02",
+    "meerPakScore": 91,
+    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis",
+    "network": "daisycon",
+    "campaignId": "14524",
+    "trackingId": "1923068",
+    "merchantId": "budget-thuis",
+    "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-07-02",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-07-02",
+    "expiresAt": null,
+    "sourceType": "daisycon-productfeed",
+    "sourceId": "14524",
+    "adminNotes": "Deal Card System v1 Clean: oude card-fix CSS-links verwijderd; één js/deal-card-system-v1.js en css/deal-card-system-v1.css toegevoegd; home en categorie gebruiken MPCardComponents.",
+    "termsSummary": "De Daisycon-productfeed van Budget Thuis toont Internet & TV-varianten met 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar en varianten met een welkomstcadeau. Beschikbaarheid, techniek en prijs hangen af van je adres. Controleer altijd je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "lastDataReviewAt": "2026-07-02",
+    "ctaLabel": "Bekijk aanbod",
+    "benefitDisplayType": "choice",
+    "detailTitle": "Korting of welkomstcadeau bij Internet & TV",
+    "detailIntro": "De Budget Thuis-productfeed bevat Internet & TV-pakketten met 8 maanden korting bij een jaarcontract, tot 14 maanden korting bij twee jaar of een welkomstcadeau. Welk pakket en voordeel beschikbaar is, hangt af van je adres.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "1 jaar: 8 maanden korting",
+        "sub": "Bij geselecteerde Internet & TV-pakketten"
+      },
+      {
+        "type": "discount",
+        "title": "2 jaar: tot 14 maanden korting",
+        "sub": "Bij geselecteerde Internet & TV-pakketten"
+      },
+      {
+        "type": "gift",
+        "title": "Welkomstcadeau",
+        "sub": "Bij geselecteerde Internet & TV-pakketten"
+      }
+    ],
+    "detailSummaryValue": "Korting of cadeau",
+    "priceDuringDiscount": "Pakketprijs afhankelijk van postcode",
+    "priceAfterDiscount": "Controleer je persoonlijke aanbod bij Budget Thuis",
+    "officialBannerUrl": "https://static-dscn.net/14524/1924773/?wi=422185&ws=mp-internet-budget-thuis",
+    "officialBannerClickUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1923068&wi=422185&ws=mp-internet-budget-thuis",
+    "officialBannerLabel": "Officiële actie van Budget Thuis",
+    "officialBannerSize": "300x250",
+    "summaryLine": "Kies korting of een welkomstcadeau",
+    "detailIntroTitle": "Budget Thuis Internet & TV",
+    "detailIntroSubtitle": "Actuele feedselectie",
+    "detailIntroCards": [
+      {
+        "title": "1 jaar",
+        "text": "8 maanden korting bij geselecteerde pakketten"
+      },
+      {
+        "title": "2 jaar",
+        "text": "Tot 14 maanden korting bij geselecteerde pakketten"
+      },
+      {
+        "title": "Welkomstcadeau",
+        "text": "Bij geselecteerde pakketten"
+      }
+    ],
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "In de productfeed staan drie actuele voordeelvormen: 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar of een welkomstcadeau. Het aanbod is postcode-afhankelijk; vergelijk en controleer de voorwaarden voordat je afsluit.",
+    "detailConditionItems": [
+      "Beschikbaarheid afhankelijk van postcode",
+      "Internet & TV-pakket",
+      "1 of 2 jaar afhankelijk van gekozen voordeel",
+      "Controleer techniek, prijs en voorwaarden bij Budget Thuis"
+    ],
+    "contractPriceLabel": "Pakketprijs afhankelijk van postcode",
+    "detailCtaLabel": "Bekijk je aanbod",
+    "providerDescriptionTitle": "Over Budget Thuis Internet",
+    "providerDescription": "Budget Thuis is het huismerk voor energie, internet en mobiel. Met Internet van Budget Thuis kiezen klanten voor snel en stabiel internet voor een scherpe prijs. Budget Thuis maakt gebruik van het betrouwbare KPN-netwerk via glasvezel of telefoonlijn. Klanten kiezen zelf het pakket dat bij hen past, met alleen internet of ook TV en Vast Bellen. Overstappen is eenvoudig en zonder gedoe.",
+    "detailConditionNote": "Deze actie is bedoeld voor nieuwe klanten of overstappers. Bestaande klanten of wijzigingen binnen een lopend contract kunnen zijn uitgesloten. Controleer altijd de actuele voorwaarden bij Budget Thuis.",
+    "sourceVerifiedAt": "2026-06-28",
+    "cardImage": "/assets/provider-products/budget-thuis-internet-tv.png",
+    "cardImageAlt": "Budget Thuis Internet & TV",
+    "cardImageSource": "Daisycon campagnemateriaal — Internet van Budget Thuis, formaat 300×250",
+    "cardImageVariant": "square",
+    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
+    "sourceFeedLastModified": "2026-05-05 08:00:34"
+  },
+  {
+    "id": "budget-mobiel-sim-only",
+    "providerId": "budget-thuis",
+    "provider": "Budget Thuis",
+    "category": "sim-only",
+    "title": "Onbeperkt Sim Only",
+    "benefitTypes": [
+      "korting"
+    ],
+    "benefitValue": 10,
+    "totalBenefitValue": 80,
+    "totalBenefitLabel": "8 maanden €10 p/m",
+    "giftType": "",
+    "contract": "2 jaar",
+    "score": 9.3,
+    "icon": "📶",
+    "benefits": [
+      "8 maanden €10 p/m",
+      "Onbeperkt data, bellen en sms",
+      "Gratis nummerbehoud"
+    ],
+    "price": "€10 p/m",
+    "featured": true,
+    "dealType": "Tijdelijke actie",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 80,
+    "extraValue": 0,
+    "monthlyPrice": 10,
+    "originalMonthlyPrice": 20,
+    "contractLengthMonths": 24,
+    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 80,
+      "extra": 0
+    },
+    "seoSlug": "budget-thuis-onbeperkt-sim-only",
+    "updatedAt": "2026-06-20",
+    "meerPakScore": 93,
+    "url": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "network": "daisycon",
+    "campaignId": "14759",
+    "trackingId": "1923067",
+    "merchantId": "budget-thuis",
+    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1923067&wi=422185&ws=mp_budget_simonly",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-06-28",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-06-20",
+    "expiresAt": "2026-07-01",
+    "sourceType": "daisycon",
+    "sourceId": "422185",
+    "adminNotes": "Canonieke Budget Thuis Sim Only-deal. Eerste 8 maanden €10 p/m in plaats van €20 p/m (50% korting), met onbeperkt data/bellen/sms en 2 jaar looptijd. Gratis nummerbehoud. Aansluitkosten alleen tonen wanneer die expliciet in het actuele campagne-aanbod zijn bevestigd. Deeplink 1923067; SubID mp_budget_simonly.",
+    "termsSummary": "Eerste 8 maanden €10 p/m voor onbeperkt data, bellen en sms. Daarna €20 p/m. Alleen bij een 2-jarig abonnement. Nummerbehoud is gratis. Controleer de eventuele aansluitkosten, het actuele aanbod en de voorwaarden bij Budget Thuis.",
+    "lastDataReviewAt": "2026-06-28",
+    "ctaLabel": "Bekijk deal",
+    "detailCtaLabel": "Pak deze Meepakker",
+    "benefitDisplayType": "period",
+    "detailTitle": "8 maanden €10 p/m",
+    "detailIntro": "Kies voor Onbeperkt Sim Only van Budget Thuis: de eerste 8 maanden betaal je €10 p/m in plaats van €20 p/m. Je krijgt onbeperkt data, bellen en sms op het betrouwbare 5G-netwerk van KPN. De actie geldt bij een 2-jarig abonnement.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "8 maanden €10 p/m",
+        "sub": "Normaal €20 p/m — 50% korting"
+      },
+      {
+        "type": "product",
+        "title": "Onbeperkt data, bellen en sms",
+        "sub": "Op het betrouwbare 5G-netwerk van KPN"
+      },
+      {
+        "type": "extra",
+        "title": "Gratis nummerbehoud",
+        "sub": "Neem je huidige mobiele nummer mee"
+      }
+    ],
+    "detailSummaryValue": "8 maanden €10 p/m",
+    "summaryLine": "Onbeperkt data, bellen en sms",
+    "dataBundle": "Onbeperkt",
+    "detailWhyTitle": "Waarom is dit een Meepakker?",
+    "detailWhyText": "Je krijgt een concreet tijdelijk maandbedrag voor een onbeperkte Sim Only-bundel: 8 maanden €10 p/m in plaats van €20 p/m. Daarbij neem je gratis je nummer mee en maak je gebruik van het 5G-netwerk van KPN.",
+    "detailConditionItems": [
+      "Sim Only: je gebruikt je eigen telefoon",
+      "Onbeperkt data, bellen en sms",
+      "8 maanden €10 p/m, daarna €20 p/m",
+      "50% korting gedurende de eerste 8 maanden",
+      "2 jaar looptijd",
+      "Gratis nummerbehoud",
+      "Aansluitkosten worden getoond bij je bestelling",
+      "5G-netwerk van KPN",
+      "Controleer actuele voorwaarden bij Budget Thuis"
+    ],
+    "providerDescriptionTitle": "Over Budget Thuis Sim Only",
+    "providerDescription": "Budget Thuis biedt Sim Only-abonnementen op het betrouwbare 5G-netwerk van KPN. Je ontvangt een simkaart en gebruikt je eigen telefoon. Controleer altijd het actuele aanbod, de looptijd en de voorwaarden bij de aanbieder voordat je afsluit.",
+    "detailIntroTitle": "Budget Thuis Onbeperkt Sim Only",
+    "detailIntroSubtitle": "8 maanden €10 p/m bij een 2-jarig abonnement",
+    "detailIntroCards": [
+      {
+        "title": "8 maanden €10 p/m",
+        "text": "Normaal €20 p/m — 50% korting"
+      },
+      {
+        "title": "Onbeperkt data, bellen en sms",
+        "text": "Op het betrouwbare 5G-netwerk van KPN"
+      },
+      {
+        "title": "Gratis nummerbehoud",
+        "text": "Neem je huidige mobiele nummer mee"
+      }
+    ],
+    "seoSupport": {
+      "eyebrow": "Meer weten voordat je kiest?",
+      "title": "Uitleg bij deze Sim Only actie",
+      "description": "Lees hoe tijdelijke korting, onbeperkt data, de looptijd, nummerbehoud en eventuele aansluitkosten werken voordat je doorklikt naar de aanbieder.",
+      "links": [
+        {
+          "label": "8 maanden korting",
+          "href": "/uitleg/budget-thuis-sim-only-korting/"
+        },
+        {
+          "label": "Onbeperkt data & bellen",
+          "href": "/uitleg/budget-thuis-onbeperkt-sim-only/"
+        },
+        {
+          "label": "Waarom 2 jaar?",
+          "href": "/uitleg/budget-thuis-sim-only-2-jaar/"
+        },
+        {
+          "label": "Nummerbehoud & aansluitkosten",
+          "href": "/uitleg/budget-thuis-sim-only-aansluiten-nummerbehoud/"
+        }
+      ]
+    },
+    "officialSourceUrl": "https://www.budgetthuis.nl/mobiel/onbeperkt-data",
+    "sourceVerifiedAt": "2026-06-28",
+    "sourceVerifiedNotes": "Publieke aanbodpagina bevestigt: eerste 8 maanden €10 p/m bij een 2-jarig abonnement, onbeperkt data/bellen/sms en gratis nummerbehoud. Aansluitkosten zijn niet als vast voordeel opgenomen, omdat Budget Thuis die bij bestelling specificeert. Einddatum komt uit de actieve Daisycon-promotie.",
+    "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
+    "cardImageAlt": "Budget Thuis Sim Only simkaart",
+    "cardImageSource": "Daisycon productfeed — Mobiel van Budget Thuis"
+  },
+  {
     "id": "odido-thuis-glasvezel-tv-25",
     "providerId": "odido",
     "provider": "Odido",
@@ -13,6 +284,7 @@
     "totalBenefitLabel": "€318 voordeel in het eerste jaar",
     "giftType": "",
     "contract": "2 jaar",
+    "score": 8.9,
     "icon": "📺",
     "benefits": [
       "€318 voordeel in het eerste jaar",
@@ -20,7 +292,7 @@
       "Gratis aansluiten"
     ],
     "price": "€25 p/m",
-    "featured": false,
+    "featured": true,
     "dealType": "Tijdelijke actie",
     "giftName": "",
     "giftValue": 0,
@@ -39,6 +311,7 @@
     },
     "seoSlug": "odido-thuis-glasvezel-tv-25",
     "updatedAt": "2026-06-29",
+    "meerPakScore": 89,
     "url": "https://www.awin1.com/cread.php?s=4818317&v=8400&q=318011&r=2947269",
     "network": "awin",
     "campaignId": "8400",
@@ -189,6 +462,7 @@
     "benefitValue": 780,
     "totalBenefitValue": 780,
     "totalBenefitLabel": "Galaxy Watch8 cadeau + max. €351 voordeel",
+    "score": 9.7,
     "benefits": [
       "Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429",
       "Max. €351 voordeel op je toestel",
@@ -208,6 +482,7 @@
     },
     "seoSlug": "odido-samsung-galaxy-s26-watch8",
     "updatedAt": "2026-06-30",
+    "meerPakScore": 97,
     "url": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
     "trackingId": "4820787",
     "deepLink": "https://www.awin1.com/cread.php?s=4820787&v=8389&q=608473&r=2947269",
@@ -313,6 +588,7 @@
     "benefitValue": 773,
     "totalBenefitValue": 773,
     "totalBenefitLabel": "Galaxy Watch8 cadeau + max. €344 voordeel",
+    "score": 9.6,
     "benefits": [
       "Galaxy Watch8 40mm LTE Graphite cadeau t.w.v. €429",
       "Max. €344 voordeel op je toestel",
@@ -332,6 +608,7 @@
     },
     "seoSlug": "odido-samsung-galaxy-s26-ultra-watch8",
     "updatedAt": "2026-06-30",
+    "meerPakScore": 96,
     "url": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
     "trackingId": "4820783",
     "deepLink": "https://www.awin1.com/cread.php?s=4820783&v=8389&q=608473&r=2947269",
@@ -437,6 +714,7 @@
     "benefitValue": 173,
     "totalBenefitValue": 173,
     "totalBenefitLabel": "€173 voordeel + 3 maanden Apple TV",
+    "score": 90,
     "benefits": [
       "€173 voordeel",
       "3 maanden Apple TV cadeau",
@@ -456,6 +734,7 @@
     },
     "seoSlug": "odido-apple-iphone-16-apple-tv",
     "updatedAt": "2026-06-30",
+    "meerPakScore": 90,
     "url": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
     "trackingId": "4820816",
     "deepLink": "https://www.awin1.com/cread.php?s=4820816&v=8389&q=608473&r=2947269",
@@ -561,6 +840,7 @@
     "benefitValue": 177,
     "totalBenefitValue": 177,
     "totalBenefitLabel": "€177 voordeel + 3 maanden Apple TV",
+    "score": 92,
     "benefits": [
       "€177 voordeel",
       "3 maanden Apple TV cadeau",
@@ -580,6 +860,7 @@
     },
     "seoSlug": "odido-apple-iphone-17-apple-tv",
     "updatedAt": "2026-06-30",
+    "meerPakScore": 92,
     "url": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
     "trackingId": "4820813",
     "deepLink": "https://www.awin1.com/cread.php?s=4820813&v=8389&q=608473&r=2947269",
@@ -685,6 +966,7 @@
     "benefitValue": 174,
     "totalBenefitValue": 174,
     "totalBenefitLabel": "€174 voordeel + 3 maanden Apple TV",
+    "score": 91,
     "benefits": [
       "€174 voordeel",
       "3 maanden Apple TV cadeau",
@@ -704,6 +986,7 @@
     },
     "seoSlug": "odido-apple-iphone-17-pro-apple-tv",
     "updatedAt": "2026-06-30",
+    "meerPakScore": 91,
     "url": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
     "trackingId": "4820808",
     "deepLink": "https://www.awin1.com/cread.php?s=4820808&v=8389&q=608473&r=2947269",
@@ -782,91 +1065,90 @@
     "lastDataReviewAt": "2026-07-02",
     "cardImage": "/assets/provider-products/budget-thuis-internet-tv.png",
     "cardImageAlt": "Budget Thuis Internet & TV",
-    "cardImageVariant": "budget-square",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Thuis",
+    "cardImageVariant": "square",
+    "ctaLabel": "Bekijk aanbod",
+    "detailCtaLabel": "Bekijk je aanbod",
     "dealType": "nieuw / overstappen",
     "id": "budget-thuis-internet-tv-korting-1jaar",
     "seoSlug": "budget-thuis-internet-tv-korting-1jaar",
-    "title": "Internet & TV: €196 korting",
+    "title": "Internet & TV: 8 maanden korting",
     "benefitTypes": [
       "korting"
     ],
-    "benefitValue": 196,
-    "totalBenefitValue": 196,
-    "totalBenefitLabel": "€196 korting",
+    "benefitValue": 184,
+    "totalBenefitValue": 184,
+    "totalBenefitLabel": "8 maanden korting",
     "giftType": "",
     "giftName": "",
     "giftValue": 0,
     "cashbackValue": 0,
-    "discountValue": 196,
+    "discountValue": 184,
     "extraValue": 0,
     "contract": "1 jaar",
     "contractLengthMonths": 12,
+    "score": 9.0,
+    "meerPakScore": 90,
     "benefits": [
-      "€196 korting",
-      "Vanaf €23,50 p/m",
+      "8 maanden korting",
+      "Glasvezel 1000 Mbit/s + interactieve TV",
       "1 jaar contract"
     ],
-    "price": "Vanaf €23,50 p/m",
-    "monthlyPrice": 23.5,
-    "originalMonthlyPrice": 48.0,
+    "price": "€25 p/m tijdens de actie",
+    "monthlyPrice": 25,
+    "originalMonthlyPrice": 71,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=cb52c40f60c8968e5a20d93e9f69fd8d&dl=internet&ws=mp-budget-tv-1jaar",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Voor het getoonde 1-jarige Internet & TV-pakket betaal je €23,50 p/m gedurende de eerste 8 maanden, daarna €48 p/m. Dat is €24,50 korting per maand en €196 totaal. De exacte pakketprijs en beschikbaarheid zijn postcode-afhankelijk; controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "termsSummary": "Bron: Daisycon-productfeed. Glasvezel 1000 Mbit/s + interactieve TV, 1 jaar. Feedprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. Het pakket is postcode-afhankelijk; controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
     "benefitDisplayType": "period",
-    "detailTitle": "€196 korting op Internet & TV",
-    "detailIntro": "Voor het getoonde 1-jarige Internet & TV-pakket betaal je €23,50 p/m gedurende de eerste 8 maanden, daarna €48 p/m. Je bespaart €24,50 per maand: in totaal €196. Beschikbaarheid en de exacte pakketprijs zijn postcode-afhankelijk.",
+    "detailTitle": "8 maanden korting op Internet & TV",
+    "detailIntro": "De Daisycon-productfeed toont voor dit geselecteerde 1-jarig pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de eerste 8 maanden, daarna €71 p/m. Beschikbaarheid is postcode-afhankelijk.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "€196 totale korting",
-        "sub": "€24,50 p/m gedurende 8 maanden"
+        "title": "8 maanden €25 p/m",
+        "sub": "Daarna €71 p/m volgens de feed"
       },
       {
-        "type": "price",
-        "title": "Vanaf €23,50 p/m",
-        "sub": "Gedurende de eerste 8 maanden"
+        "type": "product",
+        "title": "Glasvezel 1000 Mbit/s",
+        "sub": "Met interactieve TV"
       },
       {
         "type": "contract",
         "title": "1 jaar",
-        "sub": "Geselecteerde uitvoering"
+        "sub": "Geselecteerde feeduitvoering"
       }
     ],
-    "detailSummaryValue": "€196 korting",
-    "summaryLine": "Vanaf €23,50 p/m gedurende 8 maanden",
+    "detailSummaryValue": "8 maanden korting",
+    "summaryLine": "€25 p/m tijdens de eerste 8 maanden",
     "detailIntroTitle": "Budget Thuis Internet & TV",
-    "detailIntroSubtitle": "8 maanden vanaf €23,50 p/m",
+    "detailIntroSubtitle": "Glasvezel 1000 Mbit/s + interactieve TV",
     "detailIntroCards": [
       {
-        "title": "€196 korting",
-        "text": "€24,50 p/m gedurende 8 maanden"
+        "title": "€25 p/m",
+        "text": "Tijdens de eerste 8 maanden volgens de feed"
       },
       {
-        "title": "Vanaf €23,50 p/m",
-        "text": "Tijdens de eerste 8 maanden"
+        "title": "Daarna €71 p/m",
+        "text": "Reguliere prijs volgens de feed"
       },
       {
-        "title": "Daarna €48 p/m",
-        "text": "Reguliere prijs"
+        "title": "1 jaar",
+        "text": "Geselecteerde uitvoering"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ziet direct wat de tijdelijke prijs waard is: €24,50 voordeel per maand gedurende 8 maanden, samen €196. Controleer altijd je postcode, pakketkeuze en de actuele voorwaarden voordat je afsluit.",
+    "detailWhyText": "Je ziet direct het tijdelijke maandbedrag, de reguliere prijs en de looptijd. Controleer altijd of dit pakket op jouw adres beschikbaar is.",
     "detailConditionItems": [
+      "Glasvezel 1000 Mbit/s + interactieve TV",
       "1 jaar contract",
-      "Vanaf €23,50 p/m gedurende de eerste 8 maanden",
-      "Daarna €48 p/m",
-      "€196 totale korting over 8 maanden",
+      "€25 p/m tijdens de eerste 8 maanden volgens feed",
+      "Daarna €71 p/m volgens feed",
       "Beschikbaarheid afhankelijk van postcode",
       "Controleer actuele voorwaarden bij Budget Thuis"
     ],
     "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=cb52c40f60c8968e5a20d93e9f69fd8d&dl=internet&ws=mp-budget-tv-1jaar",
-    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=cb52c40f60c8968e5a20d93e9f69fd8d&dl=internet&ws=mp-budget-tv-1jaar",
-    "providerDescriptionTitle": "Over Budget Thuis",
-    "providerDescription": "Budget Thuis biedt Internet & TV en Sim Only. Welk pakket, welke internettechniek en welke prijs op jouw adres beschikbaar zijn, hangt af van je postcode. Op MeerPakkers zie je de actie van deze deal; bij Budget Thuis controleer je daarna het persoonlijke aanbod en de voorwaarden.",
-    "adminNotes": "Prijs en voordeel handmatig gecontroleerd in de live Budget Thuis-configurator op 2026-07-02: 1 jaar Internet & TV, €23,50 p/m gedurende 8 maanden, daarna €48 p/m. Berekening: 8 × (€48,00 − €23,50) = €196,00. De getoonde pakketprijs blijft postcode- en pakketafhankelijk."
+    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=cb52c40f60c8968e5a20d93e9f69fd8d&dl=internet&ws=mp-budget-tv-1jaar"
   },
   {
     "providerId": "budget-thuis",
@@ -890,70 +1172,72 @@
     "lastDataReviewAt": "2026-07-02",
     "cardImage": "/assets/provider-products/budget-thuis-internet-tv.png",
     "cardImageAlt": "Budget Thuis Internet & TV",
-    "cardImageVariant": "budget-square",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Thuis",
+    "cardImageVariant": "square",
+    "ctaLabel": "Bekijk aanbod",
+    "detailCtaLabel": "Bekijk je aanbod",
     "dealType": "nieuw / overstappen",
     "id": "budget-thuis-internet-tv-korting-2jaar",
     "seoSlug": "budget-thuis-internet-tv-korting-2jaar",
-    "title": "Internet & TV: €343 korting",
+    "title": "Internet & TV: tot 14 maanden korting",
     "benefitTypes": [
       "korting"
     ],
-    "benefitValue": 343,
-    "totalBenefitValue": 343,
-    "totalBenefitLabel": "€343 korting",
+    "benefitValue": 644,
+    "totalBenefitValue": 644,
+    "totalBenefitLabel": "Tot 14 maanden korting",
     "giftType": "",
     "giftName": "",
     "giftValue": 0,
     "cashbackValue": 0,
-    "discountValue": 343,
+    "discountValue": 644,
     "extraValue": 0,
     "contract": "2 jaar",
     "contractLengthMonths": 24,
+    "score": 9.2,
+    "meerPakScore": 92,
     "benefits": [
-      "€343 korting",
-      "Vanaf €23,50 p/m",
+      "Tot 14 maanden korting",
+      "Glasvezel 1000 Mbit/s + interactieve TV",
       "2 jaar contract"
     ],
-    "price": "Vanaf €23,50 p/m",
-    "monthlyPrice": 23.5,
-    "originalMonthlyPrice": 48.0,
+    "price": "€25 p/m tijdens de actie",
+    "monthlyPrice": 25,
+    "originalMonthlyPrice": 71,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=16cc0db727228de8adecd698fd3868ed&dl=internet&ws=mp-budget-tv-2jaar",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Voor het getoonde 2-jarige Internet & TV-pakket betaal je €23,50 p/m gedurende de eerste 14 maanden, daarna €48 p/m. Dat is €24,50 korting per maand en €343 totaal. De exacte pakketprijs en beschikbaarheid zijn postcode-afhankelijk; controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "termsSummary": "Bron: Daisycon-productfeed. Glasvezel 1000 Mbit/s + interactieve TV, 2 jaar. Feedprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. De feed omschrijft het voordeel als tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
     "benefitDisplayType": "period",
-    "detailTitle": "€343 korting op Internet & TV",
-    "detailIntro": "Voor het getoonde 2-jarige Internet & TV-pakket betaal je €23,50 p/m gedurende de eerste 14 maanden, daarna €48 p/m. Je bespaart €24,50 per maand: in totaal €343. Beschikbaarheid en de exacte pakketprijs zijn postcode-afhankelijk.",
+    "detailTitle": "Tot 14 maanden korting op Internet & TV",
+    "detailIntro": "De Daisycon-productfeed toont voor dit geselecteerde 2-jarige pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de kortingsperiode en €71 p/m daarna. De feed noemt tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "€343 totale korting",
-        "sub": "14 maanden €24,50 korting p/m"
+        "title": "Tot 14 maanden korting",
+        "sub": "€25 p/m tijdens de actie volgens de feed"
       },
       {
-        "type": "price",
-        "title": "Vanaf €23,50 p/m",
-        "sub": "Daarna €48 p/m"
+        "type": "product",
+        "title": "Glasvezel 1000 Mbit/s",
+        "sub": "Met interactieve TV"
       },
       {
         "type": "contract",
         "title": "2 jaar",
-        "sub": "Geselecteerde uitvoering"
+        "sub": "Geselecteerde feeduitvoering"
       }
     ],
-    "detailSummaryValue": "€343 korting",
-    "summaryLine": "Vanaf €23,50 p/m gedurende 14 maanden",
+    "detailSummaryValue": "Tot 14 maanden korting",
+    "summaryLine": "€25 p/m tijdens de actie",
     "detailIntroTitle": "Budget Thuis Internet & TV",
-    "detailIntroSubtitle": "14 maanden vanaf €23,50 p/m",
+    "detailIntroSubtitle": "Glasvezel 1000 Mbit/s + interactieve TV",
     "detailIntroCards": [
       {
-        "title": "€343 korting",
-        "text": "14 maanden €24,50 korting p/m"
+        "title": "€25 p/m",
+        "text": "Tijdens de actie volgens de feed"
       },
       {
-        "title": "Vanaf €23,50 p/m",
-        "text": "Daarna €48 p/m"
+        "title": "Daarna €71 p/m",
+        "text": "Reguliere prijs volgens de feed"
       },
       {
         "title": "2 jaar",
@@ -961,22 +1245,18 @@
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ziet direct wat de langere korting waard is: €24,50 voordeel per maand gedurende 14 maanden, samen €343. Controleer altijd je postcode, pakketkeuze en de actuele voorwaarden voordat je afsluit.",
+    "detailWhyText": "Dit pakket laat de langere kortingsperiode zien. Controleer je adres, de exacte kortingsduur en de voorwaarden voordat je afsluit.",
     "detailConditionItems": [
+      "Glasvezel 1000 Mbit/s + interactieve TV",
       "2 jaar contract",
-      "Vanaf €23,50 p/m gedurende de eerste 14 maanden",
-      "Daarna €48 p/m",
-      "€24,50 korting per maand",
-      "€343 totale korting over 14 maanden",
-      "Pakketprijs en beschikbaarheid afhankelijk van postcode",
+      "Tot 14 maanden korting volgens de feed",
+      "€25 p/m tijdens de actie volgens feed",
+      "Daarna €71 p/m volgens feed",
+      "Beschikbaarheid afhankelijk van postcode",
       "Controleer actuele voorwaarden bij Budget Thuis"
     ],
     "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=16cc0db727228de8adecd698fd3868ed&dl=internet&ws=mp-budget-tv-2jaar",
-    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=16cc0db727228de8adecd698fd3868ed&dl=internet&ws=mp-budget-tv-2jaar",
-    "adminNotes": "Prijs en voordeel handmatig gecontroleerd in de live Budget Thuis-configurator op 2026-07-02: 2 jaar Internet & TV, €23,50 p/m gedurende 14 maanden, daarna €48 p/m. Berekening: 14 × (€48,00 − €23,50) = €343,00. De getoonde pakketprijs blijft postcode- en pakketafhankelijk.",
-    "providerDescriptionTitle": "Over Budget Thuis",
-    "providerDescription": "Budget Thuis biedt Internet & TV en Sim Only. Welk pakket, welke internettechniek en welke prijs op jouw adres beschikbaar zijn, hangt af van je postcode. Op MeerPakkers zie je de actie van deze deal; bij Budget Thuis controleer je daarna het persoonlijke aanbod en de voorwaarden.",
-    "featured": true
+    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=16cc0db727228de8adecd698fd3868ed&dl=internet&ws=mp-budget-tv-2jaar"
   },
   {
     "providerId": "budget-thuis",
@@ -1000,9 +1280,9 @@
     "lastDataReviewAt": "2026-07-02",
     "cardImage": "/assets/provider-products/budget-thuis-internet-tv.png",
     "cardImageAlt": "Budget Thuis Internet & TV",
-    "cardImageVariant": "budget-square",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Thuis",
+    "cardImageVariant": "square",
+    "ctaLabel": "Bekijk aanbod",
+    "detailCtaLabel": "Bekijk je aanbod",
     "dealType": "nieuw / overstappen",
     "id": "budget-thuis-internet-tv-welkomstcadeau",
     "seoSlug": "budget-thuis-internet-tv-welkomstcadeau",
@@ -1021,6 +1301,8 @@
     "extraValue": 0,
     "contract": "1 of 2 jaar",
     "contractLengthMonths": null,
+    "score": 9.1,
+    "meerPakScore": 91,
     "benefits": [
       "Welkomstcadeau bij geselecteerde pakketten",
       "Internet & TV",
@@ -1031,10 +1313,10 @@
     "originalMonthlyPrice": 0,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Bij geselecteerde Internet & TV-pakketten kun je een welkomstcadeau ontvangen. Welk cadeau en welk pakket beschikbaar zijn, hangt af van je adres. Controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "termsSummary": "Bron: Daisycon-productfeed. Budget Thuis toont Internet & TV-uitvoeringen met een welkomstcadeau. De feed noemt geen specifiek cadeau of vaste cadeauwaarde. Beschikbaarheid en pakketprijs zijn postcode-afhankelijk.",
     "benefitDisplayType": "gift",
     "detailTitle": "Welkomstcadeau bij Internet & TV",
-    "detailIntro": "Bij geselecteerde Budget Thuis Internet & TV-pakketten kun je een welkomstcadeau ontvangen. Welk cadeau beschikbaar is, zie je in het persoonlijke aanbod bij Budget Thuis.",
+    "detailIntro": "De Daisycon-productfeed bevat geselecteerde Budget Thuis Internet & TV-pakketten met een welkomstcadeau. Welk cadeau beschikbaar is, zie je in het persoonlijke aanbod bij Budget Thuis.",
     "detailBenefits": [
       {
         "type": "gift",
@@ -1059,7 +1341,7 @@
     "detailIntroCards": [
       {
         "title": "Welkomstcadeau",
-        "text": "Bij geselecteerde pakketten"
+        "text": "Bij geselecteerde pakketten volgens de feed"
       },
       {
         "title": "Internet & TV",
@@ -1071,446 +1353,15 @@
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je kiest niet alleen op prijs: bij geselecteerde pakketten kan een welkomstcadeau onderdeel zijn van het voordeel. Controleer altijd welk cadeau en pakket op jouw adres beschikbaar zijn.",
+    "detailWhyText": "Je kiest niet alleen op prijs: bij geselecteerde pakketten staat een welkomstcadeau als voordeel in de productfeed. Controleer altijd welk cadeau en pakket op jouw adres beschikbaar zijn.",
     "detailConditionItems": [
       "Internet & TV-pakket",
       "Welkomstcadeau bij geselecteerde pakketten",
-      "Welk cadeau beschikbaar is, verschilt per aanbod",
+      "Specifiek cadeau niet benoemd in de feed",
       "Beschikbaarheid afhankelijk van postcode",
       "Controleer actuele voorwaarden bij Budget Thuis"
     ],
     "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau",
-    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau",
-    "providerDescriptionTitle": "Over Budget Thuis",
-    "providerDescription": "Budget Thuis biedt Internet & TV en Sim Only. Welk pakket, welke internettechniek en welke prijs op jouw adres beschikbaar zijn, hangt af van je postcode. Op MeerPakkers zie je de actie van deze deal; bij Budget Thuis controleer je daarna het persoonlijke aanbod en de voorwaarden."
-  },
-  {
-    "providerId": "budget-thuis",
-    "provider": "Budget Mobiel",
-    "category": "sim-only",
-    "icon": "📶",
-    "affiliateStatus": "approved",
-    "network": "daisycon",
-    "campaignId": "14759",
-    "trackingId": "1639366",
-    "merchantId": "budget-thuis",
-    "publicationStatus": "published",
-    "dealStatus": "active",
-    "startsAt": "2026-07-02",
-    "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
-    "sourceId": "14759",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=14&language_code=nl&locale_id=1&type=JSON&program_id=14759&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-06-15 17:30:27",
-    "lastCheckedAt": "2026-07-02",
-    "lastDataReviewAt": "2026-07-02",
-    "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
-    "cardImageAlt": "Budget Mobiel Sim Only",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Mobiel",
-    "dealType": "Nieuwe klant",
-    "giftType": "",
-    "giftName": "",
-    "giftValue": 0,
-    "cashbackValue": 0,
-    "extraValue": 0,
-    "benefitDisplayType": "period",
-    "contract": "2 jaar",
-    "contractLengthMonths": 24,
-    "providerDescriptionTitle": "Over Budget Mobiel",
-    "providerDescription": "Budget Mobiel is de mobiele tak van Budget Thuis en biedt Sim Only-abonnementen op het 5G-netwerk van KPN. Je gebruikt je eigen telefoon en kiest een databundel die bij je past. Controleer altijd het actuele aanbod en de voorwaarden bij Budget Mobiel voordat je afsluit.",
-    "providerFeatureTitle": "Bij deze Sim Only-deal",
-    "providerFeatureItems": [
-      {
-        "title": "Eigen telefoon",
-        "text": "Je kiest Sim Only en gebruikt je huidige toestel."
-      },
-      {
-        "title": "KPN 5G-netwerk",
-        "text": "Volgens de productfeed maak je gebruik van het 5G-netwerk van KPN."
-      },
-      {
-        "title": "Nieuwe klant",
-        "text": "Deze geselecteerde actie is bedoeld voor nieuwe klanten."
-      }
-    ],
-    "seoSupport": {
-      "eyebrow": "Meer weten voordat je kiest?",
-      "title": "Uitleg bij deze Sim Only actie",
-      "description": "Lees hoe tijdelijke maandkorting, je databundel, de looptijd en nummerbehoud werken voordat je doorklikt naar Budget Mobiel.",
-      "links": [
-        {
-          "label": "Sim Only met korting",
-          "href": "/uitleg/sim-only-met-cashback/"
-        },
-        {
-          "label": "Wat betekent vanafprijs?",
-          "href": "/uitleg/vanafprijs-abonnementen/"
-        },
-        {
-          "label": "2 jaar Sim Only",
-          "href": "/uitleg/sim-only-met-cashback/"
-        }
-      ]
-    },
-    "id": "budget-mobiel-sim-only-onbeperkt-2jaar",
-    "seoSlug": "budget-mobiel-sim-only-onbeperkt-2jaar",
-    "title": "Sim Only: €80 korting",
-    "benefitValue": 80,
-    "totalBenefitValue": 80,
-    "totalBenefitLabel": "€80 korting",
-    "discountValue": 80,
-    "monthlyPrice": 17.5,
-    "price": "Vanaf €17,50 p/m",
-    "dataBundle": "Onbeperkt",
-    "benefits": [
-      "€80 korting",
-      "Vanaf €17,50 p/m",
-      "Onbeperkt data, bellen en sms"
-    ],
-    "detailTitle": "€80 korting op Onbeperkt Sim Only",
-    "detailIntro": "Kies Budget Mobiel Onbeperkt Sim Only als nieuwe klant. De productfeed vermeldt €10 korting per maand gedurende de eerste 8 maanden. Met €17,50 p/m in de actieperiode loopt dat voordeel op tot €80.",
-    "detailSummaryValue": "€80 korting",
-    "summaryLine": "Onbeperkt data, bellen en sms",
-    "detailIntroTitle": "Budget Mobiel Onbeperkt Sim Only",
-    "detailIntroSubtitle": "8 maanden vanaf €17,50 p/m",
-    "detailIntroCards": [
-      {
-        "title": "€80 korting",
-        "text": "€10 p/m gedurende 8 maanden"
-      },
-      {
-        "title": "Vanaf €17,50 p/m",
-        "text": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "title": "Onbeperkt data",
-        "text": "Onbeperkt bellen en sms op KPN 5G"
-      }
-    ],
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "€80 totale korting",
-        "sub": "€10 p/m gedurende 8 maanden"
-      },
-      {
-        "type": "price",
-        "title": "Vanaf €17,50 p/m",
-        "sub": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "type": "product",
-        "title": "Onbeperkt data, bellen en sms",
-        "sub": "Op het 5G-netwerk van KPN"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je krijgt een concreet tijdelijk voordeel: €10 korting per maand gedurende de eerste 8 maanden, samen €80. Daarbij heb je onbeperkt data, bellen en sms op het 5G-netwerk van KPN.",
-    "detailConditionItems": [
-      "Nieuwe klant",
-      "2 jaar contract",
-      "€10 korting p/m gedurende 8 maanden",
-      "Vanaf €17,50 p/m tijdens de actieperiode",
-      "Onbeperkt data, bellen en sms",
-      "5G-netwerk van KPN",
-      "Controleer actuele voorwaarden bij Budget Mobiel"
-    ],
-    "termsSummary": "Nieuwe klanten betalen voor deze geselecteerde Onbeperkt Sim Only-uitvoering vanaf €17,50 p/m. De productfeed vermeldt €10 korting p/m gedurende 8 maanden: €80 totaal. De reguliere prijs na de actieperiode en verdere voorwaarden controleer je bij Budget Mobiel.",
-    "adminNotes": "Exacte Daisycon-productfeeduitvoering voor nieuwe klanten: onbeperkt data, bellen en sms, 2 jaar, €17,50 p/m, €10 korting p/m gedurende 8 maanden. Totale korting berekend als 8 × €10 = €80. Product-ID 8baf124d66f89009bc12df073fe5a0f3.",
-    "featured": true,
-    "benefitTypes": [
-      "korting"
-    ],
-    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=8baf124d66f89009bc12df073fe5a0f3&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D0%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-onbeperkt-2jaar",
-    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=8baf124d66f89009bc12df073fe5a0f3&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D0%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-onbeperkt-2jaar",
-    "url": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=8baf124d66f89009bc12df073fe5a0f3&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D0%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-onbeperkt-2jaar",
-    "updatedAt": "2026-07-02"
-  },
-  {
-    "providerId": "budget-thuis",
-    "provider": "Budget Mobiel",
-    "category": "sim-only",
-    "icon": "📶",
-    "affiliateStatus": "approved",
-    "network": "daisycon",
-    "campaignId": "14759",
-    "trackingId": "1639366",
-    "merchantId": "budget-thuis",
-    "publicationStatus": "published",
-    "dealStatus": "active",
-    "startsAt": "2026-07-02",
-    "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
-    "sourceId": "14759",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=14&language_code=nl&locale_id=1&type=JSON&program_id=14759&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-06-15 17:30:27",
-    "lastCheckedAt": "2026-07-02",
-    "lastDataReviewAt": "2026-07-02",
-    "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
-    "cardImageAlt": "Budget Mobiel Sim Only",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Mobiel",
-    "dealType": "Nieuwe klant",
-    "giftType": "",
-    "giftName": "",
-    "giftValue": 0,
-    "cashbackValue": 0,
-    "extraValue": 0,
-    "benefitDisplayType": "period",
-    "contract": "2 jaar",
-    "contractLengthMonths": 24,
-    "providerDescriptionTitle": "Over Budget Mobiel",
-    "providerDescription": "Budget Mobiel is de mobiele tak van Budget Thuis en biedt Sim Only-abonnementen op het 5G-netwerk van KPN. Je gebruikt je eigen telefoon en kiest een databundel die bij je past. Controleer altijd het actuele aanbod en de voorwaarden bij Budget Mobiel voordat je afsluit.",
-    "providerFeatureTitle": "Bij deze Sim Only-deal",
-    "providerFeatureItems": [
-      {
-        "title": "Eigen telefoon",
-        "text": "Je kiest Sim Only en gebruikt je huidige toestel."
-      },
-      {
-        "title": "KPN 5G-netwerk",
-        "text": "Volgens de productfeed maak je gebruik van het 5G-netwerk van KPN."
-      },
-      {
-        "title": "Nieuwe klant",
-        "text": "Deze geselecteerde actie is bedoeld voor nieuwe klanten."
-      }
-    ],
-    "seoSupport": {
-      "eyebrow": "Meer weten voordat je kiest?",
-      "title": "Uitleg bij deze Sim Only actie",
-      "description": "Lees hoe tijdelijke maandkorting, je databundel, de looptijd en nummerbehoud werken voordat je doorklikt naar Budget Mobiel.",
-      "links": [
-        {
-          "label": "Sim Only met korting",
-          "href": "/uitleg/sim-only-met-cashback/"
-        },
-        {
-          "label": "Wat betekent vanafprijs?",
-          "href": "/uitleg/vanafprijs-abonnementen/"
-        },
-        {
-          "label": "2 jaar Sim Only",
-          "href": "/uitleg/sim-only-met-cashback/"
-        }
-      ]
-    },
-    "id": "budget-mobiel-sim-only-15gb-2jaar",
-    "seoSlug": "budget-mobiel-sim-only-15gb-2jaar",
-    "title": "Sim Only: €44 korting",
-    "benefitValue": 44,
-    "totalBenefitValue": 44,
-    "totalBenefitLabel": "€44 korting",
-    "discountValue": 44,
-    "monthlyPrice": 11,
-    "price": "Vanaf €11 p/m",
-    "dataBundle": "15 GB",
-    "benefits": [
-      "€44 korting",
-      "Vanaf €11 p/m",
-      "15 GB + onbeperkt bellen en sms"
-    ],
-    "detailTitle": "€44 korting op 15 GB Sim Only",
-    "detailIntro": "Kies Budget Mobiel 15 GB Sim Only als nieuwe klant. De productfeed vermeldt €5,50 korting per maand gedurende de eerste 8 maanden. Met €11 p/m in de actieperiode loopt dat voordeel op tot €44.",
-    "detailSummaryValue": "€44 korting",
-    "summaryLine": "15 GB + onbeperkt bellen en sms",
-    "detailIntroTitle": "Budget Mobiel 15 GB Sim Only",
-    "detailIntroSubtitle": "8 maanden vanaf €11 p/m",
-    "detailIntroCards": [
-      {
-        "title": "€44 korting",
-        "text": "€5,50 p/m gedurende 8 maanden"
-      },
-      {
-        "title": "Vanaf €11 p/m",
-        "text": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "title": "15 GB data",
-        "text": "Onbeperkt bellen en sms op KPN 5G"
-      }
-    ],
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "€44 totale korting",
-        "sub": "€5,50 p/m gedurende 8 maanden"
-      },
-      {
-        "type": "price",
-        "title": "Vanaf €11 p/m",
-        "sub": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "type": "product",
-        "title": "15 GB data + onbeperkt bellen en sms",
-        "sub": "Op het 5G-netwerk van KPN"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je krijgt €5,50 korting per maand gedurende de eerste 8 maanden, samen €44. Daarmee combineer je 15 GB data met onbeperkt bellen en sms op het 5G-netwerk van KPN.",
-    "detailConditionItems": [
-      "Nieuwe klant",
-      "2 jaar contract",
-      "€5,50 korting p/m gedurende 8 maanden",
-      "Vanaf €11 p/m tijdens de actieperiode",
-      "15 GB data + onbeperkt bellen en sms",
-      "5G-netwerk van KPN",
-      "Controleer actuele voorwaarden bij Budget Mobiel"
-    ],
-    "termsSummary": "Nieuwe klanten betalen voor deze geselecteerde 15 GB Sim Only-uitvoering vanaf €11 p/m. De productfeed vermeldt €5,50 korting p/m gedurende 8 maanden: €44 totaal. De reguliere prijs na de actieperiode en verdere voorwaarden controleer je bij Budget Mobiel.",
-    "adminNotes": "Exacte Daisycon-productfeeduitvoering voor nieuwe klanten: 15 GB, onbeperkt bellen en sms, 2 jaar, €11 p/m, €5,50 korting p/m gedurende 8 maanden. Totale korting berekend als 8 × €5,50 = €44. Product-ID 1e0810695a037d081896e54c37775e91.",
-    "featured": false,
-    "benefitTypes": [
-      "korting"
-    ],
-    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=1e0810695a037d081896e54c37775e91&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D15%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-15gb-2jaar",
-    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=1e0810695a037d081896e54c37775e91&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D15%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-15gb-2jaar",
-    "url": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=1e0810695a037d081896e54c37775e91&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D15%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-15gb-2jaar",
-    "updatedAt": "2026-07-02"
-  },
-  {
-    "providerId": "budget-thuis",
-    "provider": "Budget Mobiel",
-    "category": "sim-only",
-    "icon": "📶",
-    "affiliateStatus": "approved",
-    "network": "daisycon",
-    "campaignId": "14759",
-    "trackingId": "1639366",
-    "merchantId": "budget-thuis",
-    "publicationStatus": "published",
-    "dealStatus": "active",
-    "startsAt": "2026-07-02",
-    "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
-    "sourceId": "14759",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=14&language_code=nl&locale_id=1&type=JSON&program_id=14759&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-06-15 17:30:27",
-    "lastCheckedAt": "2026-07-02",
-    "lastDataReviewAt": "2026-07-02",
-    "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
-    "cardImageAlt": "Budget Mobiel Sim Only",
-    "ctaLabel": "Bekijk deal",
-    "detailCtaLabel": "Bekijk op Budget Mobiel",
-    "dealType": "Nieuwe klant",
-    "giftType": "",
-    "giftName": "",
-    "giftValue": 0,
-    "cashbackValue": 0,
-    "extraValue": 0,
-    "benefitDisplayType": "period",
-    "contract": "2 jaar",
-    "contractLengthMonths": 24,
-    "providerDescriptionTitle": "Over Budget Mobiel",
-    "providerDescription": "Budget Mobiel is de mobiele tak van Budget Thuis en biedt Sim Only-abonnementen op het 5G-netwerk van KPN. Je gebruikt je eigen telefoon en kiest een databundel die bij je past. Controleer altijd het actuele aanbod en de voorwaarden bij Budget Mobiel voordat je afsluit.",
-    "providerFeatureTitle": "Bij deze Sim Only-deal",
-    "providerFeatureItems": [
-      {
-        "title": "Eigen telefoon",
-        "text": "Je kiest Sim Only en gebruikt je huidige toestel."
-      },
-      {
-        "title": "KPN 5G-netwerk",
-        "text": "Volgens de productfeed maak je gebruik van het 5G-netwerk van KPN."
-      },
-      {
-        "title": "Nieuwe klant",
-        "text": "Deze geselecteerde actie is bedoeld voor nieuwe klanten."
-      }
-    ],
-    "seoSupport": {
-      "eyebrow": "Meer weten voordat je kiest?",
-      "title": "Uitleg bij deze Sim Only actie",
-      "description": "Lees hoe tijdelijke maandkorting, je databundel, de looptijd en nummerbehoud werken voordat je doorklikt naar Budget Mobiel.",
-      "links": [
-        {
-          "label": "Sim Only met korting",
-          "href": "/uitleg/sim-only-met-cashback/"
-        },
-        {
-          "label": "Wat betekent vanafprijs?",
-          "href": "/uitleg/vanafprijs-abonnementen/"
-        },
-        {
-          "label": "2 jaar Sim Only",
-          "href": "/uitleg/sim-only-met-cashback/"
-        }
-      ]
-    },
-    "id": "budget-mobiel-sim-only-10gb-2jaar",
-    "seoSlug": "budget-mobiel-sim-only-10gb-2jaar",
-    "title": "Sim Only: €40 korting",
-    "benefitValue": 40,
-    "totalBenefitValue": 40,
-    "totalBenefitLabel": "€40 korting",
-    "discountValue": 40,
-    "monthlyPrice": 10,
-    "price": "Vanaf €10 p/m",
-    "dataBundle": "10 GB",
-    "benefits": [
-      "€40 korting",
-      "Vanaf €10 p/m",
-      "10 GB + onbeperkt bellen en sms"
-    ],
-    "detailTitle": "€40 korting op 10 GB Sim Only",
-    "detailIntro": "Kies Budget Mobiel 10 GB Sim Only als nieuwe klant. De productfeed vermeldt €5 korting per maand gedurende de eerste 8 maanden. Met €10 p/m in de actieperiode loopt dat voordeel op tot €40.",
-    "detailSummaryValue": "€40 korting",
-    "summaryLine": "10 GB + onbeperkt bellen en sms",
-    "detailIntroTitle": "Budget Mobiel 10 GB Sim Only",
-    "detailIntroSubtitle": "8 maanden vanaf €10 p/m",
-    "detailIntroCards": [
-      {
-        "title": "€40 korting",
-        "text": "€5 p/m gedurende 8 maanden"
-      },
-      {
-        "title": "Vanaf €10 p/m",
-        "text": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "title": "10 GB data",
-        "text": "Onbeperkt bellen en sms op KPN 5G"
-      }
-    ],
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "€40 totale korting",
-        "sub": "€5 p/m gedurende 8 maanden"
-      },
-      {
-        "type": "price",
-        "title": "Vanaf €10 p/m",
-        "sub": "Tijdens de eerste 8 maanden"
-      },
-      {
-        "type": "product",
-        "title": "10 GB data + onbeperkt bellen en sms",
-        "sub": "Op het 5G-netwerk van KPN"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je krijgt €5 korting per maand gedurende de eerste 8 maanden, samen €40. Daarmee is dit een laaggeprijsde Sim Only-keuze met 10 GB data en onbeperkt bellen en sms op het 5G-netwerk van KPN.",
-    "detailConditionItems": [
-      "Nieuwe klant",
-      "2 jaar contract",
-      "€5 korting p/m gedurende 8 maanden",
-      "Vanaf €10 p/m tijdens de actieperiode",
-      "10 GB data + onbeperkt bellen en sms",
-      "5G-netwerk van KPN",
-      "Controleer actuele voorwaarden bij Budget Mobiel"
-    ],
-    "termsSummary": "Nieuwe klanten betalen voor deze geselecteerde 10 GB Sim Only-uitvoering vanaf €10 p/m. De productfeed vermeldt €5 korting p/m gedurende 8 maanden: €40 totaal. De reguliere prijs na de actieperiode en verdere voorwaarden controleer je bij Budget Mobiel.",
-    "adminNotes": "Exacte Daisycon-productfeeduitvoering voor nieuwe klanten: 10 GB, onbeperkt bellen en sms, 2 jaar, €10 p/m, €5 korting p/m gedurende 8 maanden. Totale korting berekend als 8 × €5 = €40. Product-ID 0314b67c75723ba9ebbb970ddfb9f1ee.",
-    "featured": false,
-    "benefitTypes": [
-      "korting"
-    ],
-    "deepLink": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=0314b67c75723ba9ebbb970ddfb9f1ee&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D10%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-10gb-2jaar",
-    "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=0314b67c75723ba9ebbb970ddfb9f1ee&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D10%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-10gb-2jaar",
-    "url": "https://dc.budgetthuis.nl/c/?si=14759&li=1639366&wi=422185&pid=0314b67c75723ba9ebbb970ddfb9f1ee&dl=mobiel%2Fbestellen%3FflowType%3Dregular%26dataLimit%3D10%26callingBundle%3D0%26duration%3DtwoYears%26isClient%3D0%26withDevice%3D0&ws=mp-budget-sim-10gb-2jaar",
-    "updatedAt": "2026-07-02"
+    "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau"
   }
 ]
