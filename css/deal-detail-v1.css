@@ -3026,3 +3026,66 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
     margin:14px 0 28px !important;
   }
 }
+
+
+/* Detailpagina campagnebanner zonder witte rand — v12
+   Zelfde nette stijl als Odido-kaarten: officiële creative zichtbaar, geen witte padding/rand eromheen. */
+.mp-offer-overview__product-image,
+.mp-offer-overview__product-image--landscape,
+.mp-offer-overview__product-image--square{
+  padding:0 !important;
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+.mp-offer-overview__product-image img,
+.mp-offer-overview__product-image--landscape img,
+.mp-offer-overview__product-image--square img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  display:block !important;
+  border-radius:24px !important;
+}
+
+@media (min-width:1024px){
+  .mp-offer-overview__product-image--square-large{
+    padding:0 !important;
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
+  }
+
+  .mp-offer-overview__product-image--square-large img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    display:block !important;
+    border-radius:28px !important;
+  }
+}
+
+@media (max-width:1023px){
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--landscape,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--square,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--square-large{
+    padding:0 !important;
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image img,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--landscape img,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--square img,
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--square-large img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    display:block !important;
+    border-radius:18px !important;
+  }
+}
+
