@@ -9,8 +9,8 @@ Feedmetadata:
 - geselecteerd / gecontroleerd in project: 2026-07-02
 
 Toegevoegd als actuele, feed-geverifieerde dealkaarten:
-1. `budget-thuis-internet-tv-korting-1jaar` — Glasvezel 1000 Mbit/s + interactieve TV; 1 jaar; 8 maanden korting; feedprijs €25 p/m, daarna €71 p/m; product-id `cb52c40f60c8968e5a20d93e9f69fd8d`.
-2. `budget-thuis-internet-tv-korting-2jaar` — Glasvezel 1000 Mbit/s + interactieve TV; 2 jaar; tot 14 maanden korting; feedprijs €25 p/m, daarna €71 p/m; product-id `16cc0db727228de8adecd698fd3868ed`.
+1. `budget-thuis-internet-tv-korting-1jaar` — Glasvezel 1000 Mbit/s + interactieve TV; 1 jaar; 8 maanden korting; actieprijs €25 p/m, daarna €71 p/m; product-id `cb52c40f60c8968e5a20d93e9f69fd8d`.
+2. `budget-thuis-internet-tv-korting-2jaar` — Glasvezel 1000 Mbit/s + interactieve TV; 2 jaar; tot 14 maanden korting; actieprijs €25 p/m, daarna €71 p/m; product-id `16cc0db727228de8adecd698fd3868ed`.
 3. `budget-thuis-internet-tv-welkomstcadeau` — Internet & TV met welkomstcadeau bij geselecteerde pakketten; de feed noemt geen specifiek cadeau of bedrag; product-id `35b73df8610936d0cc93e9343ebaa2d8`.
 
 Niet toegevoegd als feitelijke claim:
