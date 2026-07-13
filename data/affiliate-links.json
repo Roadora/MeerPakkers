@@ -180,10 +180,10 @@
     "startsAt": "2026-07-02",
     "expiresAt": null,
     "approvedAt": "2026-07-02",
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
-    "adminNotes": "Daisycon productfeedselectie: Glasvezel 1000 Mbit/s + interactieve TV, 1 jaar, 8 maanden korting.",
+    "adminNotes": "actuele aanbiederinformatieselectie: Glasvezel 1000 Mbit/s + interactieve TV, 1 jaar, 8 maanden korting.",
     "utmCampaign": "meerpakkers_budget_tv_1jaar_korting",
     "subIdTemplate": "mp-budget-tv-1jaar"
   },
@@ -202,10 +202,10 @@
     "startsAt": "2026-07-02",
     "expiresAt": null,
     "approvedAt": "2026-07-02",
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
-    "adminNotes": "Daisycon productfeedselectie: Glasvezel 1000 Mbit/s + interactieve TV, 2 jaar, tot 14 maanden korting.",
+    "adminNotes": "actuele aanbiederinformatieselectie: Glasvezel 1000 Mbit/s + interactieve TV, 2 jaar, tot 14 maanden korting.",
     "utmCampaign": "meerpakkers_budget_tv_2jaar_korting",
     "subIdTemplate": "mp-budget-tv-2jaar"
   },
@@ -224,10 +224,10 @@
     "startsAt": "2026-07-02",
     "expiresAt": null,
     "approvedAt": "2026-07-02",
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
-    "adminNotes": "Daisycon productfeedselectie: Internet & TV-uitvoering met welkomstcadeau; specifieker cadeau niet benoemd in de feed.",
+    "adminNotes": "actuele aanbiederinformatieselectie: Internet & TV-uitvoering met welkomstcadeau; specifieker cadeau niet benoemd in de feed.",
     "utmCampaign": "meerpakkers_budget_tv_welkomstcadeau",
     "subIdTemplate": "mp-budget-tv-cadeau"
   }

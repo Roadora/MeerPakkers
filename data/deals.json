@@ -54,15 +54,15 @@
     "publicationStatus": "published",
     "startsAt": "2026-07-02",
     "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceId": "14524",
     "adminNotes": "Deal Card System v1 Clean: oude card-fix CSS-links verwijderd; één js/deal-card-system-v1.js en css/deal-card-system-v1.css toegevoegd; home en categorie gebruiken MPCardComponents.",
-    "termsSummary": "De Daisycon-productfeed van Budget Thuis toont Internet & TV-varianten met 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar en varianten met een welkomstcadeau. Beschikbaarheid, techniek en prijs hangen af van je adres. Controleer altijd je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "termsSummary": "De actuele aanbiederinformatie van Budget Thuis toont Internet & TV-varianten met 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar en varianten met een welkomstcadeau. Beschikbaarheid, techniek en prijs hangen af van je adres. Controleer altijd je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
     "lastDataReviewAt": "2026-07-02",
     "ctaLabel": "Bekijk aanbod",
     "benefitDisplayType": "choice",
     "detailTitle": "Korting of welkomstcadeau bij Internet & TV",
-    "detailIntro": "De Budget Thuis-productfeed bevat Internet & TV-pakketten met 8 maanden korting bij een jaarcontract, tot 14 maanden korting bij twee jaar of een welkomstcadeau. Welk pakket en voordeel beschikbaar is, hangt af van je adres.",
+    "detailIntro": "De actuele Budget Thuis-aanbiederinformatie bevat Internet & TV-pakketten met 8 maanden korting bij een jaarcontract, tot 14 maanden korting bij twee jaar of een welkomstcadeau. Welk pakket en voordeel beschikbaar is, hangt af van je adres.",
     "detailBenefits": [
       {
         "type": "discount",
@@ -105,7 +105,7 @@
       }
     ],
     "detailWhyTitle": "Actie in het kort",
-    "detailWhyText": "In de productfeed staan drie actuele voordeelvormen: 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar of een welkomstcadeau. Het aanbod is postcode-afhankelijk; vergelijk en controleer de voorwaarden voordat je afsluit.",
+    "detailWhyText": "Volgens de actuele aanbiederinformatie zijn er drie actuele voordeelvormen: 8 maanden korting bij 1 jaar, tot 14 maanden korting bij 2 jaar of een welkomstcadeau. Het aanbod is postcode-afhankelijk; vergelijk en controleer de voorwaarden voordat je afsluit.",
     "detailConditionItems": [
       "Beschikbaarheid afhankelijk van postcode",
       "Internet & TV-pakket",
@@ -268,7 +268,7 @@
     "sourceVerifiedNotes": "Publieke aanbodpagina bevestigt: eerste 8 maanden €10 p/m bij een 2-jarig abonnement, onbeperkt data/bellen/sms en gratis nummerbehoud. Aansluitkosten zijn niet als vast voordeel opgenomen, omdat Budget Thuis die bij bestelling specificeert. Einddatum komt uit de actieve Daisycon-promotie.",
     "cardImage": "/assets/provider-products/budget-thuis-sim-only.png",
     "cardImageAlt": "Budget Thuis Sim Only simkaart",
-    "cardImageSource": "Daisycon productfeed — Mobiel van Budget Thuis"
+    "cardImageSource": "actuele aanbiederinformatie — Mobiel van Budget Thuis"
   },
   {
     "id": "odido-thuis-glasvezel-tv-25",
@@ -1057,7 +1057,7 @@
     "dealStatus": "active",
     "startsAt": "2026-07-02",
     "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceId": "14524",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
@@ -1098,15 +1098,15 @@
     "originalMonthlyPrice": 71,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=cb52c40f60c8968e5a20d93e9f69fd8d&dl=internet&ws=mp-budget-tv-1jaar",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Bron: Daisycon-productfeed. Glasvezel 1000 Mbit/s + interactieve TV, 1 jaar. Feedprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. Het pakket is postcode-afhankelijk; controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
+    "termsSummary": "Bron: actuele aanbiederinformatie. Glasvezel 1000 Mbit/s + interactieve TV, 1 jaar. Actieprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. Het pakket is postcode-afhankelijk; controleer je persoonlijke aanbod en voorwaarden bij Budget Thuis.",
     "benefitDisplayType": "period",
     "detailTitle": "8 maanden korting op Internet & TV",
-    "detailIntro": "De Daisycon-productfeed toont voor dit geselecteerde 1-jarig pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de eerste 8 maanden, daarna €71 p/m. Beschikbaarheid is postcode-afhankelijk.",
+    "detailIntro": "De actuele aanbiederinformatie toont voor dit geselecteerde 1-jarig pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de eerste 8 maanden, daarna €71 p/m. Beschikbaarheid is postcode-afhankelijk.",
     "detailBenefits": [
       {
         "type": "discount",
         "title": "8 maanden €25 p/m",
-        "sub": "Daarna €71 p/m volgens de feed"
+        "sub": "Daarna €71 p/m volgens de actuele aanbiederinformatie"
       },
       {
         "type": "product",
@@ -1126,11 +1126,11 @@
     "detailIntroCards": [
       {
         "title": "€25 p/m",
-        "text": "Tijdens de eerste 8 maanden volgens de feed"
+        "text": "Tijdens de eerste 8 maanden volgens de actuele aanbiederinformatie"
       },
       {
         "title": "Daarna €71 p/m",
-        "text": "Reguliere prijs volgens de feed"
+        "text": "Reguliere prijs volgens de actuele aanbiederinformatie"
       },
       {
         "title": "1 jaar",
@@ -1164,7 +1164,7 @@
     "dealStatus": "active",
     "startsAt": "2026-07-02",
     "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceId": "14524",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
@@ -1205,15 +1205,15 @@
     "originalMonthlyPrice": 71,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=16cc0db727228de8adecd698fd3868ed&dl=internet&ws=mp-budget-tv-2jaar",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Bron: Daisycon-productfeed. Glasvezel 1000 Mbit/s + interactieve TV, 2 jaar. Feedprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. De feed omschrijft het voordeel als tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
+    "termsSummary": "Bron: actuele aanbiederinformatie. Glasvezel 1000 Mbit/s + interactieve TV, 2 jaar. Actieprijs €25 p/m tijdens de korting en reguliere prijs €71 p/m. De aanbieder omschrijft het voordeel als tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
     "benefitDisplayType": "period",
     "detailTitle": "Tot 14 maanden korting op Internet & TV",
-    "detailIntro": "De Daisycon-productfeed toont voor dit geselecteerde 2-jarige pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de kortingsperiode en €71 p/m daarna. De feed noemt tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
+    "detailIntro": "De actuele aanbiederinformatie toont voor dit geselecteerde 2-jarige pakket Glasvezel 1000 Mbit/s met interactieve TV €25 p/m tijdens de kortingsperiode en €71 p/m daarna. De feed noemt tot 14 maanden korting. Beschikbaarheid is postcode-afhankelijk.",
     "detailBenefits": [
       {
         "type": "discount",
         "title": "Tot 14 maanden korting",
-        "sub": "€25 p/m tijdens de actie volgens de feed"
+        "sub": "€25 p/m tijdens de actie volgens de actuele aanbiederinformatie"
       },
       {
         "type": "product",
@@ -1233,11 +1233,11 @@
     "detailIntroCards": [
       {
         "title": "€25 p/m",
-        "text": "Tijdens de actie volgens de feed"
+        "text": "Tijdens de actie volgens de actuele aanbiederinformatie"
       },
       {
         "title": "Daarna €71 p/m",
-        "text": "Reguliere prijs volgens de feed"
+        "text": "Reguliere prijs volgens de actuele aanbiederinformatie"
       },
       {
         "title": "2 jaar",
@@ -1249,7 +1249,7 @@
     "detailConditionItems": [
       "Glasvezel 1000 Mbit/s + interactieve TV",
       "2 jaar contract",
-      "Tot 14 maanden korting volgens de feed",
+      "Tot 14 maanden korting volgens de actuele aanbiederinformatie",
       "€25 p/m tijdens de actie volgens feed",
       "Daarna €71 p/m volgens feed",
       "Beschikbaarheid afhankelijk van postcode",
@@ -1272,7 +1272,7 @@
     "dealStatus": "active",
     "startsAt": "2026-07-02",
     "expiresAt": null,
-    "sourceType": "daisycon-productfeed",
+    "sourceType": "actuele aanbiederinformatie",
     "sourceId": "14524",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14524&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-05-05 08:00:34",
@@ -1313,10 +1313,10 @@
     "originalMonthlyPrice": 0,
     "deepLink": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau",
     "updatedAt": "2026-07-02",
-    "termsSummary": "Bron: Daisycon-productfeed. Budget Thuis toont Internet & TV-uitvoeringen met een welkomstcadeau. De feed noemt geen specifiek cadeau of vaste cadeauwaarde. Beschikbaarheid en pakketprijs zijn postcode-afhankelijk.",
+    "termsSummary": "Bron: actuele aanbiederinformatie. Budget Thuis toont Internet & TV-uitvoeringen met een welkomstcadeau. De feed noemt geen specifiek cadeau of vaste cadeauwaarde. Beschikbaarheid en pakketprijs zijn postcode-afhankelijk.",
     "benefitDisplayType": "gift",
     "detailTitle": "Welkomstcadeau bij Internet & TV",
-    "detailIntro": "De Daisycon-productfeed bevat geselecteerde Budget Thuis Internet & TV-pakketten met een welkomstcadeau. Welk cadeau beschikbaar is, zie je in het persoonlijke aanbod bij Budget Thuis.",
+    "detailIntro": "De actuele aanbiederinformatie bevat geselecteerde Budget Thuis Internet & TV-pakketten met een welkomstcadeau. Welk cadeau beschikbaar is, zie je in het persoonlijke aanbod bij Budget Thuis.",
     "detailBenefits": [
       {
         "type": "gift",
@@ -1341,7 +1341,7 @@
     "detailIntroCards": [
       {
         "title": "Welkomstcadeau",
-        "text": "Bij geselecteerde pakketten volgens de feed"
+        "text": "Bij geselecteerde pakketten volgens de actuele aanbiederinformatie"
       },
       {
         "title": "Internet & TV",
