@@ -1,5 +1,16 @@
 window.MPHomeState = {
-  state:
+  state: {
+    quick: "all",
+    search: "",
+    benefitTypes: new Set(["cadeau","cashback"]),
+    categories: new Set(["mobiel"]),
+    providers: new Set(),
+    giftTypes: new Set(),
+    contracts: new Set(),
+    minScore: 0,
+    deals: [],
+    providersData: []
+  },
   labels: {
     cadeau:"Cadeau", cashback:"Cashback", korting:"Korting of cadeau bij overstappen", cadeaukaart:"Cadeaukaart",
     "gratis-maanden":"Gratis maanden","gratis-extra":"Gratis extra's",
