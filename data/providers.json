@@ -21,17 +21,6 @@
     "priority": 2
   },
   {
-    "id": "odido",
-    "name": "Odido",
-    "type": "provider",
-    "categories": [
-      "mobiel",
-      "sim-only",
-      "internet-tv"
-    ],
-    "priority": 3
-  },
-  {
     "id": "youfone",
     "name": "Youfone",
     "type": "provider",

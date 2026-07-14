@@ -27,20 +27,6 @@
     "adminNotes": ""
   },
   {
-    "providerId": "odido",
-    "provider": "Odido",
-    "categories": [
-      "internet-tv",
-      "sim-only"
-    ],
-    "affiliateNetwork": "awin",
-    "applicationStatus": "approved",
-    "affiliateStatus": "approved",
-    "contactUrl": null,
-    "approvedAt": "2026-06-29",
-    "adminNotes": "Awin-goedkeuring bevestigd voor Odido Mobiel NL (8389) en Odido Thuis NL (8400) op 29 juni 2026. Eerste gepubliceerde Odido-deal: Thuis creative 4818317, Glasvezel + TV, eerste 12 maanden €25 p/m."
-  },
-  {
     "providerId": "youfone",
     "provider": "Youfone",
     "categories": [
