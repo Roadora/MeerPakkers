@@ -8,7 +8,6 @@
   var START_AT = new Date("2026-07-20T00:00:00+02:00");
   var END_AT = new Date("2026-08-10T00:00:00+02:00"); // 9 August counts fully.
   var IMAGE_URL = "https://www.awin1.com/cshow.php?s=4834442&v=8400&q=533064&r=2947269";
-  var DETAIL_URL = "/deal/?deal=odido-thuis-affeller-2026&category=internet-tv&return=%2Finternet-tv%2F";
   var timer = null;
 
   function escapeHtml(value){
@@ -61,7 +60,7 @@
           '<div class="mp-odido-affeller__countdown" role="timer" aria-live="off" aria-label="Aftellen tot de start van de Odido-actie">' +
             unit(parts.days,"dagen") + unit(parts.hours,"uur") + unit(parts.minutes,"min") + unit(parts.seconds,"sec") +
           '</div>' +
-          '<a class="mp-odido-affeller__details" href="' + escapeHtml(DETAIL_URL) + '">Bekijk de actie alvast</a>' +
+          '<span class="mp-odido-affeller__details mp-odido-affeller__details--disabled" aria-disabled="true">Beschikbaar vanaf 20 juli</span>' +
           '<p class="mp-odido-affeller__disclosure">MeerPakkers is onafhankelijk. Odido is niet verantwoordelijk voor de inhoud van deze pagina.</p>' +
         '</div>' +
       '</article>';

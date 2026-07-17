@@ -16,6 +16,7 @@
 .mp-odido-affeller__time small{margin-top:5px;font-size:11px;font-weight:750;opacity:.82;text-transform:uppercase}
 .mp-odido-affeller__details{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;background:#f4a900;color:#1d2d28;font-weight:850;text-decoration:none}
 .mp-odido-affeller__details:hover{filter:brightness(.97)}
+.mp-odido-affeller__details--disabled{background:#e7ece9;color:#40524c;cursor:default;filter:none!important;box-shadow:inset 0 0 0 1px rgba(6,72,61,.10)}
 .mp-odido-affeller__disclosure{margin:12px 0 0;font-size:11px;line-height:1.45;color:#65726e}
 @media(max-width:900px){
   .mp-odido-affeller-slot--desktop{display:none!important}
