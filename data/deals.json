@@ -590,5 +590,164 @@
     ],
     "affiliateUrl": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau",
     "url": "https://dc.budgetthuis.nl/c/?si=14524&li=1628122&wi=422185&pid=35b73df8610936d0cc93e9343ebaa2d8&dl=internet&ws=mp-budget-tv-cadeau"
+  },
+  {
+    "id": "odido-thuis-affeller-2026",
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "internet-tv",
+    "title": "Glasvezel + TV met 1 jaar gratis ESPN Compleet",
+    "benefitTypes": [
+      "korting",
+      "gratis-extra"
+    ],
+    "benefitValue": 0,
+    "totalBenefitValue": 0,
+    "totalBenefitLabel": "1 jaar ESPN Compleet gratis",
+    "giftType": "gratis sportpakket",
+    "contract": "1 of 2 jaar",
+    "score": 9.4,
+    "icon": "🌐",
+    "benefits": [
+      "1 jaar gratis ESPN Compleet",
+      "2 jaar: 12 maanden €25 p/m",
+      "1 jaar: 6 maanden €26 p/m"
+    ],
+    "price": "€25 of €26 p/m tijdens de actieperiode",
+    "featured": true,
+    "dealType": "Tijdelijke actie",
+    "giftName": "1 jaar ESPN Compleet",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 0,
+    "extraValue": 0,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": null,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 0,
+      "extra": 0
+    },
+    "seoSlug": "odido-internet-tv-actie",
+    "updatedAt": "2026-07-17",
+    "meerPakScore": 94,
+    "url": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "network": "awin",
+    "campaignId": "8400",
+    "trackingId": "4834442",
+    "merchantId": "odido",
+    "deepLink": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-07-17",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-07-20",
+    "expiresAt": "2026-08-09",
+    "sourceType": "Awin campagnemail en officiële Odido-creative",
+    "sourceId": "4834442",
+    "adminNotes": "Odido Thuis Afeller-campagne. Automatisch live vanaf 20 juli 2026 en automatisch uit actieve lijsten na 9 augustus 2026. Officiële Awin-creative en publisher-ID 2947269 ongewijzigd gebruikt.",
+    "termsSummary": "Actieperiode 20 juli t/m 9 augustus 2026. Bij Glasvezel + TV is ESPN Compleet 1 jaar gratis, bij zowel een 1- als 2-jarig contract. Bij 2 jaar betaal je de eerste 12 maanden €25 p/m; bij 1 jaar betaal je de eerste 6 maanden €26 p/m. Beschikbaarheid en het persoonlijke aanbod kunnen afhangen van het adres en de gekozen samenstelling. Controleer altijd de actuele voorwaarden bij Odido.",
+    "lastDataReviewAt": "2026-07-17",
+    "ctaLabel": "Bekijk actie",
+    "detailCtaLabel": "Bekijk actie bij Odido",
+    "benefitDisplayType": "choice",
+    "detailTitle": "Odido Glasvezel + TV met gratis ESPN Compleet",
+    "detailIntro": "Van 20 juli t/m 9 augustus 2026 loopt de Odido Thuis Afeller-campagne. Bij Glasvezel + TV krijg je 1 jaar ESPN Compleet gratis. Kies je 2 jaar, dan betaal je de eerste 12 maanden €25 p/m. Kies je 1 jaar, dan betaal je de eerste 6 maanden €26 p/m.",
+    "detailBenefits": [
+      {
+        "type": "extra",
+        "title": "1 jaar ESPN Compleet gratis",
+        "sub": "Bij zowel een 1- als 2-jarig contract"
+      },
+      {
+        "type": "discount",
+        "title": "2 jaar: 12 maanden €25 p/m",
+        "sub": "Daarna geldt het actuele reguliere tarief"
+      },
+      {
+        "type": "discount",
+        "title": "1 jaar: 6 maanden €26 p/m",
+        "sub": "Daarna geldt het actuele reguliere tarief"
+      }
+    ],
+    "detailSummaryValue": "1 jaar ESPN Compleet gratis",
+    "priceDuringDiscount": "€25 p/m bij 2 jaar · €26 p/m bij 1 jaar",
+    "priceAfterDiscount": "Controleer het actuele reguliere tarief bij Odido",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4834442&v=8400&q=533064&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "officialBannerLabel": "Officiële actie van Odido Thuis",
+    "officialBannerSize": "Awin creative 4834442",
+    "summaryLine": "Glasvezel + TV met tijdelijke maandkorting",
+    "detailIntroTitle": "Odido Glasvezel + TV",
+    "detailIntroSubtitle": "Afeller-campagne · 20 juli t/m 9 augustus 2026",
+    "detailIntroCards": [
+      {
+        "title": "Gratis ESPN Compleet",
+        "text": "1 jaar gratis bij zowel 1 als 2 jaar"
+      },
+      {
+        "title": "2 jaar",
+        "text": "De eerste 12 maanden €25 p/m"
+      },
+      {
+        "title": "1 jaar",
+        "text": "De eerste 6 maanden €26 p/m"
+      }
+    ],
+    "detailWhyTitle": "Actie in het kort",
+    "detailWhyText": "Deze tijdelijke Odido Thuis-actie combineert een lagere maandprijs in de eerste contractmaanden met 1 jaar gratis ESPN Compleet. Welk aanbod beschikbaar is, hangt af van je adres en de gekozen samenstelling.",
+    "detailConditionItems": [
+      "Actieperiode: 20 juli t/m 9 augustus 2026",
+      "Glasvezel + TV",
+      "1 jaar ESPN Compleet gratis",
+      "Keuze uit een contract van 1 of 2 jaar",
+      "Controleer beschikbaarheid en voorwaarden bij Odido"
+    ],
+    "contractPriceLabel": "€25 of €26 p/m tijdens de actieperiode",
+    "providerDescriptionTitle": "Over Odido Thuis",
+    "providerDescription": "Odido biedt internet, glasvezel en TV voor consumenten in Nederland. De beschikbare snelheid, techniek, pakketprijs en actie kunnen per adres verschillen. Controleer daarom altijd het persoonlijke aanbod op de website van Odido.",
+    "providerFeatureTitle": "Wat valt op bij deze actie?",
+    "providerFeatureItems": [
+      {
+        "title": "Sport inbegrepen",
+        "text": "ESPN Compleet is gedurende 1 jaar gratis inbegrepen bij deze campagne."
+      },
+      {
+        "title": "Twee looptijden",
+        "text": "De actie bevat een aparte korting voor een contract van 1 jaar en van 2 jaar."
+      },
+      {
+        "title": "Adresafhankelijk",
+        "text": "Beschikbaarheid en het uiteindelijke aanbod kunnen per adres verschillen."
+      }
+    ],
+    "detailConditionNote": "MeerPakkers is onafhankelijk. Odido is niet verantwoordelijk voor de inhoud van deze pagina. Controleer altijd de actuele actievoorwaarden en het persoonlijke aanbod bij Odido.",
+    "sourceVerifiedAt": "2026-07-17",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4834442&v=8400&q=533064&r=2947269",
+    "cardImageAlt": "Officiële banner van de Odido Thuis-actie",
+    "cardImageSource": "Officiële Awin-creative 4834442 van Odido Thuis NL",
+    "cardImageVariant": "square-large",
+    "seoSupport": {
+      "eyebrow": "Meer weten voordat je kiest?",
+      "title": "Uitleg bij de Odido Internet & TV actie",
+      "description": "Lees hoe tijdelijke maandkorting, contractduur en gratis sportpakketten werken voordat je doorklikt.",
+      "links": [
+        {
+          "label": "Odido Internet + TV actie uitgelegd",
+          "href": "/uitleg/odido-internet-tv-actie/"
+        },
+        {
+          "label": "Internet & TV met korting",
+          "href": "/uitleg/internet-tv-met-korting/"
+        },
+        {
+          "label": "Wat betekent vanafprijs?",
+          "href": "/uitleg/vanafprijs-abonnementen/"
+        }
+      ]
+    }
   }
 ]

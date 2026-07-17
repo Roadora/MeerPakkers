@@ -104,5 +104,25 @@
     "adminNotes": "actuele aanbiederinformatieselectie: Internet & TV-uitvoering met welkomstcadeau; specifieker cadeau niet benoemd in de feed.",
     "utmCampaign": "meerpakkers_budget_tv_welkomstcadeau",
     "subIdTemplate": "mp-budget-tv-cadeau"
+  },
+  {
+    "dealId": "odido-thuis-affeller-2026",
+    "providerId": "odido",
+    "category": "internet-tv",
+    "network": "awin",
+    "merchantId": "odido",
+    "campaignId": "8400",
+    "trackingId": "4834442",
+    "deepLink": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "finalUrl": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
+    "status": "approved",
+    "startsAt": "2026-07-20",
+    "expiresAt": "2026-08-09",
+    "approvedAt": "2026-06-29",
+    "lastCheckedAt": "2026-07-17",
+    "sourceType": "Awin officiële creative",
+    "adminNotes": "Odido Thuis Afeller-campagne. Publisher-ID 2947269 en creative 4834442. Alleen actief van 20 juli t/m 9 augustus 2026.",
+    "utmCampaign": "odido-thuis-affeller-2026",
+    "subIdTemplate": "mp-odido-thuis-affeller-2026"
   }
 ]

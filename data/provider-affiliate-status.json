@@ -27,6 +27,19 @@
     "adminNotes": ""
   },
   {
+    "providerId": "odido",
+    "provider": "Odido",
+    "categories": [
+      "internet-tv"
+    ],
+    "affiliateNetwork": "awin",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
+    "contactUrl": null,
+    "approvedAt": "2026-06-29",
+    "adminNotes": "Aangesloten bij Odido Thuis NL (Awin advertiser 8400). Tijdelijke Glasvezel + TV-campagne van 20 juli t/m 9 augustus 2026 via officiële creative 4834442."
+  },
+  {
     "providerId": "youfone",
     "provider": "Youfone",
     "categories": [

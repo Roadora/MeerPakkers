@@ -61,10 +61,22 @@
     return String((entry && entry.status) || (link && link.getAttribute('data-affiliate-status')) || '').toLowerCase() || 'placeholder';
   }
 
+  function isEntryInDateWindow(entry){
+    if(!entry) return true;
+    var today = window.MPDealLifecycle && typeof window.MPDealLifecycle.today === 'function'
+      ? window.MPDealLifecycle.today()
+      : new Date().toISOString().slice(0,10);
+    var startsAt = String(entry.startsAt || '');
+    var expiresAt = String(entry.expiresAt || '');
+    if(/^\d{4}-\d{2}-\d{2}$/.test(startsAt) && startsAt > today) return false;
+    if(/^\d{4}-\d{2}-\d{2}$/.test(expiresAt) && expiresAt < today) return false;
+    return true;
+  }
+
   function canNavigate(entry, link){
     var status = statusFor(entry, link);
     var url = preferredUrl(entry, link);
-    return isRealUrl(url) && (status === 'live' || status === 'approved' || status === 'active');
+    return isRealUrl(url) && isEntryInDateWindow(entry) && (status === 'live' || status === 'approved' || status === 'active');
   }
 
   function buildPayload(link, entry, blocked){

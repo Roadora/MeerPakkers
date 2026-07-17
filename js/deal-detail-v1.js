@@ -884,6 +884,32 @@
     `;
   }
 
+  function renderUpcomingDeal(d){
+    const root = document.getElementById("mpDealDetail");
+    if(!root) return;
+    updateStaticTopbarBack(returnUrl(d));
+
+    root.innerHTML = `
+      <section class="mp-v23-shell">
+        <header class="mp-detail-intro">
+          <p>Binnenkort beschikbaar</p>
+          <h1>${escapeHtml(d.provider || "Aanbieder")} ${escapeHtml(d.title || "actie")}</h1>
+        </header>
+        <div class="mp-odido-affeller-slot" data-odido-affeller-countdown></div>
+        <section class="mp-detail-card">
+          <h3>De actie gaat automatisch live</h3>
+          <p>Deze actie wordt vanaf ${escapeHtml(d.startsAt || "de aangekondigde startdatum")} zichtbaar in de actuele dealoverzichten. Na ${escapeHtml(d.expiresAt || "de einddatum")} verdwijnt de actie automatisch.</p>
+        </section>
+      </section>
+    `;
+
+    if(window.MPOdidoAffellerCampaign && typeof window.MPOdidoAffellerCampaign.refresh === "function"){
+      window.MPOdidoAffellerCampaign.refresh();
+    }
+    window.setTimeout(refreshSavedHeader, 0);
+    window.setTimeout(refreshSavedHeader, 120);
+  }
+
   function renderNotFound(reason){
     const root = document.getElementById("mpDealDetail");
     if(!root) return;
@@ -915,7 +941,7 @@
 
   function load(){
     const params = new URLSearchParams(window.location.search);
-    const requested = params.get("deal");
+    const requested = params.get("deal") || document.body.getAttribute("data-deal-id");
 
     fetch("../data/deals.json")
       .then(function(res){
@@ -936,6 +962,7 @@
         });
 
         if(deal) renderDeal(deal);
+        else if(sourceDeal && window.MPDealLifecycle && typeof window.MPDealLifecycle.isUpcoming === "function" && window.MPDealLifecycle.isUpcoming(sourceDeal)) renderUpcomingDeal(sourceDeal);
         else renderNotFound(sourceDeal ? "expired" : "");
       })
       .catch(renderNotFound);

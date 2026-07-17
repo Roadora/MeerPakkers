@@ -56,7 +56,7 @@
     return isIsoDate(value) && value > today;
   }
 
-  function isCurrent(deal, dateOverride){
+  function publicationReady(deal){
     if(!deal || typeof deal !== "object") return false;
 
     var publication = clean(deal.publicationStatus);
@@ -68,11 +68,24 @@
     var affiliateStatus = clean(deal.affiliateStatus);
     if(affiliateStatus && !LIVE_AFFILIATE_STATUSES[affiliateStatus]) return false;
 
-    var today = isIsoDate(dateOverride) ? dateOverride : todayInAmsterdam();
-    if(hasNotStarted(deal.startsAt, today)) return false;
-    if(hasPassed(deal.expiresAt, today)) return false;
-
     return true;
+  }
+
+  function stateFor(deal, dateOverride){
+    if(!publicationReady(deal)) return "unavailable";
+
+    var today = isIsoDate(dateOverride) ? dateOverride : todayInAmsterdam();
+    if(hasNotStarted(deal.startsAt, today)) return "upcoming";
+    if(hasPassed(deal.expiresAt, today)) return "expired";
+    return "active";
+  }
+
+  function isCurrent(deal, dateOverride){
+    return stateFor(deal, dateOverride) === "active";
+  }
+
+  function isUpcoming(deal, dateOverride){
+    return stateFor(deal, dateOverride) === "upcoming";
   }
 
   function filterCurrent(deals, dateOverride){
@@ -83,7 +96,9 @@
 
   window.MPDealLifecycle = Object.freeze({
     today: todayInAmsterdam,
+    state: stateFor,
     isCurrent: isCurrent,
+    isUpcoming: isUpcoming,
     filterCurrent: filterCurrent
   });
 })();

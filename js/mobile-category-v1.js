@@ -90,7 +90,7 @@
           ["overstappen","Overstappen"],["verlengen","Verlengen"]
         ]},
         {key:"provider", title:"Provider", options:[
-          ["kpn","KPN"],["ziggo","Ziggo"],["youfone","Youfone"],["delta","DELTA"]
+          ["kpn","KPN"],["odido","Odido"],["ziggo","Ziggo"],["youfone","Youfone"],["delta","DELTA"]
         ]},
         {key:"speed", title:"Internetsnelheid", options:[
           ["100mb","100 Mbit"],["500mb","500 Mbit"],["1gb","1 Gbit"]
@@ -543,6 +543,8 @@
 
         ${categoryPills()}
 
+        ${categoryKey === "internet-tv" ? '<div class="mp-odido-affeller-slot mp-odido-affeller-slot--mobile" data-odido-affeller-countdown></div>' : ''}
+
         <div class="mp-cat-actions mp-cat-actions-compact" aria-label="Filters en snelle voordeeltypes">
           <button id="mpOpenFilters" class="mp-open-filters" type="button">
             ⚙️ Filters ${hasActiveFilters() ? `<span>${activeFilterCount()}</span>` : ""}
@@ -595,6 +597,9 @@
 
     bind();
     renderDeals();
+    if(window.MPOdidoAffellerCampaign && typeof window.MPOdidoAffellerCampaign.refresh === "function"){
+      window.MPOdidoAffellerCampaign.refresh();
+    }
     enforceCardNavigation();
     restoreDrawerScroll();
     if (window.MeerPakkersSavedDealsHeader && typeof window.MeerPakkersSavedDealsHeader.updateCounts === "function") {
