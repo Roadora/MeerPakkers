@@ -111,12 +111,12 @@
     "categories": [
       "internet-tv"
     ],
-    "affiliateNetwork": "placeholder",
-    "applicationStatus": "not_applied",
-    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "daisycon",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
     "contactUrl": null,
-    "approvedAt": null,
-    "adminNotes": ""
+    "approvedAt": "2026-07-19",
+    "adminNotes": "Goedgekeurd voor Ziggo - Meervoordeel.nl (Daisycon campagne 17174). Actieve cadeaucreatives 1926309 en 1926346, directe cadeau-deeplink en productfeed met 6 Internet & TV-pakketten."
   },
   {
     "providerId": "delta",

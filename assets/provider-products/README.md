@@ -1,5 +1,6 @@
 # Provider product images
 
-- `budget-thuis-sim-only.png` is the official Sim Only product image supplied in the Daisycon `Mobiel van Budget Thuis` productfeed.
-- The local asset avoids a third-party image request on page load and is only rendered for the matching canonical deal in `data/deals.json`.
-- Odido Thuis uses the official Awin creative image URL from creative `4818317` directly; the supplied Awin click URL remains the only outbound CTA for that campaign.
+- `budget-thuis-sim-only.png` and `budget-thuis-internet-tv.png` are used for the matching Budget Thuis deals.
+- Odido Thuis loads the official Awin creative URL directly; the outbound CTA remains the supplied Awin tracking URL.
+- `ziggo-internet-tv-500.svg`, `ziggo-internet-tv-1gbit.svg` and `ziggo-internet-tv-2gbit.svg` are neutral MeerPakkers editorial package visuals because the Daisycon productfeed for campaign 17174 contains no images. They are not official Ziggo or Meervoordeel.nl banners.
+- The two Ziggo gift cards in `data/deals.json` load the official Daisycon creatives 1926309 and 1926346 directly from `static-dscn.net`.
