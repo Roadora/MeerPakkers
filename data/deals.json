@@ -755,7 +755,7 @@
     "providerId": "ziggo",
     "provider": "Ziggo",
     "category": "internet-tv",
-    "title": "Kies een cadeau bij een nieuw Internet & TV-abonnement",
+    "title": "Kies uit meer dan 20 cadeaus bij Internet & TV",
     "benefitTypes": [
       "cadeau"
     ],
@@ -763,13 +763,13 @@
     "totalBenefitValue": 0,
     "totalBenefitLabel": "Cadeau naar keuze tot €699",
     "giftType": "cadeau naar keuze",
-    "contract": "Afhankelijk van gekozen pakket",
+    "contract": "Afhankelijk van pakket en contractduur",
     "score": 9.8,
     "icon": "🎁",
     "benefits": [
       "Keuze uit meer dan 20 cadeaus",
-      "Cadeau naar keuze tot €699",
-      "Afhankelijk van pakket en maandprijs"
+      "Cadeauwaarde tot €699",
+      "Bol.com-cadeaukaart t.w.v. €400 is een mogelijke keuze bij 2 jaar"
     ],
     "price": "Pakketprijs afhankelijk van keuze en adres",
     "featured": true,
@@ -807,14 +807,14 @@
     "expiresAt": null,
     "sourceType": "Daisycon officieel campagnemateriaal en deeplink",
     "sourceId": "17174/1926309",
-    "adminNotes": "Prominente cadeau-ingang voor Ziggo via Meervoordeel.nl. Officiële Daisycon-banner ongewijzigd geladen; deeplink gaat rechtstreeks naar /ziggo/cadeaus.",
-    "termsSummary": "De officiële banner vermeldt keuze uit meer dan 20 cadeaus en een cadeau naar keuze tot €699. Het beschikbare welkomstcadeau is afhankelijk van het gekozen pakket en de bijbehorende maandprijs. Niet alle getoonde cadeaus zijn bij elk pakket beschikbaar en de actie geldt zolang de voorraad strekt.",
+    "adminNotes": "Hoofdactie voor Ziggo via Meervoordeel.nl. Officiële Daisycon-banner 1926309 wordt ongewijzigd geladen en de deeplink gaat rechtstreeks naar /ziggo/cadeaus. De bol.com-cadeaukaart t.w.v. €400 is één van de mogelijke cadeaus bij een 2-jarig abonnement, niet een automatisch cadeau bij ieder pakket. Volgens de live samensteller claimt de klant het cadeau na betaling van de eerste factuur via claimjecadeau.nl; levering volgt binnen circa 6 weken.",
+    "termsSummary": "Keuze uit meer dan 20 cadeaus met een gecommuniceerde waarde tot €699. Welke cadeaus en waardes beschikbaar zijn, hangt af van pakket, maandprijs, contractduur en voorraad. De bol.com-cadeaukaart t.w.v. €400 is een mogelijke keuze bij een 2-jarig abonnement. Na betaling van de eerste factuur wordt het cadeau geclaimd via claimjecadeau.nl; volgens de live samensteller volgt levering binnen circa 6 weken.",
     "lastDataReviewAt": "2026-07-19",
     "ctaLabel": "Bekijk cadeaus",
     "detailCtaLabel": "Bekijk de cadeaus",
     "benefitDisplayType": "gift",
     "detailTitle": "Kies een cadeau bij Ziggo Internet & TV",
-    "detailIntro": "Via Meervoordeel.nl kun je bij een nieuw Ziggo-abonnement kiezen uit meer dan 20 cadeaus. De officiële campagne communiceert een cadeau naar keuze met een waarde tot €699, afhankelijk van het gekozen pakket en de maandprijs.",
+    "detailIntro": "Via Meervoordeel.nl kun je bij een nieuw Ziggo Internet & TV-abonnement kiezen uit meer dan 20 cadeaus. De beschikbare keuze en waarde hangen af van het pakket, de maandprijs en de contractduur. Bij een 2-jarig abonnement kan onder meer een bol.com-cadeaukaart t.w.v. €400 beschikbaar zijn.",
     "detailBenefits": [
       {
         "type": "gift",
@@ -824,18 +824,18 @@
       {
         "type": "gift",
         "title": "Waarde tot €699",
-        "sub": "Afhankelijk van pakket en bijbehorende maandprijs"
+        "sub": "Afhankelijk van pakket, maandprijs, contractduur en voorraad"
       },
       {
-        "type": "terms",
-        "title": "Zolang de voorraad strekt",
-        "sub": "Niet ieder cadeau is bij elk pakket beschikbaar"
+        "type": "gift",
+        "title": "Bol.com-cadeaukaart t.w.v. €400",
+        "sub": "Een mogelijke cadeaukeuze bij een 2-jarig abonnement; niet standaard bij ieder pakket"
       }
     ],
     "detailSummaryValue": "Cadeau naar keuze",
-    "summaryLine": "Keuze uit meer dan 20 cadeaus",
+    "summaryLine": "Meer dan 20 mogelijke cadeaus bij een nieuw abonnement",
     "detailIntroTitle": "Ziggo via Meervoordeel.nl",
-    "detailIntroSubtitle": "Officiële cadeaupagina voor nieuwe abonnementen",
+    "detailIntroSubtitle": "Cadeaukeuze afhankelijk van pakket en contractduur",
     "detailIntroCards": [
       {
         "title": "20+ cadeaus",
@@ -843,21 +843,23 @@
       },
       {
         "title": "Tot €699",
-        "text": "Afhankelijk van pakket en maandprijs"
+        "text": "Waarde afhankelijk van de gekozen samenstelling"
       },
       {
-        "title": "Direct naar cadeaus",
-        "text": "De deeplink opent de officiële cadeaupagina"
+        "title": "Claim na eerste factuur",
+        "text": "Claim via claimjecadeau.nl; levering volgens de samensteller binnen circa 6 weken"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je vergelijkt niet alleen de abonnementsprijs, maar ziet vooraf welke extra cadeaus bij de verschillende pakketten beschikbaar zijn.",
+    "detailWhyText": "Je ziet vooraf welk extra cadeau bij de gekozen Internet & TV-samenstelling beschikbaar is, in plaats van alleen naar de maandprijs te kijken.",
     "detailConditionItems": [
-      "Alleen bij een nieuw Ziggo-abonnement via Meervoordeel.nl",
-      "Het beschikbare cadeau hangt af van pakket en maandprijs",
+      "Voor een nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
+      "Het beschikbare cadeau hangt af van pakket, maandprijs en contractduur",
+      "De bol.com-cadeaukaart t.w.v. €400 is een mogelijke keuze bij een 2-jarig abonnement",
       "Niet ieder afgebeeld cadeau is bij elk pakket beschikbaar",
-      "Actie zolang de voorraad strekt",
-      "Controleer de actuele voorwaarden op de cadeaupagina"
+      "Na betaling van de eerste factuur claim je het cadeau via claimjecadeau.nl",
+      "Volgens de live samensteller volgt levering binnen circa 6 weken",
+      "Actie zolang de voorraad strekt; controleer de actuele voorwaarden"
     ],
     "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
     "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
@@ -873,416 +875,47 @@
     "officialBannerSize": "1000×536"
   },
   {
-    "id": "ziggo-meervoordeel-bol-cadeaukaart-400",
+    "id": "ziggo-meervoordeel-korting-2jaar",
     "providerId": "ziggo",
     "provider": "Ziggo",
     "category": "internet-tv",
-    "title": "Gratis bol-cadeaukaart t.w.v. €400",
-    "benefitTypes": [
-      "cadeaukaart"
-    ],
-    "benefitValue": 400,
-    "totalBenefitValue": 400,
-    "totalBenefitLabel": "bol-cadeaukaart t.w.v. €400",
-    "giftType": "cadeaukaart",
-    "contract": "2 jaar",
-    "score": 9.6,
-    "icon": "🎁",
-    "benefits": [
-      "bol-cadeaukaart t.w.v. €400",
-      "Bij een nieuw 2-jarig abonnement",
-      "Afhankelijk van pakket en maandprijs"
-    ],
-    "price": "Pakketprijs afhankelijk van keuze en adres",
-    "featured": false,
-    "dealType": "nieuw abonnement",
-    "giftName": "bol-cadeaukaart",
-    "giftValue": 400,
-    "cashbackValue": 0,
-    "discountValue": 0,
-    "extraValue": 0,
-    "monthlyPrice": 0,
-    "originalMonthlyPrice": 0,
-    "contractLengthMonths": 24,
-    "affiliateUrl": "https://jf79.net/c/?si=17174&li=1742299&wi=422185&ws=&dl=ziggo%2Fcadeaus",
-    "benefitBreakdown": {
-      "gift": 400,
-      "cashback": 0,
-      "discount": 0,
-      "extra": 0
-    },
-    "seoSlug": "ziggo-meervoordeel-bol-cadeaukaart-400",
-    "updatedAt": "2026-07-19",
-    "meerPakScore": 96,
-    "url": "https://jf79.net/c/?si=17174&li=1742299&wi=422185&ws=&dl=ziggo%2Fcadeaus",
-    "network": "daisycon",
-    "campaignId": "17174",
-    "trackingId": "1742299",
-    "creativeId": "1926346",
-    "merchantId": "meervoordeel",
-    "deepLink": "https://jf79.net/c/?si=17174&li=1742299&wi=422185&ws=&dl=ziggo%2Fcadeaus",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-19",
-    "dealStatus": "active",
-    "publicationStatus": "published",
-    "startsAt": null,
-    "expiresAt": null,
-    "sourceType": "Daisycon officieel campagnemateriaal en deeplink",
-    "sourceId": "17174/1926346",
-    "adminNotes": "Concrete cadeaukaart uit officiële Daisycon-creative 1926346. Klik gaat via de goedgekeurde deeplink naar de cadeaupagina.",
-    "termsSummary": "De officiële banner vermeldt een gratis bol-cadeaukaart t.w.v. €400 bij een nieuw 2-jarig Ziggo-abonnement. Het beschikbare welkomstcadeau is afhankelijk van het gekozen pakket en de bijbehorende maandprijs. Actie zolang de voorraad strekt.",
-    "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk cadeaukeuze",
-    "detailCtaLabel": "Bekijk deze cadeaukeuze",
-    "benefitDisplayType": "gift",
-    "detailTitle": "Gratis bol-cadeaukaart t.w.v. €400",
-    "detailIntro": "De officiële campagne toont een bol-cadeaukaart ter waarde van €400 als cadeaukeuze bij een nieuw tweejarig Ziggo-abonnement. Beschikbaarheid hangt af van het gekozen pakket en de maandprijs.",
-    "detailBenefits": [
-      {
-        "type": "gift",
-        "title": "bol-cadeaukaart t.w.v. €400",
-        "sub": "Een concrete cadeaukeuze uit het actuele aanbod"
-      },
-      {
-        "type": "product",
-        "title": "Nieuw 2-jarig abonnement",
-        "sub": "Alleen bij een daarvoor geschikt pakket"
-      },
-      {
-        "type": "terms",
-        "title": "Pakketafhankelijk",
-        "sub": "Controleer beschikbaarheid op de cadeaupagina"
-      }
-    ],
-    "detailSummaryValue": "€400 cadeaukaart",
-    "summaryLine": "Gratis bol-cadeaukaart bij een geschikt 2-jarig pakket",
-    "detailIntroTitle": "Ziggo via Meervoordeel.nl",
-    "detailIntroSubtitle": "Concrete cadeaukeuze bij een nieuw 2-jarig abonnement",
-    "detailIntroCards": [
-      {
-        "title": "€400 waarde",
-        "text": "Gratis bol-cadeaukaart"
-      },
-      {
-        "title": "2 jaar",
-        "text": "Bij een nieuw geschikt abonnement"
-      },
-      {
-        "title": "Pakketafhankelijk",
-        "text": "Controleer de actuele keuze en voorwaarden"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Een cadeaukaart van €400 is een concreet extra voordeel, maar alleen wanneer deze cadeaukeuze beschikbaar is bij jouw pakket en maandprijs.",
-    "detailConditionItems": [
-      "Nieuw Ziggo-abonnement via Meervoordeel.nl",
-      "Contractduur van 2 jaar",
-      "Beschikbaarheid afhankelijk van pakket en maandprijs",
-      "Actie zolang de voorraad strekt",
-      "Controleer de actuele cadeaukeuze en voorwaarden"
-    ],
-    "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
-    "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
-    "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
-    "sourceVerifiedAt": "2026-07-19",
-    "cardImage": "https://static-dscn.net/17174/1926346/?wi=422185&ws=",
-    "cardImageAlt": "Officiële banner voor een gratis bol-cadeaukaart ter waarde van 400 euro",
-    "cardImageSource": "Officieel Daisycon-campagnemateriaal 1926346",
-    "cardImageVariant": "square-large",
-    "officialBannerUrl": "https://static-dscn.net/17174/1926346/?wi=422185&ws=",
-    "officialBannerClickUrl": "https://jf79.net/c/?si=17174&li=1742299&wi=422185&ws=&dl=ziggo%2Fcadeaus",
-    "officialBannerLabel": "Officiële bol-cadeaukaartactie via Meervoordeel.nl",
-    "officialBannerSize": "1000×1000"
-  },
-  {
-    "id": "ziggo-meervoordeel-500mbit-2jaar",
-    "providerId": "ziggo",
-    "provider": "Ziggo",
-    "category": "internet-tv",
-    "title": "Internet 500 Mbit/s & TV – 2 jaar",
+    "title": "2 jaar: 9 maanden 50% korting",
     "benefitTypes": [
       "korting",
-      "cadeau"
+      "cadeau",
+      "cashback"
     ],
-    "benefitValue": 392.4,
-    "totalBenefitValue": 492.4,
-    "totalBenefitLabel": "12 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
+    "benefitValue": 343.8,
+    "totalBenefitValue": 343.8,
+    "totalBenefitLabel": "9 maanden 50% korting + €100 cashback óf bol.com-cadeaukaart",
+    "giftType": "cashback of bol-cadeaukaart",
     "contract": "2 jaar",
     "score": 9.4,
     "icon": "🌐",
     "benefits": [
-      "12 maanden 50% korting",
-      "€32,70 p/m i.p.v. €65,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
+      "9 maanden 50% korting",
+      "€38,20 p/m in plaats van €76,40 p/m bij de gecontroleerde 2 Gbit/s + TV-samenstelling",
+      "Keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100"
     ],
-    "price": "€32,70 p/m",
+    "price": "€38,20 p/m bij 2 Gbit/s + TV",
     "featured": false,
     "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
+    "giftName": "Cashback of bol-cadeaukaart",
+    "giftValue": 0,
     "cashbackValue": 0,
-    "discountValue": 392.4,
-    "extraValue": 0,
-    "monthlyPrice": 32.7,
-    "originalMonthlyPrice": 65.4,
-    "contractLengthMonths": 24,
-    "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=280aff554148a02716f7f492b9a04293&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D4%26tv%3D12&ws=",
-    "benefitBreakdown": {
-      "gift": 100,
-      "cashback": 0,
-      "discount": 392.4,
-      "extra": 0
-    },
-    "seoSlug": "ziggo-meervoordeel-500mbit-2jaar",
-    "updatedAt": "2026-07-19",
-    "meerPakScore": 94,
-    "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=280aff554148a02716f7f492b9a04293&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D4%26tv%3D12&ws=",
-    "network": "daisycon",
-    "campaignId": "17174",
-    "trackingId": "1743961",
-    "merchantId": "meervoordeel",
-    "deepLink": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=280aff554148a02716f7f492b9a04293&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D4%26tv%3D12&ws=",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-19",
-    "dealStatus": "active",
-    "publicationStatus": "published",
-    "startsAt": null,
-    "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
-    "sourceId": "280aff554148a02716f7f492b9a04293",
-    "adminNotes": "Exact productfeedpakket: Internet 500 Mbit/s & TV, 24 maanden contract, 12 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual. Bronwaarschuwing: de producttitel noemt 500 Mbit/s terwijl bandwidth_download in de feed 400 vermeldt; publiek volgt de officiële producttitel.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 12 maanden 50% korting: €32,70 p/m in plaats van €65,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
-    "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
-    "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 500 Mbit/s & TV – 2 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 500 Mbit/s met TV. Bij een contract van 2 jaar betaal je de eerste 12 maanden €32,70 p/m in plaats van €65,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "12 maanden 50% korting",
-        "sub": "€32,70 p/m in plaats van €65,40 p/m"
-      },
-      {
-        "type": "product",
-        "title": "Internet 500 Mbit/s & TV",
-        "sub": "Contractduur: 2 jaar"
-      },
-      {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
-      }
-    ],
-    "detailSummaryValue": "12 maanden 50% korting",
-    "priceDuringDiscount": "€32,70 p/m",
-    "priceAfterDiscount": "€65,40 p/m",
-    "summaryLine": "500 Mbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 500 Mbit/s & TV",
-    "detailIntroSubtitle": "2 jaar · 12 maanden 50% korting",
-    "detailIntroCards": [
-      {
-        "title": "12 maanden korting",
-        "text": "€32,70 p/m in plaats van €65,40 p/m"
-      },
-      {
-        "title": "500 Mbit/s",
-        "text": "Internet gecombineerd met TV"
-      },
-      {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 12 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailConditionItems": [
-      "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
-      "Contractduur: 24 maanden",
-      "Eerste 12 maanden €32,70 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €65,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
-    ],
-    "contractPriceLabel": "€32,70 p/m gedurende de eerste 12 maanden",
-    "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
-    "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
-    "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
-    "sourceVerifiedAt": "2026-07-19",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-07-02 08:56:11",
-    "cardImage": "/assets/provider-products/ziggo-internet-tv-500.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 500 Mbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
-    "cardImageVariant": "square-large"
-  },
-  {
-    "id": "ziggo-meervoordeel-1gbit-2jaar",
-    "providerId": "ziggo",
-    "provider": "Ziggo",
-    "category": "internet-tv",
-    "title": "Internet 1 Gbit/s & TV – 2 jaar",
-    "benefitTypes": [
-      "korting",
-      "cadeau"
-    ],
-    "benefitValue": 428.4,
-    "totalBenefitValue": 528.4,
-    "totalBenefitLabel": "12 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
-    "contract": "2 jaar",
-    "score": 9.3,
-    "icon": "🌐",
-    "benefits": [
-      "12 maanden 50% korting",
-      "€35,70 p/m i.p.v. €71,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
-    ],
-    "price": "€35,70 p/m",
-    "featured": false,
-    "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
-    "cashbackValue": 0,
-    "discountValue": 428.4,
-    "extraValue": 0,
-    "monthlyPrice": 35.7,
-    "originalMonthlyPrice": 71.4,
-    "contractLengthMonths": 24,
-    "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=67689e6aed50a98ce2165a0e4de83ef1&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D3%26tv%3D12&ws=",
-    "benefitBreakdown": {
-      "gift": 100,
-      "cashback": 0,
-      "discount": 428.4,
-      "extra": 0
-    },
-    "seoSlug": "ziggo-meervoordeel-1gbit-2jaar",
-    "updatedAt": "2026-07-19",
-    "meerPakScore": 93,
-    "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=67689e6aed50a98ce2165a0e4de83ef1&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D3%26tv%3D12&ws=",
-    "network": "daisycon",
-    "campaignId": "17174",
-    "trackingId": "1743961",
-    "merchantId": "meervoordeel",
-    "deepLink": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=67689e6aed50a98ce2165a0e4de83ef1&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D3%26tv%3D12&ws=",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-19",
-    "dealStatus": "active",
-    "publicationStatus": "published",
-    "startsAt": null,
-    "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
-    "sourceId": "67689e6aed50a98ce2165a0e4de83ef1",
-    "adminNotes": "Exact productfeedpakket: Internet 1 Gbit/s & TV, 24 maanden contract, 12 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 12 maanden 50% korting: €35,70 p/m in plaats van €71,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
-    "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
-    "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 1 Gbit/s & TV – 2 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 1 Gbit/s met TV. Bij een contract van 2 jaar betaal je de eerste 12 maanden €35,70 p/m in plaats van €71,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "12 maanden 50% korting",
-        "sub": "€35,70 p/m in plaats van €71,40 p/m"
-      },
-      {
-        "type": "product",
-        "title": "Internet 1 Gbit/s & TV",
-        "sub": "Contractduur: 2 jaar"
-      },
-      {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
-      }
-    ],
-    "detailSummaryValue": "12 maanden 50% korting",
-    "priceDuringDiscount": "€35,70 p/m",
-    "priceAfterDiscount": "€71,40 p/m",
-    "summaryLine": "1 Gbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 1 Gbit/s & TV",
-    "detailIntroSubtitle": "2 jaar · 12 maanden 50% korting",
-    "detailIntroCards": [
-      {
-        "title": "12 maanden korting",
-        "text": "€35,70 p/m in plaats van €71,40 p/m"
-      },
-      {
-        "title": "1 Gbit/s",
-        "text": "Internet gecombineerd met TV"
-      },
-      {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 12 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailConditionItems": [
-      "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
-      "Contractduur: 24 maanden",
-      "Eerste 12 maanden €35,70 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €71,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
-    ],
-    "contractPriceLabel": "€35,70 p/m gedurende de eerste 12 maanden",
-    "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
-    "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
-    "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
-    "sourceVerifiedAt": "2026-07-19",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-07-02 08:56:11",
-    "cardImage": "/assets/provider-products/ziggo-internet-tv-1gbit.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 1 Gbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
-    "cardImageVariant": "square-large"
-  },
-  {
-    "id": "ziggo-meervoordeel-2gbit-2jaar",
-    "providerId": "ziggo",
-    "provider": "Ziggo",
-    "category": "internet-tv",
-    "title": "Internet 2 Gbit/s & TV – 2 jaar",
-    "benefitTypes": [
-      "korting",
-      "cadeau"
-    ],
-    "benefitValue": 458.4,
-    "totalBenefitValue": 558.4,
-    "totalBenefitLabel": "12 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
-    "contract": "2 jaar",
-    "score": 9.2,
-    "icon": "🌐",
-    "benefits": [
-      "12 maanden 50% korting",
-      "€38,20 p/m i.p.v. €76,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
-    ],
-    "price": "€38,20 p/m",
-    "featured": false,
-    "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
-    "cashbackValue": 0,
-    "discountValue": 458.4,
+    "discountValue": 343.8,
     "extraValue": 0,
     "monthlyPrice": 38.2,
     "originalMonthlyPrice": 76.4,
     "contractLengthMonths": 24,
     "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=e62fd34cce4a5e1b90f6877a6d77a91d&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D1467%26tv%3D12&ws=",
     "benefitBreakdown": {
-      "gift": 100,
+      "gift": 0,
       "cashback": 0,
-      "discount": 458.4,
+      "discount": 343.8,
       "extra": 0
     },
-    "seoSlug": "ziggo-meervoordeel-2gbit-2jaar",
+    "seoSlug": "ziggo-meervoordeel-korting-2jaar",
     "updatedAt": "2026-07-19",
     "meerPakScore": 92,
     "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=e62fd34cce4a5e1b90f6877a6d77a91d&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D2%26promo%3D26%26internet%3D1467%26tv%3D12&ws=",
@@ -1297,64 +930,65 @@
     "publicationStatus": "published",
     "startsAt": null,
     "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
+    "sourceType": "Daisycon-productfeed en live Meervoordeel.nl-samensteller",
     "sourceId": "e62fd34cce4a5e1b90f6877a6d77a91d",
-    "adminNotes": "Exact productfeedpakket: Internet 2 Gbit/s & TV, 24 maanden contract, 12 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual. Bronwaarschuwing: de producttitel noemt 2 Gbit/s terwijl bandwidth_download in de feed 999,99 vermeldt; publiek volgt de officiële producttitel.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 12 maanden 50% korting: €38,20 p/m in plaats van €76,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
+    "adminNotes": "Actiekaart gebaseerd op de gecontroleerde live Meervoordeel.nl-samensteller voor Internet 2 Gbit/s + TV en een contract van 2 jaar. Deze toont 9 maanden 50% korting plus keuze uit €100 cashback of een bol.com-cadeaukaart t.w.v. €100. De deeplink opent deze gecontroleerde 2 Gbit/s-voorbeeldsamenstelling (promo 26); bezoekers kunnen in de samensteller een ander beschikbaar pakket kiezen. Prijs en voordeel kunnen dan wijzigen.",
+    "termsSummary": "Bij de gecontroleerde 2 Gbit/s + TV-samenstelling met een contract van 2 jaar: 9 maanden €38,20 p/m in plaats van €76,40 p/m, plus keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100. Andere pakketten, adressen of samenstellingen kunnen een andere prijs of voordeelwaarde tonen; controleer het actuele eindaanbod.",
     "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
+    "ctaLabel": "Bekijk 2-jarig aanbod",
+    "detailCtaLabel": "Bekijk 2-jarig aanbod",
     "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 2 Gbit/s & TV – 2 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 2 Gbit/s met TV. Bij een contract van 2 jaar betaal je de eerste 12 maanden €38,20 p/m in plaats van €76,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
+    "detailTitle": "2 jaar: 9 maanden 50% korting",
+    "detailIntro": "De gecontroleerde 2 Gbit/s + TV-samenstelling met een contract van 2 jaar toont 9 maanden 50% korting: €38,20 p/m in plaats van €76,40 p/m. Daarnaast kies je tussen €100 cashback of een bol.com-cadeaukaart t.w.v. €100.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "12 maanden 50% korting",
+        "title": "9 maanden 50% korting",
         "sub": "€38,20 p/m in plaats van €76,40 p/m"
       },
       {
-        "type": "product",
-        "title": "Internet 2 Gbit/s & TV",
-        "sub": "Contractduur: 2 jaar"
+        "type": "gift",
+        "title": "€100 cashback of bol.com-cadeaukaart",
+        "sub": "Je kiest één van beide voordelen in de samensteller"
       },
       {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
+        "type": "product",
+        "title": "Gecontroleerde 2 Gbit/s + TV-samenstelling",
+        "sub": "Contractduur: 2 jaar; andere pakketten kunnen afwijken"
       }
     ],
-    "detailSummaryValue": "12 maanden 50% korting",
+    "detailSummaryValue": "9 maanden 50% korting",
     "priceDuringDiscount": "€38,20 p/m",
     "priceAfterDiscount": "€76,40 p/m",
-    "summaryLine": "2 Gbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 2 Gbit/s & TV",
-    "detailIntroSubtitle": "2 jaar · 12 maanden 50% korting",
+    "summaryLine": "2 jaar: 9 maanden korting met extra keuzevoordeel",
+    "detailIntroTitle": "Ziggo Internet & TV via Meervoordeel.nl",
+    "detailIntroSubtitle": "2 jaar · 9 maanden 50% korting",
     "detailIntroCards": [
       {
-        "title": "12 maanden korting",
+        "title": "9 maanden korting",
         "text": "€38,20 p/m in plaats van €76,40 p/m"
       },
       {
-        "title": "2 Gbit/s",
-        "text": "Internet gecombineerd met TV"
+        "title": "€100 extra voordeel",
+        "text": "Kies cashback of een bol.com-cadeaukaart"
       },
       {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
+        "title": "2 Gbit/s + TV",
+        "text": "De deeplink opent de gecontroleerde voorbeeldsamenstelling"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 12 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
+    "detailWhyText": "Je combineert 9 maanden 50% korting met een extra keuze uit €100 cashback of een bol.com-cadeaukaart t.w.v. €100.",
     "detailConditionItems": [
       "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
       "Contractduur: 24 maanden",
-      "Eerste 12 maanden €38,20 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €76,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
+      "Gecontroleerde voorbeeldsamenstelling: Internet 2 Gbit/s + TV",
+      "Eerste 9 maanden €38,20 p/m; daarna €76,40 p/m volgens de huidige samensteller/feed",
+      "Keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100",
+      "De CTA opent de gecontroleerde 2 Gbit/s-samenstelling; een andere pakketkeuze kan prijs en voordeel wijzigen",
+      "Beschikbaarheid en definitief aanbod zijn afhankelijk van het adres"
     ],
-    "contractPriceLabel": "€38,20 p/m gedurende de eerste 12 maanden",
+    "contractPriceLabel": "€38,20 p/m gedurende de eerste 9 maanden",
     "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
     "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
     "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
@@ -1362,285 +996,38 @@
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-07-02 08:56:11",
     "cardImage": "/assets/provider-products/ziggo-internet-tv-2gbit.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 2 Gbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
+    "cardImageAlt": "Neutrale Internet & TV-illustratie voor de 2-jarige Meervoordeel.nl-actie",
+    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officieel providerlogo of providerbanner",
     "cardImageVariant": "square-large"
   },
   {
-    "id": "ziggo-meervoordeel-500mbit-1jaar",
+    "id": "ziggo-meervoordeel-korting-1jaar",
     "providerId": "ziggo",
     "provider": "Ziggo",
     "category": "internet-tv",
-    "title": "Internet 500 Mbit/s & TV – 1 jaar",
+    "title": "1 jaar: 6 maanden 50% korting",
     "benefitTypes": [
       "korting",
-      "cadeau"
+      "cadeau",
+      "cashback"
     ],
-    "benefitValue": 196.2,
-    "totalBenefitValue": 296.2,
-    "totalBenefitLabel": "6 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
+    "benefitValue": 229.2,
+    "totalBenefitValue": 229.2,
+    "totalBenefitLabel": "6 maanden 50% korting + €100 cashback óf bol.com-cadeaukaart",
+    "giftType": "cashback of bol-cadeaukaart",
     "contract": "1 jaar",
     "score": 9.1,
     "icon": "🌐",
     "benefits": [
       "6 maanden 50% korting",
-      "€32,70 p/m i.p.v. €65,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
+      "€38,20 p/m in plaats van €76,40 p/m bij de gecontroleerde 2 Gbit/s + TV-samenstelling",
+      "Keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100"
     ],
-    "price": "€32,70 p/m",
+    "price": "€38,20 p/m bij 2 Gbit/s + TV",
     "featured": false,
     "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
-    "cashbackValue": 0,
-    "discountValue": 196.2,
-    "extraValue": 0,
-    "monthlyPrice": 32.7,
-    "originalMonthlyPrice": 65.4,
-    "contractLengthMonths": 12,
-    "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=7e9f963e87018a6f7255408c4a02e9b7&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D4%26tv%3D12&ws=",
-    "benefitBreakdown": {
-      "gift": 100,
-      "cashback": 0,
-      "discount": 196.2,
-      "extra": 0
-    },
-    "seoSlug": "ziggo-meervoordeel-500mbit-1jaar",
-    "updatedAt": "2026-07-19",
-    "meerPakScore": 91,
-    "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=7e9f963e87018a6f7255408c4a02e9b7&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D4%26tv%3D12&ws=",
-    "network": "daisycon",
-    "campaignId": "17174",
-    "trackingId": "1743961",
-    "merchantId": "meervoordeel",
-    "deepLink": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=7e9f963e87018a6f7255408c4a02e9b7&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D4%26tv%3D12&ws=",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-19",
-    "dealStatus": "active",
-    "publicationStatus": "published",
-    "startsAt": null,
-    "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
-    "sourceId": "7e9f963e87018a6f7255408c4a02e9b7",
-    "adminNotes": "Exact productfeedpakket: Internet 500 Mbit/s & TV, 12 maanden contract, 6 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual. Bronwaarschuwing: de producttitel noemt 500 Mbit/s terwijl bandwidth_download in de feed 400 vermeldt; publiek volgt de officiële producttitel.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 6 maanden 50% korting: €32,70 p/m in plaats van €65,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
-    "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
-    "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 500 Mbit/s & TV – 1 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 500 Mbit/s met TV. Bij een contract van 1 jaar betaal je de eerste 6 maanden €32,70 p/m in plaats van €65,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "6 maanden 50% korting",
-        "sub": "€32,70 p/m in plaats van €65,40 p/m"
-      },
-      {
-        "type": "product",
-        "title": "Internet 500 Mbit/s & TV",
-        "sub": "Contractduur: 1 jaar"
-      },
-      {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
-      }
-    ],
-    "detailSummaryValue": "6 maanden 50% korting",
-    "priceDuringDiscount": "€32,70 p/m",
-    "priceAfterDiscount": "€65,40 p/m",
-    "summaryLine": "500 Mbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 500 Mbit/s & TV",
-    "detailIntroSubtitle": "1 jaar · 6 maanden 50% korting",
-    "detailIntroCards": [
-      {
-        "title": "6 maanden korting",
-        "text": "€32,70 p/m in plaats van €65,40 p/m"
-      },
-      {
-        "title": "500 Mbit/s",
-        "text": "Internet gecombineerd met TV"
-      },
-      {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 6 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailConditionItems": [
-      "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
-      "Contractduur: 12 maanden",
-      "Eerste 6 maanden €32,70 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €65,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
-    ],
-    "contractPriceLabel": "€32,70 p/m gedurende de eerste 6 maanden",
-    "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
-    "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
-    "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
-    "sourceVerifiedAt": "2026-07-19",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-07-02 08:56:11",
-    "cardImage": "/assets/provider-products/ziggo-internet-tv-500.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 500 Mbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
-    "cardImageVariant": "square-large"
-  },
-  {
-    "id": "ziggo-meervoordeel-1gbit-1jaar",
-    "providerId": "ziggo",
-    "provider": "Ziggo",
-    "category": "internet-tv",
-    "title": "Internet 1 Gbit/s & TV – 1 jaar",
-    "benefitTypes": [
-      "korting",
-      "cadeau"
-    ],
-    "benefitValue": 214.2,
-    "totalBenefitValue": 314.2,
-    "totalBenefitLabel": "6 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
-    "contract": "1 jaar",
-    "score": 9.0,
-    "icon": "🌐",
-    "benefits": [
-      "6 maanden 50% korting",
-      "€35,70 p/m i.p.v. €71,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
-    ],
-    "price": "€35,70 p/m",
-    "featured": false,
-    "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
-    "cashbackValue": 0,
-    "discountValue": 214.2,
-    "extraValue": 0,
-    "monthlyPrice": 35.7,
-    "originalMonthlyPrice": 71.4,
-    "contractLengthMonths": 12,
-    "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=9c7e9baa3a70bac5a5a00a882ddac8cf&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D3%26tv%3D12&ws=",
-    "benefitBreakdown": {
-      "gift": 100,
-      "cashback": 0,
-      "discount": 214.2,
-      "extra": 0
-    },
-    "seoSlug": "ziggo-meervoordeel-1gbit-1jaar",
-    "updatedAt": "2026-07-19",
-    "meerPakScore": 90,
-    "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=9c7e9baa3a70bac5a5a00a882ddac8cf&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D3%26tv%3D12&ws=",
-    "network": "daisycon",
-    "campaignId": "17174",
-    "trackingId": "1743961",
-    "merchantId": "meervoordeel",
-    "deepLink": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=9c7e9baa3a70bac5a5a00a882ddac8cf&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D86%26internet%3D3%26tv%3D12&ws=",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-19",
-    "dealStatus": "active",
-    "publicationStatus": "published",
-    "startsAt": null,
-    "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
-    "sourceId": "9c7e9baa3a70bac5a5a00a882ddac8cf",
-    "adminNotes": "Exact productfeedpakket: Internet 1 Gbit/s & TV, 12 maanden contract, 6 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 6 maanden 50% korting: €35,70 p/m in plaats van €71,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
-    "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
-    "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 1 Gbit/s & TV – 1 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 1 Gbit/s met TV. Bij een contract van 1 jaar betaal je de eerste 6 maanden €35,70 p/m in plaats van €71,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailBenefits": [
-      {
-        "type": "discount",
-        "title": "6 maanden 50% korting",
-        "sub": "€35,70 p/m in plaats van €71,40 p/m"
-      },
-      {
-        "type": "product",
-        "title": "Internet 1 Gbit/s & TV",
-        "sub": "Contractduur: 1 jaar"
-      },
-      {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
-      }
-    ],
-    "detailSummaryValue": "6 maanden 50% korting",
-    "priceDuringDiscount": "€35,70 p/m",
-    "priceAfterDiscount": "€71,40 p/m",
-    "summaryLine": "1 Gbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 1 Gbit/s & TV",
-    "detailIntroSubtitle": "1 jaar · 6 maanden 50% korting",
-    "detailIntroCards": [
-      {
-        "title": "6 maanden korting",
-        "text": "€35,70 p/m in plaats van €71,40 p/m"
-      },
-      {
-        "title": "1 Gbit/s",
-        "text": "Internet gecombineerd met TV"
-      },
-      {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
-      }
-    ],
-    "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 6 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
-    "detailConditionItems": [
-      "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
-      "Contractduur: 12 maanden",
-      "Eerste 6 maanden €35,70 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €71,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
-    ],
-    "contractPriceLabel": "€35,70 p/m gedurende de eerste 6 maanden",
-    "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
-    "providerDescription": "Deze Ziggo Internet & TV-aanbiedingen worden aangeboden via Meervoordeel.nl, een officiële Ziggo-partner. Beschikbaarheid, snelheid en het uiteindelijke aanbod kunnen per adres en gekozen samenstelling verschillen.",
-    "detailConditionNote": "MeerPakkers is onafhankelijk. De aanbieding loopt via Meervoordeel.nl. Controleer vóór het afsluiten altijd de actuele pakketprijs, beschikbaarheid, cadeaukeuze en actievoorwaarden op de bestemmingspagina.",
-    "sourceVerifiedAt": "2026-07-19",
-    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
-    "sourceFeedLastModified": "2026-07-02 08:56:11",
-    "cardImage": "/assets/provider-products/ziggo-internet-tv-1gbit.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 1 Gbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
-    "cardImageVariant": "square-large"
-  },
-  {
-    "id": "ziggo-meervoordeel-2gbit-1jaar",
-    "providerId": "ziggo",
-    "provider": "Ziggo",
-    "category": "internet-tv",
-    "title": "Internet 2 Gbit/s & TV – 1 jaar",
-    "benefitTypes": [
-      "korting",
-      "cadeau"
-    ],
-    "benefitValue": 229.2,
-    "totalBenefitValue": 329.2,
-    "totalBenefitLabel": "6 maanden 50% korting + €100 cadeau",
-    "giftType": "welkomstcadeau",
-    "contract": "1 jaar",
-    "score": 8.9,
-    "icon": "🌐",
-    "benefits": [
-      "6 maanden 50% korting",
-      "€38,20 p/m i.p.v. €76,40 p/m",
-      "Welkomstcadeau t.w.v. €100"
-    ],
-    "price": "€38,20 p/m",
-    "featured": false,
-    "dealType": "nieuw abonnement",
-    "giftName": "Welkomstcadeau",
-    "giftValue": 100,
+    "giftName": "Cashback of bol-cadeaukaart",
+    "giftValue": 0,
     "cashbackValue": 0,
     "discountValue": 229.2,
     "extraValue": 0,
@@ -1649,12 +1036,12 @@
     "contractLengthMonths": 12,
     "affiliateUrl": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=ce4c1501b4632cbfaf8edf385ded8791&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D25%26internet%3D1467%26tv%3D12&ws=",
     "benefitBreakdown": {
-      "gift": 100,
+      "gift": 0,
       "cashback": 0,
       "discount": 229.2,
       "extra": 0
     },
-    "seoSlug": "ziggo-meervoordeel-2gbit-1jaar",
+    "seoSlug": "ziggo-meervoordeel-korting-1jaar",
     "updatedAt": "2026-07-19",
     "meerPakScore": 89,
     "url": "https://jf79.net/c/?si=17174&li=1743961&wi=422185&pid=ce4c1501b4632cbfaf8edf385ded8791&dl=bestellen%2Fsamenstellen%3Fcurrent_customer%3D0%26duration%3D1%26promo%3D25%26internet%3D1467%26tv%3D12&ws=",
@@ -1669,16 +1056,16 @@
     "publicationStatus": "published",
     "startsAt": null,
     "expiresAt": null,
-    "sourceType": "Daisycon productfeed",
+    "sourceType": "Daisycon-productfeed en live Meervoordeel.nl-samensteller",
     "sourceId": "ce4c1501b4632cbfaf8edf385ded8791",
-    "adminNotes": "Exact productfeedpakket: Internet 2 Gbit/s & TV, 12 maanden contract, 6 maanden 50% korting. De feed vermeldt daarnaast een welkomstcadeau t.w.v. €100. Geen feedafbeelding beschikbaar; kaart gebruikt een neutrale MeerPakkers-pakketvisual. Bronwaarschuwing: de producttitel noemt 2 Gbit/s terwijl bandwidth_download in de feed 999,99 vermeldt; publiek volgt de officiële producttitel.",
-    "termsSummary": "De Daisycon-productfeed vermeldt voor dit pakket 6 maanden 50% korting: €38,20 p/m in plaats van €76,40 p/m, plus een welkomstcadeau t.w.v. €100. De feed bevat geen begin- of einddatum. Beschikbaarheid, pakketinhoud en prijs kunnen per adres verschillen; controleer het actuele aanbod bij Meervoordeel.nl.",
+    "adminNotes": "Actiekaart gebaseerd op de gecontroleerde live Meervoordeel.nl-samensteller voor Internet 2 Gbit/s + TV en een contract van 1 jaar. Deze toont 6 maanden 50% korting plus keuze uit €100 cashback of een bol.com-cadeaukaart t.w.v. €100. De deeplink opent deze gecontroleerde 2 Gbit/s-voorbeeldsamenstelling (promo 25); bezoekers kunnen in de samensteller een ander beschikbaar pakket kiezen. Prijs en voordeel kunnen dan wijzigen.",
+    "termsSummary": "Bij de gecontroleerde 2 Gbit/s + TV-samenstelling met een contract van 1 jaar: 6 maanden €38,20 p/m in plaats van €76,40 p/m, plus keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100. Andere pakketten, adressen of samenstellingen kunnen een andere prijs of voordeelwaarde tonen; controleer het actuele eindaanbod.",
     "lastDataReviewAt": "2026-07-19",
-    "ctaLabel": "Bekijk pakket",
-    "detailCtaLabel": "Bekijk bij Meervoordeel.nl",
+    "ctaLabel": "Bekijk 1-jarig aanbod",
+    "detailCtaLabel": "Bekijk 1-jarig aanbod",
     "benefitDisplayType": "period",
-    "detailTitle": "Ziggo Internet 2 Gbit/s & TV – 1 jaar",
-    "detailIntro": "Dit pakket uit de actuele Daisycon-productfeed combineert Internet 2 Gbit/s met TV. Bij een contract van 1 jaar betaal je de eerste 6 maanden €38,20 p/m in plaats van €76,40 p/m. De feed vermeldt daarnaast een welkomstcadeau ter waarde van €100.",
+    "detailTitle": "1 jaar: 6 maanden 50% korting",
+    "detailIntro": "De gecontroleerde 2 Gbit/s + TV-samenstelling met een contract van 1 jaar toont 6 maanden 50% korting: €38,20 p/m in plaats van €76,40 p/m. Daarnaast kies je tussen €100 cashback of een bol.com-cadeaukaart t.w.v. €100.",
     "detailBenefits": [
       {
         "type": "discount",
@@ -1686,21 +1073,21 @@
         "sub": "€38,20 p/m in plaats van €76,40 p/m"
       },
       {
-        "type": "product",
-        "title": "Internet 2 Gbit/s & TV",
-        "sub": "Contractduur: 1 jaar"
+        "type": "gift",
+        "title": "€100 cashback of bol.com-cadeaukaart",
+        "sub": "Je kiest één van beide voordelen in de samensteller"
       },
       {
-        "type": "gift",
-        "title": "Welkomstcadeau t.w.v. €100",
-        "sub": "Zoals vermeld in de actuele productfeed"
+        "type": "product",
+        "title": "Gecontroleerde 2 Gbit/s + TV-samenstelling",
+        "sub": "Contractduur: 1 jaar; andere pakketten kunnen afwijken"
       }
     ],
     "detailSummaryValue": "6 maanden 50% korting",
     "priceDuringDiscount": "€38,20 p/m",
     "priceAfterDiscount": "€76,40 p/m",
-    "summaryLine": "2 Gbit/s Internet & TV met tijdelijke korting",
-    "detailIntroTitle": "Internet 2 Gbit/s & TV",
+    "summaryLine": "1 jaar: 6 maanden korting met extra keuzevoordeel",
+    "detailIntroTitle": "Ziggo Internet & TV via Meervoordeel.nl",
     "detailIntroSubtitle": "1 jaar · 6 maanden 50% korting",
     "detailIntroCards": [
       {
@@ -1708,23 +1095,24 @@
         "text": "€38,20 p/m in plaats van €76,40 p/m"
       },
       {
-        "title": "2 Gbit/s",
-        "text": "Internet gecombineerd met TV"
+        "title": "€100 extra voordeel",
+        "text": "Kies cashback of een bol.com-cadeaukaart"
       },
       {
-        "title": "€100 welkomstcadeau",
-        "text": "Vermeld in de actuele productfeed"
+        "title": "2 Gbit/s + TV",
+        "text": "De deeplink opent de gecontroleerde voorbeeldsamenstelling"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Je ontvangt gedurende 6 maanden 50% korting op de maandprijs en de productfeed noemt daarnaast een welkomstcadeau ter waarde van €100.",
+    "detailWhyText": "Je combineert 6 maanden 50% korting met een extra keuze uit €100 cashback of een bol.com-cadeaukaart t.w.v. €100.",
     "detailConditionItems": [
       "Nieuw Ziggo Internet & TV-abonnement via Meervoordeel.nl",
       "Contractduur: 12 maanden",
-      "Eerste 6 maanden €38,20 p/m",
-      "Daarna het actuele reguliere tarief (feedwaarde: €76,40 p/m)",
-      "Welkomstcadeau t.w.v. €100 volgens de productfeed",
-      "Beschikbaarheid en definitief aanbod afhankelijk van adres"
+      "Gecontroleerde voorbeeldsamenstelling: Internet 2 Gbit/s + TV",
+      "Eerste 6 maanden €38,20 p/m; daarna €76,40 p/m volgens de huidige samensteller/feed",
+      "Keuze uit €100 cashback óf een bol.com-cadeaukaart t.w.v. €100",
+      "De CTA opent de gecontroleerde 2 Gbit/s-samenstelling; een andere pakketkeuze kan prijs en voordeel wijzigen",
+      "Beschikbaarheid en definitief aanbod zijn afhankelijk van het adres"
     ],
     "contractPriceLabel": "€38,20 p/m gedurende de eerste 6 maanden",
     "providerDescriptionTitle": "Over Ziggo via Meervoordeel.nl",
@@ -1734,8 +1122,8 @@
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=17174&html_transform=none&rawdata=false&encoding=utf8&general=false",
     "sourceFeedLastModified": "2026-07-02 08:56:11",
     "cardImage": "/assets/provider-products/ziggo-internet-tv-2gbit.svg",
-    "cardImageAlt": "Neutrale illustratie voor Internet 2 Gbit/s en TV",
-    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officiële providerbanner",
+    "cardImageAlt": "Neutrale Internet & TV-illustratie voor de 1-jarige Meervoordeel.nl-actie",
+    "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officieel providerlogo of providerbanner",
     "cardImageVariant": "square-large"
   }
 ]
