@@ -756,6 +756,7 @@
 
 
   function renderDeal(d){
+    if(document.body && d && d.id) document.body.setAttribute("data-deal-id", String(d.id));
     const root = document.getElementById("mpDealDetail");
     if(!root) return;
     updateStaticTopbarBack("../");

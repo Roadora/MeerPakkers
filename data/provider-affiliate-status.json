@@ -96,14 +96,15 @@
     "providerId": "hollandsnieuwe",
     "provider": "hollandsnieuwe",
     "categories": [
-      "mobiel"
+      "mobiel",
+      "sim-only"
     ],
-    "affiliateNetwork": "placeholder",
-    "applicationStatus": "not_applied",
-    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "daisycon",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
     "contactUrl": null,
-    "approvedAt": null,
-    "adminNotes": ""
+    "approvedAt": "2026-07-21",
+    "adminNotes": "Goedgekeurd voor Meervoordeel.nl - hollandsnieuwe (Daisycon campagne 21994). Actieve officiële creative 1931865: eerste 12 maanden 50% korting, bol.com-cadeaukaart t.w.v. €33 en iedere maand 5.000 MB extra bij een 2-jarig Sim Only-abonnement."
   },
   {
     "providerId": "ziggo",

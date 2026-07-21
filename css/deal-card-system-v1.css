@@ -880,3 +880,14 @@
     margin-bottom:62px !important;
   }
 }
+
+
+/* hollandsnieuwe official 1201×629 creative — scoped proportional treatment v35 */
+.mp-normal-deal-card[data-deal-id="hollandsnieuwe-cadeau"] .mp-card-product-image--wide-banner{
+  aspect-ratio:1201 / 629!important;
+}
+.mp-normal-deal-card[data-deal-id="hollandsnieuwe-cadeau"].mp-normal-deal-card--with-wide-banner>.mp-normal-deal-card-cta{
+  max-width:none!important;
+  min-width:150px!important;
+  white-space:nowrap!important;
+}

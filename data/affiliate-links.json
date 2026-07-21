@@ -229,5 +229,26 @@
     "utmCampaign": "online_nl_internet_only_dikke_deal",
     "subIdTemplate": "",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
+  },
+  {
+    "dealId": "hollandsnieuwe-cadeau",
+    "providerId": "hollandsnieuwe",
+    "category": "sim-only",
+    "network": "daisycon",
+    "merchantId": "meervoordeel-hollandsnieuwe",
+    "campaignId": "21994",
+    "trackingId": "1931865",
+    "deepLink": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "finalUrl": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "status": "approved",
+    "startsAt": null,
+    "expiresAt": null,
+    "approvedAt": "2026-07-21",
+    "lastCheckedAt": "2026-07-21",
+    "sourceType": "Officieel Daisycon-bannermateriaal",
+    "adminNotes": "Officiële trackinglink bij creative 1931865 voor Meervoordeel.nl - hollandsnieuwe. De link leidt naar de hollandsnieuwe-landingspagina van Meervoordeel.nl.",
+    "utmCampaign": "hollandsnieuwe_meervoordeel_sim_only",
+    "subIdTemplate": "mp-hollandsnieuwe-sim-only",
+    "creativeId": "1931865"
   }
 ]

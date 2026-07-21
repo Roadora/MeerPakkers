@@ -3164,3 +3164,10 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
     margin:0 !important;
   }
 }
+
+
+/* hollandsnieuwe official 1201×629 creative — scoped detail ratio v35 */
+body[data-deal-id="hollandsnieuwe-cadeau"] .mp-offer-overview__product-image--wide-banner{
+  max-width:1000px!important;
+  aspect-ratio:1201 / 629!important;
+}

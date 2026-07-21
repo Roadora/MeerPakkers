@@ -1379,5 +1379,169 @@
       "€100 cashback",
       "Totaal voordeel €280"
     ]
+  },
+  {
+    "id": "hollandsnieuwe-cadeau",
+    "providerId": "hollandsnieuwe",
+    "provider": "hollandsnieuwe",
+    "category": "sim-only",
+    "title": "Sim Only: 12 maanden 50% korting + cadeaukaart",
+    "benefitTypes": [
+      "korting",
+      "cadeau",
+      "gratis-extra"
+    ],
+    "benefitValue": 33,
+    "totalBenefitValue": 33,
+    "totalBenefitLabel": "50% korting + €33 cadeaukaart",
+    "giftType": "bol.com-cadeaukaart",
+    "contract": "2 jaar",
+    "score": 9.6,
+    "icon": "📶",
+    "benefits": [
+      "Eerste 12 maanden 50% korting",
+      "bol.com-cadeaukaart t.w.v. €33",
+      "Iedere maand 5.000 MB extra"
+    ],
+    "price": "Maandprijs afhankelijk van gekozen Sim Only-bundel",
+    "featured": true,
+    "dealType": "Tijdelijke Sim Only-actie",
+    "giftName": "bol.com-cadeaukaart",
+    "giftValue": 33,
+    "cashbackValue": 0,
+    "discountValue": 0,
+    "extraValue": 0,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": 24,
+    "affiliateUrl": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "benefitBreakdown": {
+      "gift": 33,
+      "cashback": 0,
+      "discount": 0,
+      "extra": 0
+    },
+    "seoSlug": "hollandsnieuwe-cadeau",
+    "updatedAt": "2026-07-21",
+    "meerPakScore": 96,
+    "url": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "network": "daisycon",
+    "campaignId": "21994",
+    "trackingId": "1931865",
+    "merchantId": "meervoordeel-hollandsnieuwe",
+    "deepLink": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-07-21",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": null,
+    "sourceType": "Officieel Daisycon-bannermateriaal",
+    "sourceId": "1931865",
+    "adminNotes": "Officiële Meervoordeel.nl / hollandsnieuwe Sim Only-creative 1931865. De banner communiceert drie voordelen samen bij een 2-jarig abonnement: eerste 12 maanden 50% korting, bol.com-cadeaukaart t.w.v. €33 en iedere maand 5.000 MB extra. Geen vaste maandprijs of einddatum afgeleid.",
+    "termsSummary": "Volgens de officiële Daisycon-banner geldt bij een 2-jarig hollandsnieuwe Sim Only-abonnement: de eerste 12 maanden 50% korting, een bol.com-cadeaukaart t.w.v. €33 en iedere maand 5.000 MB extra. De uiteindelijke maandprijs en bundel hangen af van je keuze. Controleer altijd het actuele aanbod en de voorwaarden op de bestemmingspagina.",
+    "lastDataReviewAt": "2026-07-21",
+    "ctaLabel": "Bekijk Sim Only-deal",
+    "detailCtaLabel": "Bekijk aanbod via Meervoordeel.nl",
+    "benefitDisplayType": "choice",
+    "detailTitle": "hollandsnieuwe Sim Only met drie extra voordelen",
+    "detailIntro": "Via Meervoordeel.nl combineert deze hollandsnieuwe Sim Only-actie drie voordelen: de eerste 12 maanden 50% korting, een bol.com-cadeaukaart ter waarde van €33 en iedere maand 5.000 MB extra. De actie geldt volgens de officiële banner bij een 2-jarig abonnement.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "12 maanden 50% korting",
+        "sub": "Op de gekozen Sim Only-bundel volgens het officiële campagnemateriaal"
+      },
+      {
+        "type": "gift",
+        "title": "bol.com-cadeaukaart t.w.v. €33",
+        "sub": "Onder de actuele actievoorwaarden"
+      },
+      {
+        "type": "extra",
+        "title": "Iedere maand 5.000 MB extra",
+        "sub": "Gedurende het abonnement volgens de officiële banner"
+      }
+    ],
+    "detailSummaryValue": "Drie voordelen bij 2 jaar",
+    "priceDuringDiscount": "Eerste 12 maanden 50% korting",
+    "priceAfterDiscount": "Controleer de reguliere maandprijs van je gekozen bundel",
+    "officialBannerUrl": "https://static-dscn.net/21994/1931865/?wi=422185&ws=",
+    "officialBannerClickUrl": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "officialBannerLabel": "Officiële Sim Only-actie via Meervoordeel.nl",
+    "officialBannerSize": "1201×629",
+    "summaryLine": "12 maanden korting, €33 cadeaukaart en 5 GB extra",
+    "detailIntroTitle": "hollandsnieuwe Sim Only",
+    "detailIntroSubtitle": "Alleen via Meervoordeel.nl · 2 jaar",
+    "detailIntroCards": [
+      {
+        "title": "50% korting",
+        "text": "Tijdens de eerste 12 maanden"
+      },
+      {
+        "title": "€33 cadeaukaart",
+        "text": "bol.com-cadeaukaart volgens de officiële banner"
+      },
+      {
+        "title": "+5.000 MB",
+        "text": "Iedere maand extra data"
+      }
+    ],
+    "detailWhyTitle": "Waarom is dit een Meepakker?",
+    "detailWhyText": "Deze actie combineert een tijdelijke maandkorting met een concreet cadeau en extra data. Vergelijk wel de volledige kosten over 24 maanden en controleer welke maandprijs na de eerste 12 maanden geldt.",
+    "detailConditionItems": [
+      "hollandsnieuwe Sim Only",
+      "2-jarig abonnement",
+      "Eerste 12 maanden 50% korting volgens het officiële campagnemateriaal",
+      "bol.com-cadeaukaart t.w.v. €33",
+      "Iedere maand 5.000 MB extra",
+      "Bundel en maandprijs hangen af van je keuze",
+      "Controleer de actuele voorwaarden op de bestemmingspagina"
+    ],
+    "contractPriceLabel": "Prijs afhankelijk van gekozen bundel",
+    "providerDescriptionTitle": "Over hollandsnieuwe Sim Only",
+    "providerDescription": "hollandsnieuwe biedt mobiele en Sim Only-abonnementen. Bij Sim Only gebruik je je eigen telefoon en kies je een bundel voor data, bellen en sms. Controleer vóór afsluiten de bundelinhoud, netwerkinformatie, maandprijs na de kortingsperiode en de volledige contractduur.",
+    "providerFeatureTitle": "Wat valt op bij deze actie?",
+    "providerFeatureItems": [
+      {
+        "title": "Drie voordelen samen",
+        "text": "De officiële banner combineert korting, een cadeaukaart en extra data."
+      },
+      {
+        "title": "Twee jaar looptijd",
+        "text": "De actie is gekoppeld aan een 2-jarig Sim Only-abonnement."
+      },
+      {
+        "title": "Bundelkeuze blijft belangrijk",
+        "text": "De uiteindelijke maandprijs hangt af van de gekozen Sim Only-bundel."
+      }
+    ],
+    "detailConditionNote": "MeerPakkers is onafhankelijk. Meervoordeel.nl en hollandsnieuwe zijn niet verantwoordelijk voor de inhoud van deze pagina. Het actuele aanbod en de voorwaarden op de officiële bestemming zijn leidend.",
+    "officialSourceUrl": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "sourceVerifiedAt": "2026-07-21",
+    "sourceVerifiedNotes": "Officiële Daisycon-creative 1931865 gecontroleerd: eerste 12 maanden 50% korting, bol.com-cadeaukaart t.w.v. €33 en iedere maand 5.000 MB extra, in combinatie met een 2-jarig abonnement.",
+    "cardImage": "https://static-dscn.net/21994/1931865/?wi=422185&ws=",
+    "cardImageAlt": "hollandsnieuwe Sim Only: 12 maanden 50% korting, bol.com-cadeaukaart van €33 en iedere maand 5.000 MB extra",
+    "cardImageSource": "Officieel Daisycon-bannermateriaal 1931865",
+    "cardImageVariant": "wide-banner",
+    "seoSupport": {
+      "eyebrow": "Meer weten voordat je kiest?",
+      "title": "Uitleg bij de hollandsnieuwe Sim Only-actie",
+      "description": "Lees hoe de korting, cadeaukaart, extra data en de looptijd van twee jaar samenhangen.",
+      "links": [
+        {
+          "label": "hollandsnieuwe actie uitgelegd",
+          "href": "/uitleg/hollandsnieuwe-sim-only-actie/"
+        },
+        {
+          "label": "Korting of cadeau kiezen",
+          "href": "/uitleg/korting-of-cadeau-kiezen/"
+        },
+        {
+          "label": "Wat is een welkomstactie?",
+          "href": "/uitleg/wat-is-een-welkomstactie/"
+        }
+      ]
+    }
   }
 ]
