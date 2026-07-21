@@ -235,5 +235,18 @@
     "contactUrl": null,
     "approvedAt": null,
     "adminNotes": ""
+  },
+  {
+    "providerId": "online-nl",
+    "provider": "Online.nl",
+    "categories": [
+      "internet-tv"
+    ],
+    "affiliateNetwork": "daisycon",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
+    "contactUrl": null,
+    "approvedAt": "2026-07-21",
+    "adminNotes": "Actief via Daisycon-campagne 14155. Twee openbare Dikke Deal-kaarten: Internet & TV (€378 totaal voordeel) en Internet Only (€320 totaal voordeel). Links worden server-side uit de actuele productfeed gehaald met media-ID 422185. Actievoorwaarden geldig t/m 31 augustus 2026."
   }
 ]

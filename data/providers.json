@@ -106,6 +106,15 @@
     "priority": 11
   },
   {
+    "id": "online-nl",
+    "name": "Online.nl",
+    "type": "provider",
+    "categories": [
+      "internet-tv"
+    ],
+    "priority": 12
+  },
+  {
     "id": "netflix",
     "name": "Netflix",
     "type": "streamingdienst",

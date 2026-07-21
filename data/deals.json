@@ -1125,5 +1125,253 @@
     "cardImageAlt": "Neutrale Internet & TV-illustratie voor de 1-jarige Meervoordeel.nl-actie",
     "cardImageSource": "MeerPakkers neutrale pakketvisual; geen officieel providerlogo of providerbanner",
     "cardImageVariant": "square-large"
+  },
+  {
+    "id": "online-nl-internet-tv-dikke-deal",
+    "providerId": "online-nl",
+    "provider": "Online.nl",
+    "category": "internet-tv",
+    "title": "Internet & TV: 9 maanden korting + €150 cashback",
+    "benefitTypes": [
+      "korting",
+      "cashback",
+      "gratis-extra"
+    ],
+    "benefitValue": 378,
+    "totalBenefitValue": 378,
+    "totalBenefitLabel": "Totaal voordeel t.w.v. €378",
+    "giftType": "",
+    "contract": "Volgens actuele actievoorwaarden",
+    "score": 9.5,
+    "icon": "🌐",
+    "benefits": [
+      "9 maanden korting t.w.v. €198",
+      "€150 cashback op je rekening",
+      "Geen aansluitkosten t.w.v. €30"
+    ],
+    "price": "Prijs afhankelijk van adres en pakket",
+    "featured": true,
+    "dealType": "Tijdelijke Dikke Deal",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 150,
+    "discountValue": 198,
+    "extraValue": 30,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": null,
+    "affiliateUrl": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 150,
+      "discount": 198,
+      "extra": 30
+    },
+    "seoSlug": "online-nl-internet-tv-dikke-deal",
+    "updatedAt": "2026-07-21",
+    "meerPakScore": 95,
+    "url": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "network": "daisycon",
+    "campaignId": "14155",
+    "trackingId": "feed-runtime",
+    "merchantId": "online-nl",
+    "deepLink": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-07-21",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": "2026-08-31",
+    "sourceType": "Daisycon-productfeed en officiële Online.nl-actiepagina",
+    "sourceId": "14155/internet-tv",
+    "adminNotes": "Online.nl Dikke Deal voor Internet & TV. Publieke voordeelbedragen zijn gecontroleerd op de officiële actiepagina. De CTA loopt via een server-side feedresolver die de actuele Daisycon-productlink met media-ID 422185 selecteert. Als de feed tijdelijk niet bereikbaar is, wordt de officiële Online.nl-actiepagina als noodbestemming gebruikt.",
+    "termsSummary": "9 maanden korting t.w.v. €198, €150 cashback en geen aansluitkosten t.w.v. €30. De cashback geldt alleen voor internet via het KPN-netwerk en wordt na twee succesvolle afschrijvingen op de rekening gestort. Actievoorwaarden geldig t/m 31 augustus 2026. Beschikbaarheid en prijs zijn adresafhankelijk.",
+    "lastDataReviewAt": "2026-07-21",
+    "ctaLabel": "Bekijk Internet & TV",
+    "detailCtaLabel": "Bekijk je Online.nl-aanbod",
+    "benefitDisplayType": "total",
+    "detailTitle": "Online.nl Internet & TV Dikke Deal",
+    "detailIntro": "Combineer bij Online.nl Internet & TV negen maanden korting met €150 cashback en gratis aansluiten. De totale gecommuniceerde voordeelwaarde is €378. Het beschikbare pakket en de prijs worden op basis van je adres bepaald.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "9 maanden korting t.w.v. €198",
+        "sub": "De exacte maandprijs hangt af van je adres en pakket"
+      },
+      {
+        "type": "cashback",
+        "title": "€150 cashback",
+        "sub": "Na twee succesvolle afschrijvingen; alleen via het KPN-netwerk"
+      },
+      {
+        "type": "extra",
+        "title": "Geen aansluitkosten t.w.v. €30",
+        "sub": "Binnen de actuele Dikke Deal-actie"
+      }
+    ],
+    "detailSummaryValue": "€378 totaal voordeel",
+    "summaryLine": "9 maanden korting, cashback en gratis aansluiten",
+    "detailIntroTitle": "Online.nl Internet & TV",
+    "detailIntroSubtitle": "Dikke Deal · geldig t/m 31 augustus 2026",
+    "detailIntroCards": [
+      {
+        "title": "9 maanden korting",
+        "text": "Voordeelwaarde €198"
+      },
+      {
+        "title": "€150 cashback",
+        "text": "Na twee succesvolle afschrijvingen"
+      },
+      {
+        "title": "Gratis aansluiten",
+        "text": "Geen aansluitkosten t.w.v. €30"
+      }
+    ],
+    "detailWhyTitle": "Waarom is dit een Meepakker?",
+    "detailWhyText": "Deze actie combineert drie voordeelvormen: tijdelijke korting, cashback en het vervallen van de aansluitkosten. Daardoor zie je naast de maandprijs ook het totale extra voordeel.",
+    "detailConditionItems": [
+      "Internet & TV bij Online.nl",
+      "Actievoorwaarden geldig t/m 31 augustus 2026",
+      "Cashback alleen bij internet via het KPN-netwerk",
+      "Cashback wordt uitgekeerd na twee succesvolle afschrijvingen",
+      "Pakket, snelheid, techniek en prijs zijn afhankelijk van het adres",
+      "Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl"
+    ],
+    "contractPriceLabel": "Prijs afhankelijk van adres en pakket",
+    "providerDescriptionTitle": "Over Online.nl",
+    "providerDescription": "Online.nl biedt internet en Internet & TV via beschikbare DSL- en glasvezelnetwerken. Het beschikbare pakket, de techniek, snelheid en prijs zijn afhankelijk van het adres. Controleer daarom altijd het persoonlijke aanbod en de actuele actievoorwaarden voordat je afsluit.",
+    "detailConditionNote": "De cashback moet volgens de instructies van Online.nl worden aangevraagd. Controleer na bestelling de actuele claimstappen en termijnen.",
+    "officialSourceUrl": "https://www.online.nl/dikkedeal/dsl/",
+    "sourceVerifiedAt": "2026-07-21",
+    "sourceVerifiedNotes": "Officiële actiepagina gecontroleerd: 9 maanden korting t.w.v. €198, €150 cashback en geen aansluitkosten t.w.v. €30. Cashback alleen via het KPN-netwerk en uitbetaling na twee succesvolle afschrijvingen.",
+    "cardImage": "/assets/provider-products/online-internet-tv.svg",
+    "cardImageAlt": "Online.nl Internet & TV Dikke Deal",
+    "cardImageSource": "MeerPakkers neutrale productvisual — geen officieel providerlogo",
+    "cardImageVariant": "landscape",
+    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
+  },
+  {
+    "id": "online-nl-internet-only-dikke-deal",
+    "providerId": "online-nl",
+    "provider": "Online.nl",
+    "category": "internet-tv",
+    "title": "Internet Only: 9 maanden korting + €110 cashback",
+    "benefitTypes": [
+      "korting",
+      "cashback",
+      "gratis-extra"
+    ],
+    "benefitValue": 320,
+    "totalBenefitValue": 320,
+    "totalBenefitLabel": "Totaal voordeel t.w.v. €320",
+    "giftType": "",
+    "contract": "Volgens actuele actievoorwaarden",
+    "score": 9.2,
+    "icon": "📡",
+    "benefits": [
+      "9 maanden korting t.w.v. €180",
+      "€110 cashback op je rekening",
+      "Geen aansluitkosten t.w.v. €30"
+    ],
+    "price": "Prijs afhankelijk van adres en pakket",
+    "featured": false,
+    "dealType": "Tijdelijke Dikke Deal",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 110,
+    "discountValue": 180,
+    "extraValue": 30,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": null,
+    "affiliateUrl": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 110,
+      "discount": 180,
+      "extra": 30
+    },
+    "seoSlug": "online-nl-internet-only-dikke-deal",
+    "updatedAt": "2026-07-21",
+    "meerPakScore": 92,
+    "url": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "network": "daisycon",
+    "campaignId": "14155",
+    "trackingId": "feed-runtime",
+    "merchantId": "online-nl",
+    "deepLink": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-07-21",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": null,
+    "expiresAt": "2026-08-31",
+    "sourceType": "Daisycon-productfeed en officiële Online.nl-actiepagina",
+    "sourceId": "14155/internet-only",
+    "adminNotes": "Online.nl Dikke Deal voor Internet Only. Publieke voordeelbedragen zijn gecontroleerd op de officiële actiepagina. De CTA loopt via een server-side feedresolver die de actuele Daisycon-productlink met media-ID 422185 selecteert. Als de feed tijdelijk niet bereikbaar is, wordt de officiële Online.nl-actiepagina als noodbestemming gebruikt.",
+    "termsSummary": "9 maanden korting t.w.v. €180, €110 cashback en geen aansluitkosten t.w.v. €30. De cashback geldt alleen voor internet via het KPN-netwerk en wordt na twee succesvolle afschrijvingen op de rekening gestort. Actievoorwaarden geldig t/m 31 augustus 2026. Beschikbaarheid en prijs zijn adresafhankelijk.",
+    "lastDataReviewAt": "2026-07-21",
+    "ctaLabel": "Bekijk Internet Only",
+    "detailCtaLabel": "Bekijk je Online.nl-aanbod",
+    "benefitDisplayType": "total",
+    "detailTitle": "Online.nl Internet Only Dikke Deal",
+    "detailIntro": "Kies alleen internet en combineer negen maanden korting met €110 cashback en gratis aansluiten. De totale gecommuniceerde voordeelwaarde is €320. Het beschikbare pakket en de prijs worden op basis van je adres bepaald.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "9 maanden korting t.w.v. €180",
+        "sub": "De exacte maandprijs hangt af van je adres en pakket"
+      },
+      {
+        "type": "cashback",
+        "title": "€110 cashback",
+        "sub": "Na twee succesvolle afschrijvingen; alleen via het KPN-netwerk"
+      },
+      {
+        "type": "extra",
+        "title": "Geen aansluitkosten t.w.v. €30",
+        "sub": "Binnen de actuele Dikke Deal-actie"
+      }
+    ],
+    "detailSummaryValue": "€320 totaal voordeel",
+    "summaryLine": "Alleen internet met korting, cashback en gratis aansluiten",
+    "detailIntroTitle": "Online.nl Internet Only",
+    "detailIntroSubtitle": "Dikke Deal · geldig t/m 31 augustus 2026",
+    "detailIntroCards": [
+      {
+        "title": "9 maanden korting",
+        "text": "Voordeelwaarde €180"
+      },
+      {
+        "title": "€110 cashback",
+        "text": "Na twee succesvolle afschrijvingen"
+      },
+      {
+        "title": "Gratis aansluiten",
+        "text": "Geen aansluitkosten t.w.v. €30"
+      }
+    ],
+    "detailWhyTitle": "Waarom is dit een Meepakker?",
+    "detailWhyText": "Ook zonder TV krijg je drie verschillende voordelen: tijdelijke korting, cashback en geen aansluitkosten. Zo zie je het volledige extra voordeel van het Internet Only-pakket.",
+    "detailConditionItems": [
+      "Internet Only bij Online.nl",
+      "Actievoorwaarden geldig t/m 31 augustus 2026",
+      "Cashback alleen bij internet via het KPN-netwerk",
+      "Cashback wordt uitgekeerd na twee succesvolle afschrijvingen",
+      "Pakket, snelheid, techniek en prijs zijn afhankelijk van het adres",
+      "Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl"
+    ],
+    "contractPriceLabel": "Prijs afhankelijk van adres en pakket",
+    "providerDescriptionTitle": "Over Online.nl",
+    "providerDescription": "Online.nl biedt internet en Internet & TV via beschikbare DSL- en glasvezelnetwerken. Het beschikbare pakket, de techniek, snelheid en prijs zijn afhankelijk van het adres. Controleer daarom altijd het persoonlijke aanbod en de actuele actievoorwaarden voordat je afsluit.",
+    "detailConditionNote": "De cashback moet volgens de instructies van Online.nl worden aangevraagd. Controleer na bestelling de actuele claimstappen en termijnen.",
+    "officialSourceUrl": "https://www.online.nl/dikkedeal/internet/dsl/",
+    "sourceVerifiedAt": "2026-07-21",
+    "sourceVerifiedNotes": "Officiële actiepagina gecontroleerd: 9 maanden korting t.w.v. €180, €110 cashback en geen aansluitkosten t.w.v. €30. Cashback alleen via het KPN-netwerk en uitbetaling na twee succesvolle afschrijvingen.",
+    "cardImage": "/assets/provider-products/online-internet-only.svg",
+    "cardImageAlt": "Online.nl Internet Only Dikke Deal",
+    "cardImageSource": "MeerPakkers neutrale productvisual — geen officieel providerlogo",
+    "cardImageVariant": "landscape",
+    "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
   }
 ]

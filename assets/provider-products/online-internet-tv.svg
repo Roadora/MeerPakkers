@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Online.nl Internet en TV</title><desc id="desc">Neutrale MeerPakkers-productvisual voor een internet- en tv-actie, zonder providerlogo.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff8f4"/><stop offset="1" stop-color="#fff8e7"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06483d"/><stop offset="1" stop-color="#0d6b5c"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#17342b" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1200" height="800" rx="70" fill="url(#bg)"/>
+<circle cx="1080" cy="110" r="210" fill="#f4b33c" opacity=".16"/><circle cx="90" cy="740" r="250" fill="#55b9ad" opacity=".12"/>
+<g filter="url(#shadow)">
+  <rect x="110" y="125" width="650" height="415" rx="34" fill="#fff" stroke="#cfe3dc" stroke-width="8"/>
+  <rect x="145" y="160" width="580" height="335" rx="22" fill="url(#screen)"/>
+  <path d="M395 575h80m-40-35v35" stroke="#17342b" stroke-width="20" stroke-linecap="round"/>
+</g>
+<g transform="translate(790 300)" filter="url(#shadow)">
+  <rect x="0" y="0" width="265" height="235" rx="48" fill="#fff" stroke="#cfe3dc" stroke-width="7"/>
+  <circle cx="132" cy="151" r="11" fill="#f4a900"/>
+  <path d="M78 111c28-29 80-29 108 0M101 135c17-17 45-17 62 0M129 158h6" fill="none" stroke="#06483d" stroke-width="14" stroke-linecap="round"/>
+</g>
+<rect x="82" y="56" width="255" height="58" rx="29" fill="#e1f3ec"/><text x="210" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#06483d">ONLINE.NL ACTIE</text>
+<text x="82" y="655" font-family="Arial, sans-serif" font-size="62" font-weight="800" fill="#063f35">Internet &amp; TV</text>
+<text x="82" y="714" font-family="Arial, sans-serif" font-size="34" font-weight="600" fill="#35554c">9 maanden voordeel + cashback</text>
+</svg>
