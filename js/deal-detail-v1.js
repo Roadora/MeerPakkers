@@ -568,12 +568,13 @@
     var isLandscape = variant === 'landscape';
     var isSquare = variant === 'square' || variant === 'square-large';
     var isLargeSquare = variant === 'square-large';
+    var isWideBanner = variant === 'wide-banner';
     var cacheSafeSrc = String((d && d.network) || '').toLowerCase() === 'awin'
       ? src
       : src + (src.indexOf('?') === -1 ? '?v=budget-tv-v1' : '&v=budget-tv-v1');
-    var variantClass = isLandscape ? ' mp-offer-overview__product-image--landscape' : (isLargeSquare ? ' mp-offer-overview__product-image--square-large' : (isSquare ? ' mp-offer-overview__product-image--square' : ''));
-    var imageWidth = isLandscape ? '300' : (isLargeSquare ? '380' : (isSquare ? '300' : '260'));
-    var imageHeight = isLandscape ? '250' : (isLargeSquare ? '380' : (isSquare ? '300' : '421'));
+    var variantClass = isWideBanner ? ' mp-offer-overview__product-image--wide-banner' : (isLandscape ? ' mp-offer-overview__product-image--landscape' : (isLargeSquare ? ' mp-offer-overview__product-image--square-large' : (isSquare ? ' mp-offer-overview__product-image--square' : '')));
+    var imageWidth = isWideBanner ? '800' : (isLandscape ? '300' : (isLargeSquare ? '380' : (isSquare ? '300' : '260')));
+    var imageHeight = isWideBanner ? '300' : (isLandscape ? '250' : (isLargeSquare ? '380' : (isSquare ? '300' : '421')));
     return `
       <span class="mp-offer-overview__product-image${variantClass}" aria-label="${escapeHtml(alt)}">
         <img src="${escapeHtml(cacheSafeSrc)}" alt="${escapeHtml(alt)}" width="${imageWidth}" height="${imageHeight}" decoding="async" fetchpriority="high">
@@ -592,6 +593,7 @@
     var productImage = offerOverviewProductImage(d);
     var productImageVariant = String((d && d.cardImageVariant) || '').toLowerCase();
     var productImageIsLandscape = productImageVariant === 'landscape';
+    var productImageIsWideBanner = productImageVariant === 'wide-banner';
     var productImageIsSquare = productImageVariant === 'square';
     var productImageIsLargeSquare = productImageVariant === 'square-large';
     var cardMarkup = cards.slice(0,3).map(function(card){
@@ -608,7 +610,7 @@
     return `
       <article class="mp-offer-overview mp-offer-overview--${surface}">
         <div class="mp-offer-overview__kicker">Aanbiedingsoverzicht</div>
-        <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}${productImageIsSquare ? ' mp-offer-overview__title-row--with-product-image--square' : ''}${productImageIsLargeSquare ? ' mp-offer-overview__title-row--with-product-image--square-large' : ''}">
+        <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsWideBanner ? ' mp-offer-overview__title-row--with-product-image--wide-banner' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}${productImageIsSquare ? ' mp-offer-overview__title-row--with-product-image--square' : ''}${productImageIsLargeSquare ? ' mp-offer-overview__title-row--with-product-image--square-large' : ''}">
           <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>
           ${productImage}
         </div>

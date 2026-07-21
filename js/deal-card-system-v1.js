@@ -68,9 +68,12 @@
     var isLandscape = variant === 'landscape';
     var isSquare = variant === 'square';
     var isSquareLarge = variant === 'square-large';
-    var variantClass = isLandscape
-      ? ' mp-card-product-image--landscape'
-      : (isSquareLarge ? ' mp-card-product-image--square-large' : (isSquare ? ' mp-card-product-image--square' : ''));
+    var isWideBanner = variant === 'wide-banner';
+    var variantClass = isWideBanner
+      ? ' mp-card-product-image--wide-banner'
+      : (isLandscape
+        ? ' mp-card-product-image--landscape'
+        : (isSquareLarge ? ' mp-card-product-image--square-large' : (isSquare ? ' mp-card-product-image--square' : '')));
     return '' +
       '<span class="mp-card-product-image' + variantClass + '" aria-hidden="' + (alt ? 'false' : 'true') + '">' +
         '<img src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" loading="lazy" decoding="async">' +
@@ -94,10 +97,12 @@
     var title = escapeHtml(d.title || d.name || "Actie met extra voordeel");
     var cta = escapeHtml(d.ctaLabel || 'Bekijk deal');
     var productImage = cardProductImageHtml(d);
+    var cardImageVariant = String(d.cardImageVariant || '').toLowerCase();
+    var productImageModifier = productImage && cardImageVariant === 'wide-banner' ? ' mp-normal-deal-card--with-wide-banner' : '';
 
     if (isSavedMode) {
       return '' +
-        '<article class="mp-normal-deal-card mp-normal-deal-card--saved mp-saved-component-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + '" data-card-component="normal-v2" data-card-mode="saved" data-deal-id="' + escapeHtml(id) + '">' +
+        '<article class="mp-normal-deal-card mp-normal-deal-card--saved mp-saved-component-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + productImageModifier + '" data-card-component="normal-v2" data-card-mode="saved" data-deal-id="' + escapeHtml(id) + '">' +
           '<a class="mp-normal-deal-card-link" href="' + escapeHtml(url) + '" aria-label="Bekijk ' + provider + ' ' + title + '">' +
             '<div class="mp-normal-deal-card-content">' +
               '<div class="mp-card-top-row">' +
@@ -118,7 +123,7 @@
     }
 
     return '' +
-      '<a class="mp-normal-deal-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + '" href="' + escapeHtml(url) + '" data-card-component="normal-v2" data-deal-id="' + escapeHtml(id) + '">' +
+      '<a class="mp-normal-deal-card' + (productImage ? ' mp-normal-deal-card--with-product-image' : '') + productImageModifier + '" href="' + escapeHtml(url) + '" data-card-component="normal-v2" data-deal-id="' + escapeHtml(id) + '">' +
         '<button class="meepakker-save-heart" type="button" aria-label="Deal opslaan" data-save-deal-id="' + escapeHtml(id) + '">♡</button>' +
         '<div class="mp-normal-deal-card-content">' +
           '<div class="mp-card-top-row">' +

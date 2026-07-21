@@ -3089,3 +3089,41 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
   }
 }
 
+
+
+/* Official 800×300 affiliate banner in the deal overview — v30. */
+.mp-offer-overview__title-row--with-product-image--wide-banner{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:18px !important;
+}
+
+.mp-offer-overview__product-image--wide-banner{
+  display:block !important;
+  width:100% !important;
+  max-width:800px !important;
+  height:auto !important;
+  aspect-ratio:8 / 3 !important;
+  margin:0 !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  border:0 !important;
+  border-radius:22px !important;
+  background:#fff !important;
+  box-shadow:0 14px 28px rgba(6,72,61,.10) !important;
+}
+
+.mp-offer-overview__product-image--wide-banner img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+
+@media (max-width:700px){
+  .mp-offer-overview__product-image--wide-banner{
+    border-radius:16px !important;
+  }
+}

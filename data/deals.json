@@ -1131,7 +1131,7 @@
     "providerId": "online-nl",
     "provider": "Online.nl",
     "category": "internet-tv",
-    "title": "Glasvezel Internet & TV: 9 maanden voordeel + €200 cashback",
+    "title": "Glasvezel Internet & TV",
     "benefitTypes": [
       "korting",
       "cashback",
@@ -1145,8 +1145,7 @@
     "score": 9.5,
     "icon": "🌐",
     "benefits": [
-      "9 maanden voordeel t.w.v. €207",
-      "€200 cashback",
+      "9 maanden voordeel + €200 cashback",
       "Totaal voordeel €407"
     ],
     "price": "Prijs afhankelijk van adres en pakket",
@@ -1184,10 +1183,10 @@
     "expiresAt": "2026-08-31",
     "sourceType": "Officieel Daisycon-bannermateriaal",
     "sourceId": "14155/1932253",
-    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De banner communiceert 9 maanden voordeel, €200 cashback en €407 totaal voordeel voor Glasvezel Internet & TV.",
+    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De kaart toont de banner volledig over de kaartbreedte; geen vierkante crop. De creative communiceert 9 maanden voordeel, €200 cashback en €407 totaal voordeel.",
     "termsSummary": "9 maanden voordeel, €200 cashback en €407 totaal voordeel. Het beschikbare pakket, de snelheid, techniek en prijs zijn adresafhankelijk. Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl.",
     "lastDataReviewAt": "2026-07-21",
-    "ctaLabel": "Bekijk Internet & TV",
+    "ctaLabel": "Bekijk deal",
     "detailCtaLabel": "Bekijk je Online.nl-aanbod",
     "benefitDisplayType": "total",
     "detailTitle": "Online.nl Internet & TV Dikke Deal",
@@ -1245,7 +1244,7 @@
     "cardImage": "https://static-dscn.net/14155/1932253/?wi=422185&ws=",
     "cardImageAlt": "Online.nl Glasvezel Internet & TV: 9 maanden voordeel en €200 cashback",
     "cardImageSource": "Officieel Daisycon-bannermateriaal 1932253",
-    "cardImageVariant": "landscape",
+    "cardImageVariant": "wide-banner",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
   },
   {
@@ -1253,7 +1252,7 @@
     "providerId": "online-nl",
     "provider": "Online.nl",
     "category": "internet-tv",
-    "title": "Glasvezel Internet Only: 9 maanden voordeel + €100 cashback",
+    "title": "Glasvezel Internet Only",
     "benefitTypes": [
       "korting",
       "cashback",
@@ -1267,8 +1266,7 @@
     "score": 9.2,
     "icon": "📡",
     "benefits": [
-      "9 maanden voordeel t.w.v. €180",
-      "€100 cashback",
+      "9 maanden voordeel + €100 cashback",
       "Totaal voordeel €280"
     ],
     "price": "Prijs afhankelijk van adres en pakket",
@@ -1306,10 +1304,10 @@
     "expiresAt": "2026-08-31",
     "sourceType": "Officieel Daisycon-bannermateriaal",
     "sourceId": "14155/1903748",
-    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De banner communiceert 9 maanden voordeel, €100 cashback en €280 totaal voordeel voor Glasvezel Internet Only.",
+    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De kaart toont de banner volledig over de kaartbreedte; geen vierkante crop. De creative communiceert 9 maanden voordeel, €100 cashback en €280 totaal voordeel.",
     "termsSummary": "9 maanden voordeel, €100 cashback en €280 totaal voordeel. Het beschikbare pakket, de snelheid, techniek en prijs zijn adresafhankelijk. Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl.",
     "lastDataReviewAt": "2026-07-21",
-    "ctaLabel": "Bekijk Internet Only",
+    "ctaLabel": "Bekijk deal",
     "detailCtaLabel": "Bekijk je Online.nl-aanbod",
     "benefitDisplayType": "total",
     "detailTitle": "Online.nl Internet Only Dikke Deal",
@@ -1367,7 +1365,7 @@
     "cardImage": "https://static-dscn.net/14155/1903748/?wi=422185&ws=",
     "cardImageAlt": "Online.nl Glasvezel Internet Only: 9 maanden voordeel en €100 cashback",
     "cardImageSource": "Officieel Daisycon-bannermateriaal 1903748",
-    "cardImageVariant": "landscape",
+    "cardImageVariant": "wide-banner",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
   }
 ]

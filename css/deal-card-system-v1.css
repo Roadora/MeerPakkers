@@ -770,3 +770,113 @@
   }
 }
 
+
+
+/* Official 800×300 affiliate banners — proportional card treatment v30.
+   These creatives are promotional banners, not square product thumbnails.
+   Keep the entire 8:3 creative visible. On normal/wide cards it sits beside
+   the concise copy; on narrow mobile cards it becomes a full-width strip. */
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner{
+  min-height:250px !important;
+  padding:16px !important;
+}
+
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-normal-deal-card-content{
+  padding-right:44px !important;
+}
+
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-top-row{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(190px,42%) !important;
+  align-items:start !important;
+  gap:14px !important;
+}
+
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-copy{
+  min-width:0 !important;
+  max-width:none !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--wide-banner{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:8 / 3 !important;
+  margin:2px 0 0 !important;
+  padding:0 !important;
+  transform:none !important;
+  overflow:hidden !important;
+  border:0 !important;
+  border-radius:14px !important;
+  background:#fff !important;
+  box-shadow:none !important;
+}
+
+.mp-normal-deal-card .mp-card-product-image--wide-banner img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  border-radius:14px !important;
+}
+
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-benefits-pill{
+  width:100% !important;
+  max-width:100% !important;
+  min-height:0 !important;
+  margin:12px 0 64px !important;
+  padding:12px 14px !important;
+  gap:5px !important;
+}
+
+.mp-normal-deal-card.mp-normal-deal-card--with-wide-banner > .mp-normal-deal-card-cta{
+  min-width:118px !important;
+  max-width:132px !important;
+  padding:0 16px !important;
+}
+
+@media (max-width:760px){
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-top-row{
+    grid-template-columns:minmax(0,1fr) minmax(150px,40%) !important;
+    gap:10px !important;
+  }
+}
+
+@media (max-width:520px){
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner{
+    min-height:0 !important;
+    padding:14px !important;
+  }
+
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-normal-deal-card-content{
+    padding-right:0 !important;
+  }
+
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-top-row{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    gap:10px !important;
+  }
+
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-copy{
+    width:100% !important;
+    padding-right:42px !important;
+    box-sizing:border-box !important;
+  }
+
+  .mp-normal-deal-card .mp-card-product-image--wide-banner{
+    width:100% !important;
+    margin:0 !important;
+    border-radius:13px !important;
+  }
+
+  .mp-normal-deal-card .mp-card-product-image--wide-banner img{
+    border-radius:13px !important;
+  }
+
+  .mp-normal-deal-card.mp-normal-deal-card--with-wide-banner .mp-card-benefits-pill{
+    margin-bottom:62px !important;
+  }
+}
