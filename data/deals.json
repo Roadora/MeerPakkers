@@ -1131,122 +1131,120 @@
     "providerId": "online-nl",
     "provider": "Online.nl",
     "category": "internet-tv",
-    "title": "Internet & TV: 9 maanden korting + €150 cashback",
+    "title": "Glasvezel Internet & TV: 9 maanden voordeel + €200 cashback",
     "benefitTypes": [
       "korting",
       "cashback",
       "gratis-extra"
     ],
-    "benefitValue": 378,
-    "totalBenefitValue": 378,
-    "totalBenefitLabel": "Totaal voordeel t.w.v. €378",
+    "benefitValue": 407,
+    "totalBenefitValue": 407,
+    "totalBenefitLabel": "Totaal voordeel €407",
     "giftType": "",
     "contract": "Volgens actuele actievoorwaarden",
     "score": 9.5,
     "icon": "🌐",
     "benefits": [
-      "9 maanden korting t.w.v. €198",
-      "€150 cashback op je rekening",
-      "Geen aansluitkosten t.w.v. €30"
+      "9 maanden voordeel t.w.v. €207",
+      "€200 cashback",
+      "Totaal voordeel €407"
     ],
     "price": "Prijs afhankelijk van adres en pakket",
     "featured": true,
     "dealType": "Tijdelijke Dikke Deal",
     "giftName": "",
     "giftValue": 0,
-    "cashbackValue": 150,
-    "discountValue": 198,
-    "extraValue": 30,
+    "cashbackValue": 200,
+    "discountValue": 207,
+    "extraValue": 0,
     "monthlyPrice": 0,
     "originalMonthlyPrice": 0,
     "contractLengthMonths": null,
-    "affiliateUrl": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "affiliateUrl": "https://rkn3.net/c/?si=14155&li=1932253&wi=422185&ws=",
     "benefitBreakdown": {
       "gift": 0,
-      "cashback": 150,
-      "discount": 198,
-      "extra": 30
+      "cashback": 200,
+      "discount": 207,
+      "extra": 0
     },
     "seoSlug": "online-nl-internet-tv-dikke-deal",
     "updatedAt": "2026-07-21",
     "meerPakScore": 95,
-    "url": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "url": "https://rkn3.net/c/?si=14155&li=1932253&wi=422185&ws=",
     "network": "daisycon",
     "campaignId": "14155",
-    "trackingId": "feed-runtime",
+    "trackingId": "1932253",
     "merchantId": "online-nl",
-    "deepLink": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-tv",
+    "deepLink": "https://rkn3.net/c/?si=14155&li=1932253&wi=422185&ws=",
     "affiliateStatus": "approved",
     "lastCheckedAt": "2026-07-21",
     "dealStatus": "active",
     "publicationStatus": "published",
     "startsAt": null,
     "expiresAt": "2026-08-31",
-    "sourceType": "Daisycon-productfeed en officiële Online.nl-actiepagina",
-    "sourceId": "14155/internet-tv",
-    "adminNotes": "Online.nl Dikke Deal voor Internet & TV. Publieke voordeelbedragen zijn gecontroleerd op de officiële actiepagina. De CTA loopt via een server-side feedresolver die de actuele Daisycon-productlink met media-ID 422185 selecteert. Als de feed tijdelijk niet bereikbaar is, wordt de officiële Online.nl-actiepagina als noodbestemming gebruikt.",
-    "termsSummary": "9 maanden korting t.w.v. €198, €150 cashback en geen aansluitkosten t.w.v. €30. De cashback geldt alleen voor internet via het KPN-netwerk en wordt na twee succesvolle afschrijvingen op de rekening gestort. Actievoorwaarden geldig t/m 31 augustus 2026. Beschikbaarheid en prijs zijn adresafhankelijk.",
+    "sourceType": "Officieel Daisycon-bannermateriaal",
+    "sourceId": "14155/1932253",
+    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De banner communiceert 9 maanden voordeel, €200 cashback en €407 totaal voordeel voor Glasvezel Internet & TV.",
+    "termsSummary": "9 maanden voordeel, €200 cashback en €407 totaal voordeel. Het beschikbare pakket, de snelheid, techniek en prijs zijn adresafhankelijk. Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl.",
     "lastDataReviewAt": "2026-07-21",
     "ctaLabel": "Bekijk Internet & TV",
     "detailCtaLabel": "Bekijk je Online.nl-aanbod",
     "benefitDisplayType": "total",
     "detailTitle": "Online.nl Internet & TV Dikke Deal",
-    "detailIntro": "Combineer bij Online.nl Internet & TV negen maanden korting met €150 cashback en gratis aansluiten. De totale gecommuniceerde voordeelwaarde is €378. Het beschikbare pakket en de prijs worden op basis van je adres bepaald.",
+    "detailIntro": "Kies Glasvezel Internet & TV met negen maanden voordeel en €200 cashback. De officiële Daisycon-banner communiceert een totaal voordeel van €407. Beschikbaarheid en prijs worden op basis van je adres bepaald.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "9 maanden korting t.w.v. €198",
-        "sub": "De exacte maandprijs hangt af van je adres en pakket"
+        "title": "9 maanden voordeel",
+        "sub": "Voordeelwaarde €207 volgens het officiële bannermateriaal"
       },
       {
         "type": "cashback",
-        "title": "€150 cashback",
-        "sub": "Na twee succesvolle afschrijvingen; alleen via het KPN-netwerk"
+        "title": "€200 cashback",
+        "sub": "Onder de actuele actievoorwaarden van Online.nl"
       },
       {
         "type": "extra",
-        "title": "Geen aansluitkosten t.w.v. €30",
-        "sub": "Binnen de actuele Dikke Deal-actie"
+        "title": "€407 totaal voordeel",
+        "sub": "Zoals gecommuniceerd in de officiële Daisycon-creative"
       }
     ],
-    "detailSummaryValue": "€378 totaal voordeel",
-    "summaryLine": "9 maanden korting, cashback en gratis aansluiten",
-    "detailIntroTitle": "Online.nl Internet & TV",
-    "detailIntroSubtitle": "Dikke Deal · geldig t/m 31 augustus 2026",
+    "detailSummaryValue": "€407 totaal voordeel",
+    "summaryLine": "9 maanden voordeel en €200 cashback",
+    "detailIntroTitle": "Online.nl Glasvezel Internet & TV",
+    "detailIntroSubtitle": "Dikke Deal · officieel Daisycon-materiaal",
     "detailIntroCards": [
       {
-        "title": "9 maanden korting",
-        "text": "Voordeelwaarde €198"
+        "title": "9 maanden voordeel",
+        "text": "Voordeelwaarde €207"
       },
       {
-        "title": "€150 cashback",
-        "text": "Na twee succesvolle afschrijvingen"
+        "title": "€200 cashback",
+        "text": "Volgens de actuele actievoorwaarden"
       },
       {
-        "title": "Gratis aansluiten",
-        "text": "Geen aansluitkosten t.w.v. €30"
+        "title": "€407 totaal voordeel",
+        "text": "Officieel gecommuniceerd"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Deze actie combineert drie voordeelvormen: tijdelijke korting, cashback en het vervallen van de aansluitkosten. Daardoor zie je naast de maandprijs ook het totale extra voordeel.",
+    "detailWhyText": "Deze actie combineert negen maanden voordeel met €200 cashback. De officiële creative maakt het totale voordeel van €407 direct zichtbaar.",
     "detailConditionItems": [
-      "Internet & TV bij Online.nl",
-      "Actievoorwaarden geldig t/m 31 augustus 2026",
-      "Cashback alleen bij internet via het KPN-netwerk",
-      "Cashback wordt uitgekeerd na twee succesvolle afschrijvingen",
+      "Glasvezel Internet & TV bij Online.nl",
+      "9 maanden voordeel en €200 cashback volgens het officiële Daisycon-materiaal",
       "Pakket, snelheid, techniek en prijs zijn afhankelijk van het adres",
       "Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl"
     ],
     "contractPriceLabel": "Prijs afhankelijk van adres en pakket",
     "providerDescriptionTitle": "Over Online.nl",
     "providerDescription": "Online.nl biedt internet en Internet & TV via beschikbare DSL- en glasvezelnetwerken. Het beschikbare pakket, de techniek, snelheid en prijs zijn afhankelijk van het adres. Controleer daarom altijd het persoonlijke aanbod en de actuele actievoorwaarden voordat je afsluit.",
-    "detailConditionNote": "De cashback moet volgens de instructies van Online.nl worden aangevraagd. Controleer na bestelling de actuele claimstappen en termijnen.",
-    "officialSourceUrl": "https://www.online.nl/dikkedeal/dsl/",
+    "detailConditionNote": "De exacte cashbackvoorwaarden en eventuele claimstappen staan in het persoonlijke aanbod en de actuele voorwaarden van Online.nl.",
+    "officialSourceUrl": "https://rkn3.net/c/?si=14155&li=1932253&wi=422185&ws=",
     "sourceVerifiedAt": "2026-07-21",
-    "sourceVerifiedNotes": "Officiële actiepagina gecontroleerd: 9 maanden korting t.w.v. €198, €150 cashback en geen aansluitkosten t.w.v. €30. Cashback alleen via het KPN-netwerk en uitbetaling na twee succesvolle afschrijvingen.",
-    "cardImage": "/assets/provider-products/online-internet-tv.svg",
-    "cardImageAlt": "Online.nl Internet & TV Dikke Deal",
-    "cardImageSource": "MeerPakkers neutrale productvisual — geen officieel providerlogo",
+    "sourceVerifiedNotes": "Officiële Daisycon-creative 1932253 gecontroleerd: 9 maanden voordeel, €200 cashback en totaal voordeel €407.",
+    "cardImage": "https://static-dscn.net/14155/1932253/?wi=422185&ws=",
+    "cardImageAlt": "Online.nl Glasvezel Internet & TV: 9 maanden voordeel en €200 cashback",
+    "cardImageSource": "Officieel Daisycon-bannermateriaal 1932253",
     "cardImageVariant": "landscape",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
   },
@@ -1255,122 +1253,120 @@
     "providerId": "online-nl",
     "provider": "Online.nl",
     "category": "internet-tv",
-    "title": "Internet Only: 9 maanden korting + €110 cashback",
+    "title": "Glasvezel Internet Only: 9 maanden voordeel + €100 cashback",
     "benefitTypes": [
       "korting",
       "cashback",
       "gratis-extra"
     ],
-    "benefitValue": 320,
-    "totalBenefitValue": 320,
-    "totalBenefitLabel": "Totaal voordeel t.w.v. €320",
+    "benefitValue": 280,
+    "totalBenefitValue": 280,
+    "totalBenefitLabel": "Totaal voordeel €280",
     "giftType": "",
     "contract": "Volgens actuele actievoorwaarden",
     "score": 9.2,
     "icon": "📡",
     "benefits": [
-      "9 maanden korting t.w.v. €180",
-      "€110 cashback op je rekening",
-      "Geen aansluitkosten t.w.v. €30"
+      "9 maanden voordeel t.w.v. €180",
+      "€100 cashback",
+      "Totaal voordeel €280"
     ],
     "price": "Prijs afhankelijk van adres en pakket",
     "featured": false,
     "dealType": "Tijdelijke Dikke Deal",
     "giftName": "",
     "giftValue": 0,
-    "cashbackValue": 110,
+    "cashbackValue": 100,
     "discountValue": 180,
-    "extraValue": 30,
+    "extraValue": 0,
     "monthlyPrice": 0,
     "originalMonthlyPrice": 0,
     "contractLengthMonths": null,
-    "affiliateUrl": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "affiliateUrl": "https://rkn3.net/c/?si=14155&li=1903748&wi=422185&ws=",
     "benefitBreakdown": {
       "gift": 0,
-      "cashback": 110,
+      "cashback": 100,
       "discount": 180,
-      "extra": 30
+      "extra": 0
     },
     "seoSlug": "online-nl-internet-only-dikke-deal",
     "updatedAt": "2026-07-21",
     "meerPakScore": 92,
-    "url": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "url": "https://rkn3.net/c/?si=14155&li=1903748&wi=422185&ws=",
     "network": "daisycon",
     "campaignId": "14155",
-    "trackingId": "feed-runtime",
+    "trackingId": "1903748",
     "merchantId": "online-nl",
-    "deepLink": "https://www.meerpakkers.nl/api/online-redirect?deal=internet-only",
+    "deepLink": "https://rkn3.net/c/?si=14155&li=1903748&wi=422185&ws=",
     "affiliateStatus": "approved",
     "lastCheckedAt": "2026-07-21",
     "dealStatus": "active",
     "publicationStatus": "published",
     "startsAt": null,
     "expiresAt": "2026-08-31",
-    "sourceType": "Daisycon-productfeed en officiële Online.nl-actiepagina",
-    "sourceId": "14155/internet-only",
-    "adminNotes": "Online.nl Dikke Deal voor Internet Only. Publieke voordeelbedragen zijn gecontroleerd op de officiële actiepagina. De CTA loopt via een server-side feedresolver die de actuele Daisycon-productlink met media-ID 422185 selecteert. Als de feed tijdelijk niet bereikbaar is, wordt de officiële Online.nl-actiepagina als noodbestemming gebruikt.",
-    "termsSummary": "9 maanden korting t.w.v. €180, €110 cashback en geen aansluitkosten t.w.v. €30. De cashback geldt alleen voor internet via het KPN-netwerk en wordt na twee succesvolle afschrijvingen op de rekening gestort. Actievoorwaarden geldig t/m 31 augustus 2026. Beschikbaarheid en prijs zijn adresafhankelijk.",
+    "sourceType": "Officieel Daisycon-bannermateriaal",
+    "sourceId": "14155/1903748",
+    "adminNotes": "Officiële Daisycon 800×300-creative en bijbehorende trackinglink gebruikt. De banner communiceert 9 maanden voordeel, €100 cashback en €280 totaal voordeel voor Glasvezel Internet Only.",
+    "termsSummary": "9 maanden voordeel, €100 cashback en €280 totaal voordeel. Het beschikbare pakket, de snelheid, techniek en prijs zijn adresafhankelijk. Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl.",
     "lastDataReviewAt": "2026-07-21",
     "ctaLabel": "Bekijk Internet Only",
     "detailCtaLabel": "Bekijk je Online.nl-aanbod",
     "benefitDisplayType": "total",
     "detailTitle": "Online.nl Internet Only Dikke Deal",
-    "detailIntro": "Kies alleen internet en combineer negen maanden korting met €110 cashback en gratis aansluiten. De totale gecommuniceerde voordeelwaarde is €320. Het beschikbare pakket en de prijs worden op basis van je adres bepaald.",
+    "detailIntro": "Kies Glasvezel Internet Only met negen maanden voordeel en €100 cashback. De officiële Daisycon-banner communiceert een totaal voordeel van €280. Beschikbaarheid en prijs worden op basis van je adres bepaald.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "9 maanden korting t.w.v. €180",
-        "sub": "De exacte maandprijs hangt af van je adres en pakket"
+        "title": "9 maanden voordeel",
+        "sub": "Voordeelwaarde €180 volgens het officiële bannermateriaal"
       },
       {
         "type": "cashback",
-        "title": "€110 cashback",
-        "sub": "Na twee succesvolle afschrijvingen; alleen via het KPN-netwerk"
+        "title": "€100 cashback",
+        "sub": "Onder de actuele actievoorwaarden van Online.nl"
       },
       {
         "type": "extra",
-        "title": "Geen aansluitkosten t.w.v. €30",
-        "sub": "Binnen de actuele Dikke Deal-actie"
+        "title": "€280 totaal voordeel",
+        "sub": "Zoals gecommuniceerd in de officiële Daisycon-creative"
       }
     ],
-    "detailSummaryValue": "€320 totaal voordeel",
-    "summaryLine": "Alleen internet met korting, cashback en gratis aansluiten",
-    "detailIntroTitle": "Online.nl Internet Only",
-    "detailIntroSubtitle": "Dikke Deal · geldig t/m 31 augustus 2026",
+    "detailSummaryValue": "€280 totaal voordeel",
+    "summaryLine": "9 maanden voordeel en €100 cashback",
+    "detailIntroTitle": "Online.nl Glasvezel Internet Only",
+    "detailIntroSubtitle": "Dikke Deal · officieel Daisycon-materiaal",
     "detailIntroCards": [
       {
-        "title": "9 maanden korting",
+        "title": "9 maanden voordeel",
         "text": "Voordeelwaarde €180"
       },
       {
-        "title": "€110 cashback",
-        "text": "Na twee succesvolle afschrijvingen"
+        "title": "€100 cashback",
+        "text": "Volgens de actuele actievoorwaarden"
       },
       {
-        "title": "Gratis aansluiten",
-        "text": "Geen aansluitkosten t.w.v. €30"
+        "title": "€280 totaal voordeel",
+        "text": "Officieel gecommuniceerd"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Ook zonder TV krijg je drie verschillende voordelen: tijdelijke korting, cashback en geen aansluitkosten. Zo zie je het volledige extra voordeel van het Internet Only-pakket.",
+    "detailWhyText": "Ook zonder TV combineert deze actie negen maanden voordeel met €100 cashback. De officiële creative communiceert €280 totaal voordeel.",
     "detailConditionItems": [
-      "Internet Only bij Online.nl",
-      "Actievoorwaarden geldig t/m 31 augustus 2026",
-      "Cashback alleen bij internet via het KPN-netwerk",
-      "Cashback wordt uitgekeerd na twee succesvolle afschrijvingen",
+      "Glasvezel Internet Only bij Online.nl",
+      "9 maanden voordeel en €100 cashback volgens het officiële Daisycon-materiaal",
       "Pakket, snelheid, techniek en prijs zijn afhankelijk van het adres",
       "Controleer het persoonlijke eindaanbod en de actuele voorwaarden bij Online.nl"
     ],
     "contractPriceLabel": "Prijs afhankelijk van adres en pakket",
     "providerDescriptionTitle": "Over Online.nl",
     "providerDescription": "Online.nl biedt internet en Internet & TV via beschikbare DSL- en glasvezelnetwerken. Het beschikbare pakket, de techniek, snelheid en prijs zijn afhankelijk van het adres. Controleer daarom altijd het persoonlijke aanbod en de actuele actievoorwaarden voordat je afsluit.",
-    "detailConditionNote": "De cashback moet volgens de instructies van Online.nl worden aangevraagd. Controleer na bestelling de actuele claimstappen en termijnen.",
-    "officialSourceUrl": "https://www.online.nl/dikkedeal/internet/dsl/",
+    "detailConditionNote": "De exacte cashbackvoorwaarden en eventuele claimstappen staan in het persoonlijke aanbod en de actuele voorwaarden van Online.nl.",
+    "officialSourceUrl": "https://rkn3.net/c/?si=14155&li=1903748&wi=422185&ws=",
     "sourceVerifiedAt": "2026-07-21",
-    "sourceVerifiedNotes": "Officiële actiepagina gecontroleerd: 9 maanden korting t.w.v. €180, €110 cashback en geen aansluitkosten t.w.v. €30. Cashback alleen via het KPN-netwerk en uitbetaling na twee succesvolle afschrijvingen.",
-    "cardImage": "/assets/provider-products/online-internet-only.svg",
-    "cardImageAlt": "Online.nl Internet Only Dikke Deal",
-    "cardImageSource": "MeerPakkers neutrale productvisual — geen officieel providerlogo",
+    "sourceVerifiedNotes": "Officiële Daisycon-creative 1903748 gecontroleerd: 9 maanden voordeel, €100 cashback en totaal voordeel €280.",
+    "cardImage": "https://static-dscn.net/14155/1903748/?wi=422185&ws=",
+    "cardImageAlt": "Online.nl Glasvezel Internet Only: 9 maanden voordeel en €100 cashback",
+    "cardImageSource": "Officieel Daisycon-bannermateriaal 1903748",
     "cardImageVariant": "landscape",
     "sourceFeedUrl": "https://daisycon.io/datafeed/?media_id=422185&standard_id=22&language_code=nl&locale_id=1&type=JSON&program_id=14155&html_transform=none&rawdata=false&encoding=utf8&general=false"
   }
