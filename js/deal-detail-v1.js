@@ -522,10 +522,12 @@
 
     var checks = [];
     if(isPeriodBenefitDetail(d)){
-      // Period actions already express their complete discount in totalBenefitLabel.
-      // Do not repeat the same amount once as “korting” and again as “Meepakker”.
-      checks.push(d.totalBenefitLabel || "Tijdelijk voordeel");
-      return checks.map(function(c){ return `<li>${escapeHtml(c)}</li>`; }).join("");
+      // Allow source-specific, non-duplicating detail checks for period actions.
+      // Existing period deals keep their previous single summary line as fallback.
+      var periodChecks = Array.isArray(d.detailCheckItems) && d.detailCheckItems.length
+        ? d.detailCheckItems
+        : [d.totalBenefitLabel || "Tijdelijk voordeel"];
+      return periodChecks.slice(0,5).map(function(c){ return `<li>${escapeHtml(c)}</li>`; }).join("");
     }
 
     if(d.giftName || d.giftType || d.giftValue) checks.push((d.giftName || d.giftType || "Cadeau") + (d.giftValue ? " t.w.v. " + euro(d.giftValue) : ""));
@@ -569,9 +571,10 @@
     var isSquare = variant === 'square' || variant === 'square-large';
     var isLargeSquare = variant === 'square-large';
     var isWideBanner = variant === 'wide-banner';
-    var cacheSafeSrc = String((d && d.network) || '').toLowerCase() === 'awin'
+    var isRemoteImage = /^https?:\/\//i.test(src);
+    var cacheSafeSrc = isRemoteImage
       ? src
-      : src + (src.indexOf('?') === -1 ? '?v=budget-tv-v1' : '&v=budget-tv-v1');
+      : src + (src.indexOf('?') === -1 ? '?v=deal-image-v1' : '&v=deal-image-v1');
     var variantClass = isWideBanner ? ' mp-offer-overview__product-image--wide-banner' : (isLandscape ? ' mp-offer-overview__product-image--landscape' : (isLargeSquare ? ' mp-offer-overview__product-image--square-large' : (isSquare ? ' mp-offer-overview__product-image--square' : '')));
     var imageWidth = isWideBanner ? '800' : (isLandscape ? '300' : (isLargeSquare ? '380' : (isSquare ? '300' : '260')));
     var imageHeight = isWideBanner ? '300' : (isLandscape ? '250' : (isLargeSquare ? '380' : (isSquare ? '300' : '421')));
@@ -608,7 +611,7 @@
     }).join("");
 
     return `
-      <article class="mp-offer-overview mp-offer-overview--${surface}">
+      <article class="mp-offer-overview mp-offer-overview--${surface}${productImageIsWideBanner ? ' mp-offer-overview--wide-banner' : ''}">
         <div class="mp-offer-overview__kicker">Aanbiedingsoverzicht</div>
         <div class="mp-offer-overview__title-row${productImage ? ' mp-offer-overview__title-row--with-product-image' : ''}${productImageIsWideBanner ? ' mp-offer-overview__title-row--with-product-image--wide-banner' : ''}${productImageIsLandscape ? ' mp-offer-overview__title-row--with-product-image--landscape' : ''}${productImageIsSquare ? ' mp-offer-overview__title-row--with-product-image--square' : ''}${productImageIsLargeSquare ? ' mp-offer-overview__title-row--with-product-image--square-large' : ''}">
           <${titleTag} class="mp-offer-overview__title">${title}</${titleTag}>

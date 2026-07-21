@@ -3127,3 +3127,40 @@ body.mp-deal-detail-page .mp-v23-master-secondary{
     border-radius:16px !important;
   }
 }
+
+/* Online.nl official wide-banner detail polish v31.
+   The 800×300 creative is the hero visual; no generic icon tiles or oversized headline. */
+@media (min-width:1024px){
+  .mp-v23-left--master-intro > .mp-offer-overview--desktop.mp-offer-overview--wide-banner{
+    min-height:0 !important;
+    padding:34px !important;
+  }
+
+  .mp-offer-overview--desktop .mp-offer-overview__title-row--with-product-image--wide-banner .mp-offer-overview__title{
+    max-width:900px !important;
+    margin-top:18px !important;
+    font-size:clamp(38px,4vw,56px) !important;
+    line-height:1.02 !important;
+  }
+
+  .mp-offer-overview--desktop .mp-offer-overview__title-row--with-product-image--wide-banner .mp-offer-overview__product-image--wide-banner{
+    max-width:800px !important;
+    margin-top:2px !important;
+  }
+}
+
+@media (max-width:1023px){
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__title-row--with-product-image--wide-banner{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    gap:12px !important;
+  }
+
+  body.mp-deal-detail-page .mp-offer-overview--mobile .mp-offer-overview__product-image--wide-banner{
+    width:100% !important;
+    height:auto !important;
+    aspect-ratio:8 / 3 !important;
+    margin:0 !important;
+  }
+}
