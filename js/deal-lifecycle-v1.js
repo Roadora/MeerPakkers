@@ -11,6 +11,43 @@
 (function(){
   "use strict";
 
+  // Scheduled-campaign transport. Public pages keep requesting the familiar
+  // static JSON paths; this small guard transparently prefers the server-side
+  // endpoints, which can keep embargoed campaigns private until their start date.
+  // If the API is unavailable, MeerPakkers falls back to the existing static data.
+  (function installScheduledDataFetchGuard(){
+    if(!window.fetch || window.__mpScheduledFetchGuardInstalled) return;
+    window.__mpScheduledFetchGuardInstalled = true;
+    var nativeFetch = window.fetch.bind(window);
+
+    function requestUrl(input){
+      if(typeof input === "string") return input;
+      if(input && typeof input.url === "string") return input.url;
+      return "";
+    }
+
+    function scheduledApiFor(url){
+      var cleanUrl = String(url || "").split("?")[0];
+      if(/(?:^|\/)data\/deals\.json$/.test(cleanUrl)) return "/api/deals";
+      if(/(?:^|\/)data\/affiliate-links\.json$/.test(cleanUrl)) return "/api/affiliate-links";
+      return "";
+    }
+
+    window.fetch = function(input, init){
+      var originalUrl = requestUrl(input);
+      var apiUrl = scheduledApiFor(originalUrl);
+      if(!apiUrl) return nativeFetch(input, init);
+
+      var apiInit = Object.assign({}, init || {}, {cache: "no-store"});
+      return nativeFetch(apiUrl, apiInit).then(function(response){
+        if(response && response.ok) return response;
+        return nativeFetch(input, init);
+      }).catch(function(){
+        return nativeFetch(input, init);
+      });
+    };
+  })();
+
   var LIVE_AFFILIATE_STATUSES = {
     approved: true,
     live: true
