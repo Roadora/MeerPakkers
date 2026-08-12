@@ -614,7 +614,7 @@
       "1 jaar: 6 maanden €26 p/m"
     ],
     "price": "€25 of €26 p/m tijdens de actieperiode",
-    "featured": true,
+    "featured": false,
     "dealType": "Tijdelijke actie",
     "giftName": "1 jaar ESPN Compleet",
     "giftValue": 0,
@@ -640,9 +640,9 @@
     "trackingId": "4834442",
     "merchantId": "odido",
     "deepLink": "https://www.awin1.com/cread.php?s=4834442&v=8400&q=533064&r=2947269",
-    "affiliateStatus": "approved",
-    "lastCheckedAt": "2026-07-17",
-    "dealStatus": "active",
+    "affiliateStatus": "expired",
+    "lastCheckedAt": "2026-08-12",
+    "dealStatus": "expired",
     "publicationStatus": "published",
     "startsAt": "2026-07-20",
     "expiresAt": "2026-08-09",
@@ -650,7 +650,7 @@
     "sourceId": "4834442",
     "adminNotes": "Odido Thuis Afteller-campagne. Automatisch live vanaf 20 juli 2026 en automatisch uit actieve lijsten na 9 augustus 2026. Officiële Awin-creative en publisher-ID 2947269 ongewijzigd gebruikt.",
     "termsSummary": "Actieperiode 20 juli t/m 9 augustus 2026. Bij Glasvezel + TV is ESPN Compleet 1 jaar gratis, bij zowel een 1- als 2-jarig contract. Bij 2 jaar betaal je de eerste 12 maanden €25 p/m; bij 1 jaar betaal je de eerste 6 maanden €26 p/m. Beschikbaarheid en het persoonlijke aanbod kunnen afhangen van het adres en de gekozen samenstelling. Controleer altijd de actuele voorwaarden bij Odido.",
-    "lastDataReviewAt": "2026-07-17",
+    "lastDataReviewAt": "2026-08-12",
     "ctaLabel": "Bekijk actie",
     "detailCtaLabel": "Bekijk actie bij Odido",
     "benefitDisplayType": "choice",
@@ -1543,5 +1543,135 @@
         }
       ]
     }
+  },
+  {
+    "id": "odido-prijzenslag-2026",
+    "providerId": "odido",
+    "provider": "Odido",
+    "category": "internet-tv",
+    "title": "Prijzenslag: Odido Thuis",
+    "benefitTypes": [
+      "korting"
+    ],
+    "benefitValue": 0,
+    "totalBenefitValue": 0,
+    "totalBenefitLabel": "Tijdelijke actieprijzen",
+    "giftType": "",
+    "contract": "1 of 2 jaar",
+    "score": 9.7,
+    "icon": "🌐",
+    "benefits": [
+      "Nationaal: 2 jaar · 12 maanden €20 p/m",
+      "Nationaal: 1 jaar · 6 maanden €21 p/m",
+      "Open Dutch Fiber: vanaf €15 p/m tijdens de actieperiode"
+    ],
+    "price": "Vanaf €15 p/m tijdens de actieperiode, afhankelijk van netwerk, adres, contract en samenstelling",
+    "featured": true,
+    "dealType": "Prijzenslag",
+    "giftName": "",
+    "giftValue": 0,
+    "cashbackValue": 0,
+    "discountValue": 0,
+    "extraValue": 0,
+    "monthlyPrice": 0,
+    "originalMonthlyPrice": 0,
+    "contractLengthMonths": null,
+    "affiliateUrl": "https://www.awin1.com/cread.php?s=4858094&v=8400&q=578868&r=2947269",
+    "benefitBreakdown": {
+      "gift": 0,
+      "cashback": 0,
+      "discount": 0,
+      "extra": 0
+    },
+    "seoSlug": "odido-prijzenslag-2026",
+    "updatedAt": "2026-08-12",
+    "meerPakScore": 97,
+    "url": "https://www.awin1.com/cread.php?s=4858094&v=8400&q=578868&r=2947269",
+    "network": "awin",
+    "campaignId": "8400",
+    "trackingId": "4858094",
+    "merchantId": "odido",
+    "deepLink": "https://www.awin1.com/cread.php?s=4858094&v=8400&q=578868&r=2947269",
+    "affiliateStatus": "approved",
+    "lastCheckedAt": "2026-08-12",
+    "dealStatus": "active",
+    "publicationStatus": "published",
+    "startsAt": "2026-08-10",
+    "expiresAt": "2026-09-27",
+    "sourceType": "Officiële Awin-campagnemail en officiële Awin-creative",
+    "sourceId": "4858094",
+    "adminNotes": "Odido Thuis Prijzenslag. Campagne is sinds 10 augustus 2026 publiek en loopt t/m 27 september 2026. Officiële Awin-creative en publisher-ID 2947269 gebruikt.",
+    "termsSummary": "Campagneperiode 10 augustus t/m 27 september 2026. Nationaal gebied: Glasvezel/Internet + TV bij 2 jaar de eerste 12 maanden €20 p/m en bij 1 jaar de eerste 6 maanden €21 p/m. Open Dutch Fiber: bij 2 jaar de eerste 12 maanden €15 p/m en bij 1 jaar de eerste 6 maanden €16 p/m. Welk netwerk en persoonlijk aanbod beschikbaar zijn hangt af van het adres en de gekozen samenstelling.",
+    "lastDataReviewAt": "2026-08-12",
+    "ctaLabel": "Bekijk Prijzenslag",
+    "detailCtaLabel": "Bekijk je Odido-aanbod",
+    "benefitDisplayType": "period",
+    "detailTitle": "Odido Thuis Prijzenslag",
+    "detailIntro": "Van 10 augustus t/m 27 september 2026 loopt Odido Thuis Prijzenslag. In het nationale gebied gelden tijdelijke maandprijzen voor Glasvezel/Internet + TV. Via Open Dutch Fiber gelden aparte tijdelijke prijzen. Je adres, netwerk, contractduur en gekozen samenstelling bepalen welk aanbod je krijgt.",
+    "detailBenefits": [
+      {
+        "type": "discount",
+        "title": "Nationaal · 2 jaar",
+        "sub": "Glasvezel/Internet + TV: eerste 12 maanden €20 p/m"
+      },
+      {
+        "type": "discount",
+        "title": "Nationaal · 1 jaar",
+        "sub": "Glasvezel/Internet + TV: eerste 6 maanden €21 p/m"
+      },
+      {
+        "type": "discount",
+        "title": "Open Dutch Fiber",
+        "sub": "2 jaar: eerste 12 maanden €15 p/m · 1 jaar: eerste 6 maanden €16 p/m"
+      }
+    ],
+    "detailSummaryValue": "Tijdelijke maandprijs vanaf €15 p/m",
+    "summaryLine": "Prijzenslag met tijdelijke maandprijzen",
+    "detailIntroTitle": "Odido Thuis Prijzenslag",
+    "detailIntroSubtitle": "10 augustus t/m 27 september 2026",
+    "detailIntroCards": [
+      {
+        "title": "Nationaal · 2 jaar",
+        "text": "Glasvezel/Internet + TV · 12 maanden €20 p/m"
+      },
+      {
+        "title": "Nationaal · 1 jaar",
+        "text": "Glasvezel/Internet + TV · 6 maanden €21 p/m"
+      },
+      {
+        "title": "Open Dutch Fiber",
+        "text": "2 jaar: 12 maanden €15 p/m · 1 jaar: 6 maanden €16 p/m"
+      }
+    ],
+    "detailWhyTitle": "Welke prijs geldt voor jou?",
+    "detailWhyText": "De Prijzenslag heeft verschillende tijdelijke maandprijzen voor het nationale gebied en Open Dutch Fiber. Je adres, netwerk en gekozen contractduur bepalen welke variant beschikbaar is.",
+    "detailConditionItems": [
+      "Campagneperiode: 10 augustus t/m 27 september 2026",
+      "Nationaal gebied: 2 jaar · eerste 12 maanden €20 p/m bij Glasvezel/Internet + TV",
+      "Nationaal gebied: 1 jaar · eerste 6 maanden €21 p/m bij Glasvezel/Internet + TV",
+      "Open Dutch Fiber: 2 jaar · eerste 12 maanden €15 p/m",
+      "Open Dutch Fiber: 1 jaar · eerste 6 maanden €16 p/m",
+      "Controleer netwerk, beschikbaarheid, pakketinhoud en persoonlijk eindaanbod bij Odido"
+    ],
+    "contractPriceLabel": "Vanaf €15 p/m tijdens de actieperiode",
+    "providerDescriptionTitle": "Over Odido Thuis",
+    "providerDescription": "Odido biedt internet, glasvezel en TV voor consumenten in Nederland. De beschikbare techniek, snelheid, pakketprijs en actie kunnen per adres en netwerk verschillen. Controleer daarom altijd het persoonlijke eindaanbod voordat je afsluit.",
+    "detailConditionNote": "Voor de officiële 2-jarige Glasvezel + TV-creative van €20 p/m geldt volgens het bannermateriaal na de eerste 12 maanden minimaal €51,50 p/m bij 100 Mbit/s, afhankelijk van het type netwerk op je adres. TV via een Mediabox kost minimaal €2,50 p/m extra. De persoonlijke bestelpagina en actuele voorwaarden zijn leidend.",
+    "officialSourceUrl": "https://www.awin1.com/cread.php?s=4858094&v=8400&q=578868&r=2947269",
+    "sourceVerifiedAt": "2026-08-12",
+    "sourceVerifiedNotes": "Officiële Awin-campagnemail gecontroleerd: start 10 augustus en einde 27 september 2026. Officiële Awin-creative 4858094 bevestigt de landelijke 2-jarige Glasvezel + TV-variant van €20 p/m tijdens de eerste 12 maanden.",
+    "officialBannerUrl": "https://www.awin1.com/cshow.php?s=4858094&v=8400&q=578868&r=2947269",
+    "officialBannerClickUrl": "https://www.awin1.com/cread.php?s=4858094&v=8400&q=578868&r=2947269",
+    "officialBannerLabel": "Officiële Odido Prijzenslag-creative",
+    "officialBannerSize": "Awin creative 4858094",
+    "cardImage": "https://www.awin1.com/cshow.php?s=4858094&v=8400&q=578868&r=2947269",
+    "cardImageAlt": "Officiële Odido Prijzenslag-banner: Glasvezel + TV, eerste 12 maanden €20 p/m bij 2 jaar",
+    "cardImageSource": "Officiële Awin-creative 4858094 van Odido Thuis NL",
+    "cardImageVariant": "square-large",
+    "detailCheckItems": [
+      "Campagneperiode 10 augustus t/m 27 september 2026",
+      "Kies 1 of 2 jaar",
+      "Adres, netwerk en samenstelling bepalen welke actieprijs beschikbaar is"
+    ]
   }
 ]
