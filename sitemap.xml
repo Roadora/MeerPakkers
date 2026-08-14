@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.meerpakkers.nl/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -19,12 +19,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.meerpakkers.nl/deals/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.meerpakkers.nl/disclaimer/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,73 +26,73 @@
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/internet-tv/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/airpods/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/cadeaukaart/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/cashback/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/gratis-streaming/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/nintendo-switch/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/ps5/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/smartwatch/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/tablet/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/kies-je-meepakker/tickets/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/mobiel/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -116,131 +110,127 @@
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/ben.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/budget-thuis.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/delta.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/disney-plus.html</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.meerpakkers.nl/providers/disney.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/hbo-max.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/hollandsnieuwe.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/kpn.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/lebara.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/netflix.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.meerpakkers.nl/providers/online-nl.html</loc><lastmod>2026-07-21</lastmod>
+    <loc>https://www.meerpakkers.nl/providers/online-nl.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/prime-video.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/simyo.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/skyshowtime.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/viaplay.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/videoland.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/youfone.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/providers/ziggo.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/sim-only/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.meerpakkers.nl/streaming/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.meerpakkers.nl/uitleg/</loc><lastmod>2026-07-21</lastmod>
+    <loc>https://www.meerpakkers.nl/uitleg/</loc>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -383,12 +373,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.meerpakkers.nl/uitleg/budget-thuis-sim-only-aansluiten-nummerbehoud/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.meerpakkers.nl/uitleg/budget-thuis-welkomstcadeau/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -413,28 +397,85 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.meerpakkers.nl/providers/odido.html</loc><lastmod>2026-08-12</lastmod>
+    <loc>https://www.meerpakkers.nl/providers/odido.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-cadeau-naar-keuze/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-1-jaar-of-2-jaar/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-korting-of-cadeau-kiezen/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-cashback-of-bol-cadeaukaart/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-cadeau-claimen/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/ziggo-internet-tv-acties/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-internet-tv-actie/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-1-jaar-of-2-jaar/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-espn-compleet-gratis/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-tijdelijke-maandprijs/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-actieperiode/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/odido-beschikbaarheid-en-adrescheck/</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-dikke-deal/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-internet-tv-voordeel/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-internet-only-voordeel/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-cashback/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-totaal-voordeel/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/online-nl-adrescheck-en-beschikbaarheid/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.meerpakkers.nl/uitleg/hollandsnieuwe-sim-only-actie/</loc><lastmod>2026-07-21</lastmod></url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-cadeau-naar-keuze/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-1-jaar-of-2-jaar/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-korting-of-cadeau-kiezen/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-cashback-of-bol-cadeaukaart/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-cadeau-claimen/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/ziggo-internet-tv-acties/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-internet-tv-actie/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-1-jaar-of-2-jaar/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-espn-compleet-gratis/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-tijdelijke-maandprijs/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-actieperiode/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/odido-beschikbaarheid-en-adrescheck/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-dikke-deal/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-internet-tv-voordeel/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-internet-only-voordeel/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-cashback/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-totaal-voordeel/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/online-nl-adrescheck-en-beschikbaarheid/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.meerpakkers.nl/uitleg/hollandsnieuwe-sim-only-actie/</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
 </urlset>

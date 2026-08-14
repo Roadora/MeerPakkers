@@ -24,7 +24,7 @@ async function initCategoryPage(){
   } catch (error){
     const list = document.getElementById("categoryDealList");
     if (list){
-      list.innerHTML = `<div class="category-empty">Deze categorie kon niet geladen worden.</div>`;
+      if (!list.querySelector("[data-seo-fallback]")) list.innerHTML = `<div class="category-empty">Deze categorie kon niet geladen worden.</div>`;
     }
   }
 }

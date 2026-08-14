@@ -28,7 +28,7 @@ async function loadProviderPage(){
     list.innerHTML = `<p>De dealkaart-component kon niet geladen worden. Vernieuw de pagina of probeer het later opnieuw.</p>`;
   }
 }
-document.addEventListener("DOMContentLoaded", loadProviderPage);
+document.addEventListener("DOMContentLoaded", function(){ loadProviderPage().catch(function(error){ console.warn("[MeerPakkers] Providerdata kon niet worden ververst; crawlbare fallback blijft zichtbaar.", error); }); });
 
 
 document.addEventListener('DOMContentLoaded', function(){
