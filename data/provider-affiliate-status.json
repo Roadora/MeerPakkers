@@ -46,12 +46,12 @@
       "internet-tv",
       "sim-only"
     ],
-    "affiliateNetwork": "placeholder",
-    "applicationStatus": "not_applied",
-    "affiliateStatus": "placeholder",
+    "affiliateNetwork": "awin",
+    "applicationStatus": "approved",
+    "affiliateStatus": "approved",
     "contactUrl": null,
     "approvedAt": null,
-    "adminNotes": ""
+    "adminNotes": "Youfone TV NL actief via Awin (merchant/advertiser ID 11315), publisher 2947269. Internet & TV-deeplink live."
   },
   {
     "providerId": "ben",
