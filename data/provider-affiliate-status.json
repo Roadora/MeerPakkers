@@ -248,6 +248,10 @@
     "affiliateStatus": "approved",
     "contactUrl": null,
     "approvedAt": "2026-07-21",
-    "adminNotes": "Actief via Daisycon-campagne 14155. Twee openbare Dikke Deal-kaarten met officiële 800×300-creatives: Internet & TV (€200 cashback, €407 totaal voordeel) en Internet Only (€100 cashback, €280 totaal voordeel)."
+    "adminNotes": "Online.nl via Daisycon campagne 14155. Nieuwe actuele providercreative aangeleverd op 23 november 2026: creative/link 1952243 met Sub ID online. Nog niet aan één specifieke productdeal gekoppeld, omdat de bannerinhoud via de beschikbare fetch-tools niet betrouwbaar uitleesbaar is; voorkom koppeling aan Internet & TV of Internet Only zonder productmatch.",
+    "currentCreativeId": "1952243",
+    "currentTrackingUrl": "https://rkn3.net/c/?si=14155&li=1952243&wi=422185&ws=online",
+    "currentBannerUrl": "https://static-dscn.net/14155/1952243/?wi=422185&ws=online",
+    "lastCheckedAt": "2026-11-23"
   }
 ]
