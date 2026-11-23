@@ -1399,35 +1399,35 @@
     "providerId": "hollandsnieuwe",
     "provider": "hollandsnieuwe",
     "category": "sim-only",
-    "title": "Sim Only: 6 maanden €1 + 10.000 MB extra",
+    "title": "Black Friday Sim Only: eerste jaar €4,50 p/m",
     "benefitTypes": [
       "korting",
       "gratis-extra"
     ],
     "benefitValue": 0,
     "totalBenefitValue": 0,
-    "totalBenefitLabel": "6 maanden €1 p/m + 10.000 MB extra",
+    "totalBenefitLabel": "Eerste jaar €4,50 p/m + 10.000 MB extra",
     "giftType": "",
     "contract": "2 jaar",
     "score": 9.6,
     "icon": "📶",
     "benefits": [
-      "Eerste 6 maanden €1 p/m",
-      "Iedere maand 10.000 MB extra",
-      "Extra data blijft zolang je klant blijft"
+      "Alle Sim Only-bundels eerste jaar €4,50 p/m",
+      "Gratis onbeperkt bellen en sms’en",
+      "Via MeerVoordeel iedere maand 10.000 MB extra"
     ],
-    "price": "€1 p/m tijdens de eerste 6 maanden",
+    "price": "€4,50 p/m tijdens het eerste jaar",
     "featured": true,
-    "dealType": "Tijdelijke Sim Only-actie",
+    "dealType": "Black Friday Sim Only",
     "giftName": "",
     "giftValue": 0,
     "cashbackValue": 0,
     "discountValue": 0,
     "extraValue": 0,
-    "monthlyPrice": 1,
+    "monthlyPrice": 4.5,
     "originalMonthlyPrice": 0,
     "contractLengthMonths": 24,
-    "affiliateUrl": "https://glp8.net/c/?si=21994&li=1927639&wi=422185&ws=",
+    "affiliateUrl": "https://glp8.net/c/?si=21994&li=1989734&wi=422185&ws=meerpakkers%20Hollands%20Nieuwe",
     "benefitBreakdown": {
       "gift": 33,
       "cashback": 0,
@@ -1437,118 +1437,115 @@
     "seoSlug": "hollandsnieuwe-cadeau",
     "updatedAt": "2026-11-23",
     "meerPakScore": 96,
-    "url": "https://glp8.net/c/?si=21994&li=1927639&wi=422185&ws=",
+    "url": "https://glp8.net/c/?si=21994&li=1989734&wi=422185&ws=meerpakkers%20Hollands%20Nieuwe",
     "network": "daisycon",
     "campaignId": "21994",
-    "trackingId": "1927639",
+    "trackingId": "1989734",
     "merchantId": "meervoordeel-hollandsnieuwe",
-    "deepLink": "https://glp8.net/c/?si=21994&li=1927639&wi=422185&ws=",
+    "deepLink": "https://glp8.net/c/?si=21994&li=1989734&wi=422185&ws=meerpakkers%20Hollands%20Nieuwe",
     "affiliateStatus": "approved",
     "lastCheckedAt": "2026-11-23",
-    "dealStatus": "archived",
-    "publicationStatus": "unpublished",
+    "dealStatus": "active",
+    "publicationStatus": "published",
     "startsAt": null,
-    "expiresAt": "2026-11-23",
-    "sourceType": "Officieel Daisycon-bannermateriaal",
-    "sourceId": "1931865",
-    "adminNotes": "Officiële Meervoordeel.nl / hollandsnieuwe Sim Only-creative 1931865. De banner communiceert drie voordelen samen bij een 2-jarig abonnement: eerste 12 maanden 50% korting, bol.com-cadeaukaart t.w.v. €33 en iedere maand 5.000 MB extra. Geen vaste maandprijs of einddatum afgeleid. | De oude hollandsnieuwe €1-actie is niet meer actueel. Niet meer publiceren zonder nieuw geverifieerd affiliate-materiaal.",
-    "termsSummary": "Via MeerVoordeel betaal je bij de actuele hollandsnieuwe Sim Only-actie de eerste 6 maanden €1 p/m en krijg je iedere maand 10.000 MB extra bovenop je gekozen bundel. De extra 10.000 MB blijft ook na de contractduur actief zolang je klant blijft. Prijzen en promoties zijn gebaseerd op een looptijd van 24 maanden.",
+    "expiresAt": null,
+    "sourceType": "Daisycon + MeerVoordeel + hollandsnieuwe",
+    "sourceId": "1989734",
+    "adminNotes": "Actuele Black Friday Sim Only-deal via MeerVoordeel. Trackinglink li=1989734 met Sub ID 'meerpakkers Hollands Nieuwe'. Officiële hollandsnieuwe-pagina toont alle Sim Only-bundels het eerste jaar voor €4,50 p/m bij 2 jaar, met gratis onbeperkt bellen en sms’en. MeerVoordeel voegt iedere maand 10.000 MB extra toe zolang het abonnement doorloopt.",
+    "termsSummary": "Bij de actuele Black Friday Sim Only-actie van hollandsnieuwe betaal je voor alle getoonde Sim Only-bundels het eerste jaar €4,50 p/m bij een 2-jarig abonnement. Onbeperkt bellen en sms’en is gratis toegevoegd. Sluit je via MeerVoordeel af, dan ontvang je bovendien iedere maand 10.000 MB extra; volgens MeerVoordeel blijft die extra data actief zolang je hollandsnieuwe-abonnement doorloopt. Na het eerste jaar geldt de gewone abonnementsprijs van de gekozen bundel.",
     "lastDataReviewAt": "2026-11-23",
-    "ctaLabel": "Bekijk Sim Only-deal",
-    "detailCtaLabel": "Bekijk actuele deal via MeerVoordeel.nl",
-    "benefitDisplayType": "choice",
-    "detailTitle": "hollandsnieuwe Sim Only met drie extra voordelen",
-    "detailIntro": "De actuele exclusieve hollandsnieuwe-deal via MeerVoordeel combineert de eerste 6 maanden €1 p/m met iedere maand 10.000 MB extra. Die extra data blijft volgens MeerVoordeel zolang je abonnement bij hollandsnieuwe doorloopt.",
+    "ctaLabel": "Bekijk Black Friday-deal",
+    "detailCtaLabel": "Bekijk via MeerVoordeel.nl",
+    "benefitDisplayType": "period",
+    "detailTitle": "hollandsnieuwe Black Friday Sim Only",
+    "detailIntro": "De actuele Black Friday-actie zet alle getoonde hollandsnieuwe Sim Only-bundels het eerste jaar op €4,50 p/m bij een 2-jarig abonnement. Onbeperkt bellen en sms’en is gratis. Via MeerVoordeel krijg je daarnaast iedere maand 10.000 MB extra.",
     "detailBenefits": [
       {
         "type": "discount",
-        "title": "Eerste 6 maanden €1 p/m",
-        "sub": "Actuele MeerVoordeel-actie bij 24 maanden looptijd"
+        "title": "Eerste jaar €4,50 p/m",
+        "sub": "Bij een 2-jarig Sim Only-abonnement"
+      },
+      {
+        "type": "extra",
+        "title": "Gratis onbeperkt bellen en sms’en",
+        "sub": "Actuele Black Friday-extra van hollandsnieuwe"
       },
       {
         "type": "extra",
         "title": "Iedere maand 10.000 MB extra",
-        "sub": "Bovenop de bundel die je kiest"
-      },
-      {
-        "type": "extra",
-        "title": "Extra data blijft doorlopen",
-        "sub": "Zolang je hollandsnieuwe-klant blijft"
+        "sub": "Exclusief via MeerVoordeel; blijft zolang je klant blijft"
       }
     ],
-    "detailSummaryValue": "Drie voordelen bij 2 jaar",
-    "priceDuringDiscount": "Eerste 12 maanden 50% korting",
-    "priceAfterDiscount": "Controleer de reguliere maandprijs van je gekozen bundel",
+    "detailSummaryValue": "€4,50 p/m + 10.000 MB extra",
+    "priceDuringDiscount": "€4,50 p/m gedurende het eerste jaar",
+    "priceAfterDiscount": "Daarna de gewone abonnementsprijs van je gekozen bundel",
     "officialBannerUrl": "",
-    "officialBannerClickUrl": "",
+    "officialBannerClickUrl": "https://glp8.net/c/?si=21994&li=1989734&wi=422185&ws=meerpakkers%20Hollands%20Nieuwe",
     "officialBannerLabel": "",
     "officialBannerSize": "",
-    "summaryLine": "12 maanden korting, €33 cadeaukaart en 5 GB extra",
+    "summaryLine": "Black Friday + exclusief 10 GB extra via MeerVoordeel",
     "detailIntroTitle": "hollandsnieuwe Sim Only",
-    "detailIntroSubtitle": "Alleen via Meervoordeel.nl · 2 jaar",
+    "detailIntroSubtitle": "Black Friday · eerste jaar €4,50 p/m · 2 jaar",
     "detailIntroCards": [
       {
-        "title": "50% korting",
-        "text": "Tijdens de eerste 12 maanden"
+        "title": "€4,50 p/m",
+        "text": "Eerste jaar bij 2 jaar"
       },
       {
-        "title": "€33 cadeaukaart",
-        "text": "bol.com-cadeaukaart volgens de officiële banner"
+        "title": "Onbeperkt bellen & sms’en",
+        "text": "Gratis tijdens de actuele actie"
       },
       {
-        "title": "+5.000 MB",
-        "text": "Iedere maand extra data"
+        "title": "+10.000 MB",
+        "text": "Iedere maand extra via MeerVoordeel"
       }
     ],
     "detailWhyTitle": "Waarom is dit een Meepakker?",
-    "detailWhyText": "Deze actie combineert een tijdelijke maandkorting met een concreet cadeau en extra data. Vergelijk wel de volledige kosten over 24 maanden en controleer welke maandprijs na de eerste 12 maanden geldt.",
+    "detailWhyText": "Je combineert de Black Friday-maandprijs van hollandsnieuwe met een exclusieve MeerVoordeel-extra: iedere maand 10.000 MB bovenop je gekozen bundel.",
     "detailConditionItems": [
       "hollandsnieuwe Sim Only",
       "2-jarig abonnement",
-      "Eerste 12 maanden 50% korting volgens het officiële campagnemateriaal",
-      "bol.com-cadeaukaart t.w.v. €33",
-      "Iedere maand 5.000 MB extra",
-      "Bundel en maandprijs hangen af van je keuze",
-      "Controleer de actuele voorwaarden op de bestemmingspagina"
+      "Eerste jaar €4,50 p/m",
+      "Daarna de gewone abonnementsprijs van de gekozen bundel",
+      "Gratis onbeperkt bellen en sms’en",
+      "Via MeerVoordeel iedere maand 10.000 MB extra",
+      "De extra 10.000 MB blijft volgens MeerVoordeel zolang je abonnement doorloopt",
+      "Controleer het eindaanbod en de voorwaarden vóór bestellen"
     ],
-    "contractPriceLabel": "Prijs afhankelijk van gekozen bundel",
+    "contractPriceLabel": "€4,50 p/m in het eerste jaar",
     "providerDescriptionTitle": "Over hollandsnieuwe Sim Only",
-    "providerDescription": "hollandsnieuwe biedt mobiele en Sim Only-abonnementen. Bij Sim Only gebruik je je eigen telefoon en kies je een bundel voor data, bellen en sms. Controleer vóór afsluiten de bundelinhoud, netwerkinformatie, maandprijs na de kortingsperiode en de volledige contractduur.",
+    "providerDescription": "hollandsnieuwe biedt Sim Only op het Vodafone 5G-netwerk. Je gebruikt je eigen telefoon en kiest een bundel voor data, bellen en sms. Controleer vóór afsluiten de gewone maandprijs die na het eerste actiejaar voor jouw gekozen bundel geldt.",
     "providerFeatureTitle": "Wat valt op bij deze actie?",
     "providerFeatureItems": [
       {
-        "title": "Drie voordelen samen",
-        "text": "De officiële banner combineert korting, een cadeaukaart en extra data."
+        "title": "Alle bundels dezelfde actieprijs",
+        "text": "De getoonde Sim Only-bundels kosten het eerste jaar €4,50 p/m bij 2 jaar."
       },
       {
-        "title": "Twee jaar looptijd",
-        "text": "De actie is gekoppeld aan een 2-jarig Sim Only-abonnement."
+        "title": "Extra 10 GB via MeerVoordeel",
+        "text": "Iedere maand 10.000 MB bovenop je gekozen bundel."
       },
       {
-        "title": "Bundelkeuze blijft belangrijk",
-        "text": "De uiteindelijke maandprijs hangt af van de gekozen Sim Only-bundel."
+        "title": "Gratis onbeperkt bellen en sms’en",
+        "text": "Onderdeel van de actuele Black Friday-actie."
       }
     ],
-    "detailConditionNote": "MeerPakkers is onafhankelijk. Meervoordeel.nl en hollandsnieuwe zijn niet verantwoordelijk voor de inhoud van deze pagina. Het actuele aanbod en de voorwaarden op de officiële bestemming zijn leidend.",
-    "officialSourceUrl": "https://glp8.net/c/?si=21994&li=1931865&wi=422185&ws=",
+    "detailConditionNote": "MeerPakkers is onafhankelijk. De officiële bestelpagina en orderbevestiging zijn leidend. Controleer daar de gekozen bundel, prijs na het eerste jaar en alle actuele voorwaarden.",
+    "officialSourceUrl": "https://glp8.net/c/?si=21994&li=1989734&wi=422185&ws=meerpakkers%20Hollands%20Nieuwe",
     "sourceVerifiedAt": "2026-11-23",
-    "sourceVerifiedNotes": "De oude hollandsnieuwe €1-actie is niet meer actueel.",
+    "sourceVerifiedNotes": "Gecontroleerd op 23 november 2026: hollandsnieuwe toont alle Sim Only-bundels het eerste jaar voor €4,50 p/m bij 2 jaar en gratis onbeperkt bellen en sms’en. MeerVoordeel bevestigt iedere maand 10.000 MB extra zolang het abonnement doorloopt.",
     "cardImage": "",
     "cardImageAlt": "",
     "cardImageSource": "",
     "cardImageVariant": "",
     "seoSupport": {
       "eyebrow": "Meer weten voordat je kiest?",
-      "title": "Uitleg bij de hollandsnieuwe Sim Only-actie",
-      "description": "Lees hoe de korting, cadeaukaart, extra data en de looptijd van twee jaar samenhangen.",
+      "title": "Uitleg bij de hollandsnieuwe Black Friday Sim Only-actie",
+      "description": "Lees hoe de actieprijs van €4,50, de looptijd van twee jaar en de exclusieve 10.000 MB extra via MeerVoordeel samenhangen.",
       "links": [
         {
           "label": "hollandsnieuwe actie uitgelegd",
           "href": "/uitleg/hollandsnieuwe-sim-only-actie/"
-        },
-        {
-          "label": "Korting of cadeau kiezen",
-          "href": "/uitleg/korting-of-cadeau-kiezen/"
         },
         {
           "label": "Wat is een welkomstactie?",
